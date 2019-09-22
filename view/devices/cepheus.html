@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <title>小米9(cepheus)官方ROM合集 --By 海力力。</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-collapse-item mdui-collapse-item-open">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content">在更机型</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                        <li class="mdui-list-item mdui-ripple"><a href="capricorn.html">小米5S(capricorn)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="natrium.html">小米5S Plus(natrium)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="tiffany.html">小米5X(tiffany)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="meri.html">小米5C(meri)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="sagit.html">小米6(sagit)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="wayne.html">小米6X(wayne)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="dipper.html">小米8(dipper)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="ursa.html">小米8探索版(ursa)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="equuleus.html">小米8屏幕指纹版(equuleus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="sirius.html">小米8 SE(sirius)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="platina.html">小米8青春版(platina)</a></li>
+                        <li class="mdui-list-item mdui-ripple mdui-list-item-active"><a
+                                href="cepheus.html">小米9/透明版(cepheus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="grus.html">小米9 SE(grus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="pyxis.html">小米CC9(pyxis)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="vela.html">小米CC9美图定制版(vela)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="laurus.html">小米CC9e(laurus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="oxygen.html">小米Max 2(oxygen)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="nitrogen.html">小米Max 3(nitrogen)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="lotus.html">小米Play(lotus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="scorpio.html">小米Note 2(scorpio)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="jason.html">小米Note 3(jason)</a></li>
+                </li>
+                <li class="mdui-list-item mdui-ripple"><a href="lithium.html">小米MIX(lithium)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="chiron.html">小米MIX 2(chiron)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="polaris.html">小米MIX 2S(polaris)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="perseus.html">小米MIX 3(perseus)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="cappu.html">小米平板3(cappu)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="clover.html">小米平板4/Plus(clover)</a></li>
+
+
+                <li class="mdui-list-item mdui-ripple"><a href="santoni.html">红米4X(santoni)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="rosy.html">红米5(rosy)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="riva.html">红米5A(riva)</a></li>></li>
+                <li class="mdui-list-item mdui-ripple"><a href="vince.html">红米5 Plus(vince)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="cereus.html">红米6(cereus)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="cactus.html">红米6A(cactus)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="sakura.html">红米6 Pro(sakura)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="onclite.html">Redmi 7(onclite)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="pine.html">Redmi 7A(pine)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="mido.html">红米Note 4X(高通平台)(mido)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="whyred.html">红米Note 5(whyred)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="ugglite.html">红米Note 5A 标准版(ugglite)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="ugg.html">红米Note 5A 高配版(ugg)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="lavender.html">Redmi Note 7(lavender)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="violet.html">Redmi Note 7 Pro(violet)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="ginkgo.html">Redmi Note 8(ginkgo)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="begonia.html">Redmi Note 8 Pro(begonia)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="davinci.html">Redmi K20(davinci)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="raphael.html">Redmi K20 Pro(raphael)</a></li>
+                <li class="mdui-list-item mdui-ripple"><a href="raphaels.html">Redmi K20 Pro尊享版(raphaels)</a></li>
+            </ul>
+            </li>
+
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices_other</i>
+                    <div class="mdui-list-item-content">全部机型</div>
+                    <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                </div>
+                <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    <li class="mdui-list-item mdui-ripple"><a href="mioneplus.html">小米手机1</a></li>
+                    <li class="mdui-list-item mdui-ripple"><a href="index.html">小米手机1青春版</a></li>
+                    <li class="mdui-list-item mdui-ripple"><a href="index.html">小米手机2</a></li>
+                    <li class="mdui-list-item mdui-ripple"><a href="index.html">小米手机2S</a></li>
+                </ul>
+            </li>
+
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
+            </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-panel mdui-panel-gapless">
+        <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
+            <div class="mdui-panel-item-body">
+                <ol>
+                    <li>机型：小米9 代号：cepheus</li>
+                    <li>此次更新项目：9.8.22</li>
+                    <li>特别感谢：<a href="http://www.miui.com/space-uid-241490365.html"
+                            style="text-decoration: none;color:blue;">a121104083</a></li>
+                    <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/"
+                            style="text-decoration: none;color:blue;">Xiaomi Firmware Updater </a>网站</li>
+                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
+                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock"
+                            style="text-decoration: none;color:blue;">传送门</a></li>
+                    <li>官方刷机工具：<a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip"
+                            style="text-decoration: none;color:blue;">MiFlash 最新版(2018.5.28)</a>, <a
+                            href="https://pan.baidu.com/s/1rR58JraOPJq6R5qOGP_aOw"
+                            style="text-decoration: none;color:blue;">小米助手 3.0 beta版</a></li>
+                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为ROM的正式内容 -->
+    <div class="mdui-row-xs-6 mdui-row-gapless">
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block"><a href="#CN_BETA"
+                    style="text-decoration: none;color:black;">国内开发版</a></button>
+        </div>
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block"><a href="#GB_BETA"
+                    style="text-decoration: none;color:black;">国际开发版</a></button>
+        </div>
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block"><a href="#CN_STABLE"
+                    style="text-decoration: none;color:black;">国内稳定版</a></button>
+        </div>
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block"><a href="#GB_STABLE"
+                    style="text-decoration: none;color:black;">国际稳定版</a></button>
+        </div>
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block"><a href="#EEA_STABLE"
+                    style="text-decoration: none;color:black;">EEA稳定版</a></button>
+        </div>
+        <div class="mdui-col">
+            <button class="mdui-btn mdui-btn-block"><a href="#RU_STABLE"
+                    style="text-decoration: none;color:black;">俄罗斯稳定版</a></button>
+        </div>
+    </div>
+
+    <div class="mdui-container-fluid" id="CN_BETA">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th class="mdui-text-color-red">国内开发版</th>
+                        <th>MIUI版本</th>
+                        <th>版本</th>
+                        <th>Android版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="mdui-hidden">
+                        <td>18</td>
+                        <td>MIUI11</td>
+                        <td>#</td>
+                        <td>10 Q</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>MIUI10</td>
+                        <td>9.8.22</td>
+                        <td>10 Q</td>
+                        <td><a href="http://bigota.d.miui.com/9.8.22/miui_CEPHEUS_9.8.22_aa27670572_10.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.8.22_aa27670572_10.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>MIUI10</td>
+                        <td>9.7.22</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.7.22/miui_CEPHEUS_9.7.22_e73316ebc9_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.7.22_e73316ebc9_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.7.22/cepheus_images_9.7.22_20190723.0000.00_9.0_cn_4871e2e1a6.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.7.22_20190723.0000.00_9.0_cn_4871e2e1a6.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>MIUI10</td>
+                        <td>9.7.13</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.7.13/miui_CEPHEUS_9.7.13_dc6d10ef49_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.7.13_dc6d10ef49_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>MIUI10</td>
+                        <td>9.7.4</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.7.4/miui_CEPHEUS_9.7.4_fc77c03cfa_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.7.4_fc77c03cfa_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.7.4/cepheus_images_9.7.4_20190704.0000.00_9.0_cn_9516adeecd.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.7.4_20190704.0000.00_9.0_cn_9516adeecd.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>MIUI10</td>
+                        <td>9.6.27</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.6.27/miui_CEPHEUS_9.6.27_dee02ebc00_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.6.27_dee02ebc00_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.6.27/cepheus_images_9.6.27_20190627.0000.00_9.0_cn_da96cda1b5.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.6.27_20190627.0000.00_9.0_cn_da96cda1b5.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>MIUI10</td>
+                        <td>9.6.20</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.6.20/miui_CEPHEUS_9.6.20_080e335e4f_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.6.20_080e335e4f_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.6.20/cepheus_images_9.6.20_20190620.0000.00_9.0_cn_cf4572c6ee.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.6.20_20190620.0000.00_9.0_cn_cf4572c6ee.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>MIUI10</td>
+                        <td>9.6.17</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.6.17/miui_CEPHEUS_9.6.17_d6d023ce17_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.6.17_d6d023ce17_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>MIUI10</td>
+                        <td>9.6.5</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.6.5/miui_CEPHEUS_9.6.5_071181921f_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.6.5_071181921f_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.6.5/cepheus_images_9.6.5_20190605.0000.00_9.0_cn_368d0d4dee.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.6.5_20190605.0000.00_9.0_cn_368d0d4dee.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>MIUI10</td>
+                        <td>9.5.30</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.5.30/miui_CEPHEUS_9.5.30_3896044454_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.5.30_3896044454_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.5.30/cepheus_images_9.5.30_20190530.0000.00_9.0_cn_aaf8a56c88.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.5.30_20190530.0000.00_9.0_cn_aaf8a56c88.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>MIUI10</td>
+                        <td>9.5.16</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.5.16/miui_CEPHEUS_9.5.16_52cdcb354a_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.5.16_52cdcb354a_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.5.16/cepheus_images_9.5.16_20190516.0000.00_9.0_cn_8ae6785591.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.5.16_20190516.0000.00_9.0_cn_8ae6785591.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>MIUI10</td>
+                        <td>9.5.9</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.5.9/miui_CEPHEUS_9.5.9_c70d71d568_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.5.9_c70d71d568_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.5.9/cepheus_images_9.5.9_20190509.0000.00_9.0_cn_5f55a976af.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.5.9_20190509.0000.00_9.0_cn_5f55a976af.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>MIUI10</td>
+                        <td>9.5.1</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.5.1/miui_CEPHEUS_9.5.1_d102879458_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.5.1_d102879458_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.5.1/cepheus_images_9.5.1_20190501.0000.00_9.0_cn_79c6f50908.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.5.1_20190501.0000.00_9.0_cn_79c6f50908.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>MIUI10</td>
+                        <td>9.4.26</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.4.26/miui_CEPHEUS_9.4.26_d22d37132a_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.4.26_d22d37132a_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.4.26/cepheus_images_9.4.26_20190427.0000.00_9.0_cn_aa317f653f.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.4.26_20190427.0000.00_9.0_cn_aa317f653f.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>MIUI10</td>
+                        <td>9.4.18</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.4.18/miui_CEPHEUS_9.4.18_ac3d9462d7_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.4.18_ac3d9462d7_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.4.18/cepheus_images_9.4.18_20190418.0000.00_9.0_cn_3d79eaada7.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.4.18_20190418.0000.00_9.0_cn_3d79eaada7.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MIUI10</td>
+                        <td>9.4.1</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.4.1/miui_CEPHEUS_9.4.1_43c1f1d42d_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.4.1_43c1f1d42d_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.4.1/cepheus_images_9.4.1_20190402.0000.00_9.0_cn_435598a9e2.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.4.1_20190402.0000.00_9.0_cn_435598a9e2.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MIUI10</td>
+                        <td>9.3.22</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.3.22/miui_CEPHEUS_9.3.22_c63654cc2f_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.3.22_c63654cc2f_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.3.22/cepheus_images_9.3.22_20190322.0000.00_9.0_cn_79122c3ea0.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.3.22_20190322.0000.00_9.0_cn_79122c3ea0.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>MIUI10</td>
+                        <td>9.3.14</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.3.14/miui_CEPHEUS_9.3.14_8a99fab358_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_9.3.14_8a99fab358_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.3.14/cepheus_images_9.3.14_20190314.0000.00_9.0_cn_3d5d55ae73.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_9.3.14_20190314.0000.00_9.0_cn_3d5d55ae73.tgz</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="mdui-container-fluid" id="GB_BETA">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th class="mdui-text-color-red">国际开发版</th>
+                        <th>MIUI版本</th>
+                        <th>版本</th>
+                        <th>Android版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12</td>
+                        <td>MIUI10</td>
+                        <td>9.6.27</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.6.27/miui_CEPHEUSGlobal_9.6.27_2b17a775d2_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.6.27_2b17a775d2_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.6.27/cepheus_global_images_9.6.27_20190627.0000.00_9.0_global_d1aa19c208.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.6.27_20190627.0000.00_9.0_global_d1aa19c208.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>MIUI10</td>
+                        <td>9.6.20</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.6.20/miui_CEPHEUSGlobal_9.6.20_b2682ddf03_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.6.20_b2682ddf03_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.6.20/cepheus_global_images_9.6.20_20190620.0000.00_9.0_global_4579da4180.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.6.20_20190620.0000.00_9.0_global_4579da4180.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>MIUI10</td>
+                        <td>9.6.13</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.6.13/miui_CEPHEUSGlobal_9.6.13_1085696856_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.6.13_1085696856_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>MIUI10</td>
+                        <td>9.5.30</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.5.30/miui_CEPHEUSGlobal_9.5.30_4b49937bab_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.5.30_4b49937bab_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.5.30/cepheus_global_images_9.5.30_20190530.0000.00_9.0_global_59ef88f8e6.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.5.30_20190530.0000.00_9.0_global_59ef88f8e6.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>MIUI10</td>
+                        <td>9.5.16</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.5.16/miui_CEPHEUSGlobal_9.5.16_fa9c66200f_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.5.16_fa9c66200f_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.5.16/cepheus_global_images_9.5.16_20190516.0000.00_9.0_global_486c4b0c69.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.5.16_20190516.0000.00_9.0_global_486c4b0c69.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>MIUI10</td>
+                        <td>9.5.9</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.5.9/miui_CEPHEUSGlobal_9.5.9_2ae48083bf_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.5.9_2ae48083bf_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.5.9/cepheus_global_images_9.5.9_20190509.0000.00_9.0_global_5b0a1b0e23.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.5.9_20190509.0000.00_9.0_global_5b0a1b0e23.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>MIUI10</td>
+                        <td>9.4.26</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.4.26/miui_CEPHEUSGlobal_9.4.26_257a731d05_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.4.26_257a731d05_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.4.26/cepheus_global_images_9.4.26_20190427.0000.00_9.0_global_8ec08471b9.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.4.26_20190427.0000.00_9.0_global_8ec08471b9.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>MIUI10</td>
+                        <td>9.4.18</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.4.18/miui_CEPHEUSGlobal_9.4.18_f5dcef71c6_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.4.18_f5dcef71c6_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.4.18/cepheus_global_images_9.4.18_20190418.0000.00_9.0_global_3cce4e50f8.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.4.18_20190418.0000.00_9.0_global_3cce4e50f8.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>MIUI10</td>
+                        <td>9.4.2</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.4.2/miui_CEPHEUSGlobal_9.4.2_19357b30e9_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.4.2_19357b30e9_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    <tr>
+                        <td>3</td>
+                        <td>MIUI10</td>
+                        <td>9.3.22</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.3.22/miui_CEPHEUSGlobal_9.3.22_3f1c865fa0_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.3.22_3f1c865fa0_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.3.22/cepheus_global_images_9.3.22_20190323.0000.00_9.0_global_8b3ababa8f.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.3.22_20190323.0000.00_9.0_global_8b3ababa8f.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MIUI10</td>
+                        <td>9.3.7</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.3.7/miui_CEPHEUSGlobal_9.3.7_25561bd2be_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.3.7_25561bd2be_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    <tr>
+                        <td>1</td>
+                        <td>MIUI10</td>
+                        <td>9.3.1</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/9.3.1/miui_CEPHEUSGlobal_9.3.1_02ffa805e2_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_9.3.1_02ffa805e2_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/9.3.1/cepheus_global_images_9.3.1_20190301.0000.00_9.0_global_cdb3885bac.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_9.3.1_20190301.0000.00_9.0_global_cdb3885bac.tgz</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="mdui-container-fluid" id="CN_STABLE">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th class="mdui-text-color-red">国内稳定版</th>
+                        <th>MIUI版本</th>
+                        <th>Android版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="mdui-hidden">
+                        <td>8</td>
+                        <td>#</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>V10.2.33.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.33.0.PFACNXM/miui_CEPHEUS_V10.2.33.0.PFACNXM_1177490638_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.33.0.PFACNXM_1177490638_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.33.0.PFACNXM/cepheus_images_V10.2.33.0.PFACNXM_20190806.0000.00_9.0_cn_220000e490.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_V10.2.33.0.PFACNXM_20190806.0000.00_9.0_cn_220000e490.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>V10.2.31.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.31.0.PFACNXM/miui_CEPHEUS_V10.2.31.0.PFACNXM_89ce642dca_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.31.0.PFACNXM_89ce642dca_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.31.0.PFACNXM/cepheus_images_V10.2.31.0.PFACNXM_20190709.0000.00_9.0_cn_d8f78a517e.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_V10.2.31.0.PFACNXM_20190709.0000.00_9.0_cn_d8f78a517e.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>V10.2.25.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.25.0.PFACNXM/miui_CEPHEUS_V10.2.25.0.PFACNXM_b2fea621fa_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.25.0.PFACNXM_b2fea621fa_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.25.0.PFACNXM/cepheus_images_V10.2.25.0.PFACNXM_20190427.0000.00_9.0_cn_d7e7455c4c.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_V10.2.25.0.PFACNXM_20190427.0000.00_9.0_cn_d7e7455c4c.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>V10.2.16.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.16.0.PFACNXM/miui_CEPHEUS_V10.2.16.0.PFACNXM_e185be6515_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.16.0.PFACNXM_e185be6515_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.16.0.PFACNXM/cepheus_images_V10.2.16.0.PFACNXM_20190324.0000.00_9.0_cn_d558e666f5.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_V10.2.16.0.PFACNXM_20190324.0000.00_9.0_cn_d558e666f5.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>V10.2.15.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.15.0.PFACNXM/miui_CEPHEUS_V10.2.15.0.PFACNXM_72af81f349_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.15.0.PFACNXM_72af81f349_9.0.zipmiui_CEPHEUS_V10.2.15.0.PFACNXM_72af81f349_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.15.0.PFACNXM/cepheus_images_V10.2.15.0.PFACNXM_20190309.0000.00_9.0_cn_a1f6526f5f.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_V10.2.15.0.PFACNXM_20190309.0000.00_9.0_cn_a1f6526f5f.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>V10.2.11.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFACNXM/miui_CEPHEUS_V10.2.11.0.PFACNXM_4f19972866_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.11.0.PFACNXM_4f19972866_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFACNXM/cepheus_images_V10.2.11.0.PFACNXM_20190225.0000.00_9.0_cn_163a3f9ac8.tgz"
+                                style="text-decoration: none;color:black;">cepheus_images_V10.2.11.0.PFACNXM_20190225.0000.00_9.0_cn_163a3f9ac8.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>V10.2.5.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFACNXM/miui_CEPHEUS_V10.2.5.0.PFACNXM_64a26fe7ce_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.5.0.PFACNXM_64a26fe7ce_9.0.zip</a>
+                        </td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="mdui-container-fluid" id="GB_STABLE">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th class="mdui-text-color-red">国际稳定版</th>
+                        <th>MIUI版本</th>
+                        <th>Android版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="mdui-hidden">
+                        <td>7</td>
+                        <td>#</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>V10.2.13.0.PFAMIXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.13.0.PFAMIXM/miui_CEPHEUSGlobal_V10.2.13.0.PFAMIXM_b529c3de07_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_V10.2.13.0.PFAMIXM_b529c3de07_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.13.0.PFAMIXM/cepheus_global_images_V10.2.13.0.PFAMIXM_20190709.0000.00_9.0_global_73cdd6acfe.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_V10.2.13.0.PFAMIXM_20190709.0000.00_9.0_global_73cdd6acfe.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>V10.2.12.0.PFAMIXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.12.0.PFAMIXM/miui_CEPHEUSGlobal_V10.2.12.0.PFAMIXM_7577b70818_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_V10.2.12.0.PFAMIXM_7577b70818_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>V10.2.11.0.PFAMIXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFAMIXM/miui_CEPHEUSGlobal_V10.2.11.0.PFAMIXM_0fc3ce2165_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_V10.2.11.0.PFAMIXM_0fc3ce2165_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>V10.2.9.0.PFAMIXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.9.0.PFAMIXM/miui_CEPHEUSGlobal_V10.2.9.0.PFAMIXM_45a4e7920a_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_V10.2.9.0.PFAMIXM_45a4e7920a_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.9.0.PFAMIXM/cepheus_global_images_V10.2.9.0.PFAMIXM_20190411.0000.00_9.0_global_9973607e84.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_V10.2.9.0.PFAMIXM_20190411.0000.00_9.0_global_9973607e84.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>V10.2.6.0.PFAMIXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.6.0.PFAMIXM/miui_CEPHEUSGlobal_V10.2.6.0.PFAMIXM_d7e98c65f0_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_V10.2.6.0.PFAMIXM_d7e98c65f0_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.6.0.PFAMIXM/cepheus_global_images_V10.2.6.0.PFAMIXM_20190327.0000.00_9.0_global_9cc39b4570.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_V10.2.6.0.PFAMIXM_20190327.0000.00_9.0_global_9cc39b4570.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>V10.2.3.0.PFAMIXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.3.0.PFAMIXM/miui_CEPHEUSGlobal_V10.2.3.0.PFAMIXM_e3aaed0507_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSGlobal_V10.2.3.0.PFAMIXM_e3aaed0507_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.3.0.PFAMIXM/cepheus_global_images_V10.2.3.0.PFAMIXM_20190309.0000.00_9.0_global_ab3e2a70a8.tgz"
+                                style="text-decoration: none;color:black;">cepheus_global_images_V10.2.3.0.PFAMIXM_20190309.0000.00_9.0_global_ab3e2a70a8.tgz</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="mdui-container-fluid" id="EEA_STABLE">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th class="mdui-text-color-red">EEA稳定版</th>
+                        <th>MIUI版本</th>
+                        <th>Android版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="mdui-hidden">
+                        <td>10</td>
+                        <td>#</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>V10.2.30.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.30.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.30.0.PFAEUXM_82c5904459_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.30.0.PFAEUXM_82c5904459_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.30.0.PFAEUXM/cepheus_eea_global_images_V10.2.30.0.PFAEUXM_20190806.0000.00_9.0_eea_391ddcd7d0.tgz"
+                                style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.30.0.PFAEUXM_20190806.0000.00_9.0_eea_391ddcd7d0.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>V10.2.28.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.28.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.28.0.PFAEUXM_ac05750e9a_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.28.0.PFAEUXM_ac05750e9a_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.28.0.PFAEUXM/cepheus_eea_global_images_V10.2.28.0.PFAEUXM_20190709.0000.00_9.0_eea_73127eed30.tgz"
+                                style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.28.0.PFAEUXM_20190709.0000.00_9.0_eea_73127eed30.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>V10.2.27.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.27.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.27.0.PFAEUXM_7af0247ed4_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.27.0.PFAEUXM_7af0247ed4_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>V10.2.26.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.26.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.26.0.PFAEUXM_4f78480317_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.26.0.PFAEUXM_4f78480317_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.26.0.PFAEUXM/cepheus_eea_global_images_V10.2.26.0.PFAEUXM_20190517.0000.00_9.0_eea_0a89e0c8fb.tgz"
+                                style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.26.0.PFAEUXM_20190517.0000.00_9.0_eea_0a89e0c8fb.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>V10.2.24.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.24.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.24.0.PFAEUXM_ed43f053ab_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.24.0.PFAEUXM_ed43f053ab_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.24.0.PFAEUXM/cepheus_eea_global_images_V10.2.24.0.PFAEUXM_20190423.0000.00_9.0_eea_2a4318c8d7.tgz"
+                                style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.24.0.PFAEUXM_20190423.0000.00_9.0_eea_2a4318c8d7.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>V10.2.22.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.22.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.22.0.PFAEUXM_745a374eee_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.22.0.PFAEUXM_745a374eee_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未收录</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>V10.2.17.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.17.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.17.0.PFAEUXM_53263ccd41_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.17.0.PFAEUXM_53263ccd41_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.17.0.PFAEUXM/cepheus_eea_global_images_V10.2.17.0.PFAEUXM_20190327.0000.00_9.0_eea_b2470d1b08.tgz"
+                                style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.17.0.PFAEUXM_20190327.0000.00_9.0_eea_b2470d1b08.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>V10.2.15.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.15.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.15.0.PFAEUXM_8b6fe7f1be_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.15.0.PFAEUXM_8b6fe7f1be_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.15.0.PFAEUXM/cepheus_eea_global_images_V10.2.15.0.PFAEUXM_20190309.0000.00_9.0_eea_2bc868f649.tgz"
+                                style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.15.0.PFAEUXM_20190309.0000.00_9.0_eea_2bc868f649.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>V10.2.12.0.PFAEUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.12.0.PFAEUXM/miui_CEPHEUSEEAGlobal_V10.2.12.0.PFAEUXM_57ad5f1d24_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSEEAGlobal_V10.2.12.0.PFAEUXM_57ad5f1d24_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.12.0.PFAEUXM/cepheus_eea_global_images_V10.2.12.0.PFAEUXM_20190226.0000.00_9.0_eea_1c4053f6f6.tgz"
+                                style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.12.0.PFAEUXM_20190226.0000.00_9.0_eea_1c4053f6f6.tgz</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="mdui-container-fluid" id="RU_STABLE">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th class="mdui-text-color-red">俄罗斯稳定版</th>
+                        <th>MIUI版本</th>
+                        <th>Android版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="mdui-hidden">
+                        <td>5</td>
+                        <td>#</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>V10.2.8.0.PFARUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.8.0.PFARUXM/miui_CEPHEUSRUGlobal_V10.2.8.0.PFARUXM_9ca26d3b6c_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSRUGlobal_V10.2.8.0.PFARUXM_9ca26d3b6c_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.8.0.PFARUXM/cepheus_ru_global_images_V10.2.8.0.PFARUXM_20190709.0000.00_9.0_global_bb543f6390.tgz"
+                                style="text-decoration: none;color:black;">cepheus_ru_global_images_V10.2.8.0.PFARUXM_20190709.0000.00_9.0_global_bb543f6390.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>V10.2.7.0.PFARUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.7.0.PFARUXM/miui_CEPHEUSRUGlobal_V10.2.7.0.PFARUXM_c4c944b8e2_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSRUGlobal_V10.2.7.0.PFARUXM_c4c944b8e2_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>V10.2.5.0.PFARUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFARUXM/miui_CEPHEUSRUGlobal_V10.2.5.0.PFARUXM_26ee777886_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSRUGlobal_V10.2.5.0.PFARUXM_26ee777886_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFARUXM/cepheus_ru_global_images_V10.2.5.0.PFARUXM_20190328.0000.00_9.0_global_edc04988c9.tgz"
+                                style="text-decoration: none;color:black;">cepheus_ru_global_images_V10.2.5.0.PFARUXM_20190328.0000.00_9.0_global_edc04988c9.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>V10.2.3.0.PFARUXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.3.0.PFARUXM/miui_CEPHEUSRUGlobal_V10.2.3.0.PFARUXM_b86ad2fec3_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_CEPHEUSRUGlobal_V10.2.3.0.PFARUXM_b86ad2fec3_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+
+    <footer class="mdui-color-grey-700 mdui-bottom-nav" style="height: 120px;">
+        <div class="mdui-container-fluid">
+            <div class="mdui-row mdui-footer-nav">
+                <div class="mdui-col-xs-3">
+                    <h3><a href="../aboutme.html" target="_blank" style="font-size: 15px;">关于我</a></h3>
+                </div>
+                <div class="mdui-col-xs-4">
+                    <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank"
+                            style="font-size: 15px;">我的主页</a></h3>
+                </div>
+                <div class="mdui-col-xs-5">
+                    <h3><a href="https://www.mdui.org" target="_blank" style="font-size: 15px;">使用MDUI打造</a></h3>
+                </div>
+            </div>
+            <div class="mdui-divider footer-divider"></div>
+            <p></p>
+            <div class="mdui-text-center"">Copyright © 2019 -  </div>
+            <div style=" position:absolute; right:20px;bottom: 5px;">
+                <script
+                    type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </div>
+        </div>
+    </footer>
+
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>
