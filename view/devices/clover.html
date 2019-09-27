@@ -62,6 +62,7 @@
                         <li class="mdui-list-item mdui-ripple"><a href="sirius.html">小米8 SE(sirius)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="platina.html">小米8青春版(platina)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="cepheus.html">小米9/透明版(cepheus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="crux.html">小米9 Pro 5G(crux)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="grus.html">小米9 SE(grus)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="pyxis.html">小米CC9(pyxis)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="vela.html">小米CC9美图定制版(vela)</a></li>
@@ -152,39 +153,27 @@
     </div>
 
     <!-- 由此向下区域为ROM的正式内容 -->
-    <div class="mdui-row-xs-2 mdui-row-gapless">
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_BETA"
-                    style="text-decoration: none;color:black;">国内开发版</a></button>
-        </div>
-        <div class="mdui-col mdui-hidden">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_BETA"
-                    style="text-decoration: none;color:black;">国际开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_STABLE"
-                    style="text-decoration: none;color:black;">国内稳定版</a></button>
-        </div>
-        <div class="mdui-col mdui-hidden">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_STABLE"
-                    style="text-decoration: none;color:black;">国际稳定版</a></button>
-        </div>
-    </div>
 
-    <div class="mdui-container-fluid" id="CN_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+							<th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>54</td>
                         <td>MIUI10</td>
@@ -798,51 +787,26 @@
                                 style="text-decoration: none;color:black;">clover_images_8.7.2_20180702.0000.00_8.1_cn_16e0454ca3.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
-    <div class="mdui-container-fluid mdui-hidden" id="GB_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>MIUI10</td>
-                        <td>#</td>
-                        <td>8.1 Oreo</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid" id="CN_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>12</td>
                         <td>#</td>
@@ -969,37 +933,12 @@
                         </td>
                         <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
     </div>
 
-    <div class="mdui-container-fluid mdui-hidden" id="GB_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>#</td>
-                        <td>8.1 Oreo</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
 
     <!-- 由此向下区域为底部Footer的内容 -->
 

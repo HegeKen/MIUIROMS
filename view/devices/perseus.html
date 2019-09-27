@@ -20,7 +20,7 @@
     <title>小米MIX3(perseus)官方ROM合集 --By 海力力。</title>
 </head>
 
-<body>
+<body class="mdui-bottom-nav-fixed">
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -62,6 +62,7 @@
                         <li class="mdui-list-item mdui-ripple"><a href="sirius.html">小米8 SE(sirius)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="platina.html">小米8青春版(platina)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="cepheus.html">小米9/透明版(cepheus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="crux.html">小米9 Pro 5G(crux)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="grus.html">小米9 SE(grus)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="pyxis.html">小米CC9(pyxis)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="vela.html">小米CC9美图定制版(vela)</a></li>
@@ -150,40 +151,29 @@
     </div>
 
     <!-- 由此向下区域为ROM的正式内容 -->
-    <div class="mdui-row-xs-4 mdui-row-gapless">
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_BETA"
-                    style="text-decoration: none;color:black;">国内开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_BETA"
-                    style="text-decoration: none;color:black;">国际开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_STABLE"
-                    style="text-decoration: none;color:black;">国内稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_STABLE"
-                    style="text-decoration: none;color:black;">国际稳定版</a></button>
-        </div>
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#GB_BETA" class="mdui-ripple">国际开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
     </div>
-
-    <div class="mdui-container-fluid" id="CN_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
-                        <th class="mdui-text-color-red">国内开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="mdui-hidden">
                         <td>37</td>
                         <td>MIUI10</td>
                         <td>9.9.3</td>
@@ -378,7 +368,7 @@
                         <td><a href="http://bigota.d.miui.com/9.4.12/miui_MIMIX3_9.4.12_a5ca82ab8a_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_9.4.12_a5ca82ab8a_9.0.zip</a>
                         </td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>20</td>
@@ -423,7 +413,7 @@
                         <td>9.0 Pie</td>
                         <td><a href="http://bigota.d.miui.com/9.3.7/miui_MIMIX3_9.3.7_9315814651_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_9.3.7_9315814651_9.0.zip</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                                <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>16</td>
@@ -432,7 +422,7 @@
                         <td>9.0 Pie</td>
                         <td><a href="p://bigota.d.miui.com/9.3.1/miui_MIMIX3_9.3.1_bef99256c2_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_9.3.1_bef99256c2_9.0.zip</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                                <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>15</td>
@@ -501,7 +491,7 @@
                         <td>9.0 Pie</td>
                         <td><a href="http://bigota.d.miui.com/9.1.2/miui_MIMIX3_9.1.2_d246aba5b4_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_9.1.2_d246aba5b4_9.0.zip</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                                <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>9</td>
@@ -511,7 +501,7 @@
                         <td><a href="http://bigota.d.miui.com/8.12.27/miui_MIMIX3_8.12.27_8c55f33375_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_8.12.27_8c55f33375_9.0.zip</a>
                         </td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>8</td>
@@ -521,7 +511,7 @@
                         <td><a href="http://bigota.d.miui.com/8.12.20/miui_MIMIX3_8.12.20_f160ca90f6_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_8.12.20_f160ca90f6_9.0.zip</a>
                         </td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>7</td>
@@ -555,7 +545,7 @@
                         <td><a href="http://bigota.d.miui.com/8.11.30/miui_MIMIX3_8.11.30_78ef7070ec_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_8.11.30_78ef7070ec_9.0.zip</a>
                         </td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>4</td>
@@ -565,7 +555,7 @@
                         <td><a href="http://bigota.d.miui.com/8.11.23/miui_MIMIX3_8.11.23_97bbcb1c5a_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_8.11.23_97bbcb1c5a_9.0.zip</a>
                         </td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>3</td>
@@ -575,7 +565,7 @@
                         <td><a href="http://bigota.d.miui.com/8.11.15/miui_MIMIX3_8.11.15_446352b4bb_9.0.zip"
                                 style="text-decoration: none;color:black;">miui_MIMIX3_8.11.15_446352b4bb_9.0.zip</a>
                         </td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -599,25 +589,27 @@
                                 style="text-decoration: none;color:black;">perseus_images_8.10.25_20181025.0000.00_9.0_cn_949bc78b5e.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
-
-    <div class="mdui-container-fluid" id="GB_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="GB_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>11</td>
                         <td>MIUI10</td>
@@ -750,24 +742,26 @@
                                 style="text-decoration: none;color:black;">perseus_global_images_9.3.14_20190314.0000.00_9.0_global_b0cf364048.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
-
-    <div class="mdui-container-fluid" id="CN_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>9</td>
                         <td>#</td>
@@ -861,25 +855,26 @@
                                 style="text-decoration: none;color:black;">perseus_images_V10.0.9.0.PEECNFH_20181102.0000.00_9.0_cn_0a75ac667d.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
-
     </div>
-
-    <div class="mdui-container-fluid" id="GB_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>7</td>
                         <td>#</td>
@@ -951,10 +946,11 @@
                         </td>
                         <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
     </div>
 
     <!-- 由此向下区域为底部Footer的内容 -->

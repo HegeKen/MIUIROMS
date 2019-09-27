@@ -20,7 +20,7 @@
     <title>小米9(cepheus)官方ROM合集 --By 海力力。</title>
 </head>
 
-<body>
+<body  class="mdui-bottom-nav-fixed">
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -61,8 +61,8 @@
                         <li class="mdui-list-item mdui-ripple"><a href="equuleus.html">小米8屏幕指纹版(equuleus)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="sirius.html">小米8 SE(sirius)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="platina.html">小米8青春版(platina)</a></li>
-                        <li class="mdui-list-item mdui-ripple mdui-list-item-active"><a
-                                href="cepheus.html">小米9/透明版(cepheus)</a></li>
+                        <li class="mdui-list-item mdui-ripple mdui-list-item-active"><a href="cepheus.html">小米9/透明版(cepheus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="crux.html">小米9 Pro 5G(crux)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="grus.html">小米9 SE(grus)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="pyxis.html">小米CC9(pyxis)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="vela.html">小米CC9美图定制版(vela)</a></li>
@@ -133,7 +133,7 @@
             <div class="mdui-panel-item-body">
                 <ol>
                     <li>机型：小米9 代号：cepheus</li>
-                    <li>此次更新项目：9.8.22</li>
+                    <li>此次更新项目：稳定版V10.2.35.0.PFACNXM</li>
                     <li>特别感谢：<a href="http://www.miui.com/space-uid-241490365.html"
                             style="text-decoration: none;color:blue;">a121104083</a></li>
                     <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/"
@@ -152,47 +152,31 @@
     </div>
 
     <!-- 由此向下区域为ROM的正式内容 -->
-    <div class="mdui-row-xs-6 mdui-row-gapless">
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_BETA"
-                    style="text-decoration: none;color:black;">国内开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_BETA"
-                    style="text-decoration: none;color:black;">国际开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_STABLE"
-                    style="text-decoration: none;color:black;">国内稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_STABLE"
-                    style="text-decoration: none;color:black;">国际稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#EEA_STABLE"
-                    style="text-decoration: none;color:black;">EEA稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#RU_STABLE"
-                    style="text-decoration: none;color:black;">俄罗斯稳定版</a></button>
-        </div>
-    </div>
 
-    <div class="mdui-container-fluid" id="CN_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#GB_BETA" class="mdui-ripple">国际开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
+        <a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a>
+        <a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+							<th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>18</td>
                         <td>MIUI11</td>
@@ -399,25 +383,27 @@
                                 style="text-decoration: none;color:black;">cepheus_images_9.3.14_20190314.0000.00_9.0_cn_3d5d55ae73.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
-
-    <div class="mdui-container-fluid" id="GB_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="GB_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际开发版</th>
+                            <th>MIUI版本</th>
+							<th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>12</td>
                         <td>MIUI10</td>
@@ -554,30 +540,53 @@
                                 style="text-decoration: none;color:black;">cepheus_global_images_9.3.1_20190301.0000.00_9.0_global_cdb3885bac.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
-
-    <div class="mdui-container-fluid" id="CN_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>8</td>
                         <td>#</td>
                         <td>9.0 Pie</td>
                         <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
                         <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>8</td>
+                        <td>#</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>8</td>
+                        <td>#</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>8</td>
+                        <td>V10.2.35.0.PFACNXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.35.0.PFACNXM/miui_CEPHEUS_V10.2.35.0.PFACNXM_9959298730_9.0.zip" style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.35.0.PFACNXM_9959298730_9.0.zip</a></td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.35.0.PFACNXM/cepheus_images_V10.2.35.0.PFACNXM_20190827.0000.00_9.0_cn_38167825a8.tgz" style="text-decoration: none;color:black;">cepheus_images_V10.2.35.0.PFACNXM_20190827.0000.00_9.0_cn_38167825a8.tgz</a></td>
                     </tr>
                     <tr>
                         <td>7</td>
@@ -628,7 +637,7 @@
                         <td>V10.2.15.0.PFACNXM</td>
                         <td>9.0 Pie</td>
                         <td><a href="http://bigota.d.miui.com/V10.2.15.0.PFACNXM/miui_CEPHEUS_V10.2.15.0.PFACNXM_72af81f349_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.15.0.PFACNXM_72af81f349_9.0.zipmiui_CEPHEUS_V10.2.15.0.PFACNXM_72af81f349_9.0.zip</a>
+                                style="text-decoration: none;color:black;">miui_CEPHEUS_V10.2.15.0.PFACNXM_72af81f349_9.0.zip</a>
                         </td>
                         <td><a href="http://bigota.d.miui.com/V10.2.15.0.PFACNXM/cepheus_images_V10.2.15.0.PFACNXM_20190309.0000.00_9.0_cn_a1f6526f5f.tgz"
                                 style="text-decoration: none;color:black;">cepheus_images_V10.2.15.0.PFACNXM_20190309.0000.00_9.0_cn_a1f6526f5f.tgz</a>
@@ -654,25 +663,26 @@
                         </td>
                         <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
-
     </div>
-
-    <div class="mdui-container-fluid" id="GB_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>7</td>
                         <td>#</td>
@@ -742,26 +752,26 @@
                                 style="text-decoration: none;color:black;">cepheus_global_images_V10.2.3.0.PFAMIXM_20190309.0000.00_9.0_global_ab3e2a70a8.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
-
     </div>
-
-    <div class="mdui-container-fluid" id="EEA_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">EEA稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-
+    <div id="EEA_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">EEA稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>10</td>
                         <td>#</td>
@@ -864,25 +874,26 @@
                                 style="text-decoration: none;color:black;">cepheus_eea_global_images_V10.2.12.0.PFAEUXM_20190226.0000.00_9.0_eea_1c4053f6f6.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
-
     </div>
-
-    <div class="mdui-container-fluid" id="RU_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">俄罗斯稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="RU_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">俄罗斯稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>5</td>
                         <td>#</td>
@@ -930,11 +941,13 @@
                         </td>
                         <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
     </div>
+    <div><br><br><br><br></div>
 
     <!-- 由此向下区域为底部Footer的内容 -->
 

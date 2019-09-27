@@ -20,7 +20,7 @@
     <title>Redmi Note 7(lavender)官方ROM合集 --By 海力力。</title>
 </head>
 
-<body>
+<body class="mdui-bottom-nav-fixed">
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -62,6 +62,7 @@
                         <li class="mdui-list-item mdui-ripple"><a href="sirius.html">小米8 SE(sirius)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="platina.html">小米8青春版(platina)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="cepheus.html">小米9/透明版(cepheus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="crux.html">小米9 Pro 5G(crux)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="grus.html">小米9 SE(grus)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="pyxis.html">小米CC9(pyxis)</a></li>
                         <li class="mdui-list-item mdui-ripple"><a href="vela.html">小米CC9美图定制版(vela)</a></li>
@@ -150,51 +151,31 @@
     </div>
 
     <!-- 由此向下区域为ROM的正式内容 -->
-    <div class="mdui-row-xs-6 mdui-row-gapless">
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_BETA"
-                    style="text-decoration: none;color:black;">国内开发版</a></button>
-        </div>
-        <div class="mdui-col mdui-hidden">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_BETA"
-                    style="text-decoration: none;color:black;">国际开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_STABLE"
-                    style="text-decoration: none;color:black;">国内稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_STABLE"
-                    style="text-decoration: none;color:black;">国际稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#EEA_STABLE"
-                    style="text-decoration: none;color:black;">EEA稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#IN_STABLE"
-                    style="text-decoration: none;color:black;">印度稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#RU_STABLE"
-                    style="text-decoration: none;color:black;">俄罗斯稳定版</a></button>
-        </div>
-    </div>
 
-    <div class="mdui-container-fluid" id="CN_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
+        <a href="#IN_STABLE" class="mdui-ripple">印度稳定版</a>
+        <a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a>
+        <a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+							<th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>28</td>
                         <td>MIUI10</td>
@@ -515,50 +496,26 @@
                         </td>
                         <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
-
-    <div class="mdui-container-fluid mdui-hidden" id="GB_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid" id="CN_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>11</td>
                         <td>#</td>
@@ -672,25 +629,26 @@
                                 style="text-decoration: none;color:black;">lavender_images_V10.2.3.0.PFGCNXM_20181228.0000.00_9.0_cn_9f8f427fb4.tgz</a>
                         </td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
-
     </div>
-
-    <div class="mdui-container-fluid" id="GB_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>9</td>
                         <td>#</td>
@@ -778,24 +736,124 @@
                         </td>
                         <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
     </div>
-    <div class="mdui-container-fluid" id="EEA_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">EEA稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
+    <div id="IN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">印度稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="mdui-hidden">
+                        <td>8</td>
+                        <td>#</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
+                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
                     </tr>
-                </thead>
-                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>V10.3.7.0.PFGINXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFGINXM/miui_LAVENDERINGlobal_V10.3.7.0.PFGINXM_11bd4d8286_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.3.7.0.PFGINXM_11bd4d8286_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFGINXM/lavender_in_global_images_V10.3.7.0.PFGINXM_20190809.0000.00_9.0_in_1f7ab46d15.tgz"
+                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.3.7.0.PFGINXM_20190809.0000.00_9.0_in_1f7ab46d15.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>V10.3.6.0.PFGINXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFGINXM/miui_LAVENDERINGlobal_V10.3.6.0.PFGINXM_7a59ebf942_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.3.6.0.PFGINXM_7a59ebf942_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFGINXM/lavender_in_global_images_V10.3.6.0.PFGINXM_20190716.0000.00_9.0_in_30084bcbb7.tgz"
+                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.3.6.0.PFGINXM_20190716.0000.00_9.0_in_30084bcbb7.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>V10.3.5.0.PFGINXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PFGINXM/miui_LAVENDERINGlobal_V10.3.5.0.PFGINXM_da89ac968b_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.3.5.0.PFGINXM_da89ac968b_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>V10.2.11.0.PFGINXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.11.0.PFGINXM_902c58efd1_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.11.0.PFGINXM_902c58efd1_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFGINXM/lavender_in_global_images_V10.2.11.0.PFGINXM_20190408.0000.00_9.0_in_91dd6449d7.tgz"
+                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.2.11.0.PFGINXM_20190408.0000.00_9.0_in_91dd6449d7.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>V10.2.10.0.PFGINXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.10.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.10.0.PFGINXM_ced65b4198_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.10.0.PFGINXM_ced65b4198_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>V10.2.7.0.PFGINXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.7.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.7.0.PFGINXM_1b0374cd32_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.7.0.PFGINXM_1b0374cd32_9.0.zip</a>
+                        </td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.7.0.PFGINXM/lavender_in_global_images_V10.2.7.0.PFGINXM_20190307.0000.00_9.0_in_476d85c791.tgz"
+                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.2.7.0.PFGINXM_20190307.0000.00_9.0_in_476d85c791.tgz</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>V10.2.6.0.PFGINXM</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="http://bigota.d.miui.com/V10.2.6.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.6.0.PFGINXM_123bf6debe_9.0.zip"
+                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.6.0.PFGINXM_123bf6debe_9.0.zip</a>
+                        </td>
+                        <td style="text-decoration: none;color:black;">未发布</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div id="EEA_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">EEA稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>10</td>
                         <td>#</td>
@@ -892,120 +950,26 @@
                         </td>
                         <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
 
-    </div>
-    <div class="mdui-container-fluid" id="IN_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">印度稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="mdui-hidden">
-                        <td>8</td>
-                        <td>#</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>V10.3.7.0.PFGINXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFGINXM/miui_LAVENDERINGlobal_V10.3.7.0.PFGINXM_11bd4d8286_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.3.7.0.PFGINXM_11bd4d8286_9.0.zip</a>
-                        </td>
-                        <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFGINXM/lavender_in_global_images_V10.3.7.0.PFGINXM_20190809.0000.00_9.0_in_1f7ab46d15.tgz"
-                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.3.7.0.PFGINXM_20190809.0000.00_9.0_in_1f7ab46d15.tgz</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>V10.3.6.0.PFGINXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFGINXM/miui_LAVENDERINGlobal_V10.3.6.0.PFGINXM_7a59ebf942_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.3.6.0.PFGINXM_7a59ebf942_9.0.zip</a>
-                        </td>
-                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFGINXM/lavender_in_global_images_V10.3.6.0.PFGINXM_20190716.0000.00_9.0_in_30084bcbb7.tgz"
-                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.3.6.0.PFGINXM_20190716.0000.00_9.0_in_30084bcbb7.tgz</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>V10.3.5.0.PFGINXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PFGINXM/miui_LAVENDERINGlobal_V10.3.5.0.PFGINXM_da89ac968b_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.3.5.0.PFGINXM_da89ac968b_9.0.zip</a>
-                        </td>
-                        <td style="text-decoration: none;color:black;">未发布</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>V10.2.11.0.PFGINXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.11.0.PFGINXM_902c58efd1_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.11.0.PFGINXM_902c58efd1_9.0.zip</a>
-                        </td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFGINXM/lavender_in_global_images_V10.2.11.0.PFGINXM_20190408.0000.00_9.0_in_91dd6449d7.tgz"
-                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.2.11.0.PFGINXM_20190408.0000.00_9.0_in_91dd6449d7.tgz</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>V10.2.10.0.PFGINXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.10.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.10.0.PFGINXM_ced65b4198_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.10.0.PFGINXM_ced65b4198_9.0.zip</a>
-                        </td>
-                        <td style="text-decoration: none;color:black;">未发布</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>V10.2.7.0.PFGINXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.7.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.7.0.PFGINXM_1b0374cd32_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.7.0.PFGINXM_1b0374cd32_9.0.zip</a>
-                        </td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.7.0.PFGINXM/lavender_in_global_images_V10.2.7.0.PFGINXM_20190307.0000.00_9.0_in_476d85c791.tgz"
-                                style="text-decoration: none;color:black;">lavender_in_global_images_V10.2.7.0.PFGINXM_20190307.0000.00_9.0_in_476d85c791.tgz</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>V10.2.6.0.PFGINXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.6.0.PFGINXM/miui_LAVENDERINGlobal_V10.2.6.0.PFGINXM_123bf6debe_9.0.zip"
-                                style="text-decoration: none;color:black;">miui_LAVENDERINGlobal_V10.2.6.0.PFGINXM_123bf6debe_9.0.zip</a>
-                        </td>
-                        <td style="text-decoration: none;color:black;">未发布</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
-
     </div>
-    <div class="mdui-container-fluid" id="RU_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">俄罗斯稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <div id="RU_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">俄罗斯稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr class="mdui-hidden">
                         <td>7</td>
                         <td>#</td>
@@ -1077,11 +1041,13 @@
                         </td>
                         <td style="text-decoration: none;color:black;">未发布</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
 
+        </div>
     </div>
+    <div><br><br><br><br></div>
 
     <!-- 由此向下区域为底部Footer的内容 -->
 
