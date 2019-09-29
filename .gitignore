@@ -1,4 +1,4 @@
 node_modules
 view/test
 devices/template.html
-view/bin.html
+bin.html
