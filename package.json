@@ -7,7 +7,7 @@
     "deploy": "gh-pages -d view"
   },
   "keywords": [],
-  "author": "",
+  "author": "海格Hege",
   "license": "ISC",
   "homepage": "https://roms.miuier.com/",
   "dependencies": {
