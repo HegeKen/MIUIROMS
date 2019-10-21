@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <title>开发版内测收录站 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-collapse-item">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content">小米机型</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/capricorn.html">小米5S(capricorn)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/natrium.html">小米5S Plus(natrium)</a>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/tiffany.html">小米5X(tiffany)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/meri.html">小米5C(meri)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/sagit.html">小米6(sagit)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/wayne.html">小米6X(wayne)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/dipper.html">小米8(dipper)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/ursa.html">小米8探索版(ursa)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/equuleus.html">小米8屏幕指纹版(equuleus)</a>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/sirius.html">小米8 SE(sirius)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/platina.html">小米8青春版(platina)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/cepheus.html">小米9/透明版(cepheus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/crux.html">小米9 Pro 5G(crux)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/grus.html">小米9 SE(grus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/pyxis.html">小米CC9(pyxis)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/vela.html">小米CC9美图定制版(vela)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/laurus.html">小米CC9e(laurus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/oxygen.html">小米Max 2(oxygen)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/nitrogen.html">小米Max 3(nitrogen)</a>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/lotus.html">小米Play(lotus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/scorpio.html">小米Note 2(scorpio)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/jason.html">小米Note 3(jason)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/lithium.html">小米MIX(lithium)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/chiron.html">小米MIX 2(chiron)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/polaris.html">小米MIX 2S(polaris)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/perseus.html">小米MIX 3(perseus)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/cappu.html">小米平板3(cappu)</a></li>
+                        <li class="mdui-list-item mdui-ripple"><a href="devices/clover.html">小米平板4/Plus(clover)</a></li>
+                    </ul>
+                </li>
+
+                <li class="mdui-collapse-item">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content">Redmi 机型</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/santoni.html">红米4X(santoni)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/rosy.html">红米5(rosy)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/riva.html">红米5A(riva)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/vince.html">红米5 Plus(vince)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/cereus.html">红米6(cereus)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/cactus.html">红米6A(cactus)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/sakura.html">红米6 Pro(sakura)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/onclite.html">Redmi 7(onclite)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/pine.html">Redmi 7A(pine)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/olive.html">Redmi 8(olive)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/olivelite.html">Redmi 8A(olivelite)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/ysl.html">红米S2(ysl)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/mido.html">红米Note 4X(高通平台)(mido)</a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/whyred.html">红米Note 5(whyred)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/ugglite.html">红米Note 5A 标准版(ugglite)</a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/ugg.html">红米Note 5A 高配版(ugg)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/lavender.html">Redmi Note
+                                    7(lavender)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/violet.html">Redmi Note 7
+                                    Pro(violet)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/ginkgo.html">Redmi Note 8(ginkgo)</a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/begonia.html">Redmi Note 8
+                                    Pro(begonia)</a></li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/davinci.html">Redmi K20(davinci)</a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/raphael.html">Redmi K20 Pro(raphael)</a>
+                            </li>
+                            <li class="mdui-list-item mdui-ripple"><a href="devices/raphaels.html">Redmi K20
+                                    Pro尊享版(raphaels)</a></li>
+                    </ul>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">fiber_new</i>
+                    <div class="mdui-list-item-content"><a href="bin.html">回收站</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
+                    <div class="mdui-list-item-content"><a href="recruit.html">诚招群员</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                        <div class="mdui-list-item-content"><a href="thanks.html">衷心感谢</a></div>
+                    </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class "mdui-container">
+        <div class="mdui-panel mdui-panel-gapless">
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header mdui-text-color-red">页面说明</div>
+                <div class="mdui-panel-item-body">
+                    <ul>
+                        <li>出于各种原因，请不要外传本页面链接!</li>
+                        <li>本页面收录开发版内测链接,能想到最有用的用途就是,某天的内测续航等表现很好,希望保存一下,以供以后养老用;</li>
+                    </ul>
+                </div>
+                <div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+                        <div class="mdui-panel-item">
+                            <div class="mdui-panel-item-header mdui-text-color-red">MIUI11 9.10.21</div>
+                            <div class="mdui-panel-item-body">
+                                <div class="mdui-table-fluid">
+                                    <table class="mdui-table">
+                                        <thead>
+                                            <tr>
+                                                <th>机型</th>
+                                                <th>版本</th>
+                                                <th>安卓版本</th>
+                                                <th>卡刷包</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>小米6(sagit)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="https://hugeota.d.miui.com/9.10.21/miui_MI6_9.10.21_a9e7dd929f_9.0.zip" style="text-decoration: none;color:black;">miui_MI6_9.10.21_a9e7dd929f_9.0.zip</a></td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米6X(wayne)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>小米8(dipper)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="http://hugeota.d.miui.com/9.10.21/miui_MI8_9.10.21_f2cf05316a_10.0.zip" style="text-decoration: none;color:black;">miui_MI8_9.10.21_f2cf05316a_10.0.zip</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米8探索版(ursa)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小米8屏幕指纹版(equuleus)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="https://hugeota.d.miui.com/9.10.21/miui_MI8UD_9.10.21_2efd65aaa0_10.0.zip" style="text-decoration: none;color:black;">miui_MI8UD_9.10.21_2efd65aaa0_10.0.zip</a></td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米8 SE(sirius)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a></td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米8青春版(platina)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米9/透明版(cepheus)</td>
+                                                <td>9.9.27</td>
+                                                <td>10.0</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a></td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米9 Pro 5G(crux)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米9 SE(grus)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a></td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米CC9(pyxis)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米CC9美图定制版(vela)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米CC9e(laurus)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米Max 3(nitrogen)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米Play(lotus)</td>
+                                                <td>9.10.21</td>
+                                                <td>8.1 Oreo</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小米Note 3(jason)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="https://hugeota.d.miui.com/9.10.21/miui_MINote3_9.10.21_db875c453a_9.0.zip" style="text-decoration: none;color:black;">miui_MINote3_9.10.21_db875c453a_9.0.zip</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米MIX 2(chiron)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小米MIX 2S(polaris)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="https://bigota.d.miui.com/9.10.21/miui_MIMIX2S_9.10.21_2578536973_10.0.zip" style="text-decoration: none;color:black;">miui_MIMIX2S_9.10.21_2578536973_10.0.zip</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>小米MIX 3(perseus)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="https://hugeota.d.miui.com/9.10.21/miui_MIMIX3_9.10.21_570f74da93_10.0.zip" style="text-decoration: none;color:black;">miui_MIMIX3_9.10.21_570f74da93_10.0.zip</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>小米平板4/Plus(clover)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>红米6(cereus)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>红米6A(cactus)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>红米6 Pro(sakura)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi 7(onclite)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi 7A(pine)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>红米Note 5(whyred)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi Note 7(lavender)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi Note 7 Pro(violet)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi Note 8(ginkgo)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi Note 8 Pro(begonia)</td>
+                                                <td>9.10.21</td>
+                                                <td>9.0 Pie</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Redmi K20(davinci)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="https://hugeota.d.miui.com/9.10.21/miui_DAVINCI_9.10.21_938ec5324a_10.0.zip" style="text-decoration: none;color:black;">miui_DAVINCI_9.10.21_938ec5324a_10.0.zip</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi K20 Pro(raphael)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="mdui-hidden">
+                                                <td>Redmi K20 Pro尊享版(raphaels)</td>
+                                                <td>9.10.21</td>
+                                                <td>10.0</td>
+                                                <td><a href="TEXT_HERE" style="text-decoration: none;color:black;">TEXT_HERE</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+                <script
+                    type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </div>
+            <div style=" position:absolute; right:20px;bottom: 5px;">
+                <script
+                    type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+            </div>
+        </div>
+        </footer>
+        <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+            style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                    style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>
