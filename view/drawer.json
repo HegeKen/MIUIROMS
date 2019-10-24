@@ -1,0 +1,25 @@
+{
+"drawer":{
+    "homepage":"首页",
+    "tutorial":"刷机教程",
+    "logs":"查看日志",
+    "midevices":"小米机型",
+    "redmidevices":"Redmi机型",
+    "bin":"开发版",
+    "recruit":"诚心招募",
+    "thanks":"衷心感谢",
+    "sitelog":"站点日志"
+},
+"drawerPro":{
+    "homepage":"首页",
+    "tutorial":"刷机教程",
+    "logs":"查看日志",
+    "midevices":"小米机型",
+    "redmidevices":"Redmi机型",
+    "recruit":"诚心招募",
+    "bin":"开发版",
+    "beta":"内测版",
+    "thanks":"衷心感谢",
+    "sitelog":"站点日志"
+}
+}
