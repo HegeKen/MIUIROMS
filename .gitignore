@@ -1,8 +1,10 @@
 node_modules
 miuirom
-view/test
+view/test.html
+view/view.zip
 view/templates
 view/aspnet_client
 view/monthly
 view/weekly
 view/crawler
+view/images
