@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+            li a {
+                text-decoration: none;
+                color: blue;
+            }
+    
+            td a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    <title>小米5S(capricorn)官方ROM合集 --By 海力力。</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-panel mdui-panel-gapless">
+        <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
+            <div class="mdui-panel-item-body">
+                <ol>
+                    <li>机型：小米5S 代号：capricorn</li>
+                    <li>此次更新项目：MIUI11 9.10.10</li>
+                    <li>特别感谢：<a href ="http://www.miui.com/space-uid-329774665.html">@七剑侠第二代</a></li>
+                    <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
+                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
+                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
+                    <li>官方刷机工具：<a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip">MiFlash 最新版(2018.5.28)</a>, <a href="https://pan.baidu.com/s/1rR58JraOPJq6R5qOGP_aOw">小米助手 3.0 beta版</a></li>
+                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为ROM的正式内容 -->
+
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#GB_BETA" class="mdui-ripple mdui-hidden">国际开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple mdui-hidden">国际稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>111</td>
+                            <td>MIUI11</td>
+                            <td>9.10.10</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="https://bigota.d.miui.com/9.10.10/miui_MI5S_9.10.10_de79f43db0_8.0.zip">miui_MI5S_9.10.10_de79f43db0_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>110</td>
+                            <td>MIUI11</td>
+                            <td>9.9.26</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5S_9.9.26_9274a709a1_8.0.zip">miui_MI5S_9.9.26_9274a709a1_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>109</td>
+                            <td>MIUI10</td>
+                            <td>9.8.29</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/miui_MI5S_9.8.29_ef993ddd7f_8.0.zip">miui_MI5S_9.8.29_ef993ddd7f_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/capricorn_images_9.8.29_20190829.0000.00_8.0_cn_22fb6f3427.tgz">capricorn_images_9.8.29_20190829.0000.00_8.0_cn_22fb6f3427.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>108</td>
+                            <td>MIUI10</td>
+                            <td>9.8.22</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.22/miui_MI5S_9.8.22_beb22c3e61_8.0.zip">miui_MI5S_9.8.22_beb22c3e61_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.22/capricorn_images_9.8.22_20190822.0000.00_8.0_cn_79a0d6ecad.tgz">capricorn_images_9.8.22_20190822.0000.00_8.0_cn_79a0d6ecad.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>107</td>
+                            <td>MIUI10</td>
+                            <td>9.8.15</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/miui_MI5S_9.8.15_e8e0af3d06_8.0.zip">miui_MI5S_9.8.15_e8e0af3d06_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/capricorn_images_9.8.15_20190815.0000.00_8.0_cn_648a3d1c09.tgz">capricorn_images_9.8.15_20190815.0000.00_8.0_cn_648a3d1c09.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>106</td>
+                            <td>MIUI10</td>
+                            <td>9.8.8</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.8/miui_MI5S_9.8.8_d267aa841f_8.0.zip">miui_MI5S_9.8.8_d267aa841f_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.8/capricorn_images_9.8.8_20190808.0000.00_8.0_cn_be67da70a4.tgz">capricorn_images_9.8.8_20190808.0000.00_8.0_cn_be67da70a4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>105</td>
+                            <td>MIUI10</td>
+                            <td>9.8.1</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/miui_MI5S_9.8.1_bef12d298a_8.0.zip">miui_MI5S_9.8.1_bef12d298a_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/capricorn_images_9.8.1_20190801.0000.00_8.0_cn_8bc33df422.tgz">capricorn_images_9.8.1_20190801.0000.00_8.0_cn_8bc33df422.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>MIUI10</td>
+                            <td>9.7.25</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/miui_MI5S_9.7.25_385677d302_8.0.zip">miui_MI5S_9.7.25_385677d302_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/capricorn_images_9.7.25_20190725.0000.00_8.0_cn_ba929161dc.tgz">capricorn_images_9.7.25_20190725.0000.00_8.0_cn_ba929161dc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>MIUI10</td>
+                            <td>9.7.18</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/miui_MI5S_9.7.18_0835a4728b_8.0.zip">miui_MI5S_9.7.18_0835a4728b_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/capricorn_images_9.7.18_20190718.0000.00_8.0_cn_6c925915ef.tgz">capricorn_images_9.7.18_20190718.0000.00_8.0_cn_6c925915ef.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>MIUI10</td>
+                            <td>9.7.11</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/miui_MI5S_9.7.11_1c021cb4e9_8.0.zip">miui_MI5S_9.7.11_1c021cb4e9_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/capricorn_images_9.7.11_20190711.0000.00_8.0_cn_43a42ad977.tgz">capricorn_images_9.7.11_20190711.0000.00_8.0_cn_43a42ad977.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>MIUI10</td>
+                            <td>9.7.4</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/miui_MI5S_9.7.4_51637aec57_8.0.zip">miui_MI5S_9.7.4_51637aec57_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/capricorn_images_9.7.4_20190704.0000.00_8.0_cn_93b1c67e7c.tgz">capricorn_images_9.7.4_20190704.0000.00_8.0_cn_93b1c67e7c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>MIUI10</td>
+                            <td>9.6.27</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_MI5S_9.6.27_8cfd7b17a6_8.0.zip">miui_MI5S_9.6.27_8cfd7b17a6_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/capricorn_images_9.6.27_20190627.0000.00_8.0_cn_659633cc3f.tgz">capricorn_images_9.6.27_20190627.0000.00_8.0_cn_659633cc3f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td>MIUI10</td>
+                            <td>9.6.20</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_MI5S_9.6.20_a075b5384f_8.0.zip">miui_MI5S_9.6.20_a075b5384f_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/capricorn_images_9.6.20_20190620.0000.00_8.0_cn_faf2db584f.tgz">capricorn_images_9.6.20_20190620.0000.00_8.0_cn_faf2db584f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>98</td>
+                            <td>MIUI10</td>
+                            <td>9.6.13</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_MI5S_9.6.13_dd2f7c998a_8.0.zip">miui_MI5S_9.6.13_dd2f7c998a_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>97</td>
+                            <td>MIUI10</td>
+                            <td>9.5.30</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/miui_MI5S_9.5.30_016f871ef7_8.0.zip">miui_MI5S_9.5.30_016f871ef7_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/capricorn_images_9.5.30_20190530.0000.00_8.0_cn_cce9f915fc.tgz">capricorn_images_9.5.30_20190530.0000.00_8.0_cn_cce9f915fc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>96</td>
+                            <td>MIUI10</td>
+                            <td>9.5.23</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/miui_MI5S_9.5.23_550b75f215_8.0.zip">miui_MI5S_9.5.23_550b75f215_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/capricorn_images_9.5.23_20190523.0000.00_8.0_cn_ca65f1088a.tgz">capricorn_images_9.5.23_20190523.0000.00_8.0_cn_ca65f1088a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>95</td>
+                            <td>MIUI10</td>
+                            <td>9.5.16</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/miui_MI5S_9.5.16_151789ecc1_8.0.zip">miui_MI5S_9.5.16_151789ecc1_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/capricorn_images_9.5.16_20190516.0000.00_8.0_cn_4809a61443.tgz">capricorn_images_9.5.16_20190516.0000.00_8.0_cn_4809a61443.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>94</td>
+                            <td>MIUI10</td>
+                            <td>9.5.9</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/miui_MI5S_9.5.9_6754100b38_8.0.zip">miui_MI5S_9.5.9_6754100b38_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/capricorn_images_9.5.9_20190509.0000.00_8.0_cn_4ce63c896e.tgz">capricorn_images_9.5.9_20190509.0000.00_8.0_cn_4ce63c896e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>93</td>
+                            <td>MIUI10</td>
+                            <td>9.4.25</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/miui_MI5S_9.4.25_ea4ff30b29_8.0.zip">miui_MI5S_9.4.25_ea4ff30b29_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/capricorn_images_9.4.25_20190425.0000.00_8.0_cn_1b43544727.tgz">capricorn_images_9.4.25_20190425.0000.00_8.0_cn_1b43544727.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>92</td>
+                            <td>MIUI10</td>
+                            <td>9.4.18</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/miui_MI5S_9.4.18_fbb8bd7ea2_8.0.zip">miui_MI5S_9.4.18_fbb8bd7ea2_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/capricorn_images_9.4.18_20190418.0000.00_8.0_cn_8a9eeaea66.tgz">capricorn_images_9.4.18_20190418.0000.00_8.0_cn_8a9eeaea66.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>91</td>
+                            <td>MIUI10</td>
+                            <td>9.4.11</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.11/miui_MI5S_9.4.11_94136ed602_8.0.zip">miui_MI5S_9.4.11_94136ed602_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>90</td>
+                            <td>MIUI10</td>
+                            <td>9.3.28</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/miui_MI5S_9.3.28_f7a82da6fa_8.0.zip">miui_MI5S_9.3.28_f7a82da6fa_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/capricorn_images_9.3.28_20190328.0000.00_8.0_cn_38fe61b6ce.tgz">capricorn_images_9.3.28_20190328.0000.00_8.0_cn_38fe61b6ce.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>89</td>
+                            <td>MIUI10</td>
+                            <td>9.3.21</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/miui_MI5S_9.3.21_2a6dc05750_8.0.zip">miui_MI5S_9.3.21_2a6dc05750_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/capricorn_images_9.3.21_20190321.0000.00_8.0_cn_c1eb93a22a.tgz">capricorn_images_9.3.21_20190321.0000.00_8.0_cn_c1eb93a22a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>88</td>
+                            <td>MIUI10</td>
+                            <td>9.3.14</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/miui_MI5S_9.3.14_61874961e6_8.0.zip">miui_MI5S_9.3.14_61874961e6_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/capricorn_images_9.3.14_20190314.0000.00_8.0_cn_e40b42ed16.tgz">capricorn_images_9.3.14_20190314.0000.00_8.0_cn_e40b42ed16.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>87</td>
+                            <td>MIUI10</td>
+                            <td>9.3.7</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/miui_MI5S_9.3.7_4abc534301_8.0.zip">miui_MI5S_9.3.7_4abc534301_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>86</td>
+                            <td>MIUI10</td>
+                            <td>9.2.28</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/miui_MI5S_9.2.28_a01ff11f40_8.0.zip">miui_MI5S_9.2.28_a01ff11f40_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/capricorn_images_9.2.28_20190228.0000.00_8.0_cn_5d301ec55c.tgz">capricorn_images_9.2.28_20190228.0000.00_8.0_cn_5d301ec55c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>85</td>
+                            <td>MIUI10</td>
+                            <td>9.2.21</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/miui_MI5S_9.2.21_25fd5b14f3_8.0.zip">miui_MI5S_9.2.21_25fd5b14f3_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/capricorn_images_9.2.21_20190221.0000.00_8.0_cn_25cb938a24.tgz">capricorn_images_9.2.21_20190221.0000.00_8.0_cn_25cb938a24.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>84</td>
+                            <td>MIUI10</td>
+                            <td>9.2.15</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/miui_MI5S_9.2.15_c1581f0c15_8.0.zip">miui_MI5S_9.2.15_c1581f0c15_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/capricorn_images_9.2.15_20190215.0000.00_8.0_cn_10c4811040.tgz">capricorn_images_9.2.15_20190215.0000.00_8.0_cn_10c4811040.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>83</td>
+                            <td>MIUI10</td>
+                            <td>9.1.24</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/miui_MI5S_9.1.24_1e0b99966a_8.0.zip">miui_MI5S_9.1.24_1e0b99966a_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/capricorn_images_9.1.24_20190124.0000.00_8.0_cn_07455595fe.tgz">capricorn_images_9.1.24_20190124.0000.00_8.0_cn_07455595fe.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>82</td>
+                            <td>MIUI10</td>
+                            <td>9.1.17</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/miui_MI5S_9.1.17_09270404be_8.0.zip">miui_MI5S_9.1.17_09270404be_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/capricorn_images_9.1.17_20190117.0000.00_8.0_cn_faf603a856.tgz">capricorn_images_9.1.17_20190117.0000.00_8.0_cn_faf603a856.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>81</td>
+                            <td>MIUI10</td>
+                            <td>9.1.10</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/miui_MI5S_9.1.10_15aac58fb4_8.0.zip">miui_MI5S_9.1.10_15aac58fb4_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/capricorn_images_9.1.10_20190110.0000.00_8.0_cn_18b2b21d45.tgz">capricorn_images_9.1.10_20190110.0000.00_8.0_cn_18b2b21d45.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>MIUI10</td>
+                            <td>9.1.1</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.1/miui_MI5S_9.1.1_64245407b6_8.0.zip">miui_MI5S_9.1.1_64245407b6_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>79</td>
+                            <td>MIUI10</td>
+                            <td>8.12.20</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.20/miui_MI5S_8.12.20_b5dd9e3a3a_8.0.zip">miui_MI5S_8.12.20_b5dd9e3a3a_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>78</td>
+                            <td>MIUI10</td>
+                            <td>8.12.13</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/miui_MI5S_8.12.13_93f6803d5e_8.0.zip">miui_MI5S_8.12.13_93f6803d5e_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/capricorn_images_8.12.13_20181213.0000.00_8.0_cn_da4a4918cf.tgz">capricorn_images_8.12.13_20181213.0000.00_8.0_cn_da4a4918cf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>77</td>
+                            <td>MIUI10</td>
+                            <td>8.12.6</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/miui_MI5S_8.12.6_c315d2f0b8_8.0.zip">miui_MI5S_8.12.6_c315d2f0b8_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/capricorn_images_8.12.6_20181206.0000.00_8.0_cn_97f4068b68.tgz">capricorn_images_8.12.6_20181206.0000.00_8.0_cn_97f4068b68.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>76</td>
+                            <td>MIUI10</td>
+                            <td>8.11.29</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.29/miui_MI5S_8.11.29_ee857e14ae_8.0.zip">miui_MI5S_8.11.29_ee857e14ae_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td>MIUI10</td>
+                            <td>8.11.23</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.23/miui_MI5S_8.11.23_a7be19e9bc_8.0.zip">miui_MI5S_8.11.23_a7be19e9bc_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td>MIUI10</td>
+                            <td>8.11.15</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.15/miui_MI5S_8.11.15_480641e50c_8.0.zip">miui_MI5S_8.11.15_480641e50c_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td>MIUI10</td>
+                            <td>8.11.1</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.1/miui_MI5S_8.11.1_dbb7f75f8e_8.0.zip">miui_MI5S_8.11.1_dbb7f75f8e_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.1/capricorn_images_8.11.1_20181101.0000.00_8.0_cn_11b8630245.tgz">capricorn_images_8.11.1_20181101.0000.00_8.0_cn_11b8630245.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td>MIUI10</td>
+                            <td>8.10.25</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/miui_MI5S_8.10.25_72f1c1765d_8.0.zip">miui_MI5S_8.10.25_72f1c1765d_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/capricorn_images_8.10.25_20181025.0000.00_8.0_cn_e61342d3d5.tgz">capricorn_images_8.10.25_20181025.0000.00_8.0_cn_e61342d3d5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td>MIUI10</td>
+                            <td>8.10.18</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/miui_MI5S_8.10.18_60e4e58e26_8.0.zip">miui_MI5S_8.10.18_60e4e58e26_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/capricorn_images_8.10.18_20181018.0000.00_8.0_cn_9ea53c5dda.tgz">capricorn_images_8.10.18_20181018.0000.00_8.0_cn_9ea53c5dda.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>MIUI10</td>
+                            <td>8.9.13</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/miui_MI5S_8.9.13_6fbcc17f3d_7.0.zip">miui_MI5S_8.9.13_6fbcc17f3d_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/capricorn_images_8.9.13_20180913.0000.00_7.0_cn_db77d28b83.tgz">capricorn_images_8.9.13_20180913.0000.00_7.0_cn_db77d28b83.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td>MIUI10</td>
+                            <td>8.9.6</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/miui_MI5S_8.9.6_62faf1bb44_7.0.zip">miui_MI5S_8.9.6_62faf1bb44_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/capricorn_images_8.9.6_20180906.0000.00_7.0_cn_b58bb7b27c.tgz">capricorn_images_8.9.6_20180906.0000.00_7.0_cn_b58bb7b27c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>MIUI10</td>
+                            <td>8.8.30</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/miui_MI5S_8.8.30_eef5001274_7.0.zip">miui_MI5S_8.8.30_eef5001274_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/capricorn_images_8.8.30_20180830.0000.00_7.0_cn_563885a0d8.tgz">capricorn_images_8.8.30_20180830.0000.00_7.0_cn_563885a0d8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>MIUI10</td>
+                            <td>8.8.23</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/miui_MI5S_8.8.23_c85d42e7ee_7.0.zip">miui_MI5S_8.8.23_c85d42e7ee_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/capricorn_images_8.8.23_20180823.0000.00_7.0_cn_4626f49971.tgz">capricorn_images_8.8.23_20180823.0000.00_7.0_cn_4626f49971.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td>MIUI10</td>
+                            <td>8.8.16</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/miui_MI5S_8.8.16_403caebc34_7.0.zip">miui_MI5S_8.8.16_403caebc34_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/capricorn_images_8.8.16_20180816.0000.00_7.0_cn_c1d9261bde.tgz">capricorn_images_8.8.16_20180816.0000.00_7.0_cn_c1d9261bde.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>MIUI10</td>
+                            <td>8.8.9</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/miui_MI5S_8.8.9_34fe9275b7_7.0.zip">miui_MI5S_8.8.9_34fe9275b7_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/capricorn_images_8.8.9_20180809.0000.00_7.0_cn_b7046acef4.tgz">capricorn_images_8.8.9_20180809.0000.00_7.0_cn_b7046acef4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>MIUI10</td>
+                            <td>8.8.3</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/miui_MI5S_8.8.3_ba0cf6a9cd_7.0.zip">miui_MI5S_8.8.3_ba0cf6a9cd_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/capricorn_images_8.8.3_20180802.0000.00_7.0_cn_894baa5d16.tgz">capricorn_images_8.8.3_20180802.0000.00_7.0_cn_894baa5d16.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>MIUI10</td>
+                            <td>8.7.26</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/miui_MI5S_8.7.26_2bec553365_7.0.zip">miui_MI5S_8.7.26_2bec553365_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/capricorn_images_8.7.26_20180726.0000.00_7.0_cn_c5f7a1ace5.tgz">capricorn_images_8.7.26_20180726.0000.00_7.0_cn_c5f7a1ace5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>MIUI10</td>
+                            <td>8.7.12</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/miui_MI5S_8.7.12_5457caead4_7.0.zip">miui_MI5S_8.7.12_5457caead4_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/capricorn_images_8.7.12_20180712.0000.00_7.0_cn_8189b82790.tgz">capricorn_images_8.7.12_20180712.0000.00_7.0_cn_8189b82790.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>MIUI9</td>
+                            <td>8.4.26</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/miui_MI5S_8.4.26_46a8801852_7.0.zip">miui_MI5S_8.4.26_46a8801852_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/capricorn_images_8.4.26_20180426.0000.00_7.0_cn_3cedf44857.tgz">capricorn_images_8.4.26_20180426.0000.00_7.0_cn_3cedf44857.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>MIUI9</td>
+                            <td>8.4.19</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/miui_MI5S_8.4.19_3b7b0796bb_7.0.zip">miui_MI5S_8.4.19_3b7b0796bb_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/capricorn_images_8.4.19_20180419.0000.00_7.0_cn_bdc16284cf.tgz">capricorn_images_8.4.19_20180419.0000.00_7.0_cn_bdc16284cf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>MIUI9</td>
+                            <td>8.4.12</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="tp://bigota.d.miui.com/8.4.12/miui_MI5S_8.4.12_a5200c6c57_7.0.zip">miui_MI5S_8.4.12_a5200c6c57_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.12/capricorn_images_8.4.12_20180412.0000.00_7.0_cn_b2c1f256a4.tgz">capricorn_images_8.4.12_20180412.0000.00_7.0_cn_b2c1f256a4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>MIUI9</td>
+                            <td>8.3.29</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/miui_MI5S_8.3.29_e3dc9f11f4_7.0.zip">miui_MI5S_8.3.29_e3dc9f11f4_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/capricorn_images_8.3.29_20180329.0000.00_7.0_cn_5d15207e9c.tgz">capricorn_images_8.3.29_20180329.0000.00_7.0_cn_5d15207e9c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>MIUI9</td>
+                            <td>8.3.22</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/miui_MI5S_8.3.22_f0fcaba264_7.0.zip">miui_MI5S_8.3.22_f0fcaba264_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/capricorn_images_8.3.22_20180322.0000.00_7.0_cn_3acb080366.tgz">capricorn_images_8.3.22_20180322.0000.00_7.0_cn_3acb080366.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>MIUI9</td>
+                            <td>8.3.15</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/miui_MI5S_8.3.15_04f874f6fc_7.0.zip">miui_MI5S_8.3.15_04f874f6fc_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/capricorn_images_8.3.15_20180315.0000.00_7.0_cn_3ab2c7b72a.tgz">capricorn_images_8.3.15_20180315.0000.00_7.0_cn_3ab2c7b72a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>MIUI9</td>
+                            <td>8.3.8</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/miui_MI5S_8.3.8_07f3a0414e_7.0.zip">miui_MI5S_8.3.8_07f3a0414e_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/capricorn_images_8.3.8_20180308.0000.00_7.0_cn_f8f9e3b80b.tgz">capricorn_images_8.3.8_20180308.0000.00_7.0_cn_f8f9e3b80b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>MIUI9</td>
+                            <td>8.3.1</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/miui_MI5S_8.3.1_de06ca33a4_7.0.zip">miui_MI5S_8.3.1_de06ca33a4_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/capricorn_images_8.3.1_20180301.0000.00_7.0_cn_cdfe260c3a.tgz">capricorn_images_8.3.1_20180301.0000.00_7.0_cn_cdfe260c3a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>MIUI9</td>
+                            <td>8.2.1</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/miui_MI5S_8.2.1_b45b5ecc42_7.0.zip">miui_MI5S_8.2.1_b45b5ecc42_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/capricorn_images_8.2.1_20180201.0000.00_7.0_cn_6f09382bad.tgz">capricorn_images_8.2.1_20180201.0000.00_7.0_cn_6f09382bad.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>MIUI9</td>
+                            <td>8.1.25</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/miui_MI5S_8.1.25_622bf902d8_7.0.zip">miui_MI5S_8.1.25_622bf902d8_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/capricorn_images_8.1.25_20180125.0000.00_7.0_cn_cba6988e51.tgz">capricorn_images_8.1.25_20180125.0000.00_7.0_cn_cba6988e51.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>MIUI9</td>
+                            <td>8.1.18</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/miui_MI5S_8.1.18_9aba26b030_7.0.zip">miui_MI5S_8.1.18_9aba26b030_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/capricorn_images_8.1.18_20180118.0000.00_7.0_cn_8d34e4341d.tgz">capricorn_images_8.1.18_20180118.0000.00_7.0_cn_8d34e4341d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI9</td>
+                            <td>8.1.11</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/miui_MI5S_8.1.11_491389bd66_7.0.zip">miui_MI5S_8.1.11_491389bd66_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/capricorn_images_8.1.11_20180111.0000.00_7.0_cn_ba30183100.tgz">capricorn_images_8.1.11_20180111.0000.00_7.0_cn_ba30183100.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI9</td>
+                            <td>8.1.4</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/miui_MI5S_8.1.4_9f5a4229ba_7.0.zip">miui_MI5S_8.1.4_9f5a4229ba_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/capricorn_images_8.1.4_20180104.0000.00_7.0_cn_a48c96402d.tgz">capricorn_images_8.1.4_20180104.0000.00_7.0_cn_a48c96402d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI9</td>
+                            <td>7.12.28</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/miui_MI5S_7.12.28_11cc1533c1_7.0.zip">miui_MI5S_7.12.28_11cc1533c1_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/capricorn_images_7.12.28_20171228.0000.00_7.0_cn_7d826ed284.tgz">capricorn_images_7.12.28_20171228.0000.00_7.0_cn_7d826ed284.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI9</td>
+                            <td>7.12.21</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/miui_MI5S_7.12.21_2aa42c7fd5_7.0.zip">miui_MI5S_7.12.21_2aa42c7fd5_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/capricorn_images_7.12.21_20171221.0000.00_7.0_cn_26b20faf89.tgz">capricorn_images_7.12.21_20171221.0000.00_7.0_cn_26b20faf89.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI9</td>
+                            <td>7.12.14</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/miui_MI5S_7.12.14_7641e1ca04_7.0.zip">miui_MI5S_7.12.14_7641e1ca04_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/capricorn_images_7.12.14_20171214.0000.00_7.0_cn_aa43f0398c.tgz">capricorn_images_7.12.14_20171214.0000.00_7.0_cn_aa43f0398c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI9</td>
+                            <td>7.12.7</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/miui_MI5S_7.12.7_9a210801be_7.0.zip">miui_MI5S_7.12.7_9a210801be_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/capricorn_images_7.12.7_20171207.0000.00_7.0_cn_0582251024.tgz">capricorn_images_7.12.7_20171207.0000.00_7.0_cn_0582251024.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI9</td>
+                            <td>7.11.30</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.30/miui_MI5S_7.11.30_f654a46d63_7.0.zip">miui_MI5S_7.11.30_f654a46d63_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.30/capricorn_images_7.11.30_20171130.0000.00_7.0_cn_e29ade14d9.tgz">capricorn_images_7.11.30_20171130.0000.00_7.0_cn_e29ade14d9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI9</td>
+                            <td>7.11.23</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/miui_MI5S_7.11.23_733702f01b_7.0.zip">miui_MI5S_7.11.23_733702f01b_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/capricorn_images_7.11.23_20171123.0000.00_7.0_cn_25dd4e5457.tgz">capricorn_images_7.11.23_20171123.0000.00_7.0_cn_25dd4e5457.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI9</td>
+                            <td>7.11.16</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.16/miui_MI5S_7.11.16_d0069ffff1_7.0.zip">miui_MI5S_7.11.16_d0069ffff1_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.16/capricorn_images_7.11.16_20171116.0000.00_7.0_cn_ef44397f7b.tgz">capricorn_images_7.11.16_20171116.0000.00_7.0_cn_ef44397f7b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI9</td>
+                            <td>7.11.9</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.9/miui_MI5S_7.11.9_34b4614ee2_7.0.zip">miui_MI5S_7.11.9_34b4614ee2_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.9/capricorn_images_7.11.9_20171109.0000.00_7.0_cn_02e7e0f6d4.tgz">capricorn_images_7.11.9_20171109.0000.00_7.0_cn_02e7e0f6d4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI9</td>
+                            <td>7.11.2</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.2/miui_MI5S_7.11.2_7532089abd_7.0.zip">miui_MI5S_7.11.2_7532089abd_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.2/capricorn_images_7.11.2_20171102.0000.00_7.0_cn_67950d1e95.tgz">capricorn_images_7.11.2_20171102.0000.00_7.0_cn_67950d1e95.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI9</td>
+                            <td>7.10.26</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/miui_MI5S_7.10.26_316120f063_7.0.zip">miui_MI5S_7.10.26_316120f063_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/capricorn_images_7.10.26_20171026.0000.00_7.0_cn_a7e3cbcd50.tgz">capricorn_images_7.10.26_20171026.0000.00_7.0_cn_a7e3cbcd50.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI9</td>
+                            <td>7.10.19</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/miui_MI5S_7.10.19_4c9af61aab_7.0.zip">miui_MI5S_7.10.19_4c9af61aab_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/capricorn_images_7.10.19_20171019.0000.00_7.0_cn_76b73b8de5.tgz">capricorn_images_7.10.19_20171019.0000.00_7.0_cn_76b73b8de5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI9</td>
+                            <td>7.10.12</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/miui_MI5S_7.10.12_e074e807d8_7.0.zip">miui_MI5S_7.10.12_e074e807d8_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/capricorn_images_7.10.12_20171012.0000.00_7.0_cn_4b99412390.tgz">capricorn_images_7.10.12_20171012.0000.00_7.0_cn_4b99412390.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI9</td>
+                            <td>7.9.28</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.28/miui_MI5S_7.9.28_79c722d1cd_7.0.zip">miui_MI5S_7.9.28_79c722d1cd_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.28/capricorn_images_7.9.28_20170928.0000.00_7.0_cn_7082dce389.tgz">capricorn_images_7.9.28_20170928.0000.00_7.0_cn_7082dce389.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI9</td>
+                            <td>7.9.21</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.21/miui_MI5S_7.9.21_0723f78eb7_7.0.zip">miui_MI5S_7.9.21_0723f78eb7_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.21/capricorn_images_7.9.21_20170921.0000.00_7.0_cn_73b4dc8440.tgz">capricorn_images_7.9.21_20170921.0000.00_7.0_cn_73b4dc8440.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI9</td>
+                            <td>7.9.14</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/miui_MI5S_7.9.14_19a75d4b25_7.0.zip">miui_MI5S_7.9.14_19a75d4b25_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/capricorn_images_7.9.14_20170914.0000.00_7.0_cn_3f1e55b0d3.tgz">capricorn_images_7.9.14_20170914.0000.00_7.0_cn_3f1e55b0d3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI9</td>
+                            <td>7.9.8</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.8/miui_MI5S_7.9.8_63f3b21790_7.0.zip">miui_MI5S_7.9.8_63f3b21790_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.8/capricorn_images_7.9.8_20170907.0000.00_7.0_cn_0bb5dca762.tgz">capricorn_images_7.9.8_20170907.0000.00_7.0_cn_0bb5dca762.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI9</td>
+                            <td>7.8.31</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.8.31/miui_MI5S_7.8.31_6daf86dde1_7.0.zip">miui_MI5S_7.8.31_6daf86dde1_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.8.31/capricorn_images_7.8.31_20170831.0000.00_7.0_cn_cb2f7b208f.tgz">capricorn_images_7.8.31_20170831.0000.00_7.0_cn_cb2f7b208f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI9</td>
+                            <td>7.8.24</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.8.24/miui_MI5S_7.8.24_71d3fe8bea_7.0.zip">miui_MI5S_7.8.24_71d3fe8bea_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.8.24/capricorn_images_7.8.24_20170824.0000.00_7.0_cn_22c026885a.tgz">capricorn_images_7.8.24_20170824.0000.00_7.0_cn_22c026885a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI8</td>
+                            <td>7.7.20</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/miui_MI5S_7.7.20_8968c01077_7.0.zip">miui_MI5S_7.7.20_8968c01077_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/capricorn_images_7.7.20_20170720.0000.00_7.0_cn_40b80cb82a.tgz">capricorn_images_7.7.20_20170720.0000.00_7.0_cn_40b80cb82a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI8</td>
+                            <td>7.7.13</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.13/miui_MI5S_7.7.13_8ce4b0db6d_7.0.zip">miui_MI5S_7.7.13_8ce4b0db6d_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.13/capricorn_images_7.7.13_20170713.0000.00_7.0_cn_889a6fb0b6.tgz">capricorn_images_7.7.13_20170713.0000.00_7.0_cn_889a6fb0b6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI8</td>
+                            <td>7.7.6</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.6/miui_MI5S_7.7.6_0b8f5161e5_7.0.zip">miui_MI5S_7.7.6_0b8f5161e5_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.6/capricorn_images_7.7.6_20170706.0000.00_7.0_cn_033cb286bd.tgz">capricorn_images_7.7.6_20170706.0000.00_7.0_cn_033cb286bd.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI8</td>
+                            <td>7.6.29</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.6.29/miui_MI5S_7.6.29_3aebbbccbb_7.0.zip">miui_MI5S_7.6.29_3aebbbccbb_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.6.29/capricorn_images_7.6.29_20170629.0000.00_7.0_cn_76239a3ea7.tgz">capricorn_images_7.6.29_20170629.0000.00_7.0_cn_76239a3ea7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI8</td>
+                            <td>7.5.11</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.5.11/miui_MI5S_7.5.11_0739976feb_6.0.zip">miui_MI5S_7.5.11_0739976feb_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.5.11/capricorn_images_7.5.11_20170511.0000.00_6.0_cn_88b76be7e6.tgz">capricorn_images_7.5.11_20170511.0000.00_6.0_cn_88b76be7e6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI8</td>
+                            <td>7.5.4</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.5.4/miui_MI5S_7.5.4_53e42baf1f_6.0.zip">miui_MI5S_7.5.4_53e42baf1f_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.5.4/capricorn_images_7.5.4_20170504.0000.00_6.0_cn_e7a436466e.tgz">capricorn_images_7.5.4_20170504.0000.00_6.0_cn_e7a436466e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI8</td>
+                            <td>7.4.27</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.27/miui_MI5S_7.4.27_8e0f5ea542_6.0.zip">miui_MI5S_7.4.27_8e0f5ea542_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.27/capricorn_images_7.4.27_20170426.0000.00_6.0_cn_fc29be024b.tgz">capricorn_images_7.4.27_20170426.0000.00_6.0_cn_fc29be024b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI8</td>
+                            <td>7.4.20</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.20/miui_MI5S_7.4.20_a090ae49b8_6.0.zip">miui_MI5S_7.4.20_a090ae49b8_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.20/capricorn_images_7.4.20_20170420.0000.00_6.0_cn_ef59d44f88.tgz">capricorn_images_7.4.20_20170420.0000.00_6.0_cn_ef59d44f88.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI8</td>
+                            <td>7.4.14</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.14/miui_MI5S_7.4.14_df04e74273_6.0.zip">miui_MI5S_7.4.14_df04e74273_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.14/capricorn_images_7.4.14_20170414.0000.00_6.0_cn_7f3df7877b.tgz">capricorn_images_7.4.14_20170414.0000.00_6.0_cn_7f3df7877b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI8</td>
+                            <td>7.4.6</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.6/miui_MI5S_7.4.6_ee32e5d51c_6.0.zip">miui_MI5S_7.4.6_ee32e5d51c_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.6/capricorn_images_7.4.6_20170406.0000.00_6.0_cn_8a551ee70a.tgz">capricorn_images_7.4.6_20170406.0000.00_6.0_cn_8a551ee70a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI8</td>
+                            <td>7.3.30</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.30/miui_MI5S_7.3.30_5f7af22cdd_6.0.zip">miui_MI5S_7.3.30_5f7af22cdd_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.30/capricorn_images_7.3.30_20170330.0000.00_6.0_cn_3652022499.tgz">capricorn_images_7.3.30_20170330.0000.00_6.0_cn_3652022499.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI8</td>
+                            <td>7.3.23</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.23/miui_MI5S_7.3.23_6a72293214_6.0.zip">miui_MI5S_7.3.23_6a72293214_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.23/capricorn_images_7.3.23_20170323.0000.00_6.0_cn_025eb7375c.tgz">capricorn_images_7.3.23_20170323.0000.00_6.0_cn_025eb7375c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI8</td>
+                            <td>7.3.16</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.16/miui_MI5S_7.3.16_cf5bc0aeff_6.0.zip">miui_MI5S_7.3.16_cf5bc0aeff_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.16/capricorn_images_7.3.16_20170316.0000.00_6.0_cn_4dca63171f.tgz">capricorn_images_7.3.16_20170316.0000.00_6.0_cn_4dca63171f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI8</td>
+                            <td>7.3.9</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.9/miui_MI5S_7.3.9_e10dd6d0a3_6.0.zip">miui_MI5S_7.3.9_e10dd6d0a3_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.9/capricorn_images_7.3.9_20170309.0000.00_6.0_cn_c4ef981f95.tgz">capricorn_images_7.3.9_20170309.0000.00_6.0_cn_c4ef981f95.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI8</td>
+                            <td>7.3.6</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.6/miui_MI5S_7.3.6_c8256e7a19_6.0.zip">miui_MI5S_7.3.6_c8256e7a19_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.6/capricorn_images_7.3.6_20170306.0000.00_6.0_cn_4a69e37151.tgz">capricorn_images_7.3.6_20170306.0000.00_6.0_cn_4a69e37151.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI8</td>
+                            <td>7.2.24</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.2.24/miui_MI5S_7.2.24_4566e3de9d_6.0.zip">miui_MI5S_7.2.24_4566e3de9d_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.2.24/capricorn_images_7.2.24_20170224.0000.00_6.0_cn_290ec0fc57.tgz">capricorn_images_7.2.24_20170224.0000.00_6.0_cn_290ec0fc57.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI8</td>
+                            <td>7.2.16</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.2.16/miui_MI5S_7.2.16_7b496e29da_6.0.zip">miui_MI5S_7.2.16_7b496e29da_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.2.16/capricorn_images_7.2.16_20170216.0000.00_6.0_cn_04652bb467.tgz">capricorn_images_7.2.16_20170216.0000.00_6.0_cn_04652bb467.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI8</td>
+                            <td>7.2.9</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.2.9/miui_MI5S_7.2.9_91391ad8ae_6.0.zip">miui_MI5S_7.2.9_91391ad8ae_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.2.9/capricorn_images_7.2.9_20170209.0000.00_6.0_cn_f02cc12f28.tgz">capricorn_images_7.2.9_20170209.0000.00_6.0_cn_f02cc12f28.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI8</td>
+                            <td>7.1.20/</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.1.20/miui_MI5S_7.1.20_229fa68558_6.0.zip">miui_MI5S_7.1.20_229fa68558_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.1.20/capricorn_images_7.1.20_20170120.0000.00_6.0_cn_1e55214352.tgz">capricorn_images_7.1.20_20170120.0000.00_6.0_cn_1e55214352.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI8</td>
+                            <td>7.1.12</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.1.12/miui_MI5S_7.1.12_f9c45750cf_6.0.zip">miui_MI5S_7.1.12_f9c45750cf_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.1.12/capricorn_images_7.1.12_20170111.0000.00_6.0_cn_bd943f33b5.tgz">capricorn_images_7.1.12_20170111.0000.00_6.0_cn_bd943f33b5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI8</td>
+                            <td>7.1.5</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.1.5/miui_MI5S_7.1.5_c407c0e336_6.0.zip">miui_MI5S_7.1.5_c407c0e336_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.1.5/capricorn_images_7.1.5_20170105.0000.00_6.0_cn_10ac3b8c38.tgz">capricorn_images_7.1.5_20170105.0000.00_6.0_cn_10ac3b8c38.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI8</td>
+                            <td>6.12.29</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.29/miui_MI5S_6.12.29_dee507667b_6.0.zip">miui_MI5S_6.12.29_dee507667b_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.29/capricorn_images_6.12.29_20161228.0000.00_6.0_cn_39db282644.tgz">capricorn_images_6.12.29_20161228.0000.00_6.0_cn_39db282644.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI8</td>
+                            <td>6.12.22</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.22/miui_MI5S_6.12.22_92a4d91873_6.0.zip">miui_MI5S_6.12.22_92a4d91873_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.22/capricorn_images_6.12.22_20161222.0000.00_6.0_cn_0451588018.tgz">capricorn_images_6.12.22_20161222.0000.00_6.0_cn_0451588018.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI8</td>
+                            <td>6.12.8</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.8/miui_MI5S_6.12.8_29a0b08d57_6.0.zip">miui_MI5S_6.12.8_29a0b08d57_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.8/capricorn_images_6.12.8_20161208.0000.00_6.0_cn_4a15d5f229.tgz">capricorn_images_6.12.8_20161208.0000.00_6.0_cn_4a15d5f229.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI8</td>
+                            <td>6.12.1</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.1/miui_MI5S_6.12.1_c6ec7458b5_6.0.zip">miui_MI5S_6.12.1_c6ec7458b5_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.1/capricorn_images_6.12.1_20161201.0000.00_6.0_cn_290a251f01.tgz">capricorn_images_6.12.1_20161201.0000.00_6.0_cn_290a251f01.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI8</td>
+                            <td>6.11.10</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.11.10/miui_MI5S_6.11.10_62801f2895_6.0.zip">miui_MI5S_6.11.10_62801f2895_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.11.10/capricorn_images_6.11.10_20161110.0000.00_6.0_cn_8c4366d2b5.tgz">capricorn_images_6.11.10_20161110.0000.00_6.0_cn_8c4366d2b5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI8</td>
+                            <td>6.11.3</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.11.3/miui_MI5S_6.11.3_946c94dd75_6.0.zip">miui_MI5S_6.11.3_946c94dd75_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.11.3/capricorn_images_6.11.3_20161103.0000.00_6.0_cn_85c699d28f.tgz">capricorn_images_6.11.3_20161103.0000.00_6.0_cn_85c699d28f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI8</td>
+                            <td>6.10.27</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.10.27/miui_MI5S_6.10.27_e6084a6766_6.0.zip">miui_MI5S_6.10.27_e6084a6766_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.10.27/capricorn_images_6.10.27_20161027.0000.00_6.0_cn_b1ebf4555d.tgz">capricorn_images_6.10.27_20161027.0000.00_6.0_cn_b1ebf4555d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI8</td>
+                            <td>6.10.20</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.10.20/miui_MI5S_6.10.20_709631271d_6.0.zip">miui_MI5S_6.10.20_709631271d_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.10.20/capricorn_images_6.10.20_20160805.0000.29_6.0_cn_061fb370f4.tgz">capricorn_images_6.10.20_20160805.0000.29_6.0_cn_061fb370f4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI8</td>
+                            <td>6.10.13</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.10.13/miui_MI5S_6.10.13_69ace550be_6.0.zip">miui_MI5S_6.10.13_69ace550be_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.10.13/capricorn_images_6.10.13_20160805.0000.29_6.0_cn_c2f653b1fb.tgz">capricorn_images_6.10.13_20160805.0000.29_6.0_cn_c2f653b1fb.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>23</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>V10.2.2.0.OAGCNXM</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.OAGCNXM/miui_MI5S_V10.2.2.0.OAGCNXM_d332da1582_8.0.zip">miui_MI5S_V10.2.2.0.OAGCNXM_d332da1582_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.OAGCNXM/capricorn_images_V10.2.2.0.OAGCNXM_20190424.0000.00_8.0_cn_a8c2406241.tgz">capricorn_images_V10.2.2.0.OAGCNXM_20190424.0000.00_8.0_cn_a8c2406241.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>V10.2.1.0.OAGCNXM</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.OAGCNXM/miui_MI5S_V10.2.1.0.OAGCNXM_8db69b2463_8.0.zip">miui_MI5S_V10.2.1.0.OAGCNXM_8db69b2463_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.OAGCNXM/capricorn_images_V10.2.1.0.OAGCNXM_20190109.0000.00_8.0_cn_2e1b03fb5c.tgz">capricorn_images_V10.2.1.0.OAGCNXM_20190109.0000.00_8.0_cn_2e1b03fb5c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>V10.1.2.0.OAGCNFI</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.2.0.OAGCNFI/miui_MI5S_V10.1.2.0.OAGCNFI_e15ec6ca83_8.0.zip">miui_MI5S_V10.1.2.0.OAGCNFI_e15ec6ca83_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.2.0.OAGCNFI/capricorn_images_V10.1.2.0.OAGCNFI_20181120.0000.00_8.0_cn_a371c150b5.tgz">capricorn_images_V10.1.2.0.OAGCNFI_20181120.0000.00_8.0_cn_a371c150b5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>V10.1.1.0.NAGCNFI</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NAGCNFI/miui_MI5S_V10.1.1.0.NAGCNFI_1e3c469f60_7.0.zip">miui_MI5S_V10.1.1.0.NAGCNFI_1e3c469f60_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NAGCNFI/capricorn_images_V10.1.1.0.NAGCNFI_20181019.0000.00_7.0_cn_6f89358adf.tgz">capricorn_images_V10.1.1.0.NAGCNFI_20181019.0000.00_7.0_cn_6f89358adf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>V9.6.1.0.NAGCNFD</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NAGCNFD/miui_MI5S_V9.6.1.0.NAGCNFD_857fde8b41_7.0.zip">miui_MI5S_V9.6.1.0.NAGCNFD_857fde8b41_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NAGCNFD/capricorn_images_V9.6.1.0.NAGCNFD_20180614.0000.00_7.0_cn_ef07369460.tgz">capricorn_images_V9.6.1.0.NAGCNFD_20180614.0000.00_7.0_cn_ef07369460.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V9.5.2.0.NAGCNFA</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NAGCNFA/miui_MI5S_V9.5.2.0.NAGCNFA_60af75c30b_7.0.zip">miui_MI5S_V9.5.2.0.NAGCNFA_60af75c30b_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NAGCNFA/capricorn_images_V9.5.2.0.NAGCNFA_20180405.0000.00_7.0_cn_959cdc4d1b.tgz">capricorn_images_V9.5.2.0.NAGCNFA_20180405.0000.00_7.0_cn_959cdc4d1b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V9.5.1.0.NAGCNFA</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NAGCNFA/miui_MI5S_V9.5.1.0.NAGCNFA_f59e944ddc_7.0.zip">miui_MI5S_V9.5.1.0.NAGCNFA_f59e944ddc_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NAGCNFA/capricorn_images_V9.5.1.0.NAGCNFA_20180301.0000.00_7.0_cn_91611f69a8.tgz">capricorn_images_V9.5.1.0.NAGCNFA_20180301.0000.00_7.0_cn_91611f69a8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V9.2.2.0.NAGCNEK</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NAGCNEK/miui_MI5S_V9.2.2.0.NAGCNEK_fcfe38056e_7.0.zip">miui_MI5S_V9.2.2.0.NAGCNEK_fcfe38056e_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NAGCNEK/capricorn_images_V9.2.2.0.NAGCNEK_20180125.0000.00_7.0_cn_c666f232f3.tgz">capricorn_images_V9.2.2.0.NAGCNEK_20180125.0000.00_7.0_cn_c666f232f3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V9.1.3.0.NAGCNEI</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.3.0.NAGCNEI/miui_MI5S_V9.1.3.0.NAGCNEI_e2638da154_7.0.zip">miui_MI5S_V9.1.3.0.NAGCNEI_e2638da154_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.3.0.NAGCNEI/capricorn_images_V9.1.3.0.NAGCNEI_20171127.0000.00_7.0_cn_93900fbdaf.tgz">capricorn_images_V9.1.3.0.NAGCNEI_20171127.0000.00_7.0_cn_93900fbdaf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V9.1.2.0.NAGCNEI</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.2.0.NAGCNEI/miui_MI5S_V9.1.2.0.NAGCNEI_afb865e49b_7.0.zip">miui_MI5S_V9.1.2.0.NAGCNEI_afb865e49b_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.2.0.NAGCNEI/capricorn_images_V9.1.2.0.NAGCNEI_20171101.0000.00_7.0_cn_515fee17a1.tgz">capricorn_images_V9.1.2.0.NAGCNEI_20171101.0000.00_7.0_cn_515fee17a1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V8.5.6.0.MAGCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.6.0.MAGCNED/miui_MI5S_V8.5.6.0.MAGCNED_c5015435a7_6.0.zip">miui_MI5S_V8.5.6.0.MAGCNED_c5015435a7_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.6.0.MAGCNED/capricorn_images_V8.5.6.0.MAGCNED_20170926.0000.00_6.0_cn_b31597430b.tgz">capricorn_images_V8.5.6.0.MAGCNED_20170926.0000.00_6.0_cn_b31597430b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V8.5.4.0.MAGCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.MAGCNED/miui_MI5S_V8.5.4.0.MAGCNED_884b0c1fa8_6.0.zip">miui_MI5S_V8.5.4.0.MAGCNED_884b0c1fa8_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.MAGCNED/capricorn_images_V8.5.4.0.MAGCNED_20170728.0000.00_6.0_cn_1ebbc61363.tgz">capricorn_images_V8.5.4.0.MAGCNED_20170728.0000.00_6.0_cn_1ebbc61363.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V8.5.3.0.MAGCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.3.0.MAGCNED/miui_MI5S_V8.5.3.0.MAGCNED_bd76d65057_6.0.zip">miui_MI5S_V8.5.3.0.MAGCNED_bd76d65057_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.3.0.MAGCNED/capricorn_images_V8.5.3.0.MAGCNED_20170626.0000.00_6.0_cn_9260abaf05.tgz">capricorn_images_V8.5.3.0.MAGCNED_20170626.0000.00_6.0_cn_9260abaf05.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V8.5.2.0.MAGCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.2.0.MAGCNED/miui_MI5S_V8.5.2.0.MAGCNED_913145b6d9_6.0.zip">miui_MI5S_V8.5.2.0.MAGCNED_913145b6d9_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.2.0.MAGCNED/capricorn_images_V8.5.2.0.MAGCNED_20170523.0000.00_6.0_cn_4d67a2821d.tgz">capricorn_images_V8.5.2.0.MAGCNED_20170523.0000.00_6.0_cn_4d67a2821d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V8.2.4.0.MAGCNDL</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.4.0.MAGCNDL/miui_MI5S_V8.2.4.0.MAGCNDL_928d336eb9_6.0.zip">miui_MI5S_V8.2.4.0.MAGCNDL_928d336eb9_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.4.0.MAGCNDL/capricorn_images_V8.2.4.0.MAGCNDL_20170413.0000.00_6.0_cn_9b2b8b42e8.tgz">capricorn_images_V8.2.4.0.MAGCNDL_20170413.0000.00_6.0_cn_9b2b8b42e8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V8.2.3.0.MAGCNDL</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.3.0.MAGCNDL/miui_MI5S_V8.2.3.0.MAGCNDL_4659e742f5_6.0.zip">miui_MI5S_V8.2.3.0.MAGCNDL_4659e742f5_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.3.0.MAGCNDL/capricorn_images_V8.2.3.0.MAGCNDL_20170314.0000.00_6.0_cn_af6fe518da.tgz">capricorn_images_V8.2.3.0.MAGCNDL_20170314.0000.00_6.0_cn_af6fe518da.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V8.2.2.0.MAGCNDL</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.2.0.MAGCNDL/miui_MI5S_V8.2.2.0.MAGCNDL_daa6356c50_6.0.zip">miui_MI5S_V8.2.2.0.MAGCNDL_daa6356c50_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.2.0.MAGCNDL/capricorn_images_V8.2.2.0.MAGCNDL_20170210.0000.00_6.0_cn_8816ff5f89.tgz">capricorn_images_V8.2.2.0.MAGCNDL_20170210.0000.00_6.0_cn_8816ff5f89.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V8.0.22.0.MAGCNDI</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.22.0.MAGCNDI/miui_MI5S_V8.0.22.0.MAGCNDI_f243359fdc_6.0.zip">miui_MI5S_V8.0.22.0.MAGCNDI_f243359fdc_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.22.0.MAGCNDI/capricorn_images_V8.0.22.0.MAGCNDI_20161229.0000.00_6.0_cn_bef38e8768.tgz">capricorn_images_V8.0.22.0.MAGCNDI_20161229.0000.00_6.0_cn_bef38e8768.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V8.0.18.0.MAGCNDI</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.18.0.MAGCNDI/miui_MI5S_V8.0.18.0.MAGCNDI_a7d80a7252_6.0.zip">miui_MI5S_V8.0.18.0.MAGCNDI_a7d80a7252_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.18.0.MAGCNDI/capricorn_images_V8.0.18.0.MAGCNDI_20161122.0000.00_6.0_cn_67352be4ef.tgz">capricorn_images_V8.0.18.0.MAGCNDI_20161122.0000.00_6.0_cn_67352be4ef.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V8.0.17.0.MAGCNDI</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.17.0.MAGCNDI/miui_MI5S_V8.0.17.0.MAGCNDI_0e28965d22_6.0.zip">miui_MI5S_V8.0.17.0.MAGCNDI_0e28965d22_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.17.0.MAGCNDI/capricorn_images_V8.0.17.0.MAGCNDI_20161111.0000.00_6.0_cn_53f945f6f3.tgz">capricorn_images_V8.0.17.0.MAGCNDI_20161111.0000.00_6.0_cn_53f945f6f3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V8.0.10.0.MAGCNDH</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.10.0.MAGCNDH/miui_MI5S_V8.0.10.0.MAGCNDH_da90aee78b_6.0.zip">miui_MI5S_V8.0.10.0.MAGCNDH_da90aee78b_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.10.0.MAGCNDH/capricorn_images_V8.0.10.0.MAGCNDH_20160805.0000.29_6.0_cn_49ab3a5120.tgz">capricorn_images_V8.0.10.0.MAGCNDH_20160805.0000.29_6.0_cn_49ab3a5120.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>26</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
+               >arrow_upward</a></i>
+    </button>
+</body>
+
+</html>

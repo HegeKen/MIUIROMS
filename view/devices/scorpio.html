@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+            li a {
+                text-decoration: none;
+                color: blue;
+            }
+    
+            td a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    <title>小米Note 2(scorpio)官方ROM合集 --By 海力力。</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-panel mdui-panel-gapless">
+        <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
+            <div class="mdui-panel-item-body">
+                <ol>
+                    <li>机型：小米Note 2 代号：scorpio</li>
+                    <li>此次更新项目：MIUI11 9.10.10</li>
+                    <li>特别感谢：<a href ="https://www.miui.com/space-uid-850489218.html">@格调丨先生</a></li>
+                    <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
+                    <li>特别感谢：<a href ="http://rom.52mail.cn">rom.52mail.cn </a>网站</li>
+                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
+                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
+                    <li>官方刷机工具：<a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip">MiFlash 最新版(2018.5.28)</a>, <a href="https://pan.baidu.com/s/1rR58JraOPJq6R5qOGP_aOw">小米助手 3.0 beta版</a></li>
+                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为ROM的正式内容 -->
+
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#GB_BETA" class="mdui-ripple mdui-hidden">国际开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple mdui-hidden">国际稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>107</td>
+                            <td>MIUI11</td>
+                            <td>9.10.10</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="https://bigota.d.miui.com/9.10.10/miui_MINote2_9.10.10_d84e44a760_8.0.zip">miui_MINote2_9.10.10_d84e44a760_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>106</td>
+                            <td>MIUI11</td>
+                            <td>9.9.26</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MINote2_9.9.26_230fde18bb_8.0.zip">miui_MINote2_9.9.26_230fde18bb_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>105</td>
+                            <td>MIUI10</td>
+                            <td>9.8.29</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/miui_MINote2_9.8.29_94f47c73e3_8.0.zip">miui_MINote2_9.8.29_94f47c73e3_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/scorpio_images_9.8.29_20190829.0000.00_8.0_cn_05be85c1b0.tgz">scorpio_images_9.8.29_20190829.0000.00_8.0_cn_05be85c1b0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>104</td>
+                            <td>MIUI10</td>
+                            <td>9.7.18</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/miui_MINote2_9.7.18_19869bc7f9_8.0.zip">miui_MINote2_9.7.18_19869bc7f9_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/scorpio_images_9.7.18_20190718.0000.00_8.0_cn_0b629766cf.tgz">scorpio_images_9.7.18_20190718.0000.00_8.0_cn_0b629766cf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>MIUI10</td>
+                            <td>9.7.11</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/miui_MINote2_9.7.11_11cfc5b46b_8.0.zip">miui_MINote2_9.7.11_11cfc5b46b_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/scorpio_images_9.7.11_20190711.0000.00_8.0_cn_cd92f3f783.tgz">scorpio_images_9.7.11_20190711.0000.00_8.0_cn_cd92f3f783.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>MIUI10</td>
+                            <td>9.7.4</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/miui_MINote2_9.7.4_e3dfd89b51_8.0.zip">miui_MINote2_9.7.4_e3dfd89b51_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/scorpio_images_9.7.4_20190704.0000.00_8.0_cn_efb9dcb51a.tgz">scorpio_images_9.7.4_20190704.0000.00_8.0_cn_efb9dcb51a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>101</td>
+                            <td>MIUI10</td>
+                            <td>9.6.27</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_MINote2_9.6.27_4ba3a15a59_8.0.zip">miui_MINote2_9.6.27_4ba3a15a59_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/scorpio_images_9.6.27_20190627.0000.00_8.0_cn_e3cdd9070e.tgz">scorpio_images_9.6.27_20190627.0000.00_8.0_cn_e3cdd9070e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>100</td>
+                            <td>MIUI10</td>
+                            <td>9.6.20</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_MINote2_9.6.20_510a8b6aa7_8.0.zip">miui_MINote2_9.6.20_510a8b6aa7_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/scorpio_images_9.6.20_20190620.0000.00_8.0_cn_ed2b090fc9.tgz">scorpio_images_9.6.20_20190620.0000.00_8.0_cn_ed2b090fc9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>99</td>
+                            <td>MIUI10</td>
+                            <td>9.6.13</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_MINote2_9.6.13_15386161f8_8.0.zip">miui_MINote2_9.6.13_15386161f8_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>98</td>
+                            <td>MIUI10</td>
+                            <td>9.5.30</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/miui_MINote2_9.5.30_b4ad99c261_8.0.zip">miui_MINote2_9.5.30_b4ad99c261_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/scorpio_images_9.5.30_20190530.0000.00_8.0_cn_1325f498dd.tgz">scorpio_images_9.5.30_20190530.0000.00_8.0_cn_1325f498dd.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>97</td>
+                            <td>MIUI10</td>
+                            <td>9.5.23</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/miui_MINote2_9.5.23_fb99bcecc3_8.0.zip">miui_MINote2_9.5.23_fb99bcecc3_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/scorpio_images_9.5.23_20190523.0000.00_8.0_cn_3339128988.tgz">scorpio_images_9.5.23_20190523.0000.00_8.0_cn_3339128988.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>96</td>
+                            <td>MIUI10</td>
+                            <td>9.5.16</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/miui_MINote2_9.5.16_4081bc0479_8.0.zip">miui_MINote2_9.5.16_4081bc0479_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/scorpio_images_9.5.16_20190516.0000.00_8.0_cn_9ef168c874.tgz">scorpio_images_9.5.16_20190516.0000.00_8.0_cn_9ef168c874.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>95</td>
+                            <td>MIUI10</td>
+                            <td>9.5.9</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/miui_MINote2_9.5.9_1245aa0abd_8.0.zip">miui_MINote2_9.5.9_1245aa0abd_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/scorpio_images_9.5.9_20190509.0000.00_8.0_cn_9b81542c2f.tgz">scorpio_images_9.5.9_20190509.0000.00_8.0_cn_9b81542c2f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>94</td>
+                            <td>MIUI10</td>
+                            <td>9.4.25</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/miui_MINote2_9.4.25_28e3e46c66_8.0.zip">miui_MINote2_9.4.25_28e3e46c66_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/scorpio_images_9.4.25_20190425.0000.00_8.0_cn_61a06f2e70.tgz">scorpio_images_9.4.25_20190425.0000.00_8.0_cn_61a06f2e70.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>93</td>
+                            <td>MIUI10</td>
+                            <td>9.4.18</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/miui_MINote2_9.4.18_5525e64b80_8.0.zip">miui_MINote2_9.4.18_5525e64b80_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/scorpio_images_9.4.18_20190418.0000.00_8.0_cn_c3ea043487.tgz">scorpio_images_9.4.18_20190418.0000.00_8.0_cn_c3ea043487.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>92</td>
+                            <td>MIUI10</td>
+                            <td>9.4.11</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.11/miui_MINote2_9.4.11_ae04ded402_8.0.zip">miui_MINote2_9.4.11_ae04ded402_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>91</td>
+                            <td>MIUI10</td>
+                            <td>9.3.28</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/miui_MINote2_9.3.28_3fa74ca612_8.0.zip">miui_MINote2_9.3.28_3fa74ca612_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/scorpio_images_9.3.28_20190328.0000.00_8.0_cn_dedbff5baa.tgz">scorpio_images_9.3.28_20190328.0000.00_8.0_cn_dedbff5baa.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>90</td>
+                            <td>MIUI10</td>
+                            <td>9.3.21</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/miui_MINote2_9.3.21_5cff090016_8.0.zip">miui_MINote2_9.3.21_5cff090016_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/scorpio_images_9.3.21_20190321.0000.00_8.0_cn_eb999a5ba1.tgz">scorpio_images_9.3.21_20190321.0000.00_8.0_cn_eb999a5ba1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>89</td>
+                            <td>MIUI10</td>
+                            <td>9.3.14</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/miui_MINote2_9.3.14_c57b464d49_8.0.zip">miui_MINote2_9.3.14_c57b464d49_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>88</td>
+                            <td>MIUI10</td>
+                            <td>9.3.7</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/miui_MINote2_9.3.7_1d68c497c0_8.0.zip">miui_MINote2_9.3.7_1d68c497c0_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>87</td>
+                            <td>MIUI10</td>
+                            <td>9.2.28</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/miui_MINote2_9.2.28_f11d872947_8.0.zip">miui_MINote2_9.2.28_f11d872947_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/scorpio_images_9.2.28_20190228.0000.00_8.0_cn_c8cb171d12.tgz">scorpio_images_9.2.28_20190228.0000.00_8.0_cn_c8cb171d12.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>86</td>
+                            <td>MIUI10</td>
+                            <td>9.2.21</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/miui_MINote2_9.2.21_7903ca48b9_8.0.zip">miui_MINote2_9.2.21_7903ca48b9_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/scorpio_images_9.2.21_20190221.0000.00_8.0_cn_142a24c599.tgz">scorpio_images_9.2.21_20190221.0000.00_8.0_cn_142a24c599.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>85</td>
+                            <td>MIUI10</td>
+                            <td>9.2.15</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/miui_MINote2_9.2.15_f94149cf3c_8.0.zip">miui_MINote2_9.2.15_f94149cf3c_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/scorpio_images_9.2.15_20190215.0000.00_8.0_cn_1291769610.tgz">scorpio_images_9.2.15_20190215.0000.00_8.0_cn_1291769610.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>84</td>
+                            <td>MIUI10</td>
+                            <td>9.1.24</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/miui_MINote2_9.1.24_9cc63b269b_8.0.zip">miui_MINote2_9.1.24_9cc63b269b_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/scorpio_images_9.1.24_20190124.0000.00_8.0_cn_2cc44499b7.tgz">scorpio_images_9.1.24_20190124.0000.00_8.0_cn_2cc44499b7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>83</td>
+                            <td>MIUI10</td>
+                            <td>9.1.17</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/miui_MINote2_9.1.17_bba79cdea5_8.0.zip">miui_MINote2_9.1.17_bba79cdea5_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/scorpio_images_9.1.17_20190117.0000.00_8.0_cn_b9b68cf3f7.tgz">scorpio_images_9.1.17_20190117.0000.00_8.0_cn_b9b68cf3f7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>82</td>
+                            <td>MIUI10</td>
+                            <td>9.1.10</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/miui_MINote2_9.1.10_e8d11a48ce_8.0.zip">miui_MINote2_9.1.10_e8d11a48ce_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/scorpio_images_9.1.10_20190110.0000.00_8.0_cn_1a7ccce145.tgz">scorpio_images_9.1.10_20190110.0000.00_8.0_cn_1a7ccce145.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>81</td>
+                            <td>MIUI10</td>
+                            <td>8.12.27</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.27/miui_MINote2_8.12.27_5f4bea83a9_8.0.zip">miui_MINote2_8.12.27_5f4bea83a9_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>MIUI10</td>
+                            <td>8.12.13</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/miui_MINote2_8.12.13_800f5af3ca_8.0.zip">miui_MINote2_8.12.13_800f5af3ca_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/scorpio_images_8.12.13_20181213.0000.00_8.0_cn_4d610af53d.tgz">scorpio_images_8.12.13_20181213.0000.00_8.0_cn_4d610af53d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>79</td>
+                            <td>MIUI10</td>
+                            <td>8.12.6</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/miui_MINote2_8.12.6_37ac43cc39_8.0.zip">miui_MINote2_8.12.6_37ac43cc39_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/scorpio_images_8.12.6_20181206.0000.00_8.0_cn_be795c9448.tgz">scorpio_images_8.12.6_20181206.0000.00_8.0_cn_be795c9448.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>78</td>
+                            <td>MIUI10</td>
+                            <td>8.11.29</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.29/miui_MINote2_8.11.29_2bf50a87b4_8.0.zip">miui_MINote2_8.11.29_2bf50a87b4_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.29/scorpio_images_8.11.29_20181129.0000.00_8.0_cn_77f9ea4270.tgz">scorpio_images_8.11.29_20181129.0000.00_8.0_cn_77f9ea4270.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>77</td>
+                            <td>MIUI10</td>
+                            <td>8.11.22</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.22/miui_MINote2_8.11.22_bed1e2890b_8.0.zip">miui_MINote2_8.11.22_bed1e2890b_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>76</td>
+                            <td>MIUI10</td>
+                            <td>8.11.15</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.15/miui_MINote2_8.11.15_d5a29d4ca2_8.0.zip">miui_MINote2_8.11.15_d5a29d4ca2_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td>MIUI10</td>
+                            <td>8.11.1</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.1/miui_MINote2_8.11.1_f96024a076_8.0.zip">miui_MINote2_8.11.1_f96024a076_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.1/scorpio_images_8.11.1_20181101.0000.00_8.0_cn_6788ae15f1.tgz">scorpio_images_8.11.1_20181101.0000.00_8.0_cn_6788ae15f1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td>MIUI10</td>
+                            <td>8.10.25</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/miui_MINote2_8.10.25_929b0a32d7_8.0.zip">miui_MINote2_8.10.25_929b0a32d7_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/scorpio_images_8.10.25_20181025.0000.00_8.0_cn_e9de7bdfd9.tgz">scorpio_images_8.10.25_20181025.0000.00_8.0_cn_e9de7bdfd9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td>MIUI10</td>
+                            <td>8.10.18</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/miui_MINote2_8.10.18_25a8e3573d_8.0.zip">miui_MINote2_8.10.18_25a8e3573d_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/scorpio_images_8.10.18_20181018.0000.00_8.0_cn_2370ff8505.tgz">scorpio_images_8.10.18_20181018.0000.00_8.0_cn_2370ff8505.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td>MIUI10</td>
+                            <td>8.10.11</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/miui_MINote2_8.10.11_7dab118f90_8.0.zip">miui_MINote2_8.10.11_7dab118f90_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/scorpio_images_8.10.11_20181011.0000.00_8.0_cn_3b7d18a47a.tgz">scorpio_images_8.10.11_20181011.0000.00_8.0_cn_3b7d18a47a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td>MIUI10</td>
+                            <td>8.9.20</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/miui_MINote2_8.9.20_f8f2e7b8d9_8.0.zip">miui_MINote2_8.9.20_f8f2e7b8d9_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/scorpio_images_8.9.20_20180920.0000.00_8.0_cn_e41472c0f7.tgz">scorpio_images_8.9.20_20180920.0000.00_8.0_cn_e41472c0f7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>MIUI10</td>
+                            <td>8.9.13</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/miui_MINote2_8.9.13_f0cfdf9c69_8.0.zip">miui_MINote2_8.9.13_f0cfdf9c69_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/scorpio_images_8.9.13_20180913.0000.00_8.0_cn_b2512a0e2a.tgz">scorpio_images_8.9.13_20180913.0000.00_8.0_cn_b2512a0e2a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td>MIUI10</td>
+                            <td>8.9.6</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/miui_MINote2_8.9.6_cb0ab184e7_8.0.zip">miui_MINote2_8.9.6_cb0ab184e7_8.0.zip"</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/scorpio_images_8.9.6_20180906.0000.00_8.0_cn_ba01bfadce.tgz">scorpio_images_8.9.6_20180906.0000.00_8.0_cn_ba01bfadce.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>MIUI10</td>
+                            <td>8.8.30</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/miui_MINote2_8.8.30_57f2cd1272_8.0.zip">miui_MINote2_8.8.30_57f2cd1272_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/scorpio_images_8.8.30_20180830.0000.00_8.0_cn_a96771a510.tgz">scorpio_images_8.8.30_20180830.0000.00_8.0_cn_a96771a510.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>MIUI10</td>
+                            <td>8.8.23</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/miui_MINote2_8.8.23_4717bbd11d_8.0.zip">miui_MINote2_8.8.23_4717bbd11d_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/scorpio_images_8.8.23_20180823.0000.00_8.0_cn_1297d8ca32.tgz">scorpio_images_8.8.23_20180823.0000.00_8.0_cn_1297d8ca32.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td>MIUI10</td>
+                            <td>8.8.16</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/miui_MINote2_8.8.16_94c380dad9_8.0.zip">miui_MINote2_8.8.16_94c380dad9_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/scorpio_images_8.8.16_20180816.0000.00_8.0_cn_62e68fbd2f.tgz">scorpio_images_8.8.16_20180816.0000.00_8.0_cn_62e68fbd2f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>MIUI10</td>
+                            <td>8.8.9</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/miui_MINote2_8.8.9_51452e675c_8.0.zip">miui_MINote2_8.8.9_51452e675c_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/scorpio_images_8.8.9_20180809.0000.00_8.0_cn_8d3d34dbe5.tgz">scorpio_images_8.8.9_20180809.0000.00_8.0_cn_8d3d34dbe5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>MIUI10</td>
+                            <td>8.8.3</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/miui_MINote2_8.8.3_e18b681716_8.0.zip">miui_MINote2_8.8.3_e18b681716_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/scorpio_images_8.8.3_20180802.0000.00_8.0_cn_4e40acb3df.tgz">scorpio_images_8.8.3_20180802.0000.00_8.0_cn_4e40acb3df.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>MIUI10</td>
+                            <td>8.7.26</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/miui_MINote2_8.7.26_c982a1d01c_8.0.zip">miui_MINote2_8.7.26_c982a1d01c_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/scorpio_images_8.7.26_20180726.0000.00_8.0_cn_82f5f4378f.tgz">scorpio_images_8.7.26_20180726.0000.00_8.0_cn_82f5f4378f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>MIUI10</td>
+                            <td>8.7.19</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/miui_MINote2_8.7.19_820d13bfcc_8.0.zip">miui_MINote2_8.7.19_820d13bfcc_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/scorpio_images_8.7.19_20180719.0000.00_8.0_cn_d163c81cbc.tgz">scorpio_images_8.7.19_20180719.0000.00_8.0_cn_d163c81cbc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>MIUI10</td>
+                            <td>8.6.14</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.6.14/miui_MINote2_8.6.14_0d42e8b8ca_8.0.zip">miui_MINote2_8.6.14_0d42e8b8ca_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.6.14/scorpio_images_8.6.14_20180614.0000.00_8.0_cn_6d1f63404d.tgz">scorpio_images_8.6.14_20180614.0000.00_8.0_cn_6d1f63404d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>MIUI9</td>
+                            <td>8.5.24</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.5.24/miui_MINote2_8.5.24_3e7b03800e_8.0.zip">miui_MINote2_8.5.24_3e7b03800e_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.5.24/scorpio_images_8.5.24_20180524.0000.00_8.0_cn_1af8bc38c1.tgz">scorpio_images_8.5.24_20180524.0000.00_8.0_cn_1af8bc38c1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>MIUI9</td>
+                            <td>8.5.17</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.5.17/miui_MINote2_8.5.17_efa3afae2e_8.0.zip">miui_MINote2_8.5.17_efa3afae2e_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.5.17/scorpio_images_8.5.17_20180517.0000.00_8.0_cn_aaad337039.tgz">scorpio_images_8.5.17_20180517.0000.00_8.0_cn_aaad337039.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>MIUI9</td>
+                            <td>8.5.10</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.5.10/miui_MINote2_8.5.10_65c8d3ff9b_8.0.zip">miui_MINote2_8.5.10_65c8d3ff9b_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.5.10/scorpio_images_8.5.10_20180510.0000.00_8.0_cn_9515c792b5.tgz">scorpio_images_8.5.10_20180510.0000.00_8.0_cn_9515c792b5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>MIUI9</td>
+                            <td>8.3.26</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.26/miui_MINote2_8.3.26_72505abb05_7.0.zip">miui_MINote2_8.3.26_72505abb05_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.26/scorpio_images_8.3.26_20180326.0000.00_7.0_cn_b310dec4c3.tgz">scorpio_images_8.3.26_20180326.0000.00_7.0_cn_b310dec4c3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>MIUI9</td>
+                            <td>8.3.22</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/miui_MINote2_8.3.22_f05dac517c_7.0.zip">miui_MINote2_8.3.22_f05dac517c_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/scorpio_images_8.3.22_20180322.0000.00_7.0_cn_cfc8bd92ce.tgz">scorpio_images_8.3.22_20180322.0000.00_7.0_cn_cfc8bd92ce.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>MIUI9</td>
+                            <td>8.3.15</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/miui_MINote2_8.3.15_f3a97b2cde_7.0.zip">miui_MINote2_8.3.15_f3a97b2cde_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/scorpio_images_8.3.15_20180315.0000.00_7.0_cn_62c8068fa9.tgz">scorpio_images_8.3.15_20180315.0000.00_7.0_cn_62c8068fa9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>MIUI9</td>
+                            <td>8.3.8</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/miui_MINote2_8.3.8_7645564052_7.0.zip">miui_MINote2_8.3.8_7645564052_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/scorpio_images_8.3.8_20180308.0000.00_7.0_cn_ec07e1f354.tgz">scorpio_images_8.3.8_20180308.0000.00_7.0_cn_ec07e1f354.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>MIUI9</td>
+                            <td>8.3.1</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/miui_MINote2_8.3.1_4a0209aba1_7.0.zip">miui_MINote2_8.3.1_4a0209aba1_7.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>MIUI9</td>
+                            <td>8.2.1</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/miui_MINote2_8.2.1_605e20892a_7.0.zip">miui_MINote2_8.2.1_605e20892a_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/scorpio_images_8.2.1_20180201.0000.00_7.0_cn_a866bacae4.tgz">scorpio_images_8.2.1_20180201.0000.00_7.0_cn_a866bacae4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>MIUI9</td>
+                            <td>8.1.25</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/miui_MINote2_8.1.25_b626915180_7.0.zip">miui_MINote2_8.1.25_b626915180_7.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI9</td>
+                            <td>8.1.18</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/miui_MINote2_8.1.18_2141f49770_7.0.zip">miui_MINote2_8.1.18_2141f49770_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/scorpio_images_8.1.18_20180118.0000.00_7.0_cn_5ff57b70a1.tgz">scorpio_images_8.1.18_20180118.0000.00_7.0_cn_5ff57b70a1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI9</td>
+                            <td>8.1.11</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/miui_MINote2_8.1.11_3e837f2df1_7.0.zip">miui_MINote2_8.1.11_3e837f2df1_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/scorpio_images_8.1.11_20180111.0000.00_7.0_cn_2bc8c0fe5b.tgz">scorpio_images_8.1.11_20180111.0000.00_7.0_cn_2bc8c0fe5b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI9</td>
+                            <td>8.1.4</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/miui_MINote2_8.1.4_e09282893c_7.0.zip">miui_MINote2_8.1.4_e09282893c_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/scorpio_images_8.1.4_20180104.0000.00_7.0_cn_79568cbbbd.tgz">scorpio_images_8.1.4_20180104.0000.00_7.0_cn_79568cbbbd.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI9</td>
+                            <td>7.12.28</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/miui_MINote2_7.12.28_eea14b99a1_7.0.zip">miui_MINote2_7.12.28_eea14b99a1_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/scorpio_images_7.12.28_20171228.0000.00_7.0_cn_acaec1a66a.tgz">scorpio_images_7.12.28_20171228.0000.00_7.0_cn_acaec1a66a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI9</td>
+                            <td>7.12.21</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/miui_MINote2_7.12.21_55dca931b3_7.0.zip">miui_MINote2_7.12.21_55dca931b3_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/scorpio_images_7.12.21_20171221.0000.00_7.0_cn_ced4e27bda.tgz">scorpio_images_7.12.21_20171221.0000.00_7.0_cn_ced4e27bda.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI9</td>
+                            <td>7.12.15</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.15/miui_MINote2_7.12.15_f46a2a723a_7.0.zip">miui_MINote2_7.12.15_f46a2a723a_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.15/scorpio_images_7.12.15_20171215.0000.00_7.0_cn_7067b792c4.tgz">scorpio_images_7.12.15_20171215.0000.00_7.0_cn_7067b792c4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI9</td>
+                            <td>7.12.7</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/miui_MINote2_7.12.7_e1bb9d3a12_7.0.zip">miui_MINote2_7.12.7_e1bb9d3a12_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/scorpio_images_7.12.7_20171207.0000.00_7.0_cn_48182f7707.tgz">scorpio_images_7.12.7_20171207.0000.00_7.0_cn_48182f7707.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI9</td>
+                            <td>7.11.30</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.30/miui_MINote2_7.11.30_848c8e66ca_7.0.zip">miui_MINote2_7.11.30_848c8e66ca_7.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI9</td>
+                            <td>7.11.23</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/miui_MINote2_7.11.23_6340b52872_7.0.zip">miui_MINote2_7.11.23_6340b52872_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/scorpio_images_7.11.23_20171123.0000.00_7.0_cn_e863ad313f.tgz">scorpio_images_7.11.23_20171123.0000.00_7.0_cn_e863ad313f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI9</td>
+                            <td>7.11.16</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.16/miui_MINote2_7.11.16_a439d6c5e9_7.0.zip">miui_MINote2_7.11.16_a439d6c5e9_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.16/scorpio_images_7.11.16_20171116.0000.00_7.0_cn_7d70687f31.tgz">scorpio_images_7.11.16_20171116.0000.00_7.0_cn_7d70687f31.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI9</td>
+                            <td>7.11.9</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.9/miui_MINote2_7.11.9_00be0343d9_7.0.zip">miui_MINote2_7.11.9_00be0343d9_7.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI9</td>
+                            <td>7.11.2</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.2/miui_MINote2_7.11.2_896894ceb0_7.0.zip">miui_MINote2_7.11.2_896894ceb0_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.2/scorpio_images_7.11.2_20171102.0000.00_7.0_cn_6755dc9f8d.tgz">scorpio_images_7.11.2_20171102.0000.00_7.0_cn_6755dc9f8d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI9</td>
+                            <td>7.10.26</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/miui_MINote2_7.10.26_f2ae678b60_7.0.zip">miui_MINote2_7.10.26_f2ae678b60_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/scorpio_images_7.10.26_20171026.0000.00_7.0_cn_b9d8d66b3c.tgz">scorpio_images_7.10.26_20171026.0000.00_7.0_cn_b9d8d66b3c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI9</td>
+                            <td>7.10.19</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/miui_MINote2_7.10.19_5b7473ede8_7.0.zip">miui_MINote2_7.10.19_5b7473ede8_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/scorpio_images_7.10.19_20171019.0000.00_7.0_cn_ccb4eadced.tgz">scorpio_images_7.10.19_20171019.0000.00_7.0_cn_ccb4eadced.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI9</td>
+                            <td>7.10.12</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/miui_MINote2_7.10.12_47ba8a9c84_7.0.zip">miui_MINote2_7.10.12_47ba8a9c84_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/scorpio_images_7.10.12_20171012.0000.00_7.0_cn_64d868676f.tgz">scorpio_images_7.10.12_20171012.0000.00_7.0_cn_64d868676f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI9</td>
+                            <td>7.9.28</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.28/miui_MINote2_7.9.28_d4fa7a86dc_7.0.zip">miui_MINote2_7.9.28_d4fa7a86dc_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.28/scorpio_images_7.9.28_20170928.0000.00_7.0_cn_c2d79ecc7b.tgz">scorpio_images_7.9.28_20170928.0000.00_7.0_cn_c2d79ecc7b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI9</td>
+                            <td>7.9.21</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.21/miui_MINote2_7.9.21_e600abccc4_7.0.zip">miui_MINote2_7.9.21_e600abccc4_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.21/scorpio_images_7.9.21_20170921.0000.00_7.0_cn_05331d48e8.tgz">scorpio_images_7.9.21_20170921.0000.00_7.0_cn_05331d48e8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI9</td>
+                            <td>7.9.14</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/miui_MINote2_7.9.14_7487292d3a_7.0.zip">miui_MINote2_7.9.14_7487292d3a_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/scorpio_images_7.9.14_20170914.0000.00_7.0_cn_cf1fc56377.tgz">scorpio_images_7.9.14_20170914.0000.00_7.0_cn_cf1fc56377.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI9</td>
+                            <td>7.9.8</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.8/miui_MINote2_7.9.8_9bbf3c881c_7.0.zip">miui_MINote2_7.9.8_9bbf3c881c_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.8/scorpio_images_7.9.8_20170907.0000.00_7.0_cn_de910e1430.tgz">scorpio_images_7.9.8_20170907.0000.00_7.0_cn_de910e1430.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI9</td>
+                            <td>7.8.31</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.8.31/miui_MINote2_7.8.31_4b0fb19a5c_7.0.zip">miui_MINote2_7.8.31_4b0fb19a5c_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.8.31/scorpio_images_7.8.31_20170831.0000.00_7.0_cn_e9090d859b.tgz">scorpio_images_7.8.31_20170831.0000.00_7.0_cn_e9090d859b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI9</td>
+                            <td>7.8.24</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.8.24/miui_MINote2_7.8.24_2f3610a355_7.0.zip">miui_MINote2_7.8.24_2f3610a355_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.8.24/scorpio_images_7.8.24_20170824.0000.00_7.0_cn_9cb956a339.tgz">scorpio_images_7.8.24_20170824.0000.00_7.0_cn_9cb956a339.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI8</td>
+                            <td>7.7.20</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/miui_MINote2_7.7.20_1fff7966aa_7.0.zip">miui_MINote2_7.7.20_1fff7966aa_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/scorpio_images_7.7.20_20170720.0000.00_7.0_cn_71d2696ef0.tgz">scorpio_images_7.7.20_20170720.0000.00_7.0_cn_71d2696ef0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI8</td>
+                            <td>7.7.15</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.15/miui_MINote2_7.7.15_09a91897b7_7.0.zip">miui_MINote2_7.7.15_09a91897b7_7.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI8</td>
+                            <td>7.7.6</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.6/miui_MINote2_7.7.6_d859c85a69_7.0.zip">miui_MINote2_7.7.6_d859c85a69_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.6/scorpio_images_7.7.6_20170706.0000.00_7.0_cn_567d7add0d.tgz">scorpio_images_7.7.6_20170706.0000.00_7.0_cn_567d7add0d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI8</td>
+                            <td>7.6.29</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.6.29/miui_MINote2_7.6.29_b791f3728b_7.0.zip">miui_MINote2_7.6.29_b791f3728b_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.6.29/scorpio_images_7.6.29_20170629.0000.00_7.0_cn_69c36bc9e1.tgz">scorpio_images_7.6.29_20170629.0000.00_7.0_cn_69c36bc9e1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI8</td>
+                            <td>7.6.25</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.6.25/miui_MINote2_7.6.25_7307070989_7.0.zip">miui_MINote2_7.6.25_7307070989_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.6.25/scorpio_images_7.6.25_20170625.0000.00_7.0_cn_fbba6b1e02.tgz">scorpio_images_7.6.25_20170625.0000.00_7.0_cn_fbba6b1e02.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI8</td>
+                            <td>7.6.15</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.6.15/miui_MINote2_7.6.15_67caf714af_7.0.zip">miui_MINote2_7.6.15_67caf714af_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.6.15/scorpio_images_7.6.15_20170615.0000.00_7.0_cn_8212b9c4cb.tgz">scorpio_images_7.6.15_20170615.0000.00_7.0_cn_8212b9c4cb.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI8</td>
+                            <td>7.5.11</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.5.11/miui_MINote2_7.5.11_39ec097043_6.0.zip">miui_MINote2_7.5.11_39ec097043_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.5.11/scorpio_images_7.5.11_20170511.0000.00_6.0_cn_f685009a66.tgz">scorpio_images_7.5.11_20170511.0000.00_6.0_cn_f685009a66.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI8</td>
+                            <td>7.5.4</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.5.4/miui_MINote2_7.5.4_c3fd62f73d_6.0.zip">miui_MINote2_7.5.4_c3fd62f73d_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.5.4/scorpio_images_7.5.4_20170504.0000.00_6.0_cn_cbab2d74e3.tgz">scorpio_images_7.5.4_20170504.0000.00_6.0_cn_cbab2d74e3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI8</td>
+                            <td>7.4.27</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.27/miui_MINote2_7.4.27_2884b53991_6.0.zip">miui_MINote2_7.4.27_2884b53991_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.27/scorpio_images_7.4.27_20170426.0000.00_6.0_cn_7806c2e3e3.tgz">scorpio_images_7.4.27_20170426.0000.00_6.0_cn_7806c2e3e3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI8</td>
+                            <td>7.4.20</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.20/miui_MINote2_7.4.20_d5a5299483_6.0.zip">miui_MINote2_7.4.20_d5a5299483_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.20/scorpio_images_7.4.20_20170420.0000.00_6.0_cn_c7700e1048.tgz">scorpio_images_7.4.20_20170420.0000.00_6.0_cn_c7700e1048.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI8</td>
+                            <td>7.4.14</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.14/miui_MINote2_7.4.14_e16b9c2954_6.0.zip">miui_MINote2_7.4.14_e16b9c2954_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.14/scorpio_images_7.4.14_20170414.0000.00_6.0_cn_77d07fc81e.tgz">scorpio_images_7.4.14_20170414.0000.00_6.0_cn_77d07fc81e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI8</td>
+                            <td>7.4.6</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.4.6/miui_MINote2_7.4.6_33665a6d1a_6.0.zip">miui_MINote2_7.4.6_33665a6d1a_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.4.6/scorpio_images_7.4.6_20170406.0000.00_6.0_cn_fbe03385e4.tgz">scorpio_images_7.4.6_20170406.0000.00_6.0_cn_fbe03385e4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI8</td>
+                            <td>7.3.30</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.30/miui_MINote2_7.3.30_de43c73e91_6.0.zip">miui_MINote2_7.3.30_de43c73e91_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.30/scorpio_images_7.3.30_20170330.0000.00_6.0_cn_1ea8f1e4db.tgz">scorpio_images_7.3.30_20170330.0000.00_6.0_cn_1ea8f1e4db.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI8</td>
+                            <td>7.3.23</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.23/miui_MINote2_7.3.23_a9b42c1625_6.0.zip">miui_MINote2_7.3.23_a9b42c1625_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.23/scorpio_images_7.3.23_20170323.0000.00_6.0_cn_6c356fa1b3.tgz">scorpio_images_7.3.23_20170323.0000.00_6.0_cn_6c356fa1b3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI8</td>
+                            <td>7.3.16</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.16/miui_MINote2_7.3.16_05be1d38f3_6.0.zip">miui_MINote2_7.3.16_05be1d38f3_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.16/scorpio_images_7.3.16_20170316.0000.00_6.0_cn_2c6d09d04c.tgz">scorpio_images_7.3.16_20170316.0000.00_6.0_cn_2c6d09d04c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI8</td>
+                            <td>7.3.9</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.9/miui_MINote2_7.3.9_5a3c136220_6.0.zip">miui_MINote2_7.3.9_5a3c136220_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.9/scorpio_images_7.3.9_20170309.0000.00_6.0_cn_60fcddbb57.tgz">scorpio_images_7.3.9_20170309.0000.00_6.0_cn_60fcddbb57.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI8</td>
+                            <td>7.3.2</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.2/miui_MINote2_7.3.2_e7d024edf7_6.0.zip">miui_MINote2_7.3.2_e7d024edf7_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.2/scorpio_images_7.3.2_20170302.0000.00_6.0_cn_e906b23107.tgz">scorpio_images_7.3.2_20170302.0000.00_6.0_cn_e906b23107.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI8</td>
+                            <td>7.2.24</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.2.24/miui_MINote2_7.2.24_2ce17aeb7c_6.0.zip">miui_MINote2_7.2.24_2ce17aeb7c_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.2.24/scorpio_images_7.2.24_20170224.0000.00_6.0_cn_9cadd5d1b8.tgz">scorpio_images_7.2.24_20170224.0000.00_6.0_cn_9cadd5d1b8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI8</td>
+                            <td>7.2.16</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.2.16/miui_MINote2_7.2.16_d36ee94a7d_6.0.zip">miui_MINote2_7.2.16_d36ee94a7d_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.2.16/scorpio_images_7.2.16_20170216.0000.00_6.0_cn_4e87e31a15.tgz">scorpio_images_7.2.16_20170216.0000.00_6.0_cn_4e87e31a15.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI8</td>
+                            <td>7.2.9</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.2.9/miui_MINote2_7.2.9_e457962a62_6.0.zip">miui_MINote2_7.2.9_e457962a62_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.2.9/scorpio_images_7.2.9_20170209.0000.00_6.0_cn_1e02d821fc.tgz">scorpio_images_7.2.9_20170209.0000.00_6.0_cn_1e02d821fc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI8</td>
+                            <td>7.1.20</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.1.20/miui_MINote2_7.1.20_b01b090977_6.0.zip">miui_MINote2_7.1.20_b01b090977_6.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI8</td>
+                            <td>7.1.12</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.1.12/miui_MINote2_7.1.12_11d8858a59_6.0.zip">miui_MINote2_7.1.12_11d8858a59_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.1.12/scorpio_images_7.1.12_20170111.0000.00_6.0_cn_3125af7c16.tgz">scorpio_images_7.1.12_20170111.0000.00_6.0_cn_3125af7c16.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI8</td>
+                            <td>7.1.5</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.1.5/miui_MINote2_7.1.5_1ee804c0b0_6.0.zip">miui_MINote2_7.1.5_1ee804c0b0_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.1.5/scorpio_images_7.1.5_20170105.0000.00_6.0_cn_1c189b1a5e.tgz">scorpio_images_7.1.5_20170105.0000.00_6.0_cn_1c189b1a5e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI8</td>
+                            <td>6.12.29</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.29/miui_MINote2_6.12.29_4f0a408d22_6.0.zip">miui_MINote2_6.12.29_4f0a408d22_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.29/scorpio_images_6.12.29_20161228.0000.00_6.0_cn_4524648127.tgz">scorpio_images_6.12.29_20161228.0000.00_6.0_cn_4524648127.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI8</td>
+                            <td>6.12.22</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.22/miui_MINote2_6.12.22_5e49174309_6.0.zip">miui_MINote2_6.12.22_5e49174309_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.22/scorpio_images_6.12.22_20161222.0000.00_6.0_cn_23b2c2a256.tgz">scorpio_images_6.12.22_20161222.0000.00_6.0_cn_23b2c2a256.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI8</td>
+                            <td>6.12.8</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.8/miui_MINote2_6.12.8_f789aae296_6.0.zip">miui_MINote2_6.12.8_f789aae296_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.8/scorpio_images_6.12.8_20161208.0000.00_6.0_cn_4c83d43dee.tgz">scorpio_images_6.12.8_20161208.0000.00_6.0_cn_4c83d43dee.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI8</td>
+                            <td>6.12.1</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.12.1/miui_MINote2_6.12.1_246279b1ec_6.0.zip">miui_MINote2_6.12.1_246279b1ec_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.12.1/scorpio_images_6.12.1_20161201.0000.00_6.0_cn_d98e645c3f.tgz">scorpio_images_6.12.1_20161201.0000.00_6.0_cn_d98e645c3f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI8</td>
+                            <td>6.11.10</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.11.10/miui_MINote2_6.11.10_0bd3508aa8_6.0.zip">miui_MINote2_6.11.10_0bd3508aa8_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.11.10/scorpio_images_6.11.10_20161110.0000.00_6.0_cn_c5abbcc0ea.tgz">scorpio_images_6.11.10_20161110.0000.00_6.0_cn_c5abbcc0ea.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI8</td>
+                            <td>6.11.3</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/6.11.3/miui_MINote2_6.11.3_00a5476a06_6.0.zip">miui_MINote2_6.11.3_00a5476a06_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/6.11.3/scorpio_images_6.11.3_20161103.0000.00_6.0_cn_64a6224088.tgz">scorpio_images_6.11.3_20161103.0000.00_6.0_cn_64a6224088.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>25</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>24</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>23</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>V10.2.1.0.OADCNFK</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.OADCNFK/miui_MINote2_V10.2.1.0.OADCNFK_cebfab5bf7_8.0.zip">miui_MINote2_V10.2.1.0.OADCNFK_cebfab5bf7_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.OADCNFK/scorpio_images_V10.2.1.0.OADCNFK_20181217.0000.00_8.0_cn_a559a669f2.tgz">scorpio_images_V10.2.1.0.OADCNFK_20181217.0000.00_8.0_cn_a559a669f2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>V10.0.1.0.OADCNFH</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.0.1.0.OADCNFH/miui_MINote2_V10.0.1.0.OADCNFH_098ba4b1c7_8.0.zip">miui_MINote2_V10.0.1.0.OADCNFH_098ba4b1c7_8.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.0.1.0.OADCNFH/scorpio_images_V10.0.1.0.OADCNFH_20180823.0000.00_8.0_cn_2432d28724.tgz">scorpio_images_V10.0.1.0.OADCNFH_20180823.0000.00_8.0_cn_2432d28724.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>V9.6.1.0.OADCNFD</td>
+                            <td>8.0 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.OADCNFD/miui_MINote2_V9.6.1.0.OADCNFD_7f52ba5426_8.0.zip">miui_MINote2_V9.6.1.0.OADCNFD_7f52ba5426_8.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>V9.5.4.0.NADCNFA</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.4.0.NADCNFA/miui_MINote2_V9.5.4.0.NADCNFA_383600cf01_7.0.zip">miui_MINote2_V9.5.4.0.NADCNFA_383600cf01_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.4.0.NADCNFA/scorpio_images_V9.5.4.0.NADCNFA_20180614.0000.00_7.0_cn_1ca2faeaab.tgz">scorpio_images_V9.5.4.0.NADCNFA_20180614.0000.00_7.0_cn_1ca2faeaab.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>V9.5.2.0.NADCNFA</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NADCNFA/miui_MINote2_V9.5.2.0.NADCNFA_ed7da9c862_7.0.zip">miui_MINote2_V9.5.2.0.NADCNFA_ed7da9c862_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NADCNFA/scorpio_images_V9.5.2.0.NADCNFA_20180405.0000.00_7.0_cn_6edecb85e7.tgz">scorpio_images_V9.5.2.0.NADCNFA_20180405.0000.00_7.0_cn_6edecb85e7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V9.5.1.0.NADCNFA</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NADCNFA/miui_MINote2_V9.5.1.0.NADCNFA_d93c7003a5_7.0.zip">miui_MINote2_V9.5.1.0.NADCNFA_d93c7003a5_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NADCNFA/scorpio_images_V9.5.1.0.NADCNFA_20180301.0000.00_7.0_cn_c6a296f216.tgz">scorpio_images_V9.5.1.0.NADCNFA_20180301.0000.00_7.0_cn_c6a296f216.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V9.2.2.0.NADCNEK</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NADCNEK/miui_MINote2_V9.2.2.0.NADCNEK_516f4c3fd4_7.0.zip">miui_MINote2_V9.2.2.0.NADCNEK_516f4c3fd4_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NADCNEK/scorpio_images_V9.2.2.0.NADCNEK_20180125.0000.00_7.0_cn_b652e8e30c.tgz">scorpio_images_V9.2.2.0.NADCNEK_20180125.0000.00_7.0_cn_b652e8e30c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V9.1.3.0.NADCNEI</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.3.0.NADCNEI/miui_MINote2_V9.1.3.0.NADCNEI_f6953edcad_7.0.zip">miui_MINote2_V9.1.3.0.NADCNEI_f6953edcad_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.3.0.NADCNEI/scorpio_images_V9.1.3.0.NADCNEI_20171129.0000.00_7.0_cn_f437bc27ae.tgz">scorpio_images_V9.1.3.0.NADCNEI_20171129.0000.00_7.0_cn_f437bc27ae.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V9.1.2.0.NADCNEI</td>
+                            <td>7.0 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.2.0.NADCNEI/miui_MINote2_V9.1.2.0.NADCNEI_429a48e7f7_7.0.zip">miui_MINote2_V9.1.2.0.NADCNEI_429a48e7f7_7.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.2.0.NADCNEI/scorpio_images_V9.1.2.0.NADCNEI_20171102.0000.00_7.0_cn_1007182371.tgz">scorpio_images_V9.1.2.0.NADCNEI_20171102.0000.00_7.0_cn_1007182371.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V8.5.6.0.MADCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.6.0.MADCNED/miui_MINote2_V8.5.6.0.MADCNED_179b9b5c15_6.0.zip">miui_MINote2_V8.5.6.0.MADCNED_179b9b5c15_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.6.0.MADCNED/scorpio_images_V8.5.6.0.MADCNED_20170926.0000.00_6.0_cn_d436206cec.tgz">scorpio_images_V8.5.6.0.MADCNED_20170926.0000.00_6.0_cn_d436206cec.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V8.5.4.0.MADCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.MADCNED/miui_MINote2_V8.5.4.0.MADCNED_ef77aed810_6.0.zip">miui_MINote2_V8.5.4.0.MADCNED_ef77aed810_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.MADCNED/scorpio_images_V8.5.4.0.MADCNED_20170728.0000.00_6.0_cn_97e4f01bc1.tgz">scorpio_images_V8.5.4.0.MADCNED_20170728.0000.00_6.0_cn_97e4f01bc1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V8.5.3.0.MADCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.3.0.MADCNED/miui_MINote2_V8.5.3.0.MADCNED_06bdf0a768_6.0.zip">miui_MINote2_V8.5.3.0.MADCNED_06bdf0a768_6.0.zip"</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.3.0.MADCNED/scorpio_images_V8.5.3.0.MADCNED_20170626.0000.00_6.0_cn_d73bfaee98.tgz">scorpio_images_V8.5.3.0.MADCNED_20170626.0000.00_6.0_cn_d73bfaee98.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V8.5.2.0.MADCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.2.0.MADCNED/miui_MINote2_V8.5.2.0.MADCNED_d15c16c9f7_6.0.zip">miui_MINote2_V8.5.2.0.MADCNED_d15c16c9f7_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.2.0.MADCNED/scorpio_images_V8.5.2.0.MADCNED_20170525.0000.00_6.0_cn_3fddc7c521.tgz">scorpio_images_V8.5.2.0.MADCNED_20170525.0000.00_6.0_cn_3fddc7c521.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V8.2.6.0.MADCNDL</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.6.0.MADCNDL/miui_MINote2_V8.2.6.0.MADCNDL_b605b23360_6.0.zip">miui_MINote2_V8.2.6.0.MADCNDL_b605b23360_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.6.0.MADCNDL/scorpio_images_V8.2.6.0.MADCNDL_20170426.0000.00_6.0_cn_00908d94c6.tgz">scorpio_images_V8.2.6.0.MADCNDL_20170426.0000.00_6.0_cn_00908d94c6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V8.2.5.0.MADCNDL</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.5.0.MADCNDL/miui_MINote2_V8.2.5.0.MADCNDL_e2083a8abc_6.0.zip">miui_MINote2_V8.2.5.0.MADCNDL_e2083a8abc_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.5.0.MADCNDL/scorpio_images_V8.2.5.0.MADCNDL_20170324.0000.00_6.0_cn_b35b307b2a.tgz">scorpio_images_V8.2.5.0.MADCNDL_20170324.0000.00_6.0_cn_b35b307b2a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V8.2.4.0.MADCNDL</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.4.0.MADCNDL/miui_MINote2_V8.2.4.0.MADCNDL_31dc544ebc_6.0.zip">miui_MINote2_V8.2.4.0.MADCNDL_31dc544ebc_6.0.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V8.2.3.0.MADCNDL</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.3.0.MADCNDL/miui_MINote2_V8.2.3.0.MADCNDL_83921e6a00_6.0.zip">miui_MINote2_V8.2.3.0.MADCNDL_83921e6a00_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.3.0.MADCNDL/scorpio_images_V8.2.3.0.MADCNDL_20170216.0000.00_6.0_cn_7a509a0c91.tgz">scorpio_images_V8.2.3.0.MADCNDL_20170216.0000.00_6.0_cn_7a509a0c91.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V8.0.15.0.MADCNDI</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.15.0.MADCNDI/miui_MINote2_V8.0.15.0.MADCNDI_9140ecd014_6.0.zip">miui_MINote2_V8.0.15.0.MADCNDI_9140ecd014_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.15.0.MADCNDI/scorpio_images_V8.0.15.0.MADCNDI_20161229.0000.00_6.0_cn_ee99371406.tgz">scorpio_images_V8.0.15.0.MADCNDI_20161229.0000.00_6.0_cn_ee99371406.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V8.0.13.0.MADCNDI</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.13.0.MADCNDI/miui_MINote2_V8.0.13.0.MADCNDI_bfdebb3edd_6.0.zip">miui_MINote2_V8.0.13.0.MADCNDI_bfdebb3edd_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.13.0.MADCNDI/scorpio_images_V8.0.13.0.MADCNDI_20161128.0000.00_6.0_cn_33573f280d.tgz">scorpio_images_V8.0.13.0.MADCNDI_20161128.0000.00_6.0_cn_33573f280d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V8.0.12.0.MADCNDI</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.12.0.MADCNDI/miui_MINote2_V8.0.12.0.MADCNDI_9c99ec3819_6.0.zip">miui_MINote2_V8.0.12.0.MADCNDI_9c99ec3819_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.12.0.MADCNDI/scorpio_images_V8.0.12.0.MADCNDI_20161115.0000.00_6.0_cn_7d1dbdb7c6.tgz">scorpio_images_V8.0.12.0.MADCNDI_20161115.0000.00_6.0_cn_7d1dbdb7c6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V8.0.9.0.MADCNDI</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.9.0.MADCNDI/miui_MINote2_V8.0.9.0.MADCNDI_7200ec7399_6.0.zip">miui_MINote2_V8.0.9.0.MADCNDI_7200ec7399_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.0.9.0.MADCNDI/scorpio_images_V8.0.9.0.MADCNDI_20161026.0000.00_6.0_cn_f3bdb84ba2.tgz">scorpio_images_V8.0.9.0.MADCNDI_20161026.0000.00_6.0_cn_f3bdb84ba2.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>TEXT_HERE</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
+               >arrow_upward</a></i>
+    </button>
+</body>
+
+</html>
