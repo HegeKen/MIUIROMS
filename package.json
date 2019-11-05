@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d view"
+    "deploy": "gh-pages -d docs"
   },
   "keywords": [],
   "author": "海格Hege",
