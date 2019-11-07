@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+            li a {
+                text-decoration: none;
+                color: blue;
+            }
+    
+            td a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    <title>红米5 Plus(vince)官方ROM合集 --By 海力力。</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-panel mdui-panel-gapless">
+        <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
+            <div class="mdui-panel-item-body">
+                <ol>
+                    <li>机型：红米5 Plus  代号：vince</li>
+                    <li>此次更新项目：V11.0.2.0.OEGCNXM</li>
+                    <li>特别感谢：<a href="http://www.miui.com/space-uid-70504145.html">@happyvenus0510 </a></li>
+                    <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
+                    <li>特别感谢：<a href="http://rom.52mail.cn/"">rom.52mail.cn</a>网站</li>
+                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
+                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
+                    <li>官方刷机工具：<a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip">MiFlash 最新版(2018.5.28)</a>, <a href="https://pan.mioffice.cn:443/link/22C5BB5C8BE69E64529ECF8901617417">小米助手最新版</a>，原帖：<a href="https://web.vip.miui.com/page/info/mio-pc/detail?postId=6100562" target="_blank">小米社区</a></li>
+                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为ROM的正式内容 -->
+
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#GB_BETA" class="mdui-ripple mdui-hidden">国际开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
+        <a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>66</td>
+                            <td>MIUI11</td>
+                            <td>9.10.10</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="https://bigota.d.miui.com/9.10.10/miui_HM5Plus_9.10.10_a2ad5bd3b7_8.1.zip">miui_HM5Plus_9.10.10_a2ad5bd3b7_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>MIUI11</td>
+                            <td>9.9.26</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM5Plus_9.9.26_90aeca981c_8.1.zip">miui_HM5Plus_9.9.26_90aeca981c_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>MIUI10</td>
+                            <td>9.9.2</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.9.2/miui_HM5Plus_9.9.2_38e86b99ac_8.1.zip">miui_HM5Plus_9.9.2_38e86b99ac_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.9.2/vince_images_9.9.2_20190902.0000.00_8.1_cn_c78158b8c4.tgz">vince_images_9.9.2_20190902.0000.00_8.1_cn_c78158b8c4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>MIUI10</td>
+                            <td>9.8.15</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/miui_HM5Plus_9.8.15_9e0a1aad8e_8.1.zip">miui_HM5Plus_9.8.15_9e0a1aad8e_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/vince_images_9.8.15_20190815.0000.00_8.1_cn_9cddf07cd2.tgz">vince_images_9.8.15_20190815.0000.00_8.1_cn_9cddf07cd2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>MIUI10</td>
+                            <td>9.8.1</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/miui_HM5Plus_9.8.1_3a0c4b5cf9_8.1.zip">miui_HM5Plus_9.8.1_3a0c4b5cf9_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/vince_images_9.8.1_20190801.0000.00_8.1_cn_9c27bc8251.tgz">vince_images_9.8.1_20190801.0000.00_8.1_cn_9c27bc8251.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>MIUI10</td>
+                            <td>9.7.25</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/miui_HM5Plus_9.7.25_5bed550eb3_8.1.zip">miui_HM5Plus_9.7.25_5bed550eb3_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/vince_images_9.7.25_20190725.0000.00_8.1_cn_74732b7deb.tgz">vince_images_9.7.25_20190725.0000.00_8.1_cn_74732b7deb.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>MIUI10</td>
+                            <td>9.7.18</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/miui_HM5Plus_9.7.18_0ceb63d205_8.1.zip">miui_HM5Plus_9.7.18_0ceb63d205_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/vince_images_9.7.18_20190718.0000.00_8.1_cn_3dfa6b4092.tgz">vince_images_9.7.18_20190718.0000.00_8.1_cn_3dfa6b4092.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>MIUI10</td>
+                            <td>9.6.27</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_HM5Plus_9.6.27_d3eaa3fad0_8.1.zip">miui_HM5Plus_9.6.27_d3eaa3fad0_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/vince_images_9.6.27_20190627.0000.00_8.1_cn_56175eb108.tgz">vince_images_9.6.27_20190627.0000.00_8.1_cn_56175eb108.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>MIUI10</td>
+                            <td>9.6.20</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_HM5Plus_9.6.20_d9385a043c_8.1.zip">miui_HM5Plus_9.6.20_d9385a043c_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/vince_images_9.6.20_20190620.0000.00_8.1_cn_60ef80a26a.tgz">vince_images_9.6.20_20190620.0000.00_8.1_cn_60ef80a26a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>MIUI10</td>
+                            <td>9.6.13</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_HM5Plus_9.6.13_05a1595325_8.1.zip">miui_HM5Plus_9.6.13_05a1595325_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>MIUI10</td>
+                            <td>9.5.30</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/miui_HM5Plus_9.5.30_14e52d7aaf_8.1.zip">miui_HM5Plus_9.5.30_14e52d7aaf_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/vince_images_9.5.30_20190530.0000.00_8.1_cn_4e6e2a4d90.tgz">vince_images_9.5.30_20190530.0000.00_8.1_cn_4e6e2a4d90.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>MIUI10</td>
+                            <td>9.5.23</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/miui_HM5Plus_9.5.23_0f12a44523_8.1.zip">miui_HM5Plus_9.5.23_0f12a44523_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/vince_images_9.5.23_20190523.0000.00_8.1_cn_b305dd5a24.tgz">vince_images_9.5.23_20190523.0000.00_8.1_cn_b305dd5a24.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>MIUI10</td>
+                            <td>9.5.16</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/miui_HM5Plus_9.5.16_9b47cd5c74_8.1.zip">miui_HM5Plus_9.5.16_9b47cd5c74_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/vince_images_9.5.16_20190516.0000.00_8.1_cn_a4ff035f5a.tgz">vince_images_9.5.16_20190516.0000.00_8.1_cn_a4ff035f5a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>MIUI10</td>
+                            <td>9.5.9</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/miui_HM5Plus_9.5.9_45942882c9_8.1.zip">miui_HM5Plus_9.5.9_45942882c9_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/vince_images_9.5.9_20190509.0000.00_8.1_cn_80de1cc78c.tgz">vince_images_9.5.9_20190509.0000.00_8.1_cn_80de1cc78c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>MIUI10</td>
+                            <td>9.4.25</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/miui_HM5Plus_9.4.25_fb55e655ab_8.1.zip">miui_HM5Plus_9.4.25_fb55e655ab_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/vince_images_9.4.25_20190425.0000.00_8.1_cn_5c7baaf3d3.tgz">vince_images_9.4.25_20190425.0000.00_8.1_cn_5c7baaf3d3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>MIUI10</td>
+                            <td>9.4.18</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/miui_HM5Plus_9.4.18_193fa09f58_8.1.zip">miui_HM5Plus_9.4.18_193fa09f58_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/vince_images_9.4.18_20190418.0000.00_8.1_cn_1d698eb32f.tgz">vince_images_9.4.18_20190418.0000.00_8.1_cn_1d698eb32f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI10</td>
+                            <td>9.4.11</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.11/miui_HM5Plus_9.4.11_25a2e2b0e9_8.1.zip">miui_HM5Plus_9.4.11_25a2e2b0e9_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI10</td>
+                            <td>9.3.28</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/miui_HM5Plus_9.3.28_4c21e62777_8.1.zip">miui_HM5Plus_9.3.28_4c21e62777_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/vince_images_9.3.28_20190328.0000.00_8.1_cn_661f4ff998.tgz">vince_images_9.3.28_20190328.0000.00_8.1_cn_661f4ff998.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI10</td>
+                            <td>9.3.21</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/miui_HM5Plus_9.3.21_e5faf9b300_8.1.zip">miui_HM5Plus_9.3.21_e5faf9b300_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/vince_images_9.3.21_20190321.0000.00_8.1_cn_0ce34f8982.tgz">vince_images_9.3.21_20190321.0000.00_8.1_cn_0ce34f8982.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI10</td>
+                            <td>9.3.14</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/miui_HM5Plus_9.3.14_88b89f2af4_8.1.zip">miui_HM5Plus_9.3.14_88b89f2af4_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/vince_images_9.3.14_20190314.0000.00_8.1_cn_c25abd6ac5.tgz">vince_images_9.3.14_20190314.0000.00_8.1_cn_c25abd6ac5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI10</td>
+                            <td>9.3.7</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/miui_HM5Plus_9.3.7_a64a1daa4a_8.1.zip">miui_HM5Plus_9.3.7_a64a1daa4a_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI10</td>
+                            <td>9.3.1</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.1/miui_HM5Plus_9.3.1_431b0a164f_8.1.zip">miui_HM5Plus_9.3.1_431b0a164f_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI10</td>
+                            <td>9.2.21</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/miui_HM5Plus_9.2.21_d78bedbf44_8.1.zip">miui_HM5Plus_9.2.21_d78bedbf44_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/vince_images_9.2.21_20190221.0000.00_8.1_cn_0328976822.tgz">vince_images_9.2.21_20190221.0000.00_8.1_cn_0328976822.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI10</td>
+                            <td>9.2.15</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/miui_HM5Plus_9.2.15_2f3ae26a2b_8.1.zip">miui_HM5Plus_9.2.15_2f3ae26a2b_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/vince_images_9.2.15_20190215.0000.00_8.1_cn_5fc1f280dc.tgz">vince_images_9.2.15_20190215.0000.00_8.1_cn_5fc1f280dc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI10</td>
+                            <td>9.1.24</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/miui_HM5Plus_9.1.24_ec750370c3_8.1.zip">miui_HM5Plus_9.1.24_ec750370c3_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/vince_images_9.1.24_20190124.0000.00_8.1_cn_6f4375c6ca.tgz">vince_images_9.1.24_20190124.0000.00_8.1_cn_6f4375c6ca.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI10</td>
+                            <td>9.1.17</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/miui_HM5Plus_9.1.17_ab861abe8f_8.1.zip">miui_HM5Plus_9.1.17_ab861abe8f_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/vince_images_9.1.17_20190117.0000.00_8.1_cn_2ce79ec9a7.tgz">vince_images_9.1.17_20190117.0000.00_8.1_cn_2ce79ec9a7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI10</td>
+                            <td>9.1.10</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/miui_HM5Plus_9.1.10_5c08d87997_8.1.zip">miui_HM5Plus_9.1.10_5c08d87997_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/vince_images_9.1.10_20190110.0000.00_8.1_cn_abbf2fe2a2.tgz">vince_images_9.1.10_20190110.0000.00_8.1_cn_abbf2fe2a2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI10</td>
+                            <td>9.1.1</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.1/miui_HM5Plus_9.1.1_7564fb21b6_8.1.zip">miui_HM5Plus_9.1.1_7564fb21b6_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI10</td>
+                            <td>8.12.27</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.27/miui_HM5Plus_8.12.27_461c0a7044_8.1.zip">miui_HM5Plus_8.12.27_461c0a7044_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI10</td>
+                            <td>8.12.20</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.20/miui_HM5Plus_8.12.20_2f42719a27_8.1.zip">miui_HM5Plus_8.12.20_2f42719a27_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI10</td>
+                            <td>8.12.13</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/miui_HM5Plus_8.12.13_b6cb2bba2b_8.1.zip">miui_HM5Plus_8.12.13_b6cb2bba2b_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/vince_images_8.12.13_20181213.0000.00_8.1_cn_d7355bd585.tgz">vince_images_8.12.13_20181213.0000.00_8.1_cn_d7355bd585.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI10</td>
+                            <td>8.12.6</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/miui_HM5Plus_8.12.6_9867a1429f_8.1.zip">miui_HM5Plus_8.12.6_9867a1429f_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/vince_images_8.12.6_20181206.0000.00_8.1_cn_476380e690.tgz">vince_images_8.12.6_20181206.0000.00_8.1_cn_476380e690.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI10</td>
+                            <td>8.11.30</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.30/miui_HM5Plus_8.11.30_4c87434f50_8.1.zip">miui_HM5Plus_8.11.30_4c87434f50_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI10</td>
+                            <td>8.11.23</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.23/miui_HM5Plus_8.11.23_a6bbe282e7_8.1.zip">miui_HM5Plus_8.11.23_a6bbe282e7_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI10</td>
+                            <td>8.11.15</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.15/miui_HM5Plus_8.11.15_ac5ef895fc_8.1.zip">miui_HM5Plus_8.11.15_ac5ef895fc_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI10</td>
+                            <td>8.11.2</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/miui_HM5Plus_8.11.2_f2bb489682_7.1.zip">miui_HM5Plus_8.11.2_f2bb489682_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/vince_images_8.11.2_20181102.0000.00_7.1_cn_adff716d08.tgz">vince_images_8.11.2_20181102.0000.00_7.1_cn_adff716d08.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI10</td>
+                            <td>8.10.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/miui_HM5Plus_8.10.25_55b500ece7_7.1.zip">miui_HM5Plus_8.10.25_55b500ece7_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/vince_images_8.10.25_20181025.0000.00_7.1_cn_8dccda8963.tgz">vince_images_8.10.25_20181025.0000.00_7.1_cn_8dccda8963.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI10</td>
+                            <td>8.10.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/miui_HM5Plus_8.10.18_443e580d5d_7.1.zip">miui_HM5Plus_8.10.18_443e580d5d_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/vince_images_8.10.18_20181018.0000.00_7.1_cn_0f8131cdd5.tgz">vince_images_8.10.18_20181018.0000.00_7.1_cn_0f8131cdd5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI10</td>
+                            <td>8.10.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/miui_HM5Plus_8.10.11_87dd95bb99_7.1.zip">miui_HM5Plus_8.10.11_87dd95bb99_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/vince_images_8.10.11_20181011.0000.00_7.1_cn_2617acf331.tgz">vince_images_8.10.11_20181011.0000.00_7.1_cn_2617acf331.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI10</td>
+                            <td>8.9.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/miui_HM5Plus_8.9.20_5dfb75137e_7.1.zip">miui_HM5Plus_8.9.20_5dfb75137e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/vince_images_8.9.20_20180920.0000.00_7.1_cn_7965674719.tgz">vince_images_8.9.20_20180920.0000.00_7.1_cn_7965674719.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI10</td>
+                            <td>8.9.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/miui_HM5Plus_8.9.13_ba9d52cae5_7.1.zip">miui_HM5Plus_8.9.13_ba9d52cae5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/vince_images_8.9.13_20180913.0000.00_7.1_cn_bf4958ac0b.tgz">vince_images_8.9.13_20180913.0000.00_7.1_cn_bf4958ac0b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI10</td>
+                            <td>8.9.6</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/miui_HM5Plus_8.9.6_872f93e2fa_7.1.zip">miui_HM5Plus_8.9.6_872f93e2fa_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/vince_images_8.9.6_20180906.0000.00_7.1_cn_0b82cf4b14.tgz">vince_images_8.9.6_20180906.0000.00_7.1_cn_0b82cf4b14.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI10</td>
+                            <td>8.8.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/miui_HM5Plus_8.8.30_c8f5a51b8f_7.1.zip">miui_HM5Plus_8.8.30_c8f5a51b8f_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/vince_images_8.8.30_20180830.0000.00_7.1_cn_a5e6be2c2e.tgz">vince_images_8.8.30_20180830.0000.00_7.1_cn_a5e6be2c2e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI10</td>
+                            <td>8.8.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/miui_HM5Plus_8.8.23_1055238595_7.1.zip">miui_HM5Plus_8.8.23_1055238595_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/vince_images_8.8.23_20180823.0000.00_7.1_cn_e74180b17b.tgz">vince_images_8.8.23_20180823.0000.00_7.1_cn_e74180b17b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI10</td>
+                            <td>8.8.16</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/miui_HM5Plus_8.8.16_4e4a929170_7.1.zip">miui_HM5Plus_8.8.16_4e4a929170_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/vince_images_8.8.16_20180816.0000.00_7.1_cn_ab7a7d3023.tgz">vince_images_8.8.16_20180816.0000.00_7.1_cn_ab7a7d3023.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI10</td>
+                            <td>8.8.9</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/miui_HM5Plus_8.8.9_017a75c543_7.1.zip">miui_HM5Plus_8.8.9_017a75c543_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/vince_images_8.8.9_20180809.0000.00_7.1_cn_ccf12bffb4.tgz">vince_images_8.8.9_20180809.0000.00_7.1_cn_ccf12bffb4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI10</td>
+                            <td>8.8.3</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/miui_HM5Plus_8.8.3_18270ac6e9_7.1.zip">miui_HM5Plus_8.8.3_18270ac6e9_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/vince_images_8.8.3_20180802.0000.00_7.1_cn_a1b441a4f9.tgz">vince_images_8.8.3_20180802.0000.00_7.1_cn_a1b441a4f9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI10</td>
+                            <td>8.7.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/miui_HM5Plus_8.7.26_db3b53a895_7.1.zip">miui_HM5Plus_8.7.26_db3b53a895_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/vince_images_8.7.26_20180726.0000.00_7.1_cn_6ebd393773.tgz">vince_images_8.7.26_20180726.0000.00_7.1_cn_6ebd393773.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI10</td>
+                            <td>8.7.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/miui_HM5Plus_8.7.19_f61cddaa57_7.1.zip">miui_HM5Plus_8.7.19_f61cddaa57_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/vince_images_8.7.19_20180719.0000.00_7.1_cn_1bfa1c5be6.tgz">vince_images_8.7.19_20180719.0000.00_7.1_cn_1bfa1c5be6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI10</td>
+                            <td>8.7.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/miui_HM5Plus_8.7.12_bbbe464d19_7.1.zip">miui_HM5Plus_8.7.12_bbbe464d19_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/vince_images_8.7.12_20180712.0000.00_7.1_cn_c30c596f0c.tgz">vince_images_8.7.12_20180712.0000.00_7.1_cn_c30c596f0c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI9</td>
+                            <td>8.4.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/miui_HM5Plus_8.4.26_aecc00909c_7.1.zip">miui_HM5Plus_8.4.26_aecc00909c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/vince_images_8.4.26_20180426.0000.00_7.1_cn_200e2aef64.tgz">vince_images_8.4.26_20180426.0000.00_7.1_cn_200e2aef64.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI9</td>
+                            <td>8.4.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/miui_HM5Plus_8.4.19_a7ffec63eb_7.1.zip">miui_HM5Plus_8.4.19_a7ffec63eb_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/vince_images_8.4.19_20180419.0000.00_7.1_cn_6c186b8f08.tgz">vince_images_8.4.19_20180419.0000.00_7.1_cn_6c186b8f08.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI9</td>
+                            <td>8.4.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.12/miui_HM5Plus_8.4.12_560621d84a_7.1.zip">miui_HM5Plus_8.4.12_560621d84a_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI9</td>
+                            <td>8.3.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/miui_HM5Plus_8.3.29_15a9d62657_7.1.zip">miui_HM5Plus_8.3.29_15a9d62657_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/vince_images_8.3.29_20180329.0000.00_7.1_cn_9daeab248a.tgz">vince_images_8.3.29_20180329.0000.00_7.1_cn_9daeab248a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI9</td>
+                            <td>8.3.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/miui_HM5Plus_8.3.22_c511a0dc42_7.1.zip">miui_HM5Plus_8.3.22_c511a0dc42_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/vince_images_8.3.22_20180322.0000.00_7.1_cn_ce6dc71eda.tgz">vince_images_8.3.22_20180322.0000.00_7.1_cn_ce6dc71eda.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI9</td>
+                            <td>8.3.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/miui_HM5Plus_8.3.15_bcb46823f5_7.1.zip">miui_HM5Plus_8.3.15_bcb46823f5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/vince_images_8.3.15_20180315.0000.00_7.1_cn_29646b6247.tgz">vince_images_8.3.15_20180315.0000.00_7.1_cn_29646b6247.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI9</td>
+                            <td>8.3.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/miui_HM5Plus_8.3.8_5dcc550515_7.1.zip">miui_HM5Plus_8.3.8_5dcc550515_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/vince_images_8.3.8_20180308.0000.00_7.1_cn_e3b4d762b0.tgz">vince_images_8.3.8_20180308.0000.00_7.1_cn_e3b4d762b0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI9</td>
+                            <td>8.3.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/miui_HM5Plus_8.3.1_8eb5d98e2a_7.1.zip">miui_HM5Plus_8.3.1_8eb5d98e2a_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/vince_images_8.3.1_20180301.0000.00_7.1_cn_29d01811a8.tgz">vince_images_8.3.1_20180301.0000.00_7.1_cn_29d01811a8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI9</td>
+                            <td>8.2.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/miui_HM5Plus_8.2.1_fda3c075e8_7.1.zip">miui_HM5Plus_8.2.1_fda3c075e8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/vince_images_8.2.1_20180201.0000.00_7.1_cn_bd9ee1a88a.tgz">vince_images_8.2.1_20180201.0000.00_7.1_cn_bd9ee1a88a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI9</td>
+                            <td>8.1.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/miui_HM5Plus_8.1.25_4adc4426a5_7.1.zip">miui_HM5Plus_8.1.25_4adc4426a5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/vince_images_8.1.25_20180125.0000.00_7.1_cn_bfbdae0a54.tgz">vince_images_8.1.25_20180125.0000.00_7.1_cn_bfbdae0a54.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI9</td>
+                            <td>8.1.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/miui_HM5Plus_8.1.18_957e1acac2_7.1.zip">miui_HM5Plus_8.1.18_957e1acac2_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/vince_images_8.1.18_20180118.0000.00_7.1_cn_99dc31523b.tgz">vince_images_8.1.18_20180118.0000.00_7.1_cn_99dc31523b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI9</td>
+                            <td>8.1.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/miui_HM5Plus_8.1.11_49b479c44c_7.1.zip">miui_HM5Plus_8.1.11_49b479c44c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/vince_images_8.1.11_20180111.0000.00_7.1_cn_920e955fb0.tgz">vince_images_8.1.11_20180111.0000.00_7.1_cn_920e955fb0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI9</td>
+                            <td>8.1.4</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/miui_HM5Plus_8.1.4_6e53379df0_7.1.zip">miui_HM5Plus_8.1.4_6e53379df0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/vince_images_8.1.4_20180104.0000.00_7.1_cn_1ac83d0008.tgz">vince_images_8.1.4_20180104.0000.00_7.1_cn_1ac83d0008.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI9</td>
+                            <td>7.12.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/miui_HM5Plus_7.12.28_bcc85d2826_7.1.zip">miui_HM5Plus_7.12.28_bcc85d2826_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/vince_images_7.12.28_20171228.0000.00_7.1_cn_d42b15150b.tgz">vince_images_7.12.28_20171228.0000.00_7.1_cn_d42b15150b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI9</td>
+                            <td>7.12.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/miui_HM5Plus_7.12.21_f0c30b716a_7.1.zip">miui_HM5Plus_7.12.21_f0c30b716a_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/vince_images_7.12.21_20171221.0000.00_7.1_cn_8a0a9c5f99.tgz">vince_images_7.12.21_20171221.0000.00_7.1_cn_8a0a9c5f99.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI9</td>
+                            <td>7.12.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/miui_HM5Plus_7.12.14_ac25be0c57_7.1.zip">miui_HM5Plus_7.12.14_ac25be0c57_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/vince_images_7.12.14_20171214.0000.00_7.1_cn_e5c19bb1cc.tgz">vince_images_7.12.14_20171214.0000.00_7.1_cn_e5c19bb1cc.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_BETA" class="mdui-p-a-2 mdui-hidden">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>65</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>20</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>19</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>V11.0.2.0.OEGCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V11.0.2.0.OEGCNXM/miui_HM5Plus_V11.0.2.0.OEGCNXM_972a72bf51_8.1.zip">miui_HM5Plus_V11.0.2.0.OEGCNXM_972a72bf51_8.1.zip</a></td>
+                            <td>
+                                <!-- <a href="TEXT_HERE">TEXT_HERE</a> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>V10.3.2.0.OEGCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.2.0.OEGCNXM/miui_HM5Plus_V10.3.2.0.OEGCNXM_156e7d5f6c_8.1.zip">miui_HM5Plus_V10.3.2.0.OEGCNXM_156e7d5f6c_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V10.3.1.0.OEGCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.OEGCNXM/miui_HM5Plus_V10.3.1.0.OEGCNXM_77c45f96cc_8.1.zip">miui_HM5Plus_V10.3.1.0.OEGCNXM_77c45f96cc_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.OEGCNXM/vince_images_V10.3.1.0.OEGCNXM_20190328.0000.00_8.1_cn_4ae7125e4b.tgz">vince_images_V10.3.1.0.OEGCNXM_20190328.0000.00_8.1_cn_4ae7125e4b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V10.2.4.0.OEGCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.4.0.OEGCNXM/miui_HM5Plus_V10.2.4.0.OEGCNXM_c5fdb8aaa1_8.1.zip">miui_HM5Plus_V10.2.4.0.OEGCNXM_c5fdb8aaa1_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.4.0.OEGCNXM/vince_images_V10.2.4.0.OEGCNXM_20190301.0000.00_8.1_cn_7f6d00f532.tgz">vince_images_V10.2.4.0.OEGCNXM_20190301.0000.00_8.1_cn_7f6d00f532.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V10.2.3.0.OEGCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.OEGCNXM/miui_HM5Plus_V10.2.3.0.OEGCNXM_238c315e36_8.1.zip">miui_HM5Plus_V10.2.3.0.OEGCNXM_238c315e36_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V10.2.2.0.OEGCNFK</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.OEGCNFK/miui_HM5Plus_V10.2.2.0.OEGCNFK_22597e1e2e_8.1.zip">miui_HM5Plus_V10.2.2.0.OEGCNFK_22597e1e2e_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.OEGCNFK/vince_images_V10.2.2.0.OEGCNFK_20181214.0000.00_8.1_cn_bfcb3a4a95.tgz">vince_images_V10.2.2.0.OEGCNFK_20181214.0000.00_8.1_cn_bfcb3a4a95.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V10.1.1.0.NEGCNFI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NEGCNFI/miui_HM5Plus_V10.1.1.0.NEGCNFI_f89e05b532_7.1.zip">miui_HM5Plus_V10.1.1.0.NEGCNFI_f89e05b532_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NEGCNFI/vince_images_V10.1.1.0.NEGCNFI_20181012.0000.00_7.1_cn_2e20e4ffed.tgz">vince_images_V10.1.1.0.NEGCNFI_20181012.0000.00_7.1_cn_2e20e4ffed.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V9.6.3.0.NEGCNFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.3.0.NEGCNFD/miui_HM5Plus_V9.6.3.0.NEGCNFD_3bfdee2ed1_7.1.zip">miui_HM5Plus_V9.6.3.0.NEGCNFD_3bfdee2ed1_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.3.0.NEGCNFD/vince_images_V9.6.3.0.NEGCNFD_20180724.0000.00_7.1_cn_a6bfb819c7.tgz">vince_images_V9.6.3.0.NEGCNFD_20180724.0000.00_7.1_cn_a6bfb819c7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V9.6.2.0.NEGCNFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NEGCNFD/miui_HM5Plus_V9.6.2.0.NEGCNFD_f7a431e56c_7.1.zip">miui_HM5Plus_V9.6.2.0.NEGCNFD_f7a431e56c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NEGCNFD/vince_images_V9.6.2.0.NEGCNFD_20180614.0000.00_7.1_cn_c98931fa78.tgz">vince_images_V9.6.2.0.NEGCNFD_20180614.0000.00_7.1_cn_c98931fa78.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V9.6.1.0.NEGCNFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NEGCNFD/miui_HM5Plus_V9.6.1.0.NEGCNFD_79e7bc7094_7.1.zip">miui_HM5Plus_V9.6.1.0.NEGCNFD_79e7bc7094_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V9.5.5.0.NEGCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.5.0.NEGCNFA/miui_HM5Plus_V9.5.5.0.NEGCNFA_cc67c331b1_7.1.zip">miui_HM5Plus_V9.5.5.0.NEGCNFA_cc67c331b1_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.5.0.NEGCNFA/vince_images_V9.5.5.0.NEGCNFA_20180504.0000.00_7.1_cn_34c27146df.tgz">vince_images_V9.5.5.0.NEGCNFA_20180504.0000.00_7.1_cn_34c27146df.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V9.5.4.0.NEGCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.4.0.NEGCNFA/miui_HM5Plus_V9.5.4.0.NEGCNFA_95bfdc8361_7.1.zip">miui_HM5Plus_V9.5.4.0.NEGCNFA_95bfdc8361_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.4.0.NEGCNFA/vince_images_V9.5.4.0.NEGCNFA_20180405.0000.00_7.1_cn_cff72bf9e9.tgz">vince_images_V9.5.4.0.NEGCNFA_20180405.0000.00_7.1_cn_cff72bf9e9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V9.5.2.0.NEGCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NEGCNFA/miui_HM5Plus_V9.5.2.0.NEGCNFA_ba45782278_7.1.zip">miui_HM5Plus_V9.5.2.0.NEGCNFA_ba45782278_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NEGCNFA/vince_images_V9.5.2.0.NEGCNFA_20180316.0000.00_7.1_cn_87f6b6ea1f.tgz">vince_images_V9.5.2.0.NEGCNFA_20180316.0000.00_7.1_cn_87f6b6ea1f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V9.5.1.0.NEGCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NEGCNFA/miui_HM5Plus_V9.5.1.0.NEGCNFA_303b0bfd41_7.1.zip">miui_HM5Plus_V9.5.1.0.NEGCNFA_303b0bfd41_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NEGCNFA/vince_images_V9.5.1.0.NEGCNFA_20180302.0000.00_7.1_cn_484a456162.tgz">vince_images_V9.5.1.0.NEGCNFA_20180302.0000.00_7.1_cn_484a456162.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V9.2.4.0.NEGCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.4.0.NEGCNEK/miui_HM5Plus_V9.2.4.0.NEGCNEK_ddf387afd9_7.1.zip">miui_HM5Plus_V9.2.4.0.NEGCNEK_ddf387afd9_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.4.0.NEGCNEK/vince_images_V9.2.4.0.NEGCNEK_20180209.0000.00_7.1_cn_5fc4d81478.tgz">vince_images_V9.2.4.0.NEGCNEK_20180209.0000.00_7.1_cn_5fc4d81478.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V9.2.3.0.NEGCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.3.0.NEGCNEK/miui_HM5Plus_V9.2.3.0.NEGCNEK_d6f25171d7_7.1.zip">miui_HM5Plus_V9.2.3.0.NEGCNEK_d6f25171d7_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.3.0.NEGCNEK/vince_images_V9.2.3.0.NEGCNEK_20180118.0000.00_7.1_cn_c85dd1521f.tgz">vince_images_V9.2.3.0.NEGCNEK_20180118.0000.00_7.1_cn_c85dd1521f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V9.2.1.0.NEGCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NEGCNEK/miui_HM5Plus_V9.2.1.0.NEGCNEK_7b4d446ffe_7.1.zip">miui_HM5Plus_V9.2.1.0.NEGCNEK_7b4d446ffe_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NEGCNEK/vince_images_V9.2.1.0.NEGCNEK_20171226.0000.00_7.1_cn_f9ef1d52d3.tgz">vince_images_V9.2.1.0.NEGCNEK_20171226.0000.00_7.1_cn_f9ef1d52d3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V9.0.4.0.NEGCNEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.4.0.NEGCNEI/miui_VINCE_V9.0.4.0.NEGCNEI_5e6d5dd443_7.1.zip">miui_VINCE_V9.0.4.0.NEGCNEI_5e6d5dd443_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.4.0.NEGCNEI/vince_images_V9.0.4.0.NEGCNEI_20171130.0000.00_7.1_cn_d0b0790de0.tgz">vince_images_V9.0.4.0.NEGCNEI_20171130.0000.00_7.1_cn_d0b0790de0.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>20</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>19</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>18</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>17</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>16</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>15</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>14</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>13</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V10.2.3.0.OEGMIXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.OEGMIXM/miui_HM5PlusGlobal_V10.2.3.0.OEGMIXM_062f670d34_8.1.zip">miui_HM5PlusGlobal_V10.2.3.0.OEGMIXM_062f670d34_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.OEGMIXM/vince_global_images_V10.2.3.0.OEGMIXM_20190701.0000.00_8.1_global_82d73c7f78.tgz">vince_global_images_V10.2.3.0.OEGMIXM_20190701.0000.00_8.1_global_82d73c7f78.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V10.2.1.0.OEGMIXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.OEGMIXM/miui_HM5PlusGlobal_V10.2.1.0.OEGMIXM_c9cb5eb7bb_8.1.zip">miui_HM5PlusGlobal_V10.2.1.0.OEGMIXM_c9cb5eb7bb_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.OEGMIXM/vince_global_images_V10.2.1.0.OEGMIXM_20190325.0000.00_8.1_global_a6f1d912aa.tgz">vince_global_images_V10.2.1.0.OEGMIXM_20190325.0000.00_8.1_global_a6f1d912aa.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V10.0.4.0.OEGMIFH</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.0.4.0.OEGMIFH/miui_HM5PlusGlobal_V10.0.4.0.OEGMIFH_6ecc2f2148_8.1.zip">miui_HM5PlusGlobal_V10.0.4.0.OEGMIFH_6ecc2f2148_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.0.4.0.OEGMIFH/vince_global_images_V10.0.4.0.OEGMIFH_20181030.0000.00_8.1_global_63bc76465f.tgz">vince_global_images_V10.0.4.0.OEGMIFH_20181030.0000.00_8.1_global_63bc76465f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V10.0.2.0.OEGMIFH</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.0.2.0.OEGMIFH/miui_HM5PlusGlobal_V10.0.2.0.OEGMIFH_dc9f1b974c_8.1.zip">miui_HM5PlusGlobal_V10.0.2.0.OEGMIFH_dc9f1b974c_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.0.2.0.OEGMIFH/vince_global_images_V10.0.2.0.OEGMIFH_20180914.0000.00_8.1_global_018f1e352d.tgz">vince_global_images_V10.0.2.0.OEGMIFH_20180914.0000.00_8.1_global_018f1e352d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V9.6.5.0.OEGMIFD</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.5.0.OEGMIFD/miui_HM5PlusGlobal_V9.6.5.0.OEGMIFD_6be14bde4d_8.1.zip">miui_HM5PlusGlobal_V9.6.5.0.OEGMIFD_6be14bde4d_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.5.0.OEGMIFD/vince_global_images_V9.6.5.0.OEGMIFD_20180817.0000.00_8.1_global_c80e84fe92.tgz">vince_global_images_V9.6.5.0.OEGMIFD_20180817.0000.00_8.1_global_c80e84fe92.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V9.6.4.0.NEGMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.4.0.NEGMIFD/miui_HM5PlusGlobal_V9.6.4.0.NEGMIFD_325e87c267_7.1.zip">miui_HM5PlusGlobal_V9.6.4.0.NEGMIFD_325e87c267_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.4.0.NEGMIFD/vince_global_images_V9.6.4.0.NEGMIFD_20180710.0000.00_7.1_global_8c0af37c1d.tgz">vince_global_images_V9.6.4.0.NEGMIFD_20180710.0000.00_7.1_global_8c0af37c1d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V9.6.2.0.NEGMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NEGMIFD/miui_HM5PlusGlobal_V9.6.2.0.NEGMIFD_215b4ae3f2_7.1.zip">miui_HM5PlusGlobal_V9.6.2.0.NEGMIFD_215b4ae3f2_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NEGMIFD/vince_global_images_V9.6.2.0.NEGMIFD_20180608.0000.00_7.1_global_caaf0fdef6.tgz">vince_global_images_V9.6.2.0.NEGMIFD_20180608.0000.00_7.1_global_caaf0fdef6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V9.5.12.0.NEGMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.12.0.NEGMIFA/miui_HM5PlusGlobal_V9.5.12.0.NEGMIFA_a13a556ab2_7.1.zip">miui_HM5PlusGlobal_V9.5.12.0.NEGMIFA_a13a556ab2_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V9.5.11.0.NEGMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.11.0.NEGMIFA/miui_HM5PlusGlobal_V9.5.11.0.NEGMIFA_0f26df3905_7.1.zip">miui_HM5PlusGlobal_V9.5.11.0.NEGMIFA_0f26df3905_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V9.5.9.0.NEGMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.9.0.NEGMIFA/miui_HM5PlusGlobal_V9.5.9.0.NEGMIFA_aa37ebca33_7.1.zip">miui_HM5PlusGlobal_V9.5.9.0.NEGMIFA_aa37ebca33_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V9.5.4.0.NEGMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.4.0.NEGMIFA/miui_HM5PlusGlobal_V9.5.4.0.NEGMIFA_f989035458_7.1.zip">miui_HM5PlusGlobal_V9.5.4.0.NEGMIFA_f989035458_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V9.5.3.0.NEGMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.3.0.NEGMIFA/miui_HM5PlusGlobal_V9.5.3.0.NEGMIFA_3561d5df4a_7.1.zip">miui_HM5PlusGlobal_V9.5.3.0.NEGMIFA_3561d5df4a_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="RU_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">俄罗斯稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>5</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>4</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>3</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>2</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V9.6.3.0.NEGRUFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.3.0.NEGRUFD/miui_HM5PlusRUGlobal_V9.6.3.0.NEGRUFD_5c7b19eb30_7.1.zip">miui_HM5PlusRUGlobal_V9.6.3.0.NEGRUFD_5c7b19eb30_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.3.0.NEGRUFD/vince_ru_global_images_V9.6.3.0.NEGRUFD_20180625.0000.00_7.1_global_df89ee4a4f.tgz">vince_ru_global_images_V9.6.3.0.NEGRUFD_20180625.0000.00_7.1_global_df89ee4a4f.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
+               >arrow_upward</a></i>
+    </button>
+</body>
+
+</html>

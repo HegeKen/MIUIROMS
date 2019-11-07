@@ -24,10 +24,10 @@
 
 Redmi 系列
 
-+ 数字系列：红米6/ 红米6A/ 红米6 Pro/ Redmi 7/ Redmi 7A/ Redmi 8/ Redmi 8A  
-红米S2/ 红米Y3/ 
++ 数字系列：红米5Plus/ 红米6/ 红米6A/ 红米6 Pro/ Redmi 7/ Redmi 7A/ Redmi 8/ Redmi 8A  
 + Note系列：红米Note 4X(高通)/ 红米Note 5/ 红米Note 5A 标准版/ 红米Note 5A 高配版/ Redmi Note 7/ Redmi Note 7 Pro/ Redmi Note 8/ Redmi Note 8 Pro
 + K系列：Redmi K20/ Redmi K20 Pro/ Redmi K20 Pro尊享版  
++ 其它：红米S2/ 红米Y3/  
 
 等机型已完成收集工作  
 
