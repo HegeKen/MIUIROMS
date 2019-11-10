@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+            li a {
+                text-decoration: none;
+                color: blue;
+            }
+    
+            td a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    <title>小米5X(tiffany)官方ROM合集 --By 海力力。</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-panel mdui-panel-gapless">
+        <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
+            <div class="mdui-panel-item-body">
+                <ol>
+                    <li>机型：小米5X 代号：tiffany</li>
+                    <li>此次更新项目：V11.0.2.0.ODBCNXM</li>
+                    <li>特别感谢：<a href="http://www.miui.com/space-uid-134328462.html">@玩味♂ </a></li>
+                    <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
+                    <li>特别感谢：<a href="http://rom.52mail.cn/"">rom.52mail.cn</a>网站</li>
+                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
+                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
+                    <li>官方刷机工具：<a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip">MiFlash 最新版(2018.5.28)</a>, <a href="https://pan.mioffice.cn:443/link/22C5BB5C8BE69E64529ECF8901617417">小米助手最新版</a>，原帖：<a href="https://web.vip.miui.com/page/info/mio-pc/detail?postId=6100562" target="_blank">小米社区</a></li>                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为ROM的正式内容 -->
+
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>75</td>
+                            <td>MIUI11</td>
+                            <td>9.10.10</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="https://bigota.d.miui.com/9.10.10/miui_MI5X_9.10.10_a8e7c48b8e_8.1.zip">miui_MI5X_9.10.10_a8e7c48b8e_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td>MIUI11</td>
+                            <td>9.9.26</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5X_9.9.26_08483d94d0_8.1.zip">miui_MI5X_9.9.26_08483d94d0_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td>MIUI10</td>
+                            <td>9.8.29</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/miui_MI5X_9.8.29_9c43b3cd13_8.1.zip">miui_MI5X_9.8.29_9c43b3cd13_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/tiffany_images_9.8.29_20190829.0000.00_8.1_cn_cd7a0ec502.tgz">tiffany_images_9.8.29_20190829.0000.00_8.1_cn_cd7a0ec502.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td>MIUI10</td>
+                            <td>9.8.22</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.22/miui_MI5X_9.8.22_03a1e0cb85_8.1.zip">miui_MI5X_9.8.22_03a1e0cb85_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.22/tiffany_images_9.8.22_20190822.0000.00_8.1_cn_7c5400f63a.tgz">tiffany_images_9.8.22_20190822.0000.00_8.1_cn_7c5400f63a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td>MIUI10</td>
+                            <td>9.8.15</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/miui_MI5X_9.8.15_cf3b323f64_8.1.zip">miui_MI5X_9.8.15_cf3b323f64_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/tiffany_images_9.8.15_20190815.0000.00_8.1_cn_354d9cf330.tgz">tiffany_images_9.8.15_20190815.0000.00_8.1_cn_354d9cf330.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>MIUI10</td>
+                            <td>9.8.8</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.8/miui_MI5X_9.8.8_65efec461b_8.1.zip">miui_MI5X_9.8.8_65efec461b_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.8/tiffany_images_9.8.8_20190808.0000.00_8.1_cn_1c975b44fc.tgz">tiffany_images_9.8.8_20190808.0000.00_8.1_cn_1c975b44fc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td>MIUI10</td>
+                            <td>9.8.1</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/miui_MI5X_9.8.1_2d626f394f_8.1.zip">miui_MI5X_9.8.1_2d626f394f_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/tiffany_images_9.8.1_20190801.0000.00_8.1_cn_c3169ff82e.tgz">tiffany_images_9.8.1_20190801.0000.00_8.1_cn_c3169ff82e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>MIUI10</td>
+                            <td>9.7.25</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/miui_MI5X_9.7.25_a14ec65f2f_8.1.zip">miui_MI5X_9.7.25_a14ec65f2f_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/tiffany_images_9.7.25_20190725.0000.00_8.1_cn_d55f7e1608.tgz">tiffany_images_9.7.25_20190725.0000.00_8.1_cn_d55f7e1608.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>MIUI10</td>
+                            <td>9.7.18</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/miui_MI5X_9.7.18_02eec45c2f_8.1.zip">miui_MI5X_9.7.18_02eec45c2f_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/tiffany_images_9.7.18_20190718.0000.00_8.1_cn_77bed7a10d.tgz">tiffany_images_9.7.18_20190718.0000.00_8.1_cn_77bed7a10d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td>MIUI10</td>
+                            <td>9.6.27</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_MI5X_9.6.27_0786a6e1fd_8.1.zip">miui_MI5X_9.6.27_0786a6e1fd_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/tiffany_images_9.6.27_20190627.0000.00_8.1_cn_d80cd8a1d9.tgz">tiffany_images_9.6.27_20190627.0000.00_8.1_cn_d80cd8a1d9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>MIUI10</td>
+                            <td>9.6.20</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_MI5X_9.6.20_7d10aaf581_8.1.zip">miui_MI5X_9.6.20_7d10aaf581_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/tiffany_images_9.6.20_20190620.0000.00_8.1_cn_f5e8cfc426.tgz">tiffany_images_9.6.20_20190620.0000.00_8.1_cn_f5e8cfc426.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>MIUI10</td>
+                            <td>9.6.13</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_MI5X_9.6.13_e28f447e20_8.1.zip">miui_MI5X_9.6.13_e28f447e20_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>MIUI10</td>
+                            <td>9.5.30</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/miui_MI5X_9.5.30_71aa581d5d_8.1.zip">miui_MI5X_9.5.30_71aa581d5d_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/tiffany_images_9.5.30_20190530.0000.00_8.1_cn_7a6935085e.tgz">tiffany_images_9.5.30_20190530.0000.00_8.1_cn_7a6935085e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>MIUI10</td>
+                            <td>9.5.23</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/miui_MI5X_9.5.23_05ca4976e2_8.1.zip">miui_MI5X_9.5.23_05ca4976e2_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/tiffany_images_9.5.23_20190523.0000.00_8.1_cn_284cc4daab.tgz">tiffany_images_9.5.23_20190523.0000.00_8.1_cn_284cc4daab.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>MIUI10</td>
+                            <td>9.5.16</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/miui_MI5X_9.5.16_42a05d217a_8.1.zip">miui_MI5X_9.5.16_42a05d217a_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/tiffany_images_9.5.16_20190516.0000.00_8.1_cn_dd376c42f7.tgz">tiffany_images_9.5.16_20190516.0000.00_8.1_cn_dd376c42f7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>MIUI10</td>
+                            <td>9.5.9</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/miui_MI5X_9.5.9_3e496bb6b0_8.1.zip">miui_MI5X_9.5.9_3e496bb6b0_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/tiffany_images_9.5.9_20190509.0000.00_8.1_cn_ad36b08826.tgz">tiffany_images_9.5.9_20190509.0000.00_8.1_cn_ad36b08826.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>MIUI10</td>
+                            <td>9.4.25</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/miui_MI5X_9.4.25_f515146b63_8.1.zip">miui_MI5X_9.4.25_f515146b63_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/tiffany_images_9.4.25_20190425.0000.00_8.1_cn_d6aa977402.tgz">tiffany_images_9.4.25_20190425.0000.00_8.1_cn_d6aa977402.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>MIUI10</td>
+                            <td>9.4.18</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/miui_MI5X_9.4.18_d4bedf8daa_8.1.zip">miui_MI5X_9.4.18_d4bedf8daa_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/tiffany_images_9.4.18_20190418.0000.00_8.1_cn_7965bbe3db.tgz">tiffany_images_9.4.18_20190418.0000.00_8.1_cn_7965bbe3db.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>MIUI10</td>
+                            <td>9.4.11</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.11/miui_MI5X_9.4.11_95d837210c_8.1.zip">miui_MI5X_9.4.11_95d837210c_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>MIUI10</td>
+                            <td>9.3.28</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/miui_MI5X_9.3.28_9e8c769e67_8.1.zip">miui_MI5X_9.3.28_9e8c769e67_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/tiffany_images_9.3.28_20190328.0000.00_8.1_cn_cae10eadcb.tgz">tiffany_images_9.3.28_20190328.0000.00_8.1_cn_cae10eadcb.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>MIUI10</td>
+                            <td>9.3.21</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/miui_MI5X_9.3.21_7f2f081036_8.1.zip">miui_MI5X_9.3.21_7f2f081036_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/tiffany_images_9.3.21_20190321.0000.00_8.1_cn_c19279c767.tgz">tiffany_images_9.3.21_20190321.0000.00_8.1_cn_c19279c767.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>MIUI10</td>
+                            <td>9.3.14</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/miui_MI5X_9.3.14_8d379b572a_8.1.zip">miui_MI5X_9.3.14_8d379b572a_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/tiffany_images_9.3.14_20190314.0000.00_8.1_cn_cafd36eb21.tgz">tiffany_images_9.3.14_20190314.0000.00_8.1_cn_cafd36eb21.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>MIUI10</td>
+                            <td>9.3.7</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/miui_MI5X_9.3.7_923990ffc3_8.1.zip">miui_MI5X_9.3.7_923990ffc3_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>MIUI10</td>
+                            <td>9.3.1</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.1/miui_MI5X_9.3.1_5da2107d1e_8.1.zip">miui_MI5X_9.3.1_5da2107d1e_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>MIUI10</td>
+                            <td>9.2.21</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/miui_MI5X_9.2.21_100c6d670e_8.1.zip">miui_MI5X_9.2.21_100c6d670e_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/tiffany_images_9.2.21_20190221.0000.00_8.1_cn_3659e1e014.tgz">tiffany_images_9.2.21_20190221.0000.00_8.1_cn_3659e1e014.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI10</td>
+                            <td>9.2.15</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/miui_MI5X_9.2.15_3fe01562e9_8.1.zip">miui_MI5X_9.2.15_3fe01562e9_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/tiffany_images_9.2.15_20190215.0000.00_8.1_cn_57a5e81a4a.tgz">tiffany_images_9.2.15_20190215.0000.00_8.1_cn_57a5e81a4a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI10</td>
+                            <td>9.1.24</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/miui_MI5X_9.1.24_be08cbf7cc_8.1.zip">miui_MI5X_9.1.24_be08cbf7cc_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/tiffany_images_9.1.24_20190124.0000.00_8.1_cn_1061beec9c.tgz">tiffany_images_9.1.24_20190124.0000.00_8.1_cn_1061beec9c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI10</td>
+                            <td>9.1.17</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/miui_MI5X_9.1.17_4a537dab52_8.1.zip">miui_MI5X_9.1.17_4a537dab52_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/tiffany_images_9.1.17_20190117.0000.00_8.1_cn_728fbdc94d.tgz">tiffany_images_9.1.17_20190117.0000.00_8.1_cn_728fbdc94d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI10</td>
+                            <td>9.1.10</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/miui_MI5X_9.1.10_3f702a9b9a_8.1.zip">miui_MI5X_9.1.10_3f702a9b9a_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/tiffany_images_9.1.10_20190110.0000.00_8.1_cn_196d6a4fa6.tgz">tiffany_images_9.1.10_20190110.0000.00_8.1_cn_196d6a4fa6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI10</td>
+                            <td>9.1.1</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.1/miui_MI5X_9.1.1_a2edba7b22_8.1.zip">miui_MI5X_9.1.1_a2edba7b22_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI10</td>
+                            <td>8.12.27</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.27/miui_MI5X_8.12.27_be4a5d4336_8.1.zip">miui_MI5X_8.12.27_be4a5d4336_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI10</td>
+                            <td>8.12.20</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.20/miui_MI5X_8.12.20_97621b623c_8.1.zip">miui_MI5X_8.12.20_97621b623c_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI10</td>
+                            <td>8.12.13</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/miui_MI5X_8.12.13_e6b871b333_8.1.zip">miui_MI5X_8.12.13_e6b871b333_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/tiffany_images_8.12.13_20181213.0000.00_8.1_cn_d29712a55b.tgz">tiffany_images_8.12.13_20181213.0000.00_8.1_cn_d29712a55b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI10</td>
+                            <td>8.12.6</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/miui_MI5X_8.12.6_a4bc2e5a31_8.1.zip">miui_MI5X_8.12.6_a4bc2e5a31_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/tiffany_images_8.12.6_20181206.0000.00_8.1_cn_cd14a6e50e.tgz">tiffany_images_8.12.6_20181206.0000.00_8.1_cn_cd14a6e50e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI10</td>
+                            <td>8.11.29</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.29/miui_MI5X_8.11.29_a5d2f0a556_8.1.zip">miui_MI5X_8.11.29_a5d2f0a556_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI10</td>
+                            <td>8.11.23</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.23/miui_MI5X_8.11.23_300eef1694_8.1.zip">miui_MI5X_8.11.23_300eef1694_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI10</td>
+                            <td>8.11.15</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.15/miui_MI5X_8.11.15_3c899ace7f_8.1.zip">miui_MI5X_8.11.15_3c899ace7f_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.15/tiffany_images_8.11.15_20181116.0000.00_8.1_cn_6ea7e322a8.tgz">tiffany_images_8.11.15_20181116.0000.00_8.1_cn_6ea7e322a8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI10</td>
+                            <td>8.11.2</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/miui_MI5X_8.11.2_f307a49bf7_7.1.zip">miui_MI5X_8.11.2_f307a49bf7_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/tiffany_images_8.11.2_20181102.0000.00_7.1_cn_cc3a5eb3ea.tgz">tiffany_images_8.11.2_20181102.0000.00_7.1_cn_cc3a5eb3ea.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI10</td>
+                            <td>8.10.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/miui_MI5X_8.10.25_451f72b46f_7.1.zip">miui_MI5X_8.10.25_451f72b46f_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/tiffany_images_8.10.25_20181025.0000.00_7.1_cn_a74bede76c.tgz">tiffany_images_8.10.25_20181025.0000.00_7.1_cn_a74bede76c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI10</td>
+                            <td>8.10.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/miui_MI5X_8.10.18_04e8618d5c_7.1.zip">miui_MI5X_8.10.18_04e8618d5c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/tiffany_images_8.10.18_20181018.0000.00_7.1_cn_f816d8a34b.tgz">tiffany_images_8.10.18_20181018.0000.00_7.1_cn_f816d8a34b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI10</td>
+                            <td>8.10.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/miui_MI5X_8.10.11_c2a214a4c3_7.1.zip">miui_MI5X_8.10.11_c2a214a4c3_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/tiffany_images_8.10.11_20181011.0000.00_7.1_cn_62cae39b86.tgz">tiffany_images_8.10.11_20181011.0000.00_7.1_cn_62cae39b86.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI10</td>
+                            <td>8.9.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/miui_MI5X_8.9.20_faf5749e63_7.1.zip">miui_MI5X_8.9.20_faf5749e63_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/tiffany_images_8.9.20_20180920.0000.00_7.1_cn_d831b83a5e.tgz">tiffany_images_8.9.20_20180920.0000.00_7.1_cn_d831b83a5e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI10</td>
+                            <td>8.9.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/miui_MI5X_8.9.13_157dbad5a0_7.1.zip">miui_MI5X_8.9.13_157dbad5a0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/tiffany_images_8.9.13_20180913.0000.00_7.1_cn_1cd9c8b0fc.tgz">tiffany_images_8.9.13_20180913.0000.00_7.1_cn_1cd9c8b0fc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI10</td>
+                            <td>8.9.6</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/miui_MI5X_8.9.6_088d80fd65_7.1.zip">miui_MI5X_8.9.6_088d80fd65_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/tiffany_images_8.9.6_20180906.0000.00_7.1_cn_5d16c46844.tgz">tiffany_images_8.9.6_20180906.0000.00_7.1_cn_5d16c46844.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI10</td>
+                            <td>8.8.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/miui_MI5X_8.8.30_23af6a4e91_7.1.zip">TEXT_HERE</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/tiffany_images_8.8.30_20180830.0000.00_7.1_cn_42f4c60ca7.tgz">tiffany_images_8.8.30_20180830.0000.00_7.1_cn_42f4c60ca7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI10</td>
+                            <td>8.8.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/miui_MI5X_8.8.23_77ee420077_7.1.zip">miui_MI5X_8.8.23_77ee420077_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/tiffany_images_8.8.23_20180823.0000.00_7.1_cn_6258119a16.tgz">tiffany_images_8.8.23_20180823.0000.00_7.1_cn_6258119a16.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI10</td>
+                            <td>8.8.16</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/miui_MI5X_8.8.16_1f57dd5836_7.1.zip">miui_MI5X_8.8.16_1f57dd5836_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI10</td>
+                            <td>8.8.9</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/miui_MI5X_8.8.9_fb16c99dbe_7.1.zip">miui_MI5X_8.8.9_fb16c99dbe_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/tiffany_images_8.8.9_20180809.0000.00_7.1_cn_df70563282.tgz">tiffany_images_8.8.9_20180809.0000.00_7.1_cn_df70563282.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI10</td>
+                            <td>8.8.3</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/miui_MI5X_8.8.3_fa1e696d1c_7.1.zip">miui_MI5X_8.8.3_fa1e696d1c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/tiffany_images_8.8.3_20180802.0000.00_7.1_cn_462d2a00e4.tgz">tiffany_images_8.8.3_20180802.0000.00_7.1_cn_462d2a00e4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI10</td>
+                            <td>8.7.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/miui_MI5X_8.7.26_ec3fb7e011_7.1.zip">miui_MI5X_8.7.26_ec3fb7e011_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/tiffany_images_8.7.26_20180726.0000.00_7.1_cn_a0931e45b0.tgz">tiffany_images_8.7.26_20180726.0000.00_7.1_cn_a0931e45b0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI10</td>
+                            <td>8.7.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/miui_MI5X_8.7.19_8d34618208_7.1.zip">miui_MI5X_8.7.19_8d34618208_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/tiffany_images_8.7.19_20180719.0000.00_7.1_cn_8dc58259df.tgz">tiffany_images_8.7.19_20180719.0000.00_7.1_cn_8dc58259df.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI10</td>
+                            <td>8.7.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/miui_MI5X_8.7.12_285404c7c6_7.1.zip">miui_MI5X_8.7.12_285404c7c6_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/tiffany_images_8.7.12_20180712.0000.00_7.1_cn_740a477fa1.tgz">tiffany_images_8.7.12_20180712.0000.00_7.1_cn_740a477fa1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI9</td>
+                            <td>8.4.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/miui_MI5X_8.4.26_adeb132b38_7.1.zip">miui_MI5X_8.4.26_adeb132b38_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/tiffany_images_8.4.26_20180426.0000.00_7.1_cn_8864dacaf9.tgz">tiffany_images_8.4.26_20180426.0000.00_7.1_cn_8864dacaf9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI9</td>
+                            <td>8.4.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/miui_MI5X_8.4.19_97d083b82d_7.1.zip">miui_MI5X_8.4.19_97d083b82d_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/tiffany_images_8.4.19_20180419.0000.00_7.1_cn_6ca9446c9a.tgz">tiffany_images_8.4.19_20180419.0000.00_7.1_cn_6ca9446c9a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI9</td>
+                            <td>8.4.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.12/miui_MI5X_8.4.12_0cf953ccc7_7.1.zip">miui_MI5X_8.4.12_0cf953ccc7_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.12/tiffany_images_8.4.12_20180412.0000.00_7.1_cn_3b35382f7d.tgz">tiffany_images_8.4.12_20180412.0000.00_7.1_cn_3b35382f7d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI9</td>
+                            <td>8.3.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/miui_MI5X_8.3.29_274ad5ef65_7.1.zip">miui_MI5X_8.3.29_274ad5ef65_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/tiffany_images_8.3.29_20180329.0000.00_7.1_cn_a3d79af940.tgz">tiffany_images_8.3.29_20180329.0000.00_7.1_cn_a3d79af940.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI9</td>
+                            <td>8.3.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/miui_MI5X_8.3.22_70312c68b0_7.1.zip">miui_MI5X_8.3.22_70312c68b0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/tiffany_images_8.3.22_20180322.0000.00_7.1_cn_e404b578ca.tgz">tiffany_images_8.3.22_20180322.0000.00_7.1_cn_e404b578ca.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI9</td>
+                            <td>8.3.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/miui_MI5X_8.3.15_067f5cd077_7.1.zip">miui_MI5X_8.3.15_067f5cd077_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/tiffany_images_8.3.15_20180315.0000.00_7.1_cn_4bb81189fe.tgz">tiffany_images_8.3.15_20180315.0000.00_7.1_cn_4bb81189fe.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI9</td>
+                            <td>8.3.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/miui_MI5X_8.3.8_e9163591d6_7.1.zip">miui_MI5X_8.3.8_e9163591d6_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/tiffany_images_8.3.8_20180308.0000.00_7.1_cn_6cbec1f14d.tgz">tiffany_images_8.3.8_20180308.0000.00_7.1_cn_6cbec1f14d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI9</td>
+                            <td>8.3.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/miui_MI5X_8.3.1_2adf741592_7.1.zip">miui_MI5X_8.3.1_2adf741592_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/tiffany_images_8.3.1_20180301.0000.00_7.1_cn_8d56156437.tgz">tiffany_images_8.3.1_20180301.0000.00_7.1_cn_8d56156437.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI9</td>
+                            <td>8.2.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/miui_MI5X_8.2.1_555c8f9cc5_7.1.zip">miui_MI5X_8.2.1_555c8f9cc5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/tiffany_images_8.2.1_20180201.0000.00_7.1_cn_f5ef82fb20.tgz">tiffany_images_8.2.1_20180201.0000.00_7.1_cn_f5ef82fb20.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI9</td>
+                            <td>8.1.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/miui_MI5X_8.1.25_308fe66d95_7.1.zip">miui_MI5X_8.1.25_308fe66d95_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/tiffany_images_8.1.25_20180125.0000.00_7.1_cn_ca432b04ce.tgz">tiffany_images_8.1.25_20180125.0000.00_7.1_cn_ca432b04ce.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI9</td>
+                            <td>8.1.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/miui_MI5X_8.1.18_9328c96ab9_7.1.zip">miui_MI5X_8.1.18_9328c96ab9_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI9</td>
+                            <td>8.1.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/miui_MI5X_8.1.11_bc231e736b_7.1.zip">miui_MI5X_8.1.11_bc231e736b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/tiffany_images_8.1.11_20180111.0000.00_7.1_cn_f770abff05.tgz">tiffany_images_8.1.11_20180111.0000.00_7.1_cn_f770abff05.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI9</td>
+                            <td>8.1.4</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/miui_MI5X_8.1.4_76c394ff76_7.1.zip">miui_MI5X_8.1.4_76c394ff76_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/tiffany_images_8.1.4_20180104.0000.00_7.1_cn_37205fce8c.tgz">tiffany_images_8.1.4_20180104.0000.00_7.1_cn_37205fce8c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI9</td>
+                            <td>7.12.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/miui_MI5X_7.12.28_325a17499b_7.1.zip">miui_MI5X_7.12.28_325a17499b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/tiffany_images_7.12.28_20171228.0000.00_7.1_cn_5adfec355e.tgz">tiffany_images_7.12.28_20171228.0000.00_7.1_cn_5adfec355e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI9</td>
+                            <td>7.12.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/miui_MI5X_7.12.21_7773263c18_7.1.zip">miui_MI5X_7.12.21_7773263c18_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/tiffany_images_7.12.21_20171221.0000.00_7.1_cn_77c76ff794.tgz">tiffany_images_7.12.21_20171221.0000.00_7.1_cn_77c76ff794.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI9</td>
+                            <td>7.12.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/miui_MI5X_7.12.14_5ef5f7548c_7.1.zip">miui_MI5X_7.12.14_5ef5f7548c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/tiffany_images_7.12.14_20171214.0000.00_7.1_cn_65a964a7e6.tgz">tiffany_images_7.12.14_20171214.0000.00_7.1_cn_65a964a7e6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI9</td>
+                            <td>7.12.7</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/miui_MI5X_7.12.7_31351b1cf0_7.1.zip">miui_MI5X_7.12.7_31351b1cf0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/tiffany_images_7.12.7_20171207.0000.00_7.1_cn_e026155789.tgz">tiffany_images_7.12.7_20171207.0000.00_7.1_cn_e026155789.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI9</td>
+                            <td>7.11.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.30/miui_MI5X_7.11.30_2e966bd95f_7.1.zip">miui_MI5X_7.11.30_2e966bd95f_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.30/tiffany_images_7.11.30_20171130.0000.00_7.1_cn_dc4a7fec9b.tgz">tiffany_images_7.11.30_20171130.0000.00_7.1_cn_dc4a7fec9b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI9</td>
+                            <td>7.11.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/miui_MI5X_7.11.23_b8047820ca_7.1.zip">miui_MI5X_7.11.23_b8047820ca_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/tiffany_images_7.11.23_20171123.0000.00_7.1_cn_bedb670871.tgz">tiffany_images_7.11.23_20171123.0000.00_7.1_cn_bedb670871.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI9</td>
+                            <td>7.10.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/miui_MI5X_7.10.26_96b14e4726_7.1.zip">miui_MI5X_7.10.26_96b14e4726_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/tiffany_images_7.10.26_20171026.0000.00_7.1_cn_ee018ab097.tgz">tiffany_images_7.10.26_20171026.0000.00_7.1_cn_ee018ab097.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI9</td>
+                            <td>7.10.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/miui_MI5X_7.10.19_0e63fabc82_7.1.zip">miui_MI5X_7.10.19_0e63fabc82_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/tiffany_images_7.10.19_20171019.0000.00_7.1_cn_915826abb5.tgz">tiffany_images_7.10.19_20171019.0000.00_7.1_cn_915826abb5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI9</td>
+                            <td>7.10.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/miui_MI5X_7.10.12_04d1ecf0ed_7.1.zip">miui_MI5X_7.10.12_04d1ecf0ed_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/tiffany_images_7.10.12_20171012.0000.00_7.1_cn_a9689df89b.tgz">tiffany_images_7.10.12_20171012.0000.00_7.1_cn_a9689df89b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI9</td>
+                            <td>7.9.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/miui_MI5X_7.9.14_7958e01106_7.1.zip">miui_MI5X_7.9.14_7958e01106_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/tiffany_images_7.9.14_20170914.0000.00_7.1_cn_c1bd304b03.tgz">tiffany_images_7.9.14_20170914.0000.00_7.1_cn_c1bd304b03.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>21</td>
+                            <td>TEXT_HERE</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>V11.0.2.0.ODBCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V11.0.2.0.ODBCNXM/miui_MI5X_V11.0.2.0.ODBCNXM_909421a08e_8.1.zip">miui_MI5X_V11.0.2.0.ODBCNXM_909421a08e_8.1.zip</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>V10.3.2.0.ODBCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.2.0.ODBCNXM/miui_MI5X_V10.3.2.0.ODBCNXM_9f034804a8_8.1.zip">miui_MI5X_V10.3.2.0.ODBCNXM_9f034804a8_8.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>V10.3.1.0.ODBCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.ODBCNXM/miui_MI5X_V10.3.1.0.ODBCNXM_ba52baf257_8.1.zip">miui_MI5X_V10.3.1.0.ODBCNXM_ba52baf257_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.ODBCNXM/tiffany_images_V10.3.1.0.ODBCNXM_20190328.0000.00_8.1_cn_1a7567061f.tgz">tiffany_images_V10.3.1.0.ODBCNXM_20190328.0000.00_8.1_cn_1a7567061f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>V10.2.3.0.ODBCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.ODBCNXM/miui_MI5X_V10.2.3.0.ODBCNXM_dcaae5262a_8.1.zip">miui_MI5X_V10.2.3.0.ODBCNXM_dcaae5262a_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.ODBCNXM/tiffany_images_V10.2.3.0.ODBCNXM_20190125.0000.00_8.1_cn_155c83324c.tgz">tiffany_images_V10.2.3.0.ODBCNXM_20190125.0000.00_8.1_cn_155c83324c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V10.2.2.0.ODBCNXM</td>
+                            <td>8.1 Oreo</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.ODBCNXM/miui_MI5X_V10.2.2.0.ODBCNXM_91139196ab_8.1.zip">miui_MI5X_V10.2.2.0.ODBCNXM_91139196ab_8.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.ODBCNXM/tiffany_images_V10.2.2.0.ODBCNXM_20181221.0000.00_8.1_cn_f901df0291.tgz">tiffany_images_V10.2.2.0.ODBCNXM_20181221.0000.00_8.1_cn_f901df0291.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V10.1.3.0.NDBCNFI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.3.0.NDBCNFI/miui_MI5X_V10.1.3.0.NDBCNFI_26e7336b50_7.1.zip">miui_MI5X_V10.1.3.0.NDBCNFI_26e7336b50_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.3.0.NDBCNFI/tiffany_images_V10.1.3.0.NDBCNFI_20181105.0000.00_7.1_cn_4ad4a9bb05.tgz">tiffany_images_V10.1.3.0.NDBCNFI_20181105.0000.00_7.1_cn_4ad4a9bb05.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V9.6.2.0.NDBCNFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NDBCNFD/miui_MI5X_V9.6.2.0.NDBCNFD_6af21d7903_7.1.zip">miui_MI5X_V9.6.2.0.NDBCNFD_6af21d7903_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NDBCNFD/tiffany_images_V9.6.2.0.NDBCNFD_20180726.0000.00_7.1_cn_ab0d9732be.tgz">tiffany_images_V9.6.2.0.NDBCNFD_20180726.0000.00_7.1_cn_ab0d9732be.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V9.6.1.0.NDBCNFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NDBCNFD/miui_MI5X_V9.6.1.0.NDBCNFD_97c7c136b8_7.1.zip">miui_MI5X_V9.6.1.0.NDBCNFD_97c7c136b8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NDBCNFD/tiffany_images_V9.6.1.0.NDBCNFD_20180525.0000.00_7.1_cn_c9cc314916.tgz">tiffany_images_V9.6.1.0.NDBCNFD_20180525.0000.00_7.1_cn_c9cc314916.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V9.5.3.0.NDBCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.3.0.NDBCNFA/miui_MI5X_V9.5.3.0.NDBCNFA_680660d4d8_7.1.zip">miui_MI5X_V9.5.3.0.NDBCNFA_680660d4d8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.3.0.NDBCNFA/tiffany_images_V9.5.3.0.NDBCNFA_20180406.0000.00_7.1_cn_cdd525cc86.tgz">tiffany_images_V9.5.3.0.NDBCNFA_20180406.0000.00_7.1_cn_cdd525cc86.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V9.2.2.0.NDBCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NDBCNEK/miui_MI5X_V9.2.2.0.NDBCNEK_036516ce73_7.1.zip">miui_MI5X_V9.2.2.0.NDBCNEK_036516ce73_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NDBCNEK/tiffany_images_V9.2.2.0.NDBCNEK_20180209.0000.00_7.1_cn_8649643500.tgz">tiffany_images_V9.2.2.0.NDBCNEK_20180209.0000.00_7.1_cn_8649643500.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V9.2.1.0.NDBCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NDBCNEK/miui_MI5X_V9.2.1.0.NDBCNEK_a12578b50d_7.1.zip">miui_MI5X_V9.2.1.0.NDBCNEK_a12578b50d_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NDBCNEK/tiffany_images_V9.2.1.0.NDBCNEK_20180121.0000.00_7.1_cn_dbf4b184c6.tgz">tiffany_images_V9.2.1.0.NDBCNEK_20180121.0000.00_7.1_cn_dbf4b184c6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V9.0.4.0.NDBCNEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.4.0.NDBCNEI/miui_MI5X_V9.0.4.0.NDBCNEI_8a5652a9d3_7.1.zip">miui_MI5X_V9.0.4.0.NDBCNEI_8a5652a9d3_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.4.0.NDBCNEI/tiffany_images_V9.0.4.0.NDBCNEI_20171207.0000.00_7.1_cn_cd12addbcf.tgz">tiffany_images_V9.0.4.0.NDBCNEI_20171207.0000.00_7.1_cn_cd12addbcf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V9.0.3.0.NDBCNEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.3.0.NDBCNEI/miui_MI5X_V9.0.3.0.NDBCNEI_2d6f6aceb1_7.1.zip">miui_MI5X_V9.0.3.0.NDBCNEI_2d6f6aceb1_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.3.0.NDBCNEI/tiffany_images_V9.0.3.0.NDBCNEI_20171026.0000.00_7.1_cn_38eb42d6e9.tgz">tiffany_images_V9.0.3.0.NDBCNEI_20171026.0000.00_7.1_cn_38eb42d6e9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V8.5.15.0.NDBCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.15.0.NDBCNED/miui_MI5X_V8.5.15.0.NDBCNED_054abb9b9c_7.1.zip">miui_MI5X_V8.5.15.0.NDBCNED_054abb9b9c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.15.0.NDBCNED/tiffany_images_V8.5.15.0.NDBCNED_20170912.0000.00_7.1_cn_a0647960f9.tgz">tiffany_images_V8.5.15.0.NDBCNED_20170912.0000.00_7.1_cn_a0647960f9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V8.5.14.0.NDBCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.14.0.NDBCNED/miui_MI5X_V8.5.14.0.NDBCNED_8684c37155_7.1.zip">miui_MI5X_V8.5.14.0.NDBCNED_8684c37155_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.14.0.NDBCNED/tiffany_images_V8.5.14.0.NDBCNED_20170825.0000.00_7.1_cn_c998a22640.tgz">tiffany_images_V8.5.14.0.NDBCNED_20170825.0000.00_7.1_cn_c998a22640.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V8.5.9.0.NDBCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.9.0.NDBCNED/miui_MI5X_V8.5.9.0.NDBCNED_ca5591a86c_7.1.zip">miui_MI5X_V8.5.9.0.NDBCNED_ca5591a86c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.9.0.NDBCNED/tiffany_images_V8.5.9.0.NDBCNED_20170810.0000.00_7.1_cn_1572111cda.tgz">tiffany_images_V8.5.9.0.NDBCNED_20170810.0000.00_7.1_cn_1572111cda.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V8.5.8.0.NDBCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.8.0.NDBCNED/miui_MI5X_V8.5.8.0.NDBCNED_a0ed4cda14_7.1.zip">miui_MI5X_V8.5.8.0.NDBCNED_a0ed4cda14_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.8.0.NDBCNED/tiffany_images_V8.5.8.0.NDBCNED_20170802.0000.00_7.1_cn_df15cb35a1.tgz">tiffany_images_V8.5.8.0.NDBCNED_20170802.0000.00_7.1_cn_df15cb35a1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V8.5.5.0.NDBCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.5.0.NDBCNED/miui_TIFFANY_V8.5.5.0.NDBCNED_85238abbff_7.1.zip">miui_TIFFANY_V8.5.5.0.NDBCNED_85238abbff_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V8.5.4.0.NDBCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.NDBCNED/miui_TIFFANY_V8.5.4.0.NDBCNED_434005befc_7.1.zip">miui_TIFFANY_V8.5.4.0.NDBCNED_434005befc_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V8.5.3.0.NDBCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.3.0.NDBCNED/miui_TIFFANY_V8.5.3.0.NDBCNED_594298f8b2_7.1.zip">miui_TIFFANY_V8.5.3.0.NDBCNED_594298f8b2_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
+               >arrow_upward</a></i>
+    </button>
+</body>
+
+</html>
