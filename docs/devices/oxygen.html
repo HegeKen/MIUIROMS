@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+            li a {
+                text-decoration: none;
+                color: blue;
+            }
+    
+            td a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    <title>小米Max 2(oxygen)官方ROM合集 --By 海力力。</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-panel mdui-panel-gapless">
+        <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
+            <div class="mdui-panel-item-body">
+                <ol>
+                    <li>机型：小米Max 2 代号：oxygen</li>
+                    <li>此次更新项目：V11.0.2.0.NDDCNXM、V11.0.2.0.NDDMIXM</li>
+                    <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
+                    <li>特别感谢：<a href="http://rom.52mail.cn/"">rom.52mail.cn</a>网站</li>
+                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
+                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
+                    <li>官方刷机工具：<a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip">MiFlash 最新版(2018.5.28)</a>, <a href="https://pan.mioffice.cn:443/link/22C5BB5C8BE69E64529ECF8901617417">小米助手最新版</a>，原帖：<a href="https://web.vip.miui.com/page/info/mio-pc/detail?postId=6100562" target="_blank">小米社区</a></li>                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为ROM的正式内容 -->
+
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#GB_BETA" class="mdui-ripple mdui-hidden">国际开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>90</td>
+                            <td>MIUI11</td>
+                            <td>9.10.10</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="https://bigota.d.miui.com/9.10.10/miui_MIMAX2_9.10.10_049afb8889_7.1.zip">miui_MIMAX2_9.10.10_049afb8889_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>89</td>
+                            <td>MIUI11</td>
+                            <td>9.9.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMAX2_9.9.26_88732c2073_7.1.zip">miui_MIMAX2_9.9.26_88732c2073_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>88</td>
+                            <td>MIUI10</td>
+                            <td>9.8.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/miui_MIMAX2_9.8.29_a0ca14d327_7.1.zip">miui_MIMAX2_9.8.29_a0ca14d327_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/oxygen_images_9.8.29_20190829.0000.00_7.1_cn_954e6102e6.tgz">oxygen_images_9.8.29_20190829.0000.00_7.1_cn_954e6102e6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>87</td>
+                            <td>MIUI10</td>
+                            <td>9.8.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.22/miui_MIMAX2_9.8.22_5bb0c950a5_7.1.zip">miui_MIMAX2_9.8.22_5bb0c950a5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.22/oxygen_images_9.8.22_20190822.0000.00_7.1_cn_700d792023.tgz">oxygen_images_9.8.22_20190822.0000.00_7.1_cn_700d792023.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>86</td>
+                            <td>MIUI10</td>
+                            <td>9.8.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/miui_MIMAX2_9.8.15_0a2d5c92f8_7.1.zip">miui_MIMAX2_9.8.15_0a2d5c92f8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.15/oxygen_images_9.8.15_20190815.0000.00_7.1_cn_fc5e60beaf.tgz">oxygen_images_9.8.15_20190815.0000.00_7.1_cn_fc5e60beaf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>85</td>
+                            <td>MIUI10</td>
+                            <td>9.8.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.8/miui_MIMAX2_9.8.8_737dad516b_7.1.zip">miui_MIMAX2_9.8.8_737dad516b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.8/oxygen_images_9.8.8_20190808.0000.00_7.1_cn_4afb38cba7.tgz">oxygen_images_9.8.8_20190808.0000.00_7.1_cn_4afb38cba7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>84</td>
+                            <td>MIUI10</td>
+                            <td>9.8.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/miui_MIMAX2_9.8.1_0b5bd2d1b1_7.1.zip">miui_MIMAX2_9.8.1_0b5bd2d1b1_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.1/oxygen_images_9.8.1_20190801.0000.00_7.1_cn_8f3fde856f.tgz">oxygen_images_9.8.1_20190801.0000.00_7.1_cn_8f3fde856f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>83</td>
+                            <td>MIUI10</td>
+                            <td>9.7.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/miui_MIMAX2_9.7.25_f063078a03_7.1.zip">miui_MIMAX2_9.7.25_f063078a03_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.25/oxygen_images_9.7.25_20190725.0000.00_7.1_cn_de16c3399a.tgz">oxygen_images_9.7.25_20190725.0000.00_7.1_cn_de16c3399a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>82</td>
+                            <td>MIUI10</td>
+                            <td>9.7.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/miui_MIMAX2_9.7.18_6b2c674468_7.1.zip">miui_MIMAX2_9.7.18_6b2c674468_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/oxygen_images_9.7.18_20190718.0000.00_7.1_cn_af18fd2b9f.tgz">oxygen_images_9.7.18_20190718.0000.00_7.1_cn_af18fd2b9f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>81</td>
+                            <td>MIUI10</td>
+                            <td>9.7.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/miui_MIMAX2_9.7.11_5e1ba24051_7.1.zip">miui_MIMAX2_9.7.11_5e1ba24051_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/oxygen_images_9.7.11_20190711.0000.00_7.1_cn_4dc27b5d72.tgz">oxygen_images_9.7.11_20190711.0000.00_7.1_cn_4dc27b5d72.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>MIUI10</td>
+                            <td>9.7.4</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/miui_MIMAX2_9.7.4_3fe8528c67_7.1.zip">miui_MIMAX2_9.7.4_3fe8528c67_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/oxygen_images_9.7.4_20190704.0000.00_7.1_cn_affa5f36d3.tgz">oxygen_images_9.7.4_20190704.0000.00_7.1_cn_affa5f36d3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>79</td>
+                            <td>MIUI10</td>
+                            <td>9.6.27</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_MIMAX2_9.6.27_ce016f7c08_7.1.zip">miui_MIMAX2_9.6.27_ce016f7c08_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/oxygen_images_9.6.27_20190627.0000.00_7.1_cn_692e596d10.tgz">oxygen_images_9.6.27_20190627.0000.00_7.1_cn_692e596d10.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>78</td>
+                            <td>MIUI10</td>
+                            <td>9.6.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_MIMAX2_9.6.20_523bc71ceb_7.1.zip">miui_MIMAX2_9.6.20_523bc71ceb_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/oxygen_images_9.6.20_20190620.0000.00_7.1_cn_90eba12d3a.tgz">oxygen_images_9.6.20_20190620.0000.00_7.1_cn_90eba12d3a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>77</td>
+                            <td>MIUI10</td>
+                            <td>9.6.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_MIMAX2_9.6.13_15734717de_7.1.zip">miui_MIMAX2_9.6.13_15734717de_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>76</td>
+                            <td>MIUI10</td>
+                            <td>9.5.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/miui_MIMAX2_9.5.30_4a71ecd91d_7.1.zip">miui_MIMAX2_9.5.30_4a71ecd91d_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/oxygen_images_9.5.30_20190530.0000.00_7.1_cn_04a205b199.tgz">oxygen_images_9.5.30_20190530.0000.00_7.1_cn_04a205b199.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>75</td>
+                            <td>MIUI10</td>
+                            <td>9.5.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/miui_MIMAX2_9.5.23_98ef7db693_7.1.zip">miui_MIMAX2_9.5.23_98ef7db693_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/oxygen_images_9.5.23_20190523.0000.00_7.1_cn_5bd7387f18.tgz">oxygen_images_9.5.23_20190523.0000.00_7.1_cn_5bd7387f18.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>74</td>
+                            <td>MIUI10</td>
+                            <td>9.5.16</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/miui_MIMAX2_9.5.16_c77aac53ed_7.1.zip">miui_MIMAX2_9.5.16_c77aac53ed_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/oxygen_images_9.5.16_20190516.0000.00_7.1_cn_f2d83a29bf.tgz">oxygen_images_9.5.16_20190516.0000.00_7.1_cn_f2d83a29bf.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>73</td>
+                            <td>MIUI10</td>
+                            <td>9.5.9</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/miui_MIMAX2_9.5.9_d30a5ef905_7.1.zip">miui_MIMAX2_9.5.9_d30a5ef905_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/oxygen_images_9.5.9_20190509.0000.00_7.1_cn_051da7d470.tgz">oxygen_images_9.5.9_20190509.0000.00_7.1_cn_051da7d470.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>72</td>
+                            <td>MIUI10</td>
+                            <td>9.4.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/miui_MIMAX2_9.4.25_a0a2a1ca35_7.1.zip">miui_MIMAX2_9.4.25_a0a2a1ca35_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/oxygen_images_9.4.25_20190425.0000.00_7.1_cn_5eee1e25e9.tgz">oxygen_images_9.4.25_20190425.0000.00_7.1_cn_5eee1e25e9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>71</td>
+                            <td>MIUI10</td>
+                            <td>9.4.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/miui_MIMAX2_9.4.18_0dc62e4484_7.1.zip">miui_MIMAX2_9.4.18_0dc62e4484_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/oxygen_images_9.4.18_20190418.0000.00_7.1_cn_edf9f31e5f.tgz">oxygen_images_9.4.18_20190418.0000.00_7.1_cn_edf9f31e5f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>MIUI10</td>
+                            <td>9.4.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.11/miui_MIMAX2_9.4.11_be9855c78b_7.1.zip">miui_MIMAX2_9.4.11_be9855c78b_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td>MIUI10</td>
+                            <td>9.3.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/miui_MIMAX2_9.3.28_2f99d36e0a_7.1.zip">miui_MIMAX2_9.3.28_2f99d36e0a_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/oxygen_images_9.3.28_20190328.0000.00_7.1_cn_f916ee3938.tgz">oxygen_images_9.3.28_20190328.0000.00_7.1_cn_f916ee3938.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>MIUI10</td>
+                            <td>9.3.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/miui_MIMAX2_9.3.21_0fef6fe1f2_7.1.zip">miui_MIMAX2_9.3.21_0fef6fe1f2_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/oxygen_images_9.3.21_20190321.0000.00_7.1_cn_fb6f657681.tgz">oxygen_images_9.3.21_20190321.0000.00_7.1_cn_fb6f657681.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>MIUI10</td>
+                            <td>9.3.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/miui_MIMAX2_9.3.14_34a20de791_7.1.zip">miui_MIMAX2_9.3.14_34a20de791_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/oxygen_images_9.3.14_20190314.0000.00_7.1_cn_e93ab2cc47.tgz">oxygen_images_9.3.14_20190314.0000.00_7.1_cn_e93ab2cc47.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td>MIUI10</td>
+                            <td>9.3.7</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/miui_MIMAX2_9.3.7_1f60d03140_7.1.zip">miui_MIMAX2_9.3.7_1f60d03140_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/oxygen_images_9.3.7_20190307.0000.00_7.1_cn_5ff0a72ecd.tgz">oxygen_images_9.3.7_20190307.0000.00_7.1_cn_5ff0a72ecd.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>MIUI10</td>
+                            <td>9.2.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/miui_MIMAX2_9.2.28_bf22645cb2_7.1.zip">miui_MIMAX2_9.2.28_bf22645cb2_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/oxygen_images_9.2.28_20190228.0000.00_7.1_cn_6c789450ac.tgz">oxygen_images_9.2.28_20190228.0000.00_7.1_cn_6c789450ac.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>MIUI10</td>
+                            <td>9.2.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/miui_MIMAX2_9.2.21_6c18d289af_7.1.zip">miui_MIMAX2_9.2.21_6c18d289af_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/oxygen_images_9.2.21_20190221.0000.00_7.1_cn_7687c222f6.tgz">oxygen_images_9.2.21_20190221.0000.00_7.1_cn_7687c222f6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>MIUI10</td>
+                            <td>9.2.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/miui_MIMAX2_9.2.15_480583927d_7.1.zip">miui_MIMAX2_9.2.15_480583927d_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/oxygen_images_9.2.15_20190215.0000.00_7.1_cn_2b9f3c7a0c.tgz">oxygen_images_9.2.15_20190215.0000.00_7.1_cn_2b9f3c7a0c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>MIUI10</td>
+                            <td>9.1.24</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/miui_MIMAX2_9.1.24_e2e9d3e347_7.1.zip">miui_MIMAX2_9.1.24_e2e9d3e347_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/oxygen_images_9.1.24_20190124.0000.00_7.1_cn_74107ee19e.tgz">oxygen_images_9.1.24_20190124.0000.00_7.1_cn_74107ee19e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>MIUI10</td>
+                            <td>9.1.17</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/miui_MIMAX2_9.1.17_92c5fe7e13_7.1.zip">miui_MIMAX2_9.1.17_92c5fe7e13_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/oxygen_images_9.1.17_20190117.0000.00_7.1_cn_f9164b4b6f.tgz">oxygen_images_9.1.17_20190117.0000.00_7.1_cn_f9164b4b6f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>MIUI10</td>
+                            <td>9.1.10</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/miui_MIMAX2_9.1.10_9ff532cbe7_7.1.zip">miui_MIMAX2_9.1.10_9ff532cbe7_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/oxygen_images_9.1.10_20190110.0000.00_7.1_cn_2302ff0db7.tgz">oxygen_images_9.1.10_20190110.0000.00_7.1_cn_2302ff0db7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>MIUI10</td>
+                            <td>8.12.27</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.27/miui_MIMAX2_8.12.27_67c2d0774a_7.1.zip">miui_MIMAX2_8.12.27_67c2d0774a_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>MIUI10</td>
+                            <td>8.12.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.20/miui_MIMAX2_8.12.20_dbaf334560_7.1.zip">miui_MIMAX2_8.12.20_dbaf334560_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>MIUI10</td>
+                            <td>8.12.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/miui_MIMAX2_8.12.13_c6252b4da4_7.1.zip">miui_MIMAX2_8.12.13_c6252b4da4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/oxygen_images_8.12.13_20181213.0000.00_7.1_cn_e4f0980791.tgz">oxygen_images_8.12.13_20181213.0000.00_7.1_cn_e4f0980791.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>MIUI10</td>
+                            <td>8.12.6</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/miui_MIMAX2_8.12.6_a1342e4a07_7.1.zip">miui_MIMAX2_8.12.6_a1342e4a07_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/oxygen_images_8.12.6_20181206.0000.00_7.1_cn_90ca2c0e14.tgz">oxygen_images_8.12.6_20181206.0000.00_7.1_cn_90ca2c0e14.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>MIUI10</td>
+                            <td>8.11.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.29/miui_MIMAX2_8.11.29_2ae0cad636_7.1.zip">miui_MIMAX2_8.11.29_2ae0cad636_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.29/oxygen_images_8.11.29_20181129.0000.00_7.1_cn_fd02ff57f0.tgz">oxygen_images_8.11.29_20181129.0000.00_7.1_cn_fd02ff57f0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>MIUI10</td>
+                            <td>8.11.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.22/miui_MIMAX2_8.11.22_5731295646_7.1.zip">miui_MIMAX2_8.11.22_5731295646_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>MIUI10</td>
+                            <td>8.11.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.15/miui_MIMAX2_8.11.15_21f097ceca_7.1.zip">miui_MIMAX2_8.11.15_21f097ceca_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>MIUI10</td>
+                            <td>8.11.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.8/miui_MIMAX2_8.11.8_4dc7896ca9_7.1.zip">miui_MIMAX2_8.11.8_4dc7896ca9_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.8/oxygen_images_8.11.8_20181108.0000.00_7.1_cn_a91b24cc37.tgz">oxygen_images_8.11.8_20181108.0000.00_7.1_cn_a91b24cc37.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>MIUI10</td>
+                            <td>8.11.2</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/miui_MIMAX2_8.11.2_62b04581f6_7.1.zip">miui_MIMAX2_8.11.2_62b04581f6_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/oxygen_images_8.11.2_20181102.0000.00_7.1_cn_fe981cd791.tgz">oxygen_images_8.11.2_20181102.0000.00_7.1_cn_fe981cd791.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI10</td>
+                            <td>8.10.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/miui_MIMAX2_8.10.25_e7c7734f8b_7.1.zip">miui_MIMAX2_8.10.25_e7c7734f8b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/oxygen_images_8.10.25_20181025.0000.00_7.1_cn_964da9e8c9.tgz">oxygen_images_8.10.25_20181025.0000.00_7.1_cn_964da9e8c9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI10</td>
+                            <td>8.10.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/miui_MIMAX2_8.10.18_b9fd224b96_7.1.zip">miui_MIMAX2_8.10.18_b9fd224b96_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/oxygen_images_8.10.18_20181018.0000.00_7.1_cn_40d364c2ef.tgz">oxygen_images_8.10.18_20181018.0000.00_7.1_cn_40d364c2ef.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI10</td>
+                            <td>8.10.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/miui_MIMAX2_8.10.11_2c50fea2ac_7.1.zip">miui_MIMAX2_8.10.11_2c50fea2ac_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/oxygen_images_8.10.11_20181011.0000.00_7.1_cn_137e55671a.tgz">oxygen_images_8.10.11_20181011.0000.00_7.1_cn_137e55671a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI10</td>
+                            <td>8.9.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/miui_MIMAX2_8.9.20_6209294dfd_7.1.zip">miui_MIMAX2_8.9.20_6209294dfd_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/oxygen_images_8.9.20_20180920.0000.00_7.1_cn_8d3c3b9482.tgz">oxygen_images_8.9.20_20180920.0000.00_7.1_cn_8d3c3b9482.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI10</td>
+                            <td>8.9.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/miui_MIMAX2_8.9.13_7f8478f251_7.1.zip">miui_MIMAX2_8.9.13_7f8478f251_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/oxygen_images_8.9.13_20180913.0000.00_7.1_cn_70d9001b1a.tgz">oxygen_images_8.9.13_20180913.0000.00_7.1_cn_70d9001b1a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI10</td>
+                            <td>8.9.6</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/miui_MIMAX2_8.9.6_8c2ff6b52b_7.1.zip">miui_MIMAX2_8.9.6_8c2ff6b52b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/oxygen_images_8.9.6_20180906.0000.00_7.1_cn_167e730aa8.tgz">oxygen_images_8.9.6_20180906.0000.00_7.1_cn_167e730aa8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI10</td>
+                            <td>8.8.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/miui_MIMAX2_8.8.30_178dca4dde_7.1.zip">miui_MIMAX2_8.8.30_178dca4dde_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/oxygen_images_8.8.30_20180830.0000.00_7.1_cn_a7469995de.tgz">oxygen_images_8.8.30_20180830.0000.00_7.1_cn_a7469995de.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI10</td>
+                            <td>8.8.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/miui_MIMAX2_8.8.23_cd34a8f633_7.1.zip">miui_MIMAX2_8.8.23_cd34a8f633_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/oxygen_images_8.8.23_20180823.0000.00_7.1_cn_629f9b7354.tgz">oxygen_images_8.8.23_20180823.0000.00_7.1_cn_629f9b7354.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI10</td>
+                            <td>8.8.16</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/miui_MIMAX2_8.8.16_addff15111_7.1.zip">miui_MIMAX2_8.8.16_addff15111_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/oxygen_images_8.8.16_20180816.0000.00_7.1_cn_4699152adc.tgz">oxygen_images_8.8.16_20180816.0000.00_7.1_cn_4699152adc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI10</td>
+                            <td>8.8.9</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/miui_MIMAX2_8.8.9_bbd046b522_7.1.zip">miui_MIMAX2_8.8.9_bbd046b522_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/oxygen_images_8.8.9_20180809.0000.00_7.1_cn_48f7db09d2.tgz">oxygen_images_8.8.9_20180809.0000.00_7.1_cn_48f7db09d2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI10</td>
+                            <td>8.8.3</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/miui_MIMAX2_8.8.3_37c60794b6_7.1.zip">miui_MIMAX2_8.8.3_37c60794b6_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/oxygen_images_8.8.3_20180802.0000.00_7.1_cn_d0d7f5b973.tgz">oxygen_images_8.8.3_20180802.0000.00_7.1_cn_d0d7f5b973.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI10</td>
+                            <td>8.7.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/miui_MIMAX2_8.7.26_a149ff9ed8_7.1.zip">miui_MIMAX2_8.7.26_a149ff9ed8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/oxygen_images_8.7.26_20180726.0000.00_7.1_cn_1c464e4355.tgz">oxygen_images_8.7.26_20180726.0000.00_7.1_cn_1c464e4355.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI10</td>
+                            <td>8.7.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/miui_MIMAX2_8.7.19_604f1337f4_7.1.zip">miui_MIMAX2_8.7.19_604f1337f4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/oxygen_images_8.7.19_20180719.0000.00_7.1_cn_9aca95f0a2.tgz">oxygen_images_8.7.19_20180719.0000.00_7.1_cn_9aca95f0a2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI10</td>
+                            <td>8.7.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/miui_MIMAX2_8.7.12_919284568c_7.1.zip">miui_MIMAX2_8.7.12_919284568c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/oxygen_images_8.7.12_20180712.0000.00_7.1_cn_abd058fbe1.tgz">oxygen_images_8.7.12_20180712.0000.00_7.1_cn_abd058fbe1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI9</td>
+                            <td>8.4.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/miui_MIMAX2_8.4.26_9b623f7ed0_7.1.zip">miui_MIMAX2_8.4.26_9b623f7ed0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/oxygen_images_8.4.26_20180426.0000.00_7.1_cn_b7e3b87e34.tgz">oxygen_images_8.4.26_20180426.0000.00_7.1_cn_b7e3b87e34.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI9</td>
+                            <td>8.4.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/miui_MIMAX2_8.4.19_7271c19445_7.1.zip">miui_MIMAX2_8.4.19_7271c19445_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.19/oxygen_images_8.4.19_20180419.0000.00_7.1_cn_bad41a651a.tgz">oxygen_images_8.4.19_20180419.0000.00_7.1_cn_bad41a651a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI9</td>
+                            <td>8.4.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.12/miui_MIMAX2_8.4.12_c3a3805186_7.1.zip">miui_MIMAX2_8.4.12_c3a3805186_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.12/oxygen_images_8.4.12_20180412.0000.00_7.1_cn_cf4727bf19.tgz">oxygen_images_8.4.12_20180412.0000.00_7.1_cn_cf4727bf19.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI9</td>
+                            <td>8.3.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/miui_MIMAX2_8.3.29_dc7abd6418_7.1.zip">miui_MIMAX2_8.3.29_dc7abd6418_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/oxygen_images_8.3.29_20180329.0000.00_7.1_cn_c2e6366941.tgz">oxygen_images_8.3.29_20180329.0000.00_7.1_cn_c2e6366941.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI9</td>
+                            <td>8.3.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/miui_MIMAX2_8.3.22_500624b6f8_7.1.zip">miui_MIMAX2_8.3.22_500624b6f8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/oxygen_images_8.3.22_20180322.0000.00_7.1_cn_5b4b81fcde.tgz">oxygen_images_8.3.22_20180322.0000.00_7.1_cn_5b4b81fcde.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI9</td>
+                            <td>8.3.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/miui_MIMAX2_8.3.15_83e3fbb4e8_7.1.zip">miui_MIMAX2_8.3.15_83e3fbb4e8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/oxygen_images_8.3.15_20180315.0000.00_7.1_cn_4f4fa125b0.tgz">oxygen_images_8.3.15_20180315.0000.00_7.1_cn_4f4fa125b0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI9</td>
+                            <td>8.3.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/miui_MIMAX2_8.3.8_eed66a7c4a_7.1.zip">miui_MIMAX2_8.3.8_eed66a7c4a_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/oxygen_images_8.3.8_20180308.0000.00_7.1_cn_74e4c2010a.tgz">oxygen_images_8.3.8_20180308.0000.00_7.1_cn_74e4c2010a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI9</td>
+                            <td>8.3.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/miui_MIMAX2_8.3.1_40c3302c7c_7.1.zip">miui_MIMAX2_8.3.1_40c3302c7c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/oxygen_images_8.3.1_20180301.0000.00_7.1_cn_2c4c6af5e6.tgz">oxygen_images_8.3.1_20180301.0000.00_7.1_cn_2c4c6af5e6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI9</td>
+                            <td>8.2.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/miui_MIMAX2_8.2.1_ad7e602c66_7.1.zip">miui_MIMAX2_8.2.1_ad7e602c66_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/oxygen_images_8.2.1_20180201.0000.00_7.1_cn_3b5f89f0af.tgz">oxygen_images_8.2.1_20180201.0000.00_7.1_cn_3b5f89f0af.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI9</td>
+                            <td>8.1.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/miui_MIMAX2_8.1.25_b46f0a016d_7.1.zip">miui_MIMAX2_8.1.25_b46f0a016d_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI9</td>
+                            <td>8.1.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/miui_MIMAX2_8.1.18_cf77a7dc39_7.1.zip">miui_MIMAX2_8.1.18_cf77a7dc39_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/oxygen_images_8.1.18_20180118.0000.00_7.1_cn_6d1dc70f3b.tgz">oxygen_images_8.1.18_20180118.0000.00_7.1_cn_6d1dc70f3b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI9</td>
+                            <td>8.1.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/miui_MIMAX2_8.1.11_91395c783c_7.1.zip">miui_MIMAX2_8.1.11_91395c783c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/oxygen_images_8.1.11_20180111.0000.00_7.1_cn_8a5c821b8a.tgz">oxygen_images_8.1.11_20180111.0000.00_7.1_cn_8a5c821b8a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI9</td>
+                            <td>8.1.4</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/miui_MIMAX2_8.1.4_e6187d68f4_7.1.zip">miui_MIMAX2_8.1.4_e6187d68f4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/oxygen_images_8.1.4_20180104.0000.00_7.1_cn_ef5d200041.tgz">oxygen_images_8.1.4_20180104.0000.00_7.1_cn_ef5d200041.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI9</td>
+                            <td>7.12.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/miui_MIMAX2_7.12.28_22edb0197c_7.1.zip">miui_MIMAX2_7.12.28_22edb0197c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/oxygen_images_7.12.28_20171228.0000.00_7.1_cn_614b24ca6a.tgz">oxygen_images_7.12.28_20171228.0000.00_7.1_cn_614b24ca6a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI9</td>
+                            <td>7.12.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/miui_MIMAX2_7.12.21_0946555089_7.1.zip">miui_MIMAX2_7.12.21_0946555089_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.21/oxygen_images_7.12.21_20171221.0000.00_7.1_cn_e4ac7367ae.tgz">oxygen_images_7.12.21_20171221.0000.00_7.1_cn_e4ac7367ae.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI9</td>
+                            <td>7.12.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/miui_MIMAX2_7.12.14_df4d967e55_7.1.zip">miui_MIMAX2_7.12.14_df4d967e55_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.14/oxygen_images_7.12.14_20171214.0000.00_7.1_cn_288d336020.tgz">oxygen_images_7.12.14_20171214.0000.00_7.1_cn_288d336020.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI9</td>
+                            <td>7.12.7</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/miui_MIMAX2_7.12.7_1414585551_7.1.zip">miui_MIMAX2_7.12.7_1414585551_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.12.7/oxygen_images_7.12.7_20171207.0000.00_7.1_cn_72c28e71b1.tgz">oxygen_images_7.12.7_20171207.0000.00_7.1_cn_72c28e71b1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI9</td>
+                            <td>7.11.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.30/miui_MIMAX2_7.11.30_7289ae5f74_7.1.zip">miui_MIMAX2_7.11.30_7289ae5f74_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI9</td>
+                            <td>7.11.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/miui_MIMAX2_7.11.23_6e4ed6958a_7.1.zip">miui_MIMAX2_7.11.23_6e4ed6958a_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.23/oxygen_images_7.11.23_20171123.0000.00_7.1_cn_d29d2951fc.tgz">oxygen_images_7.11.23_20171123.0000.00_7.1_cn_d29d2951fc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI9</td>
+                            <td>7.11.16</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.16/miui_MIMAX2_7.11.16_b20780dda5_7.1.zip">miui_MIMAX2_7.11.16_b20780dda5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.16/oxygen_images_7.11.16_20171116.0000.00_7.1_cn_336b2daf30.tgz">oxygen_images_7.11.16_20171116.0000.00_7.1_cn_336b2daf30.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI9</td>
+                            <td>7.11.9</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.9/miui_MIMAX2_7.11.9_6561952eca_7.1.zip">miui_MIMAX2_7.11.9_6561952eca_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI9</td>
+                            <td>7.11.2</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.2/miui_MIMAX2_7.11.2_1edb4f2379_7.1.zip">miui_MIMAX2_7.11.2_1edb4f2379_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI9</td>
+                            <td>7.10.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/miui_MIMAX2_7.10.26_db36b596b8_7.1.zip">miui_MIMAX2_7.10.26_db36b596b8_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.26/oxygen_images_7.10.26_20171026.0000.00_7.1_cn_7709c1bdb5.tgz">oxygen_images_7.10.26_20171026.0000.00_7.1_cn_7709c1bdb5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI9</td>
+                            <td>7.10.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/miui_MIMAX2_7.10.19_3b6edd2702_7.1.zip">miui_MIMAX2_7.10.19_3b6edd2702_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.19/oxygen_images_7.10.19_20171019.0000.00_7.1_cn_4098baffff.tgz">oxygen_images_7.10.19_20171019.0000.00_7.1_cn_4098baffff.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI9</td>
+                            <td>7.10.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/miui_MIMAX2_7.10.12_c5c0f4049c_7.1.zip">miui_MIMAX2_7.10.12_c5c0f4049c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.10.12/oxygen_images_7.10.12_20171012.0000.00_7.1_cn_642492c54f.tgz">oxygen_images_7.10.12_20171012.0000.00_7.1_cn_642492c54f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI9</td>
+                            <td>7.9.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.21/miui_MIMAX2_7.9.21_5276df1d7e_7.1.zip">miui_MIMAX2_7.9.21_5276df1d7e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.21/oxygen_images_7.9.21_20170921.0000.00_7.1_cn_b7abcf7a98.tgz">oxygen_images_7.9.21_20170921.0000.00_7.1_cn_b7abcf7a98.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI9</td>
+                            <td>7.9.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/miui_MIMAX2_7.9.14_5b67c71517_7.1.zip">miui_MIMAX2_7.9.14_5b67c71517_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.14/oxygen_images_7.9.14_20170914.0000.00_7.1_cn_a40de18019.tgz">oxygen_images_7.9.14_20170914.0000.00_7.1_cn_a40de18019.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI9</td>
+                            <td>7.9.7</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.9.7/miui_MIMAX2_7.9.7_d1ce20d395_7.1.zip">miui_MIMAX2_7.9.7_d1ce20d395_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.9.7/oxygen_images_7.9.7_20170907.0000.00_7.1_cn_b46d27a878.tgz">oxygen_images_7.9.7_20170907.0000.00_7.1_cn_b46d27a878.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI9</td>
+                            <td>7.8.31</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.8.31/miui_MIMAX2_7.8.31_cc5e4ea549_7.1.zip">miui_MIMAX2_7.8.31_cc5e4ea549_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.8.31/oxygen_images_7.8.31_20170831.0000.00_7.1_cn_d0038e4a4a.tgz">oxygen_images_7.8.31_20170831.0000.00_7.1_cn_d0038e4a4a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI9</td>
+                            <td>7.8.24</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.8.24/miui_MIMAX2_7.8.24_0cd97844ae_7.1.zip">miui_MIMAX2_7.8.24_0cd97844ae_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.8.24/oxygen_images_7.8.24_20170824.0000.00_7.1_cn_9009ee2057.tgz">oxygen_images_7.8.24_20170824.0000.00_7.1_cn_9009ee2057.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI8</td>
+                            <td>7.7.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/miui_MIMAX2_7.7.20_8612e68604_7.1.zip">miui_MIMAX2_7.7.20_8612e68604_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/oxygen_images_7.7.20_20170720.0000.00_7.1_cn_4e9e5939c4.tgz">oxygen_images_7.7.20_20170720.0000.00_7.1_cn_4e9e5939c4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI8</td>
+                            <td>7.7.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.15/miui_MIMAX2_7.7.15_601acf1992_7.1.zip">miui_MIMAX2_7.7.15_601acf1992_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI8</td>
+                            <td>7.7.6</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.6/miui_MIMAX2_7.7.6_c2f4501822_7.1.zip">miui_MIMAX2_7.7.6_c2f4501822_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.6/oxygen_images_7.7.6_20170706.0000.00_7.1_cn_f6cabedcc3.tgz">oxygen_images_7.7.6_20170706.0000.00_7.1_cn_f6cabedcc3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI8</td>
+                            <td>7.6.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.6.22/miui_MIMAX2_7.6.22_d7c0862686_7.1.zip">miui_MIMAX2_7.6.22_d7c0862686_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.6.22/oxygen_images_7.6.22_20170622.0000.00_7.1_cn_286e467595.tgz">oxygen_images_7.6.22_20170622.0000.00_7.1_cn_286e467595.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI8</td>
+                            <td>7.6.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.6.15/miui_MIMAX2_7.6.15_d7b6d43667_7.1.zip">miui_MIMAX2_7.6.15_d7b6d43667_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI8</td>
+                            <td>7.6.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.6.8/miui_MIMAX2_7.6.8_b939be6fb3_7.1.zip">miui_MIMAX2_7.6.8_b939be6fb3_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>21</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>20</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>19</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>V11.0.2.0.NDDCNXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V11.0.2.0.NDDCNXM/miui_MIMAX2_V11.0.2.0.NDDCNXM_192ff3e011_7.1.zip">miui_MIMAX2_V11.0.2.0.NDDCNXM_192ff3e011_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V11.0.2.0.NDDCNXM/oxygen_images_V11.0.2.0.NDDCNXM_20191023.0000.00_7.1_cn_22316c026a.tgz">oxygen_images_V11.0.2.0.NDDCNXM_20191023.0000.00_7.1_cn_22316c026a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>V10.3.1.0.NDDCNXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NDDCNXM/miui_MIMAX2_V10.3.1.0.NDDCNXM_e4dbc2e566_7.1.zip">miui_MIMAX2_V10.3.1.0.NDDCNXM_e4dbc2e566_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NDDCNXM/oxygen_images_V10.3.1.0.NDDCNXM_20190613.0000.00_7.1_cn_d248c15475.tgz">oxygen_images_V10.3.1.0.NDDCNXM_20190613.0000.00_7.1_cn_d248c15475.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V10.2.1.0.NDDCNXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.NDDCNXM/miui_MIMAX2_V10.2.1.0.NDDCNXM_8776739820_7.1.zip">miui_MIMAX2_V10.2.1.0.NDDCNXM_8776739820_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.NDDCNXM/oxygen_images_V10.2.1.0.NDDCNXM_20190125.0000.00_7.1_cn_788a74720b.tgz">oxygen_images_V10.2.1.0.NDDCNXM_20190125.0000.00_7.1_cn_788a74720b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V10.1.1.0.NDDCNFI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NDDCNFI/miui_MIMAX2_V10.1.1.0.NDDCNFI_f4a080359e_7.1.zip">miui_MIMAX2_V10.1.1.0.NDDCNFI_f4a080359e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NDDCNFI/oxygen_images_V10.1.1.0.NDDCNFI_20180925.0000.00_7.1_cn_1a151a5836.tgz">oxygen_images_V10.1.1.0.NDDCNFI_20180925.0000.00_7.1_cn_1a151a5836.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V9.6.1.0.NDDCNFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NDDCNFD/miui_MIMAX2_V9.6.1.0.NDDCNFD_5f553c0d44_7.1.zip">miui_MIMAX2_V9.6.1.0.NDDCNFD_5f553c0d44_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NDDCNFD/oxygen_images_V9.6.1.0.NDDCNFD_20180703.0000.00_7.1_cn_fd3319fdf2.tgz">oxygen_images_V9.6.1.0.NDDCNFD_20180703.0000.00_7.1_cn_fd3319fdf2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V9.5.5.0.NDDCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.5.0.NDDCNFA/miui_MIMAX2_V9.5.5.0.NDDCNFA_51fbf34826_7.1.zip">miui_MIMAX2_V9.5.5.0.NDDCNFA_51fbf34826_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.5.0.NDDCNFA/oxygen_images_V9.5.5.0.NDDCNFA_20180406.0000.00_7.1_cn_c96f620645.tgz">oxygen_images_V9.5.5.0.NDDCNFA_20180406.0000.00_7.1_cn_c96f620645.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V9.5.2.0.NDDCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NDDCNFA/miui_MIMAX2_V9.5.2.0.NDDCNFA_c54343410f_7.1.zip">miui_MIMAX2_V9.5.2.0.NDDCNFA_c54343410f_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NDDCNFA/oxygen_images_V9.5.2.0.NDDCNFA_20180326.0000.00_7.1_cn_384f194d1a.tgz">oxygen_images_V9.5.2.0.NDDCNFA_20180326.0000.00_7.1_cn_384f194d1a.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V9.5.1.0.NDDCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NDDCNFA/miui_MIMAX2_V9.5.1.0.NDDCNFA_8f1e1cdaf7_7.1.zip">miui_MIMAX2_V9.5.1.0.NDDCNFA_8f1e1cdaf7_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.1.0.NDDCNFA/oxygen_images_V9.5.1.0.NDDCNFA_20180306.0000.00_7.1_cn_4401c2d810.tgz">oxygen_images_V9.5.1.0.NDDCNFA_20180306.0000.00_7.1_cn_4401c2d810.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V9.2.2.0.NDDCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NDDCNEK/miui_MIMAX2_V9.2.2.0.NDDCNEK_0b90cf6084_7.1.zip">miui_MIMAX2_V9.2.2.0.NDDCNEK_0b90cf6084_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.2.0.NDDCNEK/oxygen_images_V9.2.2.0.NDDCNEK_20180124.0000.00_7.1_cn_cc87bed0d1.tgz">oxygen_images_V9.2.2.0.NDDCNEK_20180124.0000.00_7.1_cn_cc87bed0d1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V9.2.1.0.NDDCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NDDCNEK/miui_MIMAX2_V9.2.1.0.NDDCNEK_a45e284c42_7.1.zip">miui_MIMAX2_V9.2.1.0.NDDCNEK_a45e284c42_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NDDCNEK/oxygen_images_V9.2.1.0.NDDCNEK_20171227.0000.00_7.1_cn_686149a5d0.tgz">oxygen_images_V9.2.1.0.NDDCNEK_20171227.0000.00_7.1_cn_686149a5d0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V9.0.1.0.NDDCNEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.1.0.NDDCNEI/miui_MIMAX2_V9.0.1.0.NDDCNEI_343e7a3a7e_7.1.zip">miui_MIMAX2_V9.0.1.0.NDDCNEI_343e7a3a7e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.1.0.NDDCNEI/oxygen_images_V9.0.1.0.NDDCNEI_20171010.0000.00_7.1_cn_4252d7d50b.tgz">oxygen_images_V9.0.1.0.NDDCNEI_20171010.0000.00_7.1_cn_4252d7d50b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V8.5.16.0.NDDCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.16.0.NDDCNED/miui_MIMAX2_V8.5.16.0.NDDCNED_8c5c883e24_7.1.zip">miui_MIMAX2_V8.5.16.0.NDDCNED_8c5c883e24_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.16.0.NDDCNED/oxygen_images_V8.5.16.0.NDDCNED_20170925.0000.00_7.1_cn_445e117c09.tgz">oxygen_images_V8.5.16.0.NDDCNED_20170925.0000.00_7.1_cn_445e117c09.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V8.5.15.0.NDDCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.15.0.NDDCNED/miui_MIMAX2_V8.5.15.0.NDDCNED_e3cdac0028_7.1.zip">miui_MIMAX2_V8.5.15.0.NDDCNED_e3cdac0028_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.15.0.NDDCNED/oxygen_images_V8.5.15.0.NDDCNED_20170908.0000.00_7.1_cn_6ab4237e96.tgz">oxygen_images_V8.5.15.0.NDDCNED_20170908.0000.00_7.1_cn_6ab4237e96.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V8.5.14.0.NDDCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.14.0.NDDCNED/miui_MIMAX2_V8.5.14.0.NDDCNED_25964ea2ce_7.1.zip">miui_MIMAX2_V8.5.14.0.NDDCNED_25964ea2ce_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.14.0.NDDCNED/oxygen_images_V8.5.14.0.NDDCNED_20170813.0000.00_7.1_cn_df5d7929f8.tgz">oxygen_images_V8.5.14.0.NDDCNED_20170813.0000.00_7.1_cn_df5d7929f8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V8.5.13.0.NDDCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.13.0.NDDCNED/miui_MIMAX2_V8.5.13.0.NDDCNED_2d8551453d_7.1.zip">miui_MIMAX2_V8.5.13.0.NDDCNED_2d8551453d_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.13.0.NDDCNED/oxygen_images_V8.5.13.0.NDDCNED_20170719.0000.00_7.1_cn_09fd635937.tgz">oxygen_images_V8.5.13.0.NDDCNED_20170719.0000.00_7.1_cn_09fd635937.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V8.5.12.0.NDDCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.12.0.NDDCNED/miui_MIMAX2_V8.5.12.0.NDDCNED_9521149b33_7.1.zip">miui_MIMAX2_V8.5.12.0.NDDCNED_9521149b33_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.12.0.NDDCNED/oxygen_images_V8.5.12.0.NDDCNED_20170627.0000.00_7.1_cn_7093e68d46.tgz">oxygen_images_V8.5.12.0.NDDCNED_20170627.0000.00_7.1_cn_7093e68d46.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V8.5.10.0.NDDCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.10.0.NDDCNED/miui_MIMAX2_V8.5.10.0.NDDCNED_2ab6cba1e4_7.1.zip">miui_MIMAX2_V8.5.10.0.NDDCNED_2ab6cba1e4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.10.0.NDDCNED/oxygen_images_V8.5.10.0.NDDCNED_20170531.0000.00_7.1_cn_1b905e91ef.tgz">oxygen_images_V8.5.10.0.NDDCNED_20170531.0000.00_7.1_cn_1b905e91ef.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V8.5.6.0.NDDCNED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.6.0.NDDCNED/miui_OXYGEN_V8.5.6.0.NDDCNED_b11be529ac_7.1.zip">miui_OXYGEN_V8.5.6.0.NDDCNED_b11be529ac_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>21</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>20</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>19</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>18</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>17</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V11.0.2.0.NDDMIXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V11.0.2.0.NDDMIXM/miui_MIMAX2Global_V11.0.2.0.NDDMIXM_94263d6240_7.1.zip">miui_MIMAX2Global_V11.0.2.0.NDDMIXM_94263d6240_7.1.zip</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V10.3.1.0.NDDMIXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NDDMIXM/miui_MIMAX2Global_V10.3.1.0.NDDMIXM_bb9a580717_7.1.zip">miui_MIMAX2Global_V10.3.1.0.NDDMIXM_bb9a580717_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NDDMIXM/oxygen_global_images_V10.3.1.0.NDDMIXM_20190613.0000.00_7.1_global_1aff3f1bf4.tgz">oxygen_global_images_V10.3.1.0.NDDMIXM_20190613.0000.00_7.1_global_1aff3f1bf4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V10.2.1.0.NDDMIXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.NDDMIXM/miui_MIMAX2Global_V10.2.1.0.NDDMIXM_a0e82e598c_7.1.zip">miui_MIMAX2Global_V10.2.1.0.NDDMIXM_a0e82e598c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.2.1.0.NDDMIXM/oxygen_global_images_V10.2.1.0.NDDMIXM_20190121.0000.00_7.1_global_533ba160ec.tgz">oxygen_global_images_V10.2.1.0.NDDMIXM_20190121.0000.00_7.1_global_533ba160ec.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V9.6.3.0.NDDMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.3.0.NDDMIFD/miui_MIMAX2Global_V9.6.3.0.NDDMIFD_8d7c35b638_7.1.zip">miui_MIMAX2Global_V9.6.3.0.NDDMIFD_8d7c35b638_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.3.0.NDDMIFD/oxygen_global_images_V9.6.3.0.NDDMIFD_20180724.0000.00_7.1_global_2efba070dd.tgz">oxygen_global_images_V9.6.3.0.NDDMIFD_20180724.0000.00_7.1_global_2efba070dd.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V9.6.2.0.NDDMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NDDMIFD/miui_MIMAX2Global_V9.6.2.0.NDDMIFD_ff4918cd5f_7.1.zip">miui_MIMAX2Global_V9.6.2.0.NDDMIFD_ff4918cd5f_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V9.5.5.0.NDDMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.5.0.NDDMIFA/miui_MIMAX2Global_V9.5.5.0.NDDMIFA_6b83a511e4_7.1.zip">miui_MIMAX2Global_V9.5.5.0.NDDMIFA_6b83a511e4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.6.0.NDDMIFA/oxygen_global_images_V9.5.6.0.NDDMIFA_20180531.0000.00_7.1_global_fd6518e9f8.tgz">oxygen_global_images_V9.5.6.0.NDDMIFA_20180531.0000.00_7.1_global_fd6518e9f8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V9.5.4.0.NDDMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.4.0.NDDMIFA/miui_MIMAX2Global_V9.5.4.0.NDDMIFA_fecf400643_7.1.zip">miui_MIMAX2Global_V9.5.4.0.NDDMIFA_fecf400643_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V9.2.1.0.NDDMIEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NDDMIEK/miui_MIMAX2Global_V9.2.1.0.NDDMIEK_4c8fd5f7a7_7.1.zip">miui_MIMAX2Global_V9.2.1.0.NDDMIEK_4c8fd5f7a7_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V9.0.3.0.NDDMIEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.3.0.NDDMIEI/miui_MIMAX2Global_V9.0.3.0.NDDMIEI_698876cd63_7.1.zip">miui_MIMAX2Global_V9.0.3.0.NDDMIEI_698876cd63_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V9.0.2.0.NDDMIEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.2.0.NDDMIEI/miui_MIMAX2Global_V9.0.2.0.NDDMIEI_79e2ee1a97_7.1.zip">miui_MIMAX2Global_V9.0.2.0.NDDMIEI_79e2ee1a97_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V9.0.1.0.NDDMIEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.0.1.0.NDDMIEI/miui_MIMAX2Global_V9.0.1.0.NDDMIEI_3be0e08e58_7.1.zip">miui_MIMAX2Global_V9.0.1.0.NDDMIEI_3be0e08e58_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V8.5.9.0.NDDMIED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.9.0.NDDMIED/miui_MIMAX2Global_V8.5.9.0.NDDMIED_525ba8bec0_7.1.zip">miui_MIMAX2Global_V8.5.9.0.NDDMIED_525ba8bec0_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V8.5.8.0.NDDMIED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.8.0.NDDMIED/miui_MIMAX2Global_V8.5.8.0.NDDMIED_499bce8999_7.1.zip">miui_MIMAX2Global_V8.5.8.0.NDDMIED_499bce8999_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V8.5.6.0.NDDMIED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.6.0.NDDMIED/miui_MIMAX2Global_V8.5.6.0.NDDMIED_cbeff0a680_7.1.zip">miui_MIMAX2Global_V8.5.6.0.NDDMIED_cbeff0a680_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V8.5.5.0.NDDMIED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.5.0.NDDMIED/miui_MIMAX2Global_V8.5.5.0.NDDMIED_a3c5af64c7_7.1.zip">miui_MIMAX2Global_V8.5.5.0.NDDMIED_a3c5af64c7_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V8.5.4.0.NDDMIED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.NDDMIED/miui_MIMAX2Global_V8.5.4.0.NDDMIED_21566ecaeb_7.1.zip">miui_MIMAX2Global_V8.5.4.0.NDDMIED_21566ecaeb_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
+               >arrow_upward</a></i>
+    </button>
+</body>
+
+</html>

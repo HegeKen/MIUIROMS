@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+            li a {
+                text-decoration: none;
+                color: blue;
+            }
+    
+            td a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+    <title>红米4X(santoni)官方ROM合集 --By 海力力。</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-panel mdui-panel-gapless">
+        <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
+            <div class="mdui-panel-item-body">
+                <ol>
+                    <li>机型：红米4X 代号：santoni</li>
+                    <li>此次更新项目：V11.0.1.0.NAMCNXM</li>
+                    <li>特别感谢：<a href="http://www.miui.com/space-uid-926513965.html">@绝配TM啊啊啊</a></li>
+                    <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
+                    <li>特别感谢：<a href="http://rom.52mail.cn/"">rom.52mail.cn</a>网站</li>
+                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
+                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
+                    <li>官方刷机工具：<a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip">MiFlash 最新版(2018.5.28)</a>, <a href="https://pan.mioffice.cn:443/link/22C5BB5C8BE69E64529ECF8901617417">小米助手最新版</a>，原帖：<a href="https://web.vip.miui.com/page/info/mio-pc/detail?postId=6100562" target="_blank">小米社区</a></li>                </ol>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为ROM的正式内容 -->
+
+    <div><br></div>
+    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
+        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
+        <a href="#GB_BETA" class="mdui-ripple mdui-hidden">国际开发版</a>
+        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
+        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
+    </div>
+    <div id="CN_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>67</td>
+                            <td>MIUI11</td>
+                            <td>9.10.10</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.10.10/miui_HM4X_9.10.10_b561a83be6_7.1.zip">miui_HM4X_9.10.10_b561a83be6_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>66</td>
+                            <td>MIUI11</td>
+                            <td>9.9.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM4X_9.9.26_b561a83be6_7.1.zip">miui_HM4X_9.9.26_b561a83be6_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>65</td>
+                            <td>MIUI10</td>
+                            <td>9.8.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/miui_HM4X_9.8.29_72dee00fc2_7.1.zip">miui_HM4X_9.8.29_72dee00fc2_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.8.29/santoni_images_9.8.29_20190829.0000.00_7.1_cn_50e767db3e.tgz">santoni_images_9.8.29_20190829.0000.00_7.1_cn_50e767db3e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>64</td>
+                            <td>MIUI10</td>
+                            <td>9.7.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/miui_HM4X_9.7.18_2bf391cf64_7.1.zip">miui_HM4X_9.7.18_2bf391cf64_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.18/santoni_images_9.7.18_20190718.0000.00_7.1_cn_9aa9e1d554.tgz">santoni_images_9.7.18_20190718.0000.00_7.1_cn_9aa9e1d554.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>63</td>
+                            <td>MIUI10</td>
+                            <td>9.7.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/miui_HM4X_9.7.11_3218902522_7.1.zip">miui_HM4X_9.7.11_3218902522_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.11/santoni_images_9.7.11_20190711.0000.00_7.1_cn_0b32398fdd.tgz">santoni_images_9.7.11_20190711.0000.00_7.1_cn_0b32398fdd.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>62</td>
+                            <td>MIUI10</td>
+                            <td>9.7.4</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/miui_HM4X_9.7.4_60b725ba99_7.1.zip">miui_HM4X_9.7.4_60b725ba99_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.7.4/santoni_images_9.7.4_20190704.0000.00_7.1_cn_422f57b064.tgz">santoni_images_9.7.4_20190704.0000.00_7.1_cn_422f57b064.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>61</td>
+                            <td>MIUI10</td>
+                            <td>9.6.27</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_HM4X_9.6.27_863b317d97_7.1.zip">miui_HM4X_9.6.27_863b317d97_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.27/santoni_images_9.6.27_20190627.0000.00_7.1_cn_d26c44a0cb.tgz">santoni_images_9.6.27_20190627.0000.00_7.1_cn_d26c44a0cb.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>MIUI10</td>
+                            <td>9.6.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_HM4X_9.6.20_c8f1d73536_7.1.zip">miui_HM4X_9.6.20_c8f1d73536_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.6.20/santoni_images_9.6.20_20190620.0000.00_7.1_cn_68df0a543e.tgz">santoni_images_9.6.20_20190620.0000.00_7.1_cn_68df0a543e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>59</td>
+                            <td>MIUI10</td>
+                            <td>9.6.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_HM4X_9.6.13_6404f4b04b_7.1.zip">miui_HM4X_9.6.13_6404f4b04b_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>MIUI10</td>
+                            <td>9.5.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/miui_HM4X_9.5.30_dfc69ebf81_7.1.zip">miui_HM4X_9.5.30_dfc69ebf81_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.30/santoni_images_9.5.30_20190530.0000.00_7.1_cn_9bb428a4f4.tgz">santoni_images_9.5.30_20190530.0000.00_7.1_cn_9bb428a4f4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>MIUI10</td>
+                            <td>9.5.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/miui_HM4X_9.5.23_454311d1fb_7.1.zip">miui_HM4X_9.5.23_454311d1fb_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.23/santoni_images_9.5.23_20190523.0000.00_7.1_cn_222a220ad6.tgz">santoni_images_9.5.23_20190523.0000.00_7.1_cn_222a220ad6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>MIUI10</td>
+                            <td>9.5.16</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/miui_HM4X_9.5.16_1f0cd6749b_7.1.zip">miui_HM4X_9.5.16_1f0cd6749b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.16/santoni_images_9.5.16_20190516.0000.00_7.1_cn_6d6fac8f5b.tgz">santoni_images_9.5.16_20190516.0000.00_7.1_cn_6d6fac8f5b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>MIUI10</td>
+                            <td>9.5.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.14/miui_HM4X_9.5.14_e43c118567_7.1.zip">miui_HM4X_9.5.14_e43c118567_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.14/santoni_images_9.5.14_20190513.0000.00_7.1_cn_1e8638513c.tgz">santoni_images_9.5.14_20190513.0000.00_7.1_cn_1e8638513c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>MIUI10</td>
+                            <td>9.5.9</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/miui_HM4X_9.5.9_542c178888_7.1.zip">miui_HM4X_9.5.9_542c178888_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.5.9/santoni_images_9.5.9_20190509.0000.00_7.1_cn_3c9e299f25.tgz">santoni_images_9.5.9_20190509.0000.00_7.1_cn_3c9e299f25.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>MIUI10</td>
+                            <td>9.4.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/miui_HM4X_9.4.25_3500b75af9_7.1.zip">miui_HM4X_9.4.25_3500b75af9_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.25/santoni_images_9.4.25_20190425.0000.00_7.1_cn_449344e7ff.tgz">santoni_images_9.4.25_20190425.0000.00_7.1_cn_449344e7ff.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>MIUI10</td>
+                            <td>9.4.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/miui_HM4X_9.4.18_824264fed0_7.1.zip">miui_HM4X_9.4.18_824264fed0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.4.18/santoni_images_9.4.18_20190418.0000.00_7.1_cn_022045f2af.tgz">santoni_images_9.4.18_20190418.0000.00_7.1_cn_022045f2af.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>MIUI10</td>
+                            <td>9.4.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.4.11/miui_HM4X_9.4.11_fd111db45b_7.1.zip">miui_HM4X_9.4.11_fd111db45b_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>MIUI10</td>
+                            <td>9.3.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/miui_HM4X_9.3.28_a7e8a249ae_7.1.zip">miui_HM4X_9.3.28_a7e8a249ae_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.28/santoni_images_9.3.28_20190328.0000.00_7.1_cn_e16dbb12c9.tgz">santoni_images_9.3.28_20190328.0000.00_7.1_cn_e16dbb12c9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>MIUI10</td>
+                            <td>9.3.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/miui_HM4X_9.3.21_955c6cecc1_7.1.zip">miui_HM4X_9.3.21_955c6cecc1_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.21/santoni_images_9.3.21_20190321.0000.00_7.1_cn_815aa604a8.tgz">santoni_images_9.3.21_20190321.0000.00_7.1_cn_815aa604a8.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>MIUI10</td>
+                            <td>9.3.14</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/miui_HM4X_9.3.14_c6f1a53dbc_7.1.zip">miui_HM4X_9.3.14_c6f1a53dbc_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.14/santoni_images_9.3.14_20190314.0000.00_7.1_cn_b627264568.tgz">santoni_images_9.3.14_20190314.0000.00_7.1_cn_b627264568.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>MIUI10</td>
+                            <td>9.3.7</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/miui_HM4X_9.3.7_8c6162b2b5_7.1.zip">miui_HM4X_9.3.7_8c6162b2b5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.3.7/santoni_images_9.3.7_20190307.0000.00_7.1_cn_fcd55182c5.tgz">santoni_images_9.3.7_20190307.0000.00_7.1_cn_fcd55182c5.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>MIUI10</td>
+                            <td>9.2.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/miui_HM4X_9.2.28_01c026d383_7.1.zip">miui_HM4X_9.2.28_01c026d383_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.28/santoni_images_9.2.28_20190228.0000.00_7.1_cn_9b4c2e3f4f.tgz">santoni_images_9.2.28_20190228.0000.00_7.1_cn_9b4c2e3f4f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>MIUI10</td>
+                            <td>9.2.21</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/miui_HM4X_9.2.21_64965aed70_7.1.zip">miui_HM4X_9.2.21_64965aed70_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.21/santoni_images_9.2.21_20190221.0000.00_7.1_cn_e1d7c38fee.tgz">santoni_images_9.2.21_20190221.0000.00_7.1_cn_e1d7c38fee.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>MIUI10</td>
+                            <td>9.2.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/miui_HM4X_9.2.15_a2817f0d66_7.1.zip">miui_HM4X_9.2.15_a2817f0d66_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.2.15/santoni_images_9.2.15_20190215.0000.00_7.1_cn_679494ab81.tgz">santoni_images_9.2.15_20190215.0000.00_7.1_cn_679494ab81.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>MIUI10</td>
+                            <td>9.1.24</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/miui_HM4X_9.1.24_ff5bcd68e9_7.1.zip">miui_HM4X_9.1.24_ff5bcd68e9_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.24/santoni_images_9.1.24_20190124.0000.00_7.1_cn_2ec33836c6.tgz">santoni_images_9.1.24_20190124.0000.00_7.1_cn_2ec33836c6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>MIUI10</td>
+                            <td>9.1.17</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/miui_HM4X_9.1.17_f2b60272e4_7.1.zip">miui_HM4X_9.1.17_f2b60272e4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.17/santoni_images_9.1.17_20190117.0000.00_7.1_cn_047f1c11bb.tgz">santoni_images_9.1.17_20190117.0000.00_7.1_cn_047f1c11bb.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>MIUI10</td>
+                            <td>9.1.10</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/miui_HM4X_9.1.10_9889c3a3b6_7.1.zip">miui_HM4X_9.1.10_9889c3a3b6_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/9.1.10/santoni_images_9.1.10_20190110.0000.00_7.1_cn_71b1e425ab.tgz">santoni_images_9.1.10_20190110.0000.00_7.1_cn_71b1e425ab.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>MIUI10</td>
+                            <td>8.12.27</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.27/miui_HM4X_8.12.27_2812555340_7.1.zip">miui_HM4X_8.12.27_2812555340_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>MIUI10</td>
+                            <td>8.12.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.20/miui_HM4X_8.12.20_0194b99521_7.1.zip">miui_HM4X_8.12.20_0194b99521_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>MIUI10</td>
+                            <td>8.12.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/miui_HM4X_8.12.13_7d4e4c3241_7.1.zip">miui_HM4X_8.12.13_7d4e4c3241_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.13/santoni_images_8.12.13_20181213.0000.00_7.1_cn_5531a3e907.tgz">santoni_images_8.12.13_20181213.0000.00_7.1_cn_5531a3e907.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>MIUI10</td>
+                            <td>8.12.6</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/miui_HM4X_8.12.6_a6ac5127f4_7.1.zip">miui_HM4X_8.12.6_a6ac5127f4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.12.6/santoni_images_8.12.6_20181206.0000.00_7.1_cn_8308ad6ad9.tgz">santoni_images_8.12.6_20181206.0000.00_7.1_cn_8308ad6ad9.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>MIUI10</td>
+                            <td>8.11.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.29/miui_HM4X_8.11.29_5746c8f4c5_7.1.zip">miui_HM4X_8.11.29_5746c8f4c5_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>MIUI10</td>
+                            <td>8.11.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.22/miui_HM4X_8.11.22_eccde81602_7.1.zip">miui_HM4X_8.11.22_eccde81602_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>MIUI10</td>
+                            <td>8.11.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.15/miui_HM4X_8.11.15_8bde6a7eea_7.1.zip">miui_HM4X_8.11.15_8bde6a7eea_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>MIUI10</td>
+                            <td>8.11.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.8/miui_HM4X_8.11.8_93e391e00c_7.1.zip">miui_HM4X_8.11.8_93e391e00c_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.8/santoni_images_8.11.8_20181108.0000.00_7.1_cn_348892b1f7.tgz">santoni_images_8.11.8_20181108.0000.00_7.1_cn_348892b1f7.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>MIUI10</td>
+                            <td>8.11.2</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/miui_HM4X_8.11.2_a5cd0f0576_7.1.zip">miui_HM4X_8.11.2_a5cd0f0576_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.11.2/santoni_images_8.11.2_20181102.0000.00_7.1_cn_a46c5fa625.tgz">santoni_images_8.11.2_20181102.0000.00_7.1_cn_a46c5fa625.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>MIUI10</td>
+                            <td>8.10.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/miui_HM4X_8.10.25_0f9be3717b_7.1.zip">miui_HM4X_8.10.25_0f9be3717b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.25/santoni_images_8.10.25_20181025.0000.00_7.1_cn_44c4225bd4.tgz">santoni_images_8.10.25_20181025.0000.00_7.1_cn_44c4225bd4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>MIUI10</td>
+                            <td>8.10.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/miui_HM4X_8.10.18_f25e136fe9_7.1.zip">miui_HM4X_8.10.18_f25e136fe9_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.18/santoni_images_8.10.18_20181018.0000.00_7.1_cn_b5b6477614.tgz">santoni_images_8.10.18_20181018.0000.00_7.1_cn_b5b6477614.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>MIUI10</td>
+                            <td>8.10.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/miui_HM4X_8.10.11_bda20f3d8e_7.1.zip">miui_HM4X_8.10.11_bda20f3d8e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.10.11/santoni_images_8.10.11_20181011.0000.00_7.1_cn_ba3aea091f.tgz">santoni_images_8.10.11_20181011.0000.00_7.1_cn_ba3aea091f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>MIUI10</td>
+                            <td>8.9.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/miui_HM4X_8.9.20_53cd71009e_7.1.zip">miui_HM4X_8.9.20_53cd71009e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.20/santoni_images_8.9.20_20180920.0000.00_7.1_cn_5306f0a552.tgz">santoni_images_8.9.20_20180920.0000.00_7.1_cn_5306f0a552.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>MIUI10</td>
+                            <td>8.9.13</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/miui_HM4X_8.9.13_4c467391f7_7.1.zip">miui_HM4X_8.9.13_4c467391f7_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.13/santoni_images_8.9.13_20180913.0000.00_7.1_cn_d2d4b541b1.tgz">santoni_images_8.9.13_20180913.0000.00_7.1_cn_d2d4b541b1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>MIUI10</td>
+                            <td>8.9.6</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/miui_HM4X_8.9.6_c0adb9659b_7.1.zip">miui_HM4X_8.9.6_c0adb9659b_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.9.6/santoni_images_8.9.6_20180906.0000.00_7.1_cn_59af48a70f.tgz">santoni_images_8.9.6_20180906.0000.00_7.1_cn_59af48a70f.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>MIUI10</td>
+                            <td>8.8.30</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/miui_HM4X_8.8.30_49108b4bc0_7.1.zip">miui_HM4X_8.8.30_49108b4bc0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.30/santoni_images_8.8.30_20180830.0000.00_7.1_cn_7c34e2d72e.tgz">santoni_images_8.8.30_20180830.0000.00_7.1_cn_7c34e2d72e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>MIUI10</td>
+                            <td>8.8.23</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/miui_HM4X_8.8.23_354dfd9a42_7.1.zip">miui_HM4X_8.8.23_354dfd9a42_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.23/santoni_images_8.8.23_20180823.0000.00_7.1_cn_ac3eb55ead.tgz">santoni_images_8.8.23_20180823.0000.00_7.1_cn_ac3eb55ead.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>MIUI10</td>
+                            <td>8.8.16</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/miui_HM4X_8.8.16_d961142b83_7.1.zip">miui_HM4X_8.8.16_d961142b83_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.16/santoni_images_8.8.16_20180816.0000.00_7.1_cn_56e0c7f616.tgz">santoni_images_8.8.16_20180816.0000.00_7.1_cn_56e0c7f616.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>MIUI10</td>
+                            <td>8.8.9</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/miui_HM4X_8.8.9_4cb3418797_7.1.zip">miui_HM4X_8.8.9_4cb3418797_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.9/santoni_images_8.8.9_20180809.0000.00_7.1_cn_b88468594e.tgz">santoni_images_8.8.9_20180809.0000.00_7.1_cn_b88468594e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>MIUI10</td>
+                            <td>8.8.3</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/miui_HM4X_8.8.3_0b4610a326_7.1.zip">miui_HM4X_8.8.3_0b4610a326_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.8.3/santoni_images_8.8.3_20180802.0000.00_7.1_cn_c2db73736e.tgz">santoni_images_8.8.3_20180802.0000.00_7.1_cn_c2db73736e.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>MIUI10</td>
+                            <td>8.7.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/miui_HM4X_8.7.26_2d82f9b691_7.1.zip">miui_HM4X_8.7.26_2d82f9b691_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.26/santoni_images_8.7.26_20180726.0000.00_7.1_cn_7834401efc.tgz">santoni_images_8.7.26_20180726.0000.00_7.1_cn_7834401efc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>MIUI10</td>
+                            <td>8.7.19</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/miui_HM4X_8.7.19_6019455d7e_7.1.zip">miui_HM4X_8.7.19_6019455d7e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.19/santoni_images_8.7.19_20180719.0000.00_7.1_cn_46cbda1d8c.tgz">santoni_images_8.7.19_20180719.0000.00_7.1_cn_46cbda1d8c.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>MIUI10</td>
+                            <td>8.7.12</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/miui_HM4X_8.7.12_0b404f52b4_7.1.zip">miui_HM4X_8.7.12_0b404f52b4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.7.12/santoni_images_8.7.12_20180712.0000.00_7.1_cn_afcfc99b47.tgz">santoni_images_8.7.12_20180712.0000.00_7.1_cn_afcfc99b47.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>MIUI9</td>
+                            <td>8.4.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.28/miui_HM4X_8.4.28_7c34a764cf_7.1.zip">miui_HM4X_8.4.28_7c34a764cf_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>MIUI9</td>
+                            <td>8.4.26</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/miui_HM4X_8.4.26_7cdaa71f95_7.1.zip">miui_HM4X_8.4.26_7cdaa71f95_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.4.26/santoni_images_8.4.26_20180426.0000.00_7.1_cn_d5b90f6d16.tgz">santoni_images_8.4.26_20180426.0000.00_7.1_cn_d5b90f6d16.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>MIUI9</td>
+                            <td>8.3.29</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/miui_HM4X_8.3.29_7c0a906ac6_7.1.zip">miui_HM4X_8.3.29_7c0a906ac6_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.29/santoni_images_8.3.29_20180329.0000.00_7.1_cn_878d4e70bc.tgz">santoni_images_8.3.29_20180329.0000.00_7.1_cn_878d4e70bc.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>MIUI9</td>
+                            <td>8.3.22</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/miui_HM4X_8.3.22_6ae31cdccd_7.1.zip">miui_HM4X_8.3.22_6ae31cdccd_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.22/santoni_images_8.3.22_20180322.0000.00_7.1_cn_c3ae0fffb6.tgz">santoni_images_8.3.22_20180322.0000.00_7.1_cn_c3ae0fffb6.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>MIUI9</td>
+                            <td>8.3.15</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/miui_HM4X_8.3.15_d9794a63ad_7.1.zip">miui_HM4X_8.3.15_d9794a63ad_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.15/santoni_images_8.3.15_20180315.0000.00_7.1_cn_e3f4eb5643.tgz">santoni_images_8.3.15_20180315.0000.00_7.1_cn_e3f4eb5643.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>MIUI9</td>
+                            <td>8.3.8</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/miui_HM4X_8.3.8_81606bb361_7.1.zip">miui_HM4X_8.3.8_81606bb361_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.8/santoni_images_8.3.8_20180308.0000.00_7.1_cn_c58a2e36c1.tgz">santoni_images_8.3.8_20180308.0000.00_7.1_cn_c58a2e36c1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>MIUI9</td>
+                            <td>8.3.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/miui_HM4X_8.3.1_861215f584_7.1.zip">miui_HM4X_8.3.1_861215f584_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.3.1/santoni_images_8.3.1_20180301.0000.00_7.1_cn_acc83f22e2.tgz">santoni_images_8.3.1_20180301.0000.00_7.1_cn_acc83f22e2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI9</td>
+                            <td>8.2.1</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/miui_HM4X_8.2.1_feba32eaa3_7.1.zip">miui_HM4X_8.2.1_feba32eaa3_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.2.1/santoni_images_8.2.1_20180201.0000.00_7.1_cn_b1a8ed94c2.tgz">santoni_images_8.2.1_20180201.0000.00_7.1_cn_b1a8ed94c2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI9</td>
+                            <td>8.1.25</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/miui_HM4X_8.1.25_54195d36e6_7.1.zip">miui_HM4X_8.1.25_54195d36e6_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.25/santoni_images_8.1.25_20180125.0000.00_7.1_cn_50fe404ea0.tgz">santoni_images_8.1.25_20180125.0000.00_7.1_cn_50fe404ea0.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI9</td>
+                            <td>8.1.18</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.18/miui_HM4X_8.1.18_957b0351c7_7.1.zip">miui_HM4X_8.1.18_957b0351c7_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI9</td>
+                            <td>8.1.11</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/miui_HM4X_8.1.11_ec8317f148_7.1.zip">miui_HM4X_8.1.11_ec8317f148_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/8.1.11/santoni_images_8.1.11_20180111.0000.00_7.1_cn_81e1fe6907.tgz">santoni_images_8.1.11_20180111.0000.00_7.1_cn_81e1fe6907.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI9</td>
+                            <td>8.1.4</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/8.1.4/miui_HM4X_8.1.4_96e0f62827_7.1.zip">miui_HM4X_8.1.4_96e0f62827_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI9</td>
+                            <td>7.12.28</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.12.28/miui_HM4X_7.12.28_a6ea940d97_7.1.zip">miui_HM4X_7.12.28_a6ea940d97_7.1.zip</a></td>
+                            <td>未发布</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI9</td>
+                            <td>7.11.2</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.11.2/miui_HM4X_7.11.2_bf21063d5e_7.1.zip">miui_HM4X_7.11.2_bf21063d5e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.11.2/santoni_images_7.11.2_20171102.0000.00_7.1_cn_986e704db1.tgz">santoni_images_7.11.2_20171102.0000.00_7.1_cn_986e704db1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI8</td>
+                            <td>7.7.20</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/miui_HM4X_7.7.20_f7a74d27a5_7.1.zip">miui_HM4X_7.7.20_f7a74d27a5_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.7.20/santoni_images_7.7.20_20170720.0000.00_7.1_cn_adf710440d.tgz">santoni_images_7.7.20_20170720.0000.00_7.1_cn_adf710440d.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI8</td>
+                            <td>7.5.19</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.om/7.5.19/miui_HM4X_7.5.19_b0890e83eb_6.0.zip">miui_HM4X_7.5.19_b0890e83eb_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.5.19/santoni_images_7.5.19_20170519.0000.00_6.0_cn_4fb38fc221.tgz">santoni_images_7.5.19_20170519.0000.00_6.0_cn_4fb38fc221.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI8</td>
+                            <td>7.3.9</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/7.3.9/miui_HM4X_7.3.9_8be47be80a_6.0.zip">miui_HM4X_7.3.9_8be47be80a_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/7.3.9/santoni_images_7.3.9_20170309.0000.00_6.0_cn_bdd74a7274.tgz">santoni_images_7.3.9_20170309.0000.00_6.0_cn_bdd74a7274.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_BETA" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际开发版</th>
+                            <th>MIUI版本</th>
+                            <th>版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>MIUI10</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="CN_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国内稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>21</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>20</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>19</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>18</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>V11.0.1.0.NAMCNXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V11.0.1.0.NAMCNXM/miui_HM4X_V11.0.1.0.NAMCNXM_7e7448fe6d_7.1.zip">miui_HM4X_V11.0.1.0.NAMCNXM_7e7448fe6d_7.1.zip</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V10.3.1.0.NAMCNXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NAMCNXM/miui_HM4X_V10.3.1.0.NAMCNXM_99ef57f239_7.1.zip">miui_HM4X_V10.3.1.0.NAMCNXM_99ef57f239_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NAMCNXM/santoni_images_V10.3.1.0.NAMCNXM_20190428.0000.00_7.1_cn_1fbf9c77b3.tgz">santoni_images_V10.3.1.0.NAMCNXM_20190428.0000.00_7.1_cn_1fbf9c77b3.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V10.1.1.0.NAMCNFI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NAMCNFI/miui_HM4X_V10.1.1.0.NAMCNFI_53f465b0f0_7.1.zip">miui_HM4X_V10.1.1.0.NAMCNFI_53f465b0f0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NAMCNFI/santoni_images_V10.1.1.0.NAMCNFI_20181019.0000.00_7.1_cn_ea27211106.tgz">santoni_images_V10.1.1.0.NAMCNFI_20181019.0000.00_7.1_cn_ea27211106.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V9.6.1.0.NAMCNFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NAMCNFD/miui_HM4X_V9.6.1.0.NAMCNFD_7a7c986ee1_7.1.zip">miui_HM4X_V9.6.1.0.NAMCNFD_7a7c986ee1_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.1.0.NAMCNFD/santoni_images_V9.6.1.0.NAMCNFD_20180614.0000.00_7.1_cn_57804ac797.tgz">santoni_images_V9.6.1.0.NAMCNFD_20180614.0000.00_7.1_cn_57804ac797.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V9.5.3.0.NAMCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.3.0.NAMCNFA/miui_HM4X_V9.5.3.0.NAMCNFA_66206e3d95_7.1.zip">miui_HM4X_V9.5.3.0.NAMCNFA_66206e3d95_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.3.0.NAMCNFA/santoni_images_V9.5.3.0.NAMCNFA_20180406.0000.00_7.1_cn_7e12e60d79.tgz">santoni_images_V9.5.3.0.NAMCNFA_20180406.0000.00_7.1_cn_7e12e60d79.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V9.5.2.0.NAMCNFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.2.0.NAMCNFA/miui_HM4X_V9.5.2.0.NAMCNFA_2400f71326_7.1.zip">miui_HM4X_V9.5.2.0.NAMCNFA_2400f71326_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V9.2.1.0.NAMCNEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NAMCNEK/miui_HM4X_V9.2.1.0.NAMCNEK_66e2c1bc2e_7.1.zip">miui_HM4X_V9.2.1.0.NAMCNEK_66e2c1bc2e_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.1.0.NAMCNEK/santoni_images_V9.2.1.0.NAMCNEK_20180120.0000.00_7.1_cn_9046ee1dc1.tgz">santoni_images_V9.2.1.0.NAMCNEK_20180120.0000.00_7.1_cn_9046ee1dc1.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V9.1.2.0.NAMCNEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.2.0.NAMCNEI/miui_HM4X_V9.1.2.0.NAMCNEI_467bba07d3_7.1.zip">miui_HM4X_V9.1.2.0.NAMCNEI_467bba07d3_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.2.0.NAMCNEI/santoni_images_V9.1.2.0.NAMCNEI_20171209.0000.00_7.1_cn_023eafe0d2.tgz">santoni_images_V9.1.2.0.NAMCNEI_20171209.0000.00_7.1_cn_023eafe0d2.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V9.1.1.0.NAMCNEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.1.0.NAMCNEI/miui_HM4X_V9.1.1.0.NAMCNEI_62c9b00ad0_7.1.zip">miui_HM4X_V9.1.1.0.NAMCNEI_62c9b00ad0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.1.0.NAMCNEI/santoni_images_V9.1.1.0.NAMCNEI_20171027.0000.00_7.1_cn_b617fc7244.tgz">santoni_images_V9.1.1.0.NAMCNEI_20171027.0000.00_7.1_cn_b617fc7244.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V8.5.4.0.MAMCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.MAMCNED/miui_HM4X_V8.5.4.0.MAMCNED_2c588c2b0f_6.0.zip">miui_HM4X_V8.5.4.0.MAMCNED_2c588c2b0f_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V8.5.3.0.MAMCNED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.3.0.MAMCNED/miui_HM4X_V8.5.3.0.MAMCNED_785185ae4a_6.0.zip">miui_HM4X_V8.5.3.0.MAMCNED_785185ae4a_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.MAMCNED/santoni_images_V8.5.4.0.MAMCNED_20170908.0000.00_6.0_cn_7107afdd19.tgz">santoni_images_V8.5.4.0.MAMCNED_20170908.0000.00_6.0_cn_7107afdd19.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V8.2.18.0.MAMCNEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.18.0.MAMCNEA/miui_HM4X_V8.2.18.0.MAMCNEA_8a142185b7_6.0.zip">miui_HM4X_V8.2.18.0.MAMCNEA_8a142185b7_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.18.0.MAMCNEA/santoni_images_V8.2.18.0.MAMCNEA_20170623.0000.00_6.0_cn_d940fd75a4.tgz">santoni_images_V8.2.18.0.MAMCNEA_20170623.0000.00_6.0_cn_d940fd75a4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V8.2.17.0.MAMCNEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.17.0.MAMCNEA/miui_HM4X_V8.2.17.0.MAMCNEA_36aa99e056_6.0.zip">miui_HM4X_V8.2.17.0.MAMCNEA_36aa99e056_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V8.2.16.0.MAMCNEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.16.0.MAMCNEA/miui_HM4X_V8.2.16.0.MAMCNEA_e36f58104f_6.0.zip">miui_HM4X_V8.2.16.0.MAMCNEA_e36f58104f_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.16.0.MAMCNEA/santoni_images_V8.2.16.0.MAMCNEA_20170425.0000.00_6.0_cn_e5c011a6ca.tgz">santoni_images_V8.2.16.0.MAMCNEA_20170425.0000.00_6.0_cn_e5c011a6ca.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V8.2.9.0.MAMCNEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.9.0.MAMCNEA/miui_HM4X_V8.2.9.0.MAMCNEA_ce86d01483_6.0.zip">miui_HM4X_V8.2.9.0.MAMCNEA_ce86d01483_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V8.2.8.0.MAMCNEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.8.0.MAMCNEA/miui_HM4X_V8.2.8.0.MAMCNEA_d7abab4e61_6.0.zip">miui_HM4X_V8.2.8.0.MAMCNEA_d7abab4e61_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V8.2.7.0.MAMCNEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.7.0.MAMCNEA/miui_HM4X_V8.2.7.0.MAMCNEA_9b1b2a3ef3_6.0.zip">miui_HM4X_V8.2.7.0.MAMCNEA_9b1b2a3ef3_6.0.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.7.0.MAMCNEA/santoni_images_V8.2.7.0.MAMCNEA_20170302.0000.00_6.0_cn_088e8ec5d8.tgz">santoni_images_V8.2.7.0.MAMCNEA_20170302.0000.00_6.0_cn_088e8ec5d8.tgz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="GB_STABLE" class="mdui-p-a-2">
+        <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th class="mdui-text-color-red">国际稳定版</th>
+                            <th>MIUI版本</th>
+                            <th>Android版本</th>
+                            <th>卡刷包</th>
+                            <th>线刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="mdui-hidden">
+                            <td>22</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>21</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>20</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr class="mdui-hidden">
+                            <td>19</td>
+                            <td>TEXT_HERE</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>V10.3.1.0.NAMMIXM</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NAMMIXM/miui_HM4XGlobal_V10.3.1.0.NAMMIXM_4129f29c8a_7.1.zip">miui_HM4XGlobal_V10.3.1.0.NAMMIXM_4129f29c8a_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.NAMMIXM/santoni_global_images_V10.3.1.0.NAMMIXM_20190411.0000.00_7.1_global_9219f081c4.tgz">santoni_global_images_V10.3.1.0.NAMMIXM_20190411.0000.00_7.1_global_9219f081c4.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>V10.1.1.0.NAMMIFI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NAMMIFI/miui_HM4XGlobal_V10.1.1.0.NAMMIFI_31186e0176_7.1.zip">miui_HM4XGlobal_V10.1.1.0.NAMMIFI_31186e0176_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V10.1.1.0.NAMMIFI/santoni_global_images_V10.1.1.0.NAMMIFI_20181114.0000.00_7.1_global_f6f745ac10.tgz">santoni_global_images_V10.1.1.0.NAMMIFI_20181114.0000.00_7.1_global_f6f745ac10.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>V9.6.5.0.NAMMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.5.0.NAMMIFD/miui_HM4XGlobal_V9.6.5.0.NAMMIFD_00e6b65ea0_7.1.zip">miui_HM4XGlobal_V9.6.5.0.NAMMIFD_00e6b65ea0_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.5.0.NAMMIFD/santoni_global_images_V9.6.5.0.NAMMIFD_20180911.0000.00_7.1_global_07362e8046.tgz">santoni_global_images_V9.6.5.0.NAMMIFD_20180911.0000.00_7.1_global_07362e8046.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>V9.6.4.0.NAMMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.4.0.NAMMIFD/miui_HM4XGlobal_V9.6.4.0.NAMMIFD_61a487b529_7.1.zip">miui_HM4XGlobal_V9.6.4.0.NAMMIFD_61a487b529_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.4.0.NAMMIFD/santoni_global_images_V9.6.4.0.NAMMIFD_20180726.0000.00_7.1_global_2b66115cda.tgz">santoni_global_images_V9.6.4.0.NAMMIFD_20180726.0000.00_7.1_global_2b66115cda.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>V9.6.2.0.NAMMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NAMMIFD/miui_HM4XGlobal_V9.6.2.0.NAMMIFD_5d2c1653f4_7.1.zip">miui_HM4XGlobal_V9.6.2.0.NAMMIFD_5d2c1653f4_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.6.2.0.NAMMIFD/santoni_global_images_V9.6.2.0.NAMMIFD_20180724.0000.00_7.1_global_0711643c9b.tgz">santoni_global_images_V9.6.2.0.NAMMIFD_20180724.0000.00_7.1_global_0711643c9b.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>V9.5.10.0.NAMMIFD</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.10.0.NAMMIFD/miui_HM4XGlobal_V9.5.10.0.NAMMIFD_f28854f2ab_7.1.zip">miui_HM4XGlobal_V9.5.10.0.NAMMIFD_f28854f2ab_7.1.zip</a></td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.10.0.NAMMIFD/santoni_global_images_V9.5.10.0.NAMMIFD_20180615.0000.00_7.1_global_a08a39d350.tgz">santoni_global_images_V9.5.10.0.NAMMIFD_20180615.0000.00_7.1_global_a08a39d350.tgz</a></td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>V9.5.5.0.NAMMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.5.0.NAMMIFA/miui_HM4XGlobal_V9.5.5.0.NAMMIFA_c14e64ad35_7.1.zip">miui_HM4XGlobal_V9.5.5.0.NAMMIFA_c14e64ad35_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>V9.5.4.0.NAMMIFA</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.5.4.0.NAMMIFA/miui_HM4XGlobal_V9.5.4.0.NAMMIFA_858a4ffcc1_7.1.zip">miui_HM4XGlobal_V9.5.4.0.NAMMIFA_858a4ffcc1_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>V9.2.5.0.NAMMIEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.5.0.NAMMIEK/miui_HM4XGlobal_V9.2.5.0.NAMMIEK_c6f74c37a1_7.1.zip">miui_HM4XGlobal_V9.2.5.0.NAMMIEK_c6f74c37a1_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>V9.2.4.0.NAMMIEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.4.0.NAMMIEK/miui_HM4XGlobal_V9.2.4.0.NAMMIEK_9e5cc67f18_7.1.zip">miui_HM4XGlobal_V9.2.4.0.NAMMIEK_9e5cc67f18_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>V9.2.3.0.NAMMIEK</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.2.3.0.NAMMIEK/miui_HM4XGlobal_V9.2.3.0.NAMMIEK_9ae332cc27_7.1.zip">miui_HM4XGlobal_V9.2.3.0.NAMMIEK_9ae332cc27_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>V9.1.1.0.NAMMIEI</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V9.1.1.0.NAMMIEI/miui_HM4XGlobal_V9.1.1.0.NAMMIEI_e07ff44454_7.1.zip">miui_HM4XGlobal_V9.1.1.0.NAMMIEI_e07ff44454_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>V8.5.4.0.NAMMIED</td>
+                            <td>7.1 Nougat</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.4.0.NAMMIED/miui_HM4XGlobal_V8.5.4.0.NAMMIED_5e9d246d66_7.1.zip">miui_HM4XGlobal_V8.5.4.0.NAMMIED_5e9d246d66_7.1.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>V8.5.2.0.MAMMIED</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.5.2.0.MAMMIED/miui_HM4XGlobal_V8.5.2.0.MAMMIED_973da51a2e_6.0.zip">miui_HM4XGlobal_V8.5.2.0.MAMMIED_973da51a2e_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>V8.2.10.0.MAMMIEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.10.0.MAMMIEA/miui_HM4XGlobal_V8.2.10.0.MAMMIEA_740d96d8c9_6.0.zip">miui_HM4XGlobal_V8.2.10.0.MAMMIEA_740d96d8c9_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>V8.2.9.0.MAMMIEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.9.0.MAMMIEA/miui_HM4XGlobal_V8.2.9.0.MAMMIEA_4dc698e10b_6.0.zip">miui_HM4XGlobal_V8.2.9.0.MAMMIEA_4dc698e10b_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>V8.2.4.0.MAMMIEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.4.0.MAMMIEA/miui_HM4XGlobal_V8.2.4.0.MAMMIEA_e9c98a54a3_6.0.zip">miui_HM4XGlobal_V8.2.4.0.MAMMIEA_e9c98a54a3_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>V8.2.0.2.MAMMIEA</td>
+                            <td>6.0 Marshmallow</td>
+                            <td><a href="http://bigota.d.miui.com/V8.2.0.2.MAMMIEA/miui_HM4XGlobal_V8.2.0.2.MAMMIEA_0fce804f05_6.0.zip">miui_HM4XGlobal_V8.2.0.2.MAMMIEA_0fce804f05_6.0.zip</a></td>
+                            <td>未收录</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
+               >arrow_upward</a></i>
+    </button>
+</body>
+
+</html>
