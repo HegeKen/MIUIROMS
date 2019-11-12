@@ -4,5 +4,6 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "liveServer.settings.port": 5501
 }
