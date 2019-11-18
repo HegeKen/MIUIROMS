@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <style>
+        p a {
+            text-decoration: none;
+            font-weight: bolder;
+            color: blue;
+        }
+
+        .mdui-panel-item-header {
+            font-size: larger;
+            font-weight: bolder;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <title>刷机工具 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="aboutme.html">站点日志</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mdui-tab mdui-tab-full-width mdui-color-deep-orange-accent" mdui-tab>
+        <a href="#MiAssitant" class="mdui-ripple">小米助手</a>
+        <a href="#MiFlash" class="mdui-ripple mdui-text-capitalize">MiFlash</a>
+        <a href="#example1-tab3" class="mdui-ripple mdui-hidden">images</a>
+    </div>
+
+
+
+    <div id="MiAssitant" class="mdui-p-a-2">
+        <div class="mdui-panel mdui-panel-gapless">
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header tools-version">小米助手：</div>
+                <div class="mdui-panel-item-body mdui-hidden">
+                    <p><a href=""></a></p>
+                    <p>更新日期：</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body mdui-hidden">
+                    <p><a href=""></a></p>
+                    <p>更新日期：</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body mdui-hidden">
+                    <p><a href=""></a></p>
+                    <p>更新日期：</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body mdui-hidden">
+                    <p><a href=""></a></p>
+                    <p>更新日期：</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="https://pan.mioffice.cn:443/link/22C5BB5C8BE69E64529ECF8901617417">版本：4.0.227.191</a></p>
+                    <p>更新日期：2019-03-01</p>
+                    <p>社区原帖：<a href="https://web.vip.miui.com/page/info/mio-pc/detail?postId=6100562">点击前往</a></p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>我的设备：小米助手3.0二期新增加了图片、视频、文件的本地导入、导出以及删除的功能，图片添加每个模块最多不得超过500张，视频添加不得超过200。</li>
+                        <li><p>备份：小米助手3.0二期重构了备份的逻辑，无论是短信，联系人，通话记录，还是系统应用，三方应用，图片，视频，音乐，文档，都支持备份！</p><p>注：备份连接过程中手机会对手机中的数据进行计算，计算时间因手机数据多少而异，一般为数十秒到若干分钟不等（手机中微信、QQ数据文件过多也会使计算时间变长），此时请您耐心等待，您也可以通过下拉手机通知栏查看计算数据进度。</p></li>
+                        <li><p>恢复：与备份一样，我们的恢复也支持整机的数据恢复功能，小米助手3.0二期的备份数据都将恢复到您的手机中，以后更换手机，刷机等情况下再也不愁手机的备份和恢复啦。</p><p>注：备份还原不支持微信记录的数据备份和还原，请使用微信内置的聊天记录迁移功能。</p><p>注：小米助手3.0二期的恢复功能暂不支持小米助手2.0的备份文件哦~</p></li>
+                        <li><p>刷机：小米助手3.0二期支持Recovery刷机，我们也针对MIUI9增加了速度更快的极速刷机模式，刷机速度就像MIUI9一样“快如闪电”。</p><p>注：极速刷机需要清除用户数据，请您刷机前备份好数据！！！</p></li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="https://pan.baidu.com/s/1rR58JraOPJq6R5qOGP_aOw">版本：3.0.330.134</a></p>
+                    <p>更新日期：2018-04-04</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>重点解决旧版小米助手与Android 6.0以上手机不兼容的问题。</li>
+                        <li><p>全新重构、全新设计的小米助手主界面，备份、恢复、刷机功能位于软件主页面上方。主页面还可以查看设备型号，MIUI版本，序列号，安卓版本，Root权限等信息。</p><p>注：目前内测的版本暂不设备文件管理功能，后续更新后会支持，敬请期待我们的更新。</p></li>
+                        <li><p>备份：小米助手3.0重构了备份的逻辑，无论是短信，联系人，通话记录，还是系统应用，三方应用，图片，视频，音乐，文档，都支持备份！</p><p>注：备份连接过程中手机会对手机中的数据进行计算，计算时间因手机数据多少而异，一般为数十秒到若干分钟不等（手机中微信、QQ数据文件过多也会使计算时间变长），此时请您耐心等待，您也可以通过下拉手机通知栏查看计算数据进度。</p></li>
+                        <li><p>恢复：与备份一样，我们的恢复也支持整机的数据恢复功能，小米助手3.0的备份数据都将恢复到您的手机中，以后更换手机，刷机等情况下再也不愁手机的备份和恢复啦。</p><p>注：小米助手3.0的恢复功能暂不支持小米助手2.0的备份文件哦~</p></li>
+                        <li><p>刷机：</p>小米助手3.0支持Recovery刷机，我们也针对MIUI9增加了速度更快的极速刷机模式，刷机速度就像MIUI9一样“快如闪电”。<p>注：极速刷机需要清除用户数据，请您刷机前备份好数据！！！</p></li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://miuirom.xiaomi.com/rom/u491047765/2.3.0.4071/mipctoolexe-2.3.0.4071.exe">版本：2.3.0.4071</a></p>
+                    <p>更新日期：2016-04-07</p>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://miuirom.xiaomi.com/rom/u491047765/2.3.0.2191/mipctoolexe-2.3.0.2191.exe">版本：2.3.0.2191</a></p>
+                    <p>更新日期：2016-02-19</p>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.3.0.1031_2717.exe">版本：2.3.0.1031</a></p>
+                    <p>更新日期：2016-01-03</p>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.7241_2717.exe">版本：2.2.0.7161</a></p>
+                    <p>更新日期：</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修改备份还原提示字样</li>
+                        <li>修复其他已知bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.6261_2717.exe">版本：2.2.0.6261</a></p>
+                    <p>更新日期：2015-06-26</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复已知bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.4091_2717.exe">版本：2.2.0.4091</a></p>
+                    <p>更新日期：2015-04-09</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复了部分bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.3171_2717.exe">版本：2.2.0.3171</a></p>
+                    <p>更新日期：2015-03-17</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增一键 WiFi 功能，共享上网功能优化</li>
+                        <li>首页微调</li>
+                        <li>新增视频影音网页</li>
+                        <li>任务中心添加下载视频提示</li>
+                        <li>解决第三方占用MDB问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.2131_2717.exe">版本：2.2.0.2131</a></p>
+                    <p>更新日期：2015-02-13</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>传送门功能</li>
+                        <li>相似图片管理</li>
+                        <li>关于小米助手</li>
+                        <li>检查更新功能</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.1301_2717.exe">版本：2.2.0.1301</a></p>
+                    <p>更新日期：2015-01-30</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新版美图壁纸</li>
+                        <li>优化连接向导UI和动画</li>
+                        <li>优化连接性问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.1231_2717.exe">版本：2.2.0.1231</a></p>
+                    <p>更新日期：2015-01-23</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>便签支持设置提醒时间</li>
+                        <li>文件管理增加路径导航栏</li>
+                        <li>优化连接性问题</li>
+                        <li>优化系统升级</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.1161_2717.exe">版本：2.2.0.1161</a></p>
+                    <p>更新日期：2015-01-16</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>文件管理改版，新增专门文件分类项，并支持搜索文件</li>
+                        <li>兼容性还原优化，支持选择是否恢复数据有冲突的应用</li>
+                        <li>便签增加移动至便签夹功能</li>
+                        <li>增加支持小米Note</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.2.0.1081_2717.exe">版本：2.2.0.1081</a></p>
+                    <p>更新日期：2015-01-08</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增了连接向导，解决连接手机过程中各种异常情况，大幅度提高连接成功率</li>
+                        <li>新增了便签功能，高效快捷编辑管理MIUI便签</li>
+                        <li>优化了兼容性还原，增加了DCIM目录下的照片、视频还原项</li>
+                        <li>适配红米2全机型</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.1.0.12251_2717.exe">版本：2.1.0.12251</a></p>
+                    <p>更新日期：2014-12-25</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化连接过程设备发现逻辑和显示</li>
+                        <li>优化备份获得路径属性逻辑</li>
+                        <li>优化音乐界面切换显示时不影响当前正在播放的曲目列表</li>
+                        <li>优化图片预览时鼠标指针状态</li>
+                        <li>优化网络短信发送提示</li>
+                        <li>修复兼容性还原进度显示问题</li>
+                        <li>修复备份过程获得文件属性出错导致无法继续的问题</li>
+                        <li>修复驱动安装失败导致无法连接的问题</li>
+                        <li>修复应用管理界面显示问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.1.0.11211_2717.exe">版本：2.1.0.11211</a></p>
+                    <p>更新日期：2014-11-21</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>重构了还原功能，解决了系统版本不能还原备份文件的问题，这一版本将还原备份文件中的联系人、短信、应用与数据</li>
+                        <li>重构了Fastboot刷机功能，增加了稳定版/开发版的选择，支持了红米1S电信版/联通版、红米Note 4G（其他红米机型暂不支持）</li>
+                        <li>解决了USB端口被占用问题</li>
+                        <li>解决了部分手机连接性问题</li>
+                        <li>修复了bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.1.0.11061_2717.exe">版本：2.1.0.11061</a></p>
+                    <p>更新日期：2014-11-06</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>添加了本地音乐播放器</li>
+                        <li>添加了音乐广场网页</li>
+                        <li>支持了网络代理设置，默认使用系统代理设置</li>
+                        <li>支持了短信双卡双待</li>
+                        <li>修复bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.1.0.10221_2717.exe">版本：2.1.0.10221</a></p>
+                    <p>更新日期：2014-10-22</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>增加了手机铃声版块</li>
+                        <li>搜索支持多音字比较</li>
+                        <li>优化了应用推荐机制</li>
+                        <li>支持新建短信时输入自动联想联系人</li>
+                        <li>完整安装包包含驱动</li>
+                        <li>调整部分UI，修复部分bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup2.1.0.10161_2717.exe">版本：2.1.0.10161</a></p>
+                    <p>更新日期：2014-10-16</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>增加了短信管理功能，支持短信编辑发送、删除、导入、导出；</li>
+                        <li>增加了联系人管理功能，支持联系人编辑、新建、删除、导入、导出、分组；</li>
+                        <li>完善了应用管理功能</li>
+                        <li>调整了部分界面设计</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：2.1.0.9191</p>
+                    <p>更新日期：2014-09-19</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>增加了音乐管理、铃声管理功能。支持手机内音乐、铃声文件的增添、导出、删除、排序、铃声设置。</li>
+                        <li>应用管理功能增加了相关应用推荐，优化了界面</li>
+                        <li>应用管理功能增加了搜索本地应用功能</li>
+                        <li>应用管理增加了忽略可升级应用功能</li>
+                        <li>优化了视频管理界面</li>
+                        <li>增加了图片管理、视频管理框选功能</li>
+                        <li>增加了图片管理、视频管理右键菜单</li>
+                        <li>修复bug</li>
+                        <li>优化了连接性</li>
+                        <li>调整了部分界面</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：2.1.0.9101</p>
+                    <p>更新日期：2014-09-10</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>共享上网不能连接问题的优化</li>
+                        <li>修复了连通性的bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：2.1.0.825dev</p>
+                    <p>更新日期：2014-08-25</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复了连通性bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：2.1.0.815dev</p>
+                    <p>更新日期：</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>小米助手2.0版本全新上线，功能进行了全面重构，界面进行重新设计</li>
+                        <li>增加了应用游戏管理、图片管理、视频管理、文件管理功能</li>
+                        <li>增加了演示功能（仅支持MI3 W/C 与 MI4）</li>
+                        <li>重构了应用商店、游戏中心网页</li>
+                        <li>增加了意见反馈功能</li>
+                        <li>重构了任务中心</li>
+                        <li>重构了备份还原功能</li>
+                        <li>重构了刷机功能</li>
+                        <li>重构了版本升级策略</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：2.0 Beta</p>
+                    <p>更新日期：2014-08-15</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>经过开发组两个月的努力，小米助手2.0 终于和大家见面了，支持小米全系列机型，肯定也支持MIUI 6啦！</li>
+                        <li>小米助手，前身是小米手机助手，名字中去掉了“手机”二字，因为我们现在已经支持小米平板了，未来会支持更多的小米智能设备，大家拭目以待！</li>
+                        <li>小米助手2.0 Beta版的定位和之前完全不同。之前版本的助手是一个PC端的小工具，仅为小米用户的备份、还原、升级、刷机功能需求服务。全新改版、全新重构的小米助手，在管理功能上更加全面，更肩负起PC端分发平台的功用。</li>
+                        <li>全新重构、全新设计的小米助手主界面，beta版的管理功能为应用游戏管理，图片管理，视频管理，文件夹管理。备份、还原、升级、刷机功能转移到了右上角~</li>
+                        <li>应用游戏管理页面，增删、导出、查看应用详情，图片管理页面 and 视频管理页面</li>
+                        <li>全新重构的游戏中心、应用商店页面，内容比之前丰富很多，层级更清晰明确。</li>
+                        <li>米3的用户们请注意啦，小米助手有新的玩法。点击红圈内的“演示”button，可以手机、PC实时投射演示， 更可以鼠标键盘逆向操作手机！新的玩法等你尝试！投射演示窗口，可以全屏，一切手机的操作都可以在PC上完成~（暂只支持米3W/C、米4）</li>
+                        <li>使用过程中出现任何问题，点击主界面左下角的“意见反馈”，按照提示把你的log文件提交在帖子中，开发组会及时回复解答你的问题。</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.4251.exe">版本：1.2.1.4251</a></p>
+                    <p>更新日期：2014-04-25</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 fastboot刷机模式红米识别错误的问题</li>
+                        <li>修复 错误的文件权限导致备份失败的问题</li>
+                        <li>修复 登陆云服务有时会提示密码错误的问题</li>
+                        <li>修复 上传到云相册时文件名后缀解析出错的问题</li>
+                        <li>修复 安装路径出现符号连接导致安装和升级失败的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.4081.exe">版本：1.2.1.4081</a></p>
+                    <p>更新日期：2014-04-08</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 还原时找不到备份记录的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.4011.exe">版本：1.2.1.4011</a></p>
+                    <p>更新日期：2014-04-01</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增 支持红米Note</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.3271.exe">版本：1.2.1.3271</a></p>
+                    <p>更新日期：2014-03-27</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 MDB机型兼容问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.3101.exe">版本：1.2.1.3101</a></p>
+                    <p>更新日期：2014-03-10</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化 更新驱动</li>
+                        <li>优化 支持新Fastboot压缩包格式</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.2251.exe">版本：1.2.1.2251</a></p>
+                    <p>更新日期：2014-02-25</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化 小米手机助手的兼容性</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.2191.exe">版本：1.2.1.2191</a></p>
+                    <p>更新日期：2014-02-19</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 网络共享导致的程序崩溃</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.1241.exe">版本：1.2.1.1241</a></p>
+                    <p>更新日期：2014-01-24</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 红米OTA升级异常</li>
+                        <li>修复 程序崩溃</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.1.1171.exe">版本：1.2.1.1711</a></p>
+                    <p>更新日期：2014-01-17</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 红米OTA升级异常</li>
+                        <li>修复 程序崩溃</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.0.12271.exe">版本：1.2.0.12271</a></p>
+                    <p>更新日期：2013-12-27</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 云服务自动同步无法取消的问题</li>
+                        <li>修复 特殊文件夹名称导致备份失败的问题</li>
+                        <li>修复 程序崩溃</li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.0.12201.exe">版本：1.2.0.12201</a></p>
+                    <p>更新日期：2013-12-20</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 还原某些情况下造成未备份数据丢失的问题</li>
+                        <li>修复 备份失败的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.0.12131.exe">版本：1.2.0.12131</a></p>
+                    <p>更新日期：2013-12-13</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 程序崩溃</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.0.12131.exe">版本：1.2.0.12062</a></p>
+                    <p>更新日期：2013-12-06</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>注：修复无法正常升级和启动程序</li>
+                        <li>新增 云相册同步功能</li>
+                        <li>新增 fastboot刷机功能（连接助手，手机进入fastboot模式即可开启此功能）</li>
+                        <li>新增 程序运行状态托盘动画</li>
+                        <li>新增 迅雷下载引擎</li>
+                        <li>新增 支持两步登录</li>
+                        <li>新增 支持大数据包XPK文件安装</li>
+                        <li>新增 备份完成界面自动备份多选框</li>
+                        <li>优化 新的备份还原逻辑，提高程序稳定性</li>
+                        <li>优化 程序在托盘空闲时，自升级自动重启</li>
+                        <li>优化 软件启动时预加载网页</li>
+                        <li>优化 显示OTA升级包下载状态</li>
+                        <li>优化 默认指定备份和云相册目录到剩余空间最大的磁盘分区</li>
+                        <li>优化 提升截屏性能</li>
+                        <li>优化 红米机型界面剩余空间改为SD卡总剩余空间</li>
+                        <li>优化 跨机型还原逻辑</li>
+                        <li>修复 各模块已知问题，提高界面、OTA升级、备份、还原、下载稳定性</li>
+                        <li>修复 程序崩溃</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.2.0.11221beta</p>
+                    <p>更新日期：2013-11-22</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增 支持两步登录</li>
+                        <li>优化 迅雷模块显示下载速度，完成时播放声音提示</li>
+                        <li>修复 云相册线程退出bug</li>
+                        <li>修复 MDB相关bug</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.2.0.11151.exe">版本：1.2.0.11151beta</a></p>
+                    <p>更新日期：2013-11-15</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增 云相册同步功能</li>
+                        <li>新增 fastboot刷机功能</li>
+                        <li>新增 迅雷下载引擎</li>
+                        <li>新增 程序运行状态托盘动画</li>
+                        <li>新增 备份完成界面自动备份多选框</li>
+                        <li>修复 各模块已知问题，提高OTA升级、备份、还原、下载稳定性</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.10251.exe">版本：1.1.0.10251</a></p>
+                    <p>更新日期：2013-10-25</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增 支持红米手机</li>
+                        <li>优化 手机驱动安装判断逻辑</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.10181.exe">版本：1.1.0.10181</a></p>
+                    <p>更新日期：2013-10-18</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化 手机助手与稳定版MIUI系统兼容性提高</li>
+                        <li>优化 手机驱动安装更智能</li>
+                        <li>修复 窗口隐藏托盘后，某些情况下双击桌面图标无法唤出的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.10111.exe">版本：1.1.0.10111</a></p>
+                    <p>更新日期：2013-10-11</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化 程序运行时检查到设备且没有驱动时，自动安装驱动</li>
+                        <li>修复 升级时保证主程序退出</li>
+                        <li>修复 稳定版手机连接时无法显示导航按钮</li>
+                        <li>修复 备份时获得文件列表失败</li>
+                        <li>修复 安装完成时弹窗</li>
+                        <li>修复 完整升级包无法升级</li>
+                        <li>修复 1.0.x版本升级到1.1.x版本时卸载老版本导致的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.9271.exe">版本：1.1.0.9271</a></p>
+                    <p>更新日期：2013-09-27</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>支持繁体中文</li>
+                        <li>优化OTA升级失败的处理逻辑</li>
+                        <li>优化新机型支持，提高稳定性</li>
+                        <li>修复bugs</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.9131.exe">版本：1.1.0.9131</a></p>
+                    <p>更新日期：2013-09-13</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增Mi3界面</li>
+                        <li>优化提示框样式</li>
+                        <li>优化安装/卸载界面</li>
+                        <li>优化获取MIUI系统版本号逻辑，提高容错</li>
+                        <li>修复程序退出时手机没有恢复网络的问题</li>
+                        <li>修复下载窗口底部透明区域点击无反映问题</li>
+                        <li>修复因个别蚂蚁下载失败而导致整个下载任务失败的问题，提高下载成功率</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.9061.exe">版本：1.1.0.9061</a></p>
+                    <p>更新日期：2013-09-06</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增单击托盘图标弹出窗口功能</li>
+                        <li>新增切换页面及网络共享功能托盘菜单选项</li>
+                        <li>优化MDB</li>
+                        <li>优化自动更新提示及升级逻辑</li>
+                        <li>优化共享上网，对于不支持的手机，禁用设置中的开关</li>
+                        <li>优化备份与恢复，提高稳定性</li>
+                        <li>优化安装，新安装时指定备份目录到最大剩余空间驱动器，安装驱动时检测是否有其他驱动正在安装</li>
+                        <li>修复一个控件重叠显示的问题</li>
+                        <li>修复卸载时文件没有删除的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.8301.exe">版本：1.1.0.8301</a></p>
+                    <p>更新日期：2013-08-30</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增最小化到托盘功能</li>
+                        <li>优化获取手机号码逻辑</li>
+                        <li>优化安装逻辑</li>
+                        <li>优化自动升级弹窗逻辑，使其适应托盘模式</li>
+                        <li>优化网络共享，提高成功率</li>
+                        <li>优化恢复模式，进入时构建SD卡目录缓存</li>
+                        <li>修复一些字体无法显示的问题</li>
+                        <li>修复恢复备份数据时卡死的问题</li>
+                        <li>修复可能导致文件下载失败的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.8281.exe">版本：1.1.0.8281</a></p>
+                    <p>更新日期：2013-08-28</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>新增最小化到托盘功能</li>
+                        <li>优化获取手机号码逻辑</li>
+                        <li>优化安装逻辑</li>
+                        <li>修复一些字体无法显示的问题</li>
+                        <li>修复恢复备份数据时卡死的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.8231.exe">版本：1.1.0.8231</a></p>
+                    <p>更新日期：2013-08-23</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复共享网络速率显示问题</li>
+                        <li>在设置中添加开启、关闭共享上网的按钮</li>
+                        <li>在设置中显示版本号</li>
+                        <li>修复网络共享功能发现的问题，提高稳定性</li>
+                        <li>调整设置页面控件的位置</li>
+                        <li>对手机的操作增加重试机制</li>
+                        <li>异步获取手机号码，解决无SIM卡时候导致的界面卡顿现象</li>
+                        <li>修复在某些时候无法显示滚动条的问题</li>
+                        <li>修复本地安装包某些情况下安装失败的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.8161.exe">版本：1.1.0.8161</a></p>
+                    <p>更新日期：2013-08-16</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>支持网络共享</li>
+                        <li>支持非管理员用户安装</li>
+                        <li>优化电话号码显示</li>
+                        <li>优化备份过程中手机离线退出流程</li>
+                        <li>修改自动升级策略</li>
+                        <li>OTA失败时提示用户完整包升级</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.8091.exe">版本：1.1.0.8091</a></p>
+                    <p>更新日期：2013-08-09</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>自动备份操作成功后直接返回主界面</li>
+                        <li>修复下载管理器等窗口会有标题栏显示在任务栏的问题</li>
+                        <li>修复设备管理中的设备名称消失的问题</li>
+                        <li>修复安装启动的问题</li>
+                        <li>修复升级界面退出程序的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.8021.exe">版本：1.1.0.8021</a></p>
+                    <p>更新日期：2013-08-02</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>增加了在线下载安装包，可以在线下载安装</li>
+                        <li>修复多个APK同时安装的时候，可能出现错误问题。</li>
+                        <li>修复某些可能引起程序crash的问题。</li>
+                        <li>修复删除备份可能失败的问题。</li>
+                        <li>更改下载模块内部逻辑，提高并发性和稳定性</li>
+                        <li>更改选择手机效果</li>
+                        <li>当手机无剩余空间时，增加错误提示</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiSetup1.1.0.7262.exe">版本：1.1.0.7262</a></p>
+                    <p>更新日期：2013-07-26</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>解决在没有宋体的计算机上部分文字显示不正常的问题</li>
+                        <li>修复了切换手机后显示的是上一部手机的截屏的问题</li>
+                        <li>修正了某些情况不能下载的问题</li>
+                        <li>修正了截图的位置</li>
+                        <li>修正广告闪烁问题</li>
+                        <li>更改广告效果以及滚动策略</li>
+                        <li>增加主页各类手机的图片</li>
+                        <li>设置界面增加“打开日志目录”功能</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiPhoneManagerSetup_1.0.4.5311.exe">版本：1.0.4.5311</a></p>
+                    <p>更新日期：2013-05-31</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>改进共享上网的方法</li>
+                        <li>OTA升级网络错误后增加重试机制</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiPhoneManagerSetup_1.0.4.5271.exe">版本：1.0.4.5271</a></p>
+                    <p>更新日期：2013-05-27</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化了 升级界面的样式</li>
+                        <li>增加对体验版MDB接口的支持</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiPhoneManagerSetup_1.0.4.5171.exe">版本：1.0.4.5171</a></p>
+                    <p>更新日期：2013-05-17</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复还原进度显示不正常的问题</li>
+                        <li>修复还原三清后的备份偶尔会还原失败的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/MiFlash/MiPhoneManagerSetup_1.0.4.5101.exe">版本：1.0.4.5101</a></p>
+                    <p>更新日期：2013-05-10</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复了稳定版本手机系统备份成功后可能会找不到还原条目的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.0.4.4253</p>
+                    <p>更新日期：2013-04-25</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化共享上网逻辑</li>
+                        <li>修补影响OTA升级的问题</li>
+                        <li>改进问题日志匿名回传方式</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.0.4.4171</p>
+                    <p>更新日期：2013-04-17</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>繁体支持</li>
+                        <li>修复在sd卡上OTA安装失败的BUG</li>
+                        <li>修复运行在非中文系统上表现出的若干BUG</li>
+                        <li>修复一个WinXP点击共享上网后检测不到手机的BUG</li>
+                        <li>修复如果无网络可能验证签名错误导致程序不能运行的问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.0.4.4031</p>
+                    <p>更新日期：2013-04-03</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>更换签名驱动，安装无提示</li>
+                        <li>提高备份的速度</li>
+                        <li>修复某些非中文环境下程序异常的错误</li>
+                        <li>修复某些情况下OTA升级失败的错误</li>
+                        <li>卸载时，如果手机助手正在运行，弹出的提示框中增加重试按钮</li>
+                        <li>修复一些界面显示的BUG</li>
+                        <li>修复一些情况下备份失败的BUG</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.0.4.3291</p>
+                    <p>更新日期：2013-03-29</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复一个可能导致程序崩溃的BUG</li>
+                        <li>修复软件自更新后丢失字体的问题</li>
+                        <li>提升备份的速度</li>
+                        <li>修复OTA失败的若干问题</li>
+                        <li>修复可能导致备份失败的一些问题</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.0.4.3273</p>
+                    <p>更新日期：2013-03-27</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复了OTA升级中的一个bug</li>
+                        <li>Win7下共享上网解决ip冲突的问题</li>
+                        <li>修复一个可能备份失败的BUG</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.0.4.3260</p>
+                    <p>更新日期：2013-03-26</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>优化 共享上网的策略，提高成功率</li>
+                    </ol>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>版本：1.0.4.3222</p>
+                    <p>更新日期：2013-03-22</p>
+                    <p>更新日志：</p>
+                    <ol>
+                        <li>修复 由于驱动冲突导致的无法使用的问题。</li>
+                        <li>修复 部分网络环境下不能使用共享上网功能的问题。</li>
+                        <li>修复 点击设置自动退出的问题。</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="MiFlash" class="mdui-p-a-2">
+        <div class="mdui-panel mdui-panel-gapless">
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header">MiFlash：</div>
+                <div class="mdui-panel-item-body">
+                    <p>
+                        <a href="http://bigota.d.miui.com/tools/MiFlash2018-5-28-0.zip">20180528版 MiFlash</a>
+                        <i class="mdui-icon material-icons">fiber_new</i></p>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/tools/MiFlash2017-12-12-0-ex.zip">20171212版 MiFlash</a></p>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/tools/MiFlashSetup201612220.msi">20161220版 MiFlash</a></p>
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p><a href="http://bigota.d.miui.com/tools/MiPhone20151028.exe">20151028版 MiFlash</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 由此向下区域为底部Footer的内容 -->
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent mdui-hidden"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i>
+    </button>
+</body>
+
+</html>
