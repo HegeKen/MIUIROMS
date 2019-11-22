@@ -19,16 +19,16 @@
 + CC系列：小米CC9 / 小米CC9美图定制版 / 小米CC9e / 小米CC9 Pro  
 + Max系列：小米Max2 / 小米Max3
 + Note系列：小米Note2 / 小米Note3
-+ MIX系列：小米MIX / 小米MIX2 / 小米MIX2S / 小米MIX3
++ MIX系列：小米MIX / 小米MIX2 / 小米MIX2S / 小米MIX3 / 小米MIX3 5G版  
 + 平板系列：小米平板4/Plus/
-+ 其它：小米Play  
++ 其它：小米Play / 小米 POCOPHONE F1/ 小米A1/ 小米A2/ 小米A2 Lite/ 小米A3  
 
 Redmi 系列
 
 + 数字系列：红米4高配版 / 红米4X / 红米5 / 红米5A / 红米5Plus / 红米6 / 红米6A / 红米6 Pro / Redmi 7 / Redmi 7A / Redmi 8 / Redmi 8A  
-+ Note系列：红米Note3 双网通 / 红米Note3 全网通 / 红米Note4/4X(联发科) / 红米Note 4X(高通) / 红米Note 5 / 红米Note 5A 标准版 / 红米Note 5A 高配版 / Redmi Note 7 / Redmi Note 7 Pro / Redmi Note 8 / Redmi Note 8 Pro
++ Note系列：红米Note3 双网通 / 红米Note3 全网通 / 红米Note4/4X(联发科) / 红米Note 4X(高通) / 红米Note 5 / 红米Note 5A 标准版 / 红米Note 5A 高配版 / 红米Note 6 Pro / Redmi Note 7 / Redmi Note 7 Pro / Redmi Note 8 / Redmi Note 8T / Redmi Note 8 Pro
 + K系列：Redmi K20 / Redmi K20 Pro / Redmi K20 Pro尊享版  
-+ 其它：红米S2 / 红米Y3 /  
++ 其它：红米S2 / 红米Y3 / Redmi Go  
 
 等机型已完成收集工作  
 
