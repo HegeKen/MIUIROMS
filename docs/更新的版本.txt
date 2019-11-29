@@ -1,0 +1,34 @@
+更新日期：2019.11.29
+站点版本：V0.5.5-SNAPSHOT
+
+更新日志：
+
+做了更新日志查看页面，将开发版页面的资料转移了过去，按现在的样子看来这也是个较大的工程，后续也会慢慢补充的：https://roms.miuier.com/weekly/index.html；
+更新部分稳定版；
+
+这几天的更新如下
+国内稳定版：
+小米9 V11.0.4.0.QFACNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.QFACNXM/miui_CEPHEUS_V11.0.4.0.QFACNXM_b22bd472a1_10.0.zip
+小米9 V11.0.4.0.QFACNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.QFACNXM/cepheus_images_V11.0.4.0.QFACNXM_20191111.0000.00_10.0_cn_aeb97aacb3.tgz
+
+Redmi 7 V11.0.2.0.PFLCNXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PFLCNXM/miui_ONCLITE_V11.0.2.0.PFLCNXM_63411240e8_9.0.zip
+Redmi 7 V11.0.2.0.PFLCNXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PFLCNXM/onclite_images_V11.0.2.0.PFLCNXM_20191114.0000.00_9.0_cn_67c33acba6.tgz
+Redmi 8A V11.0.3.0.PCPCNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCPCNXM/miui_OLIVELITE_V11.0.3.0.PCPCNXM_06c5321fdf_9.0.zip
+Redmi 8A V11.0.3.0.PCPCNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCPCNXM/olivelite_images_V11.0.3.0.PCPCNXM_20191119.0000.00_9.0_cn_d09ebce3bf.tgz
+红米Note4X(高通版) V11.0.2.0.NCFCNXM 卡刷包:http://bigota.d.miui.com/V11.0.2.0.NCFCNXM/miui_HMNote4X_V11.0.2.0.NCFCNXM_8e61b3fb88_7.0.zip
+红米Note4X(高通版) V11.0.2.0.NCFCNXM 线刷包:http://bigota.d.miui.com/V11.0.2.0.NCFCNXM/mido_images_V11.0.2.0.NCFCNXM_20191107.0000.00_7.0_cn_07679911aa.tgz
+Redmi Note8 V11.0.3.0.PCOCNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCOCNXM/miui_GINKGO_V11.0.3.0.PCOCNXM_b07db156df_9.0.zip
+Redmi Note8 V11.0.3.0.PCOCNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCOCNXM/ginkgo_images_V11.0.3.0.PCOCNXM_20191119.0000.00_9.0_cn_24aeb205ba.tgz
+Redmi K20 Pro/尊享版 V11.0.4.0.QFKCNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.QFKCNXM/miui_RAPHAEL_V11.0.4.0.QFKCNXM_0c612efa47_10.0.zip
+Redmi K20 Pro/尊享版 V11.0.4.0.QFKCNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.QFKCNXM/raphael_images_V11.0.4.0.QFKCNXM_20191111.0000.00_10.0_cn_6a9d29b14f.tgz
+
+国际稳定版：
+小米Play 国际版 V11.0.1.0.OFIMIXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.OFIMIXM/miui_MIPLAYGlobal_V11.0.1.0.OFIMIXM_7ca29041b1_8.1.zip
+小米Play 国际版 V11.0.1.0.OFIMIXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.OFIMIXM/lotus_global_images_V11.0.1.0.OFIMIXM_20191024.0000.00_8.1_global_069f5abcbe.tgz
+
+Redmi 8 欧洲EEA版 V11.0.1.0.PCNEUXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCNEUXM/miui_OLIVEEEAGlobal_V11.0.1.0.PCNEUXM_1a4ec8d8c6_9.0.zip
+Redmi 8 欧洲EEA版 V11.0.1.0.PCNEUXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCNEUXM/olive_eea_global_images_V11.0.1.0.PCNEUXM_20191120.0000.00_9.0_eea_cce3f5ec56.tgz
+Redmi 8A 国际版 V11.0.1.0.PCPMIXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCPMIXM/miui_OLIVELITEGlobal_V11.0.1.0.PCPMIXM_163c56b0b8_9.0.zip
+Redmi 8A 国际版 V11.0.1.0.PCPMIXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCPMIXM/olivelite_global_images_V11.0.1.0.PCPMIXM_20191121.0000.00_9.0_global_cd9103ee3f.tgz
+Redmi 8A 印度版 V11.0.3.0.PCPINXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCPINXM/miui_OLIVELITEINGlobal_V11.0.3.0.PCPINXM_8a514b6ebe_9.0.zip
+Redmi 8A 印度版 V11.0.3.0.PCPINXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCPINXM/olivelite_in_global_images_V11.0.3.0.PCPINXM_20191119.0000.00_9.0_in_72dbbf9326.tgz

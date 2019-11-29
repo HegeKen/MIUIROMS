@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+        p a{
+            text-decoration: none;
+        }
+    </style>
+    <title>第434周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
+                    <div class="mdui-list-item-content"><a href="../../recruit.html">诚招群员</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第434周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>原链接：<a href="https://www.xiaomi.cn/post/6038452">MIUI 第434周发布公告及更新日志</a></p>
+                    <p>▍发布时间</p>
+                    <p>MIUI11 开发版9.10.24 11:00发布，部分机型延迟发布</p>
+                    <br>
+                    <p>▍升级说明</p>
+                    <ol>
+                        <li>MIUI 11开发版可进入“设置—>我的设备—>MIUI版本”在线升级，升级前务必备份重要数据</li>
+                        <li>部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准</li>
+                    </ol>
+                    <p>▍重要说明</p>
+                    <ol>
+                        <li>小米8屏幕指纹版、小米MIX 2S、小米8透明探索版、小米MIX 3 发布第一个基于Android 10 的 MIUI 开发版, 多项优化与改进, 向勇敢尝鲜的米粉们致敬!</li>
+                        <li>小米8 SE、小米9 SE、小米8 启动Android 10升级，本周暂停发布</li>
+                        <li>小米PLAY、小米9 Pro 5G 因测试系统稳定性，公测发布延迟</li>
+                        <li>Redmi Note 8 Pro 因测试系统稳定性，本周暂停发布</li>
+                        <li>红米Note 4X 、红米4X、红米Note 5A标准版、红米Note 5A高配版、小米5C、小米Max 2、小米Note 2、小米MIX、小米手机5s、小米手机5s Plus 、红米5 Plus、小米5X、红米5A、红米5、小米平板3 正式停止开发版公测</li>
+                        <li>由于不在MIUI11适配计划机型内，小米平板4/4Plus暂停更新</li>
+                    </ol>
+                    <hr>
+                    <br>
+                    <p>▍更新日志</p>
+                    <br>
+                    <p>系统</p>
+                    <p>新增 全新的截屏体验，简化截屏编辑、分享、长截图流程</p>
+                    <p>优化 更新谷歌安全补丁（2019#9/2019#10），提升系统安全性。</p>
+                    <br>
+                    <p>锁屏、状态栏、通知栏</p>
+                    <p>新增 用户可自行选择隐藏刘海方式的功能</p>
+                    <p>修复 偶现蓝牙快捷开关不显示设备名称的问题（小米9、Redmi K20）</p>
+                    <p>修复 偶现锁屏界面不显示新通知内容的问题</p>
+                    <br>
+                    <p>设置</p>
+                    <p>新增 勿扰模式下允许网络电话响铃的设置（小米9）</p>
+                    <p>修复 APP未到达设置的使用时长却被限制</p>
+                    <p>支持 Wi-Fi名称简化，以456替代原有命名（小米9、Redmi K20）</p>
+                    <br>
+                    <p>游戏中心</p>
+                    <p>新增 手势连续滑动唤出游戏工具箱二级菜单功能</p>
+                    <p>新增 创建游戏加速桌面快捷方式功能</p>
+                    <p>新版游戏加速首页，界面风格焕然一新</p>
+                    <p>支持单独设置进入游戏关闭自动亮度、三指截图、护眼模式</p>
+                    <p>游戏工具箱全面升级，支持息屏挂机、一键切换上网卡等功能</p>
+                    <br>
+                    <p>安全中心</p>
+                    <p>优化 隐私密码验证页界面显示效果</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th>机型</th>
+                        <th>安卓版本</th>
+                        <th>卡刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>小米6(sagit)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MI6_9.10.24_f04fb7e426_9.0.zip">miui_MI6_9.10.24_f04fb7e426_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米6X(wayne)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MI6X_9.10.24_af48b1eb57_9.0.zip">miui_MI6X_9.10.24_af48b1eb57_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8(dipper)</td>
+                        <td>10.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.10.24/miui_MI8_9.10.24_995e438a64_10.0.zip">miui_MI8_9.10.24_995e438a64_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8探索版(ursa)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MI8Explorer_9.10.24_a0239a8519_10.0.zip">miui_MI8Explorer_9.10.24_a0239a8519_10.0.zip</a></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>小米8屏幕指纹版(equuleus)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MI8UD_9.10.24_f64ebda82e_10.0.zip">miui_MI8UD_9.10.24_f64ebda82e_10.0.zip</a>
+                    </tr>
+                    <tr>
+                        <td>小米8 SE(sirius)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MI8SE_9.10.24_7a4aed1a73_10.0.zip">miui_MI8SE_9.10.24_7a4aed1a73_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8青春版(platina)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MI8Lite_9.10.24_5c92ad5699_9.0.zip">miui_MI8Lite_9.10.24_5c92ad5699_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9/透明版(cepheus)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_CEPHEUS_9.10.24_d195aed894_10.0.zip">miui_CEPHEUS_9.10.24_d195aed894_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9 Pro 5G(crux)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_CRUX_9.10.24_490631895c_9.0.zip">miui_CRUX_9.10.24_490631895c_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9 SE(grus)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_GRUS_9.10.24_04e12dfdd9_10.0.zip">miui_GRUS_9.10.24_04e12dfdd9_10.0.zip</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>小米CC9(pyxis)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>小米CC9美图定制版(vela)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>小米CC9e(laurus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Max 3(nitrogen)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MIMAX3_9.10.24_06d0c2e371_9.0.zip">miui_MIMAX3_9.10.24_06d0c2e371_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Play(lotus)</td>
+                        <td>8.1 Oreo</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MIPLAY_9.10.24_d5422acd6b_8.1.zip">miui_MIPLAY_9.10.24_d5422acd6b_8.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note 3(jason)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MINote3_9.10.24_3b1ac1e023_9.0.zip">miui_MINote3_9.10.24_3b1ac1e023_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 2(chiron)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MIMIX2_9.10.24_3cd0559ad7_9.0.zip">miui_MIMIX2_9.10.24_3cd0559ad7_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 2S(polaris)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MIMIX2S_9.10.24_ec589be970_10.0.zip">miui_MIMIX2S_9.10.24_ec589be970_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 3(perseus)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_MIMIX3_9.10.24_05af200956_10.0.zip">miui_MIMIX3_9.10.24_05af200956_10.0.zip</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>红米6(cereus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>红米6A(cactus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>红米6 Pro(sakura)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 5(whyred)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_HMNote5_9.10.24_96a38e1700_9.0.zip">miui_HMNote5_9.10.24_96a38e1700_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi Note 7(lavender)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_LAVENDER_9.10.24_233cde0d2e_9.0.zip">miui_LAVENDER_9.10.24_233cde0d2e_9.0.zip</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>Redmi Note 7 Pro(violet)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>Redmi Note 8(ginkgo)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr class="mdui-hidden">
+                        <td>Redmi Note 8 Pro(begonia)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi K20(davinci)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_DAVINCI_9.10.24_b9a3c0ff16_10.0.zip">miui_DAVINCI_9.10.24_b9a3c0ff16_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi K20 Pro/尊享版(raphael)</td>
+                        <td>10.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.10.24/miui_RAPHAEL_9.10.24_78b31584a5_10.0.zip">miui_RAPHAEL_9.10.24_78b31584a5_10.0.zip</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    </div>
+    </footer>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>
