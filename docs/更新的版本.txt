@@ -1,0 +1,27 @@
+小米5X V11.0.3.0.ODBCNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.ODBCNXM/miui_MI5X_V11.0.3.0.ODBCNXM_704b2e39b0_8.1.zip
+小米5X V11.0.3.0.ODBCNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.ODBCNXM/tiffany_images_V11.0.3.0.ODBCNXM_20191118.0000.00_8.1_cn_5d2553470e.tgz
+小米Play V11.0.3.0.OFICNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.OFICNXM/miui_MIPLAY_V11.0.3.0.OFICNXM_8bbf9b0c3c_8.1.zip
+小米Play V11.0.3.0.OFICNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.OFICNXM/lotus_images_V11.0.3.0.OFICNXM_20191119.0000.00_8.1_cn_470e7ad079.tgz
+Redmi Note7 V11.0.4.0.PFGCNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PFGCNXM/miui_LAVENDER_V11.0.4.0.PFGCNXM_80ef43dc45_9.0.zip
+Redmi Note7 V11.0.4.0.PFGCNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.PFGCNXM/lavender_images_V11.0.4.0.PFGCNXM_20191110.0000.00_9.0_cn_739be34758.tgz
+
+国际版动态：
+
+小米CC9 Pro 国际版 V11.0.3.0.PFDMIXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PFDMIXM/miui_TUCANAGlobal_V11.0.3.0.PFDMIXM_3a07de6538_9.0.zip
+小米Max3 国际版 V11.0.6.0.PEDMIXM 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PEDMIXM/miui_MIMAX3Global_V11.0.6.0.PEDMIXM_26b9783b2a_9.0.zip
+小米Max3 国际版 V11.0.6.0.PEDMIXM 线刷包：http://bigota.d.miui.com/V11.0.6.0.PEDMIXM/nitrogen_global_images_V11.0.6.0.PEDMIXM_20191126.0000.00_9.0_global_adf33ff933.tgz
+红米 Note6 Pro 国际版 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PEKMIXM/miui_HMNote6ProGlobal_V11.0.1.0.PEKMIXM_5c9f74315c_9.0.zip
+红米 Note6 Pro 国际版 线刷包：http://bigota.d.miui.com/V11.0.1.0.PEKMIXM/tulip_global_images_V11.0.1.0.PEKMIXM_20191029.0000.00_9.0_global_99de5aece2.tgz
+Redmi Note8 印度版 V11.0.1.0.PCOINXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCOINXM/miui_GINKGOINGlobal_V11.0.1.0.PCOINXM_b740803427_9.0.zip
+Redmi Note8 印度版 V11.0.1.0.PCOINXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCOINXM/ginkgo_in_global_images_V11.0.1.0.PCOINXM_20191120.0000.00_9.0_in_5c85786486.tgz
+
+
+
+
+
+
+
+
+
+Redmi Note8 卡刷包：
+Redmi Note8 线刷包：
