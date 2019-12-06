@@ -14,11 +14,10 @@
 
 Redmi 8 俄罗斯版 V11.0.1.0.PCNRUXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCNRUXM/miui_OLIVERUGlobal_V11.0.1.0.PCNRUXM_f773af47c6_9.0.zip
 Redmi 8 俄罗斯版 V11.0.1.0.PCNRUXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCNRUXM/olive_ru_global_images_V11.0.1.0.PCNRUXM_20191123.0000.00_9.0_global_abf92405e7.tgz
-Redmi 8A 俄罗斯版 V11.0.1.0.PCPRUXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCPRUXM/miui_OLIVELITERUGlobal_V11.0.1.0.PCPRUXM_9b91941fa6_9.0.zip
-Redmi 8A 俄罗斯版 V11.0.1.0.PCPRUXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCPRUXM/olivelite_ru_global_images_V11.0.1.0.PCPRUXM_20191123.0000.00_9.0_global_ccc5baf747.tgz
 Redmi 8A 欧洲EEA版 V11.0.1.0.PCPMIXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCPMIXM/miui_OLIVELITEGlobal_V11.0.1.0.PCPMIXM_163c56b0b8_9.0.zip
 Redmi 8A 欧洲EEA版 V11.0.1.0.PCPMIXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCPEUXM/olivelite_eea_global_images_V11.0.1.0.PCPEUXM_20191126.0000.00_9.0_eea_84251c0a56.tgz
-
+Redmi 8A 俄罗斯版 V11.0.1.0.PCPRUXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCPRUXM/miui_OLIVELITERUGlobal_V11.0.1.0.PCPRUXM_9b91941fa6_9.0.zip
+Redmi 8A 俄罗斯版 V11.0.1.0.PCPRUXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCPRUXM/olivelite_ru_global_images_V11.0.1.0.PCPRUXM_20191123.0000.00_9.0_global_ccc5baf747.tgz
 
 Redmi Note8 卡刷包：
 Redmi Note8 线刷包：
