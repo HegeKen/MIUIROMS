@@ -7,15 +7,16 @@
 小米6X 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PDCCNXM/miui_MI6X_V11.0.3.0.PDCCNXM_9ec1316afd_9.0.zip
 小米9 卡刷包：http://bigota.d.miui.com/V11.0.4.0.QFACNXM/miui_CEPHEUS_V11.0.4.0.QFACNXM_b22bd472a1_10.0.zip
 小米CC9 卡刷包：http://bigota.d.miui.com/V11.3.3.0.PFCCNXM/miui_PYXIS_V11.3.3.0.PFCCNXM_c02239b14d_9.0.zip
-小米CC9 美图定制版 卡刷包：http://bigota.d.miui.com/V11.3.2.0.PFECNXM/miui_VELA_V11.3.2.0.PFECNXM_da8cff8fc2_9.0.zip
+
 
 
 
 红米6 Pro 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PDICNXM/miui_HM6Pro_V11.0.4.0.PDICNXM_45526f173b_9.0.zip
 Redmi 7 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PFLCNXM/miui_ONCLITE_V11.0.2.0.PFLCNXM_63411240e8_9.0.zip
 Redmi 7A 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCMCNXM/miui_PINE_V11.0.2.0.PCMCNXM_fb68c600ed_9.0.zip
-Redmi 8 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCNCNXM/miui_OLIVE_V11.0.3.0.PCNCNXM_5070d510b2_9.0.zip
+
 Redmi 8A 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCPCNXM/miui_OLIVELITE_V11.0.3.0.PCPCNXM_06c5321fdf_9.0.zip
+Redmi 8A 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCPCNXM/miui_OLIVELITE_V11.0.4.0.PCPCNXM_4e06f21a3d_9.0.zip
 Redmi Note7 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PFGCNXM/miui_LAVENDER_V11.0.4.0.PFGCNXM_80ef43dc45_9.0.zip
 Redmi Note8 Pro 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PGGCNXM/miui_BEGONIA_V11.0.2.0.PGGCNXM_7a4e709b1a_9.0.zip
 
@@ -25,11 +26,8 @@ Redmi K20 Pro 卡刷包：http://bigota.d.miui.com/V11.0.4.0.QFKCNXM/miui_RAPHAE
 
 小米CC9 国际版 卡刷包：http://bigota.d.miui.com/V11.3.4.0.PFCMIXM/miui_PYXISGlobal_V11.3.4.0.PFCMIXM_78bb922dcd_9.0.zip
 小米CC9 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.3.4.0.PFCEUXM/miui_PYXISEEAGlobal_V11.3.4.0.PFCEUXM_bd857626ef_9.0.zip
-
-小米CC9 Pro 国际版 卡刷包：http://bigota.d.miui.com/V11.0.5.0.PFDMIXM/miui_TUCANAGlobal_V11.0.5.0.PFDMIXM_40dcdd8711_9.0.zip
-小米CC9 Pro 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.0.9.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.9.0.PFDEUXM_63b5cb970d_9.0.zip
 小米CC9 Pro 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.0.10.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.10.0.PFDEUXM_b7a8e9a640_9.0.zip
-小米CC9 Pro 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PFDRUXM/miui_TUCANARUGlobal_V11.0.3.0.PFDRUXM_cd59013df3_9.0.zip
+
 小米Max3 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PEDRUXM/miui_NITROGENRUGlobal_V11.0.6.0.PEDRUXM_3bd2da6a1c_9.0.zip
 
 红米 5 Plus 国际版 卡刷包：http://bigota.d.miui.com/V11.0.2.0.OEGMIXM/miui_HM5PlusGlobal_V11.0.2.0.OEGMIXM_f74369de0c_8.1.zip
