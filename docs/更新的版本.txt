@@ -3,7 +3,7 @@
 
 更新日志：
 
-新增支持：Redmi K30 4G版
+新增支持：Redmi K30 4G版:
 更新部分稳定版；
 
 国内稳定版：
@@ -11,8 +11,8 @@
 小米CC9 美图定制版 V11.3.2.0.PFECNXM 线刷包：http://bigota.d.miui.com/V11.3.2.0.PFECNXM/vela_images_V11.3.2.0.PFECNXM_20191122.0000.00_9.0_cn_6a397aefb7.tgz
 Redmi 8 V11.0.3.0.PCNCNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCNCNXM/miui_OLIVE_V11.0.3.0.PCNCNXM_5070d510b2_9.0.zip
 Redmi 8 V11.0.3.0.PCNCNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCNCNXM/olive_images_V11.0.3.0.PCNCNXM_20191119.0000.00_9.0_cn_6946e17322.tgz
-Redmi K30 V11.0.4.0.QGHCNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.QGHCNXM/miui_PHOENIX_V11.0.4.0.QGHCNXM_86e6d05ab7_10.0.zip
-Redmi K30 V11.0.4.0.QGHCNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.QGHCNXM/phoenix_images_V11.0.4.0.QGHCNXM_20191130.0000.00_10.0_cn_162e3c377b.tgz
+Redmi K30 4G版 V11.0.4.0.QGHCNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.QGHCNXM/miui_PHOENIX_V11.0.4.0.QGHCNXM_86e6d05ab7_10.0.zip
+Redmi K30 4G版 V11.0.4.0.QGHCNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.QGHCNXM/phoenix_images_V11.0.4.0.QGHCNXM_20191130.0000.00_10.0_cn_162e3c377b.tgz
 
 国际稳定版：
 小米CC9 Pro 国际版 V11.0.5.0.PFDMIXM 卡刷包：http://bigota.d.miui.com/V11.0.5.0.PFDMIXM/miui_TUCANAGlobal_V11.0.5.0.PFDMIXM_40dcdd8711_9.0.zip
