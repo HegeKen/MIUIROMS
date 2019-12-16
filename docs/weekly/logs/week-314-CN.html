@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+    </style>
+    <title>第314周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
+                    <div class="mdui-list-item-content"><a href="../../recruit.html">诚招群员</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第314周发布公告及更新日志
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>原链接：<a href="http://www.miui.com/thread-6665954-1-1.html">【2016年12月16日】MIUI 第314周发布公告及更新日志</a></p>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI 6.12.15 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍已知问题</p>
+                    <ol>
+                        <li>小米MIX、小米Note 2、小米手机5s、小米手机5s Plus 因测试版本稳定性，本周暂停更新发布。</li>
+                        <li> 红米手机1移动版因测试版本稳定性，本周暂停发布。</li>
+                        <li>小米手机4S 已发布开发版6.12.16。</li>
+                        <li>小米MAX 标准版/高配版，目前正积极准备 MIUI For 7.0，期间暂停发布开发版更新。</li>
+                    </ol>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>MIUI V5 / MIUI 6 / MIUI 7开发版可通过“系统更新”APP 检测升级，升级前务必备份重要数据；</li>
+                        <li>开发版/稳定版相互卡刷时，需备份好重要数据，再进入“系统更新”清除数据卡刷完整包，防止出现异常问题；</li>
+                    </ol>
+                    <hr>
+                    <br>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 个人热点「踢人」及黑名单功能（黑名单仅支持高通平台），再也不会被蹭热点了</p>
+                    <p>新增 应用商店全新改版，界面更美观，让你更爱逛</p>
+                    <p>新增 “开关排序”页支持点击操作，以便开启/关闭快捷开关</p>
+                    <p>新增 “省电模式”快捷开关，支持添加至通知栏开关面板</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>新增 “开关排序”页支持点击操作，以便开启/关闭快捷开关</p>
+                    <p>新增 “省电模式”快捷开关，支持添加至通知栏开关面板</p>
+                    <p>优化 勿扰模式时不出现悬浮通知</p>
+                    <br>
+                    <p style="font-weight: bolder;">【天气】</p>
+                    <p>修复 日落后天气刷新时背景图片没有替换的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>新增 个人热点「踢人」及黑名单功能（黑名单仅支持高通平台），再也不会被蹭热点了</p>
+                    <br>
+                    <p style="font-weight: bolder;">【应用商店】</p>
+                    <p>新增 应用商店全新改版，界面更美观，让你更爱逛</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米钱包】</p>
+                    <p>新增 小米支付和小米公交刷卡桌面快捷方式</p>
+                    <p>新增 小米支付银行卡绑卡完成后展示银行联系方式</p>
+                    <p>优化 小米支付银行卡面字体自适应卡面颜色</p>
+                    <p>修复 公交卡演示界面打开闪烁问题</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid mdui-hidden">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th>机型</th>
+                        <th>安卓版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>小米手机1/小米手机1S(mione_plus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米手机1青春版(mione)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米2/2S(aries)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米2A(taurus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米手机3 移动版(pisces)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米手机3W(电信联通版)/小米手机4(cancro)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米手机4电信4G版(cancro_lte_ct)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5S Plus(sagit)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米4C(libra)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米4i(ferrari)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>小米4S(aqua)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5(gemini)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>小米5S(capricorn)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5S Plus(natrium)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5C(meri)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5X(tiffany)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米6(sagit)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米6X(wayne)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8(dipper)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8探索版(ursa)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8屏幕指纹版(equuleus)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8 SE(sirius)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8青春版(platina)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9/透明版(cepheus)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9 Pro 5G(crux)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9 SE(grus)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米CC9(pyxis)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米CC9美图定制版(vela)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米CC9e(laurus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米CC9 Pro(tucana)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Max 标准版(hydrogen)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Max 高配版(helium)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Max 2(oxygen)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Max 3(nitrogen)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Play(lotus)</td>
+                        <td>8.1 Oreo</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note(virgo)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note 全网通版(virgo_lte_ct)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note 顶配版(leo)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note 2(scorpio)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note 3(jason)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX(lithium)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 2(chiron)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 2S(polaris)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 3(perseus)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米平板1(mocha)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米平板2(latte)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米平板3(cappu)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米平板4/Plus(clover)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>红米手机1(hm1)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机WCDMA版(wt98007)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机1S WCDMA 3G版(armani)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机1S TD 3G版(wt93807)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机1S TD 4G版(wt96007)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机2 移动版(wt86047)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机2 移动版增强版(wt86047_pro)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机2 联通/电信版(wt88047)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机2 联通/电信版 增强版(wt88047_pro)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米手机2A增强版(lte26007)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米3(ido_xhdpi)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米3S/3X(land)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米4 标准版(prada)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米4 高配版(markw)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米4A(rolex)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米4X(santoni)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米5(rosy)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米5A(riva)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米5 Plus(vince)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米6(cereus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米6A(cactus)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米6 Pro(sakura)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米S2(ysl)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Y3(onc)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 4G 单卡版(dior)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note WCDMA版(lcsh92_wet_jb9)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note TD版(lcsh92_wet_xm_td)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note双卡版(gucci)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 2(hermes)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note3 双网通(hennessy)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note3 全网通(kenzo)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note3 特别版(kate)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note4/4X(联发科)(nikel)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 4X(高通平台)(mido)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 5(whyred)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi Note 7(lavender)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi Note 7 Pro(violet)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi Note 8(ginkgo)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi Note 8 Pro(begonia)</td>
+                        <td>9.0 Pie</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi K20(davinci)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi K20 Pro/尊享版(raphael)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米 Pro(omega)</td>
+                        <td>10.0</td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    </div>
+    </footer>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>

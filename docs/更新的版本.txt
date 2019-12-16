@@ -4,6 +4,10 @@
 
 
 国际稳定版：
+Redmi 8 印度尼西亚版 V11.0.2.0.PCNIDXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCNIDXM/miui_OLIVEIDGlobal_V11.0.2.0.PCNIDXM_b58b338434_9.0.zip
+Redmi 8 印度尼西亚版 V11.0.2.0.PCNIDXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCNIDXM/olive_id_global_images_V11.0.2.0.PCNIDXM_20191119.0000.00_9.0_global_04115bef68.tgz
+Redmi 8A 印度尼西亚版 V11.0.1.0.PCPIDXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCPIDXM/miui_OLIVELITEIDGlobal_V11.0.1.0.PCPIDXM_12a42e9ef4_9.0.zip
+Redmi 8A 印度尼西亚版 V11.0.1.0.PCPIDXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCPIDXM/olivelite_id_global_images_V11.0.1.0.PCPIDXM_20191113.0000.00_9.0_global_33ba77cb5b.tgz
 Redmi Note8 印度版 V11.0.2.0.PCOINXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCOINXM/miui_GINKGOINGlobal_V11.0.2.0.PCOINXM_ebb16356fb_9.0.zip
 Redmi Note8 印度版 V11.0.2.0.PCOINXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PCOINXM/ginkgo_in_global_images_V11.0.2.0.PCOINXM_20191204.0000.00_9.0_in_69f872badd.tgz
 Redmi Note8T 国际版 V10.3.1.0.PCXMIXM 卡刷包：http://bigota.d.miui.com/V10.3.1.0.PCXMIXM/miui_WILLOWGlobal_V10.3.1.0.PCXMIXM_9dc29fc488_9.0.zip
