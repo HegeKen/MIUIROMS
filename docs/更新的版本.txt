@@ -1,17 +1,10 @@
 
 
 国内稳定版：
-小米6X V11.0.3.0.PDCCNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PDCCNXM/miui_MI6X_V11.0.3.0.PDCCNXM_9ec1316afd_9.0.zip
-小米6X V11.0.3.0.PDCCNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PDCCNXM/wayne_images_V11.0.3.0.PDCCNXM_20191127.0000.00_9.0_cn_1f235cc624.tgz
-Redmi K30 V11.0.5.0.QGHCNXM 卡刷包：http://bigota.d.miui.com/V11.0.5.0.QGHCNXM/miui_PHOENIX_V11.0.5.0.QGHCNXM_f3161c36f5_10.0.zip
-Redmi K30 V11.0.5.0.QGHCNXM 线刷包：http://bigota.d.miui.com/V11.0.5.0.QGHCNXM/phoenix_images_V11.0.5.0.QGHCNXM_20191206.0000.00_10.0_cn_f96bd8ea86.tgz
+
 
 国际稳定版
-小米CC9 国际版 V11.3.4.0.PFCMIXM 卡刷包：http://bigota.d.miui.com/V11.3.4.0.PFCMIXM/miui_PYXISGlobal_V11.3.4.0.PFCMIXM_78bb922dcd_9.0.zip
-小米CC9 国际版 V11.3.4.0.PFCMIXM 线刷包：http://bigota.d.miui.com/V11.3.4.0.PFCMIXM/pyxis_global_images_V11.3.4.0.PFCMIXM_20191122.0000.00_9.0_global_de83ecb6f3.tgz
-Redmi Note8 印度尼西亚版 V11.0.1.0.PCOIDXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCOIDXM/miui_GINKGOIDGlobal_V11.0.1.0.PCOIDXM_a819859678_9.0.zip
-Redmi Note8 印度尼西亚版 V11.0.2.0.PCOIDXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCOIDXM/miui_GINKGOIDGlobal_V11.0.2.0.PCOIDXM_6f17247eb8_9.0.zip
-Redmi Note8 印度尼西亚版 V11.0.2.0.PCOIDXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PCOIDXM/ginkgo_id_global_images_V11.0.2.0.PCOIDXM_20191203.0000.00_9.0_global_4f85e67e78.tgz
+
 
 
 
