@@ -25,18 +25,20 @@
         p a {
             text-decoration: none;
         }
-        .pc{
-            visibility: show;
-        }
-        .mobile{
-            display: none;
-        }
         @media screen and (max-width: 500px){
             .pc{
                 display: none;
             }
             .mobile{
                 visibility: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                visibility: show;
+            }
+            .mobile{
+                display: none;
             }
         }
     </style>
