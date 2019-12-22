@@ -25,8 +25,24 @@
         p a {
             text-decoration: none;
         }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
     </style>
-    <title>第400周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第360周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
@@ -79,47 +95,48 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第400周发布公告及更新日志
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第360周发布公告及更新日志
                 </div>
                 <div class="mdui-panel-item-body">
-                    <p>原链接：<a href="http://www.miui.com/thread-20329276-1-1.html">【2018年12月21日】MIUI 第400周发布公告及更新日志</a></p>
+                    <p>原链接：<a href="http://www.miui.com/thread-11774498-1-1.html">【2017年12月22日】MIUI 第360周发布公告及更新日志</a></p>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI10 开发版 8.12.20 已发布</p>
+                    <p>MIUI9 开发版 7.12.21 11:00 发布</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
-                        <li>已加入防回刷机制的机型无法降级刷回旧版本的开发版或稳定版，否则会导致手机变砖</li>
-                        <li>MIUI 6/7/8/9开发版可进入“设置→我的设备→MIUI版本”在线升级</li>
-                        <li>MIUI 6/7/8/9稳定版用户，建议通过线刷升级至 MIUI 10开发版，教程请见下方“刷机指南”</li>
-                        <li>部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准</li>
+                        <li>MIUI 8开发版可进入“设置→我的设备→MIUI版本”在线升级</li>
+                        <li>MIUI 6/7开发版以及 MIUI 8稳定版用户，建议通过线刷升级至 MIUI 9开发版，教程请见下方“刷机指南”</li>
                     </ol>
                     <p style="font-weight: bolder;">▍重要说明</p>
                     <ol>
-                        <li>小米手机8青春版正在内测Android P，期间暂停公测发布</li>
-                        <li>小米MIX 2S/小米MIX 3/红米6 Pro/红米手机5A/红米手机5/小米5s Plus/小米平板4/Plus已发布公测</li>
+                        <li>红米手机5、红米手机5 Plus 已发布公测开发版7.12.21</li>
+                        <li>红米Note 5A 高配版因排查个别米粉反馈重启的问题，为避免影响使用，本周暂停公测发布</li>
+                        <li>红米手机5A 因为测试稳定性，公测延迟发布，具体发布时间敬请关注更新公告</li>
+                        <li>小米MIX 2因适配 Android O，12月21日发布最后一个基于 Android N 的公测开发版，预计12月25日起开始 Android O 开发版内测</li>
+                        <li>小米手机6因适配 Android O，12月8日起暂停 Android N 的开发版内测、公测，预计12月下旬恢复开发版内测</li>
+                        <li> 快如闪电：MIUI 9稳定版陆续开放升级中</li>
                     </ol>
                     <hr>
                     <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
-                    <p style="font-weight: bolder;">系统</p>
-                    <p>优化 开启全面屏手势后，横屏全屏时不常驻白色提示条</p>
-                    <p>优化 手机稳定性问题（小米8）</p>
+                    <p style="font-weight: bolder;">本周推荐</p>
+                    <p>新增 一键换机，支持应用程序和软件数据分开选择换机，用户可灵活选择换机数据量，以减少换机时长</p>
+                    <p>新增 小米公交支持重庆畅通卡</p>
                     <br>
-                    <p style="font-weight: bolder;">锁屏、状态栏、通知栏</p>
-                    <p>优化 横屏状态栏支持显示「周几」</p>
-                    <p>修复 无法进入「人脸数据管理」的问题（小米 8SE/小米Max 3）</p>
+                    <p style="font-weight: bolder;">备份</p>
+                    <p>新增 一键换机，支持应用程序和软件数据分开选择换机，用户可灵活选择换机数据量，以减少换机时长</p>
                     <br>
-                    <p style="font-weight: bolder;">用户反馈</p>
-                    <p>优化 根据用户填写的反馈内容自动推荐对应模块的功能</p>
-                    <br>
-                    <p style="font-weight: bolder;">最近任务</p>
-                    <p>优化 应用名称的显示长度，优化大字体的显示效果</p>
+                    <p style="font-weight: bolder;">骚扰拦截</p>
+                    <p>新增 支持设置短信关键词白名单</p>
                     <br>
                     <p style="font-weight: bolder;">小米钱包</p>
-                    <p>新增 米家智能门锁门卡功能（小米6/小米MIX 2、小米8透明探索版）</p>
-                    <p>优化 小米公交充值支付页面的交互体验（小米8/小米MIX 2S）</p>
-                    <p>修复 小米公交刷卡页面卡面显示大字的问题</p>
+                    <p>新增 小米公交开卡引导页展示其他手机上已开通的公交卡</p>
+                    <p>新增 小米公交和Mi Pay刷卡页问题反馈功能</p>
+                    <p>新增 小米公交支持重庆畅通卡</p>
+                    <p>优化 Mi Pay绑卡页支持的银行展示</p>
+                    <p>优化 Mi Pay绑卡功能界面</p>
+                    <p>优化 开通Mi Pay后 Android beam 自动关闭功能</p>
                     <br>
                 </div>
             </div>
