@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第18周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
+                    <div class="mdui-list-item-content"><a href="../../recruit.html">诚招群员</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第18周发布公告及更新日志
+                </div>
+                <div class="mdui-panel-item-body">
+                    <p>原链接：<a href="http://www.miui.com/thread-17389-1-1.html">【2010年12月24日】MIUI 第18周发布公告及更新日志</a></p>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V2 0.12.24 已发布</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍已知问题</p>
+                    <ol>
+                        <li>Milestone 12.18版本用户，请下载完整包刷机 （不需要wipe）</li>
+                    </ol>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>首次刷MIUI ROM的用户，需要按照官方教程刷机，下载完整包：</li>
+                        <li>注意：第一次刷MIUI ROM 一定要自己手工进recovery ， wipe下数据。如果不会这一步的需要先学会再刷，这是刷新ROM必须的步骤，切记！</li>
+                        <li>由于升级时下载用户较多，速度较慢，老用户可以选择自行下载OTA文件，手工升级，请根据自己的手机型号以及版本号选择。</li>
+                    </ol>
+                    <hr>
+                    <br>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【推荐功能】</p>
+                    <p>稳定性：<ul>
+                        <li>修复了流量监控容易卡死的问题</li>
+                        <li>修复了很多主题的BUG</li>
+                        <li>修复了无法使用线控接电话的问题并且把线控的控制权完全交给用户，让用户自己去设置播放器优先级</li>
+                    </ul></p>
+                    <p>全新的！真正的！全局搜索。</p>
+                    <p>短信可以加密了！</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 增加了群发的汇总报告</p>
+                    <p>新增 群发支持一键重发所有失败短信</p>
+                    <p>新增 短信列表支持按照发送时间/接收时间排序在短信设置中打开</p>
+                    <p>优化 持续改进了短信的稳定性</p>
+                    <p>优化 发送流程速度提升</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>新增 锁屏紧急呼叫加入110 120 119 122</p>
+                    <p>新增 添加一个新联系人，通话记录也增加一条记录</p>
+                    <br>
+                    <p style="font-weight: bolder;">【桌面】</p>
+                    <p>新增 设置>系统>按键>优先响应媒体应用，解决多个音乐应用互相抢按键的问题</p>
+                    <p>修复 主题应用到一半就退出的问题</p>
+                    <p>修复 主题包文件名有特殊字符不能应用的问题</p>
+                    <p>修复 应用字体主题不生效</p>
+                    <p>修复 有些主题不能正常显示</p>
+                    <p>修复 添加更多主题时遇到同名文件会失败</p>
+                    <br>
+                    <p style="font-weight: bolder;">【隐私】</p>
+                    <p>新增 访客模式（长按电源键列表中进入）</p>
+                    <p>新增 短信加密</p>
+                    <p>新增 拨号加密</p>
+                    <p>新增 防打扰加密</p>
+                    <br>
+                    <p style="font-weight: bolder;">【MIUI网盘】</p>
+                    <p>优化 列表打开速度加快</p>
+                    <p>优化 所有软件进行梳理</p>
+                    <br>
+                    <p style="font-weight: bolder;">【MIUI音乐】</p>
+                    <p>新增 按文件夹过滤音乐</p>
+                    <p>新增 列表模式中支持“创建、编辑”列表</p>
+                    <p>新增 支持全局搜索可以搜到音乐文件</p>
+                    <p>优化 播放器性能优化，滑动更顺畅</p>
+                    <p>修复 多个音乐播放控制的冲突问题（锁屏、线控等）</p>
+                    <p>修复 允许用户重新搜索歌词、专辑图片</p>
+                    <br>
+                    <p style="font-weight: bolder;">【流量监控】</p>
+                    <p>（由于使用了新的算法，请大家先清空流量监控程序的数据）</p>
+                    <p>新增 后台用新的方式记录短信和电话</p>
+                    <p>新增 校正流量</p>
+                    <p>新增 加入程序管理的入口</p>
+                    <p>优化 记录更精准</p>
+                    <p>修复 易卡死的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【全局搜索】</p>
+                    <p>全新真正的全局搜索！</p>
+                    <br>
+                    <p style="font-weight: bolder;">【其他】</p>
+                    <p>发布MIUI图库实验版，请在网盘下载安装</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th>机型</th>
+                        <th>安卓版本</th>
+                        <th>卡刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Google Nexus One G5</td>
+                        <td>2.2 Froyo</td>
+                        <td><a href="http://u.115.com/file/f819b6f7ee">http://u.115.com/file/f819b6f7ee</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC Desire</td>
+                        <td>2.2 Froyo</td>
+                        <td><a href="http://u.115.com/file/f8415428c4">http://u.115.com/file/f8415428c4</a></td>
+                    </tr>
+                    <tr>
+                        <td>MOTO Milestone</td>
+                        <td>2.2 Froyo</td>
+                        <td><a href="http://u.115.com/file/f861116ed9">http://u.115.com/file/f861116ed9</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    </div>
+    </footer>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>
