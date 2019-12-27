@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第170周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
+                    <div class="mdui-list-item-content"><a href="../../recruit.html">诚招群员</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第170周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>原链接：<a href="TEXT_HERE">【2013年12月27日】MIUI 第170周发布公告及更新日志（附视频）</a></p>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V5 3.12.27 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>MIUI V5开发版可以直接OTA升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
+                        <li>较老版本的MIUI可通过刷V5最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入Recovery选择完整包进行升级）</li>
+                        <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：系统与安全 - 备份 - 新建备份）</li>
+                        <li> 其他品牌手机首次刷MIUI ROM 请严格按照刷机教程进行刷机</li>
+                    </ol>
+                    <hr>
+                    <br>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 支持赠送主题</p>
+                    <p>新增 视频支持离线下载（目前仅支持部分源）</p>
+                    <p>新增 云相册支持视频同步</p>
+                    <p>新增 文件管理器支持访问samba网络文件共享</p>
+                    <br>
+                    <p style="font-weight: bolder;">【桌面】</p>
+                    <p>优化 应用定位的动画效果</p>
+                    <br>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>新增 支持赠送主题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【相机】</p>
+                    <p>优化 录像质量</p>
+                    <br>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>新增 云相册支持视频同步</p>
+                    <p>新增 云相册支持原图下载</p>
+                    <p>优化 云相册自动上传逻辑</p>
+                    <p>修复 某些情况下，下载错误文件导致目录不显示的问题</p>
+                    <p>修复 重启后屏保失效的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>优化 “在线”标签增加引导气泡</p>
+                    <br>
+                    <p style="font-weight: bolder;">【天气】</p>
+                    <p>修复 某些情况下，桌面天气图标不显示的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【文件管理器】</p>
+                    <p>新增 支持访问Samba网络文件共享（小米路由和其他Samba服务器都可以访问）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【浏览器】</p>
+                    <p>新增 通知栏快速搜索</p>
+                    <br>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>优化 新版日历支持米1及第三方机型</p>
+                    <br>
+                    <p style="font-weight: bolder;">【视频】</p>
+                    <p>新增 支持视频离线（目前仅支持部分源）</p>
+                    <p>新增 DLNA视频列表可按拼音字母快速查找</p>
+                    <p>新增 乐视、百视通视频资源</p>
+                    <p>新增 Dirac音效菜单</p>
+                    <p>优化 合并"视频播放器"与"视频"应用</p>
+                    <p>修复 某些情况下，连续换台时声音不消失的问题</p>
+                    <p>修复 播放云相册中的视频时显示“本地”的问题</p>
+                    <p>修复 电视直播页面，按一次返回键就退出界面的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米帐户】</p>
+                    <p>修复 云服务头像模糊的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【游戏中心】</p>
+                    <p>修复 省流量模式下，仍然下载图片的问题</p>
+                    <p>修复 “在线客服”中链接无法点击的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【安全中心】</p>
+                    <p>优化 “占用内存”的应用勾选状态，与系统长按桌面键的“近期任务”应用锁定状态保持一致</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid pc">
+        <p>视频演示：</p>
+        <iframe height=600 width=100% src='https://v.qq.com/txp/iframe/player.html?vid=x0123rmr4uj' frameborder=0 'allowfullscreen'></iframe>
+    </div>
+    <div class="mdui-container-fluid mobile">
+        <p>视频演示：</p>
+        <iframe height=240 width=480 src='https://v.qq.com/txp/iframe/player.html?vid=x0123rmr4uj' frameborder=0 'allowfullscreen'></iframe>
+    </div>
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    </div>
+    </footer>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>

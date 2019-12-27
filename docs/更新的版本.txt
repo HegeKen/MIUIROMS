@@ -1,11 +1,16 @@
 
 
 国内稳定版：
+小米8 青春版 V11.0.4.0.PDTCNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PDTCNXM/miui_MI8Lite_V11.0.4.0.PDTCNXM_5595027d43_9.0.zip
+小米8 青春版 V11.0.4.0.PDTCNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.PDTCNXM/platina_images_V11.0.4.0.PDTCNXM_20191213.0000.00_9.0_cn_8f75ca7dd6.tgz
+
 
 
 国际稳定版
 小米8 青春版 国际版 V11.0.7.0.PDTMIXM 卡刷包：http://bigota.d.miui.com/V11.0.7.0.PDTMIXM/miui_MI8LiteGlobal_V11.0.7.0.PDTMIXM_69cdf0fb10_9.0.zip
 小米8 青春版 国际版 V11.0.7.0.PDTMIXM 线刷包：http://bigota.d.miui.com/V11.0.7.0.PDTMIXM/platina_global_images_V11.0.7.0.PDTMIXM_20191213.0000.00_9.0_global_2e651e016f.tgz
+Redmi 7 欧洲EEA版 V11.0.4.0.PFLEUXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PFLEUXM/miui_ONCLITEEEAGlobal_V11.0.4.0.PFLEUXM_d5c627ba2a_9.0.zip
+Redmi 7 欧洲EEA版 V11.0.4.0.PFLEUXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.PFLEUXM/onclite_eea_global_images_V11.0.4.0.PFLEUXM_20191213.0000.00_9.0_eea_23a4cae10c.tgz
 Redmi Note8 Pro 印度尼西亚版 V11.0.2.0.PGGIDXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PGGIDXM/miui_BEGONIAIDGlobal_V11.0.2.0.PGGIDXM_56ff332bed_9.0.zip
 Redmi Note8 Pro 印度尼西亚版 V11.0.2.0.PGGIDXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PGGIDXM/begonia_id_global_images_V11.0.2.0.PGGIDXM_20191213.0000.00_9.0_global_b5efdd6d6a.tgz
 Redmi K20 Pro 印度版 V11.0.3.0.QFKINXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.QFKINXM/miui_RAPHAELININGlobal_V11.0.3.0.QFKINXM_845b36b440_10.0.zip
