@@ -42,7 +42,7 @@
             }
         }
     </style>
-    <title>第170周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第401周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
@@ -95,92 +95,44 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第170周发布公告及更新日志</div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第401周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>原链接：<a href="http://www.miui.com/thread-1559647-1-1.html">【2013年12月27日】MIUI 第170周发布公告及更新日志（附视频）</a></p>
+                    <p>原链接：<a href="http://www.miui.com/thread-20503278-1-1.html">【2018年12月28日】MIUI 第401周发布公告及更新日志</a></p>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V5 3.12.27 已发布！</p>
+                    <p>MIUI10 开发版 8.12.27 部分机型延迟发布</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
-                        <li>MIUI V5开发版可以直接OTA升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
-                        <li>较老版本的MIUI可通过刷V5最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入Recovery选择完整包进行升级）</li>
-                        <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：系统与安全 - 备份 - 新建备份）</li>
-                        <li> 其他品牌手机首次刷MIUI ROM 请严格按照刷机教程进行刷机</li>
+                        <li>已加入防回刷机制的机型无法降级刷回旧版本的开发版或稳定版，否则会导致手机变砖</li>
+                        <li>MIUI 6/7/8/9开发版可进入“设置→我的设备→MIUI版本”在线升级</li>
+                        <li>MIUI 6/7/8/9稳定版用户，建议通过线刷升级至 MIUI 10开发版，教程请见下方“刷机指南”</li>
+                        <li>部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准</li>
+                    </ol>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>小米MIX 3/红米手机6A/小米平板4/小米8屏幕指纹版/小米6X/小米MIX2S/小米手机5X/红米手机5Plus/红米Note 5/红米手机5/小米手机5SPlus/红米手机6/小米手机5S/红米手机5A修复使用计算器时遇到闪退打不开的问题，已发布公测 开发版 9.1.1（小米MIX 3/小米MIX 2 开发版 9.1.2）</li>
+                        <li>小米8透明探索版因排查人脸解锁问题，暂停公测发布</li>
+                        <li>小米8/小米8 SE因排查开机后出现卡白米的问题，本周暂停公测发布</li>
+                        <li>小米手机8青春版正在内测Android P，期间暂停公测发布</li>
+                        <li>Android O/P机型招募开发版内测米粉</li>
                     </ol>
                     <hr>
                     <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
-                    <p style="font-weight: bolder;">【本周推荐】</p>
-                    <p>新增 支持赠送主题</p>
-                    <p>新增 视频支持离线下载（目前仅支持部分源）</p>
-                    <p>新增 云相册支持视频同步</p>
-                    <p>新增 文件管理器支持访问samba网络文件共享</p>
+                    <p style="font-weight: bolder;">【用户反馈】</p>
+                    <p>优化 根据用户填写的反馈内容自动推荐对应模块的功能(部分机型)</p>
                     <br>
-                    <p style="font-weight: bolder;">【桌面】</p>
-                    <p>优化 应用定位的动画效果</p>
-                    <br>
-                    <p style="font-weight: bolder;">【主题】</p>
-                    <p>新增 支持赠送主题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【相机】</p>
-                    <p>优化 录像质量</p>
-                    <br>
-                    <p style="font-weight: bolder;">【图库】</p>
-                    <p>新增 云相册支持视频同步</p>
-                    <p>新增 云相册支持原图下载</p>
-                    <p>优化 云相册自动上传逻辑</p>
-                    <p>修复 某些情况下，下载错误文件导致目录不显示的问题</p>
-                    <p>修复 重启后屏保失效的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【音乐】</p>
-                    <p>优化 “在线”标签增加引导气泡</p>
-                    <br>
-                    <p style="font-weight: bolder;">【天气】</p>
-                    <p>修复 某些情况下，桌面天气图标不显示的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【文件管理器】</p>
-                    <p>新增 支持访问Samba网络文件共享（小米路由和其他Samba服务器都可以访问）</p>
-                    <br>
-                    <p style="font-weight: bolder;">【浏览器】</p>
-                    <p>新增 通知栏快速搜索</p>
-                    <br>
-                    <p style="font-weight: bolder;">【日历】</p>
-                    <p>优化 新版日历支持米1及第三方机型</p>
-                    <br>
-                    <p style="font-weight: bolder;">【视频】</p>
-                    <p>新增 支持视频离线（目前仅支持部分源）</p>
-                    <p>新增 DLNA视频列表可按拼音字母快速查找</p>
-                    <p>新增 乐视、百视通视频资源</p>
-                    <p>新增 Dirac音效菜单</p>
-                    <p>优化 合并"视频播放器"与"视频"应用</p>
-                    <p>修复 某些情况下，连续换台时声音不消失的问题</p>
-                    <p>修复 播放云相册中的视频时显示“本地”的问题</p>
-                    <p>修复 电视直播页面，按一次返回键就退出界面的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【小米帐户】</p>
-                    <p>修复 云服务头像模糊的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【游戏中心】</p>
-                    <p>修复 省流量模式下，仍然下载图片的问题</p>
-                    <p>修复 “在线客服”中链接无法点击的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【安全中心】</p>
-                    <p>优化 “占用内存”的应用勾选状态，与系统长按桌面键的“近期任务”应用锁定状态保持一致</p>
+                    <p style="font-weight: bolder;">【小米钱包】</p>
+                    <p>新增 Mi Pay支持“银联碰一碰”支付功能</p>
                     <br>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mdui-container-fluid pc">
-        <p>视频演示：</p>
-        <iframe height=600 width=100% src='https://v.qq.com/txp/iframe/player.html?vid=x0123rmr4uj' frameborder=0 'allowfullscreen'></iframe>
-    </div>
-    <div class="mdui-container-fluid mobile">
-        <p>视频演示：</p>
-        <iframe height=240 width=480 src='https://v.qq.com/txp/iframe/player.html?vid=x0123rmr4uj' frameborder=0 'allowfullscreen'></iframe>
-    </div>
+
+
+
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
         <script
             type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
