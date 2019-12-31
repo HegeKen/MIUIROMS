@@ -8,9 +8,9 @@
 
 
 小米CC9 卡刷包：http://bigota.d.miui.com/V11.3.3.0.PFCCNXM/miui_PYXIS_V11.3.3.0.PFCCNXM_c02239b14d_9.0.zip
-小米CC9e 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PFMCNXM/miui_LAURUS_V11.0.3.0.PFMCNXM_bcd57bbf2d_9.0.zip
-红米5 卡刷包：http://bigota.d.miui.com/V11.0.4.0.ODACNXM/miui_HM5_V11.0.4.0.ODACNXM_010a5305c2_8.1.zip
-红米5A 卡刷包：http://bigota.d.miui.com/V11.0.6.0.OCKCNXM/miui_HM5A_V11.0.6.0.OCKCNXM_65b36755c0_8.1.zip
+
+
+
 红米6 Pro 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PDICNXM/miui_HM6Pro_V11.0.4.0.PDICNXM_45526f173b_9.0.zip
 Redmi 7 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PFLCNXM/miui_ONCLITE_V11.0.2.0.PFLCNXM_63411240e8_9.0.zip
 Redmi 7A 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCMCNXM/miui_PINE_V11.0.2.0.PCMCNXM_fb68c600ed_9.0.zip
@@ -31,18 +31,17 @@ Redmi K20 卡刷包：http://bigota.d.miui.com/V11.0.2.0.QFJCNXM/miui_DAVINCI_V1
 小米Play 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.2.0.OFIRUXM/miui_MIPLAYRUGlobal_V11.0.2.0.OFIRUXM_a6b35ae1b8_8.1.zip
 红米 5 Plus 国际版 卡刷包：http://bigota.d.miui.com/V11.0.2.0.OEGMIXM/miui_HM5PlusGlobal_V11.0.2.0.OEGMIXM_f74369de0c_8.1.zip
 红米6 Pro 印度版 卡刷包：http://bigota.d.miui.com/V11.0.5.0.PDMMIXM/miui_HM6ProINGlobal_V11.0.5.0.PDMMIXM_9239c01830_9.0.zip
-Redmi 7A 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.0.13.0.PCMEUXM/miui_PINEEEAGlobal_V11.0.13.0.PCMEUXM_6d2ee04dd4_9.0.zip
-Redmi 7A 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCMRUXM/miui_PINERUGlobal_V11.0.4.0.PCMRUXM_d38e77621c_9.0.zip
-Redmi 8 国际版 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCNMIXM/miui_OLIVEGlobal_V11.0.1.0.PCNMIXM_bf4bb66af7_9.0.zip
-Redmi 8 国际版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCNMIXM/miui_OLIVEGlobal_V11.0.3.0.PCNMIXM_b3a973ea8f_9.0.zip
-Redmi 8 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCNEUXM/miui_OLIVEEEAGlobal_V11.0.1.0.PCNEUXM_1a4ec8d8c6_9.0.zip
-Redmi 8 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCNEUXM/miui_OLIVEEEAGlobal_V11.0.2.0.PCNEUXM_01161d58aa_9.0.zip
-Redmi 8 俄罗斯版 卡刷包：ttp://bigota.d.miui.com/V11.0.2.0.PCNRUXM/miui_OLIVERUGlobal_V11.0.2.0.PCNRUXM_1f25b2c67e_9.0.zip
-Redmi 8A 国际版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCPMIXM/miui_OLIVELITEGlobal_V11.0.3.0.PCPMIXM_1aa20d5b67_9.0.zip
+
+
+
+
+
+
 Redmi 8A 印度版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCPINXM/miui_OLIVELITEINGlobal_V11.0.3.0.PCPINXM_8a514b6ebe_9.0.zip
 
-Redmi 8A 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCPRUXM/miui_OLIVELITERUGlobal_V11.0.2.0.PCPRUXM_6cba7998a9_9.0.zip
-Redmi Note7 Pro 印度版 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PFHINXM/miui_VIOLETINGlobal_V11.0.6.0.PFHINXM_d0578a77ec_9.0.zip
+
+红米Y3 印度版 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PFFINXM/miui_ONCINGlobal_V11.0.4.0.PFFINXM_b09929c3d1_9.0.zip
+红米Note6 Pro 国际版：http://bigota.d.miui.com/V11.0.2.0.PEKMIXM/miui_HMNote6ProGlobal_V11.0.2.0.PEKMIXM_e20a92d7ec_9.0.zip
 Redmi Note8 国际版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCOMIXM/miui_GINKGOGlobal_V11.0.3.0.PCOMIXM_1b9baa227b_9.0.zip
 
 
