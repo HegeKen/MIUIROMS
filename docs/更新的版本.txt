@@ -1,8 +1,9 @@
 
-
 国内稳定版：
 小米CC9e V11.0.3.0.PFMCNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PFMCNXM/miui_LAURUS_V11.0.3.0.PFMCNXM_bcd57bbf2d_9.0.zip
 小米CC9e V11.0.3.0.PFMCNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PFMCNXM/laurus_images_V11.0.3.0.PFMCNXM_20191217.0000.00_9.0_cn_511539c278.tgz
+小米Note3 V11.0.3.0.PCHCNXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCHCNXM/miui_MINote3_V11.0.3.0.PCHCNXM_60dcc350c6_9.0.zip
+小米Note3 V11.0.3.0.PCHCNXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCHCNXM/jason_images_V11.0.3.0.PCHCNXM_20191217.0000.00_9.0_cn_ce1b76dc5a.tgz
 红米5 V11.0.4.0.ODACNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.ODACNXM/miui_HM5_V11.0.4.0.ODACNXM_010a5305c2_8.1.zip
 红米5 V11.0.4.0.ODACNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.ODACNXM/rosy_images_V11.0.4.0.ODACNXM_20191223.0000.00_8.1_cn_50322f2609.tgz
 红米5A V11.0.6.0.OCKCNXM 卡刷包：http://bigota.d.miui.com/V11.0.6.0.OCKCNXM/miui_HM5A_V11.0.6.0.OCKCNXM_65b36755c0_8.1.zip
@@ -10,13 +11,17 @@
 
 
 国际稳定版：
+小米Note3 国际版 V11.0.4.0.PCHMIXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCHMIXM/miui_MINote3Global_V11.0.4.0.PCHMIXM_04f5e77d0b_9.0.zip
+小米Note3 国际版 V11.0.4.0.PCHMIXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.PCHMIXM/jason_global_images_V11.0.4.0.PCHMIXM_20191217.0000.00_9.0_global_024d8eba61.tgz
+小米Play 国际版 V11.0.2.0.OFIMIXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.OFIMIXM/miui_MIPLAYGlobal_V11.0.2.0.OFIMIXM_f6af3d5b6b_8.1.zip
+小米Play 国际版 V11.0.2.0.OFIMIXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.OFIMIXM/lotus_global_images_V11.0.2.0.OFIMIXM_20191220.0000.00_8.1_global_dedfe9895e.tgz
+红米6 Pro 印度版 V11.0.5.0.PDMMIXM 卡刷包：http://bigota.d.miui.com/V11.0.5.0.PDMMIXM/miui_HM6ProINGlobal_V11.0.5.0.PDMMIXM_9239c01830_9.0.zip
+红米6 Pro 印度版 V11.0.5.0.PDMMIXM 线刷包：http://bigota.d.miui.com/V11.0.5.0.PDMMIXM/sakura_india_global_images_V11.0.5.0.PDMMIXM_20191217.0000.00_9.0_global_494f062ec6.tgz
 Redmi 7A 俄罗斯版 V11.0.4.0.PCMRUXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCMRUXM/miui_PINERUGlobal_V11.0.4.0.PCMRUXM_d38e77621c_9.0.zip
 Redmi 7A 俄罗斯版 V11.0.4.0.PCMRUXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.PCMRUXM/pine_ru_global_images_V11.0.4.0.PCMRUXM_20191216.0000.00_9.0_global_87a1449c21.tgz
 Redmi 8 国际版 V11.0.1.0.PCNMIXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCNMIXM/miui_OLIVEGlobal_V11.0.1.0.PCNMIXM_bf4bb66af7_9.0.zip
 Redmi 8 国际版 V11.0.3.0.PCNMIXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCNMIXM/miui_OLIVEGlobal_V11.0.3.0.PCNMIXM_b3a973ea8f_9.0.zip
 Redmi 8 国际版 V11.0.3.0.PCNMIXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCNMIXM/olive_global_images_V11.0.3.0.PCNMIXM_20191219.0000.00_9.0_global_1ae36a247a.tgz
-Redmi 8 欧洲EEA版 V11.0.1.0.PCNEUXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCNEUXM/miui_OLIVEEEAGlobal_V11.0.1.0.PCNEUXM_1a4ec8d8c6_9.0.zip
-Redmi 8 欧洲EEA版 V11.0.1.0.PCNEUXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.PCNEUXM/olive_eea_global_images_V11.0.1.0.PCNEUXM_20191120.0000.00_9.0_eea_cce3f5ec56.tgz
 Redmi 8 欧洲EEA版 V11.0.2.0.PCNEUXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCNEUXM/miui_OLIVEEEAGlobal_V11.0.2.0.PCNEUXM_01161d58aa_9.0.zip
 Redmi 8 欧洲EEA版 V11.0.2.0.PCNEUXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PCNEUXM/olive_eea_global_images_V11.0.2.0.PCNEUXM_20191214.0000.00_9.0_eea_84067c7a75.tgz
 Redmi 8 俄罗斯版 V11.0.2.0.PCNRUXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCNRUXM/miui_OLIVERUGlobal_V11.0.2.0.PCNRUXM_1f25b2c67e_9.0.zip
@@ -25,8 +30,16 @@ Redmi 8A 国际版 V11.0.3.0.PCPMIXM 卡刷包：http://bigota.d.miui.com/V11.0.
 Redmi 8A 国际版 V11.0.3.0.PCPMIXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCPMIXM/olivelite_global_images_V11.0.3.0.PCPMIXM_20191219.0000.00_9.0_global_fea07858f9.tgz
 Redmi 8A 俄罗斯版 V11.0.2.0.PCPRUXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCPRUXM/miui_OLIVELITERUGlobal_V11.0.2.0.PCPRUXM_6cba7998a9_9.0.zip
 Redmi 8A 俄罗斯版 V11.0.2.0.PCPRUXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PCPRUXM/olivelite_ru_global_images_V11.0.2.0.PCPRUXM_20191221.0000.00_9.0_global_0162cd9a05.tgz
+红米Y3 印度版 V11.0.4.0.PFFINXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PFFINXM/miui_ONCINGlobal_V11.0.4.0.PFFINXM_b09929c3d1_9.0.zip
+红米Y3 印度版 V11.0.4.0.PFFINXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.PFFINXM/onc_in_global_images_V11.0.4.0.PFFINXM_20191220.0000.00_9.0_in_835069a6e8.tgz
+红米Note6 Pro 国际版V11.0.2.0.PEKMIXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PEKMIXM/miui_HMNote6ProGlobal_V11.0.2.0.PEKMIXM_e20a92d7ec_9.0.zip
+红米Note6 Pro 国际版V11.0.2.0.PEKMIXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PEKMIXM/tulip_global_images_V11.0.2.0.PEKMIXM_20191218.0000.00_9.0_global_c23777400e.tgz
 Redmi Note7 Pro 印度版 V11.0.6.0.PFHINXM 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PFHINXM/miui_VIOLETINGlobal_V11.0.6.0.PFHINXM_d0578a77ec_9.0.zip
 Redmi Note7 Pro 印度版 V11.0.6.0.PFHINXM 线刷包：http://bigota.d.miui.com/V11.0.6.0.PFHINXM/violet_in_global_images_V11.0.6.0.PFHINXM_20191220.0000.00_9.0_in_937ce2b93e.tgz
+Redmi Note8 Pro 欧洲EEA版 V11.0.3.0.PGGEUXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PGGEUXM/miui_BEGONIAEEAGlobal_V11.0.3.0.PGGEUXM_d7349241eb_9.0.zip
+Redmi Note8 Pro 欧洲EEA版 V11.0.3.0.PGGEUXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PGGEUXM/begonia_eea_global_images_V11.0.3.0.PGGEUXM_20191210.0000.00_9.0_eea_bd36734f3a.tgz
+
+
 
 
 Redmi Note8 卡刷包：
