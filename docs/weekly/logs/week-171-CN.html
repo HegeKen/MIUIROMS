@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第171周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
+                    <div class="mdui-list-item-content"><a href="../../recruit.html">诚招群员</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第171周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>原链接：<a href="http://www.miui.com/thread-1571073-1-1.html">【2014年1月3日】MIUI 第171周发布公告及更新日志（附视频）</a></p>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V5 4.1.3 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>MIUI V5开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
+                        <li>较老版本的 MIUI 可通过刷 V5 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）</li>
+                        <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：系统与安全 - 备份 - 新建备份）</li>
+                        <li>其他品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
+                    </ol>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                        <p>语音助手语音识别引擎已升级至3.0，1.0将无法使用；如有提示“停止运行”，请进入语音助手，点选菜单键进入设置，选择“讯飞语音识别”即可</p>
+                    <hr>
+                    <br>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 迅雷引擎支持，执行系统应用的下载任务时，下载速度最高提升70%</p>
+                    <p>新增 日历春运火车票购票日期提示</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>优化 火车票订票电话自动重拨的逻辑</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>修复 通知类短信中设置全部已读，不再影响私密短信的未读状态</p>
+                    <br>
+                    <p style="font-weight: bolder;">【桌面】</p>
+                    <p>新增 百变框架支持高斯模糊效果</p>
+                    <br>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>新增 支持移动图片到其他相册</p>
+                    <p>修复 某些扩展名为jpg的bmp图片无法设置为壁纸的问题</p>
+                    <p>修复 某些情况下，下载原图或视频无反应的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>新增 支持超高品质音乐续费功能</p>
+                    <br>
+                    <p style="font-weight: bolder;">【天气】</p>
+                    <p>修复 天气应用删除城市后，桌面小工具不能及时更新的问题</p>
+                    <p>修复 某些情况下，主题无法获取天气的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【下载管理】</p>
+                    <p>新增 迅雷引擎，下载速度最高提升70%</p>
+                    <br>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>新增 春运火车票购票日历（可以在设置中关闭）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【视频】</p>
+                    <p>修复 播放直播视频时，连接USB导致视频重新缓冲的问题</p>
+                    <p>修复 某些情况下，离线中的电影无法暂停的问题</p>
+                    <p>修复 离线电影时，点击通知栏通知无法跳转到对应视频的问题</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid pc">
+        <p>视频演示：</p>
+        <iframe height=600 width=100% src='https://tv.sohu.com/s/sohuplayer/iplay.html?bid=63969766' frameborder=0 'allowfullscreen'></iframe>
+    </div>
+    <div class="mdui-container-fluid mobile">
+        <p>视频演示：</p>
+        <iframe height=240 width=480 src='https://tv.sohu.com/s/sohuplayer/iplay.html?bid=63969766' frameborder=0 'allowfullscreen'></iframe>
+    </div>
+
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    </div>
+    </footer>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>

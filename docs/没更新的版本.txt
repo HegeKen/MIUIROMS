@@ -12,6 +12,7 @@ Redmi 7A 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCMCNXM/miui_PINE_V11.0.
 Redmi 8A 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCPCNXM/miui_OLIVELITE_V11.0.3.0.PCPCNXM_06c5321fdf_9.0.zip
 Redmi 8A 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCPCNXM/miui_OLIVELITE_V11.0.4.0.PCPCNXM_4e06f21a3d_9.0.zip
 Redmi Note7 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PFGCNXM/miui_LAVENDER_V11.0.4.0.PFGCNXM_80ef43dc45_9.0.zip
+Redmi Note8 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCOCNXM/miui_GINKGO_V11.0.4.0.PCOCNXM_7248ec69cc_9.0.zip
 Redmi K20 卡刷包：http://bigota.d.miui.com/V11.0.2.0.QFJCNXM/miui_DAVINCI_V11.0.2.0.QFJCNXM_f6f375d6c4_10.0.zip
 
 
