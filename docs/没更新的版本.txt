@@ -6,6 +6,7 @@
 小米5C 卡刷包：http://bigota.d.miui.com/V11.0.3.0.NCJCNXM/miui_MI5C_V11.0.3.0.NCJCNXM_98c238d066_7.1.zip
 小米8 卡刷包： http://bigota.d.miui.com/V11.0.5.0.QEACNXM/miui_MI8_V11.0.5.0.QEACNXM_55a4a9dc84_10.0.zip
 小米CC9 卡刷包：http://bigota.d.miui.com/V11.3.3.0.PFCCNXM/miui_PYXIS_V11.3.3.0.PFCCNXM_c02239b14d_9.0.zip
+小米CC9 Pro 卡刷包：http://bigota.d.miui.com/V11.0.7.0.PFDCNXM/miui_TUCANA_V11.0.7.0.PFDCNXM_eb85103afb_9.0.zip
 红米6 Pro 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PDICNXM/miui_HM6Pro_V11.0.4.0.PDICNXM_45526f173b_9.0.zip
 Redmi 7 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PFLCNXM/miui_ONCLITE_V11.0.2.0.PFLCNXM_63411240e8_9.0.z
 Redmi 7 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PFLINXM/miui_ONCLITEINGlobal_V11.0.3.0.PFLINXM_681f8119f5_9.0.zipip
@@ -18,6 +19,9 @@ Redmi K20 卡刷包：http://bigota.d.miui.com/V11.0.2.0.QFJCNXM/miui_DAVINCI_V1
 
 
 国际稳定版：
+小米9SE 国际版 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PFBMIXM/miui_GRUSGlobal_V11.0.6.0.PFBMIXM_df3fdf69d6_9.0.zip
+小米9SE 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PFBEUXM/miui_GRUSEEAGlobal_V11.0.6.0.PFBEUXM_6e5dea41d3_9.0.zip
+小米9SE 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PFBRUXM/miui_GRUSRUGlobal_V11.0.6.0.PFBRUXM_55e0819503_9.0.zip
 小米CC9 Pro 欧洲EEA版 卡刷包：http://bigota.d.miui.com/V11.0.12.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.12.0.PFDEUXM_666261a8b0_9.0.zip
 小米Max3 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.6.0.PEDRUXM/miui_NITROGENRUGlobal_V11.0.6.0.PEDRUXM_3bd2da6a1c_9.0.zip
 
