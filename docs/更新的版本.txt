@@ -3,10 +3,14 @@
 
 
 国际稳定版：
-Redmi 8 印度尼西亚版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCNIDXM/miui_OLIVEIDGlobal_V11.0.3.0.PCNIDXM_082a3ae451_9.0.zip
-Redmi 8 印度尼西亚版 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCNIDXM/olive_id_global_images_V11.0.3.0.PCNIDXM_20191225.0000.00_9.0_global_b545a34c77.tgz
-Redmi 8A 印度尼西亚版 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCPIDXM/miui_OLIVELITEIDGlobal_V11.0.2.0.PCPIDXM_f0088dcf2a_9.0.zip
-Redmi 8A 印度尼西亚版 线刷包：http://bigota.d.miui.com/V11.0.2.0.PCPIDXM/olivelite_id_global_images_V11.0.2.0.PCPIDXM_20191225.0000.00_9.0_global_98b01dd96d.tgz
+Redmi 7 印度版 V11.0.3.0.PFLINXM 卡刷包：
+Redmi 7 印度版 V11.0.3.0.PFLINXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PFLINXM/onclite_in_global_images_V11.0.3.0.PFLINXM_20191226.0000.00_9.0_in_d9e604ce9a.tgz
+Redmi 7A 印度版 V11.0.2.0.PCMINXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCMINXM/miui_PINEINGlobal_V11.0.2.0.PCMINXM_bc576fd578_9.0.zip
+Redmi 7A 印度版 V11.0.2.0.PCMINXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PCMINXM/pine_in_global_images_V11.0.2.0.PCMINXM_20191224.0000.00_9.0_in_fb007b1223.tgz
+Redmi 8 印度尼西亚版 V11.0.3.0.PCNIDXM 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCNIDXM/miui_OLIVEIDGlobal_V11.0.3.0.PCNIDXM_082a3ae451_9.0.zip
+Redmi 8 印度尼西亚版 V11.0.3.0.PCNIDXM 线刷包：http://bigota.d.miui.com/V11.0.3.0.PCNIDXM/olive_id_global_images_V11.0.3.0.PCNIDXM_20191225.0000.00_9.0_global_b545a34c77.tgz
+Redmi 8A 印度尼西亚版 V11.0.2.0.PCPIDXM 卡刷包：http://bigota.d.miui.com/V11.0.2.0.PCPIDXM/miui_OLIVELITEIDGlobal_V11.0.2.0.PCPIDXM_f0088dcf2a_9.0.zip
+Redmi 8A 印度尼西亚版 V11.0.2.0.PCPIDXM 线刷包：http://bigota.d.miui.com/V11.0.2.0.PCPIDXM/olivelite_id_global_images_V11.0.2.0.PCPIDXM_20191225.0000.00_9.0_global_98b01dd96d.tgz
 
 Redmi Note8 卡刷包：
 Redmi Note8 线刷包：
