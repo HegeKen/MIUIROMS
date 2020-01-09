@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第220周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
+                    <div class="mdui-list-item-content"><a href="../../recruit.html">诚招群员</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第220周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>原链接：<a href="TEXT_HERE">【2015年1月9日】MIUI 第220周发布公告及更新日志（附视频）</a></p>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI6 5.1.9 已经发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>MIUI V5 / MIUI 6开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
+                        <li>较老版本的 MIUI 可通过刷 MIUI V5 / MIUI 6 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）</li>
+                        <li>跨版本进行升级时（如稳定版刷开发版）需要清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）</li>
+                        <li>其它品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
+                    </ol>
+                    <hr>
+                    <br>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 单手模式设置项，新增3.5吋和4.0吋两种屏幕尺寸</p>
+                    <p>新增 生活黄页更新近20万条顺丰快递员的电话号码</p>
+                    <p>新增 网络助手新增每日流量限额功能，防止意外消耗大量流量</p>
+                    <p>新增 图库新增私密相册功能</p>
+                    <p>优化 小米生活允许被卸载（可以在应用商店重新安装）</p>
+                    <p>优化 主题客户端全新改版：全新的导航设计，更丰富的主题详情页等</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>修复 系统一和系统二上显示可用内存区别较大的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>新增 拨掉数据线时的音效</p>
+                    <p>优化 当耳机插入时，屏幕自动点亮</p>
+                    <p>优化 首次进入通知栏开关页时，滚动条显示的UI细节</p>
+                    <p>优化 通知栏的“无通知”提示在横屏下的显示位置</p>
+                    <p>修复 插入新耳机时，不弹出选择耳机类型通知的问题</p>
+                    <p>修复 打开皮套后，密码解锁页壁纸高斯模糊失效的问题</p>
+                    <p>修复 通过蓝牙共享网络时，运营商网络标识重复的问题</p>
+                    <p>修复 锁屏数字密码不支持复杂数字排列的问题</p>
+                    <p>修复 电源菜单的UI细节</p>
+                    <p>修复 含锁屏音乐控件的第三方主题，不显示专辑封面和播放控件错误的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【桌面】</p>
+                    <p>新增 单手模式退出按钮</p>
+                    <p>新增 单手模式设置项，新增3.5吋和4.0吋两种屏幕尺寸</p>
+                    <p>新增 “应用云备份”图标</p>
+                    <p>优化 应用名称、插件及状态栏的颜色跟随动态壁纸的深浅而改变</p>
+                    <p>优化 优化单手模式退出按钮的样式</p>
+                    <p>优化 下载新的在线壁纸后，新壁纸的排列位置</p>
+                    <p>优化 将桌面小工具中，“百变插件”内的插件重新归类</p>
+                    <p>优化 更新邮件App图标</p>
+                    <p>修复 重启后竖屏壁纸失效的问题</p>
+                    <p>修复 最近任务页中，横屏应用在竖屏显示时朝向错误的问题</p>
+                    <p>修复 全局搜索设置中，字体大小和系统不一致的问题</p>
+                    <p>修复 设置壁纸时，某些情况下壁纸裁剪不当的问题</p>
+                    <p>修复 动态壁纸默认不允许滚动的问题</p>
+                    <p>修复 点击桌面音乐插件后，无法进入音乐app的问题</p>
+                    <p>修复 某些情况下，壁纸出现黑边的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>新增 私密相册功能</p>
+                    <p>新增 “自动上传”功能的新功能引导</p>
+                    <p>优化 点击打开大图的动画</p>
+                    <p>优化 自动下载云相册缩略图的策略，减少耗电</p>
+                    <p>优化 图库中的进度条UI</p>
+                    <p>优化 优先下载云相册中当前页面的图片</p>
+                    <p>修复 开启访客模式后用相机拍照，提示图库已停止运行的问题</p>
+                    <p>修复 某些情况下，截图后提示图库已停止运行的问题</p>
+                    <p>修复 私密相册提示框弹出多次的问题</p>
+                    <p>修复 编辑图片时出现花屏的问题</p>
+                    <p>修复 通过蓝牙发送云相册地址，对方无法查看的问题</p>
+                    <p>修复 不能将BMP、GIF、wbmp格式的图片设置为联系人头像的问题</p>
+                    <p>修复 从相机拍照界面进入图库时卡顿的问题</p>
+                    <p>修复 截图没有被自动上传的问题</p>
+                    <p>删除 屏蔽相册时的进度提示</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>新增 歌词页保持常亮</p>
+                    <p>新增 播放开始和暂停时的淡入淡出效果</p>
+                    <p>新增 本地歌手和歌曲页支持字母条索引</p>
+                    <p>优化 在线播放逻辑，缓冲更快，播放更稳定</p>
+                    <p>优化 列表中当前播放歌曲的缓冲动画</p>
+                    <p>修复 内存不足导致闪退的问题</p>
+                    <p>修复 本地歌曲名显示乱码的问题</p>
+                    <p>修复 批量删除歌曲时无响应的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【天气】</p>
+                    <p>修复 实时温度不在预报温度范围内的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>新增 国际漫游时，联网应用的白名单功能</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电子邮件】</p>
+                    <p>新增 勿扰模式功能，在邮件设置中可开启</p>
+                    <p>新增 在会话、正文、未读列表等页面中，滑动屏幕返回上一级页面功能</p>
+                    <br>
+                    <p style="font-weight: bolder;">【网络助手】</p>
+                    <p>新增 每日流量限额功能，防止意外消耗大量流量</p>
+                    <p>修复 自动校准失败后，弹出失败通知的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【骚扰拦截】</p>
+                    <p>新增 拦截引擎自动更新功能</p>
+                    <br>
+                    <p style="font-weight: bolder;">【语音助手】</p>
+                    <p>优化 语音助手的离线识别及查询能力</p>
+                    <p>优化 去除了语音助手内的广告条</p>
+                    <p>修复 某些情况下，语音助手强制退出的情况</p>
+                    <p>修复 系统语言为中文繁体时，联网声明条款的文本显示问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【生活黄页】</p>
+                    <p>新增 更新近20万条顺丰快递员的电话号码</p>
+                    <p>新增 长途汽车票查询服务（在“火车机票”分类里，上海始发可在线购票）</p>
+                    <p>优化 “纠错与举报”功能，可举报号码地址等错误内容</p>
+                    <p>优化 服务短信通知的文字模版格式</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米生活】</p>
+                    <p>优化 支持卸载小米生活（可以在应用商店重新安装）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【银行卡】</p>
+                    <p>新增 银行卡余额功能，包括余额查看、余额充值，同时现金收银台支持用余额支付</p>
+                    <p>新增 验证手机号码时，可以自动回填短信验证码</p>
+                    <p>新增 使用NFC读取银行芯片卡时，即可显示卡信息详情，和直接绑定该卡</p>
+                    <p>新增 银行卡首页增加“信用卡申请”的服务</p>
+                    <p>优化 NFC读取公交卡信息，新增兰州、郑州和香港三个城市</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid pc">
+        <p>视频演示：</p>
+        <iframe height=600 width=100% src='https://player.youku.com/embed/XODY3OTE3MzQ4' frameborder=0 'allowfullscreen'></iframe>
+    </div>
+    <div class="mdui-container-fluid mobile">
+        <p>视频演示：</p>
+        <iframe height=240 width=480 src='https://player.youku.com/embed/XODY3OTE3MzQ4' frameborder=0 'allowfullscreen'></iframe>
+    </div>
+
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    </div>
+    </footer>
+    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
+        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
+                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+</body>
+
+</html>
