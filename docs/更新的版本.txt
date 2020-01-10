@@ -1,4 +1,6 @@
 国内稳定版：
+小米MIX3 V11.0.1.0.QEECNXM 卡刷包：http://bigota.d.miui.com/V11.0.1.0.QEECNXM/miui_MIMIX3_V11.0.1.0.QEECNXM_b7c69f2498_10.0.zip
+小米MIX3 V11.0.1.0.QEECNXM 线刷包：http://bigota.d.miui.com/V11.0.1.0.QEECNXM/perseus_images_V11.0.1.0.QEECNXM_20191215.0000.00_10.0_cn_40c8286590.tgz
 Redmi Note8 V11.0.4.0.PCOCNXM 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCOCNXM/miui_GINKGO_V11.0.4.0.PCOCNXM_7248ec69cc_9.0.zip
 Redmi Note8 V11.0.4.0.PCOCNXM 线刷包：http://bigota.d.miui.com/V11.0.4.0.PCOCNXM/ginkgo_images_V11.0.4.0.PCOCNXM_20191227.0000.00_9.0_cn_6db8ae2174.tgz
 
