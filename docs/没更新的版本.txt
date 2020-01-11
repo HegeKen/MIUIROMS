@@ -37,7 +37,7 @@ Redmi 7 印度版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PFLINXM/miui_ON
 Redmi 8A 印度版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCPINXM/miui_OLIVELITEINGlobal_V11.0.3.0.PCPINXM_8a514b6ebe_9.0.zip
 红米S2 国际版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PEFMIXM/miui_HMS2Global_V11.0.3.0.PEFMIXM_dbf5914514_9.0.zip
 红米Note6 Pro 国际版 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCXMIXM/miui_WILLOWGlobal_V11.0.1.0.PCXMIXM_fcb1169902_9.0.zip
-
+红米Note6 Pro 俄罗斯版 卡刷包：
 红米Note6 Pro 俄罗斯版 卡刷包：http://bigota.d.miui.com/V11.0.1.0.PCXRUXM/miui_WILLOWRUGlobal_V11.0.1.0.PCXRUXM_9a16b32bf8_9.0.zip
 Redmi Note8 国际版 卡刷包：http://bigota.d.miui.com/V11.0.3.0.PCOMIXM/miui_GINKGOGlobal_V11.0.3.0.PCOMIXM_1b9baa227b_9.0.zip
 Redmi Note8 国际版 卡刷包：http://bigota.d.miui.com/V11.0.4.0.PCOMIXM/miui_GINKGOGlobal_V11.0.4.0.PCOMIXM_883ec1c954_9.0.zip
