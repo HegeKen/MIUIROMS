@@ -10,7 +10,8 @@
   "author": "海格Hege",
   "license": "ISC",
   "homepage": "https://roms.miuier.com/",
-  "dependencies": {
-    "gh-pages": "^2.1.1"
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
