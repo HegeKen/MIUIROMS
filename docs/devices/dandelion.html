@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script> 
+		<style>
+		li a {
+			text-decoration: none;
+			color: blue;
+		}
+
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+	</style> 
+		<title>Redmi 9A(dandelion)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：Redmi 9A/Redmi 9AT</li> 
+						<li>机型代号：dandelion</li> 
+						<li>此次更新：V12.0.13.0.QCDCNXM、印度版 V12.0.13.0.QCDINXM</li> 
+						<!-- <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> --> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<!-- <li>第三方Recovery:<a href="">百度网盘</a>，提取码：，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a
+							href="https://www.weibo.com/u/6033736159">wzsx150</a></li>
+					<li>第三方Recovery:<a href="">TWRP官方</a></li>
+					<li>第三方Recovery:<a href="">橙狐测试版</a>，<a href="">橙狐稳定版</a></li>
+					<br> --> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a> 
+			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
+			<a href="#IN_STABLE" class="mdui-ripple">印度稳定版</a> 
+			<a href="#ID_STABLE" class="mdui-ripple">印尼稳定版</a> 
+			<a href="#TR_STABLE" class="mdui-ripple">土耳其稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-table-fluid" id="CN_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">大陆稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody>
+					<tr class="mdui-hidden"> 
+						<td>15</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>14</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>13</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>12</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>11</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr>  
+					<tr> 
+						<td>10</td> 
+						<td>V12.0.13.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.13.0.QCDCNXM/miui_DANDELION_V12.0.13.0.QCDCNXM_1069777da2_10.0.zip" id="r">miui_DANDELION_V12.0.13.0.QCDCNXM_1069777da2_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.13.0.QCDCNXM/dandelion_images_V12.0.13.0.QCDCNXM_20210501.0000.00_10.0_cn_7b98da01ea.tgz" id="f">dandelion_images_V12.0.13.0.QCDCNXM_20210501.0000.00_10.0_cn_7b98da01ea.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>9</td> 
+						<td>V12.0.12.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.12.0.QCDCNXM/miui_DANDELION_V12.0.12.0.QCDCNXM_ce48f08f99_10.0.zip" id="r">miui_DANDELION_V12.0.12.0.QCDCNXM_ce48f08f99_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.12.0.QCDCNXM/dandelion_images_V12.0.12.0.QCDCNXM_20210409.0000.00_10.0_cn_58e281d50c.tgz" id="f">dandelion_images_V12.0.12.0.QCDCNXM_20210409.0000.00_10.0_cn_58e281d50c.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.11.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDCNXM/miui_DANDELION_V12.0.11.0.QCDCNXM_17efca2e6f_10.0.zip" id="r">miui_DANDELION_V12.0.11.0.QCDCNXM_17efca2e6f_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDCNXM/dandelion_images_V12.0.11.0.QCDCNXM_20210331.0000.00_10.0_cn_99e1299787.tgz" id="f">dandelion_images_V12.0.11.0.QCDCNXM_20210331.0000.00_10.0_cn_99e1299787.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.9.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDCNXM/miui_DANDELION_V12.0.9.0.QCDCNXM_245e05b5ae_10.0.zip" id="r">miui_DANDELION_V12.0.9.0.QCDCNXM_245e05b5ae_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDCNXM/dandelion_images_V12.0.9.0.QCDCNXM_20210218.0000.00_10.0_cn_850c5213a0.tgz" id="f">dandelion_images_V12.0.9.0.QCDCNXM_20210218.0000.00_10.0_cn_850c5213a0.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V12.0.6.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDCNXM/miui_DANDELION_V12.0.6.0.QCDCNXM_fd35ba3ff0_10.0.zip" id="r">miui_DANDELION_V12.0.6.0.QCDCNXM_fd35ba3ff0_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDCNXM/dandelion_images_V12.0.6.0.QCDCNXM_20210111.0000.00_10.0_cn_fc446aa5fe.tgz" id="f">dandelion_images_V12.0.6.0.QCDCNXM_20210111.0000.00_10.0_cn_fc446aa5fe.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.5.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDCNXM/miui_DANDELION_V12.0.5.0.QCDCNXM_e3518ac091_10.0.zip" id="r">miui_DANDELION_V12.0.5.0.QCDCNXM_e3518ac091_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDCNXM/dandelion_images_V12.0.5.0.QCDCNXM_20201120.0000.00_10.0_cn_7577fcff0f.tgz" id="f">dandelion_images_V12.0.5.0.QCDCNXM_20201120.0000.00_10.0_cn_7577fcff0f.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.4.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="http://bigota.d.miui.com/V12.0.4.0.QCDCNXM/miui_DANDELION_V12.0.4.0.QCDCNXM_af2dd16f15_10.0.zip" id="r">miui_DANDELION_V12.0.4.0.QCDCNXM_af2dd16f15_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDCNXM/dandelion_images_V12.0.4.0.QCDCNXM_20201027.0000.00_10.0_cn_8eab63668b.tgz" id="f">dandelion_images_V12.0.4.0.QCDCNXM_20201027.0000.00_10.0_cn_8eab63668b.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.3.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDCNXM/miui_DANDELION_V12.0.3.0.QCDCNXM_e9e05c99a8_10.0.zip" id="r">miui_DANDELION_V12.0.3.0.QCDCNXM_e9e05c99a8_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDCNXM/dandelion_images_V12.0.3.0.QCDCNXM_20200912.0000.00_10.0_cn_50059d3818.tgz" id="f">dandelion_images_V12.0.3.0.QCDCNXM_20200912.0000.00_10.0_cn_50059d3818.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V12.0.2.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QCDCNXM/miui_DANDELION_V12.0.2.0.QCDCNXM_a3a42bcd16_10.0.zip" id="r">miui_DANDELION_V12.0.2.0.QCDCNXM_a3a42bcd16_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QCDCNXM/dandelion_images_V12.0.2.0.QCDCNXM_20200815.0000.00_10.0_cn_a078fb6f5f.tgz" id="f">dandelion_images_V12.0.2.0.QCDCNXM_20200815.0000.00_10.0_cn_a078fb6f5f.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V12.0.1.0.QCDCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QCDCNXM/miui_DANDELION_V12.0.1.0.QCDCNXM_4892f0b916_10.0.zip" id="r">miui_DANDELION_V12.0.1.0.QCDCNXM_4892f0b916_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QCDCNXM/dandelion_images_V12.0.1.0.QCDCNXM_20200714.0000.00_10.0_cn_9b87ccdbaa.tgz" id="f">dandelion_images_V12.0.1.0.QCDCNXM_20200714.0000.00_10.0_cn_9b87ccdbaa.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="GB_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">国际稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.12.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.12.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.12.0.QCDMIXM_ec1e25bd86_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.12.0.QCDMIXM_ec1e25bd86_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.12.0.QCDMIXM/dandelion_global_images_V12.0.12.0.QCDMIXM_20210410.0000.00_10.0_global_4a06b5be31.tgz" id="f">dandelion_global_images_V12.0.12.0.QCDMIXM_20210410.0000.00_10.0_global_4a06b5be31.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.11.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.11.0.QCDMIXM_8af74ff57e_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.11.0.QCDMIXM_8af74ff57e_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDMIXM/dandelion_global_images_V12.0.11.0.QCDMIXM_20210223.0000.00_10.0_global_25fef36b06.tgz" id="f">dandelion_global_images_V12.0.11.0.QCDMIXM_20210223.0000.00_10.0_global_25fef36b06.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V12.0.10.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.10.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.10.0.QCDMIXM_3c3d41a6a5_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.10.0.QCDMIXM_3c3d41a6a5_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.10.0.QCDMIXM/dandelion_global_images_V12.0.10.0.QCDMIXM_20210101.0000.00_10.0_global_f2a9e14284.tgz" id="f">dandelion_global_images_V12.0.10.0.QCDMIXM_20210101.0000.00_10.0_global_f2a9e14284.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.8.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.8.0.QCDMIXM_bb97177f3b_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.8.0.QCDMIXM_bb97177f3b_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDMIXM/dandelion_global_images_V12.0.8.0.QCDMIXM_20201124.0000.00_10.0_global_8761f445a1.tgz" id="f">dandelion_global_images_V12.0.8.0.QCDMIXM_20201124.0000.00_10.0_global_8761f445a1.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.7.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.7.0.QCDMIXM_f1449809a6_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.7.0.QCDMIXM_f1449809a6_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDMIXM/dandelion_global_images_V12.0.7.0.QCDMIXM_20201028.0000.00_10.0_global_2628946939.tgz" id="f">dandelion_global_images_V12.0.7.0.QCDMIXM_20201028.0000.00_10.0_global_2628946939.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.6.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.6.0.QCDMIXM_d60f424ace_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.6.0.QCDMIXM_d60f424ace_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDMIXM/dandelion_global_images_V12.0.6.0.QCDMIXM_20201001.0000.00_10.0_global_18964e042e.tgz" id="f">dandelion_global_images_V12.0.6.0.QCDMIXM_20201001.0000.00_10.0_global_18964e042e.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V12.0.5.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.5.0.QCDMIXM_7d5800d303_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.5.0.QCDMIXM_7d5800d303_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDMIXM/dandelion_global_images_V12.0.5.0.QCDMIXM_20200815.0000.00_10.0_global_b034d0d55e.tgz" id="f">dandelion_global_images_V12.0.5.0.QCDMIXM_20200815.0000.00_10.0_global_b034d0d55e.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V12.0.3.0.QCDMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDMIXM/miui_DANDELIONGlobal_V12.0.3.0.QCDMIXM_816d42afde_10.0.zip" id="r">miui_DANDELIONGlobal_V12.0.3.0.QCDMIXM_816d42afde_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDMIXM/dandelion_global_images_V12.0.3.0.QCDMIXM_20200714.0000.00_10.0_global_c021b1dc87.tgz" id="f">dandelion_global_images_V12.0.3.0.QCDMIXM_20200714.0000.00_10.0_global_c021b1dc87.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="EEA_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">EEA稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.12.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.12.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.12.0.QCDEUXM_dc080af827_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.12.0.QCDEUXM_dc080af827_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.12.0.QCDEUXM/dandelion_eea_global_images_V12.0.12.0.QCDEUXM_20210419.0000.00_10.0_eea_2bafa7d1b4.tgz" id="f">dandelion_eea_global_images_V12.0.12.0.QCDEUXM_20210419.0000.00_10.0_eea_2bafa7d1b4.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.11.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.11.0.QCDEUXM_00f37af87c_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.11.0.QCDEUXM_00f37af87c_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDEUXM/dandelion_eea_global_images_V12.0.11.0.QCDEUXM_20210225.0000.00_10.0_eea_1bd0b46563.tgz" id="f">dandelion_eea_global_images_V12.0.11.0.QCDEUXM_20210225.0000.00_10.0_eea_1bd0b46563.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V12.0.10.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.10.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.10.0.QCDEUXM_7d3d981e09_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.10.0.QCDEUXM_7d3d981e09_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.10.0.QCDEUXM/dandelion_eea_global_images_V12.0.10.0.QCDEUXM_20210106.0000.00_10.0_eea_cb2847e067.tgz" id="f">dandelion_eea_global_images_V12.0.10.0.QCDEUXM_20210106.0000.00_10.0_eea_cb2847e067.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.9.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.9.0.QCDEUXM_1d37d66a22_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.9.0.QCDEUXM_1d37d66a22_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDEUXM/dandelion_eea_global_images_V12.0.9.0.QCDEUXM_20201124.0000.00_10.0_eea_a6ce55de0f.tgz" id="f">dandelion_eea_global_images_V12.0.9.0.QCDEUXM_20201124.0000.00_10.0_eea_a6ce55de0f.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.8.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.8.0.QCDEUXM_9d77205f0b_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.8.0.QCDEUXM_9d77205f0b_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDEUXM/dandelion_eea_global_images_V12.0.8.0.QCDEUXM_20201028.0000.00_10.0_eea_5997eec403.tgz" id="f">dandelion_eea_global_images_V12.0.8.0.QCDEUXM_20201028.0000.00_10.0_eea_5997eec403.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.7.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.7.0.QCDEUXM_3017c14ffc_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.7.0.QCDEUXM_3017c14ffc_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDEUXM/dandelion_eea_global_images_V12.0.7.0.QCDEUXM_20201001.0000.00_10.0_eea_183bb2c6b4.tgz" id="f">dandelion_eea_global_images_V12.0.7.0.QCDEUXM_20201001.0000.00_10.0_eea_183bb2c6b4.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V12.0.6.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.6.0.QCDEUXM_caaa465ec4_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.6.0.QCDEUXM_caaa465ec4_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDEUXM/dandelion_eea_global_images_V12.0.6.0.QCDEUXM_20200815.0000.00_10.0_eea_d5367f1a15.tgz" id="f">dandelion_eea_global_images_V12.0.6.0.QCDEUXM_20200815.0000.00_10.0_eea_d5367f1a15.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V12.0.4.0.QCDEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDEUXM/miui_DANDELIONEEAGlobal_V12.0.4.0.QCDEUXM_36c80895b8_10.0.zip" id="r">miui_DANDELIONEEAGlobal_V12.0.4.0.QCDEUXM_36c80895b8_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDEUXM/dandelion_eea_global_images_V12.0.4.0.QCDEUXM_20200725.0000.00_10.0_eea_66adf5bd91.tgz" id="f">dandelion_eea_global_images_V12.0.4.0.QCDEUXM_20200725.0000.00_10.0_eea_66adf5bd91.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="RU_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">俄罗斯稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.9.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.9.0.QCDRUXM_585c5367ab_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.9.0.QCDRUXM_585c5367ab_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDRUXM/dandelion_ru_global_images_V12.0.9.0.QCDRUXM_20210419.0000.00_10.0_global_5edc91c3b6.tgz" id="f">dandelion_ru_global_images_V12.0.9.0.QCDRUXM_20210419.0000.00_10.0_global_5edc91c3b6.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.8.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.8.0.QCDRUXM_2f34a8b3ec_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.8.0.QCDRUXM_2f34a8b3ec_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDRUXM/dandelion_ru_global_images_V12.0.8.0.QCDRUXM_20210311.0000.00_10.0_global_5ebb27df11.tgz" id="f">dandelion_ru_global_images_V12.0.8.0.QCDRUXM_20210311.0000.00_10.0_global_5ebb27df11.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V12.0.7.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.7.0.QCDRUXM_9ca4420b47_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.7.0.QCDRUXM_9ca4420b47_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDRUXM/dandelion_ru_global_images_V12.0.7.0.QCDRUXM_20210110.0000.00_10.0_global_9672ebc3c5.tgz" id="f">dandelion_ru_global_images_V12.0.7.0.QCDRUXM_20210110.0000.00_10.0_global_9672ebc3c5.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.6.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.6.0.QCDRUXM_1fba33bc25_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.6.0.QCDRUXM_1fba33bc25_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDRUXM/dandelion_ru_global_images_V12.0.6.0.QCDRUXM_20201125.0000.00_10.0_global_ef58b5533a.tgz" id="f">dandelion_ru_global_images_V12.0.6.0.QCDRUXM_20201125.0000.00_10.0_global_ef58b5533a.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.5.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.5.0.QCDRUXM_c18b160ef1_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.5.0.QCDRUXM_c18b160ef1_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDRUXM/dandelion_ru_global_images_V12.0.5.0.QCDRUXM_20201028.0000.00_10.0_global_b9e6182bfb.tgz" id="f">dandelion_ru_global_images_V12.0.5.0.QCDRUXM_20201028.0000.00_10.0_global_b9e6182bfb.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.4.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.4.0.QCDRUXM_7c7fd8a32c_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.4.0.QCDRUXM_7c7fd8a32c_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDRUXM/dandelion_ru_global_images_V12.0.4.0.QCDRUXM_20201001.0000.00_10.0_global_54b98bb3e3.tgz" id="f">dandelion_ru_global_images_V12.0.4.0.QCDRUXM_20201001.0000.00_10.0_global_54b98bb3e3.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V12.0.3.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.3.0.QCDRUXM_e0aee2f749_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.3.0.QCDRUXM_e0aee2f749_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDRUXM/dandelion_ru_global_images_V12.0.3.0.QCDRUXM_20200815.0000.00_10.0_global_0741e9bf77.tgz" id="f">dandelion_ru_global_images_V12.0.3.0.QCDRUXM_20200815.0000.00_10.0_global_0741e9bf77.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V12.0.1.0.QCDRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QCDRUXM/miui_DANDELIONRUGlobal_V12.0.1.0.QCDRUXM_a2b3ac9598_10.0.zip" id="r">miui_DANDELIONRUGlobal_V12.0.1.0.QCDRUXM_a2b3ac9598_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QCDRUXM/dandelion_ru_global_images_V12.0.1.0.QCDRUXM_20200630.0000.00_10.0_global_89d0c7d156.tgz" id="f">dandelion_ru_global_images_V12.0.1.0.QCDRUXM_20200630.0000.00_10.0_global_89d0c7d156.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="IN_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">印度稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.13.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.13.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.13.0.QCDINXM_0d318a9ae8_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.13.0.QCDINXM_0d318a9ae8_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.13.0.QCDINXM/dandelion_in_global_images_V12.0.13.0.QCDINXM_20210427.0000.00_10.0_in_f44f57c421.tgz" id="f">dandelion_in_global_images_V12.0.13.0.QCDINXM_20210427.0000.00_10.0_in_f44f57c421.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.11.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.11.0.QCDINXM_5404d6afcd_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.11.0.QCDINXM_5404d6afcd_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.11.0.QCDINXM/dandelion_in_global_images_V12.0.11.0.QCDINXM_20210305.0000.00_10.0_in_7ec6c4e9dd.tgz" id="f">dandelion_in_global_images_V12.0.11.0.QCDINXM_20210305.0000.00_10.0_in_7ec6c4e9dd.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V12.0.9.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.9.0.QCDINXM_72117f8161_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.9.0.QCDINXM_72117f8161_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.9.0.QCDINXM/dandelion_in_global_images_V12.0.9.0.QCDINXM_20210110.0000.00_10.0_in_f367427bc0.tgz" id="f">dandelion_in_global_images_V12.0.9.0.QCDINXM_20210110.0000.00_10.0_in_f367427bc0.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.8.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.8.0.QCDINXM_8ba30677e0_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.8.0.QCDINXM_8ba30677e0_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QCDINXM/dandelion_in_global_images_V12.0.8.0.QCDINXM_20201221.0000.00_10.0_in_90493e1f72.tgz" id="f">dandelion_in_global_images_V12.0.8.0.QCDINXM_20201221.0000.00_10.0_in_90493e1f72.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.7.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.7.0.QCDINXM_cc0a5a3da2_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.7.0.QCDINXM_cc0a5a3da2_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDINXM/dandelion_in_global_images_V12.0.7.0.QCDINXM_20201125.0000.00_10.0_in_ee5ec048b5.tgz" id="f">dandelion_in_global_images_V12.0.7.0.QCDINXM_20201125.0000.00_10.0_in_ee5ec048b5.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.6.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.6.0.QCDINXM_5fe64a6147_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.6.0.QCDINXM_5fe64a6147_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDINXM/dandelion_in_global_images_V12.0.6.0.QCDINXM_20201024.0000.00_10.0_in_b6e23b981c.tgz" id="f">dandelion_in_global_images_V12.0.6.0.QCDINXM_20201024.0000.00_10.0_in_b6e23b981c.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V12.0.4.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.4.0.QCDINXM_57e476a1d8_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.4.0.QCDINXM_57e476a1d8_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDINXM/dandelion_in_global_images_V12.0.4.0.QCDINXM_20200912.0000.00_10.0_in_69837c0520.tgz" id="f">dandelion_in_global_images_V12.0.4.0.QCDINXM_20200912.0000.00_10.0_in_69837c0520.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V12.0.3.0.QCDINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDINXM/miui_DANDELIONINGlobal_V12.0.3.0.QCDINXM_6e50a7f857_10.0.zip" id="r">miui_DANDELIONINGlobal_V12.0.3.0.QCDINXM_6e50a7f857_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDINXM/dandelion_in_global_images_V12.0.3.0.QCDINXM_20200827.0000.00_10.0_in_bf71351e55.tgz" id="f">dandelion_in_global_images_V12.0.3.0.QCDINXM_20200827.0000.00_10.0_in_bf71351e55.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="ID_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">印尼稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.7.0.QCDIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDIDXM/miui_DANDELIONIDGlobal_V12.0.7.0.QCDIDXM_33c61a053b_10.0.zip" id="r">miui_DANDELIONIDGlobal_V12.0.7.0.QCDIDXM_33c61a053b_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QCDIDXM/dandelion_id_global_images_V12.0.7.0.QCDIDXM_20210419.0000.00_10.0_global_04398395f7.tgz" id="f">dandelion_id_global_images_V12.0.7.0.QCDIDXM_20210419.0000.00_10.0_global_04398395f7.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V12.0.6.0.QCDIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDIDXM/miui_DANDELIONIDGlobal_V12.0.6.0.QCDIDXM_392b647ab3_10.0.zip" id="r">miui_DANDELIONIDGlobal_V12.0.6.0.QCDIDXM_392b647ab3_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QCDIDXM/dandelion_id_global_images_V12.0.6.0.QCDIDXM_20210228.0000.00_10.0_global_575439c14e.tgz" id="f">dandelion_id_global_images_V12.0.6.0.QCDIDXM_20210228.0000.00_10.0_global_575439c14e.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.5.0.QCDIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDIDXM/miui_DANDELIONIDGlobal_V12.0.5.0.QCDIDXM_a0cbbe99b7_10.0.zip" id="r">miui_DANDELIONIDGlobal_V12.0.5.0.QCDIDXM_a0cbbe99b7_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.QCDIDXM/dandelion_id_global_images_V12.0.5.0.QCDIDXM_20210110.0000.00_10.0_global_3de2789c1c.tgz" id="f">dandelion_id_global_images_V12.0.5.0.QCDIDXM_20210110.0000.00_10.0_global_3de2789c1c.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.4.0.QCDIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDIDXM/miui_DANDELIONIDGlobal_V12.0.4.0.QCDIDXM_02985a4487_10.0.zip" id="r">miui_DANDELIONIDGlobal_V12.0.4.0.QCDIDXM_02985a4487_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDIDXM/dandelion_id_global_images_V12.0.4.0.QCDIDXM_20201125.0000.00_10.0_global_2ff92df3e3.tgz" id="f">dandelion_id_global_images_V12.0.4.0.QCDIDXM_20201125.0000.00_10.0_global_2ff92df3e3.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.3.0.QCDIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDIDXM/miui_DANDELIONIDGlobal_V12.0.3.0.QCDIDXM_9b0ac5c97f_10.0.zip" id="r">miui_DANDELIONIDGlobal_V12.0.3.0.QCDIDXM_9b0ac5c97f_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDIDXM/dandelion_id_global_images_V12.0.3.0.QCDIDXM_20201028.0000.00_10.0_global_e29c8959ff.tgz" id="f">dandelion_id_global_images_V12.0.3.0.QCDIDXM_20201028.0000.00_10.0_global_e29c8959ff.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V12.0.2.0.QCDIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QCDIDXM/miui_DANDELIONIDGlobal_V12.0.2.0.QCDIDXM_5bc3617249_10.0.zip" id="r">miui_DANDELIONIDGlobal_V12.0.2.0.QCDIDXM_5bc3617249_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QCDIDXM/dandelion_id_global_images_V12.0.2.0.QCDIDXM_20200815.0000.00_10.0_global_d988673e1d.tgz" id="f">dandelion_id_global_images_V12.0.2.0.QCDIDXM_20200815.0000.00_10.0_global_d988673e1d.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V12.0.1.0.QCDIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QCDIDXM/miui_DANDELIONIDGlobal_V12.0.1.0.QCDIDXM_460f6e01de_10.0.zip" id="r">miui_DANDELIONIDGlobal_V12.0.1.0.QCDIDXM_460f6e01de_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QCDIDXM/dandelion_id_global_images_V12.0.1.0.QCDIDXM_20200706.0000.00_10.0_global_0688b61fcc.tgz" id="f">dandelion_id_global_images_V12.0.1.0.QCDIDXM_20200706.0000.00_10.0_global_0688b61fcc.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="TR_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">土耳其稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>5</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>4</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.4.0.QCDTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDTRXM/miui_DANDELIONTRGlobal_V12.0.4.0.QCDTRXM_59a4fa6fb4_10.0.zip" id="r">miui_DANDELIONTRGlobal_V12.0.4.0.QCDTRXM_59a4fa6fb4_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QCDTRXM/dandelion_tr_global_images_V12.0.4.0.QCDTRXM_20210228.0000.00_10.0_global_f27a3a3c29.tgz" id="f">dandelion_tr_global_images_V12.0.4.0.QCDTRXM_20210228.0000.00_10.0_global_f27a3a3c29.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V12.0.3.0.QCDTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDTRXM/miui_DANDELIONTRGlobal_V12.0.3.0.QCDTRXM_c936d0fdfe_10.0.zip" id="r">miui_DANDELIONTRGlobal_V12.0.3.0.QCDTRXM_c936d0fdfe_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QCDTRXM/dandelion_tr_global_images_V12.0.3.0.QCDTRXM_20210110.0000.00_10.0_global_027726822c.tgz" id="f">dandelion_tr_global_images_V12.0.3.0.QCDTRXM_20210110.0000.00_10.0_global_027726822c.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V12.0.2.0.QCDTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QCDTRXM/miui_DANDELIONTRGlobal_V12.0.2.0.QCDTRXM_c2d8c266b3_10.0.zip" id="r">miui_DANDELIONTRGlobal_V12.0.2.0.QCDTRXM_c2d8c266b3_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QCDTRXM/dandelion_tr_global_images_V12.0.2.0.QCDTRXM_20201125.0000.00_10.0_global_80df207e11.tgz" id="f">dandelion_tr_global_images_V12.0.2.0.QCDTRXM_20201125.0000.00_10.0_global_80df207e11.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>

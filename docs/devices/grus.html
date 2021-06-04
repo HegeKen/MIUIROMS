@@ -1,714 +1,1035 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-      <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
-      </script>
-    <style>
-            li a {
-                text-decoration: none;
-                color: blue;
-            }
-    
-            td a {
-                text-decoration: none;
-                color: black;
-            }
-        </style>
-    <title>小米9 SE(grus)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body>
-    <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
-        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-        <div class="mdui-toolbar-spacer"></div>
-        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                    <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                        <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="mdui-panel mdui-panel-gapless">
-        <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-            <div class="mdui-panel-item-body">
-                <ol>
-                    <li>机型：小米9 SE 代号：grus</li>
-                    <li>此次更新项目：V11.0.6.0.PFBRUXM</li>
-                    <li>特别感谢：<a href="https://www.miui.com/space-uid-1574990713.html">@人皮_面具 </a></li>
-                    <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
-                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
-                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为ROM的正式内容 -->
-
-    <div><br></div>
-    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
-        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
-        <a href="#GB_BETA" class="mdui-ripple">国际开发版</a>
-        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
-        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
-        <a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a>
-        <a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
-    </div>
-    <div id="CN_BETA" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国内开发版</th>
-                            <th>MIUI版本</th>
-                            <th>版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>20</td>
-                            <td>MIUI11</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>19</td>
-                            <td>MIUI11</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>18</td>
-                            <td>MIUI11</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>17</td>
-                            <td>MIUI11</td>
-                            <td>9.9.26</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_GRUS_9.9.26_bbf36d803f_9.0.zip">miui_GRUS_9.9.26_bbf36d803f_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>16</td>
-                            <td>MIUI10</td>
-                            <td>9.9.3</td>
-                            <td>9.0 Pie</td>
-                            <td><a href=" http://bigota.d.miui.com/9.9.3/miui_GRUS_9.9.3_22e12a913a_9.0.zip">miui_GRUS_9.9.3_22e12a913a_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.9.3/grus_images_9.9.3_20190904.0000.00_9.0_cn_9d9ea95af3.tgz">grus_images_9.9.3_20190904.0000.00_9.0_cn_9d9ea95af3.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>MIUI10</td>
-                            <td>9.8.22</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.8.22/miui_GRUS_9.8.22_228cad0405_9.0.zip">miui_GRUS_9.8.22_228cad0405_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.8.22/grus_images_9.8.22_20190822.0000.00_9.0_cn_aa383ea656.tgz">grus_images_9.8.22_20190822.0000.00_9.0_cn_aa383ea656.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>MIUI10</td>
-                            <td>9.8.15</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.8.15/miui_GRUS_9.8.15_324d426649_9.0.zip">miui_GRUS_9.8.15_324d426649_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.8.15/grus_images_9.8.15_20190815.0000.00_9.0_cn_5c6474fadd.tgz">grus_images_9.8.15_20190815.0000.00_9.0_cn_5c6474fadd.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>MIUI10</td>
-                            <td>9.8.9</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.8.9/miui_GRUS_9.8.9_8ce377c7ef_9.0.zip">miui_GRUS_9.8.9_8ce377c7ef_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.8.9/grus_images_9.8.9_20190809.0000.00_9.0_cn_46510901bf.tgz">grus_images_9.8.9_20190809.0000.00_9.0_cn_46510901bf.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>MIUI10</td>
-                            <td>9.8.8</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.8.8/miui_GRUS_9.8.8_a45534dac4_9.0.zip">miui_GRUS_9.8.8_a45534dac4_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.8.8/grus_images_9.8.8_20190808.0000.00_9.0_cn_cb164473e3.tgz">grus_images_9.8.8_20190808.0000.00_9.0_cn_cb164473e3.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>MIUI10</td>
-                            <td>9.8.1</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.8.1/miui_GRUS_9.8.1_a4f5bee229_9.0.zip">miui_GRUS_9.8.1_a4f5bee229_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.8.1/grus_images_9.8.1_20190801.0000.00_9.0_cn_6d11b2b70f.tgz">grus_images_9.8.1_20190801.0000.00_9.0_cn_6d11b2b70f.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>MIUI10</td>
-                            <td>9.7.25</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.7.25/miui_GRUS_9.7.25_4a2173b82d_9.0.zip">miui_GRUS_9.7.25_4a2173b82d_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.7.25/grus_images_9.7.25_20190725.0000.00_9.0_cn_35d1d8d6d2.tgz">grus_images_9.7.25_20190725.0000.00_9.0_cn_35d1d8d6d2.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>MIUI10</td>
-                            <td>9.7.11</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.7.11/miui_GRUS_9.7.11_9855478e41_9.0.zip">miui_GRUS_9.7.11_9855478e41_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.7.11/grus_images_9.7.11_20190711.0000.00_9.0_cn_7efdac72b7.tgz">grus_images_9.7.11_20190711.0000.00_9.0_cn_7efdac72b7.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>MIUI10</td>
-                            <td>9.7.4</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.7.4/miui_GRUS_9.7.4_7f921b35fa_9.0.zip">miui_GRUS_9.7.4_7f921b35fa_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.7.4/grus_images_9.7.4_20190704.0000.00_9.0_cn_148fa270ae.tgz">grus_images_9.7.4_20190704.0000.00_9.0_cn_148fa270ae.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>MIUI10</td>
-                            <td>9.6.27</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_GRUS_9.6.27_ac6651ab02_9.0.zip">miui_GRUS_9.6.27_ac6651ab02_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.6.27/grus_images_9.6.27_20190627.0000.00_9.0_cn_1b66b7ace1.tgz">grus_images_9.6.27_20190627.0000.00_9.0_cn_1b66b7ace1.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>MIUI10</td>
-                            <td>9.6.20</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_GRUS_9.6.20_79988bc6bb_9.0.zip">miui_GRUS_9.6.20_79988bc6bb_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.6.20/grus_images_9.6.20_20190620.0000.00_9.0_cn_2a24a95f7c.tgz">grus_images_9.6.20_20190620.0000.00_9.0_cn_2a24a95f7c.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>MIUI10</td>
-                            <td>9.6.13</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_GRUS_9.6.13_b4980ecd04_9.0.zip">miui_GRUS_9.6.13_b4980ecd04_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>MIUI10</td>
-                            <td>9.5.30</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.5.30/miui_GRUS_9.5.30_fadcc8f3d6_9.0.zip">miui_GRUS_9.5.30_fadcc8f3d6_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.5.30/grus_images_9.5.30_20190530.0000.00_9.0_cn_c48b976851.tgz">grus_images_9.5.30_20190530.0000.00_9.0_cn_c48b976851.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>MIUI10</td>
-                            <td>9.5.9</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.5.9/miui_GRUS_9.5.9_705ee1e0af_9.0.zip">miui_GRUS_9.5.9_705ee1e0af_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.5.9/grus_images_9.5.9_20190509.0000.00_9.0_cn_4b14c2c19e.tgz">grus_images_9.5.9_20190509.0000.00_9.0_cn_4b14c2c19e.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>MIUI10</td>
-                            <td>9.4.26</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.4.26/miui_GRUS_9.4.26_477b635a3f_9.0.zip">miui_GRUS_9.4.26_477b635a3f_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>MIUI10</td>
-                            <td>9.4.18</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.4.18/miui_GRUS_9.4.18_f984a1f790_9.0.zip">miui_GRUS_9.4.18_f984a1f790_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.4.18/grus_images_9.4.18_20190418.0000.00_9.0_cn_22e903424a.tgz">grus_images_9.4.18_20190418.0000.00_9.0_cn_22e903424a.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="GB_BETA" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国际开发版</th>
-                            <th>MIUI版本</th>
-                            <th>版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>3</td>
-                            <td>MIUI10</td>
-                            <td>9.6.27</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.6.27/miui_GRUSGlobal_9.6.27_ac3b29af09_9.0.zip">miui_GRUSGlobal_9.6.27_ac3b29af09_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.6.27/grus_global_images_9.6.27_20190627.0000.00_9.0_global_86c7d41fbf.tgz">grus_global_images_9.6.27_20190627.0000.00_9.0_global_86c7d41fbf.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>MIUI10</td>
-                            <td>9.6.20</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_GRUSGlobal_9.6.20_660169b992_9.0.zip">miui_GRUSGlobal_9.6.20_660169b992_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.6.20/grus_global_images_9.6.20_20190620.0000.00_9.0_global_a066571224.tgz">grus_global_images_9.6.20_20190620.0000.00_9.0_global_a066571224.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>MIUI10</td>
-                            <td>9.6.13</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.6.13/miui_GRUSGlobal_9.6.13_be014db978_9.0.zip">miui_GRUSGlobal_9.6.13_be014db978_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="CN_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国内稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>15</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>14</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>13</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>12</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>11</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>V11.0.5.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.5.0.PFBCNXM/miui_GRUS_V11.0.5.0.PFBCNXM_41b4612800_9.0.zip">miui_GRUS_V11.0.5.0.PFBCNXM_41b4612800_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.5.0.PFBCNXM/grus_images_V11.0.5.0.PFBCNXM_20191025.0000.00_9.0_cn_28736e7bff.tgz">grus_images_V11.0.5.0.PFBCNXM_20191025.0000.00_9.0_cn_28736e7bff.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>V11.0.3.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFBCNXM/miui_GRUS_V11.0.3.0.PFBCNXM_798b0ceef1_9.0.zip">miui_GRUS_V11.0.3.0.PFBCNXM_798b0ceef1_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFBCNXM/grus_images_V11.0.3.0.PFBCNXM_20190925.0000.00_9.0_cn_bec2006acb.tgz">grus_images_V11.0.3.0.PFBCNXM_20190925.0000.00_9.0_cn_bec2006acb.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>V10.3.6.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFBCNXM/miui_GRUS_V10.3.6.0.PFBCNXM_71316d435a_9.0.zip">miui_GRUS_V10.3.6.0.PFBCNXM_71316d435a_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFBCNXM/grus_images_V10.3.6.0.PFBCNXM_20190827.0000.00_9.0_cn_940f63c326.tgz">grus_images_V10.3.6.0.PFBCNXM_20190827.0000.00_9.0_cn_940f63c326.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>V10.3.3.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBCNXM/miui_GRUS_V10.3.3.0.PFBCNXM_3dcc2884fc_9.0.zip">miui_GRUS_V10.3.3.0.PFBCNXM_3dcc2884fc_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBCNXM/grus_images_V10.3.3.0.PFBCNXM_20190528.0000.00_9.0_cn_5e7543aec5.tgz">grus_images_V10.3.3.0.PFBCNXM_20190528.0000.00_9.0_cn_5e7543aec5.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V10.3.1.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBCNXM/miui_GRUS_V10.3.1.0.PFBCNXM_60d33fe1c3_9.0.zip">miui_GRUS_V10.3.1.0.PFBCNXM_60d33fe1c3_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBCNXM/grus_images_V10.3.1.0.PFBCNXM_20190425.0000.00_9.0_cn_622ff5674f.tgz">grus_images_V10.3.1.0.PFBCNXM_20190425.0000.00_9.0_cn_622ff5674f.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.2.11.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFBCNXM/miui_GRUS_V10.2.11.0.PFBCNXM_a2557d7524_9.0.zip">miui_GRUS_V10.2.11.0.PFBCNXM_a2557d7524_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFBCNXM/grus_images_V10.2.11.0.PFBCNXM_20190417.0000.00_9.0_cn_0c83f18a88.tgz">grus_images_V10.2.11.0.PFBCNXM_20190417.0000.00_9.0_cn_0c83f18a88.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.2.8.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.8.0.PFBCNXM/miui_GRUS_V10.2.8.0.PFBCNXM_7ae933bff9_9.0.zip">miui_GRUS_V10.2.8.0.PFBCNXM_7ae933bff9_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.2.5.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBCNXM/miui_GRUS_V10.2.5.0.PFBCNXM_a8508c5e9e_9.0.zip">miui_GRUS_V10.2.5.0.PFBCNXM_a8508c5e9e_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBCNXM/grus_images_V10.2.5.0.PFBCNXM_20190305.0000.00_9.0_cn_076794b117.tgz">grus_images_V10.2.5.0.PFBCNXM_20190305.0000.00_9.0_cn_076794b117.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.2.3.0.PFBCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBCNXM/miui_GRUS_V10.2.3.0.PFBCNXM_0b1a6eef2b_9.0.zip">miui_GRUS_V10.2.3.0.PFBCNXM_0b1a6eef2b_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBCNXM/grus_images_V10.2.3.0.PFBCNXM_20190220.0000.00_9.0_cn_93c45bcae8.tgz">grus_images_V10.2.3.0.PFBCNXM_20190220.0000.00_9.0_cn_93c45bcae8.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="GB_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国际稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>6</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V11.0.4.0.PFBMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBMIXM/miui_GRUSGlobal_V11.0.4.0.PFBMIXM_af38858a0f_9.0.zip">miui_GRUSGlobal_V11.0.4.0.PFBMIXM_af38858a0f_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBMIXM/grus_global_images_V11.0.4.0.PFBMIXM_20191023.0000.00_9.0_global_99c9b5dc56.tgz">grus_global_images_V11.0.4.0.PFBMIXM_20191023.0000.00_9.0_global_99c9b5dc56.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.3.4.0.PFBMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBMIXM/miui_GRUSGlobal_V10.3.4.0.PFBMIXM_1af3c0ea1e_9.0.zip">miui_GRUSGlobal_V10.3.4.0.PFBMIXM_1af3c0ea1e_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBMIXM/grus_global_images_V10.3.4.0.PFBMIXM_20190916.0000.00_9.0_global_c5da057ab3.tgz">grus_global_images_V10.3.4.0.PFBMIXM_20190916.0000.00_9.0_global_c5da057ab3.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.3.3.0.PFBMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBMIXM/miui_GRUSGlobal_V10.3.3.0.PFBMIXM_2842fe0d8f_9.0.zip">miui_GRUSGlobal_V10.3.3.0.PFBMIXM_2842fe0d8f_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBMIXM/grus_global_images_V10.3.3.0.PFBMIXM_20190726.0000.00_9.0_global_f60461e04d.tgz">grus_global_images_V10.3.3.0.PFBMIXM_20190726.0000.00_9.0_global_f60461e04d.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.3.1.0.PFBMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBMIXM/miui_GRUSGlobal_V10.3.1.0.PFBMIXM_b81f0ca9e9_9.0.zip">miui_GRUSGlobal_V10.3.1.0.PFBMIXM_b81f0ca9e9_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBMIXM/grus_global_images_V10.3.1.0.PFBMIXM_20190529.0000.00_9.0_global_cd2042f4b3.tgz">grus_global_images_V10.3.1.0.PFBMIXM_20190529.0000.00_9.0_global_cd2042f4b3.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.2.2.0.PFBMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.PFBMIXM/miui_GRUSGlobal_V10.2.2.0.PFBMIXM_b4cc336f0d_9.0.zip">miui_GRUSGlobal_V10.2.2.0.PFBMIXM_b4cc336f0d_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.2.0.PFBMIXM/grus_global_images_V10.2.2.0.PFBMIXM_20190425.0000.00_9.0_global_53de02bb9f.tgz">grus_global_images_V10.2.2.0.PFBMIXM_20190425.0000.00_9.0_global_53de02bb9f.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="EEA_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">EEA稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>V11.0.4.0.PFBEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBEUXM/miui_GRUSEEAGlobal_V11.0.4.0.PFBEUXM_d4f398c886_9.0.zip">miui_GRUSEEAGlobal_V11.0.4.0.PFBEUXM_d4f398c886_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBEUXM/grus_eea_global_images_V11.0.4.0.PFBEUXM_20191023.0000.00_9.0_eea_796fefd83c.tgz">grus_eea_global_images_V11.0.4.0.PFBEUXM_20191023.0000.00_9.0_eea_796fefd83c.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>V10.3.9.0.PFBEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.9.0.PFBEUXM/miui_GRUSEEAGlobal_V10.3.9.0.PFBEUXM_f1b6a0764f_9.0.zip">miui_GRUSEEAGlobal_V10.3.9.0.PFBEUXM_f1b6a0764f_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.9.0.PFBEUXM/grus_eea_global_images_V10.3.9.0.PFBEUXM_20190916.0000.00_9.0_eea_a7ef0d0fca.tgz">grus_eea_global_images_V10.3.9.0.PFBEUXM_20190916.0000.00_9.0_eea_a7ef0d0fca.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V10.3.4.0.PFBEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBEUXM/miui_GRUSEEAGlobal_V10.3.4.0.PFBEUXM_409f6dbb6f_9.0.zip">miui_GRUSEEAGlobal_V10.3.4.0.PFBEUXM_409f6dbb6f_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBEUXM/grus_eea_global_images_V10.3.4.0.PFBEUXM_20190729.0000.00_9.0_eea_802c244357.tgz">grus_eea_global_images_V10.3.4.0.PFBEUXM_20190729.0000.00_9.0_eea_802c244357.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.3.1.0.PFBEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBEUXM/miui_GRUSEEAGlobal_V10.3.1.0.PFBEUXM_3d43a95581_9.0.zip">miui_GRUSEEAGlobal_V10.3.1.0.PFBEUXM_3d43a95581_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.2.9.0.PFBEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.9.0.PFBEUXM/miui_GRUSEEAGlobal_V10.2.9.0.PFBEUXM_432d8a9116_9.0.zip">miui_GRUSEEAGlobal_V10.2.9.0.PFBEUXM_432d8a9116_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.9.0.PFBEUXM/grus_eea_global_images_V10.2.9.0.PFBEUXM_20190524.0000.00_9.0_eea_aa49baa4dd.tgz">grus_eea_global_images_V10.2.9.0.PFBEUXM_20190524.0000.00_9.0_eea_aa49baa4dd.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.2.5.0.PFBEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBEUXM/miui_GRUSEEAGlobal_V10.2.5.0.PFBEUXM_16141f0824_9.0.zip">miui_GRUSEEAGlobal_V10.2.5.0.PFBEUXM_16141f0824_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBEUXM/grus_eea_global_images_V10.2.5.0.PFBEUXM_20190422.0000.00_9.0_eea_dbf9ebefcd.tgz">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.2.3.0.PFBEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBEUXM/miui_GRUSEEAGlobal_V10.2.3.0.PFBEUXM_e9501746e2_9.0.zip">miui_GRUSEEAGlobal_V10.2.3.0.PFBEUXM_e9501746e2_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBEUXM/grus_eea_global_images_V10.2.3.0.PFBEUXM_20190403.0000.00_9.0_eea_60219f14d6.tgz">grus_eea_global_images_V10.2.3.0.PFBEUXM_20190403.0000.00_9.0_eea_60219f14d6.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-    <div id="RU_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">俄罗斯稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>V11.0.6.0.PFBRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBRUXM/miui_GRUSRUGlobal_V11.0.6.0.PFBRUXM_55e0819503_9.0.zip">miui_GRUSRUGlobal_V11.0.6.0.PFBRUXM_55e0819503_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBRUXM/grus_ru_global_images_V11.0.6.0.PFBRUXM_20191224.0000.00_9.0_global_33f860796e.tgz">grus_ru_global_images_V11.0.6.0.PFBRUXM_20191224.0000.00_9.0_global_33f860796e.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V11.0.4.0.PFBRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBRUXM/miui_GRUSRUGlobal_V11.0.4.0.PFBRUXM_1a85f12137_9.0.zip">miui_GRUSRUGlobal_V11.0.4.0.PFBRUXM_1a85f12137_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBRUXM/grus_ru_global_images_V11.0.4.0.PFBRUXM_20191023.0000.00_9.0_global_1acdc9da8b.tgz">grus_ru_global_images_V11.0.4.0.PFBRUXM_20191023.0000.00_9.0_global_1acdc9da8b.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.3.5.0.PFBRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.5.0.PFBRUXM/miui_GRUSRUGlobal_V10.3.5.0.PFBRUXM_0a726190e3_9.0.zip">miui_GRUSRUGlobal_V10.3.5.0.PFBRUXM_0a726190e3_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.5.0.PFBRUXM/grus_ru_global_images_V10.3.5.0.PFBRUXM_20190917.0000.00_9.0_global_1f2f2c8fd0.tgz">grus_ru_global_images_V10.3.5.0.PFBRUXM_20190917.0000.00_9.0_global_1f2f2c8fd0.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.3.4.0.PFBRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBRUXM/miui_GRUSRUGlobal_V10.3.4.0.PFBRUXM_36d8f8f319_9.0.zip">miui_GRUSRUGlobal_V10.3.4.0.PFBRUXM_36d8f8f319_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBRUXM/grus_ru_global_images_V10.3.4.0.PFBRUXM_20190726.0000.00_9.0_global_d999377e4a.tgz">grus_ru_global_images_V10.3.4.0.PFBRUXM_20190726.0000.00_9.0_global_d999377e4a.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.3.2.0.PFBRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.2.0.PFBRUXM/miui_GRUSRUGlobal_V10.3.2.0.PFBRUXM_911968a2e5_9.0.zip">miui_GRUSRUGlobal_V10.3.2.0.PFBRUXM_911968a2e5_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.2.5.0.PFBRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBRUXM/miui_GRUSRUGlobal_V10.2.5.0.PFBRUXM_d8b230c909_9.0.zip">miui_GRUSRUGlobal_V10.2.5.0.PFBRUXM_d8b230c909_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBRUXM/grus_ru_global_images_V10.2.5.0.PFBRUXM_20190425.0000.00_9.0_global_4197bf91f0.tgz">grus_ru_global_images_V10.2.5.0.PFBRUXM_20190425.0000.00_9.0_global_4197bf91f0.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-    <!-- 由此向下区域为底部Footer的内容 -->
-
-    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-        <script
-            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-    </div>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-               >arrow_upward</a></i>
-    </button>
-</body>
-
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<style>
+			li a {
+				text-decoration: none;
+				color: blue;
+			}
+	
+			td a {
+				text-decoration: none;
+				color: black;
+			}
+		</style> 
+		<title>小米9 SE(grus)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：小米9 SE</li> 
+						<li>机型代号：grus</li> 
+						<li>此次更新：V12.5.1.0.RFBCNXM、欧洲EEA版 V12.0.5.0.QFBEUXM</li> 
+						<li>特别感谢：<a href="https://www.miui.com/space-uid-1574990713.html">@人皮_面具 </a></li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
+						<li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/ia6vqunmaIfu">天翼云盘</a>，提取码：fdv1，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#GB_BETA" class="mdui-ripple">国际开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a> 
+			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<!-- <tr>
+							<td>40</td>
+							<td>MIUI11</td>
+							<td>TEXT_HERE</td>
+							<td>10.0</td>
+							<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+							<td>不存在的</td>
+					</tr>
+					<tr>
+							<td>39</td>
+							<td>MIUI11</td>
+							<td>TEXT_HERE</td>
+							<td>10.0</td>
+							<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+							<td>不存在的</td>
+					</tr>
+					<tr>
+							<td>38</td>
+							<td>MIUI11</td>
+							<td>TEXT_HERE</td>
+							<td>10.0</td>
+							<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+							<td>不存在的</td>
+					</tr>
+					<tr>
+							<td>37</td>
+							<td>MIUI11</td>
+							<td>TEXT_HERE</td>
+							<td>10.0</td>
+							<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+							<td>不存在的</td>
+					</tr> --> 
+						<tr> 
+							<td>36</td> 
+							<td>MIUI11</td> 
+							<td>20.3.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.26/miui_GRUS_20.3.26_176a1ef3cd_10.0.zip" id="r">miui_GRUS_20.3.26_176a1ef3cd_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>35</td> 
+							<td>MIUI11</td> 
+							<td>20.3.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.19/miui_GRUS_20.3.19_6bdc1ab5b6_10.0.zip" id="r">miui_GRUS_20.3.19_6bdc1ab5b6_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>34</td> 
+							<td>MIUI11</td> 
+							<td>20.3.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.12/miui_GRUS_20.3.12_793066b41a_10.0.zip" id="r">miui_GRUS_20.3.12_793066b41a_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>33</td> 
+							<td>MIUI11</td> 
+							<td>20.3.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.5/miui_GRUS_20.3.5_1c16355a5c_10.0.zip" id="r">miui_GRUS_20.3.5_1c16355a5c_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>32</td> 
+							<td>MIUI11</td> 
+							<td>20.2.27</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.2.27/miui_GRUS_20.2.27_ac93e25c4a_10.0.zip" id="r">miui_GRUS_20.2.27_ac93e25c4a_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>31</td> 
+							<td>MIUI11</td> 
+							<td>20.1.16</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.16/miui_GRUS_20.1.16_eb5fe1d5a0_10.0.zip" id="r">miui_GRUS_20.1.16_eb5fe1d5a0_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>30</td> 
+							<td>MIUI11</td> 
+							<td>20.1.9</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.9/miui_GRUS_20.1.9_5649488887_10.0.zip" id="r">miui_GRUS_20.1.9_5649488887_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>29</td> 
+							<td>MIUI11</td> 
+							<td>20.1.2</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.2/miui_GRUS_20.1.2_a5abaf5e58_10.0.zip" id="r">miui_GRUS_20.1.2_a5abaf5e58_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>28</td> 
+							<td>MIUI11</td> 
+							<td>9.12.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.26/miui_GRUS_9.12.26_3c8bb9dacd_10.0.zip" id="r">miui_GRUS_9.12.26_3c8bb9dacd_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>27</td> 
+							<td>MIUI11</td> 
+							<td>9.12.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.19/miui_GRUS_9.12.19_801b60bb4b_10.0.zip" id="r">miui_GRUS_9.12.19_801b60bb4b_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>26</td> 
+							<td>MIUI11</td> 
+							<td>9.12.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.12/miui_GRUS_9.12.12_6fa2c80ef9_10.0.zip" id="r">miui_GRUS_9.12.12_6fa2c80ef9_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>25</td> 
+							<td>MIUI11</td> 
+							<td>9.12.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.5/miui_GRUS_9.12.5_e839b0eb19_10.0.zip" id="r">miui_GRUS_9.12.5_e839b0eb19_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>24</td> 
+							<td>MIUI11</td> 
+							<td>9.11.28</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.28/miui_GRUS_9.11.28_6073fa9618_10.0.zip" id="r">miui_GRUS_9.11.28_6073fa9618_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>23</td> 
+							<td>MIUI11</td> 
+							<td>9.11.21</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.21/miui_GRUS_9.11.21_35eeb343c4_10.0.zip" id="r">miui_GRUS_9.11.21_35eeb343c4_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>22</td> 
+							<td>MIUI11</td> 
+							<td>9.11.14</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.14/miui_GRUS_9.11.14_df74ea5740_10.0.zip" id="r">miui_GRUS_9.11.14_df74ea5740_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>21</td> 
+							<td>MIUI11</td> 
+							<td>9.11.7</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.7/miui_GRUS_9.11.7_795858c4cd_10.0.zip" id="r">miui_GRUS_9.11.7_795858c4cd_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>20</td> 
+							<td>MIUI11</td> 
+							<td>9.10.31</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.31/miui_GRUS_9.10.31_c4ea494234_10.0.zip" id="r">miui_GRUS_9.10.31_c4ea494234_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>19</td> 
+							<td>MIUI11</td> 
+							<td>9.10.24</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.24/miui_GRUS_9.10.24_04e12dfdd9_10.0.zip" id="r">miui_GRUS_9.10.24_04e12dfdd9_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>18</td> 
+							<td>MIUI11</td> 
+							<td>9.10.17</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.17/miui_GRUS_9.10.17_009316e931_10.0.zip" id="r">miui_GRUS_9.10.17_009316e931_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>MIUI11</td> 
+							<td>9.9.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.9.26/miui_GRUS_9.9.26_bbf36d803f_9.0.zip" id="r">miui_GRUS_9.9.26_bbf36d803f_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>MIUI10</td> 
+							<td>9.9.3</td> 
+							<td>9.0 Pie</td> 
+							<td><a href=" http://bigota.d.miui.com/9.9.3/miui_GRUS_9.9.3_22e12a913a_9.0.zip" id="r">miui_GRUS_9.9.3_22e12a913a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.9.3/grus_images_9.9.3_20190904.0000.00_9.0_cn_9d9ea95af3.tgz" id="f">grus_images_9.9.3_20190904.0000.00_9.0_cn_9d9ea95af3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>MIUI10</td> 
+							<td>9.8.22</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.22/miui_GRUS_9.8.22_228cad0405_9.0.zip" id="r">miui_GRUS_9.8.22_228cad0405_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.22/grus_images_9.8.22_20190822.0000.00_9.0_cn_aa383ea656.tgz" id="f">grus_images_9.8.22_20190822.0000.00_9.0_cn_aa383ea656.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>MIUI10</td> 
+							<td>9.8.15</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.15/miui_GRUS_9.8.15_324d426649_9.0.zip" id="r">miui_GRUS_9.8.15_324d426649_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.15/grus_images_9.8.15_20190815.0000.00_9.0_cn_5c6474fadd.tgz" id="f">grus_images_9.8.15_20190815.0000.00_9.0_cn_5c6474fadd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>MIUI10</td> 
+							<td>9.8.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.9/miui_GRUS_9.8.9_8ce377c7ef_9.0.zip" id="r">miui_GRUS_9.8.9_8ce377c7ef_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.9/grus_images_9.8.9_20190809.0000.00_9.0_cn_46510901bf.tgz" id="f">grus_images_9.8.9_20190809.0000.00_9.0_cn_46510901bf.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI10</td> 
+							<td>9.8.8</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.8/miui_GRUS_9.8.8_a45534dac4_9.0.zip" id="r">miui_GRUS_9.8.8_a45534dac4_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.8/grus_images_9.8.8_20190808.0000.00_9.0_cn_cb164473e3.tgz" id="f">grus_images_9.8.8_20190808.0000.00_9.0_cn_cb164473e3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI10</td> 
+							<td>9.8.1</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.1/miui_GRUS_9.8.1_a4f5bee229_9.0.zip" id="r">miui_GRUS_9.8.1_a4f5bee229_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.1/grus_images_9.8.1_20190801.0000.00_9.0_cn_6d11b2b70f.tgz" id="f">grus_images_9.8.1_20190801.0000.00_9.0_cn_6d11b2b70f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI10</td> 
+							<td>9.7.25</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.25/miui_GRUS_9.7.25_4a2173b82d_9.0.zip" id="r">miui_GRUS_9.7.25_4a2173b82d_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.25/grus_images_9.7.25_20190725.0000.00_9.0_cn_35d1d8d6d2.tgz" id="f">grus_images_9.7.25_20190725.0000.00_9.0_cn_35d1d8d6d2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI10</td> 
+							<td>9.7.11</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.11/miui_GRUS_9.7.11_9855478e41_9.0.zip" id="r">miui_GRUS_9.7.11_9855478e41_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.11/grus_images_9.7.11_20190711.0000.00_9.0_cn_7efdac72b7.tgz" id="f">grus_images_9.7.11_20190711.0000.00_9.0_cn_7efdac72b7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI10</td> 
+							<td>9.7.4</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.4/miui_GRUS_9.7.4_7f921b35fa_9.0.zip" id="r">miui_GRUS_9.7.4_7f921b35fa_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.4/grus_images_9.7.4_20190704.0000.00_9.0_cn_148fa270ae.tgz" id="f">grus_images_9.7.4_20190704.0000.00_9.0_cn_148fa270ae.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI10</td> 
+							<td>9.6.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/miui_GRUS_9.6.27_ac6651ab02_9.0.zip" id="r">miui_GRUS_9.6.27_ac6651ab02_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/grus_images_9.6.27_20190627.0000.00_9.0_cn_1b66b7ace1.tgz" id="f">grus_images_9.6.27_20190627.0000.00_9.0_cn_1b66b7ace1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI10</td> 
+							<td>9.6.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/miui_GRUS_9.6.20_79988bc6bb_9.0.zip" id="r">miui_GRUS_9.6.20_79988bc6bb_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/grus_images_9.6.20_20190620.0000.00_9.0_cn_2a24a95f7c.tgz" id="f">grus_images_9.6.20_20190620.0000.00_9.0_cn_2a24a95f7c.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI10</td> 
+							<td>9.6.13</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.13/miui_GRUS_9.6.13_b4980ecd04_9.0.zip" id="r">miui_GRUS_9.6.13_b4980ecd04_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI10</td> 
+							<td>9.5.30</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/miui_GRUS_9.5.30_fadcc8f3d6_9.0.zip" id="r">miui_GRUS_9.5.30_fadcc8f3d6_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/grus_images_9.5.30_20190530.0000.00_9.0_cn_c48b976851.tgz" id="f">grus_images_9.5.30_20190530.0000.00_9.0_cn_c48b976851.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI10</td> 
+							<td>9.5.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/miui_GRUS_9.5.9_705ee1e0af_9.0.zip" id="r">miui_GRUS_9.5.9_705ee1e0af_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/grus_images_9.5.9_20190509.0000.00_9.0_cn_4b14c2c19e.tgz" id="f">grus_images_9.5.9_20190509.0000.00_9.0_cn_4b14c2c19e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI10</td> 
+							<td>9.4.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.26/miui_GRUS_9.4.26_477b635a3f_9.0.zip" id="r">miui_GRUS_9.4.26_477b635a3f_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI10</td> 
+							<td>9.4.18</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.18/miui_GRUS_9.4.18_f984a1f790_9.0.zip" id="r">miui_GRUS_9.4.18_f984a1f790_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.4.18/grus_images_9.4.18_20190418.0000.00_9.0_cn_22e903424a.tgz" id="f">grus_images_9.4.18_20190418.0000.00_9.0_cn_22e903424a.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="GB_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI10</td> 
+							<td>9.6.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/miui_GRUSGlobal_9.6.27_ac3b29af09_9.0.zip" id="r">miui_GRUSGlobal_9.6.27_ac3b29af09_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/grus_global_images_9.6.27_20190627.0000.00_9.0_global_86c7d41fbf.tgz" id="f">grus_global_images_9.6.27_20190627.0000.00_9.0_global_86c7d41fbf.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI10</td> 
+							<td>9.6.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/miui_GRUSGlobal_9.6.20_660169b992_9.0.zip" id="r">miui_GRUSGlobal_9.6.20_660169b992_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/grus_global_images_9.6.20_20190620.0000.00_9.0_global_a066571224.tgz" id="f">grus_global_images_9.6.20_20190620.0000.00_9.0_global_a066571224.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI10</td> 
+							<td>9.6.13</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.13/miui_GRUSGlobal_9.6.13_be014db978_9.0.zip" id="r">miui_GRUSGlobal_9.6.13_be014db978_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>18</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>17</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>V12.5.1.0.RFBCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.5.1.0.RFBCNXM/miui_GRUS_V12.5.1.0.RFBCNXM_0aa6dd99a1_11.0.zip" id="r">miui_GRUS_V12.5.1.0.RFBCNXM_0aa6dd99a1_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.5.1.0.RFBCNXM/grus_images_V12.5.1.0.RFBCNXM_20210324.0000.00_11.0_cn_8338654c0b.tgz" id="f">grus_images_V12.5.1.0.RFBCNXM_20210324.0000.00_11.0_cn_8338654c0b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>V12.0.3.0.QFBCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBCNXM/miui_GRUS_V12.0.3.0.QFBCNXM_262c628432_10.0.zip" id="r">miui_GRUS_V12.0.3.0.QFBCNXM_262c628432_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBCNXM/grus_images_V12.0.3.0.QFBCNXM_20201123.0000.00_10.0_cn_30608ec69f.tgz" id="f">grus_images_V12.0.3.0.QFBCNXM_20201123.0000.00_10.0_cn_30608ec69f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V12.0.2.0.QFBCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBCNXM/miui_GRUS_V12.0.2.0.QFBCNXM_7bd5791743_10.0.zip" id="r">miui_GRUS_V12.0.2.0.QFBCNXM_7bd5791743_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBCNXM/grus_images_V12.0.2.0.QFBCNXM_20200804.0000.00_10.0_cn_f9ba1b4234.tgz" id="f">grus_images_V12.0.2.0.QFBCNXM_20200804.0000.00_10.0_cn_f9ba1b4234.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.1.0.QFBCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFBCNXM/miui_GRUS_V12.0.1.0.QFBCNXM_4e2bbe6ba9_10.0.zip" id="r">miui_GRUS_V12.0.1.0.QFBCNXM_4e2bbe6ba9_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V11.0.3.0.QFBCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QFBCNXM/miui_GRUS_V11.0.3.0.QFBCNXM_5f915130e6_10.0.zip" id="r">miui_GRUS_V11.0.3.0.QFBCNXM_5f915130e6_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QFBCNXM/grus_images_V11.0.3.0.QFBCNXM_20200426.0000.00_10.0_cn_da9b1a6100.tgz" id="f">grus_images_V11.0.3.0.QFBCNXM_20200426.0000.00_10.0_cn_da9b1a6100.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V11.0.2.0.QFBCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBCNXM/miui_GRUS_V11.0.2.0.QFBCNXM_40ad667ea3_10.0.zip" id="r">miui_GRUS_V11.0.2.0.QFBCNXM_40ad667ea3_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBCNXM/grus_images_V11.0.2.0.QFBCNXM_20200219.0000.00_10.0_cn_4e05012793.tgz" id="f">grus_images_V11.0.2.0.QFBCNXM_20200219.0000.00_10.0_cn_4e05012793.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V11.0.1.0.QFBCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.1.0.QFBCNXM/miui_GRUS_V11.0.1.0.QFBCNXM_c79c87d07d_10.0.zip" id="r">miui_GRUS_V11.0.1.0.QFBCNXM_c79c87d07d_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.5.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PFBCNXM/miui_GRUS_V11.0.5.0.PFBCNXM_41b4612800_9.0.zip" id="r">miui_GRUS_V11.0.5.0.PFBCNXM_41b4612800_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PFBCNXM/grus_images_V11.0.5.0.PFBCNXM_20191025.0000.00_9.0_cn_28736e7bff.tgz" id="f">grus_images_V11.0.5.0.PFBCNXM_20191025.0000.00_9.0_cn_28736e7bff.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.3.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFBCNXM/miui_GRUS_V11.0.3.0.PFBCNXM_798b0ceef1_9.0.zip" id="r">miui_GRUS_V11.0.3.0.PFBCNXM_798b0ceef1_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFBCNXM/grus_images_V11.0.3.0.PFBCNXM_20190925.0000.00_9.0_cn_bec2006acb.tgz" id="f">grus_images_V11.0.3.0.PFBCNXM_20190925.0000.00_9.0_cn_bec2006acb.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V10.3.6.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFBCNXM/miui_GRUS_V10.3.6.0.PFBCNXM_71316d435a_9.0.zip" id="r">miui_GRUS_V10.3.6.0.PFBCNXM_71316d435a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFBCNXM/grus_images_V10.3.6.0.PFBCNXM_20190827.0000.00_9.0_cn_940f63c326.tgz" id="f">grus_images_V10.3.6.0.PFBCNXM_20190827.0000.00_9.0_cn_940f63c326.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V10.3.3.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBCNXM/miui_GRUS_V10.3.3.0.PFBCNXM_3dcc2884fc_9.0.zip" id="r">miui_GRUS_V10.3.3.0.PFBCNXM_3dcc2884fc_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBCNXM/grus_images_V10.3.3.0.PFBCNXM_20190528.0000.00_9.0_cn_5e7543aec5.tgz" id="f">grus_images_V10.3.3.0.PFBCNXM_20190528.0000.00_9.0_cn_5e7543aec5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.3.1.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBCNXM/miui_GRUS_V10.3.1.0.PFBCNXM_60d33fe1c3_9.0.zip" id="r">miui_GRUS_V10.3.1.0.PFBCNXM_60d33fe1c3_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBCNXM/grus_images_V10.3.1.0.PFBCNXM_20190425.0000.00_9.0_cn_622ff5674f.tgz" id="f">grus_images_V10.3.1.0.PFBCNXM_20190425.0000.00_9.0_cn_622ff5674f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.2.11.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.11.0.PFBCNXM/miui_GRUS_V10.2.11.0.PFBCNXM_a2557d7524_9.0.zip" id="r">miui_GRUS_V10.2.11.0.PFBCNXM_a2557d7524_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.11.0.PFBCNXM/grus_images_V10.2.11.0.PFBCNXM_20190417.0000.00_9.0_cn_0c83f18a88.tgz" id="f">grus_images_V10.2.11.0.PFBCNXM_20190417.0000.00_9.0_cn_0c83f18a88.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.2.8.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.8.0.PFBCNXM/miui_GRUS_V10.2.8.0.PFBCNXM_7ae933bff9_9.0.zip" id="r">miui_GRUS_V10.2.8.0.PFBCNXM_7ae933bff9_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.2.5.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBCNXM/miui_GRUS_V10.2.5.0.PFBCNXM_a8508c5e9e_9.0.zip" id="r">miui_GRUS_V10.2.5.0.PFBCNXM_a8508c5e9e_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBCNXM/grus_images_V10.2.5.0.PFBCNXM_20190305.0000.00_9.0_cn_076794b117.tgz" id="f">grus_images_V10.2.5.0.PFBCNXM_20190305.0000.00_9.0_cn_076794b117.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.2.3.0.PFBCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBCNXM/miui_GRUS_V10.2.3.0.PFBCNXM_0b1a6eef2b_9.0.zip" id="r">miui_GRUS_V10.2.3.0.PFBCNXM_0b1a6eef2b_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBCNXM/grus_images_V10.2.3.0.PFBCNXM_20190220.0000.00_9.0_cn_93c45bcae8.tgz" id="f">grus_images_V10.2.3.0.PFBCNXM_20190220.0000.00_9.0_cn_93c45bcae8.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="GB_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>14</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.4.0.QFBMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFBMIXM/miui_GRUSGlobal_V12.0.4.0.QFBMIXM_429a2a78a5_10.0.zip" id="r">miui_GRUSGlobal_V12.0.4.0.QFBMIXM_429a2a78a5_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFBMIXM/grus_global_images_V12.0.4.0.QFBMIXM_20210316.0000.00_10.0_global_ddaca77920.tgz" id="f">grus_global_images_V12.0.4.0.QFBMIXM_20210316.0000.00_10.0_global_ddaca77920.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.3.0.QFBMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBMIXM/miui_GRUSGlobal_V12.0.3.0.QFBMIXM_6296b46b35_10.0.zip" id="r">miui_GRUSGlobal_V12.0.3.0.QFBMIXM_6296b46b35_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBMIXM/grus_global_images_V12.0.3.0.QFBMIXM_20201209.0000.00_10.0_global_1ace4e2832.tgz" id="f">grus_global_images_V12.0.3.0.QFBMIXM_20201209.0000.00_10.0_global_1ace4e2832.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.2.0.QFBMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBMIXM/miui_GRUSGlobal_V12.0.2.0.QFBMIXM_c855a1dd7e_10.0.zip" id="r">miui_GRUSGlobal_V12.0.2.0.QFBMIXM_c855a1dd7e_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBMIXM/grus_global_images_V12.0.2.0.QFBMIXM_20200910.0000.00_10.0_global_321863ef80.tgz" id="f">grus_global_images_V12.0.2.0.QFBMIXM_20200910.0000.00_10.0_global_321863ef80.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.0.1.0.QFBMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFBMIXM/miui_GRUSGlobal_V12.0.1.0.QFBMIXM_d7ee8341ff_10.0.zip" id="r">miui_GRUSGlobal_V12.0.1.0.QFBMIXM_d7ee8341ff_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFBMIXM/grus_global_images_V12.0.1.0.QFBMIXM_20200805.0000.00_10.0_global_0c99e75c1a.tgz" id="f">grus_global_images_V12.0.1.0.QFBMIXM_20200805.0000.00_10.0_global_0c99e75c1a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.4.0.QFBMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QFBMIXM/miui_GRUSGlobal_V11.0.4.0.QFBMIXM_fae587a098_10.0.zip" id="r">miui_GRUSGlobal_V11.0.4.0.QFBMIXM_fae587a098_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QFBMIXM/grus_global_images_V11.0.4.0.QFBMIXM_20200610.0000.00_10.0_global_6af5a38c78.tgz" id="f">grus_global_images_V11.0.4.0.QFBMIXM_20200610.0000.00_10.0_global_6af5a38c78.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.3.0.QFBMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.3.0.QFBMIXM/miui_GRUSGlobal_V11.0.3.0.QFBMIXM_630056affc_10.0.zip" id="r">miui_GRUSGlobal_V11.0.3.0.QFBMIXM_630056affc_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.2.0.QFBMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBMIXM/miui_GRUSGlobal_V11.0.2.0.QFBMIXM_5e899dbcec_10.0.zip" id="r">miui_GRUSGlobal_V11.0.2.0.QFBMIXM_5e899dbcec_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBMIXM/grus_global_images_V11.0.2.0.QFBMIXM_20200310.0000.00_10.0_global_0fc5ca5acd.tgz" id="f">grus_global_images_V11.0.2.0.QFBMIXM_20200310.0000.00_10.0_global_0fc5ca5acd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.0.6.0.PFBMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBMIXM/miui_GRUSGlobal_V11.0.6.0.PFBMIXM_df3fdf69d6_9.0.zip" id="r">miui_GRUSGlobal_V11.0.6.0.PFBMIXM_df3fdf69d6_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBMIXM/grus_global_images_V11.0.6.0.PFBMIXM_20191224.0000.00_9.0_global_93745e72c5.tgz" id="f">grus_global_images_V11.0.6.0.PFBMIXM_20191224.0000.00_9.0_global_93745e72c5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.4.0.PFBMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBMIXM/miui_GRUSGlobal_V11.0.4.0.PFBMIXM_af38858a0f_9.0.zip" id="r">miui_GRUSGlobal_V11.0.4.0.PFBMIXM_af38858a0f_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBMIXM/grus_global_images_V11.0.4.0.PFBMIXM_20191023.0000.00_9.0_global_99c9b5dc56.tgz" id="f">grus_global_images_V11.0.4.0.PFBMIXM_20191023.0000.00_9.0_global_99c9b5dc56.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.4.0.PFBMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBMIXM/miui_GRUSGlobal_V10.3.4.0.PFBMIXM_1af3c0ea1e_9.0.zip" id="r">miui_GRUSGlobal_V10.3.4.0.PFBMIXM_1af3c0ea1e_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBMIXM/grus_global_images_V10.3.4.0.PFBMIXM_20190916.0000.00_9.0_global_c5da057ab3.tgz" id="f">grus_global_images_V10.3.4.0.PFBMIXM_20190916.0000.00_9.0_global_c5da057ab3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.3.3.0.PFBMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBMIXM/miui_GRUSGlobal_V10.3.3.0.PFBMIXM_2842fe0d8f_9.0.zip" id="r">miui_GRUSGlobal_V10.3.3.0.PFBMIXM_2842fe0d8f_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PFBMIXM/grus_global_images_V10.3.3.0.PFBMIXM_20190726.0000.00_9.0_global_f60461e04d.tgz" id="f">grus_global_images_V10.3.3.0.PFBMIXM_20190726.0000.00_9.0_global_f60461e04d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.3.1.0.PFBMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBMIXM/miui_GRUSGlobal_V10.3.1.0.PFBMIXM_b81f0ca9e9_9.0.zip" id="r">miui_GRUSGlobal_V10.3.1.0.PFBMIXM_b81f0ca9e9_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBMIXM/grus_global_images_V10.3.1.0.PFBMIXM_20190529.0000.00_9.0_global_cd2042f4b3.tgz" id="f">grus_global_images_V10.3.1.0.PFBMIXM_20190529.0000.00_9.0_global_cd2042f4b3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.2.2.0.PFBMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.2.0.PFBMIXM/miui_GRUSGlobal_V10.2.2.0.PFBMIXM_b4cc336f0d_9.0.zip" id="r">miui_GRUSGlobal_V10.2.2.0.PFBMIXM_b4cc336f0d_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.2.0.PFBMIXM/grus_global_images_V10.2.2.0.PFBMIXM_20190425.0000.00_9.0_global_53de02bb9f.tgz" id="f">grus_global_images_V10.2.2.0.PFBMIXM_20190425.0000.00_9.0_global_53de02bb9f.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="EEA_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">EEA稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>18</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>V12.0.5.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFBEUXM/miui_GRUSEEAGlobal_V12.0.5.0.QFBEUXM_6aea8866c8_10.0.zip" id="r">miui_GRUSEEAGlobal_V12.0.5.0.QFBEUXM_6aea8866c8_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFBEUXM/grus_eea_global_images_V12.0.5.0.QFBEUXM_20210318.0000.00_10.0_eea_ed1aaf2941.tgz" id="f">grus_eea_global_images_V12.0.5.0.QFBEUXM_20210318.0000.00_10.0_eea_ed1aaf2941.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>V12.0.4.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFBEUXM/miui_GRUSEEAGlobal_V12.0.4.0.QFBEUXM_fe7f382466_10.0.zip" id="r">miui_GRUSEEAGlobal_V12.0.4.0.QFBEUXM_fe7f382466_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFBEUXM/grus_eea_global_images_V12.0.4.0.QFBEUXM_20210308.0000.00_10.0_eea_d329f78e9b.tgz" id="f">grus_eea_global_images_V12.0.4.0.QFBEUXM_20210308.0000.00_10.0_eea_d329f78e9b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>V12.0.3.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBEUXM/miui_GRUSEEAGlobal_V12.0.3.0.QFBEUXM_81b6632b04_10.0.zip" id="r">miui_GRUSEEAGlobal_V12.0.3.0.QFBEUXM_81b6632b04_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBEUXM/grus_eea_global_images_V12.0.3.0.QFBEUXM_20201209.0000.00_10.0_eea_075e8dab50.tgz" id="f">grus_eea_global_images_V12.0.3.0.QFBEUXM_20201209.0000.00_10.0_eea_075e8dab50.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V12.0.2.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBEUXM/miui_GRUSEEAGlobal_V12.0.2.0.QFBEUXM_e0d020988d_10.0.zip" id="r">miui_GRUSEEAGlobal_V12.0.2.0.QFBEUXM_e0d020988d_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBEUXM/grus_eea_global_images_V12.0.2.0.QFBEUXM_20200910.0000.00_10.0_eea_ae8dbebcb3.tgz" id="f">grus_eea_global_images_V12.0.2.0.QFBEUXM_20200910.0000.00_10.0_eea_ae8dbebcb3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.1.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFBEUXM/miui_GRUSEEAGlobal_V12.0.1.0.QFBEUXM_3fa8811005_10.0.zip" id="r">miui_GRUSEEAGlobal_V12.0.1.0.QFBEUXM_3fa8811005_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFBEUXM/grus_eea_global_images_V12.0.1.0.QFBEUXM_20200806.0000.00_10.0_eea_4017757770.tgz" id="f">grus_eea_global_images_V12.0.1.0.QFBEUXM_20200806.0000.00_10.0_eea_4017757770.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V11.0.9.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.9.0.QFBEUXM/miui_GRUSEEAGlobal_V11.0.9.0.QFBEUXM_27f2ff2de9_10.0.zip" id="r">miui_GRUSEEAGlobal_V11.0.9.0.QFBEUXM_27f2ff2de9_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.9.0.QFBEUXM/grus_eea_global_images_V11.0.9.0.QFBEUXM_20200702.0000.00_10.0_eea_cfbed573f4.tgz" id="f">grus_eea_global_images_V11.0.9.0.QFBEUXM_20200702.0000.00_10.0_eea_cfbed573f4.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V11.0.6.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFBEUXM/miui_GRUSEEAGlobal_V11.0.6.0.QFBEUXM_508141efd0_10.0.zip" id="r">miui_GRUSEEAGlobal_V11.0.6.0.QFBEUXM_508141efd0_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFBEUXM/grus_eea_global_images_V11.0.6.0.QFBEUXM_20200610.0000.00_10.0_eea_f627e224aa.tgz" id="f">grus_eea_global_images_V11.0.6.0.QFBEUXM_20200610.0000.00_10.0_eea_f627e224aa.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V11.0.5.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.5.0.QFBEUXM/miui_GRUSEEAGlobal_V11.0.5.0.QFBEUXM_fc63e85941_10.0.zip" id="r">miui_GRUSEEAGlobal_V11.0.5.0.QFBEUXM_fc63e85941_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.2.0.QFBEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBEUXM/miui_GRUSEEAGlobal_V11.0.2.0.QFBEUXM_522065df4b_10.0.zip" id="r">miui_GRUSEEAGlobal_V11.0.2.0.QFBEUXM_522065df4b_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBEUXM/grus_eea_global_images_V11.0.2.0.QFBEUXM_20200309.0000.00_10.0_eea_28ac2817aa.tgz" id="f">grus_eea_global_images_V11.0.2.0.QFBEUXM_20200309.0000.00_10.0_eea_28ac2817aa.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.6.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBEUXM/miui_GRUSEEAGlobal_V11.0.6.0.PFBEUXM_6e5dea41d3_9.0.zip" id="r">miui_GRUSEEAGlobal_V11.0.6.0.PFBEUXM_6e5dea41d3_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBEUXM/grus_eea_global_images_V11.0.6.0.PFBEUXM_20191224.0000.00_9.0_eea_ad3eddd89b.tgz" id="f">grus_eea_global_images_V11.0.6.0.PFBEUXM_20191224.0000.00_9.0_eea_ad3eddd89b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.4.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBEUXM/miui_GRUSEEAGlobal_V11.0.4.0.PFBEUXM_d4f398c886_9.0.zip" id="r">miui_GRUSEEAGlobal_V11.0.4.0.PFBEUXM_d4f398c886_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBEUXM/grus_eea_global_images_V11.0.4.0.PFBEUXM_20191023.0000.00_9.0_eea_796fefd83c.tgz" id="f">grus_eea_global_images_V11.0.4.0.PFBEUXM_20191023.0000.00_9.0_eea_796fefd83c.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V10.3.9.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.9.0.PFBEUXM/miui_GRUSEEAGlobal_V10.3.9.0.PFBEUXM_f1b6a0764f_9.0.zip" id="r">miui_GRUSEEAGlobal_V10.3.9.0.PFBEUXM_f1b6a0764f_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.9.0.PFBEUXM/grus_eea_global_images_V10.3.9.0.PFBEUXM_20190916.0000.00_9.0_eea_a7ef0d0fca.tgz" id="f">grus_eea_global_images_V10.3.9.0.PFBEUXM_20190916.0000.00_9.0_eea_a7ef0d0fca.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.3.4.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBEUXM/miui_GRUSEEAGlobal_V10.3.4.0.PFBEUXM_409f6dbb6f_9.0.zip" id="r">miui_GRUSEEAGlobal_V10.3.4.0.PFBEUXM_409f6dbb6f_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBEUXM/grus_eea_global_images_V10.3.4.0.PFBEUXM_20190729.0000.00_9.0_eea_802c244357.tgz" id="f">grus_eea_global_images_V10.3.4.0.PFBEUXM_20190729.0000.00_9.0_eea_802c244357.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.1.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.1.0.PFBEUXM/miui_GRUSEEAGlobal_V10.3.1.0.PFBEUXM_3d43a95581_9.0.zip" id="r">miui_GRUSEEAGlobal_V10.3.1.0.PFBEUXM_3d43a95581_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.2.9.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.9.0.PFBEUXM/miui_GRUSEEAGlobal_V10.2.9.0.PFBEUXM_432d8a9116_9.0.zip" id="r">miui_GRUSEEAGlobal_V10.2.9.0.PFBEUXM_432d8a9116_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.9.0.PFBEUXM/grus_eea_global_images_V10.2.9.0.PFBEUXM_20190524.0000.00_9.0_eea_aa49baa4dd.tgz" id="f">grus_eea_global_images_V10.2.9.0.PFBEUXM_20190524.0000.00_9.0_eea_aa49baa4dd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.2.5.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBEUXM/miui_GRUSEEAGlobal_V10.2.5.0.PFBEUXM_16141f0824_9.0.zip" id="r">miui_GRUSEEAGlobal_V10.2.5.0.PFBEUXM_16141f0824_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBEUXM/grus_eea_global_images_V10.2.5.0.PFBEUXM_20190422.0000.00_9.0_eea_dbf9ebefcd.tgz" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.2.3.0.PFBEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBEUXM/miui_GRUSEEAGlobal_V10.2.3.0.PFBEUXM_e9501746e2_9.0.zip" id="r">miui_GRUSEEAGlobal_V10.2.3.0.PFBEUXM_e9501746e2_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.PFBEUXM/grus_eea_global_images_V10.2.3.0.PFBEUXM_20190403.0000.00_9.0_eea_60219f14d6.tgz" id="f">grus_eea_global_images_V10.2.3.0.PFBEUXM_20190403.0000.00_9.0_eea_60219f14d6.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="RU_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">俄罗斯稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>14</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>13</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.3.0.QFBRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBRUXM/miui_GRUSRUGlobal_V12.0.3.0.QFBRUXM_82e97fe15e_10.0.zip" id="r">miui_GRUSRUGlobal_V12.0.3.0.QFBRUXM_82e97fe15e_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFBRUXM/grus_ru_global_images_V12.0.3.0.QFBRUXM_20210316.0000.00_10.0_global_16487ecd8a.tgz" id="f">grus_ru_global_images_V12.0.3.0.QFBRUXM_20210316.0000.00_10.0_global_16487ecd8a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.2.0.QFBRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBRUXM/miui_GRUSRUGlobal_V12.0.2.0.QFBRUXM_6954599fc3_10.0.zip" id="r">miui_GRUSRUGlobal_V12.0.2.0.QFBRUXM_6954599fc3_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFBRUXM/grus_ru_global_images_V12.0.2.0.QFBRUXM_20201209.0000.00_10.0_global_8c1caa948e.tgz" id="f">grus_ru_global_images_V12.0.2.0.QFBRUXM_20201209.0000.00_10.0_global_8c1caa948e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.0.1.0.QFBRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFBRUXM/miui_GRUSRUGlobal_V12.0.1.0.QFBRUXM_fa38eed8dc_10.0.zip" id="r">miui_GRUSRUGlobal_V12.0.1.0.QFBRUXM_fa38eed8dc_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFBRUXM/grus_ru_global_images_V12.0.1.0.QFBRUXM_20200806.0000.00_10.0_global_9c3919ddb5.tgz" id="f">grus_ru_global_images_V12.0.1.0.QFBRUXM_20200806.0000.00_10.0_global_9c3919ddb5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.4.0.QFBRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QFBRUXM/miui_GRUSRUGlobal_V11.0.4.0.QFBRUXM_08e68c43df_10.0.zip" id="r">miui_GRUSRUGlobal_V11.0.4.0.QFBRUXM_08e68c43df_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QFBRUXM/grus_ru_global_images_V11.0.4.0.QFBRUXM_20200610.0000.00_10.0_global_9039c9f171.tgz" id="f">grus_ru_global_images_V11.0.4.0.QFBRUXM_20200610.0000.00_10.0_global_9039c9f171.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.3.0.QFBRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.3.0.QFBRUXM/miui_GRUSRUGlobal_V11.0.3.0.QFBRUXM_421bf0a226_10.0.zip" id="r">miui_GRUSRUGlobal_V11.0.3.0.QFBRUXM_421bf0a226_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.2.0.QFBRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBRUXM/miui_GRUSRUGlobal_V11.0.2.0.QFBRUXM_1a319a61d1_10.0.zip" id="r">miui_GRUSRUGlobal_V11.0.2.0.QFBRUXM_1a319a61d1_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFBRUXM/grus_ru_global_images_V11.0.2.0.QFBRUXM_20200309.0000.00_10.0_global_529ef034bd.tgz" id="f">grus_ru_global_images_V11.0.2.0.QFBRUXM_20200309.0000.00_10.0_global_529ef034bd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.0.6.0.PFBRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBRUXM/miui_GRUSRUGlobal_V11.0.6.0.PFBRUXM_55e0819503_9.0.zip" id="r">miui_GRUSRUGlobal_V11.0.6.0.PFBRUXM_55e0819503_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFBRUXM/grus_ru_global_images_V11.0.6.0.PFBRUXM_20191224.0000.00_9.0_global_33f860796e.tgz" id="f">grus_ru_global_images_V11.0.6.0.PFBRUXM_20191224.0000.00_9.0_global_33f860796e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.4.0.PFBRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBRUXM/miui_GRUSRUGlobal_V11.0.4.0.PFBRUXM_1a85f12137_9.0.zip" id="r">miui_GRUSRUGlobal_V11.0.4.0.PFBRUXM_1a85f12137_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFBRUXM/grus_ru_global_images_V11.0.4.0.PFBRUXM_20191023.0000.00_9.0_global_1acdc9da8b.tgz" id="f">grus_ru_global_images_V11.0.4.0.PFBRUXM_20191023.0000.00_9.0_global_1acdc9da8b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.5.0.PFBRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PFBRUXM/miui_GRUSRUGlobal_V10.3.5.0.PFBRUXM_0a726190e3_9.0.zip" id="r">miui_GRUSRUGlobal_V10.3.5.0.PFBRUXM_0a726190e3_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PFBRUXM/grus_ru_global_images_V10.3.5.0.PFBRUXM_20190917.0000.00_9.0_global_1f2f2c8fd0.tgz" id="f">grus_ru_global_images_V10.3.5.0.PFBRUXM_20190917.0000.00_9.0_global_1f2f2c8fd0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.3.4.0.PFBRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBRUXM/miui_GRUSRUGlobal_V10.3.4.0.PFBRUXM_36d8f8f319_9.0.zip" id="r">miui_GRUSRUGlobal_V10.3.4.0.PFBRUXM_36d8f8f319_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFBRUXM/grus_ru_global_images_V10.3.4.0.PFBRUXM_20190726.0000.00_9.0_global_d999377e4a.tgz" id="f">grus_ru_global_images_V10.3.4.0.PFBRUXM_20190726.0000.00_9.0_global_d999377e4a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.3.2.0.PFBRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.2.0.PFBRUXM/miui_GRUSRUGlobal_V10.3.2.0.PFBRUXM_911968a2e5_9.0.zip" id="r">miui_GRUSRUGlobal_V10.3.2.0.PFBRUXM_911968a2e5_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.2.5.0.PFBRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBRUXM/miui_GRUSRUGlobal_V10.2.5.0.PFBRUXM_d8b230c909_9.0.zip" id="r">miui_GRUSRUGlobal_V10.2.5.0.PFBRUXM_d8b230c909_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.PFBRUXM/grus_ru_global_images_V10.2.5.0.PFBRUXM_20190425.0000.00_9.0_global_4197bf91f0.tgz" id="f">grus_ru_global_images_V10.2.5.0.PFBRUXM_20190425.0000.00_9.0_global_4197bf91f0.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>

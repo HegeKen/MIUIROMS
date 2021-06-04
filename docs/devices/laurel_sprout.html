@@ -1,224 +1,412 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<style>
+		li a {
+			text-decoration: none;
+			color: blue;
+		}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-      <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
-      </script>
-    <style>
-        li a {
-            text-decoration: none;
-            color: blue;
-        }
-
-        td a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
-    <title>小米A3(laurel_sprout)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body>
-    <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
-        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-        <div class="mdui-toolbar-spacer"></div>
-        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                    <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                    <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                    <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="mdui-panel mdui-panel-gapless">
-        <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-            <div class="mdui-panel-item-body">
-                <ol>
-                    <li>机型：小米A3 代号：laurel_sprout</li>
-                    <li>此次更新项目：V10.3.4.0.PFQMIXM</li>
-                    <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
-                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a
-                            href="http://www.miui.com/unlock">传送门</a></li>
-                    <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为ROM的正式内容 -->
-
-    <div><br></div>
-    <div id="GB_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国际稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>15</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>14</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>13</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>12</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>11</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>6</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>5</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>4</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>3</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>2</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.3.4.0.PFQMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.4.0.PFQMIXM/laurel_sprout_global_images_V10.3.4.0.PFQMIXM_20190815.0000.00_9.0_00838b4c0e.tgz">laurel_sprout_global_images_V10.3.4.0.PFQMIXM_20190815.0000.00_9.0_00838b4c0e.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为底部Footer的内容 -->
-
-    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-        <script
-            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-    </div>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
-                style="text-decoration: none;color:black;">arrow_upward</a></i>
-    </button>
-</body>
-
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+	</style> 
+		<title>小米A3(laurel_sprout)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：小米A3</li> 
+						<li>机型代号：laurel_sprout</li> 
+						<li>此次更新：欧洲EEA版 V12.0.7.0.RFQEUXM</li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://twrp.me/xiaomi/xiaomimia3.html">TWRP官方</a></li> 
+						<li>第三方Recovery:<a href="https://orangefox.download/zh-CN/device/laurel_sprout">橙狐Rec</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a> 
+		</div> 
+		<br> 
+			<div class="mdui-container-fluid" id="GB_STABLE"> 
+				<div class="mdui-table-fluid"> 
+					<table class="mdui-table"> 
+						<thead> 
+							<tr> 
+								<th class="mdui-text-color-red">国际稳定版</th> 
+								<th>MIUI版本</th> 
+								<th>Android版本</th> 
+								<th>卡刷包</th> 
+								<th>线刷包</th> 
+							</tr> 
+						</thead> 
+						<tbody> 
+							<tr class="mdui-hidden"> 
+								<td>22</td> 
+								<td>TEXT_HERE</td> 
+								<td>11.0</td> 
+								<td><a href="TEXT_HERE">TEXT_HERE</a></td> 
+								<td><a href="TEXT_HERE">TEXT_HERE</a></td> 
+							</tr> 
+							<tr> 
+								<td>21</td> 
+								<td>V12.0.9.0.RFQMIXM</td> 
+								<td>11.0</td> 
+								<td><a href="https://bigota.d.miui.com/V12.0.9.0.RFQMIXM/miui_LAURELSPROUTGlobal_V12.0.9.0.RFQMIXM_bbc3ab894d_11.0.zip" id="r">miui_LAURELSPROUTGlobal_V12.0.9.0.RFQMIXM_bbc3ab894d_11.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V12.0.9.0.RFQMIXM/laurel_sprout_global_images_V12.0.9.0.RFQMIXM_20210506.0000.00_11.0_71b71c458f.tgz" id="f">laurel_sprout_global_images_V12.0.9.0.RFQMIXM_20210506.0000.00_11.0_71b71c458f.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>20</td> 
+								<td>V12.0.8.0.RFQMIXM</td> 
+								<td>11.0</td> 
+								<td><a href="https://bigota.d.miui.com/V12.0.8.0.RFQMIXM/miui_LAURELSPROUTGlobal_V12.0.8.0.RFQMIXM_70d2678cd2_11.0.zip" id="r">miui_LAURELSPROUTGlobal_V12.0.8.0.RFQMIXM_70d2678cd2_11.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V12.0.8.0.RFQMIXM/laurel_sprout_global_images_V12.0.8.0.RFQMIXM_20210409.0000.00_11.0_b4c6e3d5b3.tgz" id="f">laurel_sprout_global_images_V12.0.8.0.RFQMIXM_20210409.0000.00_11.0_b4c6e3d5b3.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>19</td> 
+								<td>V11.0.23.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.23.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.23.0.QFQMIXM_0904d681f7_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.23.0.QFQMIXM_0904d681f7_10.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.23.0.QFQMIXM/laurel_sprout_global_images_V11.0.23.0.QFQMIXM_20201124.0000.00_10.0_f3be5e451c.tgz" id="f">laurel_sprout_global_images_V11.0.23.0.QFQMIXM_20201124.0000.00_10.0_f3be5e451c.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>18</td> 
+								<td>V11.0.22.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.22.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.22.0.QFQMIXM_936196d72c_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.22.0.QFQMIXM_936196d72c_10.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.22.0.QFQMIXM/laurel_sprout_global_images_V11.0.22.0.QFQMIXM_20201017.0000.00_10.0_3d93e2bbe4.tgz" id="f">laurel_sprout_global_images_V11.0.22.0.QFQMIXM_20201017.0000.00_10.0_3d93e2bbe4.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>17</td> 
+								<td>V11.0.21.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.21.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.21.0.QFQMIXM_047615acf7_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.21.0.QFQMIXM_047615acf7_10.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.21.0.QFQMIXM/laurel_sprout_global_images_V11.0.21.0.QFQMIXM_20200917.0000.00_10.0_89ca2e3654.tgz" id="f">laurel_sprout_global_images_V11.0.21.0.QFQMIXM_20200917.0000.00_10.0_89ca2e3654.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>16</td> 
+								<td>V11.0.20.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.20.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.20.0.QFQMIXM_f9140f6ac5_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.20.0.QFQMIXM_f9140f6ac5_10.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.20.0.QFQMIXM/laurel_sprout_global_images_V11.0.20.0.QFQMIXM_20200804.0000.00_10.0_a3dc6cba99.tgz" id="f">laurel_sprout_global_images_V11.0.20.0.QFQMIXM_20200804.0000.00_10.0_a3dc6cba99.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>15</td> 
+								<td>V11.0.19.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.19.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.19.0.QFQMIXM_fcf03d8967_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.19.0.QFQMIXM_fcf03d8967_10.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.19.0.QFQMIXM/laurel_sprout_global_images_V11.0.19.0.QFQMIXM_20200717.0000.00_10.0_3bbe02439f.tgz" id="f">laurel_sprout_global_images_V11.0.19.0.QFQMIXM_20200717.0000.00_10.0_3bbe02439f.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>14</td> 
+								<td>V11.0.16.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.16.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.16.0.QFQMIXM_f85f15b60e_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.16.0.QFQMIXM_f85f15b60e_10.0.zip</a></td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.16.0.QFQMIXM/laurel_sprout_global_images_V11.0.16.0.QFQMIXM_20200623.0000.00_10.0_c335869d35.tgz" id="f">laurel_sprout_global_images_V11.0.16.0.QFQMIXM_20200623.0000.00_10.0_c335869d35.tgz</a></td> 
+							</tr> 
+							<tr> 
+								<td>13</td> 
+								<td>V11.0.15.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.15.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.15.0.QFQMIXM_cb9117646e_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.15.0.QFQMIXM_cb9117646e_10.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>12</td> 
+								<td>V11.0.14.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.14.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.14.0.QFQMIXM_a24771a399_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.14.0.QFQMIXM_a24771a399_10.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>11</td> 
+								<td>V11.0.8.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.8.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.8.0.QFQMIXM_79d650b0da_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.8.0.QFQMIXM_79d650b0da_10.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>10</td> 
+								<td>V11.0.7.0.QFQMIXM</td> 
+								<td>10.0</td> 
+								<td><a href="https://bigota.d.miui.com/V11.0.7.0.QFQMIXM/miui_LAURELSPROUTGlobal_V11.0.7.0.QFQMIXM_e4332e88a7_10.0.zip" id="r">miui_LAURELSPROUTGlobal_V11.0.7.0.QFQMIXM_e4332e88a7_10.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>9</td> 
+								<td>V10.3.16.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.16.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.16.0.PFQMIXM_f0b7606358_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.16.0.PFQMIXM_f0b7606358_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>8</td> 
+								<td>V10.3.14.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.14.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.14.0.PFQMIXM_eaec3e405b_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.14.0.PFQMIXM_eaec3e405b_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>7</td> 
+								<td>V10.3.13.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.13.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.13.0.PFQMIXM_7a62147365_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.13.0.PFQMIXM_7a62147365_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>6</td> 
+								<td>V10.3.12.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.12.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.12.0.PFQMIXM_2b83b4ee7b_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.12.0.PFQMIXM_2b83b4ee7b_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>5</td> 
+								<td>V10.3.9.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.9.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.9.0.PFQMIXM_fa72a89a9e_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.9.0.PFQMIXM_fa72a89a9e_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>4</td> 
+								<td>V10.3.8.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.8.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.8.0.PFQMIXM_51fc210a7a_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.8.0.PFQMIXM_51fc210a7a_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>3</td> 
+								<td>V10.3.6.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.6.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.6.0.PFQMIXM_00713c5a1d_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.6.0.PFQMIXM_00713c5a1d_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>2</td> 
+								<td>V10.3.5.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="https://bigota.d.miui.com/V10.3.5.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.5.0.PFQMIXM_33a767404a_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.5.0.PFQMIXM_33a767404a_9.0.zip</a></td> 
+								<td>未发布</td> 
+							</tr> 
+							<tr> 
+								<td>1</td> 
+								<td>V10.3.4.0.PFQMIXM</td> 
+								<td>9.0 Pie</td> 
+								<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFQMIXM/miui_LAURELSPROUTGlobal_V10.3.4.0.PFQMIXM_96c5aa3fd6_9.0.zip" id="r">miui_LAURELSPROUTGlobal_V10.3.4.0.PFQMIXM_96c5aa3fd6_9.0.zip</a></td> 
+								<td><a href="http://bigota.d.miui.com/V10.3.4.0.PFQMIXM/laurel_sprout_global_images_V10.3.4.0.PFQMIXM_20190815.0000.00_9.0_00838b4c0e.tgz" id="f">laurel_sprout_global_images_V10.3.4.0.PFQMIXM_20190815.0000.00_9.0_00838b4c0e.tgz</a></td> 
+							</tr> 
+						</tbody> 
+					</table> 
+				</div> 
+			</div> 
+			<div class="mdui-container-fluid" id="EEA_STABLE"> 
+		<div class="mdui-table-fluid"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">EEA稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody>
+					<tr class="mdui-hidden"> 
+						<td>15</td> 
+						<td>TEXT_HERE</td> 
+						<td>11.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>14</td> 
+						<td>TEXT_HERE</td> 
+						<td>11.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>13</td> 
+						<td>V12.0.7.0.RFQEUXM</td> 
+						<td>11.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.RFQEUXM/miui_LAURELSPROUTEEAGlobal_V12.0.7.0.RFQEUXM_6dcb79d85b_11.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V12.0.7.0.RFQEUXM_6dcb79d85b_11.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.RFQEUXM/laurel_sprout_eea_global_images_V12.0.7.0.RFQEUXM_20210513.0000.00_11.0_3e81dfb140.tgz" id="f">laurel_sprout_eea_global_images_V12.0.7.0.RFQEUXM_20210513.0000.00_11.0_3e81dfb140.tgz</a></td> 
+					</tr> 
+                    <tr> 
+						<td>12</td> 
+						<td>V12.0.6.0.RFQEUXM</td> 
+						<td>11.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.RFQEUXM/miui_LAURELSPROUTEEAGlobal_V12.0.6.0.RFQEUXM_57c4951751_11.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V12.0.6.0.RFQEUXM_57c4951751_11.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.RFQEUXM/laurel_sprout_eea_global_images_V12.0.6.0.RFQEUXM_20210415.0000.00_11.0_009fd62847.tgz" id="f">laurel_sprout_eea_global_images_V12.0.6.0.RFQEUXM_20210415.0000.00_11.0_009fd62847.tgz</a></td> 
+					</tr> 
+                    <tr> 
+						<td>11</td> 
+						<td>V12.0.5.0.RFQEUXM</td> 
+						<td>11.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.RFQEUXM/miui_LAURELSPROUTEEAGlobal_V12.0.5.0.RFQEUXM_7cd26818db_11.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V12.0.5.0.RFQEUXM_7cd26818db_11.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.5.0.RFQEUXM/laurel_sprout_eea_global_images_V12.0.5.0.RFQEUXM_20210311.0000.00_11.0_fd2461bef2.tgz" id="f">laurel_sprout_eea_global_images_V12.0.5.0.RFQEUXM_20210311.0000.00_11.0_fd2461bef2.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>10</td> 
+						<td>V12.0.3.0.RFQEUXM</td> 
+						<td>11.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.RFQEUXM/miui_LAURELSPROUTEEAGlobal_V12.0.3.0.RFQEUXM_a3af6e0308_11.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V12.0.3.0.RFQEUXM_a3af6e0308_11.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.RFQEUXM/laurel_sprout_eea_global_images_V12.0.3.0.RFQEUXM_20210129.0000.00_11.0_e5463f39f1.tgz" id="f">laurel_sprout_eea_global_images_V12.0.3.0.RFQEUXM_20210129.0000.00_11.0_e5463f39f1.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>9</td> 
+						<td>V11.0.10.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.10.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.10.0.QFQEUXM_6616c313be_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.10.0.QFQEUXM_6616c313be_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.10.0.QFQEUXM/laurel_sprout_eea_global_images_V11.0.10.0.QFQEUXM_20201125.0000.00_10.0_00ac31f832.tgz" id="f">laurel_sprout_eea_global_images_V11.0.10.0.QFQEUXM_20201125.0000.00_10.0_00ac31f832.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V11.0.9.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.9.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.9.0.QFQEUXM_9d9c148fb6_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.9.0.QFQEUXM_9d9c148fb6_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.9.0.QFQEUXM/laurel_sprout_eea_global_images_V11.0.9.0.QFQEUXM_20201019.0000.00_10.0_fffaf8c49d.tgz" id="f">laurel_sprout_eea_global_images_V11.0.9.0.QFQEUXM_20201019.0000.00_10.0_fffaf8c49d.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V11.0.8.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.8.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.8.0.QFQEUXM_7cd89c6e33_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.8.0.QFQEUXM_7cd89c6e33_10.0.zip</a></td> 
+						<td><a href="miui_LAURELSPROUTEEAGlobal_V11.0.8.0.QFQEUXM_7cd89c6e33_10.0.zip" id="f">laurel_sprout_eea_global_images_V11.0.8.0.QFQEUXM_20200926.0000.00_10.0_1e84b7ff7d.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V11.0.6.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.6.0.QFQEUXM_85c4733559_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.6.0.QFQEUXM_85c4733559_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFQEUXM/laurel_sprout_eea_global_images_V11.0.6.0.QFQEUXM_20200817.0000.00_10.0_b721dbb2fb.tgz" id="f">laurel_sprout_eea_global_images_V11.0.6.0.QFQEUXM_20200817.0000.00_10.0_b721dbb2fb.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V11.0.5.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.5.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.5.0.QFQEUXM_79d7c1c43e_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.5.0.QFQEUXM_79d7c1c43e_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.5.0.QFQEUXM/laurel_sprout_eea_global_images_V11.0.5.0.QFQEUXM_20200723.0000.00_10.0_682dc26eba.tgz" id="f">laurel_sprout_eea_global_images_V11.0.5.0.QFQEUXM_20200723.0000.00_10.0_682dc26eba.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V11.0.3.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.3.0.QFQEUXM_1b8bcf1188_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.3.0.QFQEUXM_1b8bcf1188_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QFQEUXM/laurel_sprout_eea_global_images_V11.0.3.0.QFQEUXM_20200611.0000.00_10.0_a0fc54b57d.tgz" id="f">laurel_sprout_eea_global_images_V11.0.3.0.QFQEUXM_20200611.0000.00_10.0_a0fc54b57d.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V11.0.2.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.2.0.QFQEUXM_0ff3d8f3c6_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.2.0.QFQEUXM_0ff3d8f3c6_10.0.zip</a></td> 
+						<td>未发布</td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.1.0.QFQEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.1.0.QFQEUXM/miui_LAURELSPROUTEEAGlobal_V11.0.1.0.QFQEUXM_cbb26a2c91_10.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V11.0.1.0.QFQEUXM_cbb26a2c91_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.1.0.QFQEUXM/laurel_sprout_eea_global_images_V11.0.1.0.QFQEUXM_20200424.0000.00_10.0_9c5f95ef79.tgz" id="f">laurel_sprout_eea_global_images_V11.0.1.0.QFQEUXM_20200424.0000.00_10.0_9c5f95ef79.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V10.3.15.0.PFQEUXM</td> 
+						<td>9.0 Pie</td> 
+						<td><a href="https://bigota.d.miui.com/V10.3.15.0.PFQEUXM/miui_LAURELSPROUTEEAGlobal_V10.3.15.0.PFQEUXM_bd270736f7_9.0.zip" id="r">miui_LAURELSPROUTEEAGlobal_V10.3.15.0.PFQEUXM_bd270736f7_9.0.zip</a></td> 
+						<td>未发布</td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+	</div>
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>

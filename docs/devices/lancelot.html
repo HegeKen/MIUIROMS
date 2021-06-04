@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script> 
+		<style>
+		li a {
+			text-decoration: none;
+			color: blue;
+		}
+
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+	</style> 
+		<title>Redmi 9(lancelot)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：Redmi 9</li> 
+						<li>机型代号：lancelot</li> 
+						<li>此次更新：国际版 V12.0.4.0.QJCMIXM、欧洲EEA版 V12.0.2.0.QJCEUXM、土耳其版 V12.0.2.0.QJCTRXM</li> 
+						<!-- <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> --> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<!-- <li>第三方Recovery:<a href="">百度网盘</a>，提取码：，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a
+							href="https://www.weibo.com/u/6033736159">wzsx150</a></li>
+					<li>第三方Recovery:<a href="">TWRP官方</a></li>
+					<li>第三方Recovery:<a href="">橙狐测试版</a>，<a href="">橙狐稳定版</a></li>
+					<br> --> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a> 
+			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
+			<a href="#IN_STABLE" class="mdui-ripple">印度稳定版</a> 
+			<a href="#ID_STABLE" class="mdui-ripple">印尼稳定版</a> 
+			<a href="#TR_STABLE" class="mdui-ripple">土耳其稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-table-fluid" id="CN_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">大陆稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>15</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>14</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>13</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>12</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>11</td> 
+						<td>V12.0.8.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QJCCNXM/miui_LANCELOT_V12.0.8.0.QJCCNXM_97108a9b83_10.0.zip" id="r">miui_LANCELOT_V12.0.8.0.QJCCNXM_97108a9b83_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.8.0.QJCCNXM/lancelot_images_V12.0.8.0.QJCCNXM_20210319.0000.00_10.0_cn_93ed235d8a.tgz" id="f">lancelot_images_V12.0.8.0.QJCCNXM_20210319.0000.00_10.0_cn_93ed235d8a.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>10</td> 
+						<td>V12.0.7.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QJCCNXM/miui_LANCELOT_V12.0.7.0.QJCCNXM_07ac7287d0_10.0.zip" id="r">miui_LANCELOT_V12.0.7.0.QJCCNXM_07ac7287d0_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.7.0.QJCCNXM/lancelot_images_V12.0.7.0.QJCCNXM_20210222.0000.00_10.0_cn_40a8f0b4c8.tgz" id="f">lancelot_images_V12.0.7.0.QJCCNXM_20210222.0000.00_10.0_cn_40a8f0b4c8.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>9</td> 
+						<td>V12.0.6.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QJCCNXM/miui_LANCELOT_V12.0.6.0.QJCCNXM_33a88e092b_10.0.zip" id="r">miui_LANCELOT_V12.0.6.0.QJCCNXM_33a88e092b_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.6.0.QJCCNXM/lancelot_images_V12.0.6.0.QJCCNXM_20201224.0000.00_10.0_cn_36852d54cf.tgz" id="f">lancelot_images_V12.0.6.0.QJCCNXM_20201224.0000.00_10.0_cn_36852d54cf.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.4.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QJCCNXM/miui_LANCELOT_V12.0.4.0.QJCCNXM_c97f5caa5e_10.0.zip" id="r">miui_LANCELOT_V12.0.4.0.QJCCNXM_c97f5caa5e_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QJCCNXM/lancelot_images_V12.0.4.0.QJCCNXM_20200922.0000.00_10.0_cn_fe7e8523fe.tgz" id="f">lancelot_images_V12.0.4.0.QJCCNXM_20200922.0000.00_10.0_cn_fe7e8523fe.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.1.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCCNXM/miui_LANCELOT_V12.0.1.0.QJCCNXM_79579275a0_10.0.zip" id="r">miui_LANCELOT_V12.0.1.0.QJCCNXM_79579275a0_10.0.zip</a></td> 
+						<td>未发布</td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V11.0.7.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCCNXM/miui_LANCELOT_V11.0.7.0.QJCCNXM_f5becd3110_10.0.zip" id="r">miui_LANCELOT_V11.0.7.0.QJCCNXM_f5becd3110_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCCNXM/lancelot_images_V11.0.7.0.QJCCNXM_20200820.0000.00_10.0_cn_98b4fc97d7.tgz" id="f">lancelot_images_V11.0.7.0.QJCCNXM_20200820.0000.00_10.0_cn_98b4fc97d7.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V11.0.5.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.5.0.QJCCNXM/miui_LANCELOT_V11.0.5.0.QJCCNXM_1fc09d6ff1_10.0.zip" id="r">miui_LANCELOT_V11.0.5.0.QJCCNXM_1fc09d6ff1_10.0.zip</a></td> 
+						<td>未发布</td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V11.0.4.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCCNXM/miui_LANCELOT_V11.0.4.0.QJCCNXM_89fd8abc76_10.0.zip" id="r">miui_LANCELOT_V11.0.4.0.QJCCNXM_89fd8abc76_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCCNXM/lancelot_images_V11.0.4.0.QJCCNXM_20200710.0000.00_10.0_cn_e4fff803a7.tgz" id="f">lancelot_images_V11.0.4.0.QJCCNXM_20200710.0000.00_10.0_cn_e4fff803a7.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V11.0.3.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCCNXM/miui_LANCELOT_V11.0.3.0.QJCCNXM_5a43c7bcb0_10.0.zip" id="r">miui_LANCELOT_V11.0.3.0.QJCCNXM_5a43c7bcb0_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCCNXM/lancelot_images_V11.0.3.0.QJCCNXM_20200701.0000.00_10.0_cn_fd290402bd.tgz" id="f">lancelot_images_V11.0.3.0.QJCCNXM_20200701.0000.00_10.0_cn_fd290402bd.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.2.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCCNXM/miui_LANCELOT_V11.0.2.0.QJCCNXM_8f3a1ce339_10.0.zip" id="r">miui_LANCELOT_V11.0.2.0.QJCCNXM_8f3a1ce339_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCCNXM/lancelot_images_V11.0.2.0.QJCCNXM_20200614.0000.00_10.0_cn_e11061b1e6.tgz" id="f">lancelot_images_V11.0.2.0.QJCCNXM_20200614.0000.00_10.0_cn_e11061b1e6.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V11.0.1.0.QJCCNXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.1.0.QJCCNXM/miui_LANCELOT_V11.0.1.0.QJCCNXM_a6dd571ce0_10.0.zip" id="r">miui_LANCELOT_V11.0.1.0.QJCCNXM_a6dd571ce0_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.1.0.QJCCNXM/lancelot_images_V11.0.1.0.QJCCNXM_20200611.0000.00_10.0_cn_69a684824c.tgz" id="f">lancelot_images_V11.0.1.0.QJCCNXM_20200611.0000.00_10.0_cn_69a684824c.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="GB_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">国际稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>9</td> 
+						<td>V12.0.4.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QJCMIXM/miui_LANCELOTGlobal_V12.0.4.0.QJCMIXM_83136e8623_10.0.zip" id="r">miui_LANCELOTGlobal_V12.0.4.0.QJCMIXM_83136e8623_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.4.0.QJCMIXM/lancelot_global_images_V12.0.4.0.QJCMIXM_20210331.0000.00_10.0_global_b92099d9f4.tgz" id="f">lancelot_global_images_V12.0.4.0.QJCMIXM_20210331.0000.00_10.0_global_b92099d9f4.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.3.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QJCMIXM/miui_LANCELOTGlobal_V12.0.3.0.QJCMIXM_d7ad1fa31a_10.0.zip" id="r">miui_LANCELOTGlobal_V12.0.3.0.QJCMIXM_d7ad1fa31a_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QJCMIXM/lancelot_global_images_V12.0.3.0.QJCMIXM_20210128.0000.00_10.0_global_39c3ac47f8.tgz" id="f">lancelot_global_images_V12.0.3.0.QJCMIXM_20210128.0000.00_10.0_global_39c3ac47f8.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V12.0.2.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCMIXM/miui_LANCELOTGlobal_V12.0.2.0.QJCMIXM_1e6c7b7a38_10.0.zip" id="r">miui_LANCELOTGlobal_V12.0.2.0.QJCMIXM_1e6c7b7a38_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCMIXM/lancelot_global_images_V12.0.2.0.QJCMIXM_20201215.0000.00_10.0_global_aa46fa119a.tgz" id="f">lancelot_global_images_V12.0.2.0.QJCMIXM_20201215.0000.00_10.0_global_aa46fa119a.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V12.0.1.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCMIXM/miui_LANCELOTGlobal_V12.0.1.0.QJCMIXM_0698fe5654_10.0.zip" id="r">miui_LANCELOTGlobal_V12.0.1.0.QJCMIXM_0698fe5654_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCMIXM/lancelot_global_images_V12.0.1.0.QJCMIXM_20201119.0000.00_10.0_global_76c3e1fbee.tgz" id="f">lancelot_global_images_V12.0.1.0.QJCMIXM_20201119.0000.00_10.0_global_76c3e1fbee.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V11.0.9.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.9.0.QJCMIXM/miui_LANCELOTGlobal_V11.0.9.0.QJCMIXM_5331114c25_10.0.zip" id="r">miui_LANCELOTGlobal_V11.0.9.0.QJCMIXM_5331114c25_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.9.0.QJCMIXM/lancelot_global_images_V11.0.9.0.QJCMIXM_20201113.0000.00_10.0_global_7b55cf26f8.tgz" id="f">lancelot_global_images_V11.0.9.0.QJCMIXM_20201113.0000.00_10.0_global_7b55cf26f8.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V11.0.8.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.8.0.QJCMIXM/miui_LANCELOTGlobal_V11.0.8.0.QJCMIXM_a7aead523b_10.0.zip" id="r">miui_LANCELOTGlobal_V11.0.8.0.QJCMIXM_a7aead523b_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.8.0.QJCMIXM/lancelot_global_images_V11.0.8.0.QJCMIXM_20200905.0000.00_10.0_global_20bc749f5d.tgz" id="f">lancelot_global_images_V11.0.8.0.QJCMIXM_20200905.0000.00_10.0_global_20bc749f5d.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V11.0.7.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCMIXM/miui_LANCELOTGlobal_V11.0.7.0.QJCMIXM_520b3bbe70_10.0.zip" id="r">miui_LANCELOTGlobal_V11.0.7.0.QJCMIXM_520b3bbe70_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCMIXM/lancelot_global_images_V11.0.7.0.QJCMIXM_20200821.0000.00_10.0_global_546cb0b16f.tgz" id="f">lancelot_global_images_V11.0.7.0.QJCMIXM_20200821.0000.00_10.0_global_546cb0b16f.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.5.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.5.0.QJCMIXM/miui_LANCELOTGlobal_V11.0.5.0.QJCMIXM_672b562f4a_10.0.zip" id="r">miui_LANCELOTGlobal_V11.0.5.0.QJCMIXM_672b562f4a_10.0.zip</a></td> 
+						<td>未发布</td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V11.0.4.0.QJCMIXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCMIXM/miui_LANCELOTGlobal_V11.0.4.0.QJCMIXM_aeff7a8f3a_10.0.zip" id="r">miui_LANCELOTGlobal_V11.0.4.0.QJCMIXM_aeff7a8f3a_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCMIXM/lancelot_global_images_V11.0.4.0.QJCMIXM_20200618.0000.00_10.0_global_f875a2edde.tgz" id="f">lancelot_global_images_V11.0.4.0.QJCMIXM_20200618.0000.00_10.0_global_f875a2edde.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="EEA_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">EEA稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>9</td> 
+						<td>V12.0.2.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCEUXM/miui_LANCELOTEEAGlobal_V12.0.2.0.QJCEUXM_e4cf856413_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V12.0.2.0.QJCEUXM_e4cf856413_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCEUXM/lancelot_eea_global_images_V12.0.2.0.QJCEUXM_20210331.0000.00_10.0_eea_0ef8338a91.tgz" id="f">lancelot_eea_global_images_V12.0.2.0.QJCEUXM_20210331.0000.00_10.0_eea_0ef8338a91.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>8</td> 
+						<td>V12.0.1.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCEUXM/miui_LANCELOTEEAGlobal_V12.0.1.0.QJCEUXM_77fd23f7f7_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V12.0.1.0.QJCEUXM_77fd23f7f7_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCEUXM/lancelot_eea_global_images_V12.0.1.0.QJCEUXM_20210119.0000.00_10.0_eea_a197df7d17.tgz" id="f">lancelot_eea_global_images_V12.0.1.0.QJCEUXM_20210119.0000.00_10.0_eea_a197df7d17.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>7</td> 
+						<td>V11.0.9.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.9.0.QJCEUXM/miui_LANCELOTEEAGlobal_V11.0.9.0.QJCEUXM_239fd3ba13_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V11.0.9.0.QJCEUXM_239fd3ba13_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.9.0.QJCEUXM/lancelot_eea_global_images_V11.0.9.0.QJCEUXM_20201201.0000.00_10.0_eea_3f4b4c4909.tgz" id="f">lancelot_eea_global_images_V11.0.9.0.QJCEUXM_20201201.0000.00_10.0_eea_3f4b4c4909.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>6</td> 
+						<td>V11.0.8.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.8.0.QJCEUXM/miui_LANCELOTEEAGlobal_V11.0.8.0.QJCEUXM_73ec49317c_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V11.0.8.0.QJCEUXM_73ec49317c_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.8.0.QJCEUXM/lancelot_eea_global_images_V11.0.8.0.QJCEUXM_20200916.0000.00_10.0_eea_4c537de6dd.tgz" id="f">lancelot_eea_global_images_V11.0.8.0.QJCEUXM_20200916.0000.00_10.0_eea_4c537de6dd.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V11.0.7.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCEUXM/miui_LANCELOTEEAGlobal_V11.0.7.0.QJCEUXM_f788b157e1_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V11.0.7.0.QJCEUXM_f788b157e1_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCEUXM/lancelot_eea_global_images_V11.0.7.0.QJCEUXM_20200821.0000.00_10.0_eea_d425798dfe.tgz" id="f">lancelot_eea_global_images_V11.0.7.0.QJCEUXM_20200821.0000.00_10.0_eea_d425798dfe.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V11.0.5.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.5.0.QJCEUXM/miui_LANCELOTEEAGlobal_V11.0.5.0.QJCEUXM_ec3a4c98d9_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V11.0.5.0.QJCEUXM_ec3a4c98d9_10.0.zip</a></td> 
+						<td>未发布</td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V11.0.4.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCEUXM/miui_LANCELOTEEAGlobal_V11.0.4.0.QJCEUXM_ba81fce5be_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V11.0.4.0.QJCEUXM_ba81fce5be_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCEUXM/lancelot_eea_global_images_V11.0.4.0.QJCEUXM_20200702.0000.00_10.0_eea_6b6d41343e.tgz" id="f">lancelot_eea_global_images_V11.0.4.0.QJCEUXM_20200702.0000.00_10.0_eea_6b6d41343e.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.3.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCEUXM/miui_LANCELOTEEAGlobal_V11.0.3.0.QJCEUXM_75621db71c_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V11.0.3.0.QJCEUXM_75621db71c_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCEUXM/lancelot_eea_global_images_V11.0.3.0.QJCEUXM_20200614.0000.00_10.0_eea_ac7965aae7.tgz" id="f">lancelot_eea_global_images_V11.0.3.0.QJCEUXM_20200614.0000.00_10.0_eea_ac7965aae7.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V11.0.2.0.QJCEUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCEUXM/miui_LANCELOTEEAGlobal_V11.0.2.0.QJCEUXM_638aff99b4_10.0.zip" id="r">miui_LANCELOTEEAGlobal_V11.0.2.0.QJCEUXM_638aff99b4_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCEUXM/lancelot_eea_global_images_V11.0.2.0.QJCEUXM_20200522.0000.00_10.0_eea_a5bca1fe1e.tgz" id="f">lancelot_eea_global_images_V11.0.2.0.QJCEUXM_20200522.0000.00_10.0_eea_a5bca1fe1e.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="RU_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">俄罗斯稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.3.0.QJCRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QJCRUXM/miui_LANCELOTRUGlobal_V12.0.3.0.QJCRUXM_de8b84a9c4_10.0.zip" id="r">miui_LANCELOTRUGlobal_V12.0.3.0.QJCRUXM_de8b84a9c4_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.3.0.QJCRUXM/lancelot_ru_global_images_V12.0.3.0.QJCRUXM_20210319.0000.00_10.0_global_0e46b1c708.tgz" id="f">lancelot_ru_global_images_V12.0.3.0.QJCRUXM_20210319.0000.00_10.0_global_0e46b1c708.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.2.0.QJCRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCRUXM/miui_LANCELOTRUGlobal_V12.0.2.0.QJCRUXM_50ffa07035_10.0.zip" id="r">miui_LANCELOTRUGlobal_V12.0.2.0.QJCRUXM_50ffa07035_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCRUXM/lancelot_ru_global_images_V12.0.2.0.QJCRUXM_20210209.0000.00_10.0_global_b97e72ffdc.tgz" id="f">lancelot_ru_global_images_V12.0.2.0.QJCRUXM_20210209.0000.00_10.0_global_b97e72ffdc.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.1.0.QJCRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCRUXM/miui_LANCELOTRUGlobal_V12.0.1.0.QJCRUXM_2fdde20b04_10.0.zip" id="r">miui_LANCELOTRUGlobal_V12.0.1.0.QJCRUXM_2fdde20b04_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCRUXM/lancelot_ru_global_images_V12.0.1.0.QJCRUXM_20201209.0000.00_10.0_global_92522af65d.tgz" id="f">lancelot_ru_global_images_V12.0.1.0.QJCRUXM_20201209.0000.00_10.0_global_92522af65d.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.7.0.QJCRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCRUXM/miui_LANCELOTRUGlobal_V11.0.7.0.QJCRUXM_7d783f77af_10.0.zip" id="r">miui_LANCELOTRUGlobal_V11.0.7.0.QJCRUXM_7d783f77af_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.7.0.QJCRUXM/lancelot_ru_global_images_V11.0.7.0.QJCRUXM_20200921.0000.00_10.0_global_bcd2c4aa64.tgz" id="f">lancelot_ru_global_images_V11.0.7.0.QJCRUXM_20200921.0000.00_10.0_global_bcd2c4aa64.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V11.0.5.0.QJCRUXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.5.0.QJCRUXM/miui_LANCELOTRUGlobal_V11.0.5.0.QJCRUXM_a835536aa9_10.0.zip" id="r">miui_LANCELOTRUGlobal_V11.0.5.0.QJCRUXM_a835536aa9_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.5.0.QJCRUXM/lancelot_ru_global_images_V11.0.5.0.QJCRUXM_20200620.0000.00_10.0_global_bc89463dae.tgz" id="f">lancelot_ru_global_images_V11.0.5.0.QJCRUXM_20200620.0000.00_10.0_global_bc89463dae.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="IN_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">印度稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.2.0.QJCINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCINXM/miui_LANCELOTINGlobal_V12.0.2.0.QJCINXM_ca29dae1b0_10.0.zip" id="r">miui_LANCELOTINGlobal_V12.0.2.0.QJCINXM_ca29dae1b0_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCINXM/lancelot_in_global_images_V12.0.2.0.QJCINXM_20210319.0000.00_10.0_in_42f0364966.tgz" id="f">lancelot_in_global_images_V12.0.2.0.QJCINXM_20210319.0000.00_10.0_in_42f0364966.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.1.0.QJCINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCINXM/miui_LANCELOTINGlobal_V12.0.1.0.QJCINXM_ce2e31daa1_10.0.zip" id="r">miui_LANCELOTINGlobal_V12.0.1.0.QJCINXM_ce2e31daa1_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCINXM/lancelot_in_global_images_V12.0.1.0.QJCINXM_20201229.0000.00_10.0_in_0b3ff746c3.tgz" id="f">lancelot_in_global_images_V12.0.1.0.QJCINXM_20201229.0000.00_10.0_in_0b3ff746c3.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V11.0.6.0.QJCINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.6.0.QJCINXM/miui_LANCELOTINGlobal_V11.0.6.0.QJCINXM_7ef64c03a3_10.0.zip" id="r">miui_LANCELOTINGlobal_V11.0.6.0.QJCINXM_7ef64c03a3_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.6.0.QJCINXM/lancelot_in_global_images_V11.0.6.0.QJCINXM_20201105.0000.00_10.0_in_627bc07c44.tgz" id="f">lancelot_in_global_images_V11.0.6.0.QJCINXM_20201105.0000.00_10.0_in_627bc07c44.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.4.0.QJCINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCINXM/miui_LANCELOTINGlobal_V11.0.4.0.QJCINXM_7c06f672bb_10.0.zip" id="r">miui_LANCELOTINGlobal_V11.0.4.0.QJCINXM_7c06f672bb_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.4.0.QJCINXM/lancelot_in_global_images_V11.0.4.0.QJCINXM_20200901.0000.00_10.0_in_336e5636b2.tgz" id="f">lancelot_in_global_images_V11.0.4.0.QJCINXM_20200901.0000.00_10.0_in_336e5636b2.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V11.0.2.0.QJCINXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCINXM/miui_LANCELOTINGlobal_V11.0.2.0.QJCINXM_9efa072612_10.0.zip" id="r">miui_LANCELOTINGlobal_V11.0.2.0.QJCINXM_9efa072612_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCINXM/lancelot_in_global_images_V11.0.2.0.QJCINXM_20200719.0000.00_10.0_in_ad7fba1bb9.tgz" id="f">lancelot_in_global_images_V11.0.2.0.QJCINXM_20200719.0000.00_10.0_in_ad7fba1bb9.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="ID_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">印尼稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>5</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.2.0.QJCIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCIDXM/miui_LANCELOTIDGlobal_V12.0.2.0.QJCIDXM_2c7640d9a1_10.0.zip" id="r">miui_LANCELOTIDGlobal_V12.0.2.0.QJCIDXM_2c7640d9a1_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCIDXM/lancelot_id_global_images_V12.0.2.0.QJCIDXM_20210203.0000.00_10.0_global_dab50f64ac.tgz" id="f">lancelot_id_global_images_V12.0.2.0.QJCIDXM_20210203.0000.00_10.0_global_dab50f64ac.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V12.0.1.0.QJCIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCIDXM/miui_LANCELOTIDGlobal_V12.0.1.0.QJCIDXM_fcaa46c9ba_10.0.zip" id="r">miui_LANCELOTIDGlobal_V12.0.1.0.QJCIDXM_fcaa46c9ba_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCIDXM/lancelot_id_global_images_V12.0.1.0.QJCIDXM_20201204.0000.00_10.0_global_0544e663c5.tgz" id="f">lancelot_id_global_images_V12.0.1.0.QJCIDXM_20201204.0000.00_10.0_global_0544e663c5.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.6.0.QJCIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.6.0.QJCIDXM/miui_LANCELOTIDGlobal_V11.0.6.0.QJCIDXM_20725269fc_10.0.zip" id="r">miui_LANCELOTIDGlobal_V11.0.6.0.QJCIDXM_20725269fc_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.6.0.QJCIDXM/lancelot_id_global_images_V11.0.6.0.QJCIDXM_20200910.0000.00_10.0_global_3f65f152e2.tgz" id="f">lancelot_id_global_images_V11.0.6.0.QJCIDXM_20200910.0000.00_10.0_global_3f65f152e2.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V11.0.3.0.QJCIDXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCIDXM/miui_LANCELOTIDGlobal_V11.0.3.0.QJCIDXM_2241a1b65f_10.0.zip" id="r">miui_LANCELOTIDGlobal_V11.0.3.0.QJCIDXM_2241a1b65f_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCIDXM/lancelot_id_global_images_V11.0.3.0.QJCIDXM_20200618.0000.00_10.0_global_055a174657.tgz" id="f">lancelot_id_global_images_V11.0.3.0.QJCIDXM_20200618.0000.00_10.0_global_055a174657.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="TR_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">土耳其稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>10.0</td> 
+						<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+						<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>5</td> 
+						<td>V12.0.2.0.QJCTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCTRXM/miui_LANCELOTTRGlobal_V12.0.2.0.QJCTRXM_3dec317cec_10.0.zip" id="r">miui_LANCELOTTRGlobal_V12.0.2.0.QJCTRXM_3dec317cec_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.2.0.QJCTRXM/lancelot_tr_global_images_V12.0.2.0.QJCTRXM_20210331.0000.00_10.0_global_f76cfd7436.tgz" id="f">lancelot_tr_global_images_V12.0.2.0.QJCTRXM_20210331.0000.00_10.0_global_f76cfd7436.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>4</td> 
+						<td>V12.0.1.0.QJCTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCTRXM/miui_LANCELOTTRGlobal_V12.0.1.0.QJCTRXM_1fa08feabb_10.0.zip" id="r">miui_LANCELOTTRGlobal_V12.0.1.0.QJCTRXM_1fa08feabb_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V12.0.1.0.QJCTRXM/lancelot_tr_global_images_V12.0.1.0.QJCTRXM_20210122.0000.00_10.0_global_7d3c8838ec.tgz" id="f">lancelot_tr_global_images_V12.0.1.0.QJCTRXM_20210122.0000.00_10.0_global_7d3c8838ec.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>3</td> 
+						<td>V11.0.3.0.QJCTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCTRXM/miui_LANCELOTTRGlobal_V11.0.3.0.QJCTRXM_764be055cc_10.0.zip" id="r">miui_LANCELOTTRGlobal_V11.0.3.0.QJCTRXM_764be055cc_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.3.0.QJCTRXM/lancelot_tr_global_images_V11.0.3.0.QJCTRXM_20201126.0000.00_10.0_global_ed49319f1a.tgz" id="f">lancelot_tr_global_images_V11.0.3.0.QJCTRXM_20201126.0000.00_10.0_global_ed49319f1a.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V11.0.2.0.QJCTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCTRXM/miui_LANCELOTTRGlobal_V11.0.2.0.QJCTRXM_caac703113_10.0.zip" id="r">miui_LANCELOTTRGlobal_V11.0.2.0.QJCTRXM_caac703113_10.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.2.0.QJCTRXM/lancelot_tr_global_images_V11.0.2.0.QJCTRXM_20200924.0000.00_10.0_global_579bebd050.tgz" id="f">lancelot_tr_global_images_V11.0.2.0.QJCTRXM_20200924.0000.00_10.0_global_579bebd050.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V11.0.1.0.QJCTRXM</td> 
+						<td>10.0</td> 
+						<td><a href="https://bigota.d.miui.com/V11.0.1.0.QJCTRXM/miui_LANCELOTTRGlobal_V11.0.1.0.QJCTRXM_07e4cb4e71_10.0.zip" id="r">miui_LANCELOTTRGlobal_V11.0.1.0.QJCTRXM_07e4cb4e71_10.0.zip</a></td> 
+						<td>未发布</td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>

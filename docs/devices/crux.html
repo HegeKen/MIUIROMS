@@ -1,275 +1,421 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-      <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
-      </script>
-    <style>
-            li a {
-                text-decoration: none;
-                color: blue;
-            }
-    
-            td a {
-                text-decoration: none;
-                color: black;
-            }
-        </style>
-    <title>小米9 Pro 5G(crux)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body class="mdui-bottom-nav-fixed">
-    <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
-        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-        <div class="mdui-toolbar-spacer"></div>
-        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                    <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                        <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="mdui-panel mdui-panel-gapless">
-        <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-            <div class="mdui-panel-item-body">
-                <ol>
-                    <li>机型：小米9 Pro 5G 代号：crux</li>
-                    <li>此次更新项目：V11.0.3.0.PFXCNXM</li>
-                    <!-- <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/" style="text-decoration: none;color:blue;">Xiaomi Firmware Updater </a>网站</li> -->
-                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
-                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为ROM的正式内容 -->
-    <div class="mdui-row-xs-4 mdui-hidden mdui-row-gapless">
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_BETA"
-                    style="text-decoration: none;color:black;">国内开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_BETA"
-                    style="text-decoration: none;color:black;">国际开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_STABLE"
-                    style="text-decoration: none;color:black;">国内稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_STABLE"
-                    style="text-decoration: none;color:black;">国际稳定版</a></button>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid mdui-hidden" id="CN_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid mdui-hidden" id="GB_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid" id="CN_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="mdui-hidden">
-                        <td>5</td>
-                        <td>TEXT_HERE</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                    </tr>
-                    <tr class="mdui-hidden">
-                        <td>4</td>
-                        <td>TEXT_HERE</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>V11.0.3.0.PFXCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFXCNXM/miui_CRUX_V11.0.3.0.PFXCNXM_8f15c954be_9.0.zip">miui_CRUX_V11.0.3.0.PFXCNXM_8f15c954be_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFXCNXM/crux_images_V11.0.3.0.PFXCNXM_20191029.0000.00_9.0_cn_01cb757204.tgz">crux_images_V11.0.3.0.PFXCNXM_20191029.0000.00_9.0_cn_01cb757204.tgz</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>V11.0.2.0.PFXCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.2.0.PFXCNXM/miui_CRUX_V11.0.2.0.PFXCNXM_8a9ff49a94_9.0.zip">miui_CRUX_V11.0.2.0.PFXCNXM_8a9ff49a94_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.2.0.PFXCNXM/crux_images_V11.0.2.0.PFXCNXM_20191022.0000.00_9.0_cn_f7b706d7b7.tgz">crux_images_V11.0.2.0.PFXCNXM_20191022.0000.00_9.0_cn_f7b706d7b7.tgz</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>V10.4.6.0.PFXCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.4.6.0.PFXCNXM/miui_CRUX_V10.4.6.0.PFXCNXM_c396dc02bb_9.0.zip">miui_CRUX_V10.4.6.0.PFXCNXM_c396dc02bb_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V10.4.6.0.PFXCNXM/crux_images_V10.4.6.0.PFXCNXM_20190919.0000.00_9.0_cn_4d61ec19e2.tgz">crux_images_V10.4.6.0.PFXCNXM_20190919.0000.00_9.0_cn_4d61ec19e2.tgz</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-    <div class="mdui-container-fluid mdui-hidden" id="GB_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>#</td>
-                        <td>#</td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                        <td><a href="#" style="text-decoration: none;color:black;">#</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-    <!-- 由此向下区域为底部Footer的内容 -->
-
-    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-            <script
-                type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-        </div>
-        <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-            style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-                    style="text-decoration: none;color:black;">arrow_upward</a></i>
-        </button>
-</body>
-
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<style>
+			li a {
+				text-decoration: none;
+				color: blue;
+			}
+	
+			td a {
+				text-decoration: none;
+				color: black;
+			}
+		</style> 
+		<title>小米9 Pro 5G(crux)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body class="mdui-bottom-nav-fixed"> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：小米9 Pro 5G</li> 
+						<li>机型代号：crux</li> 
+						<li>此次更新：V12.0.5.0.QFXCNXM</li> 
+						<!-- <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/" style="text-decoration: none;color:blue;">Xiaomi Firmware Updater </a>网站</li> --> 
+						<li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/ia6vqunmaIfu">天翼云盘</a>，提取码：fdv1，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<!-- <tr>
+						<td>15</td>
+						<td>MIUI11</td>
+						<td>TEXT_HERE</td>
+						<td>10.0</td>
+						<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+						<td>不存在的</td>
+					</tr> --> 
+						<tr> 
+							<td>14</td> 
+							<td>MIUI11</td> 
+							<td>20.3.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.26/miui_CRUX_20.3.26_c0c51edef1_10.0.zip" id="r">miui_CRUX_20.3.26_c0c51edef1_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>MIUI11</td> 
+							<td>20.3.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.19/miui_CRUX_20.3.19_c903eb34bf_10.0.zip" id="r">miui_CRUX_20.3.19_c903eb34bf_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI11</td> 
+							<td>20.3.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.12/miui_CRUX_20.3.12_c8815e5bda_10.0.zip" id="r">miui_CRUX_20.3.12_c8815e5bda_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI11</td> 
+							<td>20.3.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.5/miui_CRUX_20.3.5_ad6f1c4d26_10.0.zip" id="r">miui_CRUX_20.3.5_ad6f1c4d26_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI11</td> 
+							<td>20.2.27</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.2.27/miui_CRUX_20.2.27_f60023d3cf_10.0.zip" id="r">miui_CRUX_20.2.27_f60023d3cf_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI11</td> 
+							<td>20.1.16</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.16/miui_CRUX_20.1.16_e18e82ea01_10.0.zip" id="r">miui_CRUX_20.1.16_e18e82ea01_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI11</td> 
+							<td>20.1.9</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.9/miui_CRUX_20.1.9_6e0b727269_10.0.zip" id="r">miui_CRUX_20.1.9_6e0b727269_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI11</td> 
+							<td>9.12.19</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.19/miui_CRUX_9.12.19_369cb91c4a_9.0.zip" id="r">miui_CRUX_9.12.19_369cb91c4a_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI11</td> 
+							<td>9.12.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.12/miui_CRUX_9.12.12_7e059f22dc_9.0.zip" id="r">miui_CRUX_9.12.12_7e059f22dc_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI11</td> 
+							<td>9.11.7</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.7/miui_CRUX_9.11.7_97f049135f_9.0.zip" id="r">miui_CRUX_9.11.7_97f049135f_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI11</td> 
+							<td>9.10.31</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.31/miui_CRUX_9.10.31_d722ee79c4_9.0.zip" id="r">miui_CRUX_9.10.31_d722ee79c4_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI11</td> 
+							<td>9.10.24</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.24/miui_CRUX_9.10.24_490631895c_9.0.zip" id="r">miui_CRUX_9.10.24_490631895c_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI11</td> 
+							<td>9.10.10</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.10.10/miui_CRUX_9.10.10_dcf2a24721_9.0.zip" id="r">miui_CRUX_9.10.10_dcf2a24721_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI11</td> 
+							<td>9.9.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.9.26/miui_CRUX_9.9.26_e1c3b481c6_9.0.zip" id="r">miui_CRUX_9.9.26_e1c3b481c6_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid mdui-hidden" id="GB_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>1</td> 
+							<td>#</td> 
+							<td>#</td> 
+							<td>#</td> 
+							<td><a href="#" style="text-decoration: none;color:black;">#</a></td> 
+							<td><a href="#" style="text-decoration: none;color:black;">#</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>14</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>13</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>12</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>11</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.0.5.0.QFXCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFXCNXM/miui_CRUX_V12.0.5.0.QFXCNXM_63357f4009_10.0.zip" id="r">miui_CRUX_V12.0.5.0.QFXCNXM_63357f4009_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFXCNXM/crux_images_V12.0.5.0.QFXCNXM_20201124.0000.00_10.0_cn_7bf0d6a63e.tgz" id="f">crux_images_V12.0.5.0.QFXCNXM_20201124.0000.00_10.0_cn_7bf0d6a63e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V12.0.4.0.QFXCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFXCNXM/miui_CRUX_V12.0.4.0.QFXCNXM_7592e70687_10.0.zip" id="r">miui_CRUX_V12.0.4.0.QFXCNXM_7592e70687_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFXCNXM/crux_images_V12.0.4.0.QFXCNXM_20200921.0000.00_10.0_cn_280a2e8a44.tgz" id="f">crux_images_V12.0.4.0.QFXCNXM_20200921.0000.00_10.0_cn_280a2e8a44.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V12.0.3.0.QFXCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFXCNXM/miui_CRUX_V12.0.3.0.QFXCNXM_5ece229616_10.0.zip" id="r">miui_CRUX_V12.0.3.0.QFXCNXM_5ece229616_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFXCNXM/crux_images_V12.0.3.0.QFXCNXM_20200710.0000.00_10.0_cn_3f1b5c6099.tgz" id="f">crux_images_V12.0.3.0.QFXCNXM_20200710.0000.00_10.0_cn_3f1b5c6099.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V12.0.2.0.QFXCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFXCNXM/miui_CRUX_V12.0.2.0.QFXCNXM_1d03981a42_10.0.zip" id="r">miui_CRUX_V12.0.2.0.QFXCNXM_1d03981a42_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFXCNXM/crux_images_V12.0.2.0.QFXCNXM_20200617.0000.00_10.0_cn_c96cca0203.tgz" id="f">crux_images_V12.0.2.0.QFXCNXM_20200617.0000.00_10.0_cn_c96cca0203.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V12.0.1.0.QFXCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.1.0.QFXCNXM/miui_CRUX_V12.0.1.0.QFXCNXM_5b10297d1e_10.0.zip" id="r">miui_CRUX_V12.0.1.0.QFXCNXM_5b10297d1e_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.6.0.QFXCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFXCNXM/miui_CRUX_V11.0.6.0.QFXCNXM_f99732787f_10.0.zip" id="r">miui_CRUX_V11.0.6.0.QFXCNXM_f99732787f_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFXCNXM/crux_images_V11.0.6.0.QFXCNXM_20200507.0000.00_10.0_cn_892c4ec676.tgz" id="f">crux_images_V11.0.6.0.QFXCNXM_20200507.0000.00_10.0_cn_892c4ec676.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V11.0.4.0.QFXCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QFXCNXM/miui_CRUX_V11.0.4.0.QFXCNXM_d32e8b594f_10.0.zip" id="r">miui_CRUX_V11.0.4.0.QFXCNXM_d32e8b594f_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V11.0.3.0.PFXCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFXCNXM/miui_CRUX_V11.0.3.0.PFXCNXM_8f15c954be_9.0.zip" id="r">miui_CRUX_V11.0.3.0.PFXCNXM_8f15c954be_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFXCNXM/crux_images_V11.0.3.0.PFXCNXM_20191029.0000.00_9.0_cn_01cb757204.tgz" id="f">crux_images_V11.0.3.0.PFXCNXM_20191029.0000.00_9.0_cn_01cb757204.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V11.0.2.0.PFXCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PFXCNXM/miui_CRUX_V11.0.2.0.PFXCNXM_8a9ff49a94_9.0.zip" id="r">miui_CRUX_V11.0.2.0.PFXCNXM_8a9ff49a94_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PFXCNXM/crux_images_V11.0.2.0.PFXCNXM_20191022.0000.00_9.0_cn_f7b706d7b7.tgz" id="f">crux_images_V11.0.2.0.PFXCNXM_20191022.0000.00_9.0_cn_f7b706d7b7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.4.6.0.PFXCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.4.6.0.PFXCNXM/miui_CRUX_V10.4.6.0.PFXCNXM_c396dc02bb_9.0.zip" id="r">miui_CRUX_V10.4.6.0.PFXCNXM_c396dc02bb_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.4.6.0.PFXCNXM/crux_images_V10.4.6.0.PFXCNXM_20190919.0000.00_9.0_cn_4d61ec19e2.tgz" id="f">crux_images_V10.4.6.0.PFXCNXM_20190919.0000.00_9.0_cn_4d61ec19e2.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid mdui-hidden" id="GB_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>1</td> 
+							<td>#</td> 
+							<td>#</td> 
+							<td><a href="#" style="text-decoration: none;color:black;">#</a></td> 
+							<td><a href="#" style="text-decoration: none;color:black;">#</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>

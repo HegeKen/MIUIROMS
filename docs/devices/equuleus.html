@@ -1,970 +1,1214 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-        <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-        <script>
-                var _hmt = _hmt || [];
-                (function () {
-                        var hm = document.createElement("script");
-                        hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-                        var s = document.getElementsByTagName("script")[0];
-                        s.parentNode.insertBefore(hm, s);
-                })();
-        </script>
-          <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'UA-153213840-1');
-          </script>
-    <style>
-                li a {
-                    text-decoration: none;
-                    color: blue;
-                }
-        
-                td a {
-                    text-decoration: none;
-                    color: black;
-                }
-            </style>
-        <title>小米8屏幕指纹版(equuleus)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body>
-        <div class="mdui-toolbar mdui-color-deep-orange-accent">
-                <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                                class="mdui-icon material-icons">menu</i></button>
-                <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-                <div class="mdui-toolbar-spacer"></div>
-                <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-                        <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                                        <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                                </li>
-
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                                        <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                                </li>
-
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                                        <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                                </li>
-
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                                </li>
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                                        <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                                </li>
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                                        <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                                </li>
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                                        <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                                </li>
-                        </ul>
-                </div>
-        </div>
-
-        <div class="mdui-panel mdui-panel-gapless">
-                <div class="mdui-panel-item mdui-panel-item-open">
-                        <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-                        <div class="mdui-panel-item-body">
-                                <ol>
-                                        <li>机型：小米8屏幕指纹版 代号：equuleus</li>
-                                        <li>此次更新项目：V11.0.5.0.PECRUXM</li>
-                                        <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">@mty324</a></li>
-                                        <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
-                                        <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
-                                        <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
-                                <br>
-                        </div>
-                </div>
-        </div>
-
-        <!-- 由此向下区域为ROM的正式内容 -->
-
-        <div><br></div>
-        <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
-                <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
-                <a href="#GB_BETA" class="mdui-ripple">国际开发版</a>
-                <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
-                <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
-                <a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
-        </div>
-        <div id="CN_BETA" class="mdui-p-a-2">
-                <div class="mdui-container-fluid">
-                        <div class="mdui-table-fluid">
-                                <table class="mdui-table">
-                                        <thead>
-                                                <tr>
-                                                        <th class="mdui-text-color-red">国内开发版</th>
-                                                        <th>MIUI版本</th>
-                                                        <th>版本</th>
-                                                        <th>Android版本</th>
-                                                        <th>卡刷包</th>
-                                                        <th>线刷包</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr class="mdui-hidden">
-                                                        <td>45</td>
-                                                        <td>MIUI10</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>44</td>
-                                                        <td>MIUI10</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>43</td>
-                                                        <td>MIUI10</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>42</td>
-                                                        <td>MIUI11</td>
-                                                        <td>9.9.26</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8UD_9.9.26_27b9d13be9_9.0.zip">miui_MI8UD_9.9.26_27b9d13be9_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>41</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.9.3</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.9.3/miui_MI8UD_9.9.3_03f07e3d60_9.0.zip">miui_MI8UD_9.9.3_03f07e3d60_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.9.3/equuleus_images_9.9.3_20190904.0000.00_9.0_cn_e82f0588d9.tgz">equuleus_images_9.9.3_20190904.0000.00_9.0_cn_e82f0588d9.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>40</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.22</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.22/miui_MI8UD_9.8.22_0ca63f8d13_9.0.zip">miui_MI8UD_9.8.22_0ca63f8d13_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.22/equuleus_images_9.8.22_20190822.0000.00_9.0_cn_983434e6bd.tgz">equuleus_images_9.8.22_20190822.0000.00_9.0_cn_983434e6bd.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>39</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.15</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.15/miui_MI8UD_9.8.15_4d94ff2f34_9.0.zip">miui_MI8UD_9.8.15_4d94ff2f34_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.15/equuleus_images_9.8.15_20190815.0000.00_9.0_cn_5e6edfe1d5.tgz">equuleus_images_9.8.15_20190815.0000.00_9.0_cn_5e6edfe1d5.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>38</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.9</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.9/miui_MI8UD_9.8.9_b07b61897c_9.0.zip">miui_MI8UD_9.8.9_b07b61897c_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.9/equuleus_images_9.8.9_20190809.0000.00_9.0_cn_f527cad165.tgz">equuleus_images_9.8.9_20190809.0000.00_9.0_cn_f527cad165.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>37</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.1</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.1/miui_MI8UD_9.8.1_76b7181a38_9.0.zip">miui_MI8UD_9.8.1_76b7181a38_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.1/equuleus_images_9.8.1_20190801.0000.00_9.0_cn_ed61ecf38f.tgz">equuleus_images_9.8.1_20190801.0000.00_9.0_cn_ed61ecf38f.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>36</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.25</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.25/miui_MI8UD_9.7.25_ab4a04408c_9.0.zip">miui_MI8UD_9.7.25_ab4a04408c_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.25/equuleus_images_9.7.25_20190725.0000.00_9.0_cn_1331dd2674.tgz">equuleus_images_9.7.25_20190725.0000.00_9.0_cn_1331dd2674.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>35</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.18</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.18/miui_MI8UD_9.7.18_c9d5e5bc2a_9.0.zip">miui_MI8UD_9.7.18_c9d5e5bc2a_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.18/equuleus_images_9.7.18_20190718.0000.00_9.0_cn_eaa9d5df1d.tgz">equuleus_images_9.7.18_20190718.0000.00_9.0_cn_eaa9d5df1d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>34</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.11</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.11/miui_MI8UD_9.7.11_207a1cfac1_9.0.zip">miui_MI8UD_9.7.11_207a1cfac1_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.11/equuleus_images_9.7.11_20190711.0000.00_9.0_cn_c4c28f5ef4.tgz">equuleus_images_9.7.11_20190711.0000.00_9.0_cn_c4c28f5ef4.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>33</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.4</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.4/miui_MI8UD_9.7.4_c15d2d7586_9.0.zip">miui_MI8UD_9.7.4_c15d2d7586_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.4/equuleus_images_9.7.4_20190704.0000.00_9.0_cn_9b26d167cb.tgz">equuleus_images_9.7.4_20190704.0000.00_9.0_cn_9b26d167cb.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>32</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.27</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.27/miui_MI8UD_9.6.27_dd916d8786_9.0.zip">miui_MI8UD_9.6.27_dd916d8786_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.27/equuleus_images_9.6.27_20190627.0000.00_9.0_cn_ed222d3ef5.tgz">equuleus_images_9.6.27_20190627.0000.00_9.0_cn_ed222d3ef5.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>31</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.20</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.20/miui_MI8UD_9.6.20_83814ee7b5_9.0.zip">miui_MI8UD_9.6.20_83814ee7b5_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.20/equuleus_images_9.6.20_20190620.0000.00_9.0_cn_c79ca8dba6.tgz">equuleus_images_9.6.20_20190620.0000.00_9.0_cn_c79ca8dba6.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>30</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.13</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.13/miui_MI8UD_9.6.13_b055e4306a_9.0.zip">miui_MI8UD_9.6.13_b055e4306a_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>29</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.30</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.30/miui_MI8UD_9.5.30_8718c17931_9.0.zip">miui_MI8UD_9.5.30_8718c17931_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.30/equuleus_images_9.5.30_20190530.0000.00_9.0_cn_fa6a025b36.tgz">equuleus_images_9.5.30_20190530.0000.00_9.0_cn_fa6a025b36.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>28</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.17</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.17/miui_MI8UD_9.5.17_5372faae1b_9.0.zip">miui_MI8UD_9.5.17_5372faae1b_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.17/equuleus_images_9.5.17_20190517.0000.00_9.0_cn_2a765098a7.tgz">equuleus_images_9.5.17_20190517.0000.00_9.0_cn_2a765098a7.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>27</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.9</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.9/miui_MI8UD_9.5.9_b6d2a27972_9.0.zip">miui_MI8UD_9.5.9_b6d2a27972_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.9/equuleus_images_9.5.9_20190509.0000.00_9.0_cn_f6a9558c5f.tgz">equuleus_images_9.5.9_20190509.0000.00_9.0_cn_f6a9558c5f.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>26</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.26</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.26/miui_MI8UD_9.4.26_0778ff89b7_9.0.zip">miui_MI8UD_9.4.26_0778ff89b7_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.26/equuleus_images_9.4.26_20190426.0000.00_9.0_cn_26e29cd964.tgz">equuleus_images_9.4.26_20190426.0000.00_9.0_cn_26e29cd964.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>25</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.18</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.18/miui_MI8UD_9.4.18_1a94bb2c72_9.0.zip">miui_MI8UD_9.4.18_1a94bb2c72_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.18/equuleus_images_9.4.18_20190418.0000.00_9.0_cn_17302236b1.tgz">equuleus_images_9.4.18_20190418.0000.00_9.0_cn_17302236b1.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>24</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.12</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.12/miui_MI8UD_9.4.12_9dfbf6d8de_9.0.zip">miui_MI8UD_9.4.12_9dfbf6d8de_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>23</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.28</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.28/miui_MI8UD_9.3.28_a1b682b327_9.0.zip">miui_MI8UD_9.3.28_a1b682b327_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.28/equuleus_images_9.3.28_20190328.0000.00_9.0_cn_2fe019c9cd.tgz">equuleus_images_9.3.28_20190328.0000.00_9.0_cn_2fe019c9cd.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>22</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.21</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.21/miui_MI8UD_9.3.21_f996194f9f_9.0.zip">miui_MI8UD_9.3.21_f996194f9f_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.21/equuleus_images_9.3.21_20190321.0000.00_9.0_cn_953febc148.tgz">equuleus_images_9.3.21_20190321.0000.00_9.0_cn_953febc148.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>21</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.14</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.14/miui_MI8UD_9.3.14_e75485d96a_9.0.zip">miui_MI8UD_9.3.14_e75485d96a_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.14/equuleus_images_9.3.14_20190314.0000.00_9.0_cn_c0715e590b.tgz">equuleus_images_9.3.14_20190314.0000.00_9.0_cn_c0715e590b.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>20</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.7</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.7/miui_MI8UD_9.3.7_75f0cef08d_9.0.zip">miui_MI8UD_9.3.7_75f0cef08d_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>19</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.1</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.1/miui_MI8UD_9.3.1_f044d5da54_9.0.zip">miui_MI8UD_9.3.1_f044d5da54_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>18</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.2.21</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.21/miui_MI8UD_9.2.21_2b87d6e332_9.0.zip">miui_MI8UD_9.2.21_2b87d6e332_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.21/equuleus_images_9.2.21_20190221.0000.00_9.0_cn_98d947b04d.tgz">equuleus_images_9.2.21_20190221.0000.00_9.0_cn_98d947b04d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>17</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.2.15</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.15/miui_MI8UD_9.2.15_1a700ed31a_9.0.zip">miui_MI8UD_9.2.15_1a700ed31a_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.15/equuleus_images_9.2.15_20190215.0000.00_9.0_cn_607a6af42d.tgz">equuleus_images_9.2.15_20190215.0000.00_9.0_cn_607a6af42d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>16</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.24</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.24/miui_MI8UD_9.1.24_ad33756e49_9.0.zip">miui_MI8UD_9.1.24_ad33756e49_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.24/equuleus_images_9.1.24_20190124.0000.00_9.0_cn_489dda933f.tgz">equuleus_images_9.1.24_20190124.0000.00_9.0_cn_489dda933f.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>15</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.17</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.17/miui_MI8UD_9.1.17_71fc614e07_9.0.zip">miui_MI8UD_9.1.17_71fc614e07_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.17/equuleus_images_9.1.17_20190117.0000.00_9.0_cn_92f27a5a67.tgz">equuleus_images_9.1.17_20190117.0000.00_9.0_cn_92f27a5a67.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>14</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.10</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.10/miui_MI8UD_9.1.10_d6cb873c15_9.0.zip">miui_MI8UD_9.1.10_d6cb873c15_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.10/equuleus_images_9.1.10_20190110.0000.00_9.0_cn_c8f1ea91b0.tgz">equuleus_images_9.1.10_20190110.0000.00_9.0_cn_c8f1ea91b0.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>13</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.1</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.1/miui_MI8UD_9.1.1_35f3768c71_9.0.zip">miui_MI8UD_9.1.1_35f3768c71_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>12</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.27</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.27/miui_MI8UD_8.12.27_d0979874b2_9.0.zip">miui_MI8UD_8.12.27_d0979874b2_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>11</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.20</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.20/miui_MI8UD_8.12.20_7f9ae47f39_9.0.zip">miui_MI8UD_8.12.20_7f9ae47f39_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>10</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.13</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.13/miui_MI8UD_8.12.13_c3a41c70d7_9.0.zip">miui_MI8UD_8.12.13_c3a41c70d7_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.13/equuleus_images_8.12.13_20181213.0000.00_9.0_cn_e243f943f1.tgz">equuleus_images_8.12.13_20181213.0000.00_9.0_cn_e243f943f1.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>9</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.7</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.7/miui_MI8UD_8.12.7_37720098ca_9.0.zip">miui_MI8UD_8.12.7_37720098ca_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.7/equuleus_images_8.12.7_20181207.0000.00_9.0_cn_02569cd790.tgz">equuleus_images_8.12.7_20181207.0000.00_9.0_cn_02569cd790.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>8</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.29</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.29/miui_MI8UD_8.11.29_5502ad4f57_9.0.zip">miui_MI8UD_8.11.29_5502ad4f57_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>7</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.23</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.23/miui_MI8UD_8.11.23_b83abd2f39_9.0.zip">miui_MI8UD_8.11.23_b83abd2f39_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>6</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.15</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.15/miui_MI8UD_8.11.15_23427e9af0_9.0.zip">miui_MI8UD_8.11.15_23427e9af0_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>5</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.8</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.8/miui_MI8UD_8.11.8_9d82982620_9.0.zip">miui_MI8UD_8.11.8_9d82982620_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.8/equuleus_images_8.11.8_20181108.0000.00_9.0_cn_fbf677e2f6.tgz">equuleus_images_8.11.8_20181108.0000.00_9.0_cn_fbf677e2f6.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>4</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.10.25</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.25/miui_MI8UD_8.10.25_8bcfe496df_9.0.zip">miui_MI8UD_8.10.25_8bcfe496df_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>3</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.10.18</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.18/miui_MI8UD_8.10.18_a9b6bfaea7_8.1.zip">miui_MI8UD_8.10.18_a9b6bfaea7_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.18/equuleus_images_8.10.18_20181018.0000.00_8.1_cn_3618267553.tgz">equuleus_images_8.10.18_20181018.0000.00_8.1_cn_3618267553.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>2</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.10.11</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.11/miui_MI8UD_8.10.11_4aecfd7166_8.1.zip">miui_MI8UD_8.10.11_4aecfd7166_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.11/equuleus_images_8.10.11_20181011.0000.00_8.1_cn_5e74a7efb8.tgz">equuleus_images_8.10.11_20181011.0000.00_8.1_cn_5e74a7efb8.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.10.10</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.10/miui_MI8UD_8.10.10_6b18000a49_8.1.zip">miui_MI8UD_8.10.10_6b18000a49_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.10/equuleus_images_8.10.10_20181010.0000.00_8.1_cn_eef379e55c.tgz">equuleus_images_8.10.10_20181010.0000.00_8.1_cn_eef379e55c.tgz</a></td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-                </div>
-        </div>
-        <div id="GB_BETA" class="mdui-p-a-2">
-                <div class="mdui-container-fluid">
-                        <div class="mdui-table-fluid">
-                                <table class="mdui-table">
-                                        <thead>
-                                                <tr>
-                                                        <th class="mdui-text-color-red">国际开发版</th>
-                                                        <th>MIUI版本</th>
-                                                        <th>版本</th>
-                                                        <th>Android版本</th>
-                                                        <th>卡刷包</th>
-                                                        <th>线刷包</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>24</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.27</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.27/miui_MI8UDGlobal_9.6.27_0b930d500c_9.0.zip">miui_MI8UDGlobal_9.6.27_0b930d500c_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.27/equuleus_global_images_9.6.27_20190627.0000.00_9.0_global_3a9303143d.tgz">equuleus_global_images_9.6.27_20190627.0000.00_9.0_global_3a9303143d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>23</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.20</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.20/miui_MI8UDGlobal_9.6.20_fed3153bd4_9.0.zip">miui_MI8UDGlobal_9.6.20_fed3153bd4_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.20/equuleus_global_images_9.6.20_20190620.0000.00_9.0_global_241f2b5693.tgz">equuleus_global_images_9.6.20_20190620.0000.00_9.0_global_241f2b5693.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>22</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.13</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.13/miui_MI8UDGlobal_9.6.13_8eafa90158_9.0.zip">miui_MI8UDGlobal_9.6.13_8eafa90158_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>21</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.30</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.30/miui_MI8UDGlobal_9.5.30_899c25d962_9.0.zip">miui_MI8UDGlobal_9.5.30_899c25d962_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.30/equuleus_global_images_9.5.30_20190530.0000.00_9.0_global_b92ee0fad6.tgz">equuleus_global_images_9.5.30_20190530.0000.00_9.0_global_b92ee0fad6.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>20</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.17</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.17/miui_MI8UDGlobal_9.5.17_070103e011_9.0.zip">miui_MI8UDGlobal_9.5.17_070103e011_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.17/equuleus_global_images_9.5.17_20190517.0000.00_9.0_global_85d9311ce4.tgz">equuleus_global_images_9.5.17_20190517.0000.00_9.0_global_85d9311ce4.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>19</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.9</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.9/miui_MI8UDGlobal_9.5.9_4a56b6f0f0_9.0.zip">miui_MI8UDGlobal_9.5.9_4a56b6f0f0_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.9/equuleus_global_images_9.5.9_20190509.0000.00_9.0_global_03156d15c6.tgz">equuleus_global_images_9.5.9_20190509.0000.00_9.0_global_03156d15c6.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>18</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.26</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.26/miui_MI8UDGlobal_9.4.26_ae4687849a_9.0.zip">miui_MI8UDGlobal_9.4.26_ae4687849a_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.26/equuleus_global_images_9.4.26_20190427.0000.00_9.0_global_4e76cf8c43.tgz">equuleus_global_images_9.4.26_20190427.0000.00_9.0_global_4e76cf8c43.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>17</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.18</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.18/miui_MI8UDGlobal_9.4.18_67ff6da452_9.0.zip">miui_MI8UDGlobal_9.4.18_67ff6da452_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.18/equuleus_global_images_9.4.18_20190418.0000.00_9.0_global_bbadc7eb4e.tgz">equuleus_global_images_9.4.18_20190418.0000.00_9.0_global_bbadc7eb4e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>16</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.12</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.12/miui_MI8UDGlobal_9.4.12_821a183632_9.0.zip">miui_MI8UDGlobal_9.4.12_821a183632_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.12/equuleus_global_images_9.4.12_20190412.0000.00_9.0_global_15a48bb7c5.tgz">equuleus_global_images_9.4.12_20190412.0000.00_9.0_global_15a48bb7c5.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>15</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.28</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.28/miui_MI8UDGlobal_9.3.28_95e7c89a78_9.0.zip">miui_MI8UDGlobal_9.3.28_95e7c89a78_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.28/equuleus_global_images_9.3.28_20190328.0000.00_9.0_global_d37fb6ce3d.tgz">equuleus_global_images_9.3.28_20190328.0000.00_9.0_global_d37fb6ce3d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>14</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.21</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.21/miui_MI8UDGlobal_9.3.21_c88327b3ef_9.0.zip">miui_MI8UDGlobal_9.3.21_c88327b3ef_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.21/equuleus_global_images_9.3.21_20190321.0000.00_9.0_global_ed0765a044.tgz">equuleus_global_images_9.3.21_20190321.0000.00_9.0_global_ed0765a044.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>13</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.14</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.14/miui_MI8UDGlobal_9.3.14_7ba65bf7db_9.0.zip">miui_MI8UDGlobal_9.3.14_7ba65bf7db_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.14/equuleus_global_images_9.3.14_20190314.0000.00_9.0_global_45c34cf822.tgz">equuleus_global_images_9.3.14_20190314.0000.00_9.0_global_45c34cf822.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>12</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.7</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.7/miui_MI8UDGlobal_9.3.7_291befc896_9.0.zip">miui_MI8UDGlobal_9.3.7_291befc896_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.7/equuleus_global_images_9.3.7_20190307.0000.00_9.0_global_6dc4ff3681.tgz">equuleus_global_images_9.3.7_20190307.0000.00_9.0_global_6dc4ff3681.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>11</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.1</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.1/miui_MI8UDGlobal_9.3.1_e644d42213_9.0.zip">miui_MI8UDGlobal_9.3.1_e644d42213_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.1/equuleus_global_images_9.3.1_20190301.0000.00_9.0_global_54bb814b7a.tgz">equuleus_global_images_9.3.1_20190301.0000.00_9.0_global_54bb814b7a.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>10</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.2.21</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.21/miui_MI8UDGlobal_9.2.21_6cb64f6161_9.0.zip">miui_MI8UDGlobal_9.2.21_6cb64f6161_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.21/equuleus_global_images_9.2.21_20190221.0000.00_9.0_global_8a083a8aef.tgz">equuleus_global_images_9.2.21_20190221.0000.00_9.0_global_8a083a8aef.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>9</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.2.15</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.15/miui_MI8UDGlobal_9.2.15_16816afe60_9.0.zip">miui_MI8UDGlobal_9.2.15_16816afe60_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.15/equuleus_global_images_9.2.15_20190215.0000.00_9.0_global_fc358d2d06.tgz">equuleus_global_images_9.2.15_20190215.0000.00_9.0_global_fc358d2d06.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>8</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.24</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.24/miui_MI8UDGlobal_9.1.24_d85b82b3ca_9.0.zip">miui_MI8UDGlobal_9.1.24_d85b82b3ca_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.24/equuleus_global_images_9.1.24_20190124.0000.00_9.0_global_beb54dc30d.tgz">equuleus_global_images_9.1.24_20190124.0000.00_9.0_global_beb54dc30d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>7</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.17</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.17/miui_MI8UDGlobal_9.1.17_1a132ecc0d_9.0.zip">miui_MI8UDGlobal_9.1.17_1a132ecc0d_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.17/equuleus_global_images_9.1.17_20190117.0000.00_9.0_global_dec766277d.tgz">equuleus_global_images_9.1.17_20190117.0000.00_9.0_global_dec766277d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>6</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.10</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.10/miui_MI8UDGlobal_9.1.10_b1062e18de_9.0.zip">miui_MI8UDGlobal_9.1.10_b1062e18de_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>5</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.27</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.27/miui_MI8UDGlobal_8.12.27_1923a28c5d_9.0.zip">miui_MI8UDGlobal_8.12.27_1923a28c5d_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.27/equuleus_global_images_8.12.27_20181227.0000.00_9.0_global_442f4232d2.tgz">equuleus_global_images_8.12.27_20181227.0000.00_9.0_global_442f4232d2.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>4</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.20</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.20/miui_MI8UDGlobal_8.12.20_3f7523c27f_9.0.zip">miui_MI8UDGlobal_8.12.20_3f7523c27f_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.20/equuleus_global_images_8.12.20_20181220.0000.00_9.0_global_ece7b2acc2.tgz">equuleus_global_images_8.12.20_20181220.0000.00_9.0_global_ece7b2acc2.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>3</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.6</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.6/miui_MI8UDGlobal_8.12.6_279335a737_8.1.zip">miui_MI8UDGlobal_8.12.6_279335a737_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.6/equuleus_global_images_8.12.6_20181206.0000.00_8.1_global_619cabfbd2.tgz">equuleus_global_images_8.12.6_20181206.0000.00_8.1_global_619cabfbd2.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>2</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.29</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.29/miui_MI8UDGlobal_8.11.29_249fca6b5e_8.1.zip">miui_MI8UDGlobal_8.11.29_249fca6b5e_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.29/equuleus_global_images_8.11.29_20181130.0000.00_8.1_global_d5057c8d87.tgz">equuleus_global_images_8.11.29_20181130.0000.00_8.1_global_d5057c8d87.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.23</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.23/miui_MI8UDGlobal_8.11.23_34e580ef7e_8.1.zip">miui_MI8UDGlobal_8.11.23_34e580ef7e_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.23/equuleus_global_images_8.11.23_20181123.0000.00_8.1_global_292e79016f.tgz">equuleus_global_images_8.11.23_20181123.0000.00_8.1_global_292e79016f.tgz</a></td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-                </div>
-        </div>
-        <div id="CN_STABLE" class="mdui-p-a-2">
-                <div class="mdui-container-fluid">
-                        <div class="mdui-table-fluid">
-                                <table class="mdui-table">
-                                        <thead>
-                                                <tr>
-                                                        <th class="mdui-text-color-red">国内稳定版</th>
-                                                        <th>MIUI版本</th>
-                                                        <th>Android版本</th>
-                                                        <th>卡刷包</th>
-                                                        <th>线刷包</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr class="mdui-hidden">
-                                                        <td>10</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>9</td>
-                                                        <td>V11.0.3.0.PECCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PECCNXM/miui_MI8UD_V11.0.3.0.PECCNXM_88e4eae066_9.0.zip">miui_MI8UD_V11.0.3.0.PECCNXM_88e4eae066_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PECCNXM/equuleus_images_V11.0.3.0.PECCNXM_20191023.0000.00_9.0_cn_19dc90aa71.tgz">equuleus_images_V11.0.3.0.PECCNXM_20191023.0000.00_9.0_cn_19dc90aa71.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>8</td>
-                                                        <td>V11.0.2.0.PECCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.2.0.PECCNXM/miui_MI8UD_V11.0.2.0.PECCNXM_f25bf7dc55_9.0.zip">miui_MI8UD_V11.0.2.0.PECCNXM_f25bf7dc55_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.2.0.PECCNXM/equuleus_images_V11.0.2.0.PECCNXM_20190920.0000.00_9.0_cn_d901411fc3.tgz">equuleus_images_V11.0.2.0.PECCNXM_20190920.0000.00_9.0_cn_d901411fc3.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>7</td>
-                                                        <td>V10.3.5.0.PECCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PECCNXM/miui_MI8UD_V10.3.5.0.PECCNXM_6781485fdc_9.0.zip">miui_MI8UD_V10.3.5.0.PECCNXM_6781485fdc_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PECCNXM/equuleus_images_V10.3.5.0.PECCNXM_20190817.0000.00_9.0_cn_308a83a921.tgz">equuleus_images_V10.3.5.0.PECCNXM_20190817.0000.00_9.0_cn_308a83a921.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>6</td>
-                                                        <td>V10.3.4.0.PECCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.4.0.PECCNXM/miui_MI8UD_V10.3.4.0.PECCNXM_aef3e722a2_9.0.zip">miui_MI8UD_V10.3.4.0.PECCNXM_aef3e722a2_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.4.0.PECCNXM/equuleus_images_V10.3.4.0.PECCNXM_20190709.0000.00_9.0_cn_745d343b91.tgz">equuleus_images_V10.3.4.0.PECCNXM_20190709.0000.00_9.0_cn_745d343b91.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>5</td>
-                                                        <td>V10.3.3.0.PECCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.3.0.PECCNXM/miui_MI8UD_V10.3.3.0.PECCNXM_e15fc692b0_9.0.zip">miui_MI8UD_V10.3.3.0.PECCNXM_e15fc692b0_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>4</td>
-                                                        <td>V10.3.1.0.PECCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.1.0.PECCNXM/miui_MI8UD_V10.3.1.0.PECCNXM_0165610bf2_9.0.zip">miui_MI8UD_V10.3.1.0.PECCNXM_0165610bf2_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>3</td>
-                                                        <td>V10.2.1.0.PECCNFK</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.1.0.PECCNFK/miui_MI8UD_V10.2.1.0.PECCNFK_2b3cc85dac_9.0.zip">miui_MI8UD_V10.2.1.0.PECCNFK_2b3cc85dac_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.1.0.PECCNFK/equuleus_images_V10.2.1.0.PECCNFK_20181217.0000.00_9.0_cn_c0477148ca.tgz">equuleus_images_V10.2.1.0.PECCNFK_20181217.0000.00_9.0_cn_c0477148ca.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>2</td>
-                                                        <td>V10.0.2.0.OECCNFH</td>
-                                                        <td>8.0 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.2.0.OECCNFH/miui_MI8UD_V10.0.2.0.OECCNFH_5bc83e88b8_8.1.zip">miui_MI8UD_V10.0.2.0.OECCNFH_5bc83e88b8_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.2.0.OECCNFH/equuleus_images_V10.0.2.0.OECCNFH_20181016.0000.00_8.1_cn_f54a94fd21.tgz">equuleus_images_V10.0.2.0.OECCNFH_20181016.0000.00_8.1_cn_f54a94fd21.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>V9.6.6.0.OECCNFD</td>
-                                                        <td>8.0 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.6.6.0.OECCNFD/miui_EQUULEUS_V9.6.6.0.OECCNFD_dbb5ea34ca_8.1.zip">miui_EQUULEUS_V9.6.6.0.OECCNFD_dbb5ea34ca_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.6.6.0.OECCNFD/equuleus_images_V9.6.6.0.OECCNFD_20180907.0000.00_8.1_cn_da56125858.tgz">equuleus_images_V9.6.6.0.OECCNFD_20180907.0000.00_8.1_cn_da56125858.tgz</a></td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-                </div>
-        </div>
-        <div id="GB_STABLE" class="mdui-p-a-2">
-                <div class="mdui-container-fluid">
-                        <div class="mdui-table-fluid">
-                                <table class="mdui-table">
-                                        <thead>
-                                                <tr>
-                                                        <th class="mdui-text-color-red">国际稳定版</th>
-                                                        <th>MIUI版本</th>
-                                                        <th>Android版本</th>
-                                                        <th>卡刷包</th>
-                                                        <th>线刷包</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr class="mdui-hidden">
-                                                        <td>13</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>12</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>11</td>
-                                                        <td>V11.0.5.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.5.0.PECMIXM/miui_MI8UDGlobal_V11.0.5.0.PECMIXM_390eb435f5_9.0.zip">miui_MI8UDGlobal_V11.0.5.0.PECMIXM_390eb435f5_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.5.0.PECMIXM/equuleus_global_images_V11.0.5.0.PECMIXM_20191021.0000.00_9.0_global_cd3e047a91.tgz">equuleus_global_images_V11.0.5.0.PECMIXM_20191021.0000.00_9.0_global_cd3e047a91.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>10</td>
-                                                        <td>V10.3.6.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PECMIXM/miui_MI8UDGlobal_V10.3.6.0.PECMIXM_f192219ab1_9.0.zip">miui_MI8UDGlobal_V10.3.6.0.PECMIXM_f192219ab1_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PECMIXM/equuleus_global_images_V10.3.6.0.PECMIXM_20190911.0000.00_9.0_global_bdbdf08f71.tgz">equuleus_global_images_V10.3.6.0.PECMIXM_20190911.0000.00_9.0_global_bdbdf08f71.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>9</td>
-                                                        <td>V10.3.5.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PECMIXM/miui_MI8UDGlobal_V10.3.5.0.PECMIXM_6f56abd7d3_9.0.zip">miui_MI8UDGlobal_V10.3.5.0.PECMIXM_6f56abd7d3_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PECMIXM/equuleus_global_images_V10.3.5.0.PECMIXM_20190801.0000.00_9.0_global_924c23859c.tgz">equuleus_global_images_V10.3.5.0.PECMIXM_20190801.0000.00_9.0_global_924c23859c.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>8</td>
-                                                        <td>V10.3.4.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.4.0.PECMIXM/miui_MI8UDGlobal_V10.3.4.0.PECMIXM_d747a3f050_9.0.zip">miui_MI8UDGlobal_V10.3.4.0.PECMIXM_d747a3f050_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.4.0.PECMIXM/equuleus_global_images_V10.3.4.0.PECMIXM_20190712.0000.00_9.0_global_9a181f79c1.tgz">equuleus_global_images_V10.3.4.0.PECMIXM_20190712.0000.00_9.0_global_9a181f79c1.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>7</td>
-                                                        <td>V10.3.3.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.3.0.PECMIXM/miui_MI8UDGlobal_V10.3.3.0.PECMIXM_cbd37dea1a_9.0.zip">miui_MI8UDGlobal_V10.3.3.0.PECMIXM_cbd37dea1a_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.3.0.PECMIXM/equuleus_global_images_V10.3.3.0.PECMIXM_20190510.0000.00_9.0_global_f99b8a8541.tgz">equuleus_global_images_V10.3.3.0.PECMIXM_20190510.0000.00_9.0_global_f99b8a8541.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>6</td>
-                                                        <td>V10.3.1.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.1.0.PECMIXM/miui_MI8UDGlobal_V10.3.1.0.PECMIXM_44aba16d4a_9.0.zip">miui_MI8UDGlobal_V10.3.1.0.PECMIXM_44aba16d4a_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>5</td>
-                                                        <td>V10.2.2.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.2.0.PECMIXM/miui_MI8UDGlobal_V10.2.2.0.PECMIXM_18c3c043ea_9.0.zip">miui_MI8UDGlobal_V10.2.2.0.PECMIXM_18c3c043ea_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.2.0.PECMIXM/equuleus_global_images_V10.2.2.0.PECMIXM_20190302.0000.00_9.0_global_2dc38e8b65.tgz">equuleus_global_images_V10.2.2.0.PECMIXM_20190302.0000.00_9.0_global_2dc38e8b65.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>4</td>
-                                                        <td>V10.2.1.0.PECMIXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.1.0.PECMIXM/miui_MI8UDGlobal_V10.2.1.0.PECMIXM_cc6b41b8ee_9.0.zip">miui_MI8UDGlobal_V10.2.1.0.PECMIXM_cc6b41b8ee_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.1.0.PECMIXM/equuleus_global_images_V10.2.1.0.PECMIXM_20190116.0000.00_9.0_global_b0996bad8e.tgz">equuleus_global_images_V10.2.1.0.PECMIXM_20190116.0000.00_9.0_global_b0996bad8e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>3</td>
-                                                        <td>V10.0.1.0.OECMIFH</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.1.0.OECMIFH/miui_MI8UDGlobal_V10.0.1.0.OECMIFH_901ac2221a_8.1.zip">miui_MI8UDGlobal_V10.0.1.0.OECMIFH_901ac2221a_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.1.0.OECMIFH/equuleus_global_images_V10.0.1.0.OECMIFH_20181106.0000.00_8.1_global_83f1d1f364.tgz">equuleus_global_images_V10.0.1.0.OECMIFH_20181106.0000.00_8.1_global_83f1d1f364.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>2</td>
-                                                        <td>V9.6.5.0.OECMIFD</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.6.5.0.OECMIFD/miui_MI8UDGlobal_V9.6.5.0.OECMIFD_091b408404_8.1.zip">miui_MI8UDGlobal_V9.6.5.0.OECMIFD_091b408404_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.6.5.0.OECMIFD/equuleus_global_images_V9.6.5.0.OECMIFD_20180926.0000.00_8.1_global_15e37db9d2.tgz">equuleus_global_images_V9.6.5.0.OECMIFD_20180926.0000.00_8.1_global_15e37db9d2.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>V9.6.3.0.OECMIFD</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.6.3.0.OECMIFD/miui_MI8UDGlobal_V9.6.3.0.OECMIFD_b59d1b285e_8.1.zip">miui_MI8UDGlobal_V9.6.3.0.OECMIFD_b59d1b285e_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-                </div>
-        </div>
-        <div id="RU_STABLE" class="mdui-p-a-2">
-                <div class="mdui-container-fluid">
-                        <div class="mdui-table-fluid">
-                                <table class="mdui-table">
-                                        <thead>
-                                                <tr>
-                                                        <th class="mdui-text-color-red">俄罗斯稳定版</th>
-                                                        <th>MIUI版本</th>
-                                                        <th>Android版本</th>
-                                                        <th>卡刷包</th>
-                                                        <th>线刷包</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr class="mdui-hidden">
-                                                        <td>5</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>4</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>3</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>2</td>
-                                                        <td>V11.0.5.0.PECRUXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.5.0.PECRUXM/miui_MI8ProRUGlobal_V11.0.5.0.PECRUXM_c086847eaf_9.0.zip">miui_MI8ProRUGlobal_V11.0.5.0.PECRUXM_c086847eaf_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.5.0.PECRUXM/equuleus_ru_global_images_V11.0.5.0.PECRUXM_20191022.0000.00_9.0_global_ba4452a3d2.tgz">equuleus_ru_global_images_V11.0.5.0.PECRUXM_20191022.0000.00_9.0_global_ba4452a3d2.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>V10.2.3.0.PECRUXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.3.0.PECRUXM/miui_MI8ProRUGlobal_V10.2.3.0.PECRUXM_315456760e_9.0.zip">miui_MI8ProRUGlobal_V10.2.3.0.PECRUXM_315456760e_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.3.0.PECRUXM/equuleus_ru_global_images_V10.2.3.0.PECRUXM_20190305.0000.00_9.0_global_f32bad3ffb.tgz">equuleus_ru_global_images_V10.2.3.0.PECRUXM_20190305.0000.00_9.0_global_f32bad3ffb.tgz</a></td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-
-                </div>
-        </div>
-
-        <!-- 由此向下区域为底部Footer的内容 -->
-
-        <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-                <script
-                        type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-        </div>
-        <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-                style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-                               >arrow_upward</a></i>
-        </button>
-</body>
-
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+				var _hmt = _hmt || [];
+				(function () {
+						var hm = document.createElement("script");
+						hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+						var s = document.getElementsByTagName("script")[0];
+						s.parentNode.insertBefore(hm, s);
+				})();
+		</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'UA-153213840-1');
+		  </script> 
+		<style>
+				li a {
+					text-decoration: none;
+					color: blue;
+				}
+		
+				td a {
+					text-decoration: none;
+					color: black;
+				}
+			</style> 
+		<title>小米8屏幕指纹版(equuleus)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：小米8屏幕指纹版/小米8 Pro</li> 
+						<li>机型代号：equuleus</li> 
+						<li>此次更新：V12.0.5.0.QECCNXM</li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">@mty324</a></li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
+						<li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/ia6vqunmaIfu">天翼云盘</a>，提取码：fdv1，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#GB_BETA" class="mdui-ripple">国际开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<!-- <tr>
+														<td>62</td>
+														<td>MIUI11</td>
+														<td>TEXT_HERE</td>
+														<td>10.0</td>
+														<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+														<td>不存在的</td>
+												</tr> --> 
+						<tr> 
+							<td>61</td> 
+							<td>MIUI11</td> 
+							<td>20.3.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.26/miui_MI8UD_20.3.26_ca326ae393_10.0.zip" id="r">miui_MI8UD_20.3.26_ca326ae393_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>60</td> 
+							<td>MIUI11</td> 
+							<td>20.3.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.19/miui_MI8UD_20.3.19_e98b2b0ca2_10.0.zip" id="r">miui_MI8UD_20.3.19_e98b2b0ca2_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>59</td> 
+							<td>MIUI11</td> 
+							<td>20.3.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.12/miui_MI8UD_20.3.12_4f26acce5b_10.0.zip" id="r">miui_MI8UD_20.3.12_4f26acce5b_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>58</td> 
+							<td>MIUI11</td> 
+							<td>20.3.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.5/miui_MI8UD_20.3.5_33470ce327_10.0.zip" id="r">miui_MI8UD_20.3.5_33470ce327_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>57</td> 
+							<td>MIUI11</td> 
+							<td>20.2.27</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.2.27/miui_MI8UD_20.2.27_e359b9135c_10.0.zip" id="r">miui_MI8UD_20.2.27_e359b9135c_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>56</td> 
+							<td>MIUI11</td> 
+							<td>20.1.16</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.16/miui_MI8UD_20.1.16_c055366796_10.0.zip" id="r">miui_MI8UD_20.1.16_c055366796_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>55</td> 
+							<td>MIUI11</td> 
+							<td>20.1.9</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.9/miui_MI8UD_20.1.9_8df2f6fa89_10.0.zip" id="r">miui_MI8UD_20.1.9_8df2f6fa89_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>54</td> 
+							<td>MIUI11</td> 
+							<td>20.1.2</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.2/miui_MI8UD_20.1.2_e26992e4e2_10.0.zip" id="r">miui_MI8UD_20.1.2_e26992e4e2_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>53</td> 
+							<td>MIUI11</td> 
+							<td>9.12.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.26/miui_MI8UD_9.12.26_d34d499d08_10.0.zip" id="r">miui_MI8UD_9.12.26_d34d499d08_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>52</td> 
+							<td>MIUI11</td> 
+							<td>9.12.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8UD_9.12.19_399500e797_10.0.zip" id="r">miui_MI8UD_9.12.19_399500e797_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>51</td> 
+							<td>MIUI11</td> 
+							<td>9.12.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.12/miui_MI8UD_9.12.12_23ff979926_10.0.zip" id="r">miui_MI8UD_9.12.12_23ff979926_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>50</td> 
+							<td>MIUI11</td> 
+							<td>9.12.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.5/miui_MI8UD_9.12.5_ab67c07583_10.0.zip" id="r">miui_MI8UD_9.12.5_ab67c07583_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>49</td> 
+							<td>MIUI11</td> 
+							<td>9.11.28</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.28/MI8UD_9.11.28_26bca97082_10.0.zip" id="r">MI8UD_9.11.28_26bca97082_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>48</td> 
+							<td>MIUI11</td> 
+							<td>9.11.21</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.21/miui_MI8UD_9.11.21_1422a55a96_10.0.zip" id="r">miui_MI8UD_9.11.21_1422a55a96_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>47</td> 
+							<td>MIUI11</td> 
+							<td>9.11.7</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/9.11.7/miui_MI8UD_9.11.7_c60b514744_10.0.zip" id="r">miui_MI8UD_9.11.7_c60b514744_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>46</td> 
+							<td>MIUI11</td> 
+							<td>9.10.31</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/9.10.31/miui_MI8UD_9.10.31_025858eda9_10.0.zip" id="r">miui_MI8UD_9.10.31_025858eda9_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>45</td> 
+							<td>MIUI11</td> 
+							<td>9.10.24</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.24/miui_MI8UD_9.10.24_f64ebda82e_10.0.zip" id="r">miui_MI8UD_9.10.24_f64ebda82e_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>44</td> 
+							<td>MIUI11</td> 
+							<td>9.10.17</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.17/miui_MI8UD_9.10.17_9ce281aeed_10.0.zip" id="r">miui_MI8UD_9.10.17_9ce281aeed_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>43</td> 
+							<td>MIUI11</td> 
+							<td>9.10.10</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/9.10.10/miui_MI8UD_9.10.10_96b96de4d4_10.0.zip" id="r">miui_MI8UD_9.10.10_96b96de4d4_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>42</td> 
+							<td>MIUI11</td> 
+							<td>9.9.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8UD_9.9.26_27b9d13be9_9.0.zip" id="r">miui_MI8UD_9.9.26_27b9d13be9_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>41</td> 
+							<td>MIUI10</td> 
+							<td>9.9.3</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.9.3/miui_MI8UD_9.9.3_03f07e3d60_9.0.zip" id="r">miui_MI8UD_9.9.3_03f07e3d60_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.9.3/equuleus_images_9.9.3_20190904.0000.00_9.0_cn_e82f0588d9.tgz" id="f">equuleus_images_9.9.3_20190904.0000.00_9.0_cn_e82f0588d9.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>40</td> 
+							<td>MIUI10</td> 
+							<td>9.8.22</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.22/miui_MI8UD_9.8.22_0ca63f8d13_9.0.zip" id="r">miui_MI8UD_9.8.22_0ca63f8d13_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.22/equuleus_images_9.8.22_20190822.0000.00_9.0_cn_983434e6bd.tgz" id="f">equuleus_images_9.8.22_20190822.0000.00_9.0_cn_983434e6bd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>39</td> 
+							<td>MIUI10</td> 
+							<td>9.8.15</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.15/miui_MI8UD_9.8.15_4d94ff2f34_9.0.zip" id="r">miui_MI8UD_9.8.15_4d94ff2f34_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.15/equuleus_images_9.8.15_20190815.0000.00_9.0_cn_5e6edfe1d5.tgz" id="f">equuleus_images_9.8.15_20190815.0000.00_9.0_cn_5e6edfe1d5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>38</td> 
+							<td>MIUI10</td> 
+							<td>9.8.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.9/miui_MI8UD_9.8.9_b07b61897c_9.0.zip" id="r">miui_MI8UD_9.8.9_b07b61897c_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.9/equuleus_images_9.8.9_20190809.0000.00_9.0_cn_f527cad165.tgz" id="f">equuleus_images_9.8.9_20190809.0000.00_9.0_cn_f527cad165.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>37</td> 
+							<td>MIUI10</td> 
+							<td>9.8.1</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.1/miui_MI8UD_9.8.1_76b7181a38_9.0.zip" id="r">miui_MI8UD_9.8.1_76b7181a38_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.1/equuleus_images_9.8.1_20190801.0000.00_9.0_cn_ed61ecf38f.tgz" id="f">equuleus_images_9.8.1_20190801.0000.00_9.0_cn_ed61ecf38f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>36</td> 
+							<td>MIUI10</td> 
+							<td>9.7.25</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.25/miui_MI8UD_9.7.25_ab4a04408c_9.0.zip" id="r">miui_MI8UD_9.7.25_ab4a04408c_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.25/equuleus_images_9.7.25_20190725.0000.00_9.0_cn_1331dd2674.tgz" id="f">equuleus_images_9.7.25_20190725.0000.00_9.0_cn_1331dd2674.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>35</td> 
+							<td>MIUI10</td> 
+							<td>9.7.18</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.18/miui_MI8UD_9.7.18_c9d5e5bc2a_9.0.zip" id="r">miui_MI8UD_9.7.18_c9d5e5bc2a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.18/equuleus_images_9.7.18_20190718.0000.00_9.0_cn_eaa9d5df1d.tgz" id="f">equuleus_images_9.7.18_20190718.0000.00_9.0_cn_eaa9d5df1d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>34</td> 
+							<td>MIUI10</td> 
+							<td>9.7.11</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.11/miui_MI8UD_9.7.11_207a1cfac1_9.0.zip" id="r">miui_MI8UD_9.7.11_207a1cfac1_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.11/equuleus_images_9.7.11_20190711.0000.00_9.0_cn_c4c28f5ef4.tgz" id="f">equuleus_images_9.7.11_20190711.0000.00_9.0_cn_c4c28f5ef4.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>33</td> 
+							<td>MIUI10</td> 
+							<td>9.7.4</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.4/miui_MI8UD_9.7.4_c15d2d7586_9.0.zip" id="r">miui_MI8UD_9.7.4_c15d2d7586_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.4/equuleus_images_9.7.4_20190704.0000.00_9.0_cn_9b26d167cb.tgz" id="f">equuleus_images_9.7.4_20190704.0000.00_9.0_cn_9b26d167cb.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>32</td> 
+							<td>MIUI10</td> 
+							<td>9.6.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/miui_MI8UD_9.6.27_dd916d8786_9.0.zip" id="r">miui_MI8UD_9.6.27_dd916d8786_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/equuleus_images_9.6.27_20190627.0000.00_9.0_cn_ed222d3ef5.tgz" id="f">equuleus_images_9.6.27_20190627.0000.00_9.0_cn_ed222d3ef5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>31</td> 
+							<td>MIUI10</td> 
+							<td>9.6.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/miui_MI8UD_9.6.20_83814ee7b5_9.0.zip" id="r">miui_MI8UD_9.6.20_83814ee7b5_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/equuleus_images_9.6.20_20190620.0000.00_9.0_cn_c79ca8dba6.tgz" id="f">equuleus_images_9.6.20_20190620.0000.00_9.0_cn_c79ca8dba6.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>30</td> 
+							<td>MIUI10</td> 
+							<td>9.6.13</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.13/miui_MI8UD_9.6.13_b055e4306a_9.0.zip" id="r">miui_MI8UD_9.6.13_b055e4306a_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>29</td> 
+							<td>MIUI10</td> 
+							<td>9.5.30</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/miui_MI8UD_9.5.30_8718c17931_9.0.zip" id="r">miui_MI8UD_9.5.30_8718c17931_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/equuleus_images_9.5.30_20190530.0000.00_9.0_cn_fa6a025b36.tgz" id="f">equuleus_images_9.5.30_20190530.0000.00_9.0_cn_fa6a025b36.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>28</td> 
+							<td>MIUI10</td> 
+							<td>9.5.17</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.17/miui_MI8UD_9.5.17_5372faae1b_9.0.zip" id="r">miui_MI8UD_9.5.17_5372faae1b_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.17/equuleus_images_9.5.17_20190517.0000.00_9.0_cn_2a765098a7.tgz" id="f">equuleus_images_9.5.17_20190517.0000.00_9.0_cn_2a765098a7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>27</td> 
+							<td>MIUI10</td> 
+							<td>9.5.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/miui_MI8UD_9.5.9_b6d2a27972_9.0.zip" id="r">miui_MI8UD_9.5.9_b6d2a27972_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/equuleus_images_9.5.9_20190509.0000.00_9.0_cn_f6a9558c5f.tgz" id="f">equuleus_images_9.5.9_20190509.0000.00_9.0_cn_f6a9558c5f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>26</td> 
+							<td>MIUI10</td> 
+							<td>9.4.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.26/miui_MI8UD_9.4.26_0778ff89b7_9.0.zip" id="r">miui_MI8UD_9.4.26_0778ff89b7_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.4.26/equuleus_images_9.4.26_20190426.0000.00_9.0_cn_26e29cd964.tgz" id="f">equuleus_images_9.4.26_20190426.0000.00_9.0_cn_26e29cd964.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>25</td> 
+							<td>MIUI10</td> 
+							<td>9.4.18</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.18/miui_MI8UD_9.4.18_1a94bb2c72_9.0.zip" id="r">miui_MI8UD_9.4.18_1a94bb2c72_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.4.18/equuleus_images_9.4.18_20190418.0000.00_9.0_cn_17302236b1.tgz" id="f">equuleus_images_9.4.18_20190418.0000.00_9.0_cn_17302236b1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>24</td> 
+							<td>MIUI10</td> 
+							<td>9.4.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.12/miui_MI8UD_9.4.12_9dfbf6d8de_9.0.zip" id="r">miui_MI8UD_9.4.12_9dfbf6d8de_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>23</td> 
+							<td>MIUI10</td> 
+							<td>9.3.28</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.28/miui_MI8UD_9.3.28_a1b682b327_9.0.zip" id="r">miui_MI8UD_9.3.28_a1b682b327_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.28/equuleus_images_9.3.28_20190328.0000.00_9.0_cn_2fe019c9cd.tgz" id="f">equuleus_images_9.3.28_20190328.0000.00_9.0_cn_2fe019c9cd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>22</td> 
+							<td>MIUI10</td> 
+							<td>9.3.21</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.21/miui_MI8UD_9.3.21_f996194f9f_9.0.zip" id="r">miui_MI8UD_9.3.21_f996194f9f_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.21/equuleus_images_9.3.21_20190321.0000.00_9.0_cn_953febc148.tgz" id="f">equuleus_images_9.3.21_20190321.0000.00_9.0_cn_953febc148.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>21</td> 
+							<td>MIUI10</td> 
+							<td>9.3.14</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.14/miui_MI8UD_9.3.14_e75485d96a_9.0.zip" id="r">miui_MI8UD_9.3.14_e75485d96a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.14/equuleus_images_9.3.14_20190314.0000.00_9.0_cn_c0715e590b.tgz" id="f">equuleus_images_9.3.14_20190314.0000.00_9.0_cn_c0715e590b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>20</td> 
+							<td>MIUI10</td> 
+							<td>9.3.7</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.7/miui_MI8UD_9.3.7_75f0cef08d_9.0.zip" id="r">miui_MI8UD_9.3.7_75f0cef08d_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>19</td> 
+							<td>MIUI10</td> 
+							<td>9.3.1</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.1/miui_MI8UD_9.3.1_f044d5da54_9.0.zip" id="r">miui_MI8UD_9.3.1_f044d5da54_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>18</td> 
+							<td>MIUI10</td> 
+							<td>9.2.21</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.2.21/miui_MI8UD_9.2.21_2b87d6e332_9.0.zip" id="r">miui_MI8UD_9.2.21_2b87d6e332_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.2.21/equuleus_images_9.2.21_20190221.0000.00_9.0_cn_98d947b04d.tgz" id="f">equuleus_images_9.2.21_20190221.0000.00_9.0_cn_98d947b04d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>MIUI10</td> 
+							<td>9.2.15</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.2.15/miui_MI8UD_9.2.15_1a700ed31a_9.0.zip" id="r">miui_MI8UD_9.2.15_1a700ed31a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.2.15/equuleus_images_9.2.15_20190215.0000.00_9.0_cn_607a6af42d.tgz" id="f">equuleus_images_9.2.15_20190215.0000.00_9.0_cn_607a6af42d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>MIUI10</td> 
+							<td>9.1.24</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.24/miui_MI8UD_9.1.24_ad33756e49_9.0.zip" id="r">miui_MI8UD_9.1.24_ad33756e49_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.1.24/equuleus_images_9.1.24_20190124.0000.00_9.0_cn_489dda933f.tgz" id="f">equuleus_images_9.1.24_20190124.0000.00_9.0_cn_489dda933f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>MIUI10</td> 
+							<td>9.1.17</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.17/miui_MI8UD_9.1.17_71fc614e07_9.0.zip" id="r">miui_MI8UD_9.1.17_71fc614e07_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.1.17/equuleus_images_9.1.17_20190117.0000.00_9.0_cn_92f27a5a67.tgz" id="f">equuleus_images_9.1.17_20190117.0000.00_9.0_cn_92f27a5a67.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>MIUI10</td> 
+							<td>9.1.10</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.10/miui_MI8UD_9.1.10_d6cb873c15_9.0.zip" id="r">miui_MI8UD_9.1.10_d6cb873c15_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.1.10/equuleus_images_9.1.10_20190110.0000.00_9.0_cn_c8f1ea91b0.tgz" id="f">equuleus_images_9.1.10_20190110.0000.00_9.0_cn_c8f1ea91b0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>MIUI10</td> 
+							<td>9.1.1</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.1/miui_MI8UD_9.1.1_35f3768c71_9.0.zip" id="r">miui_MI8UD_9.1.1_35f3768c71_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI10</td> 
+							<td>8.12.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.27/miui_MI8UD_8.12.27_d0979874b2_9.0.zip" id="r">miui_MI8UD_8.12.27_d0979874b2_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI10</td> 
+							<td>8.12.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.20/miui_MI8UD_8.12.20_7f9ae47f39_9.0.zip" id="r">miui_MI8UD_8.12.20_7f9ae47f39_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI10</td> 
+							<td>8.12.13</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.13/miui_MI8UD_8.12.13_c3a41c70d7_9.0.zip" id="r">miui_MI8UD_8.12.13_c3a41c70d7_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.12.13/equuleus_images_8.12.13_20181213.0000.00_9.0_cn_e243f943f1.tgz" id="f">equuleus_images_8.12.13_20181213.0000.00_9.0_cn_e243f943f1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI10</td> 
+							<td>8.12.7</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.7/miui_MI8UD_8.12.7_37720098ca_9.0.zip" id="r">miui_MI8UD_8.12.7_37720098ca_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.12.7/equuleus_images_8.12.7_20181207.0000.00_9.0_cn_02569cd790.tgz" id="f">equuleus_images_8.12.7_20181207.0000.00_9.0_cn_02569cd790.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI10</td> 
+							<td>8.11.29</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.29/miui_MI8UD_8.11.29_5502ad4f57_9.0.zip" id="r">miui_MI8UD_8.11.29_5502ad4f57_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI10</td> 
+							<td>8.11.23</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.23/miui_MI8UD_8.11.23_b83abd2f39_9.0.zip" id="r">miui_MI8UD_8.11.23_b83abd2f39_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI10</td> 
+							<td>8.11.15</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.15/miui_MI8UD_8.11.15_23427e9af0_9.0.zip" id="r">miui_MI8UD_8.11.15_23427e9af0_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI10</td> 
+							<td>8.11.8</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.8/miui_MI8UD_8.11.8_9d82982620_9.0.zip" id="r">miui_MI8UD_8.11.8_9d82982620_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.11.8/equuleus_images_8.11.8_20181108.0000.00_9.0_cn_fbf677e2f6.tgz" id="f">equuleus_images_8.11.8_20181108.0000.00_9.0_cn_fbf677e2f6.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI10</td> 
+							<td>8.10.25</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.10.25/miui_MI8UD_8.10.25_8bcfe496df_9.0.zip" id="r">miui_MI8UD_8.10.25_8bcfe496df_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI10</td> 
+							<td>8.10.18</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.10.18/miui_MI8UD_8.10.18_a9b6bfaea7_8.1.zip" id="r">miui_MI8UD_8.10.18_a9b6bfaea7_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.10.18/equuleus_images_8.10.18_20181018.0000.00_8.1_cn_3618267553.tgz" id="f">equuleus_images_8.10.18_20181018.0000.00_8.1_cn_3618267553.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI10</td> 
+							<td>8.10.11</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.10.11/miui_MI8UD_8.10.11_4aecfd7166_8.1.zip" id="r">miui_MI8UD_8.10.11_4aecfd7166_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.10.11/equuleus_images_8.10.11_20181011.0000.00_8.1_cn_5e74a7efb8.tgz" id="f">equuleus_images_8.10.11_20181011.0000.00_8.1_cn_5e74a7efb8.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI10</td> 
+							<td>8.10.10</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.10.10/miui_MI8UD_8.10.10_6b18000a49_8.1.zip" id="r">miui_MI8UD_8.10.10_6b18000a49_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.10.10/equuleus_images_8.10.10_20181010.0000.00_8.1_cn_eef379e55c.tgz" id="f">equuleus_images_8.10.10_20181010.0000.00_8.1_cn_eef379e55c.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="GB_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>24</td> 
+							<td>MIUI10</td> 
+							<td>9.6.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/miui_MI8UDGlobal_9.6.27_0b930d500c_9.0.zip" id="r">miui_MI8UDGlobal_9.6.27_0b930d500c_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/equuleus_global_images_9.6.27_20190627.0000.00_9.0_global_3a9303143d.tgz" id="f">equuleus_global_images_9.6.27_20190627.0000.00_9.0_global_3a9303143d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>23</td> 
+							<td>MIUI10</td> 
+							<td>9.6.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/miui_MI8UDGlobal_9.6.20_fed3153bd4_9.0.zip" id="r">miui_MI8UDGlobal_9.6.20_fed3153bd4_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/equuleus_global_images_9.6.20_20190620.0000.00_9.0_global_241f2b5693.tgz" id="f">equuleus_global_images_9.6.20_20190620.0000.00_9.0_global_241f2b5693.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>22</td> 
+							<td>MIUI10</td> 
+							<td>9.6.13</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.13/miui_MI8UDGlobal_9.6.13_8eafa90158_9.0.zip" id="r">miui_MI8UDGlobal_9.6.13_8eafa90158_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>21</td> 
+							<td>MIUI10</td> 
+							<td>9.5.30</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/miui_MI8UDGlobal_9.5.30_899c25d962_9.0.zip" id="r">miui_MI8UDGlobal_9.5.30_899c25d962_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/equuleus_global_images_9.5.30_20190530.0000.00_9.0_global_b92ee0fad6.tgz" id="f">equuleus_global_images_9.5.30_20190530.0000.00_9.0_global_b92ee0fad6.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>20</td> 
+							<td>MIUI10</td> 
+							<td>9.5.17</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.17/miui_MI8UDGlobal_9.5.17_070103e011_9.0.zip" id="r">miui_MI8UDGlobal_9.5.17_070103e011_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.17/equuleus_global_images_9.5.17_20190517.0000.00_9.0_global_85d9311ce4.tgz" id="f">equuleus_global_images_9.5.17_20190517.0000.00_9.0_global_85d9311ce4.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>19</td> 
+							<td>MIUI10</td> 
+							<td>9.5.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/miui_MI8UDGlobal_9.5.9_4a56b6f0f0_9.0.zip" id="r">miui_MI8UDGlobal_9.5.9_4a56b6f0f0_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/equuleus_global_images_9.5.9_20190509.0000.00_9.0_global_03156d15c6.tgz" id="f">equuleus_global_images_9.5.9_20190509.0000.00_9.0_global_03156d15c6.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>18</td> 
+							<td>MIUI10</td> 
+							<td>9.4.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.26/miui_MI8UDGlobal_9.4.26_ae4687849a_9.0.zip" id="r">miui_MI8UDGlobal_9.4.26_ae4687849a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.4.26/equuleus_global_images_9.4.26_20190427.0000.00_9.0_global_4e76cf8c43.tgz" id="f">equuleus_global_images_9.4.26_20190427.0000.00_9.0_global_4e76cf8c43.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>MIUI10</td> 
+							<td>9.4.18</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.18/miui_MI8UDGlobal_9.4.18_67ff6da452_9.0.zip" id="r">miui_MI8UDGlobal_9.4.18_67ff6da452_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.4.18/equuleus_global_images_9.4.18_20190418.0000.00_9.0_global_bbadc7eb4e.tgz" id="f">equuleus_global_images_9.4.18_20190418.0000.00_9.0_global_bbadc7eb4e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>MIUI10</td> 
+							<td>9.4.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.12/miui_MI8UDGlobal_9.4.12_821a183632_9.0.zip" id="r">miui_MI8UDGlobal_9.4.12_821a183632_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.4.12/equuleus_global_images_9.4.12_20190412.0000.00_9.0_global_15a48bb7c5.tgz" id="f">equuleus_global_images_9.4.12_20190412.0000.00_9.0_global_15a48bb7c5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>MIUI10</td> 
+							<td>9.3.28</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.28/miui_MI8UDGlobal_9.3.28_95e7c89a78_9.0.zip" id="r">miui_MI8UDGlobal_9.3.28_95e7c89a78_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.28/equuleus_global_images_9.3.28_20190328.0000.00_9.0_global_d37fb6ce3d.tgz" id="f">equuleus_global_images_9.3.28_20190328.0000.00_9.0_global_d37fb6ce3d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>MIUI10</td> 
+							<td>9.3.21</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.21/miui_MI8UDGlobal_9.3.21_c88327b3ef_9.0.zip" id="r">miui_MI8UDGlobal_9.3.21_c88327b3ef_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.21/equuleus_global_images_9.3.21_20190321.0000.00_9.0_global_ed0765a044.tgz" id="f">equuleus_global_images_9.3.21_20190321.0000.00_9.0_global_ed0765a044.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>MIUI10</td> 
+							<td>9.3.14</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.14/miui_MI8UDGlobal_9.3.14_7ba65bf7db_9.0.zip" id="r">miui_MI8UDGlobal_9.3.14_7ba65bf7db_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.14/equuleus_global_images_9.3.14_20190314.0000.00_9.0_global_45c34cf822.tgz" id="f">equuleus_global_images_9.3.14_20190314.0000.00_9.0_global_45c34cf822.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI10</td> 
+							<td>9.3.7</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.7/miui_MI8UDGlobal_9.3.7_291befc896_9.0.zip" id="r">miui_MI8UDGlobal_9.3.7_291befc896_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.7/equuleus_global_images_9.3.7_20190307.0000.00_9.0_global_6dc4ff3681.tgz" id="f">equuleus_global_images_9.3.7_20190307.0000.00_9.0_global_6dc4ff3681.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI10</td> 
+							<td>9.3.1</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.1/miui_MI8UDGlobal_9.3.1_e644d42213_9.0.zip" id="r">miui_MI8UDGlobal_9.3.1_e644d42213_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.1/equuleus_global_images_9.3.1_20190301.0000.00_9.0_global_54bb814b7a.tgz" id="f">equuleus_global_images_9.3.1_20190301.0000.00_9.0_global_54bb814b7a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI10</td> 
+							<td>9.2.21</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.2.21/miui_MI8UDGlobal_9.2.21_6cb64f6161_9.0.zip" id="r">miui_MI8UDGlobal_9.2.21_6cb64f6161_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.2.21/equuleus_global_images_9.2.21_20190221.0000.00_9.0_global_8a083a8aef.tgz" id="f">equuleus_global_images_9.2.21_20190221.0000.00_9.0_global_8a083a8aef.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI10</td> 
+							<td>9.2.15</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.2.15/miui_MI8UDGlobal_9.2.15_16816afe60_9.0.zip" id="r">miui_MI8UDGlobal_9.2.15_16816afe60_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.2.15/equuleus_global_images_9.2.15_20190215.0000.00_9.0_global_fc358d2d06.tgz" id="f">equuleus_global_images_9.2.15_20190215.0000.00_9.0_global_fc358d2d06.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI10</td> 
+							<td>9.1.24</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.24/miui_MI8UDGlobal_9.1.24_d85b82b3ca_9.0.zip" id="r">miui_MI8UDGlobal_9.1.24_d85b82b3ca_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.1.24/equuleus_global_images_9.1.24_20190124.0000.00_9.0_global_beb54dc30d.tgz" id="f">equuleus_global_images_9.1.24_20190124.0000.00_9.0_global_beb54dc30d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI10</td> 
+							<td>9.1.17</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.17/miui_MI8UDGlobal_9.1.17_1a132ecc0d_9.0.zip" id="r">miui_MI8UDGlobal_9.1.17_1a132ecc0d_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.1.17/equuleus_global_images_9.1.17_20190117.0000.00_9.0_global_dec766277d.tgz" id="f">equuleus_global_images_9.1.17_20190117.0000.00_9.0_global_dec766277d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI10</td> 
+							<td>9.1.10</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.10/miui_MI8UDGlobal_9.1.10_b1062e18de_9.0.zip" id="r">miui_MI8UDGlobal_9.1.10_b1062e18de_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI10</td> 
+							<td>8.12.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.27/miui_MI8UDGlobal_8.12.27_1923a28c5d_9.0.zip" id="r">miui_MI8UDGlobal_8.12.27_1923a28c5d_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.12.27/equuleus_global_images_8.12.27_20181227.0000.00_9.0_global_442f4232d2.tgz" id="f">equuleus_global_images_8.12.27_20181227.0000.00_9.0_global_442f4232d2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI10</td> 
+							<td>8.12.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.20/miui_MI8UDGlobal_8.12.20_3f7523c27f_9.0.zip" id="r">miui_MI8UDGlobal_8.12.20_3f7523c27f_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.12.20/equuleus_global_images_8.12.20_20181220.0000.00_9.0_global_ece7b2acc2.tgz" id="f">equuleus_global_images_8.12.20_20181220.0000.00_9.0_global_ece7b2acc2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI10</td> 
+							<td>8.12.6</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.6/miui_MI8UDGlobal_8.12.6_279335a737_8.1.zip" id="r">miui_MI8UDGlobal_8.12.6_279335a737_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.12.6/equuleus_global_images_8.12.6_20181206.0000.00_8.1_global_619cabfbd2.tgz" id="f">equuleus_global_images_8.12.6_20181206.0000.00_8.1_global_619cabfbd2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI10</td> 
+							<td>8.11.29</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.29/miui_MI8UDGlobal_8.11.29_249fca6b5e_8.1.zip" id="r">miui_MI8UDGlobal_8.11.29_249fca6b5e_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.11.29/equuleus_global_images_8.11.29_20181130.0000.00_8.1_global_d5057c8d87.tgz" id="f">equuleus_global_images_8.11.29_20181130.0000.00_8.1_global_d5057c8d87.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI10</td> 
+							<td>8.11.23</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.23/miui_MI8UDGlobal_8.11.23_34e580ef7e_8.1.zip" id="r">miui_MI8UDGlobal_8.11.23_34e580ef7e_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.11.23/equuleus_global_images_8.11.23_20181123.0000.00_8.1_global_292e79016f.tgz" id="f">equuleus_global_images_8.11.23_20181123.0000.00_8.1_global_292e79016f.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V12.0.4.0.QECCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QECCNXM/miui_MI8UD_V12.0.4.0.QECCNXM_f875c0d75f_10.0.zip" id="r">miui_MI8UD_V12.0.4.0.QECCNXM_f875c0d75f_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QECCNXM/equuleus_images_V12.0.4.0.QECCNXM_20201222.0000.00_10.0_cn_b4d6c7584d.tgz" id="f">equuleus_images_V12.0.4.0.QECCNXM_20201222.0000.00_10.0_cn_b4d6c7584d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.3.0.QECCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QECCNXM/miui_MI8UD_V12.0.3.0.QECCNXM_f2bbbdce7b_10.0.zip" id="r">miui_MI8UD_V12.0.3.0.QECCNXM_f2bbbdce7b_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QECCNXM/equuleus_images_V12.0.3.0.QECCNXM_20201204.0000.00_10.0_cn_a45a5659c1.tgz" id="f">equuleus_images_V12.0.3.0.QECCNXM_20201204.0000.00_10.0_cn_a45a5659c1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.2.0.QECCNXM </td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QECCNXM/miui_MI8UD_V12.0.2.0.QECCNXM_01127ae6da_10.0.zip" id="r">miui_MI8UD_V12.0.2.0.QECCNXM_01127ae6da_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QECCNXM/equuleus_images_V12.0.2.0.QECCNXM_20200818.0000.00_10.0_cn_f42299b37f.tgz" id="f">equuleus_images_V12.0.2.0.QECCNXM_20200818.0000.00_10.0_cn_f42299b37f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V11.0.2.0.QECCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QECCNXM/miui_MI8UD_V11.0.2.0.QECCNXM_e52b417323_10.0.zip" id="r">miui_MI8UD_V11.0.2.0.QECCNXM_e52b417323_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QECCNXM/equuleus_images_V11.0.2.0.QECCNXM_20200310.0000.00_10.0_cn_929be97213.tgz" id="f">equuleus_images_V11.0.2.0.QECCNXM_20200310.0000.00_10.0_cn_929be97213.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V11.0.1.0.QECCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.1.0.QECCNXM/miui_MI8UD_V11.0.1.0.QECCNXM_b1c2953aed_10.0.zip" id="r">miui_MI8UD_V11.0.1.0.QECCNXM_b1c2953aed_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.1.0.QECCNXM/equuleus_images_V11.0.1.0.QECCNXM_20191227.0000.00_10.0_cn_00560cc764.tgz" id="f">equuleus_images_V11.0.1.0.QECCNXM_20191227.0000.00_10.0_cn_00560cc764.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.3.0.PECCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PECCNXM/miui_MI8UD_V11.0.3.0.PECCNXM_88e4eae066_9.0.zip" id="r">miui_MI8UD_V11.0.3.0.PECCNXM_88e4eae066_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PECCNXM/equuleus_images_V11.0.3.0.PECCNXM_20191023.0000.00_9.0_cn_19dc90aa71.tgz" id="f">equuleus_images_V11.0.3.0.PECCNXM_20191023.0000.00_9.0_cn_19dc90aa71.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.2.0.PECCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PECCNXM/miui_MI8UD_V11.0.2.0.PECCNXM_f25bf7dc55_9.0.zip" id="r">miui_MI8UD_V11.0.2.0.PECCNXM_f25bf7dc55_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PECCNXM/equuleus_images_V11.0.2.0.PECCNXM_20190920.0000.00_9.0_cn_d901411fc3.tgz" id="f">equuleus_images_V11.0.2.0.PECCNXM_20190920.0000.00_9.0_cn_d901411fc3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V10.3.5.0.PECCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PECCNXM/miui_MI8UD_V10.3.5.0.PECCNXM_6781485fdc_9.0.zip" id="r">miui_MI8UD_V10.3.5.0.PECCNXM_6781485fdc_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PECCNXM/equuleus_images_V10.3.5.0.PECCNXM_20190817.0000.00_9.0_cn_308a83a921.tgz" id="f">equuleus_images_V10.3.5.0.PECCNXM_20190817.0000.00_9.0_cn_308a83a921.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V10.3.4.0.PECCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PECCNXM/miui_MI8UD_V10.3.4.0.PECCNXM_aef3e722a2_9.0.zip" id="r">miui_MI8UD_V10.3.4.0.PECCNXM_aef3e722a2_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PECCNXM/equuleus_images_V10.3.4.0.PECCNXM_20190709.0000.00_9.0_cn_745d343b91.tgz" id="f">equuleus_images_V10.3.4.0.PECCNXM_20190709.0000.00_9.0_cn_745d343b91.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.3.3.0.PECCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PECCNXM/miui_MI8UD_V10.3.3.0.PECCNXM_e15fc692b0_9.0.zip" id="r">miui_MI8UD_V10.3.3.0.PECCNXM_e15fc692b0_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.1.0.PECCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.1.0.PECCNXM/miui_MI8UD_V10.3.1.0.PECCNXM_0165610bf2_9.0.zip" id="r">miui_MI8UD_V10.3.1.0.PECCNXM_0165610bf2_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.2.1.0.PECCNFK</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.1.0.PECCNFK/miui_MI8UD_V10.2.1.0.PECCNFK_2b3cc85dac_9.0.zip" id="r">miui_MI8UD_V10.2.1.0.PECCNFK_2b3cc85dac_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.1.0.PECCNFK/equuleus_images_V10.2.1.0.PECCNFK_20181217.0000.00_9.0_cn_c0477148ca.tgz" id="f">equuleus_images_V10.2.1.0.PECCNFK_20181217.0000.00_9.0_cn_c0477148ca.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.0.2.0.OECCNFH</td> 
+							<td>8.0 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.2.0.OECCNFH/miui_MI8UD_V10.0.2.0.OECCNFH_5bc83e88b8_8.1.zip" id="r">miui_MI8UD_V10.0.2.0.OECCNFH_5bc83e88b8_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.2.0.OECCNFH/equuleus_images_V10.0.2.0.OECCNFH_20181016.0000.00_8.1_cn_f54a94fd21.tgz" id="f">equuleus_images_V10.0.2.0.OECCNFH_20181016.0000.00_8.1_cn_f54a94fd21.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V9.6.6.0.OECCNFD</td> 
+							<td>8.0 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.6.6.0.OECCNFD/miui_EQUULEUS_V9.6.6.0.OECCNFD_dbb5ea34ca_8.1.zip" id="r">miui_EQUULEUS_V9.6.6.0.OECCNFD_dbb5ea34ca_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.6.6.0.OECCNFD/equuleus_images_V9.6.6.0.OECCNFD_20180907.0000.00_8.1_cn_da56125858.tgz" id="f">equuleus_images_V9.6.6.0.OECCNFD_20180907.0000.00_8.1_cn_da56125858.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="GB_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>20</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>19</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>18</td> 
+							<td>V12.0.5.0.QECCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QECMIXM/miui_MI8UD_V12.0.5.0.QECCNXM_d7fc38a453_10.0.zip" id="r">miui_MI8UD_V12.0.5.0.QECCNXM_d7fc38a453_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QECMIXM/equuleus_images_V12.0.5.0.QECCNXM_20210326.0000.00_10.0_cn_7d78525b39.tgz" id="f">equuleus_images_V12.0.5.0.QECCNXM_20210326.0000.00_10.0_cn_7d78525b39.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>V12.0.1.0.QECMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QECMIXM/miui_MI8UDGlobal_V12.0.1.0.QECMIXM_7c80eadccc_10.0.zip" id="r">miui_MI8UDGlobal_V12.0.1.0.QECMIXM_7c80eadccc_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QECMIXM/equuleus_global_images_V12.0.1.0.QECMIXM_20201020.0000.00_10.0_global_68c5b8da45.tgz" id="f">equuleus_global_images_V12.0.1.0.QECMIXM_20201020.0000.00_10.0_global_68c5b8da45.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>V11.0.11.0.QECMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.11.0.QECMIXM/miui_MI8UDGlobal_V11.0.11.0.QECMIXM_adaa87fb7d_10.0.zip" id="r">miui_MI8UDGlobal_V11.0.11.0.QECMIXM_adaa87fb7d_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.11.0.QECMIXM/equuleus_global_images_V11.0.11.0.QECMIXM_20200922.0000.00_10.0_global_4ce1cb9a36.tgz" id="f">equuleus_global_images_V11.0.11.0.QECMIXM_20200922.0000.00_10.0_global_4ce1cb9a36.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>V11.0.9.0.QECMIXM </td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.9.0.QECMIXM/miui_MI8UDGlobal_V11.0.9.0.QECMIXM_35695bfee7_10.0.zip" id="r">miui_MI8UDGlobal_V11.0.9.0.QECMIXM_35695bfee7_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V11.0.7.0.QECMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.7.0.QECMIXM/miui_MI8UDGlobal_V11.0.7.0.QECMIXM_4c4949cc93_10.0.zip" id="r">miui_MI8UDGlobal_V11.0.7.0.QECMIXM_4c4949cc93_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V11.0.5.0.QECMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.QECMIXM/miui_MI8UDGlobal_V11.0.5.0.QECMIXM_80436ccbc4_10.0.zip" id="r">miui_MI8UDGlobal_V11.0.5.0.QECMIXM_80436ccbc4_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PECMIXM/equuleus_global_images_V11.0.5.0.PECMIXM_20191021.0000.00_9.0_global_cd3e047a91.tgz" id="f">equuleus_global_images_V11.0.5.0.PECMIXM_20191021.0000.00_9.0_global_cd3e047a91.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V11.0.3.0.QECMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QECMIXM/miui_MI8UDGlobal_V11.0.3.0.QECMIXM_f26257a956_10.0.zip" id="r">miui_MI8UDGlobal_V11.0.3.0.QECMIXM_f26257a956_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QECMIXM/equuleus_global_images_V11.0.3.0.QECMIXM_20200212.0000.00_10.0_global_ac057ea706.tgz" id="f">equuleus_global_images_V11.0.3.0.QECMIXM_20200212.0000.00_10.0_global_ac057ea706.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V11.0.5.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PECMIXM/miui_MI8UDGlobal_V11.0.5.0.PECMIXM_390eb435f5_9.0.zip" id="r">miui_MI8UDGlobal_V11.0.5.0.PECMIXM_390eb435f5_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PECMIXM/equuleus_global_images_V11.0.5.0.PECMIXM_20191021.0000.00_9.0_global_cd3e047a91.tgz" id="f">equuleus_global_images_V11.0.5.0.PECMIXM_20191021.0000.00_9.0_global_cd3e047a91.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V10.3.6.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PECMIXM/miui_MI8UDGlobal_V10.3.6.0.PECMIXM_f192219ab1_9.0.zip" id="r">miui_MI8UDGlobal_V10.3.6.0.PECMIXM_f192219ab1_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PECMIXM/equuleus_global_images_V10.3.6.0.PECMIXM_20190911.0000.00_9.0_global_bdbdf08f71.tgz" id="f">equuleus_global_images_V10.3.6.0.PECMIXM_20190911.0000.00_9.0_global_bdbdf08f71.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V10.3.5.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PECMIXM/miui_MI8UDGlobal_V10.3.5.0.PECMIXM_6f56abd7d3_9.0.zip" id="r">miui_MI8UDGlobal_V10.3.5.0.PECMIXM_6f56abd7d3_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PECMIXM/equuleus_global_images_V10.3.5.0.PECMIXM_20190801.0000.00_9.0_global_924c23859c.tgz" id="f">equuleus_global_images_V10.3.5.0.PECMIXM_20190801.0000.00_9.0_global_924c23859c.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V10.3.4.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PECMIXM/miui_MI8UDGlobal_V10.3.4.0.PECMIXM_d747a3f050_9.0.zip" id="r">miui_MI8UDGlobal_V10.3.4.0.PECMIXM_d747a3f050_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PECMIXM/equuleus_global_images_V10.3.4.0.PECMIXM_20190712.0000.00_9.0_global_9a181f79c1.tgz" id="f">equuleus_global_images_V10.3.4.0.PECMIXM_20190712.0000.00_9.0_global_9a181f79c1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V10.3.3.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PECMIXM/miui_MI8UDGlobal_V10.3.3.0.PECMIXM_cbd37dea1a_9.0.zip" id="r">miui_MI8UDGlobal_V10.3.3.0.PECMIXM_cbd37dea1a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PECMIXM/equuleus_global_images_V10.3.3.0.PECMIXM_20190510.0000.00_9.0_global_f99b8a8541.tgz" id="f">equuleus_global_images_V10.3.3.0.PECMIXM_20190510.0000.00_9.0_global_f99b8a8541.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V10.3.1.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.1.0.PECMIXM/miui_MI8UDGlobal_V10.3.1.0.PECMIXM_44aba16d4a_9.0.zip" id="r">miui_MI8UDGlobal_V10.3.1.0.PECMIXM_44aba16d4a_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.2.2.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.2.0.PECMIXM/miui_MI8UDGlobal_V10.2.2.0.PECMIXM_18c3c043ea_9.0.zip" id="r">miui_MI8UDGlobal_V10.2.2.0.PECMIXM_18c3c043ea_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.2.0.PECMIXM/equuleus_global_images_V10.2.2.0.PECMIXM_20190302.0000.00_9.0_global_2dc38e8b65.tgz" id="f">equuleus_global_images_V10.2.2.0.PECMIXM_20190302.0000.00_9.0_global_2dc38e8b65.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.2.1.0.PECMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.1.0.PECMIXM/miui_MI8UDGlobal_V10.2.1.0.PECMIXM_cc6b41b8ee_9.0.zip" id="r">miui_MI8UDGlobal_V10.2.1.0.PECMIXM_cc6b41b8ee_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.1.0.PECMIXM/equuleus_global_images_V10.2.1.0.PECMIXM_20190116.0000.00_9.0_global_b0996bad8e.tgz" id="f">equuleus_global_images_V10.2.1.0.PECMIXM_20190116.0000.00_9.0_global_b0996bad8e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.0.1.0.OECMIFH</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.1.0.OECMIFH/miui_MI8UDGlobal_V10.0.1.0.OECMIFH_901ac2221a_8.1.zip" id="r">miui_MI8UDGlobal_V10.0.1.0.OECMIFH_901ac2221a_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.1.0.OECMIFH/equuleus_global_images_V10.0.1.0.OECMIFH_20181106.0000.00_8.1_global_83f1d1f364.tgz" id="f">equuleus_global_images_V10.0.1.0.OECMIFH_20181106.0000.00_8.1_global_83f1d1f364.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V9.6.5.0.OECMIFD</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.6.5.0.OECMIFD/miui_MI8UDGlobal_V9.6.5.0.OECMIFD_091b408404_8.1.zip" id="r">miui_MI8UDGlobal_V9.6.5.0.OECMIFD_091b408404_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.6.5.0.OECMIFD/equuleus_global_images_V9.6.5.0.OECMIFD_20180926.0000.00_8.1_global_15e37db9d2.tgz" id="f">equuleus_global_images_V9.6.5.0.OECMIFD_20180926.0000.00_8.1_global_15e37db9d2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V9.6.3.0.OECMIFD</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.6.3.0.OECMIFD/miui_MI8UDGlobal_V9.6.3.0.OECMIFD_b59d1b285e_8.1.zip" id="r">miui_MI8UDGlobal_V9.6.3.0.OECMIFD_b59d1b285e_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="RU_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">俄罗斯稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>10</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>9</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>8</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>7</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V12.0.1.0.QECRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QECRUXM/miui_MI8ProRUGlobal_V12.0.1.0.QECRUXM_44bcc2b8b4_10.0.zip" id="r">miui_MI8ProRUGlobal_V12.0.1.0.QECRUXM_44bcc2b8b4_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QECRUXM/equuleus_ru_global_images_V12.0.1.0.QECRUXM_20201108.0000.00_10.0_global_756a9c94bd.tgz" id="f">equuleus_ru_global_images_V12.0.1.0.QECRUXM_20201108.0000.00_10.0_global_756a9c94bd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.4.0.QECRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QECRUXM/miui_MI8ProRUGlobal_V11.0.4.0.QECRUXM_c437f995ca_10.0.zip" id="r">miui_MI8ProRUGlobal_V11.0.4.0.QECRUXM_c437f995ca_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QECRUXM/equuleus_ru_global_images_V11.0.4.0.QECRUXM_20200705.0000.00_10.0_global_e1c6dd46fc.tgz" id="f">equuleus_ru_global_images_V11.0.4.0.QECRUXM_20200705.0000.00_10.0_global_e1c6dd46fc.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V11.0.3.0.QECRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.3.0.QECRUXM/miui_MI8ProRUGlobal_V11.0.3.0.QECRUXM_7e66d5c027_10.0.zip" id="r">miui_MI8ProRUGlobal_V11.0.3.0.QECRUXM_7e66d5c027_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.3.0.QECRUXM/equuleus_ru_global_images_V11.0.3.0.QECRUXM_20200426.0000.00_10.0_global_fac3492886.tgz" id="f">equuleus_ru_global_images_V11.0.3.0.QECRUXM_20200426.0000.00_10.0_global_fac3492886.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V11.0.1.0.QECRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.1.0.QECRUXM/miui_MI8ProRUGlobal_V11.0.1.0.QECRUXM_f993b94108_10.0.zip" id="r">miui_MI8ProRUGlobal_V11.0.1.0.QECRUXM_f993b94108_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.1.0.QECRUXM/equuleus_ru_global_images_V11.0.1.0.QECRUXM_20200212.0000.00_10.0_global_e1eea862c0.tgz" id="f">equuleus_ru_global_images_V11.0.1.0.QECRUXM_20200212.0000.00_10.0_global_e1eea862c0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V11.0.5.0.PECRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PECRUXM/miui_MI8ProRUGlobal_V11.0.5.0.PECRUXM_c086847eaf_9.0.zip" id="r">miui_MI8ProRUGlobal_V11.0.5.0.PECRUXM_c086847eaf_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PECRUXM/equuleus_ru_global_images_V11.0.5.0.PECRUXM_20191022.0000.00_9.0_global_ba4452a3d2.tgz" id="f">equuleus_ru_global_images_V11.0.5.0.PECRUXM_20191022.0000.00_9.0_global_ba4452a3d2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.2.3.0.PECRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.PECRUXM/miui_MI8ProRUGlobal_V10.2.3.0.PECRUXM_315456760e_9.0.zip" id="r">miui_MI8ProRUGlobal_V10.2.3.0.PECRUXM_315456760e_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.PECRUXM/equuleus_ru_global_images_V10.2.3.0.PECRUXM_20190305.0000.00_9.0_global_f32bad3ffb.tgz" id="f">equuleus_ru_global_images_V10.2.3.0.PECRUXM_20190305.0000.00_9.0_global_f32bad3ffb.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>

@@ -1,302 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-      <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
-      </script>
-    <style>
-            li a {
-                text-decoration: none;
-                color: blue;
-            }
-    
-            td a {
-                text-decoration: none;
-                color: black;
-            }
-        </style>
-    <title>小米CC9e(laurus)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body class="mdui-bottom-nav-fixed">
-    <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
-        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-        <div class="mdui-toolbar-spacer"></div>
-        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                    <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                        <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                </li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="mdui-panel mdui-panel-gapless">
-        <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-            <div class="mdui-panel-item-body">
-                <ol>
-                    <li>机型：小米CC9e 代号：laurus</li>
-                    <li>此次更新项目：V11.0.3.0.PFMCNXM</li>
-                    <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
-                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
-                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为ROM的正式内容 -->
-    <div class="mdui-row-xs-4 mdui-hidden mdui-row-gapless">
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_BETA"
-                   >国内开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_BETA"
-                   >国际开发版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#CN_STABLE"
-                   >国内稳定版</a></button>
-        </div>
-        <div class="mdui-col">
-            <button class="mdui-btn mdui-btn-block"><a href="#GB_STABLE"
-                   >国际稳定版</a></button>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid mdui-hidden" id="CN_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>TEXT</td>
-                        <td>TEXT</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="TEXT">TEXT</a></td>
-                        <td><a href="TEXT">TEXT</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid mdui-hidden" id="GB_BETA">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际开发版</th>
-                        <th>MIUI版本</th>
-                        <th>版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>TEXT</td>
-                        <td>TEXT</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="TEXT">TEXT</a></td>
-                        <td><a href="TEXT">TEXT</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="mdui-container-fluid" id="CN_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国内稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="mdui-hidden">
-                        <td>10</td>
-                        <td>TEXT</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="TEXT">TEXT</a></td>
-                        <td><a href="TEXT">TEXT</a></td>
-                    </tr>
-                    <tr class="mdui-hidden">
-                        <td>9</td>
-                        <td>TEXT</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="TEXT">TEXT</a></td>
-                        <td><a href="TEXT">TEXT</a></td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>V11.0.3.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFMCNXM/miui_LAURUS_V11.0.3.0.PFMCNXM_bcd57bbf2d_9.0.zip">miui_LAURUS_V11.0.3.0.PFMCNXM_bcd57bbf2d_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFMCNXM/laurus_images_V11.0.3.0.PFMCNXM_20191217.0000.00_9.0_cn_511539c278.tgz">laurus_images_V11.0.3.0.PFMCNXM_20191217.0000.00_9.0_cn_511539c278.tgz</a></td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>V11.0.2.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.2.0.PFMCNXM/miui_LAURUS_V11.0.2.0.PFMCNXM_09f596a24c_9.0.zip">V11.0.2.0.PFMCNXM/miui_LAURUS_V11.0.2.0.PFMCNXM_09f596a24c_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V11.0.2.0.PFMCNXM/laurus_images_V11.0.2.0.PFMCNXM_20191031.0000.00_9.0_cn_da780db6c3.tgz">laurus_images_V11.0.2.0.PFMCNXM_20191031.0000.00_9.0_cn_da780db6c3.tgz</a></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>V10.2.13.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.13.0.PFMCNXM/miui_LAURUS_V10.2.13.0.PFMCNXM_5a9706d537_9.0.zip">miui_LAURUS_V10.2.13.0.PFMCNXM_5a9706d537_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.13.0.PFMCNXM/laurus_images_V10.2.13.0.PFMCNXM_20190830.0000.00_9.0_cn_fc9f51f46d.tgz">laurus_images_V10.2.13.0.PFMCNXM_20190830.0000.00_9.0_cn_fc9f51f46d.tgz</a></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>V10.2.12.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.12.0.PFMCNXM/miui_LAURUS_V10.2.12.0.PFMCNXM_9c7131b1d0_9.0.zip">miui_LAURUS_V10.2.12.0.PFMCNXM_9c7131b1d0_9.0.zip</a></td>
-                        <td>未发布</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>V10.2.11.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.11.0.PFMCNXM/miui_LAURUS_V10.2.11.0.PFMCNXM_07bbd0dfa1_9.0.zip">miui_LAURUS_V10.2.11.0.PFMCNXM_07bbd0dfa1_9.0.zip</a></td>
-                        <td>未发布</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>V10.2.10.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.10.0.PFMCNXM/miui_LAURUS_V10.2.10.0.PFMCNXM_d26ff234f6_9.0.zip">miui_LAURUS_V10.2.10.0.PFMCNXM_d26ff234f6_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.10.0.PFMCNXM/laurus_images_V10.2.10.0.PFMCNXM_20190723.0000.00_9.0_cn_154c47f4ad.tgz">laurus_images_V10.2.10.0.PFMCNXM_20190723.0000.00_9.0_cn_154c47f4ad.tgz</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>V10.2.8.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.8.0.PFMCNXM/miui_LAURUS_V10.2.8.0.PFMCNXM_60b0f2fe60_9.0.zip">miui_LAURUS_V10.2.8.0.PFMCNXM_60b0f2fe60_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.8.0.PFMCNXM/laurus_images_V10.2.8.0.PFMCNXM_20190704.0000.00_9.0_cn_4a8922559f.tgz">laurus_images_V10.2.8.0.PFMCNXM_20190704.0000.00_9.0_cn_4a8922559f.tgz</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>V10.2.7.0.PFMCNXM</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.7.0.PFMCNXM/miui_LAURUS_V10.2.7.0.PFMCNXM_e97f175b59_9.0.zip">miui_LAURUS_V10.2.7.0.PFMCNXM_e97f175b59_9.0.zip</a></td>
-                        <td><a href="http://bigota.d.miui.com/V10.2.7.0.PFMCNXM/laurus_images_V10.2.7.0.PFMCNXM_20190620.0000.00_9.0_cn_d350f178a6.tgz">laurus_images_V10.2.7.0.PFMCNXM_20190620.0000.00_9.0_cn_d350f178a6.tgz</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-    <div class="mdui-container-fluid mdui-hidden" id="GB_STABLE">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th class="mdui-text-color-red">国际稳定版</th>
-                        <th>MIUI版本</th>
-                        <th>Android版本</th>
-                        <th>卡刷包</th>
-                        <th>线刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>TEXT</td>
-                        <td>9.0 Pie</td>
-                        <td><a href="TEXT">TEXT</a></td>
-                        <td><a href="TEXT">TEXT</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-    <!-- 由此向下区域为底部Footer的内容 -->
-
-    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-        <script
-            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-    </div>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-               >arrow_upward</a></i>
-    </button>
-</body>
-
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<style>
+			li a {
+				text-decoration: none;
+				color: blue;
+			}
+	
+			td a {
+				text-decoration: none;
+				color: black;
+			}
+		</style> 
+		<title>小米CC9e(laurus)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body class="mdui-bottom-nav-fixed"> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：小米CC9e</li> 
+						<li>机型代号：laurus</li> 
+						<li>此次更新：V12.0.4.0.QFMCNXM</li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
+						<li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/ia6vqunmaIfu">天翼云盘</a>，提取码：fdv1，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>13</td> 
+							<td>MIUI11</td> 
+							<td>20.3.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.26/miui_LAURUS_20.3.26_251c110ea6_9.0.zip" id="r">miui_LAURUS_20.3.26_251c110ea6_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI11</td> 
+							<td>20.3.19</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.19/miui_LAURUS_20.3.19_68784bf4cf_9.0.zip" id="r">miui_LAURUS_20.3.19_68784bf4cf_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI11</td> 
+							<td>20.3.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.12/miui_LAURUS_20.3.12_7be48f80d8_9.0.zip" id="r">miui_LAURUS_20.3.12_7be48f80d8_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI11</td> 
+							<td>20.3.5</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.5/miui_LAURUS_20.3.5_531a704ec9_9.0.zip" id="r">miui_LAURUS_20.3.5_531a704ec9_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI11</td> 
+							<td>20.2.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.2.27/miui_LAURUS_20.2.27_2a65f4f4cc_9.0.zip" id="r">miui_LAURUS_20.2.27_2a65f4f4cc_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI11</td> 
+							<td>20.1.16</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.16/miui_LAURUS_20.1.16_77850857d0_9.0.zip" id="r">miui_LAURUS_20.1.16_77850857d0_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI11</td> 
+							<td>20.1.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.9/miui_LAURUS_20.1.9_e75bbb2df8_9.0.zip" id="r">miui_LAURUS_20.1.9_e75bbb2df8_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI11</td> 
+							<td>20.1.2</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.2/miui_LAURUS_20.1.2_808ced1875_9.0.zip" id="r">miui_LAURUS_20.1.2_808ced1875_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI11</td> 
+							<td>9.12.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.26/miui_LAURUS_9.12.26_25dfe724eb_9.0.zip" id="r">miui_LAURUS_9.12.26_25dfe724eb_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI11</td> 
+							<td>9.12.19</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.19/miui_LAURUS_9.12.19_e2eb497c25_9.0.zip" id="r">miui_LAURUS_9.12.19_e2eb497c25_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI11</td> 
+							<td>9.12.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.12/miui_LAURUS_9.12.12_d1b8db24ce_9.0.zip" id="r">miui_LAURUS_9.12.12_d1b8db24ce_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI11</td> 
+							<td>9.12.5</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.5/miui_LAURUS_9.12.5_216b148a50_9.0.zip" id="r">miui_LAURUS_9.12.5_216b148a50_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI11</td> 
+							<td>9.10.17</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.17/miui_LAURUS_9.10.17_6c4b9bf0a8_9.0.zip" id="r">miui_LAURUS_9.10.17_6c4b9bf0a8_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT">TEXT</a></td> 
+							<td><a href="TEXT">TEXT</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>14</td> 
+							<td>TEXT</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT">TEXT</a></td> 
+							<td><a href="TEXT">TEXT</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>13</td> 
+							<td>TEXT</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT">TEXT</a></td> 
+							<td><a href="TEXT">TEXT</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.4.0.QFMCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFMCNXM/miui_LAURUS_V12.0.4.0.QFMCNXM_74cce5492a_10.0.zip" id="r">miui_LAURUS_V12.0.4.0.QFMCNXM_74cce5492a_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFMCNXM/laurus_images_V12.0.4.0.QFMCNXM_20210407.0000.00_10.0_cn_a33f17bd1b.tgz" id="f">laurus_images_V12.0.4.0.QFMCNXM_20210407.0000.00_10.0_cn_a33f17bd1b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.3.0.QFMCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFMCNXM/miui_LAURUS_V12.0.3.0.QFMCNXM_33dbfb5dd7_10.0.zip" id="r">miui_LAURUS_V12.0.3.0.QFMCNXM_33dbfb5dd7_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFMCNXM/laurus_images_V12.0.3.0.QFMCNXM_20201016.0000.00_10.0_cn_681b8bfd1b.tgz" id="f">laurus_images_V12.0.3.0.QFMCNXM_20201016.0000.00_10.0_cn_681b8bfd1b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V11.0.6.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.PFMCNXM/miui_LAURUS_V11.0.6.0.PFMCNXM_3234ede2d4_9.0.zip" id="r">miui_LAURUS_V11.0.6.0.PFMCNXM_3234ede2d4_9.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.PFMCNXM/laurus_images_V11.0.6.0.PFMCNXM_20200612.0000.00_9.0_cn_4ee3097c89.tgz" id="f">laurus_images_V11.0.6.0.PFMCNXM_20200612.0000.00_9.0_cn_4ee3097c89.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.4.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFMCNXM/miui_LAURUS_V11.0.4.0.PFMCNXM_606fd6ecac_9.0.zip" id="r">miui_LAURUS_V11.0.4.0.PFMCNXM_606fd6ecac_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFMCNXM/laurus_images_V11.0.4.0.PFMCNXM_20200114.0000.00_9.0_cn_4647dfd07f.tgz" id="f">laurus_images_V11.0.4.0.PFMCNXM_20200114.0000.00_9.0_cn_4647dfd07f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.3.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFMCNXM/miui_LAURUS_V11.0.3.0.PFMCNXM_bcd57bbf2d_9.0.zip" id="r">miui_LAURUS_V11.0.3.0.PFMCNXM_bcd57bbf2d_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFMCNXM/laurus_images_V11.0.3.0.PFMCNXM_20191217.0000.00_9.0_cn_511539c278.tgz" id="f">laurus_images_V11.0.3.0.PFMCNXM_20191217.0000.00_9.0_cn_511539c278.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.2.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PFMCNXM/miui_LAURUS_V11.0.2.0.PFMCNXM_09f596a24c_9.0.zip" id="r">miui_LAURUS_V11.0.2.0.PFMCNXM_09f596a24c_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PFMCNXM/laurus_images_V11.0.2.0.PFMCNXM_20191031.0000.00_9.0_cn_da780db6c3.tgz" id="f">laurus_images_V11.0.2.0.PFMCNXM_20191031.0000.00_9.0_cn_da780db6c3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V10.2.13.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.13.0.PFMCNXM/miui_LAURUS_V10.2.13.0.PFMCNXM_5a9706d537_9.0.zip" id="r">miui_LAURUS_V10.2.13.0.PFMCNXM_5a9706d537_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.13.0.PFMCNXM/laurus_images_V10.2.13.0.PFMCNXM_20190830.0000.00_9.0_cn_fc9f51f46d.tgz" id="f">laurus_images_V10.2.13.0.PFMCNXM_20190830.0000.00_9.0_cn_fc9f51f46d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.2.12.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.12.0.PFMCNXM/miui_LAURUS_V10.2.12.0.PFMCNXM_9c7131b1d0_9.0.zip" id="r">miui_LAURUS_V10.2.12.0.PFMCNXM_9c7131b1d0_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.2.11.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.11.0.PFMCNXM/miui_LAURUS_V10.2.11.0.PFMCNXM_07bbd0dfa1_9.0.zip" id="r">miui_LAURUS_V10.2.11.0.PFMCNXM_07bbd0dfa1_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.2.10.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.10.0.PFMCNXM/miui_LAURUS_V10.2.10.0.PFMCNXM_d26ff234f6_9.0.zip" id="r">miui_LAURUS_V10.2.10.0.PFMCNXM_d26ff234f6_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.10.0.PFMCNXM/laurus_images_V10.2.10.0.PFMCNXM_20190723.0000.00_9.0_cn_154c47f4ad.tgz" id="f">laurus_images_V10.2.10.0.PFMCNXM_20190723.0000.00_9.0_cn_154c47f4ad.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.2.8.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.8.0.PFMCNXM/miui_LAURUS_V10.2.8.0.PFMCNXM_60b0f2fe60_9.0.zip" id="r">miui_LAURUS_V10.2.8.0.PFMCNXM_60b0f2fe60_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.8.0.PFMCNXM/laurus_images_V10.2.8.0.PFMCNXM_20190704.0000.00_9.0_cn_4a8922559f.tgz" id="f">laurus_images_V10.2.8.0.PFMCNXM_20190704.0000.00_9.0_cn_4a8922559f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.2.7.0.PFMCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.7.0.PFMCNXM/miui_LAURUS_V10.2.7.0.PFMCNXM_e97f175b59_9.0.zip" id="r">miui_LAURUS_V10.2.7.0.PFMCNXM_e97f175b59_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.7.0.PFMCNXM/laurus_images_V10.2.7.0.PFMCNXM_20190620.0000.00_9.0_cn_d350f178a6.tgz" id="f">laurus_images_V10.2.7.0.PFMCNXM_20190620.0000.00_9.0_cn_d350f178a6.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>

@@ -1,537 +1,965 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-      <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
-      </script>
-    <style>
-            li a {
-                text-decoration: none;
-                color: blue;
-            }
-    
-            td a {
-                text-decoration: none;
-                color: black;
-            }
-        </style>
-    <title>Redmi K20(davinci)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body class="mdui-bottom-nav-fixed">
-    <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
-        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-        <div class="mdui-toolbar-spacer"></div>
-        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                    <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                        <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="mdui-panel mdui-panel-gapless">
-        <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-            <div class="mdui-panel-item-body">
-                <ol>
-                    <li>机型：Redmi K20 代号：davinci</li>
-                    <li>此次更新项目：V11.0.3.0.PFJEUXM</li>
-                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
-                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为ROM的正式内容 -->
-    <div><br></div>
-    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
-            <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
-            <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
-            <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
-            <a href="#IN_STABLE" class="mdui-ripple">印度稳定版</a>
-            <a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a>
-            <a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
-    </div>
-    <div id="CN_BETA" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国内开发版</th>
-                            <th>MIUI版本</th>
-                            <th>版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>2</td>
-                            <td>MIUI10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>MIUI10</td>
-                            <td>9.6.20</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.6.20/miui_DAVINCI_9.6.20_5550222ae2_9.0.zip">miui_DAVINCI_9.6.20_5550222ae2_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/9.6.20/davinci_images_9.6.20_20190620.0000.00_9.0_cn_eaf0551cb0.tgz">davinci_images_9.6.20_20190620.0000.00_9.0_cn_eaf0551cb0.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <div id="CN_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国内稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>12</td>
-                            <td>TEXT_HERE</td>
-                            <td>TEXT_HERE</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>11</td>
-                            <td>TEXT_HERE</td>
-                            <td>TEXT_HERE</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>TEXT_HERE</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>TEXT_HERE</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>TEXT_HERE</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>V11.0.3.0.PFJCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJCNXM/miui_DAVINCI_V11.0.3.0.PFJCNXM_104ec46429_9.0.zip">miui_DAVINCI_V11.0.3.0.PFJCNXM_104ec46429_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJCNXM/davinci_images_V11.0.3.0.PFJCNXM_20190926.0000.00_9.0_cn_fd671ffccf.tgz">davinci_images_V11.0.3.0.PFJCNXM_20190926.0000.00_9.0_cn_fd671ffccf.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>V10.3.15.0.PFJCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.15.0.PFJCNXM/miui_DAVINCI_V10.3.15.0.PFJCNXM_d8545c3ae5_9.0.zip">miui_DAVINCI_V10.3.15.0.PFJCNXM_d8545c3ae5_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.15.0.PFJCNXM/davinci_images_V10.3.15.0.PFJCNXM_20190827.0000.00_9.0_cn_62327c4a51.tgz">davinci_images_V10.3.15.0.PFJCNXM_20190827.0000.00_9.0_cn_62327c4a51.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V10.3.14.0.PFJCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.14.0.PFJCNXM/miui_DAVINCI_V10.3.14.0.PFJCNXM_f944c0a4bf_9.0.zip">miui_DAVINCI_V10.3.14.0.PFJCNXM_f944c0a4bf_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.14.0.PFJCNXM/davinci_images_V10.3.14.0.PFJCNXM_20190802.0000.00_9.0_cn_087bc8862c.tgz">davinci_images_V10.3.14.0.PFJCNXM_20190802.0000.00_9.0_cn_087bc8862c.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.3.12.0.PFJCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJCNXM/miui_DAVINCI_V10.3.12.0.PFJCNXM_54a3ff575a_9.0.zip">miui_DAVINCI_V10.3.12.0.PFJCNXM_54a3ff575a_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJCNXM/davinci_images_V10.3.12.0.PFJCNXM_20190712.0000.00_9.0_cn_5d53ab8f55.tgz">davinci_images_V10.3.12.0.PFJCNXM_20190712.0000.00_9.0_cn_5d53ab8f55.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.3.8.0.PFJCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJCNXM/miui_DAVINCI_V10.3.8.0.PFJCNXM_968e5a975a_9.0.zip">miui_DAVINCI_V10.3.8.0.PFJCNXM_968e5a975a_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJCNXM/davinci_images_V10.3.8.0.PFJCNXM_20190616.0000.00_9.0_cn_c4b6816e36.tgz">davinci_images_V10.3.8.0.PFJCNXM_20190616.0000.00_9.0_cn_c4b6816e36.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.3.7.0.PFJCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJCNXM/miui_DAVINCI_V10.3.7.0.PFJCNXM_ec12ed28ae_9.0.zip">miui_DAVINCI_V10.3.7.0.PFJCNXM_ec12ed28ae_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJCNXM/davinci_images_V10.3.7.0.PFJCNXM_20190603.0000.00_9.0_cn_ef655a5611.tgz">davinci_images_V10.3.7.0.PFJCNXM_20190603.0000.00_9.0_cn_ef655a5611.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.3.6.0.PFJCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJCNXM/miui_DAVINCI_V10.3.6.0.PFJCNXM_f4750444d0_9.0.zip">miui_DAVINCI_V10.3.6.0.PFJCNXM_f4750444d0_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJCNXM/davinci_images_V10.3.6.0.PFJCNXM_20190522.0000.00_9.0_cn_84dc48df10.tgz">davinci_images_V10.3.6.0.PFJCNXM_20190522.0000.00_9.0_cn_84dc48df10.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-    <div id="GB_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国际稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>V11.0.1.0.PFJMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.1.0.PFJMIXM/miui_DAVINCIGlobal_V11.0.1.0.PFJMIXM_de37c81233_9.0.zip">miui_DAVINCIGlobal_V11.0.1.0.PFJMIXM_de37c81233_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.1.0.PFJMIXM/davinci_global_images_V11.0.1.0.PFJMIXM_20191028.0000.00_9.0_global_156b6de73d.tgz">davinci_global_images_V11.0.1.0.PFJMIXM_20191028.0000.00_9.0_global_156b6de73d.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V10.3.11.0.PFJMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.11.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.11.0.PFJMIXM_a63c8d3d93_9.0.zip">miui_DAVINCIGlobal_V10.3.11.0.PFJMIXM_a63c8d3d93_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.11.0.PFJMIXM/davinci_global_images_V10.3.11.0.PFJMIXM_20190802.0000.00_9.0_global_ea6683ef55.tgz">davinci_global_images_V10.3.11.0.PFJMIXM_20190802.0000.00_9.0_global_ea6683ef55.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.3.9.0.PFJMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.9.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.9.0.PFJMIXM_1b6f5bc7ca_9.0.zip">miui_DAVINCIGlobal_V10.3.9.0.PFJMIXM_1b6f5bc7ca_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.9.0.PFJMIXM/davinci_global_images_V10.3.9.0.PFJMIXM_20190712.0000.00_9.0_global_78c1ba9dbe.tgz">davinci_global_images_V10.3.9.0.PFJMIXM_20190712.0000.00_9.0_global_78c1ba9dbe.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.3.7.0.PFJMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.7.0.PFJMIXM_a0622a6370_9.0.zip">miui_DAVINCIGlobal_V10.3.7.0.PFJMIXM_a0622a6370_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.3.6.0.PFJMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.6.0.PFJMIXM_4879216355_9.0.zip">miui_DAVINCIGlobal_V10.3.6.0.PFJMIXM_4879216355_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJMIXM/davinci_global_images_V10.3.6.0.PFJMIXM_20190603.0000.00_9.0_global_a0c4a98edb.tgz">davinci_global_images_V10.3.6.0.PFJMIXM_20190603.0000.00_9.0_global_a0c4a98edb.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.3.5.0.PFJMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.5.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.5.0.PFJMIXM_7d69a41fb1_9.0.zip">miui_DAVINCIGlobal_V10.3.5.0.PFJMIXM_7d69a41fb1_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.5.0.PFJMIXM/davinci_global_images_V10.3.5.0.PFJMIXM_20190528.0000.00_9.0_global_4222a49ff1.tgz">davinci_global_images_V10.3.5.0.PFJMIXM_20190528.0000.00_9.0_global_4222a49ff1.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="IN_STABLE" class="mdui-p-a-2">
-            <div class="mdui-container-fluid">
-                <div class="mdui-table-fluid">
-                    <table class="mdui-table">
-                        <thead>
-                            <tr>
-                                <th class="mdui-text-color-red">印度稳定版</th>
-                                <th>MIUI版本</th>
-                                <th>Android版本</th>
-                                <th>卡刷包</th>
-                                <th>线刷包</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="mdui-hidden">
-                                <td>5</td>
-                                <td>TEXT_HERE</td>
-                                <td>9.0 Pie</td>
-                                <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>V11.0.2.0.PFJINXM</td>
-                                <td>9.0 Pie</td>
-                                <td><a href="http://bigota.d.miui.com/V11.0.2.0.PFJINXM/miui_DAVINCIININGlobal_V11.0.2.0.PFJINXM_45b2a8ac93_9.0.zip">miui_DAVINCIININGlobal_V11.0.2.0.PFJINXM_45b2a8ac93_9.0.zip</a></td>
-                                <td>未发布</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>V10.3.8.0.PFJINXM</td>
-                                <td>9.0 Pie</td>
-                                <td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJINXM/miui_DAVINCIININGlobal_V10.3.8.0.PFJINXM_207eaee662_9.0.zip">miui_DAVINCIININGlobal_V10.3.8.0.PFJINXM_207eaee662_9.0.zip</a></td>
-                                <td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJINXM/davinciin_in_global_images_V10.3.8.0.PFJINXM_20190816.0000.00_9.0_in_f68dcf8608.tgz">davinciin_in_global_images_V10.3.8.0.PFJINXM_20190816.0000.00_9.0_in_f68dcf8608.tgz</a></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>V10.3.6.0.PFJINXM</td>
-                                <td>9.0 Pie</td>
-                                <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJINXM/miui_DAVINCIININGlobal_V10.3.6.0.PFJINXM_c4a069be9e_9.0.zip">miui_DAVINCIININGlobal_V10.3.6.0.PFJINXM_c4a069be9e_9.0.zip</a></td>
-                                <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJINXM/davinciin_in_global_images_V10.3.6.0.PFJINXM_20190712.0000.00_9.0_in_ebf44c2420.tgz">davinciin_in_global_images_V10.3.6.0.PFJINXM_20190712.0000.00_9.0_in_ebf44c2420.tgz</a></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>V10.3.3.0.PFJINXM</td>
-                                <td>9.0 Pie</td>
-                                <td><a href="http://bigota.d.miui.com/V10.3.3.0.PFJINXM/miui_DAVINCIININGlobal_V10.3.3.0.PFJINXM_599f996c8b_9.0.zip">miui_DAVINCIININGlobal_V10.3.3.0.PFJINXM_599f996c8b_9.0.zip</a></td>
-                                <td><a href="http://bigota.d.miui.com/V10.3.3.0.PFJINXM/davinciin_in_global_images_V10.3.3.0.PFJINXM_20190621.0000.00_9.0_in_95bf3310b3.tgz">davinciin_in_global_images_V10.3.3.0.PFJINXM_20190621.0000.00_9.0_in_95bf3310b3.tgz</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-    
-            </div>
-        </div>
-    <div id="EEA_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">EEA稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>V11.0.3.0.PFJEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJEUXM/miui_DAVINCIEEAGlobal_V11.0.3.0.PFJEUXM_222331be17_9.0.zip">miui_DAVINCIEEAGlobal_V11.0.3.0.PFJEUXM_222331be17_9.0.zip</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>V11.0.2.0.PFJEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.2.0.PFJEUXM/miui_DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM_e32b086df3_9.0.zip">miui_DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM_e32b086df3_9.0.zip</a></td> <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V10.3.15.0.PFJEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td>未发布</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.15.0.PFJEUXM/davinci_eea_global_images_V10.3.15.0.PFJEUXM_20190921.0000.00_9.0_eea_69ac20afc7.tgz">davinci_eea_global_images_V10.3.15.0.PFJEUXM_20190921.0000.00_9.0_eea_69ac20afc7.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.3.12.0.PFJEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.12.0.PFJEUXM_946a02f6df_9.0.zip">miui_DAVINCIEEAGlobal_V10.3.12.0.PFJEUXM_946a02f6df_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJEUXM/davinci_eea_global_images_V10.3.12.0.PFJEUXM_20190801.0000.00_9.0_eea_1d38ae0ec5.tgz">davinci_eea_global_images_V10.3.12.0.PFJEUXM_20190801.0000.00_9.0_eea_1d38ae0ec5.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.3.10.0.PFJEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.10.0.PFJEUXM_01dbcd66d8_9.0.zip">miui_DAVINCIEEAGlobal_V10.3.10.0.PFJEUXM_01dbcd66d8_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJEUXM/davinci_eea_global_images_V10.3.10.0.PFJEUXM_20190715.0000.00_9.0_eea_963b7f3bca.tgz">davinci_eea_global_images_V10.3.10.0.PFJEUXM_20190715.0000.00_9.0_eea_963b7f3bca.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.3.8.0.PFJEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.8.0.PFJEUXM_5820b982aa_9.0.zip">miui_DAVINCIEEAGlobal_V10.3.8.0.PFJEUXM_5820b982aa_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.3.7.0.PFJEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.7.0.PFJEUXM_3a2dfaaa18_9.0.zip">miui_DAVINCIEEAGlobal_V10.3.7.0.PFJEUXM_3a2dfaaa18_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJEUXM/davinci_eea_global_images_V10.3.7.0.PFJEUXM_20190602.0000.00_9.0_eea_eab1d1cc52.tgz">davinci_eea_global_images_V10.3.7.0.PFJEUXM_20190602.0000.00_9.0_eea_eab1d1cc52.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-    
-        </div>
-    </div>
-    <div id="RU_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">俄罗斯稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>5</td>
-                            <td>V11.0.3.0.PFJRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJRUXM/miui_DAVINCIRUGlobal_V11.0.3.0.PFJRUXM_8ea807f09a_9.0.zip">miui_DAVINCIRUGlobal_V11.0.3.0.PFJRUXM_8ea807f09a_9.0.zip</a></td>
-                            <td></td>
-                            <!-- <a href="TEXT_HERE">TEXT_HERE</a> -->
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V10.3.10.0.PFJRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.10.0.PFJRUXM_0d0ae5a119_9.0.zip">miui_DAVINCIRUGlobal_V10.3.10.0.PFJRUXM_0d0ae5a119_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJRUXM/davinci_ru_global_images_V10.3.10.0.PFJRUXM_20190801.0000.00_9.0_global_6fbab43f85.tgz">davinci_ru_global_images_V10.3.10.0.PFJRUXM_20190801.0000.00_9.0_global_6fbab43f85.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V10.3.8.0.PFJRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.8.0.PFJRUXM_415b2e0500_9.0.zip">miui_DAVINCIRUGlobal_V10.3.8.0.PFJRUXM_415b2e0500_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJRUXM/davinci_ru_global_images_V10.3.8.0.PFJRUXM_20190712.0000.00_9.0_global_381b8a6720.tgz">davinci_ru_global_images_V10.3.8.0.PFJRUXM_20190712.0000.00_9.0_global_381b8a6720.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V10.3.6.0.PFJRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.6.0.PFJRUXM_33821877a0_9.0.zip">miui_DAVINCIRUGlobal_V10.3.6.0.PFJRUXM_33821877a0_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V10.3.5.0.PFJRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V10.3.5.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.5.0.PFJRUXM_85dc409eac_9.0.zip">miui_DAVINCIRUGlobal_V10.3.5.0.PFJRUXM_85dc409eac_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-    
-        </div>
-    </div>
-
-    <!-- 由此向下区域为底部Footer的内容 -->
-    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-        <script
-            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-    </div>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-               >arrow_upward</a></i>
-    </button>
-</body>
-
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<style>
+			li a {
+				text-decoration: none;
+				color: blue;
+			}
+	
+			td a {
+				text-decoration: none;
+				color: black;
+			}
+		</style> 
+		<title>Redmi K20(davinci)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body class="mdui-bottom-nav-fixed"> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：Redmi K20/小米9T</li> 
+						<li>机型代号：davinci/davinciin</li> 
+						<li>此次更新：国际版 V12.0.8.0.QFJMIXM、欧洲EEA版 V12.0.5.0.QFJEUXM、俄罗斯版 V12.0.4.0.QFJRUXM</li> 
+						<li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/uuIzymZZFbey">天翼云盘</a>，提取码：yzy9，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<li>第三方Recovery:<a href="https://twrp.me/xiaomi/xiaomimi9t.html">TWRP官方</a></li> 
+						<li>第三方Recovery:<a href="https://orangefox.download/zh-CN/device/davinci">橙狐Rec</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a> 
+			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
+			<a href="#IN_STABLE" class="mdui-ripple">印度稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<!-- <tr>
+							<td>24</td>
+							<td>MIUI11</td>
+							<td>TEXT_HERE</td>
+							<td>10.0</td>
+							<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+							<td>不存在的</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>MIUI11</td>
+							<td>TEXT_HERE</td>
+							<td>10.0</td>
+							<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+							<td>不存在的</td>
+						</tr> --> 
+						<tr> 
+							<td>22</td> 
+							<td>MIUI11</td> 
+							<td>20.3.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.26/miui_DAVINCI_20.3.26_a8c36fd72a_10.0.zip" id="r">miui_DAVINCI_20.3.26_a8c36fd72a_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>21</td> 
+							<td>MIUI11</td> 
+							<td>20.3.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.19/miui_DAVINCI_20.3.19_5c17da20f5_10.0.zip" id="r">miui_DAVINCI_20.3.19_5c17da20f5_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>20</td> 
+							<td>MIUI11</td> 
+							<td>20.3.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.12/miui_DAVINCI_20.3.12_5761e651e9_10.0.zip" id="r">miui_DAVINCI_20.3.12_5761e651e9_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>19</td> 
+							<td>MIUI11</td> 
+							<td>20.3.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.5/miui_DAVINCI_20.3.5_ffb0b0656d_10.0.zip" id="r">miui_DAVINCI_20.3.5_ffb0b0656d_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>18</td> 
+							<td>MIUI11</td> 
+							<td>20.2.27</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.2.27/miui_DAVINCI_20.2.27_3033f66a20_10.0.zip" id="r">miui_DAVINCI_20.2.27_3033f66a20_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>MIUI11</td> 
+							<td>20.1.16</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.16/miui_DAVINCI_20.1.16_d66bc45879_10.0.zip" id="r">miui_DAVINCI_20.1.16_d66bc45879_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>MIUI11</td> 
+							<td>20.1.9</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.9/miui_DAVINCI_20.1.9_c0df195b92_10.0.zip" id="r">miui_DAVINCI_20.1.9_c0df195b92_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>MIUI11</td> 
+							<td>20.1.2</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.2/miui_DAVINCI_20.1.2_3a759ead1a_10.0.zip" id="r">miui_DAVINCI_20.1.2_3a759ead1a_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>MIUI11</td> 
+							<td>9.12.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.26/miui_DAVINCI_9.12.26_24ebeb6c72_10.0.zip" id="r">miui_DAVINCI_9.12.26_24ebeb6c72_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>MIUI11</td> 
+							<td>9.12.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.19/miui_DAVINCI_9.12.19_8bb8c104b5_10.0.zip" id="r">miui_DAVINCI_9.12.19_8bb8c104b5_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI11</td> 
+							<td>9.12.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.12/miui_DAVINCI_9.12.12_5fe3f51442_10.0.zip" id="r">miui_DAVINCI_9.12.12_5fe3f51442_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI11</td> 
+							<td>9.12.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.5/miui_DAVINCI_9.12.5_839ccf94cd_10.0.zip" id="r">miui_DAVINCI_9.12.5_839ccf94cd_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI11</td> 
+							<td>9.11.28</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.28/miui_DAVINCI_9.11.28_175fca25d3_10.0.zip" id="r">miui_DAVINCI_9.11.28_175fca25d3_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI11</td> 
+							<td>9.11.21</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.21/miui_DAVINCI_9.11.21_69ade31aa6_10.0.zip" id="r">miui_DAVINCI_9.11.21_69ade31aa6_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI11</td> 
+							<td>9.11.14</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.14/miui_DAVINCI_9.11.14_dea263afb9_10.0.zip" id="r">miui_DAVINCI_9.11.14_dea263afb9_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI11</td> 
+							<td>9.11.7</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.7/miui_DAVINCI_9.11.7_bc068e44fd_10.0.zip" id="r">miui_DAVINCI_9.11.7_bc068e44fd_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI11</td> 
+							<td>9.11.1</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.1/miui_DAVINCI_9.11.1_a96a3258cf_10.0.zip" id="r">miui_DAVINCI_9.11.1_a96a3258cf_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI11</td> 
+							<td>9.10.24</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.24/miui_DAVINCI_9.10.24_b9a3c0ff16_10.0.zip" id="r">miui_DAVINCI_9.10.24_b9a3c0ff16_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI11</td> 
+							<td>9.10.17</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/9.10.17/miui_DAVINCI_9.10.17_22e64b63fe_10.0.zip" id="r">miui_DAVINCI_9.10.17_22e64b63fe_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI11</td> 
+							<td>9.10.10</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/9.10.10/miui_DAVINCI_9.10.10_f668eb8797_10.0.zip" id="r">miui_DAVINCI_9.10.10_f668eb8797_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI11</td> 
+							<td>9.9.26</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/9.9.26/miui_DAVINCI_9.9.26_a762411128_10.0.zip" id="r">miui_DAVINCI_9.9.26_a762411128_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI10</td> 
+							<td>9.6.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/miui_DAVINCI_9.6.20_5550222ae2_9.0.zip" id="r">miui_DAVINCI_9.6.20_5550222ae2_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/davinci_images_9.6.20_20190620.0000.00_9.0_cn_eaf0551cb0.tgz" id="f">davinci_images_9.6.20_20190620.0000.00_9.0_cn_eaf0551cb0.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>18</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>17</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>V12.1.2.0.RFJCNXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.2.0.RFJCNXM/miui_DAVINCI_V12.1.2.0.RFJCNXM_cbafd0e088_11.0.zip" id="r">miui_DAVINCI_V12.1.2.0.RFJCNXM_cbafd0e088_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.2.0.RFJCNXM/davinci_images_V12.1.2.0.RFJCNXM_20210317.0000.00_11.0_cn_5dd5598e2a.tgz" id="f">davinci_images_V12.1.2.0.RFJCNXM_20210317.0000.00_11.0_cn_5dd5598e2a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>V12.1.1.0.RFJCNXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.1.0.RFJCNXM/miui_DAVINCI_V12.1.1.0.RFJCNXM_471ae2cf60_11.0.zip" id="r">miui_DAVINCI_V12.1.1.0.RFJCNXM_471ae2cf60_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.1.0.RFJCNXM/davinci_images_V12.1.1.0.RFJCNXM_20210221.0000.00_11.0_cn_c268db27f4.tgz" id="f">davinci_images_V12.1.1.0.RFJCNXM_20210221.0000.00_11.0_cn_c268db27f4.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V12.0.6.0.QFJCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.6.0.QFJCNXM/miui_DAVINCI_V12.0.6.0.QFJCNXM_5ca52304f9_10.0.zip" id="r">miui_DAVINCI_V12.0.6.0.QFJCNXM_5ca52304f9_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.6.0.QFJCNXM/davinci_images_V12.0.6.0.QFJCNXM_20201103.0000.00_10.0_cn_bedf01fa3f.tgz" id="f">davinci_images_V12.0.6.0.QFJCNXM_20201103.0000.00_10.0_cn_bedf01fa3f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.4.0.QFJCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFJCNXM/miui_DAVINCI_V12.0.4.0.QFJCNXM_e5cf683f93_10.0.zip" id="r">miui_DAVINCI_V12.0.4.0.QFJCNXM_e5cf683f93_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFJCNXM/davinci_images_V12.0.4.0.QFJCNXM_20200727.0000.00_10.0_cn_f4e5eea685.tgz" id="f">davinci_images_V12.0.4.0.QFJCNXM_20200727.0000.00_10.0_cn_f4e5eea685.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.3.0.QFJCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJCNXM/miui_DAVINCI_V12.0.3.0.QFJCNXM_518c08987f_10.0.zip" id="r">miui_DAVINCI_V12.0.3.0.QFJCNXM_518c08987f_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJCNXM/davinci_images_V12.0.3.0.QFJCNXM_20200617.0000.00_10.0_cn_f8b2c33bdc.tgz" id="f">davinci_images_V12.0.3.0.QFJCNXM_20200617.0000.00_10.0_cn_f8b2c33bdc.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.2.0.QFJCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJCNXM/miui_DAVINCI_V12.0.2.0.QFJCNXM_f108cfd789_10.0.zip" id="r">miui_DAVINCI_V12.0.2.0.QFJCNXM_f108cfd789_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V11.0.6.0.QFJCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.QFJCNXM/miui_DAVINCI_V11.0.6.0.QFJCNXM_1950959fdb_10.0.zip" id="r">miui_DAVINCI_V11.0.6.0.QFJCNXM_1950959fdb_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.QFJCNXM/davinci_images_V11.0.6.0.QFJCNXM_20200331.0000.00_10.0_cn_a982a5d056.tgz" id="f">davinci_images_V11.0.6.0.QFJCNXM_20200331.0000.00_10.0_cn_a982a5d056.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.4.0.QFJCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.QFJCNXM/miui_DAVINCI_V11.0.4.0.QFJCNXM_1bc454c300_10.0.zip" id="r">miui_DAVINCI_V11.0.4.0.QFJCNXM_1bc454c300_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.QFJCNXM/davinci_images_V11.0.4.0.QFJCNXM_20200214.0000.00_10.0_cn_13fe307d52.tgz" id="f">davinci_images_V11.0.4.0.QFJCNXM_20200214.0000.00_10.0_cn_13fe307d52.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.2.0.QFJCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFJCNXM/miui_DAVINCI_V11.0.2.0.QFJCNXM_f6f375d6c4_10.0.zip" id="r">miui_DAVINCI_V11.0.2.0.QFJCNXM_f6f375d6c4_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.3.0.PFJCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJCNXM/miui_DAVINCI_V11.0.3.0.PFJCNXM_104ec46429_9.0.zip" id="r">miui_DAVINCI_V11.0.3.0.PFJCNXM_104ec46429_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJCNXM/davinci_images_V11.0.3.0.PFJCNXM_20190926.0000.00_9.0_cn_fd671ffccf.tgz" id="f">davinci_images_V11.0.3.0.PFJCNXM_20190926.0000.00_9.0_cn_fd671ffccf.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V10.3.15.0.PFJCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.15.0.PFJCNXM/miui_DAVINCI_V10.3.15.0.PFJCNXM_d8545c3ae5_9.0.zip" id="r">miui_DAVINCI_V10.3.15.0.PFJCNXM_d8545c3ae5_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.15.0.PFJCNXM/davinci_images_V10.3.15.0.PFJCNXM_20190827.0000.00_9.0_cn_62327c4a51.tgz" id="f">davinci_images_V10.3.15.0.PFJCNXM_20190827.0000.00_9.0_cn_62327c4a51.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.3.14.0.PFJCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.14.0.PFJCNXM/miui_DAVINCI_V10.3.14.0.PFJCNXM_f944c0a4bf_9.0.zip" id="r">miui_DAVINCI_V10.3.14.0.PFJCNXM_f944c0a4bf_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.14.0.PFJCNXM/davinci_images_V10.3.14.0.PFJCNXM_20190802.0000.00_9.0_cn_087bc8862c.tgz" id="f">davinci_images_V10.3.14.0.PFJCNXM_20190802.0000.00_9.0_cn_087bc8862c.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.12.0.PFJCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJCNXM/miui_DAVINCI_V10.3.12.0.PFJCNXM_54a3ff575a_9.0.zip" id="r">miui_DAVINCI_V10.3.12.0.PFJCNXM_54a3ff575a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJCNXM/davinci_images_V10.3.12.0.PFJCNXM_20190712.0000.00_9.0_cn_5d53ab8f55.tgz" id="f">davinci_images_V10.3.12.0.PFJCNXM_20190712.0000.00_9.0_cn_5d53ab8f55.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.3.8.0.PFJCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJCNXM/miui_DAVINCI_V10.3.8.0.PFJCNXM_968e5a975a_9.0.zip" id="r">miui_DAVINCI_V10.3.8.0.PFJCNXM_968e5a975a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJCNXM/davinci_images_V10.3.8.0.PFJCNXM_20190616.0000.00_9.0_cn_c4b6816e36.tgz" id="f">davinci_images_V10.3.8.0.PFJCNXM_20190616.0000.00_9.0_cn_c4b6816e36.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.3.7.0.PFJCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJCNXM/miui_DAVINCI_V10.3.7.0.PFJCNXM_ec12ed28ae_9.0.zip" id="r">miui_DAVINCI_V10.3.7.0.PFJCNXM_ec12ed28ae_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJCNXM/davinci_images_V10.3.7.0.PFJCNXM_20190603.0000.00_9.0_cn_ef655a5611.tgz" id="f">davinci_images_V10.3.7.0.PFJCNXM_20190603.0000.00_9.0_cn_ef655a5611.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.3.6.0.PFJCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJCNXM/miui_DAVINCI_V10.3.6.0.PFJCNXM_f4750444d0_9.0.zip" id="r">miui_DAVINCI_V10.3.6.0.PFJCNXM_f4750444d0_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJCNXM/davinci_images_V10.3.6.0.PFJCNXM_20190522.0000.00_9.0_cn_84dc48df10.tgz" id="f">davinci_images_V10.3.6.0.PFJCNXM_20190522.0000.00_9.0_cn_84dc48df10.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="GB_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody>
+                        <tr class="mdui-hidden"> 
+							<td>18</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+                        <tr class="mdui-hidden"> 
+							<td>17</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+                        <tr> 
+							<td>16</td> 
+							<td>V12.0.8.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.8.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.8.0.QFJMIXM_1e3665659e_10.0.zip" id="r">miui_DAVINCIGlobal_V12.0.8.0.QFJMIXM_1e3665659e_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.8.0.QFJMIXM/davinci_global_images_V12.0.8.0.QFJMIXM_20210413.0000.00_10.0_global_acd2d8e321.tgz" id="f">davinci_global_images_V12.0.8.0.QFJMIXM_20210413.0000.00_10.0_global_acd2d8e321.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>V12.0.7.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.7.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.7.0.QFJMIXM_9866f56704_10.0.zip" id="r">miui_DAVINCIGlobal_V12.0.7.0.QFJMIXM_9866f56704_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.7.0.QFJMIXM/davinci_global_images_V12.0.7.0.QFJMIXM_20210114.0000.00_10.0_global_d026741251.tgz" id="f">davinci_global_images_V12.0.7.0.QFJMIXM_20210114.0000.00_10.0_global_d026741251.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V12.0.5.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.5.0.QFJMIXM_68eafed495_10.0.zip" id="r">miui_DAVINCIGlobal_V12.0.5.0.QFJMIXM_68eafed495_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFJMIXM/davinci_global_images_V12.0.5.0.QFJMIXM_20201010.0000.00_10.0_global_baf3c8c333.tgz" id="f">davinci_global_images_V12.0.5.0.QFJMIXM_20201010.0000.00_10.0_global_baf3c8c333.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.3.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.3.0.QFJMIXM_ed720ed0a6_10.0.zip" id="r">miui_DAVINCIGlobal_V12.0.3.0.QFJMIXM_ed720ed0a6_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJMIXM/davinci_global_images_V12.0.3.0.QFJMIXM_20200722.0000.00_10.0_global_8350bad8ef.tgz" id="f">davinci_global_images_V12.0.3.0.QFJMIXM_20200722.0000.00_10.0_global_8350bad8ef.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.2.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.2.0.QFJMIXM_eca715bb58_10.0.zip" id="r">miui_DAVINCIGlobal_V12.0.2.0.QFJMIXM_eca715bb58_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJMIXM/davinci_global_images_V12.0.2.0.QFJMIXM_20200712.0000.00_10.0_global_b1b1a79316.tgz" id="f">davinci_global_images_V12.0.2.0.QFJMIXM_20200712.0000.00_10.0_global_b1b1a79316.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.1.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFJMIXM/miui_DAVINCIGlobal_V12.0.1.0.QFJMIXM_f09a4569f4_10.0.zip" id="r">miui_DAVINCIGlobal_V12.0.1.0.QFJMIXM_f09a4569f4_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.0.0.11.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.0.11.QFJMIXM/miui_DAVINCIGlobal_V12.0.0.11.QFJMIXM_08c5c4366b_10.0.zip" id="r">miui_DAVINCIGlobal_V12.0.0.11.QFJMIXM_08c5c4366b_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.6.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFJMIXM/miui_DAVINCIGlobal_V11.0.6.0.QFJMIXM_1bfefed6db_10.0.zip" id="r">miui_DAVINCIGlobal_V11.0.6.0.QFJMIXM_1bfefed6db_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.5.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.QFJMIXM/miui_DAVINCIGlobal_V11.0.5.0.QFJMIXM_aaab5b40c7_10.0.zip" id="r">miui_DAVINCIGlobal_V11.0.5.0.QFJMIXM_aaab5b40c7_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.QFJMIXM/davinci_global_images_V11.0.5.0.QFJMIXM_20200412.0000.00_10.0_global_196105ebe3.tgz" id="f">davinci_global_images_V11.0.5.0.QFJMIXM_20200412.0000.00_10.0_global_196105ebe3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.4.0.QFJMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.QFJMIXM/miui_DAVINCIGlobal_V11.0.4.0.QFJMIXM_f1cc1d4a69_10.0.zip" id="r">miui_DAVINCIGlobal_V11.0.4.0.QFJMIXM_f1cc1d4a69_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.QFJMIXM/davinci_global_images_V11.0.4.0.QFJMIXM_20200117.0000.00_10.0_global_4c094d085a.tgz" id="f">davinci_global_images_V11.0.4.0.QFJMIXM_20200117.0000.00_10.0_global_4c094d085a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.0.1.0.PFJMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.1.0.PFJMIXM/miui_DAVINCIGlobal_V11.0.1.0.PFJMIXM_de37c81233_9.0.zip" id="r">miui_DAVINCIGlobal_V11.0.1.0.PFJMIXM_de37c81233_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.1.0.PFJMIXM/davinci_global_images_V11.0.1.0.PFJMIXM_20191028.0000.00_9.0_global_156b6de73d.tgz" id="f">davinci_global_images_V11.0.1.0.PFJMIXM_20191028.0000.00_9.0_global_156b6de73d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.3.11.0.PFJMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.11.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.11.0.PFJMIXM_a63c8d3d93_9.0.zip" id="r">miui_DAVINCIGlobal_V10.3.11.0.PFJMIXM_a63c8d3d93_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.11.0.PFJMIXM/davinci_global_images_V10.3.11.0.PFJMIXM_20190802.0000.00_9.0_global_ea6683ef55.tgz" id="f">davinci_global_images_V10.3.11.0.PFJMIXM_20190802.0000.00_9.0_global_ea6683ef55.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.9.0.PFJMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.9.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.9.0.PFJMIXM_1b6f5bc7ca_9.0.zip" id="r">miui_DAVINCIGlobal_V10.3.9.0.PFJMIXM_1b6f5bc7ca_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.9.0.PFJMIXM/davinci_global_images_V10.3.9.0.PFJMIXM_20190712.0000.00_9.0_global_78c1ba9dbe.tgz" id="f">davinci_global_images_V10.3.9.0.PFJMIXM_20190712.0000.00_9.0_global_78c1ba9dbe.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.3.7.0.PFJMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.7.0.PFJMIXM_a0622a6370_9.0.zip" id="r">miui_DAVINCIGlobal_V10.3.7.0.PFJMIXM_a0622a6370_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.3.6.0.PFJMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.6.0.PFJMIXM_4879216355_9.0.zip" id="r">miui_DAVINCIGlobal_V10.3.6.0.PFJMIXM_4879216355_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJMIXM/davinci_global_images_V10.3.6.0.PFJMIXM_20190603.0000.00_9.0_global_a0c4a98edb.tgz" id="f">davinci_global_images_V10.3.6.0.PFJMIXM_20190603.0000.00_9.0_global_a0c4a98edb.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.3.5.0.PFJMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PFJMIXM/miui_DAVINCIGlobal_V10.3.5.0.PFJMIXM_7d69a41fb1_9.0.zip" id="r">miui_DAVINCIGlobal_V10.3.5.0.PFJMIXM_7d69a41fb1_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PFJMIXM/davinci_global_images_V10.3.5.0.PFJMIXM_20190528.0000.00_9.0_global_4222a49ff1.tgz" id="f">davinci_global_images_V10.3.5.0.PFJMIXM_20190528.0000.00_9.0_global_4222a49ff1.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="IN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">印度稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>14</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.7.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.7.0.QFJINXM/miui_DAVINCIININGlobal_V12.0.7.0.QFJINXM_5932fd5876_10.0.zip" id="r">miui_DAVINCIININGlobal_V12.0.7.0.QFJINXM_5932fd5876_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.7.0.QFJINXM/davinciin_in_global_images_V12.0.7.0.QFJINXM_20210118.0000.00_10.0_in_79201c87f9.tgz" id="f">davinciin_in_global_images_V12.0.7.0.QFJINXM_20210118.0000.00_10.0_in_79201c87f9.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.5.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFJINXM/miui_DAVINCIININGlobal_V12.0.5.0.QFJINXM_59fbbdc486_10.0.zip" id="r">miui_DAVINCIININGlobal_V12.0.5.0.QFJINXM_59fbbdc486_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFJINXM/davinciin_in_global_images_V12.0.5.0.QFJINXM_20201010.0000.00_10.0_in_466b019935.tgz" id="f">davinciin_in_global_images_V12.0.5.0.QFJINXM_20201010.0000.00_10.0_in_466b019935.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.3.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJINXM/miui_DAVINCIININGlobal_V12.0.3.0.QFJINXM_76c6f07c7f_10.0.zip" id="r">miui_DAVINCIININGlobal_V12.0.3.0.QFJINXM_76c6f07c7f_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJINXM/davinciin_in_global_images_V12.0.3.0.QFJINXM_20200722.0000.00_10.0_in_ddd4cfcd6b.tgz" id="f">davinciin_in_global_images_V12.0.3.0.QFJINXM_20200722.0000.00_10.0_in_ddd4cfcd6b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.0.2.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJINXM/miui_DAVINCIININGlobal_V12.0.2.0.QFJINXM_160038cad3_10.0.zip" id="r">miui_DAVINCIININGlobal_V12.0.2.0.QFJINXM_160038cad3_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJINXM/davinciin_in_global_images_V12.0.2.0.QFJINXM_20200701.0000.00_10.0_in_1b69fcfc8f.tgz" id="f">davinciin_in_global_images_V12.0.2.0.QFJINXM_20200701.0000.00_10.0_in_1b69fcfc8f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V12.0.1.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFJINXM/miui_DAVINCIININGlobal_V12.0.1.0.QFJINXM_b305175c05_10.0.zip" id="r">miui_DAVINCIININGlobal_V12.0.1.0.QFJINXM_b305175c05_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.4.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.4.0.QFJINXM/miui_DAVINCIININGlobal_V11.0.4.0.QFJINXM_d9782639d5_10.0.zip" id="r">miui_DAVINCIININGlobal_V11.0.4.0.QFJINXM_d9782639d5_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.3.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QFJINXM/miui_DAVINCIININGlobal_V11.0.3.0.QFJINXM_8fbd476b70_10.0.zip" id="r">miui_DAVINCIININGlobal_V11.0.3.0.QFJINXM_8fbd476b70_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QFJINXM/davinciin_in_global_images_V11.0.3.0.QFJINXM_20200406.0000.00_10.0_in_76ec845f33.tgz" id="f">davinciin_in_global_images_V11.0.3.0.QFJINXM_20200406.0000.00_10.0_in_76ec845f33.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.0.2.0.QFJINXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFJINXM/miui_DAVINCIININGlobal_V11.0.2.0.QFJINXM_a6d5ee94e7_10.0.zip" id="r">miui_DAVINCIININGlobal_V11.0.2.0.QFJINXM_a6d5ee94e7_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.QFJINXM/davinciin_in_global_images_V11.0.2.0.QFJINXM_20200213.0000.00_10.0_in_0523f7a778.tgz" id="f">davinciin_in_global_images_V11.0.2.0.QFJINXM_20200213.0000.00_10.0_in_0523f7a778.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.3.0.PFJINXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJINXM/miui_DAVINCIININGlobal_V11.0.3.0.PFJINXM_ef8c64eb0f_9.0.zip" id="r">miui_DAVINCIININGlobal_V11.0.3.0.PFJINXM_ef8c64eb0f_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V11.0.2.0.PFJINXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PFJINXM/miui_DAVINCIININGlobal_V11.0.2.0.PFJINXM_45b2a8ac93_9.0.zip" id="r">miui_DAVINCIININGlobal_V11.0.2.0.PFJINXM_45b2a8ac93_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.3.8.0.PFJINXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJINXM/miui_DAVINCIININGlobal_V10.3.8.0.PFJINXM_207eaee662_9.0.zip" id="r">miui_DAVINCIININGlobal_V10.3.8.0.PFJINXM_207eaee662_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJINXM/davinciin_in_global_images_V10.3.8.0.PFJINXM_20190816.0000.00_9.0_in_f68dcf8608.tgz" id="f">davinciin_in_global_images_V10.3.8.0.PFJINXM_20190816.0000.00_9.0_in_f68dcf8608.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.3.6.0.PFJINXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJINXM/miui_DAVINCIININGlobal_V10.3.6.0.PFJINXM_c4a069be9e_9.0.zip" id="r">miui_DAVINCIININGlobal_V10.3.6.0.PFJINXM_c4a069be9e_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJINXM/davinciin_in_global_images_V10.3.6.0.PFJINXM_20190712.0000.00_9.0_in_ebf44c2420.tgz" id="f">davinciin_in_global_images_V10.3.6.0.PFJINXM_20190712.0000.00_9.0_in_ebf44c2420.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.3.3.0.PFJINXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PFJINXM/miui_DAVINCIININGlobal_V10.3.3.0.PFJINXM_599f996c8b_9.0.zip" id="r">miui_DAVINCIININGlobal_V10.3.3.0.PFJINXM_599f996c8b_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PFJINXM/davinciin_in_global_images_V10.3.3.0.PFJINXM_20190621.0000.00_9.0_in_95bf3310b3.tgz" id="f">davinciin_in_global_images_V10.3.3.0.PFJINXM_20190621.0000.00_9.0_in_95bf3310b3.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="EEA_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">EEA稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody>
+                    <tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+                        <tr> 
+							<td>14</td> 
+							<td>V12.0.5.0.QFJEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFJEUXM/miui_DAVINCIEEAGlobal_V12.0.5.0.QFJEUXM_31469c14e7_10.0.zip" id="r">miui_DAVINCIEEAGlobal_V12.0.5.0.QFJEUXM_31469c14e7_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.5.0.QFJEUXM/davinci_eea_global_images_V12.0.5.0.QFJEUXM_20210416.0000.00_10.0_eea_22e4fe6dff.tgz" id="f">davinci_eea_global_images_V12.0.5.0.QFJEUXM_20210416.0000.00_10.0_eea_22e4fe6dff.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.4.0.QFJEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFJEUXM/miui_DAVINCIEEAGlobal_V12.0.4.0.QFJEUXM_843c40c155_10.0.zip" id="r">miui_DAVINCIEEAGlobal_V12.0.4.0.QFJEUXM_843c40c155_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFJEUXM/davinci_eea_global_images_V12.0.4.0.QFJEUXM_20210117.0000.00_10.0_eea_5bdb7a0e12.tgz" id="f">davinci_eea_global_images_V12.0.4.0.QFJEUXM_20210117.0000.00_10.0_eea_5bdb7a0e12.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.3.0.QFJEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJEUXM/miui_DAVINCIEEAGlobal_V12.0.3.0.QFJEUXM_12b99693bc_10.0.zip" id="r">miui_DAVINCIEEAGlobal_V12.0.3.0.QFJEUXM_12b99693bc_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJEUXM/davinci_eea_global_images_V12.0.3.0.QFJEUXM_20201018.0000.00_10.0_eea_dc7a68a3e2.tgz" id="f">davinci_eea_global_images_V12.0.3.0.QFJEUXM_20201018.0000.00_10.0_eea_dc7a68a3e2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.2.0.QFJEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJEUXM/miui_DAVINCIEEAGlobal_V12.0.2.0.QFJEUXM_0bb88ea943_10.0.zip" id="r">miui_DAVINCIEEAGlobal_V12.0.2.0.QFJEUXM_0bb88ea943_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJEUXM/davinci_eea_global_images_V12.0.2.0.QFJEUXM_20200712.0000.00_10.0_eea_43a52d44c1.tgz" id="f">davinci_eea_global_images_V12.0.2.0.QFJEUXM_20200712.0000.00_10.0_eea_43a52d44c1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V11.0.6.0.QFJEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.6.0.QFJEUXM/miui_DAVINCIEEAGlobal_V11.0.6.0.QFJEUXM_79a4386920_10.0.zip" id="r">miui_DAVINCIEEAGlobal_V11.0.6.0.QFJEUXM_79a4386920_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.0.5.0.QFJEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.QFJEUXM/miui_DAVINCIEEAGlobal_V11.0.5.0.QFJEUXM_8944bb7369_10.0.zip" id="r">miui_DAVINCIEEAGlobal_V11.0.5.0.QFJEUXM_8944bb7369_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.QFJEUXM/davinci_eea_global_images_V11.0.5.0.QFJEUXM_20200412.0000.00_10.0_eea_c7aa3d66e7.tgz" id="f">davinci_eea_global_images_V11.0.5.0.QFJEUXM_20200412.0000.00_10.0_eea_c7aa3d66e7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.4.0.QFJEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.QFJEUXM/miui_DAVINCIEEAGlobal_V11.0.4.0.QFJEUXM_5001481fbb_10.0.zip" id="r">miui_DAVINCIEEAGlobal_V11.0.4.0.QFJEUXM_5001481fbb_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.QFJEUXM/davinci_eea_global_images_V11.0.4.0.QFJEUXM_20200117.0000.00_10.0_eea_a4dd716b8e.tgz" id="f">davinci_eea_global_images_V11.0.4.0.QFJEUXM_20200117.0000.00_10.0_eea_a4dd716b8e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.3.0.PFJEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJEUXM/miui_DAVINCIEEAGlobal_V11.0.3.0.PFJEUXM_222331be17_9.0.zip" id="r">miui_DAVINCIEEAGlobal_V11.0.3.0.PFJEUXM_222331be17_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.0.2.0.PFJEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PFJEUXM/miui_DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM_e32b086df3_9.0.zip" id="r">miui_DAVINCIEEAGlobal_V11.0.2.0.PFJEUXM_e32b086df3_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V10.3.15.0.PFJEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.15.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.15.0.PFJEUXM_b6738621e2_9.0.zip" id="r">miui_DAVINCIEEAGlobal_V10.3.15.0.PFJEUXM_b6738621e2_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.15.0.PFJEUXM/davinci_eea_global_images_V10.3.15.0.PFJEUXM_20190921.0000.00_9.0_eea_69ac20afc7.tgz" id="f">davinci_eea_global_images_V10.3.15.0.PFJEUXM_20190921.0000.00_9.0_eea_69ac20afc7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.12.0.PFJEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.12.0.PFJEUXM_946a02f6df_9.0.zip" id="r">miui_DAVINCIEEAGlobal_V10.3.12.0.PFJEUXM_946a02f6df_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.12.0.PFJEUXM/davinci_eea_global_images_V10.3.12.0.PFJEUXM_20190801.0000.00_9.0_eea_1d38ae0ec5.tgz" id="f">davinci_eea_global_images_V10.3.12.0.PFJEUXM_20190801.0000.00_9.0_eea_1d38ae0ec5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.3.10.0.PFJEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.10.0.PFJEUXM_01dbcd66d8_9.0.zip" id="r">miui_DAVINCIEEAGlobal_V10.3.10.0.PFJEUXM_01dbcd66d8_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJEUXM/davinci_eea_global_images_V10.3.10.0.PFJEUXM_20190715.0000.00_9.0_eea_963b7f3bca.tgz" id="f">davinci_eea_global_images_V10.3.10.0.PFJEUXM_20190715.0000.00_9.0_eea_963b7f3bca.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.3.8.0.PFJEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.8.0.PFJEUXM_5820b982aa_9.0.zip" id="r">miui_DAVINCIEEAGlobal_V10.3.8.0.PFJEUXM_5820b982aa_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.3.7.0.PFJEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJEUXM/miui_DAVINCIEEAGlobal_V10.3.7.0.PFJEUXM_3a2dfaaa18_9.0.zip" id="r">miui_DAVINCIEEAGlobal_V10.3.7.0.PFJEUXM_3a2dfaaa18_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.7.0.PFJEUXM/davinci_eea_global_images_V10.3.7.0.PFJEUXM_20190602.0000.00_9.0_eea_eab1d1cc52.tgz" id="f">davinci_eea_global_images_V10.3.7.0.PFJEUXM_20190602.0000.00_9.0_eea_eab1d1cc52.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="RU_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">俄罗斯稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>13</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>12</td> 
+							<td>TEXT_HERE</td> 
+							<td>10.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.4.0.QFJRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFJRUXM/miui_DAVINCIRUGlobal_V12.0.4.0.QFJRUXM_35406e8c2c_10.0.zip" id="r">miui_DAVINCIRUGlobal_V12.0.4.0.QFJRUXM_35406e8c2c_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFJRUXM/davinci_ru_global_images_V12.0.4.0.QFJRUXM_20210416.0000.00_10.0_global_3e0516d480.tgz" id="f">davinci_ru_global_images_V12.0.4.0.QFJRUXM_20210416.0000.00_10.0_global_3e0516d480.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.0.3.0.QFJRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJRUXM/miui_DAVINCIRUGlobal_V12.0.3.0.QFJRUXM_e7eda28380_10.0.zip" id="r">miui_DAVINCIRUGlobal_V12.0.3.0.QFJRUXM_e7eda28380_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFJRUXM/davinci_ru_global_images_V12.0.3.0.QFJRUXM_20210117.0000.00_10.0_global_2bd83a2186.tgz" id="f">davinci_ru_global_images_V12.0.3.0.QFJRUXM_20210117.0000.00_10.0_global_2bd83a2186.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V12.0.2.0.QFJRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJRUXM/miui_DAVINCIRUGlobal_V12.0.2.0.QFJRUXM_0613a54fe9_10.0.zip" id="r">miui_DAVINCIRUGlobal_V12.0.2.0.QFJRUXM_0613a54fe9_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFJRUXM/davinci_ru_global_images_V12.0.2.0.QFJRUXM_20201018.0000.00_10.0_global_baf607a312.tgz" id="f">davinci_ru_global_images_V12.0.2.0.QFJRUXM_20201018.0000.00_10.0_global_baf607a312.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V12.0.1.0.QFJRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFJRUXM/miui_DAVINCIRUGlobal_V12.0.1.0.QFJRUXM_5707976485_10.0.zip" id="r">miui_DAVINCIRUGlobal_V12.0.1.0.QFJRUXM_5707976485_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFJRUXM/davinci_ru_global_images_V12.0.1.0.QFJRUXM_20200712.0000.00_10.0_global_0d6fed0c53.tgz" id="f">davinci_ru_global_images_V12.0.1.0.QFJRUXM_20200712.0000.00_10.0_global_0d6fed0c53.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.5.0.QFJRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.QFJRUXM/miui_DAVINCIRUGlobal_V11.0.5.0.QFJRUXM_6de5eff5c7_10.0.zip" id="r">miui_DAVINCIRUGlobal_V11.0.5.0.QFJRUXM_6de5eff5c7_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.QFJRUXM/davinci_ru_global_images_V11.0.5.0.QFJRUXM_20200513.0000.00_10.0_global_29a14f18d4.tgz" id="f">davinci_ru_global_images_V11.0.5.0.QFJRUXM_20200513.0000.00_10.0_global_29a14f18d4.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.0.3.0.QFJRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QFJRUXM/miui_DAVINCIRUGlobal_V11.0.3.0.QFJRUXM_01634861e7_10.0.zip" id="r">miui_DAVINCIRUGlobal_V11.0.3.0.QFJRUXM_01634861e7_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.QFJRUXM/davinci_ru_global_images_V11.0.3.0.QFJRUXM_20200310.0000.00_10.0_global_41478132d3.tgz" id="f">davinci_ru_global_images_V11.0.3.0.QFJRUXM_20200310.0000.00_10.0_global_41478132d3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.3.0.PFJRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFJRUXM/miui_DAVINCIRUGlobal_V11.0.3.0.PFJRUXM_8ea807f09a_9.0.zip" id="r">miui_DAVINCIRUGlobal_V11.0.3.0.PFJRUXM_8ea807f09a_9.0.zip</a></td> 
+							<td></td> 
+							<!-- <a href="TEXT_HERE">TEXT_HERE</a> --> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V10.3.10.0.PFJRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.10.0.PFJRUXM_0d0ae5a119_9.0.zip" id="r">miui_DAVINCIRUGlobal_V10.3.10.0.PFJRUXM_0d0ae5a119_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.10.0.PFJRUXM/davinci_ru_global_images_V10.3.10.0.PFJRUXM_20190801.0000.00_9.0_global_6fbab43f85.tgz" id="f">davinci_ru_global_images_V10.3.10.0.PFJRUXM_20190801.0000.00_9.0_global_6fbab43f85.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V10.3.8.0.PFJRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.8.0.PFJRUXM_415b2e0500_9.0.zip" id="r">miui_DAVINCIRUGlobal_V10.3.8.0.PFJRUXM_415b2e0500_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.8.0.PFJRUXM/davinci_ru_global_images_V10.3.8.0.PFJRUXM_20190712.0000.00_9.0_global_381b8a6720.tgz" id="f">davinci_ru_global_images_V10.3.8.0.PFJRUXM_20190712.0000.00_9.0_global_381b8a6720.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V10.3.6.0.PFJRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.6.0.PFJRUXM_33821877a0_9.0.zip" id="r">miui_DAVINCIRUGlobal_V10.3.6.0.PFJRUXM_33821877a0_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V10.3.5.0.PFJRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PFJRUXM/miui_DAVINCIRUGlobal_V10.3.5.0.PFJRUXM_85dc409eac_9.0.zip" id="r">miui_DAVINCIRUGlobal_V10.3.5.0.PFJRUXM_85dc409eac_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>
