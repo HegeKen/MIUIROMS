@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
@@ -42,10 +43,19 @@
             }
         }
     </style>
-    <title>第18周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第32周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -91,88 +101,71 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第18周发布公告及更新日志
-                </div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第32周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-17389-1-1.html">【2010年12月24日】MIUI 第18周发布公告及更新日志</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1880751">【12月24日】MIUI第18周OTA下载及问题反馈集结</a></p>
-                    <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V2 0.12.24 已发布</p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-61672-1-1.html">【2011年4月1日】MIUI 第32周全面迈进2.3 支持9款热门机型</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1882277">【2011年4月1日】MIUI 第32周全面迈进2.3 支持9款热门机型</a></p>
                     <br>
-                    <p style="font-weight: bolder;">▍已知问题</p>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V3 1.4.1 已发布，支持 9 款热门机型；自本周起，MIUI 全面迈进 Android 2.3 时代!顺祝各位机油节日快乐！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍已知问题解决方案</p>
                     <ol>
-                        <li>Milestone 12.18版本用户，请下载完整包刷机 （不需要wipe）</li>
+                        <li>部分主题和第三版UI不完全兼容，会导致拨号键盘界面错位，更换其他主题可以解决</li>
                     </ol>
-                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍注意事项</p>
                     <ol>
-                        <li>首次刷MIUI ROM的用户，需要按照官方教程刷机，下载完整包：</li>
-                        <li>注意：第一次刷MIUI ROM 一定要自己手工进recovery ， wipe下数据。如果不会这一步的需要先学会再刷，这是刷新ROM必须的步骤，切记！</li>
-                        <li>由于升级时下载用户较多，速度较慢，老用户可以选择自行下载OTA文件，手工升级，请根据自己的手机型号以及版本号选择。</li>
+                        <li>第一次刷MIUI ROM时请务必在 Recovery 中选择wipe 清除数据</li>
+                        <li>以后通过OTA升级或刷完整包无需wipe，不会影响用户手机中的数据</li>
+                        <li>Milestone 和 HD2 今天升级到Android 2.3.3，需要刷完整包；刷机前请首先备份，并wipe数据，相关操作见刷机教程</li>
+                        <li>今天发布三款机型的预览版，分别是：SAMSUNG i9000、SAMSUNG T959 和 HTC Desire Z</li>
                     </ol>
                     <hr>
-                    <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
-                    <p style="font-weight: bolder;">【推荐功能】</p>
-                    <p>稳定性：<ul>
-                        <li>修复了流量监控容易卡死的问题</li>
-                        <li>修复了很多主题的BUG</li>
-                        <li>修复了无法使用线控接电话的问题并且把线控的控制权完全交给用户，让用户自己去设置播放器优先级</li>
-                    </ul></p>
-                    <p>全新的！真正的！全局搜索。</p>
-                    <p>短信可以加密了！</p>
-                    <br>
-                    <p style="font-weight: bolder;">【短信】</p>
-                    <p>新增 增加了群发的汇总报告</p>
-                    <p>新增 群发支持一键重发所有失败短信</p>
-                    <p>新增 短信列表支持按照发送时间/接收时间排序在短信设置中打开</p>
-                    <p>优化 持续改进了短信的稳定性</p>
-                    <p>优化 发送流程速度提升</p>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新版锁屏及锁屏音乐播放时的全屏专辑封面</p>
+                    <p>全局文字编辑操作优化，复制粘贴文字更方便</p>
                     <br>
                     <p style="font-weight: bolder;">【电话】</p>
-                    <p>新增 锁屏紧急呼叫加入110 120 119 122</p>
-                    <p>新增 添加一个新联系人，通话记录也增加一条记录</p>
+                    <p>新增 拨号界面第三版UI</p>
+                    <p>新增 通话界面第三版UI</p>
+                    <p>新增 通话中记录文本使用便签记录</p>
+                    <p>新增 通话记录列表支持滑动(批量)删除</p>
+                    <p>优化 设置拨号列表直接拨打的情况下，T9搜索结果中点击号码为直接拨打该号码</p>
+                    <p>优化 拨号列表长按陌生人可查看详情</p>
+                    <p>优化 从拨号列表进联系人详情，默认跳转到通话记录，并展开显示最近三个记录</p>
+                    <p>优化 通话录音的交互</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>新增 联系人来电大头贴（在编辑联系人页面－来电大头贴中设置，支持相机拍照或从图库选择照片）</p>
+                    <p>新增 点击联系人头像弹出第三版UI</p>
+                    <p>修复 导入SIM卡联系人导致的FC问题</p>
                     <br>
                     <p style="font-weight: bolder;">【桌面】</p>
-                    <p>新增 设置>系统>按键>优先响应媒体应用，解决多个音乐应用互相抢按键的问题</p>
-                    <p>修复 主题应用到一半就退出的问题</p>
-                    <p>修复 主题包文件名有特殊字符不能应用的问题</p>
-                    <p>修复 应用字体主题不生效</p>
-                    <p>修复 有些主题不能正常显示</p>
-                    <p>修复 添加更多主题时遇到同名文件会失败</p>
+                    <p>新增 锁屏界面第三版UI</p>
+                    <p>优化 锁屏界面，解锁条位置调整，解锁时音乐专辑封面位置保持不动</p>
                     <br>
-                    <p style="font-weight: bolder;">【隐私】</p>
-                    <p>新增 访客模式（长按电源键列表中进入）</p>
-                    <p>新增 短信加密</p>
-                    <p>新增 拨号加密</p>
-                    <p>新增 防打扰加密</p>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>新增 主题界面第三版UI</p>
+                    <p>新增 全新的主题操作流程</p>
+                    <p>修复 若干UI和交互的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【MIUI网盘】</p>
-                    <p>优化 列表打开速度加快</p>
-                    <p>优化 所有软件进行梳理</p>
+                    <p style="font-weight: bolder;">【便签】</p>
+                    <p>新增 便签清单模式，支持勾选</p>
+                    <p>新增 通过gmail、短信和蓝牙分享便签给好友</p>
+                    <p>新增 通话记录文件夹，存储所有通话中的文本记录，如没有记录不显示该文件夹</p>
+                    <p>新增 发送单个便签到桌面建立快捷方式的功能</p>
+                    <p>优化 识别便签正文中号码和网址，长按调用相应操作</p>
+                    <p>优化 便签中文字链接的操作</p>
                     <br>
-                    <p style="font-weight: bolder;">【MIUI音乐】</p>
-                    <p>新增 按文件夹过滤音乐</p>
-                    <p>新增 列表模式中支持“创建、编辑”列表</p>
-                    <p>新增 支持全局搜索可以搜到音乐文件</p>
-                    <p>优化 播放器性能优化，滑动更顺畅</p>
-                    <p>修复 多个音乐播放控制的冲突问题（锁屏、线控等）</p>
-                    <p>修复 允许用户重新搜索歌词、专辑图片</p>
+                    <p style="font-weight: bolder;">【手电】</p>
+                    <p>优化 手电程序的交互及UI</p>
                     <br>
-                    <p style="font-weight: bolder;">【流量监控】</p>
-                    <p>（由于使用了新的算法，请大家先清空流量监控程序的数据）</p>
-                    <p>新增 后台用新的方式记录短信和电话</p>
-                    <p>新增 校正流量</p>
-                    <p>新增 加入程序管理的入口</p>
-                    <p>优化 记录更精准</p>
-                    <p>修复 易卡死的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【全局搜索】</p>
-                    <p>全新真正的全局搜索！</p>
-                    <br>
-                    <p style="font-weight: bolder;">【其他】</p>
-                    <p>发布MIUI图库实验版，请在网盘下载安装</p>
-                    <br>
+                    <p style="font-weight: bolder;">【其它】</p>
+                    <p>优化 文字编辑(剪切、复制、粘贴、选择)，以及新UI</p>
+                    <p>优化 闹钟界面，正常模式和兼容模式都能合理显示</p>
                 </div>
             </div>
         </div>
@@ -183,25 +176,45 @@
                 <thead>
                     <tr>
                         <th>机型</th>
-                        <th>安卓版本</th>
                         <th>卡刷包</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td>Google Nexus S</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.1/miui_NS_1.4.1_2.3.zip" id="r">miui_NS_1.4.1_2.3.zip</a></td>
+                    </tr>
+                    <tr>
                         <td>Google Nexus One G5</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f819b6f7ee">http://u.115.com/file/f819b6f7ee</a></td>
+                        <td><a href="http://bigota.d.miui.com/1.4.1/miui_NexusOne23_1.4.1_2.3.zip" id="r">miui_NexusOne23_1.4.1_2.3.zip</a></td>
                     </tr>
                     <tr>
                         <td>HTC Desire</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f8415428c4">http://u.115.com/file/f8415428c4</a></td>
+                        <td><a href="http://bigota.d.miui.com/1.4.1/miui_Desire23_1.4.1_2.3.zip" id="r">miui_Desire23_1.4.1_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC HD2</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.1/miui_HD223_1.4.1_2.3.zip" id="r">miui_HD223_1.4.1_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC Desire HD</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.1/miui_DHD23_1.4.1_2.3.zip" id="r">miui_DHD23_1.4.1_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC Desire Z</td>
+                        <td><a href="http://bigota.d.miui.com/miui_DesireZ_1.4.1_2.3.zip" id="r">miui_DesireZ_1.4.1_2.3.zip</a></td>
                     </tr>
                     <tr>
                         <td>MOTO Milestone</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f861116ed9">http://u.115.com/file/f861116ed9</a></td>
+                        <td><a href="http://bigota.d.miui.com/1.4.1/miui_Milestone23_1.4.1_2.3.zip" id="r">miui_Milestone23_1.4.1_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>SAMSUNG I9000</td>
+                        <td><a href="http://bigota.d.miui.com/miui_I9000_1.4.1_2.3.zip" id="r">miui_I9000_1.4.1_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>SAMSUNG T959</td>
+                        <td><a href="http://bigota.d.miui.com/miui_T959_1.4.1_2.3.zip" id="r">miui_T959_1.4.1_2.3.zip</a></td>
                     </tr>
                 </tbody>
             </table>

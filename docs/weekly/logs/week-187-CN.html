@@ -43,10 +43,19 @@
             }
         }
     </style>
-    <title>第169周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第187周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -92,130 +101,130 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第169周发布公告及更新日志
-                </div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第187周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-1548810-1-1.html">【2013年12月20日】MIUI 第169周发布公告及更新日志(附视频)</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4647933">【2013年12月20日】MIUI 第169周发布公告及更新日志(附视频)</a></p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-1751929-1-1.html">【2014年5月9日】MIUI 第187周发布 小米3W/C升级至Android4.4</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4704849">【2014年5月9日】MIUI 第187周发布 小米3W/C升级至Android4.4</a></p>
+                    <br>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V5 3.12.20 已经发布！</p>
+                    <p>MIUI V5 4.5.9 已发布！</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
-                        <li>MIUI V5开发版可以直接OTA升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
-                        <li>较老版本的MIUI可通过刷V5最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入Recovery选择完整包进行升级）</li>
+                        <li>MIUI V5开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
+                        <li>较老版本的 MIUI 可通过刷 V5 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）</li>
                         <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：系统与安全 - 备份 - 新建备份）</li>
+                        <li>其他品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
                     </ol>
                     <hr>
-                    <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
                     <p style="font-weight: bolder;">【本周推荐】</p>
-                    <p>新增 米币中心支持扫描识别手机充值卡，自动完成充值的功能</p>
-                    <p>新增 桌面全局搜索，应用定位功能</p>
-                    <p>新增 超高品质音乐包月服务</p>
-                    <p>新增 联系人中新增"黄页"标签页面，可以查询号码，并使用快捷服务</p>
-                    <p>新增 新版日历（新日、月视图 黑色透明和纯白桌面小工具）</p>
-                    <p>新增 小米音乐云同步功能</p>
+                    <p>新增 桌面应用名称及某些桌面元素的颜色根据桌面壁纸颜色深浅智能变化</p>
+                    <p>新增 浏览器新增省流模式以及内核对主题字体的支持</p>
+                    <p>新增 “小米生活”登陆小米手机1/1S，团购优惠，美食电影，每周还有0元抽奖，就它了！</p>
+                    <p>优化 音乐支持同步歌单到小米云</p>
                     <br>
                     <p style="font-weight: bolder;">【系统】</p>
-                    <p>新增 [米1/米3 TD版]挂载 CIFS 文件系统的支持</p>
-                    <p>修复 [米3 TD版]WPS 方式连接成功时，UI不更新的问题</p>
-                    <p>修复 移动钱包中安装某些卡片提示“不合法的指令”的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【电话】</p>
-                    <p>修复 拨号按钮可能错位的问题</p>
+                    <p>优化 小米手机3 联通版/电信版升级系统至Andorid 4.4（KitKat）版本</p>
                     <br>
                     <p style="font-weight: bolder;">【联系人】</p>
-                    <p>优化 没有登录邮箱时，点击联系人头像弹出的卡片中，也可以显示邮箱地址</p>
-                    <p>修复 某些情况下将陌生号码“添加到联系人”时进行搜索，列表页显示不正确的问题</p>
-                    <p>修复 同一个号码，使用+17951和+86拨打时通话记录不合并的问题</p>
-                    <p>修复 同步SIM卡联系人到手机时可能闪退的问题</p>
-                    <p>修复 没有联系人时，进入一个选择联系人页面，“全选”仍然可点击的问题</p>
-                    <p>修复 详情页中，“生日”显示为乱码的问题</p>
-                    <p>修复 当联系人详情页有3个标签页时，指示当前标签页的小三角没有对齐的问题</p>
+                    <p>修复 删除一个SIM卡联系人时，删除进度条不消失的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【短信】</p>
-                    <p>修复 开关飞行模式时提示重新激活小米帐号的问题</p>
-                    <p>修复 发送网络短信图标状态不正确的问题</p>
+                    <p>优化 点击彩信中的链接时进行提示</p>
+                    <p>修复 某些情况下，在小米云服务中设置网络短信闪退的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
-                    <p>修复 无法获取机主信息的问题</p>
-                    <p>修复 [米3 TD版]距离感应器引发的FC</p>
+                    <p>新增 桌面图标数字角标支持第三方自定义机制</p>
+                    <p>优化 通知栏开关页的开关图标</p>
+                    <p>优化 状态栏样式</p>
+                    <p>优化 悬浮通知禁止下拉手势</p>
                     <br>
                     <p style="font-weight: bolder;">【桌面】</p>
-                    <p>新增 全局搜索新增应用定位功能</p>
-                    <p>优化 全局搜索下，不需要输入完整名称即可搜索应用和音乐</p>
-                    <br>
-                    <p style="font-weight: bolder;">【相机】</p>
-                    <p>优化 [米3 TD版]改善录像质量</p>
-                    <p>优化 [米3 TD版]加快对焦速度</p>
+                    <p>新增 应用名称及某些桌面元素的颜色根据桌面壁纸颜色深浅智能变化</p>
+                    <p>新增 编辑模式下，批量删除图标支持智能填空功能</p>
+                    <p>修复 某些情况下，桌面图标重复的问题</p>
+                    <p>修复 某些情况下，快速启动栏图标顺序错误的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【音乐】</p>
-                    <p>新增 超高品质音乐包月服务</p>
-                    <p>新增 KTV 手机点歌功能（支持雷石点歌系统的KTV）</p>
-                    <p>新增 播放列表云同步功能</p>
+                    <p>新增 支持同步歌单到小米云（同步开关：系统设置>小米云服务>音乐）</p>
+                    <p>优化 歌单详情页封面使用高清图</p>
+                    <p>修复 歌单详情页圆角样式异常的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【天气】</p>
+                    <p>优化 “指数”中的文案</p>
+                    <p>修复 主界面趋势及指数加载异常的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【应用商店】</p>
-                    <p>新增 待升级应用与本地应用签名不一致时，分组显示签名不一致的应用</p>
-                    <p>优化 优先下载文件到SD卡</p>
-                    <p>优化 在评论列表页中，滚动时自动收起顶部评分区域</p>
-                    <p>优化 “自动升级”开启机制</p>
-                    <p>优化 启用全新推送机制，修复已知的安全漏洞</p>
-                    <p>修复 某些情况下，无网络时，更新列表页待升级应用列表与网络错误界面重叠的问题</p>
-                    <p>修复 某些情况下，内存溢出的问题</p>
-                    <p>修复 应用详情页中，缩略图滚动异常的问题</p>
+                    <p>优化 取消下载应用时的登录限制</p>
+                    <p>优化 待升级应用过多时的自动升级机制</p>
+                    <p>删除 搜索页“应用推荐”模块</p>
                     <br>
-                    <p style="font-weight: bolder;">【下载管理】</p>
-                    <p>修复 文件格式与打开应用关联不正确的问题</p>
+                    <p style="font-weight: bolder;">【电子邮件】</p>
+                    <p>优化 邮件登录页面</p>
+                    <p>修复 登录邮箱后退出到桌面的问题</p>
+                    <p>修复 “抄送”栏中，联系人名称可能出现乱码的问题</p>
+                    <p>修复 收件人名称中可能出现乱码的问题</p>
+                    <p>修复 发送邮件页面样式不对的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【收音机】</p>
-                    <p>修复 收音机无法启动的问题</p>
+                    <p style="font-weight: bolder;">【浏览器】</p>
+                    <p>新增 针对单个窗口切换UA的功能</p>
+                    <p>新增 省流模式</p>
+                    <p>新增 网页内文本字体跟随主题字体变化</p>
+                    <p>新增 WML页面支持</p>
+                    <p>优化 新内核支持系统主题字体</p>
+                    <p>优化 使用文本选择中的搜索功能时，在新的窗口中显示搜索结果</p>
+                    <p>修复 音乐播放被打断后无法继续播放的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【日历】</p>
-                    <p>新增 新版日历（新日、月视图 黑色透明和纯白桌面小工具）</p>
-                    <p>修复 日历详情页中说明显示不全的问题</p>
+                    <p>优化 月视图的样式</p>
+                    <p>优化 节日订阅项中，增加父亲节和母亲节</p>
+                    <p>修复 新建日程时界面样式不对的问题</p>
+                    <p>修复 某些情况下，浏览“在线订阅事件”时闪退的问题</p>
+                    <p>修复 点击时间提醒的地点信息时闪退的问题</p>
+                    <p>修复 订阅详情页加载缓慢的问题</p>
+                    <p>修复 某些情况下，划动迟缓的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【时钟/计算器】</p>
-                    <p>优化 更新2014年中国节假日信息到工作日闹钟</p>
+                    <p style="font-weight: bolder;">【其他】</p>
+                    <p>修复 紧急修复某些情况下com.xiaomi.eventreceiver崩溃的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【视频】</p>
-                    <p>修复 某些情况下视频直播闪退的问题</p>
-                    <p>修复 无法删除“我拍摄的视频”中列表项的问题</p>
+                    <p style="font-weight: bolder;">【小米帐户】</p>
+                    <p>优化 开机引导页的样式</p>
                     <br>
-                    <p style="font-weight: bolder;">【米币中心】</p>
-                    <p>新增 支持相机扫描识别手机充值卡卡号和密码，自动完成充值的功能</p>
-                    <p>新增 消费和充值记录增加单条记录详情界面</p>
-                    <p>新增 支付弹窗支持横屏模式</p>
-                    <p>优化 锁屏界面需要输入密码时，自动弹出输入法键盘</p>
-                    <p>优化 锁屏界面隐藏用户帐号信息</p>
+                    <p style="font-weight: bolder;">【游戏中心】</p>
+                    <p>新增 游戏标签，方便快速了解并选择游戏</p>
+                    <p>新增 游戏礼券，可在游戏中心领取并在游戏中抵扣现金</p>
+                    <p>新增 “米币”页面，可参与最新平台及游戏活动，同时可管理账户、积分等级、米币、礼包、礼券、系统设置等信息</p>
+                    <p>新增 排行榜子榜间横划操作</p>
+                    <p>新增 个性分类区，丰富更多个性分类栏目</p>
+                    <p>新增 消息快速通道，可快速在首页查看消息</p>
+                    <p>优化 排行榜算法及推荐理由</p>
                     <br>
-                    <p style="font-weight: bolder;">【安全中心】</p>
-                    <p>优化 授权管理中空白页面的显示样式</p>
-                    <p>优化 “体检”后，“缓存垃圾”页面的标题</p>
-                    <p>修复 “体检”后，点击“缓存垃圾”后闪退的问题</p>
-                    <p>修复 “病毒扫描”出的应用，查看应用详情的时候，应用存储容量显示为0的问题</p>
+                    <p style="font-weight: bolder;">【垃圾清理】</p>
+                    <p>修复 深度清理中，系统存储显示错误的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【应用云备份】</p>
-                    <p>优化 仅备份当天使用过的应用</p>
-                    <br>
-                    <p style="font-weight: bolder;">【生活黄页】</p>
-                    <p>新增 联系人中新增"黄页"标签页面，可以查询号码，并使用快捷服务</p>
-                    <br>
+                    <p style="font-weight: bolder;">【小米生活】</p>
+                    <p>新增 “小米生活”登陆小米手机1/1S</p>
+                    <p>优化 点击标题栏文字就能返回上一级</p>
+                    <p>修复 在已购买订单页查看订单详情时闪退的问题</p>
+                    <p>修复 切换城市右侧A-Z快速导航栏被选中字母没有高亮显示的问题</p>
+                    <p>修复 第一次启动应用，首页加载过慢的问题</p>
+                    <p>修复 商品列表页，购买人数与商品原价金额重叠的问题</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mdui-container-fluid pc">
         <p>视频演示：</p>
-        <iframe height=600 width=100% src='https://v.qq.com/txp/iframe/player.html?vid=c0123uh3lh7' frameborder=0  allowFullScreen="true"></iframe>
+        <iframe height=1080 width=100% src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=69021617&autoplay=false&disablePlaylist=true" allowFullScreen="true" scrolling="no"></iframe>
     </div>
     <div class="mdui-container-fluid mobile">
         <p>视频演示：</p>
-        <iframe height=240 width=480 src='https://v.qq.com/txp/iframe/player.html?vid=c0123uh3lh7' frameborder=0  allowFullScreen="true"></iframe>
+        <iframe height=240 width=480 src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=69021617&autoplay=false&disablePlaylist=true" allowFullScreen="true" scrolling="no"></iframe>
     </div>
 
-
+    <iframe frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=69021617&autoplay=true&disablePlaylist=true" allowFullScreen="true" scrolling="no"></iframe>
 
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
         <script

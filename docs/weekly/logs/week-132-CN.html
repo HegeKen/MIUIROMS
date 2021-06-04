@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
@@ -42,10 +43,19 @@
             }
         }
     </style>
-    <title>第18周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第132周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -91,124 +101,89 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第18周发布公告及更新日志
-                </div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第132周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-17389-1-1.html">【2010年12月24日】MIUI 第18周发布公告及更新日志</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1880751">【12月24日】MIUI第18周OTA下载及问题反馈集结</a></p>
-                    <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V2 0.12.24 已发布</p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-1086228-1-1.html">【2013年3月29日】MIUI 第132周发布 小米手机1/1S V5公测发布</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1929115">【2013年3月29日】MIUI 第132周发布 小米手机1/1S V5公测发布</a></p>
                     <br>
-                    <p style="font-weight: bolder;">▍已知问题</p>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V5 3.3.29 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
-                        <li>Milestone 12.18版本用户，请下载完整包刷机 （不需要wipe）</li>
+                        <li>MIUI V5支持最近几周的V4开发版直接OTA升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
+                        <li>更老版本的MIUI V4或稳定版可以直接刷V5最新完整包快速升级，无需Wipe数据（方法：系统更新 - Menu - 选择安装包）</li>
+                        <li>从V5降级V4，需要Wipe数据后刷入V4相应的完整包并恢复备份（所以有刷回V4需求的发烧友们，请注意备份数据）</li>
                     </ol>
+                    <br>
                     <p style="font-weight: bolder;">▍重要说明</p>
                     <ol>
-                        <li>首次刷MIUI ROM的用户，需要按照官方教程刷机，下载完整包：</li>
-                        <li>注意：第一次刷MIUI ROM 一定要自己手工进recovery ， wipe下数据。如果不会这一步的需要先学会再刷，这是刷新ROM必须的步骤，切记！</li>
-                        <li>由于升级时下载用户较多，速度较慢，老用户可以选择自行下载OTA文件，手工升级，请根据自己的手机型号以及版本号选择。</li>
+                        <li>本周小米手机1/1S V5 公测发布</li>
+                        <li>本周三星 Galaxy S II I9100和HTC One X  V5 内测启动</li>
+                        <li>三星Galaxy S II I9100 等20余款合作开发者适配机型V5公测发布</li>
+                        <li>米1/1S用户如遇到谷歌软件闪退现象，刷入谷歌服务包即可解决</li>
                     </ol>
                     <hr>
-                    <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
-                    <p style="font-weight: bolder;">【推荐功能】</p>
-                    <p>稳定性：<ul>
-                        <li>修复了流量监控容易卡死的问题</li>
-                        <li>修复了很多主题的BUG</li>
-                        <li>修复了无法使用线控接电话的问题并且把线控的控制权完全交给用户，让用户自己去设置播放器优先级</li>
-                    </ul></p>
-                    <p>全新的！真正的！全局搜索。</p>
-                    <p>短信可以加密了！</p>
-                    <br>
-                    <p style="font-weight: bolder;">【短信】</p>
-                    <p>新增 增加了群发的汇总报告</p>
-                    <p>新增 群发支持一键重发所有失败短信</p>
-                    <p>新增 短信列表支持按照发送时间/接收时间排序在短信设置中打开</p>
-                    <p>优化 持续改进了短信的稳定性</p>
-                    <p>优化 发送流程速度提升</p>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 新版小米云服务</p>
+                    <p>新增 通话记录同步</p>
+                    <p>新增 应用商店和桌面支持高清图标的显示</p>
                     <br>
                     <p style="font-weight: bolder;">【电话】</p>
-                    <p>新增 锁屏紧急呼叫加入110 120 119 122</p>
-                    <p>新增 添加一个新联系人，通话记录也增加一条记录</p>
+                    <p>新增 通话记录同步</p>
+                    <p>优化 归属地数据库更新</p>
+                    <p>修复 某些情况下，通话结束后录音不停止的问题</p>
+                    <p>修复 来电转接的通话记录在同步后显示为普通来电的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【桌面】</p>
-                    <p>新增 设置>系统>按键>优先响应媒体应用，解决多个音乐应用互相抢按键的问题</p>
-                    <p>修复 主题应用到一半就退出的问题</p>
-                    <p>修复 主题包文件名有特殊字符不能应用的问题</p>
-                    <p>修复 应用字体主题不生效</p>
-                    <p>修复 有些主题不能正常显示</p>
-                    <p>修复 添加更多主题时遇到同名文件会失败</p>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>修复 某些三星手机上彩信的主题在中文状态下显示为乱码的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【隐私】</p>
-                    <p>新增 访客模式（长按电源键列表中进入）</p>
-                    <p>新增 短信加密</p>
-                    <p>新增 拨号加密</p>
-                    <p>新增 防打扰加密</p>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>修复 使用百度输入法导致锁屏界面上移的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【MIUI网盘】</p>
-                    <p>优化 列表打开速度加快</p>
-                    <p>优化 所有软件进行梳理</p>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>修复 某些情况下，列表页加载圈不消失的问题</p>
+                    <p>修复 某些情况下，主题可重复更新的问题</p>
+                    <p>修复 某些情况下，重启后主题的部分模块不生效的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【MIUI音乐】</p>
-                    <p>新增 按文件夹过滤音乐</p>
-                    <p>新增 列表模式中支持“创建、编辑”列表</p>
-                    <p>新增 支持全局搜索可以搜到音乐文件</p>
-                    <p>优化 播放器性能优化，滑动更顺畅</p>
-                    <p>修复 多个音乐播放控制的冲突问题（锁屏、线控等）</p>
-                    <p>修复 允许用户重新搜索歌词、专辑图片</p>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>新增 图库在连接小米盒子时，支持音量键切换图片</p>
                     <br>
-                    <p style="font-weight: bolder;">【流量监控】</p>
-                    <p>（由于使用了新的算法，请大家先清空流量监控程序的数据）</p>
-                    <p>新增 后台用新的方式记录短信和电话</p>
-                    <p>新增 校正流量</p>
-                    <p>新增 加入程序管理的入口</p>
-                    <p>优化 记录更精准</p>
-                    <p>修复 易卡死的问题</p>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>优化 在歌曲无专辑封面时，展示默认图片</p>
+                    <p>修复 某些情况下文件夹过滤无效的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【全局搜索】</p>
-                    <p>全新真正的全局搜索！</p>
+                    <p style="font-weight: bolder;">【应用商店】</p>
+                    <p>修复 某些情况下应用下载一直失败的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【其他】</p>
-                    <p>发布MIUI图库实验版，请在网盘下载安装</p>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>优化 删除和编辑事件按钮使用V5样式</p>
                     <br>
+                    <p style="font-weight: bolder;">【便签】</p>
+                    <p>优化 异步加载便签中的图片，大幅减少便签内存占用</p>
+                    <p>修复 与同步Google Task后导致便签丢失的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【闹钟】</p>
+                    <p>优化 快盘上传下载的稳定性</p>
+                    <p>修复 计时器中数字0错误的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米帐户】</p>
+                    <p>优化 同步总开关关闭时，小米帐户下的同步项目图标将置灰</p>
+                    <p>修复 某些情况下，小米帐户中同步项目文字错位的问题</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mdui-container-fluid">
-        <div class="mdui-table-fluid">
-            <table class="mdui-table">
-                <thead>
-                    <tr>
-                        <th>机型</th>
-                        <th>安卓版本</th>
-                        <th>卡刷包</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Google Nexus One G5</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f819b6f7ee">http://u.115.com/file/f819b6f7ee</a></td>
-                    </tr>
-                    <tr>
-                        <td>HTC Desire</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f8415428c4">http://u.115.com/file/f8415428c4</a></td>
-                    </tr>
-                    <tr>
-                        <td>MOTO Milestone</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f861116ed9">http://u.115.com/file/f861116ed9</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div class="mdui-container-fluid pc">
+        <p>视频演示：</p>
+        <iframe height=1080 width=100% frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=53769722&autoplay=false&disablePlaylist=true" allowFullScreen="true" scrolling="no"></iframe>
     </div>
-
-
+    <div class="mdui-container-fluid mobile">
+        <p>视频演示：</p>
+        <iframe height=240 width=480 frameborder="0" src="https://tv.sohu.com/s/sohuplayer/iplay.html?bid=53769722&autoplay=false&disablePlaylist=true" allowFullScreen="true" scrolling="no"></iframe>
+    </div>
 
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
         <script

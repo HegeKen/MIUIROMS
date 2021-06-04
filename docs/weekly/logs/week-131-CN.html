@@ -43,10 +43,18 @@
             }
         }
     </style>
-    <title>第171周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第131周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td a").text("卡刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -92,75 +100,111 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第171周发布公告及更新日志</div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第131周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-1571073-1-1.html">【2014年1月3日】MIUI 第171周发布公告及更新日志（附视频）</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1932018">【2014年1月3日】MIUI 第171周发布公告及更新日志（附视频）</a></p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-1067653-1-1.html">【2013年3月22日】MIUI 第131周发布 三星I9300 V5内测启动</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4978650">【2013年3月22日】MIUI 第131周发布 三星I9300 V5内测启动</a></p>
+                    <br>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V5 4.1.3 已发布！</p>
+                    <p>MIUI V5 3.3.22 已发布！</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
-                        <li>MIUI V5开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
-                        <li>较老版本的 MIUI 可通过刷 V5 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）</li>
-                        <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：系统与安全 - 备份 - 新建备份）</li>
-                        <li>其他品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
+                        <li>MIUI V5支持最近几周的V4开发版直接OTA升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
+                        <li>更老版本的MIUI V4或稳定版可以直接刷V5最新完整包快速升级，无需Wipe数据（方法：系统更新 - Menu - 选择安装包）</li>
+                        <li>从V5降级V4，需要Wipe数据后刷入V4相应的完整包并恢复备份（所以有刷回V4需求的发烧友们，请注意备份数据）</li>
                     </ol>
-                    <p style="font-weight: bolder;">▍重要说明</p>
-                        <p>语音助手语音识别引擎已升级至3.0，1.0将无法使用；如有提示“停止运行”，请进入语音助手，点选菜单键进入设置，选择“讯飞语音识别”即可</p>
-                    <hr>
                     <br>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>本周三星 Galaxy S III I9300 V5 内测启动</li>
+                        <li>三星Galaxy S II I9100 等20款合作开发者适配机型V5内测启动</li>
+                    </ol>
+                    <hr>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
                     <p style="font-weight: bolder;">【本周推荐】</p>
-                    <p>新增 迅雷引擎支持，执行系统应用的下载任务时，下载速度最高提升70%</p>
-                    <p>新增 日历春运火车票购票日期提示</p>
+                    <p>新增 增加人脸美肤功能</p>
+                    <p>新增 录音防打扰模式</p>
+                    <p>新增 列表模式下便签包含图片和提醒时，在列表中增加小图标提示</p>
                     <br>
                     <p style="font-weight: bolder;">【电话】</p>
-                    <p>优化 火车票订票电话自动重拨的逻辑</p>
+                    <p>修复 来电时使用蓝牙耳机无法直接挂断电话的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>新增 设置头像时可使用在线头像仓库</p>
+                    <p>新增 批量删除</p>
+                    <p>修复 编辑合并过的联系人，会影响添加联系人时默认帐户的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【短信】</p>
-                    <p>修复 通知类短信中设置全部已读，不再影响私密短信的未读状态</p>
+                    <p>优化 收藏页面长按后可复制文字</p>
+                    <p>修复 进入含有(0086)的号码发来的短信时可能FC的问题</p>
+                    <p>修复 某些短信的发送/接收/失败状态无法同步的问题</p>
+                    <p>修复 多个联系人都使用同一个号码时，该号码的名称和头像在短信列表页跳变的问题</p>
+                    <p>修复 短信会话页面切换时可能闪烁的问题</p>
+                    <p>修复 激活失败对话框，点击取消会FC的问题</p>
+                    <p>修复 只包含文字的网络彩信，显示长度为0的问题</p>
+                    <p>修复 添加私密联系人成功后，按回退键FC的问题</p>
+                    <p>修复 某些情况下，从联系人详情页发送短信会FC的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【桌面】</p>
-                    <p>新增 百变框架支持高斯模糊效果</p>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>优化 主题应用时的内存使用</p>
+                    <p>优化 为节省存储空间，主题导入后将原文件删除</p>
+                    <br>
+                    <p style="font-weight: bolder;">【相机】</p>
+                    <p>新增 增加人脸美肤功能</p>
+                    <p>修复 长按back键拍照时，闪光灯不可用的问题</p>
+                    <p>修复 声控快门和HDR同时打开时，出现两个退出按钮的问题</p>
+                    <p>修复 4：3画面时，出现的界面排版问题</p>
+                    <p>修复 从短信进入相机录像时花屏的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【图库】</p>
-                    <p>新增 支持移动图片到其他相册</p>
-                    <p>修复 某些扩展名为jpg的bmp图片无法设置为壁纸的问题</p>
-                    <p>修复 某些情况下，下载原图或视频无反应的问题</p>
+                    <p>修复 小米美图编辑图片时，退回工具栏后再保存时，效果消失问题</p>
+                    <p>修复 云相册缓存清理不完善的问题</p>
+                    <p>修复 由于动画导致的某些UI问题</p>
+                    <p>修复 横屏进入大图页，底部工具栏错位问题</p>
+                    <p>修复 小米美图中使用“胶片”效果的相框时FC的问题</p>
+                    <p>修复 从某些第三方应用打开图库查看图片时FC的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【音乐】</p>
-                    <p>新增 支持超高品质音乐续费功能</p>
+                    <p style="font-weight: bolder;">【指南针】</p>
+                    <p>修复 每次启动指南针都会震动的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【天气】</p>
-                    <p>修复 天气应用删除城市后，桌面小工具不能及时更新的问题</p>
-                    <p>修复 某些情况下，主题无法获取天气的问题</p>
+                    <p style="font-weight: bolder;">【浏览器】</p>
+                    <p>新增 横屏时自动隐藏系统通知栏，提供更大显示区域</p>
+                    <p>优化 多标签切换界面的视觉调整</p>
                     <br>
-                    <p style="font-weight: bolder;">【下载管理】</p>
-                    <p>新增 迅雷引擎，下载速度最高提升70%</p>
+                    <p style="font-weight: bolder;">【录音机】</p>
+                    <p>新增 精心设计的录音防打扰模式，录音开始后全局系统静音，电话和闹钟的铃响遵循用户设置，录音再也不必担心声音干扰（录音过程中调整音量就可以退出防打扰模式）</p>
+                    <p>优化 录音播放时避免和其他播放器同时播放</p>
+                    <p>优化 播放和暂停播放录音时，不发出通知栏通知</p>
+                    <p>修复 录音长度和进度条上显示的长度不同的问题</p>
+                    <p>修复 重命名录音后，录音长度显示为0的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【日历】</p>
-                    <p>新增 春运火车票购票日历（可以在设置中关闭）</p>
+                    <p style="font-weight: bolder;">【LED灯】</p>
+                    <p>优化 启动手电筒应用就打开LED灯，简化操作</p>
+                    <p>修复 开关图标错误的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【视频】</p>
-                    <p>修复 播放直播视频时，连接USB导致视频重新缓冲的问题</p>
-                    <p>修复 某些情况下，离线中的电影无法暂停的问题</p>
-                    <p>修复 离线电影时，点击通知栏通知无法跳转到对应视频的问题</p>
+                    <p style="font-weight: bolder;">【便签】</p>
+                    <p>优化 便签编辑页面的时间在某些时候显示逻辑，避免换行</p>
+                    <p>修复 某些情况下，从备份无法恢复便签的问题</p>
                     <br>
+                    <p style="font-weight: bolder;">【其他】</p>
+                    <p>优化 “找回手机”更名为“查找手机”</p>
+                    <p>修复 不能通过邮箱注册小米帐号的问题</p>
+                    <p>修复 小米帐号部分页面左右显示不正常的问题</p>
+                    <p>修复 注册帐号时，密码输入框显示不正常的问题</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mdui-container-fluid pc">
         <p>视频演示：</p>
-        <iframe height=600 width=100% src='https://tv.sohu.com/s/sohuplayer/iplay.html?bid=63969766' frameborder=0 allowfullscreen></iframe>
+        <iframe height=600 width=100% src='https://tv.sohu.com/s/sohuplayer/iplay.html?bid=53554725&autoplay=false&disablePlaylist=true' frameborder=0 allowFullScreen="true" ></iframe>
     </div>
     <div class="mdui-container-fluid mobile">
         <p>视频演示：</p>
-        <iframe height=240 width=480 src='https://tv.sohu.com/s/sohuplayer/iplay.html?bid=63969766' frameborder=0 allowfullscreen></iframe>
+        <iframe height=240 width=480 src='https://player.youku.com/embed/XODUyMDA4Mjg0' frameborder=0 allowFullScreen="true" ></iframe>
     </div>
-
 
 
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">

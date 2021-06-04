@@ -10,12 +10,12 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153223840-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
+        gtag('config', 'UA-153223840-1');
     </script>
     <style>
         td a {
@@ -43,7 +43,7 @@
             }
         }
     </style>
-    <title>第19周开发版日志 - MIUI官方ROM仓库</title>
+    <title>22周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
@@ -92,127 +92,150 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第19周发布公告及更新日志</div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 22周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-19511-1-1.html">【2010年12月31日】MIUI 第19周发布公告及更新日志</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1881733">【12月31日】MIUI第5次内测暨第19周OTA下载及问题反馈集结</a></p>
-                    <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V2 0.12.31 已发布</p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-27345-1-1.html">【2011年1月21日】MIUI第22周更新说明暨问题反馈集结</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1881280">【2011年1月21日】MIUI第22周更新说明暨问题反馈集结</a></p>
                     <br>
-                    <p style="font-weight: bolder;">▍升级说明</p>
-                    <ol>
-                        <li>打包更换了签名，以后可使用非miui专用recovery升级</li>
-                        <li>MS新内核需要刷完整包</li>
-                    </ol>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V2 1.1.21 已发布</p>
+                    <br>
                     <hr>
                     <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
                     <p style="font-weight: bolder;">【推荐功能】</p>
-                    <p>在线壁纸和主题，在手机上直接可以查看海量主题和壁纸</p>
-                    <p>稳定性：</p>
+                    <p>稳定性和性能优化
                     <ul>
-                        <li>修复了短信自动生产草稿等问题</li>
-                        <li>修复了音乐的多个问题</li>
-                        <li>Milestone换了最新版内核</li>
+                        <li>优化内存使用，让桌面在多屏的时候更稳定（针对大内存有很多屏装了很多小工具和程序的手机很有好处）</li>
+                        <li>Milestone升级巴西版新内核 (直接ota即可升级新内核)</li>
                     </ul>
-                    <br>
-                    <p style="font-weight: bolder;">【短信】</p>
-                    <p>修复 写新短信会自动生产草稿的问题</p>
-                    <p>修复 转发短信时不能显示最近联系人的问题</p>
-                    <p>修复 在会话页面删除短信时不能留在当前位置的问题</p>
+                    </p>
+                    <p>短信功能系列优化（见下面详细文字）</p>
                     <br>
                     <p style="font-weight: bolder;">【电话】</p>
-                    <p>修复 拨号界面通话记录不能及时更新的问题</p>
+                    <p>优化 T9搜索联系人小改版优化内存占用（注意：需要手动清空联系人重新同步）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>优化 全局选择联系人中通话记录换为最近联系人（最近联系包含电话和短信，过滤掉陌生人和群发号码）</p>
+                    <p>优化 解决短信添加联系人选择列表字母快速滑动条不准的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 增加短信中心号码设置（短信设置中修改）</p>
+                    <p>新增 短信推荐中增加了新的春节元宵节短信</p>
+                    <p>新增 群发短信名称栏可以点开看到所有群发的人</p>
+                    <p>新增 群发短信可以插入称呼，称呼在发送时会替换为发送人名</p>
+                    <p>新增 客服电话不自动插入签名</p>
+                    <p>优化 把“添加联系人”放到输入框右边</p>
+                    <p>优化 用户阅读短信时智能的把短信发送框由2行缩为1行</p>
+                    <p>优化 节日时增加了推荐短信的样式</p>
+                    <p>优化 短信设置界面调整</p>
+                    <p>优化 “插入常用语”界面优化</p>
+                    <p>优化 群发联系人界面和流程优化</p>
+                    <p>优化 调整发送短信时，发送中和发送成功图标</p>
+                    <p>修复 保存签名前面如果用户没有加空格，自动增加空格</p>
+                    <p>修复 短信空草稿不能消失的问题</p>
+                    <p>修复 添加完表情和附件后，自动收起，重新弹出输入法</p>
                     <br>
                     <p style="font-weight: bolder;">【桌面】</p>
-                    <p>优化 桌面滑动增加透明效果</p>
-                    <p>新增 Milestone可以关掉缓存用以节省内存</p>
-                    <p>修复 一些桌面的小bug</p>
-                    <br>
-                    <p style="font-weight: bolder;">【隐私】</p>
-                    <p>新增 进入访客模式后状态栏将显示小栅栏图标</p>
-                    <p>修复 访客模式下，来新短信或彩信可能FC的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【防打扰】</p>
-                    <p>新增 黑名单列表支持直接添加号码</p>
-                    <p>新增 不拦截电话选项</p>
+                    <p>新增 桌面动画新加3种特效（可在桌面点菜单－启动器设置中修改）</p>
+                    <p>优化 优化内存使用，让桌面在多屏的时候更稳定</p>
                     <br>
                     <p style="font-weight: bolder;">【音乐】</p>
-                    <p>新增 在线音乐搜索！</p>
-                    <p>新增 设置中可以通过音乐修改铃声</p>
-                    <p>优化 歌词搜索状态提示</p>
-                    <p>优化 “正在播放”栏拖动效果，更快更流畅</p>
-                    <p>优化 文件夹列表打开速度</p>
-                    <p>修复 新添加的歌曲在文件夹中找不到的问题</p>
-                    <p>修复 若干引起FC的问题</p>
-                    <p>修复 歌曲未播放时弹出省流提示的问题</p>
-                    <p>修复 4*4 widge一直显示“正在下载歌词”的问题</p>
+                    <p>新增 全面适配第三版界面风格</p>
+                    <p>新增 编辑播放列表，让喜欢管理音乐的同学们能够玩爽！</p>
+                    <p>优化 “正在播放”歌曲的交互，“正在播放”面板可以通过点击打开</p>
+                    <p>优化 精简“正在播放”面板，专辑封面、歌词页二合一，清爽的使用体验！</p>
+                    <p>优化 将文件夹和本地音乐搜索添加到音乐播放器首页，减少层级结构</p>
                     <br>
-                    <p style="font-weight: bolder;">【图库(MIUI网盘下载)】</p>
-                    <p>新增 多点触摸缩放图片</p>
-                    <p>新增 滑动图片时跟随手指</p>
-                    <p>修复 有些图片不显示缩略图的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【MIUI网盘】</p>
-                    <p>新增 增加了游戏和软件的分类</p>
-                    <p>优化 网盘的稳定性</p>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>新增 首页、文件夹横向翻页</p>
+                    <p>优化 进一步提升文件夹和图片列表的打开速度</p>
+                    <p>修复 图片列表缩略图反向加载的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【主题】</p>
-                    <p>新增 在线壁纸和在线主题，浏览、下载、设置一条龙搞定</p>
+                    <p>新增 全新的主题界面</p>
                     <br>
-                    <p style="font-weight: bolder;">【流量监控】</p>
-                    <p>新增 已用流量可支持小数输入</p>
-                    <p>新增 支持设置起始计费日期</p>
-                    <p>新增 监控设置增加“超过包月流量时自动断网”开关，默认关闭</p>
-                    <p>修复 流量校正的问题</p>
-                    <p>优化 套餐设置，用户输入免费短信或者流量，自动生成警告值（数值为免费值的90%），同时支持用户手动修改</p>
-                    <p>优化 切换网络监控、监控设置标签时反应比较慢</p>
+                    <p style="font-weight: bolder;">【相机】（在MIUI网盘中下载）</p>
+                    <p>新增 增加宽屏功能，宽屏模式下全屏取景</p>
+                    <p>优化 milestone支持平滑变焦</p>
+                    <p>修复 修正milestone上双击屏幕后，照片大小设置会改变的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【网盘】</p>
+                    <p>新增 开放绑定论坛账户的程序上传</p>
+                    <p>新增 加入“一键安装”</p>
+                    <p>新增 更新程序列表页，在“装机必备”的菜单里。</p>
+                    <p>新增 自动更新软件，在通知栏提醒更新的功能</p>
+                    <p>新增 网盘的设置页面，可以选择在wifi或者运营商网络，自动更新、更新提醒等</p>
+                    <p>新增 可以上传软件，刚上传的软件标为"审核中"</p>
+                    <br>
+                    <p style="font-weight: bolder;">【备份】</p>
+                    <p>优化 对联系人、通话纪录的备份机制进行优化</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>优化 再次优化自动亮度（在设置－显示－亮度下设置）</p>
+                    <p>优化 个人密码从“安全和隐私”中提出来单独显示</p>
                     <br>
                     <p style="font-weight: bolder;">【全局搜索】</p>
-                    <p>新增 搜索桌面小工具</p>
-                    <p>优化 界面调整</p>
+                    <p>修复 解决第一次使用全局搜索不能返回结果的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统更新】</p>
+                    <p>新版系统更新界面（解决了在下载ROM的同时不能看更新的问题）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【流量监控】</p>
+                    <p>新增 单个应用的wifi、3g流量可以分开查看</p>
+                    <p>新增 使用了新的文件格式 （注意：由于本项改进流量的历史记录需要清零，用户需要重新校准）</p>
                     <br>
                     <p style="font-weight: bolder;">【其它】</p>
-                    <p>Milestone换了新内核</p>
-                    <p>修复 91助手及豌豆无法连接的bug</p>
-                    <p>修复 锁屏密码键盘不完全显示bug</p>
+                    <p>HD2修正 拨号按键不可拨号的问题</p>
+                    <p>HD2修正 拍摄视频会FC的问题</p>
+                    <p>HD相机支持八百万像素</p>
+                    <p>Milestone升级巴西版新内核</p>
                     <br>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mdui-container-fluid">
+        <div class="mdui-container-fluid">
             <div class="mdui-table-fluid">
                 <table class="mdui-table">
                     <thead>
                         <tr>
                             <th>机型</th>
-                            <th>卡刷包</th>
+                            <th>链接1</th>
+                            <th>链接2</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Google Nexus One G5</td>
-                            <td><a href="http://u.115.com/file/f8d372ffc5">http://u.115.com/file/f8d372ffc5</a></td>
+                            <td><a href="http://update.miuirom.com/updates/miui-n1-1.1.21.zip" id="r">miui-n1-1.1.21.zip</a></td>
+                            <td><a href="http://u.115.com/file/f8a8f208c9">http://u.115.com/file/f8a8f208c9</a></td>
                         </tr>
                         <tr>
                             <td>HTC Desire</td>
-                            <td><a href="http://u.115.com/file/f82843bc63">http://u.115.com/file/f82843bc63</a></td>
+                            <td><a href="http://update.miuirom.com/updates/miui-desire-1.1.21.zip" id="r">miui-desire-1.1.21.zip</a></td>
+                            <td><a href="http://u.115.com/file/f8b07fb871">http://u.115.com/file/f8b07fb871</a></td>
                         </tr>
                         <tr>
                             <td>HTC HD2</td>
-                            <td><a href="http://u.115.com/file/f827e46403">http://u.115.com/file/f827e46403</a></td>
+                            <td><a href="http://update.miuirom.com/updates/miui-hd2-1.1.21.zip" id="r">miui-hd2-1.1.21.zip</a></td>
+                            <td><a href="http://u.115.com/file/f8867ce366">http://u.115.com/file/f8867ce366</a></td>
+                        </tr>
+						<tr>
+                            <td>HTC Desire HD</td>
+                            <td><a href="http://update.miuirom.com/updates/miui-ace-1.1.21.zip" id="r">miui-ace-1.1.21.zip</a></td>
+                            <td><a href="http://u.115.com/file/f8a4ab027c">http://u.115.com/file/f8a4ab027c</a></td>
                         </tr>
                         <tr>
                             <td>MOTO Milestone</td>
-                            <td><a href="http://u.115.com/file/f8b9f03a71">http://u.115.com/file/f8b9f03a71</a></td>
+                            <td><a href="http://update.miuirom.com/updates/miui-milestone-1.1.21.zip" id="r">miui-milestone-1.1.21.zip</a></td>
+                            <td><a href="http://u.115.com/file/f826d7b04a">http://u.115.com/file/f826d7b04a</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
 
 
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">

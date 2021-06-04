@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
@@ -42,7 +43,7 @@
             }
         }
     </style>
-    <title>第18周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第29周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
@@ -91,87 +92,65 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第18周发布公告及更新日志
-                </div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第29周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-17389-1-1.html">【2010年12月24日】MIUI 第18周发布公告及更新日志</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1880751">【12月24日】MIUI第18周OTA下载及问题反馈集结</a></p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-47750-1-1.html">【2011年3月11日】MIUI第29周发布公告暨问题反馈集结</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1809798">【2011年3月11日】MIUI第29周发布公告暨问题反馈集结</a></p>
+                    <br>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V2 0.12.24 已发布</p>
+                    <p>MIUI V2 1.3.11 已发布</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>基于Android 2.3.3的Nexus S版本（带部分第三版UI）顺利完工，已提前发布</li>
+                    </ol>
                     <br>
                     <p style="font-weight: bolder;">▍已知问题</p>
                     <ol>
-                        <li>Milestone 12.18版本用户，请下载完整包刷机 （不需要wipe）</li>
+                        <li>点系统设置->个人->壁纸  会发生FC , 因为修改了壁纸设置入口部分代码,请先通过 "系统"->"常用" ->"壁纸"  进行设置</li>
                     </ol>
-                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍注意事项</p>
                     <ol>
-                        <li>首次刷MIUI ROM的用户，需要按照官方教程刷机，下载完整包：</li>
-                        <li>注意：第一次刷MIUI ROM 一定要自己手工进recovery ， wipe下数据。如果不会这一步的需要先学会再刷，这是刷新ROM必须的步骤，切记！</li>
-                        <li>由于升级时下载用户较多，速度较慢，老用户可以选择自行下载OTA文件，手工升级，请根据自己的手机型号以及版本号选择。</li>
+                        <li>第一次刷MIUI ROM时请务必在 Recovery 中选择wipe 清除数据</li>
+                        <li>以后通过OTA升级或刷完整包无需wipe，不会影响用户手机中的数据</li>
                     </ol>
                     <hr>
-                    <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
-                    <p style="font-weight: bolder;">【推荐功能】</p>
-                    <p>稳定性：<ul>
-                        <li>修复了流量监控容易卡死的问题</li>
-                        <li>修复了很多主题的BUG</li>
-                        <li>修复了无法使用线控接电话的问题并且把线控的控制权完全交给用户，让用户自己去设置播放器优先级</li>
-                    </ul></p>
-                    <p>全新的！真正的！全局搜索。</p>
-                    <p>短信可以加密了！</p>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>修复 当无SIM卡时候默认分析中国归属地</p>
+                    <p>修复 通话记录里如果来电无号码，显示为空的问题</p>
+                    <p>修复 启用距离感应器时，打电话时接通后屏幕点亮后无法自动变黑的问题</p>
+                    <p>修复 电话挂断后屏幕不会点亮的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【短信】</p>
-                    <p>新增 增加了群发的汇总报告</p>
-                    <p>新增 群发支持一键重发所有失败短信</p>
-                    <p>新增 短信列表支持按照发送时间/接收时间排序在短信设置中打开</p>
-                    <p>优化 持续改进了短信的稳定性</p>
-                    <p>优化 发送流程速度提升</p>
+                    <p>优化 收藏短信的逻辑</p>
                     <br>
-                    <p style="font-weight: bolder;">【电话】</p>
-                    <p>新增 锁屏紧急呼叫加入110 120 119 122</p>
-                    <p>新增 添加一个新联系人，通话记录也增加一条记录</p>
+                    <p style="font-weight: bolder;">【锁屏】</p>
+                    <p>修复 密码锁屏横屏时无法点击确定的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【桌面】</p>
-                    <p>新增 设置>系统>按键>优先响应媒体应用，解决多个音乐应用互相抢按键的问题</p>
-                    <p>修复 主题应用到一半就退出的问题</p>
-                    <p>修复 主题包文件名有特殊字符不能应用的问题</p>
-                    <p>修复 应用字体主题不生效</p>
-                    <p>修复 有些主题不能正常显示</p>
-                    <p>修复 添加更多主题时遇到同名文件会失败</p>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>新增 详细页点击预览图进入全屏模式</p>
+                    <p>修复 壁纸缩略图会盖住边框的问题</p>
+                    <p>修复 详细页首尾资源左右滑动错误</p>
+                    <p>修复 分类资源列表标题错误</p>
+                    <p>优化 主题缓存目录和全局统一</p>
                     <br>
-                    <p style="font-weight: bolder;">【隐私】</p>
-                    <p>新增 访客模式（长按电源键列表中进入）</p>
-                    <p>新增 短信加密</p>
-                    <p>新增 拨号加密</p>
-                    <p>新增 防打扰加密</p>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>新增 壁纸中加入动态壁纸的选项</p>
+                    <p>优化 设置中铃声设置和主题中的铃声设置打通</p>
                     <br>
-                    <p style="font-weight: bolder;">【MIUI网盘】</p>
-                    <p>优化 列表打开速度加快</p>
-                    <p>优化 所有软件进行梳理</p>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>新增 支持在线MP3链接播放（在短信里长按一个链接，启动播放器播放）</p>
+                    <p>新增 在线歌曲播放时自动缓存下一首</p>
+                    <p>新增 播放器频谱图开关，默认打开，可以通过设置关闭</p>
+                    <p>优化 甩歌时CPU占用，减少耗电</p>
                     <br>
-                    <p style="font-weight: bolder;">【MIUI音乐】</p>
-                    <p>新增 按文件夹过滤音乐</p>
-                    <p>新增 列表模式中支持“创建、编辑”列表</p>
-                    <p>新增 支持全局搜索可以搜到音乐文件</p>
-                    <p>优化 播放器性能优化，滑动更顺畅</p>
-                    <p>修复 多个音乐播放控制的冲突问题（锁屏、线控等）</p>
-                    <p>修复 允许用户重新搜索歌词、专辑图片</p>
-                    <br>
-                    <p style="font-weight: bolder;">【流量监控】</p>
-                    <p>（由于使用了新的算法，请大家先清空流量监控程序的数据）</p>
-                    <p>新增 后台用新的方式记录短信和电话</p>
-                    <p>新增 校正流量</p>
-                    <p>新增 加入程序管理的入口</p>
-                    <p>优化 记录更精准</p>
-                    <p>修复 易卡死的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【全局搜索】</p>
-                    <p>全新真正的全局搜索！</p>
-                    <br>
-                    <p style="font-weight: bolder;">【其他】</p>
-                    <p>发布MIUI图库实验版，请在网盘下载安装</p>
+                    <p style="font-weight: bolder;">【相机】(在MIUI网盘中下载)</p>
+                    <p>修复 缩放滑竿的显示，对于不支持缩放的相机，点击不会出现缩放滑竿</p>
+                    <p>修复 某些机型自动对焦时闪光灯闪烁的问题</p>
+                    <p>修复 使用特效模式拍照不生效的BUG</p>
                     <br>
                 </div>
             </div>
@@ -183,25 +162,54 @@
                 <thead>
                     <tr>
                         <th>机型</th>
-                        <th>安卓版本</th>
+                        <th>卡刷包</th>
+                        <th>线刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>HTC HD2(直刷)</td>
+                        <td><a href="http://bigota.d.miui.com/miui_HD2_1.3.11_2.2.zip" id="r">miui_HD2_1.3.11_2.2.zip</a></td>
+                        <td><a href="http://u.115.com/file/f8497a269a">http://u.115.com/file/f8497a269a</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th>机型</th>
                         <th>卡刷包</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td>Google Nexus S</td>
+                        <td><a href="http://bigota.d.miui.com/miui_NS_1.3.11_2.3.zip" id="r">miui_NS_1.3.11_2.3.zip</a></td>
+                    </tr>
+                    <tr>
                         <td>Google Nexus One G5</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f819b6f7ee">http://u.115.com/file/f819b6f7ee</a></td>
+                        <td><a href="http://bigota.d.miui.com/miui_N1_1.3.11_2.2.zip" id="r">miui_N1_1.3.11_2.2.zip</a></td>
                     </tr>
                     <tr>
                         <td>HTC Desire</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f8415428c4">http://u.115.com/file/f8415428c4</a></td>
+                        <td><a href="http://222.35.136.152/ota/miui_Desire_1.3.11_2.2.zip" id="r">miui_Desire_1.3.11_2.2.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC HD2(卡模拟)</td>
+                        <td><a href="http://u.115.com/file/f4bba28b36">http://u.115.com/file/f4bba28b36</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC Desire HD</td>
+                        <td><a href="http://222.35.136.152/ota/miui_DHD_1.3.11_2.2.zip" id="r">miui_DHD_1.3.11_2.2.zip</a></td>
                     </tr>
                     <tr>
                         <td>MOTO Milestone</td>
-                        <td>2.2 Froyo</td>
-                        <td><a href="http://u.115.com/file/f861116ed9">http://u.115.com/file/f861116ed9</a></td>
+                        <td><a href="http://222.35.136.152/ota/miui_Milestone_1.3.11_2.2.zip" id="r">miui_Milestone_1.3.11_2.2.zip</a></td>
                     </tr>
                 </tbody>
             </table>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第89周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第89周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>论坛链接：<a href="http://www.miui.com/thread-568063-1-1.html">【2012年5月11日】MIUI 第89周发布及更新日志</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1689962">【2012年5月11日】MIUI 第89周发布及更新日志</a></p>
+                    <br>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V4 2.5.11 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍注意事项</p>
+                    <ol>
+                        <li>刷机有风险，务必要小心；请谨慎操作、认真阅读更新日志和刷机教程，将风险降到最低</li>
+                        <li>第一次刷MIUI 时请务必在 Recovery 中选择wipe 清除数据</li>
+                    </ol>
+                    <br>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>LT18i 本周更换新底包，因此不提供OTA升级，请按官方教程刷入完整包（需wipe数据）</li>
+                    </ol>
+                    <hr>
+                    <p style="font-weight: bolder;">▍更新日志（MIUI 4.0）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 相机的新全屏快门：长按取景框中任意位置不放，即可对焦并拍照</p>
+                    <p>新增 相机录像时连续对焦的开关设置（在录像设置中设置）</p>
+                    <p>优化 百变锁屏采用动态帧率实现，默认锁屏耗电减少80%以上</p>
+                    <p>优化 文字编辑交互（文字选择、复制、粘贴等）</p>
+                    <p>优化 重写了汉字转注音的算法, T9搜索更准确</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>新增 系统搜索能够搜索到设置的子项设置</p>
+                    <p>优化 重写了汉字转注音的算法, T9搜索更准确</p>
+                    <p>优化 解锁状态下，第一次按音量键时只弹出音量面板而不调节音量</p>
+                    <p>优化 按音量键点亮屏幕时不改变音量</p>
+                    <p>优化 文字编辑交互</p>
+                    <p>优化 更新LT18i底包4.1.A.0.562</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>新增 MIUI电话模块（LT18i）</p>
+                    <p>优化 扩大拨号列表中联系人详情页入口的触摸区域，避免误触</p>
+                    <p>修复 某些情况下在前缀为0的固定电话号码前加86，导致拨号失败的问题</p>
+                    <p>修复 带前缀的SP号码在通话记录中无法被识别的问题</p>
+                    <p>修复 CDMA接听震动弱的问题</p>
+                    <p>修复 某些情况下连按两次拨出键，导致FC的问题</p>
+                    <p>修复 某些情况下通话界面联系人名字显示不全的问题</p>
+                    <p>修复 某些情况下连击WLAN开关导致电话FC的问题</p>
+                    <p>修复 开机后连接蓝牙耳机，双击重拨键导致FC的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>优化 联系人搜索结果列表中，匹配的部分高亮显示</p>
+                    <p>优化 减少点头像弹出的快速操作面板的高度</p>
+                    <p>优化 添加新号码到联系人时，高亮显示最新添加的号码</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 系统语言为英文时，增加隐藏短信“推荐”标签页的开关（默认关闭）</p>
+                    <p>优化 编辑短信时点删除后再点返回键，导致自动离开编辑模式的问题</p>
+                    <p>优化 短信列表的新建短信按钮居中显示（搜索移至菜单）</p>
+                    <p>修复 飞信标志显示不全的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>优化 百变锁屏采用动态帧率实现，默认锁屏耗电减少80%以上</p>
+                    <p>优化 统一通知栏快捷开关弹出样式</p>
+                    <p>优化 无SIM卡时，在状态栏左上角显示“无SIM卡”而不是“无服务”</p>
+                    <p>优化 减少自动旋转屏幕导致的耗电</p>
+                    <p>修复 通知栏快捷开关长按“截屏”不显示最近一张截屏图片的问题</p>
+                    <p>修复 运营商显示重复的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【相机】</p>
+                    <p>新增 新全屏快门：长按取景框中任意位置不放，即可对焦并拍照</p>
+                    <p>新增 拍照预览功能（在 拍照设置 - 拍照预览 中设置）</p>
+                    <p>新增 录像时连续对焦的开关设置（在录像设置中设置）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>优化 浏览SD卡的用户界面</p>
+                    <p>修复 删除图片过程中内存不足导致FC的问题</p>
+                    <p>修复 刚打开图库时立刻长按某图片导致FC的问题</p>
+                    <p>修复 在全部图册页面对特殊形状图片裁剪时，导致FC的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>修复 播放记录不保存的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>新增 关闭底部菜单键、桌面键、返回键的指示灯开关（见系统设置>按键）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【文件管理器】</p>
+                    <p>优化 提高了页面之间滑动的流畅度</p>
+                    <p>优化 SD卡页面的加载更流畅</p>
+                    <br>
+                    <p style="font-weight: bolder;">【浏览器】</p>
+                    <p>修复 某些情况下首页书签预览图片不会重新加载的问题</p>
+                    <p>修复 播放HTML5视频画面变形的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【防打扰】</p>
+                    <p>优化 内置垃圾短信主动拦截数据库</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍更新日志（小米手机）：</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 相机的新全屏快门：长按取景框中任意位置不放，即可对焦并拍照</p>
+                    <p>新增 相机录像时连续对焦的开关设置（在录像设置中设置）</p>
+                    <p>优化 百变锁屏采用动态帧率实现，默认锁屏耗电减少80%以上</p>
+                    <p>优化 文字编辑交互（文字选择、复制、粘贴等）</p>
+                    <p>优化 重写了汉字转注音的算法, T9搜索更准确</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>新增 系统搜索能够搜索到设置的子项设置</p>
+                    <p>优化 重写了汉字转注音的算法, T9搜索更准确</p>
+                    <p>优化 解锁状态下，第一次按音量键时只弹出音量面板而不调节音量</p>
+                    <p>优化 按音量键点亮屏幕时不改变音量</p>
+                    <p>优化 文字编辑交互</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>优化 扩大拨号列表中联系人详情页入口的触摸区域，避免误触</p>
+                    <p>修复 某些情况下在前缀为0的固定电话号码前加86，导致拨号失败的问题</p>
+                    <p>修复 带前缀的SP号码在通话记录中无法被识别的问题</p>
+                    <p>修复 CDMA接听震动弱的问题</p>
+                    <p>修复 某些情况下连按两次拨出键，导致FC的问题</p>
+                    <p>修复 某些情况下通话界面联系人名字显示不全的问题</p>
+                    <p>修复 某些情况下连击WLAN开关导致电话FC的问题</p>
+                    <p>修复 开机后连接蓝牙耳机，双击重拨键导致FC的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>优化 联系人搜索结果列表中，匹配的部分高亮显示</p>
+                    <p>优化 减少点头像弹出的快速操作面板的高度</p>
+                    <p>优化 添加新号码到联系人时，高亮显示最新添加的号码</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 系统语言为英文时，增加隐藏短信“推荐”标签页的开关（默认关闭）</p>
+                    <p>优化 编辑短信时点删除后再点返回键，导致自动离开编辑模式的问题</p>
+                    <p>优化 短信列表的新建短信按钮居中显示（搜索移至菜单）</p>
+                    <p>修复 飞信标志显示不全的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>优化 百变锁屏采用动态帧率实现，默认锁屏耗电减少80%以上</p>
+                    <p>优化 统一通知栏快捷开关弹出样式</p>
+                    <p>优化 无SIM卡时，在状态栏左上角显示“无SIM卡”而不是“无服务”</p>
+                    <p>优化 减少自动旋转屏幕导致的耗电</p>
+                    <p>修复 通知栏快捷开关长按“截屏”不显示最近一张截屏图片的问题</p>
+                    <p>修复 运营商显示重复的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【相机】</p>
+                    <p>新增 新全屏快门：长按取景框中任意位置不放，即可对焦并拍照</p>
+                    <p>新增 拍照预览功能（在 拍照设置 - 拍照预览 中设置）</p>
+                    <p>新增 录像时连续对焦的开关设置（在录像设置中设置）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>优化 浏览SD卡的用户界面</p>
+                    <p>修复 删除图片过程中内存不足导致FC的问题</p>
+                    <p>修复 刚打开图库时立刻长按某图片导致FC的问题</p>
+                    <p>修复 在全部图册页面对特殊形状图片裁剪时，导致FC的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>修复 播放记录不保存的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>新增 关闭底部菜单键、桌面键、返回键的指示灯开关（见系统设置>按键）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【文件管理器】</p>
+                    <p>优化 提高了页面之间滑动的流畅度</p>
+                    <p>优化 SD卡页面的加载更流畅</p>
+                    <br>
+                    <p style="font-weight: bolder;">【浏览器】</p>
+                    <p>修复 某些情况下首页书签预览图片不会重新加载的问题</p>
+                    <p>修复 播放HTML5视频画面变形的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【防打扰】</p>
+                    <p>优化 内置垃圾短信主动拦截数据库</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第33周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第33周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>论坛链接：<a href="http://www.miui.com/thread-69518-1-1.html">【2011年4月8日】MIUI 第33周发布公告暨问题反馈集结</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1763420">【2011年4月8日】MIUI 第33周发布公告暨问题反馈集结</a></p>
+                    <br>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V3 1.4.8 OTA 和完整包已全部发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍已知问题</p>
+                    <ol>
+                        <li>全局搜索暂不可用，临时解决办法：将“搜索设置”里面的“消息”项关闭即可</li>
+                    </ol>
+                    <br>
+                    <p style="font-weight: bolder;">▍注意事项</p>
+                    <ol>
+                        <li>第一次刷MIUI ROM时请务必在 Recovery 中选择wipe 清除数据</li>
+                        <li>以后通过OTA升级或刷完整包无需wipe，不会影响用户手机中的数据</li>
+                        <li>三款机型的预览版：SAMSUNG i9000、SAMSUNG T959 和 HTC Desire Z</li>
+                    </ol>
+                    <hr>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>短信第三版新UI</p>
+                    <p>音乐第三版新UI</p>
+                    <p>锁屏界面下长按Home键可快速使用手电（详细）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>新增：在通话设置中增加是否显示头像的开关 </p>
+                    <p>修复：来电大头贴图像太大可能导致接不到电话的问题</p>
+                    <p>修复：T9搜索到匹配的英文或数字时会导致文字变小的问题</p>
+                    <p>优化：在通话过程中状态栏不透明</p>
+                    <p>优化：提高通话效率，在通话过程中如锁屏壁纸为透明，不显示桌面壁纸</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增：发布短信第三版新UI</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>新增：联系人群组的第三版新UI</p>
+                    <p>新增：来电大头贴选择照片后支持旋转的操作</p>
+                    <p>新增：联系人详情中，长按单条通话记录增加删除操作</p>
+                    <p>修复：解决有时来电大头贴不能保存的问题</p>
+                    <p>修复：群组加人后依然会显示为空的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【通知栏】</p>
+                    <p>优化：把“程序”从通知栏移除，恢复到长按Home才呼出</p>
+                    <p>优化：通知栏最上方增加了信号、wifi、数据、蓝牙的状态图标</p>
+                    <p>优化：不再区分左右下拉，下拉通知栏默认就进入通知，如果没有通知则进入开关</p>
+                    <p>优化：锁屏状态下，有通知时状态栏会显示通知的个数</p>
+                    <br>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>新增：局部自定义当前主题新增锁屏样式/通知栏样式/电话主题样式 </p>
+                    <br>
+                    <p style="font-weight: bolder;">【便签】</p>
+                    <p>新增：单个便签设置闹钟提醒，入口：呼出菜单->更多->提醒我</p>
+                    <p>新增：支持便签程序级加密，可在系统设置->个人->个人密码中打开</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>新增：发布音乐第三版新UI</p>
+                    <p>新增：发布音乐新版widget，4*1和4*4两种尺寸</p>
+                    <br>
+                    <p style="font-weight: bolder;">【手电】</p>
+                    <p>新增：在锁屏界面下，长按Home键可以快速使用手电</p>
+                    <p>优化：美化桌面的MIUI手电筒，并增加了帮助信息</p>
+                    <br>
+                    <p style="font-weight: bolder;">【文字编辑】</p>
+                    <p>新增：多重剪贴板功能，允许复制和粘贴最多3条内容</p>
+                    <p>修复：某些情况下编辑菜单会遮挡输入框的问题</p>
+                    <p>修复：粘贴后前后出现空格的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【其它】</p>
+                    <p>优化：开机时弹出的运营商欢迎信息，适配第三版UI</p>
+                    <p>优化：系统设置中横向拖动滑动条（例如音量大小控制拖动条）</p>
+                    <p>优化：备份的UI，微调细节</p>
+                    <p>优化：流量监控界面，适配第三版UI</p>
+                    <p>优化：便签、手电、相机的桌面icon，使用默认主题时不添加底板</p>
+                    <p>新增：桌面上新增一个一键锁屏的App</p>
+                    <p>修复：个人密码图案解锁轨迹不可见的设置没有作用的问题</p>
+                    <p>新增：防打扰拦截到电话或短信后，状态栏图标会变感叹号</p>
+                    <p>修复：防打扰状态栏通知信息会被截断的问题</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th>机型</th>
+                        <th>卡刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Google Nexus S</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_NS_1.4.8_957_2.3.zip" id="r">miui_NS_1.4.8_957_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>Google Nexus One G5</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_NexusOne_1.4.8_97_2.3.zip" id="r">miui_NexusOne_1.4.8_97_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC Desire</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_Desire_1.4.8_964_2.3.zip" id="r">miui_Desire_1.4.8_964_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC HD2</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_HD2_1.4.8_632_2.3.zip" id="r">miui_HD2_1.4.8_632_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC Desire HD</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_DHD_1.4.8_278_2.3.zip" id="r">miui_DHD_1.4.8_278_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTC Desire Z</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_DesireZ_1.4.8_913_2.3.zip" id="r">miui_DesireZ_1.4.8_913_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>MOTO Milestone</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_Milestone_1.4.8_905_2.3.zip" id="r">miui_Milestone_1.4.8_905_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>SAMSUNG I9000</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_I9000_1.4.8_546_2.3.zip" id="r">miui_I9000_1.4.8_546_2.3.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>SAMSUNG T959</td>
+                        <td><a href="http://bigota.d.miui.com/1.4.8/miui_T959_1.4.8_126_2.3.zip" id="r">miui_T959_1.4.8_126_2.3.zip</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+</body>
+
+</html>

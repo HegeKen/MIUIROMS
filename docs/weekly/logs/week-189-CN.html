@@ -43,10 +43,19 @@
             }
         }
     </style>
-    <title>第171周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第189周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -92,12 +101,13 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第171周发布公告及更新日志</div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第189周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-1571073-1-1.html">【2014年1月3日】MIUI 第171周发布公告及更新日志（附视频）</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/1932018">【2014年1月3日】MIUI 第171周发布公告及更新日志（附视频）</a></p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-1773957-1-1.html">【2014年5月23日】MIUI 第189周发布公告及更新日志（附视频）</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4397409">【2014年5月23日】MIUI 第189周发布公告及更新日志（附视频）</a></p>
+                    <br>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI V5 4.1.3 已发布！</p>
+                    <p>MIUI V5 4.5.23 已发布！</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
@@ -106,61 +116,65 @@
                         <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：系统与安全 - 备份 - 新建备份）</li>
                         <li>其他品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
                     </ol>
-                    <p style="font-weight: bolder;">▍重要说明</p>
-                        <p>语音助手语音识别引擎已升级至3.0，1.0将无法使用；如有提示“停止运行”，请进入语音助手，点选菜单键进入设置，选择“讯飞语音识别”即可</p>
-                    <hr>
                     <br>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>小米手机2/2S升级后遇到卡白米问题已解决；</li>
+                        <li>小米手机2A，小米手机2/2S，更新已发布。</li>
+                        <li>我们收到有机油反馈小米手机3 W升级后遇到卡黄米现象，工程师正在紧急排查问题。目前已暂停OTA包升级，具体恢复时间请关注更新公告。已出现问题的机油，请先切回上一个版本后刷完整包解决！</li>
+                    </ol>
+                    <hr>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
                     <p style="font-weight: bolder;">【本周推荐】</p>
-                    <p>新增 迅雷引擎支持，执行系统应用的下载任务时，下载速度最高提升70%</p>
-                    <p>新增 日历春运火车票购票日期提示</p>
+                    <p>新增 支持识别短信中的时间内容，点击可以添加到日历</p>
+                    <p>优化 补全两种天气类型：冻雨和冰雹</p>
                     <br>
-                    <p style="font-weight: bolder;">【电话】</p>
-                    <p>优化 火车票订票电话自动重拨的逻辑</p>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>修复 无法使用 VPN 的问题</p>
+                    <p>修复 某些情况下用本手机号码注册小米账户失败的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【短信】</p>
-                    <p>修复 通知类短信中设置全部已读，不再影响私密短信的未读状态</p>
+                    <p>新增 支持识别短信中的时间内容，点击可以添加到日历</p>
                     <br>
-                    <p style="font-weight: bolder;">【桌面】</p>
-                    <p>新增 百变框架支持高斯模糊效果</p>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>修复 某些情况下，无 SIM 卡图标不消失的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【图库】</p>
-                    <p>新增 支持移动图片到其他相册</p>
-                    <p>修复 某些扩展名为jpg的bmp图片无法设置为壁纸的问题</p>
-                    <p>修复 某些情况下，下载原图或视频无反应的问题</p>
+                    <p style="font-weight: bolder;">【相机】</p>
+                    <p>修复 闪光情况下拍照概率性失焦的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【音乐】</p>
-                    <p>新增 支持超高品质音乐续费功能</p>
+                    <p>修复 某些蓝牙耳机显示屏上不显示歌曲信息的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【天气】</p>
-                    <p>修复 天气应用删除城市后，桌面小工具不能及时更新的问题</p>
-                    <p>修复 某些情况下，主题无法获取天气的问题</p>
+                    <p>新增 增加两种天气类型：冻雨和冰雹</p>
                     <br>
-                    <p style="font-weight: bolder;">【下载管理】</p>
-                    <p>新增 迅雷引擎，下载速度最高提升70%</p>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>修复 勿扰模式 VIP 名单来电不响铃的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【日历】</p>
-                    <p>新增 春运火车票购票日历（可以在设置中关闭）</p>
+                    <p>修复 某些情况下，进入日历时会闪退的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【视频】</p>
-                    <p>修复 播放直播视频时，连接USB导致视频重新缓冲的问题</p>
-                    <p>修复 某些情况下，离线中的电影无法暂停的问题</p>
-                    <p>修复 离线电影时，点击通知栏通知无法跳转到对应视频的问题</p>
+                    <p style="font-weight: bolder;">【骚扰拦截】</p>
+                    <p>修复 勿扰模式 VIP 名单与骚扰拦截白名单冲突的问题</p>
                     <br>
+                    <p style="font-weight: bolder;">【时钟/计算器】</p>
+                    <p>修复 某些情况下闹钟延迟响铃的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米帐户】</p>
+                    <p>修复 云服务的数据合并提示弹窗，点击“不合并”后没有自动进入下一步的问题</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mdui-container-fluid pc">
         <p>视频演示：</p>
-        <iframe height=600 width=100% src='https://tv.sohu.com/s/sohuplayer/iplay.html?bid=63969766' frameborder=0 allowfullscreen></iframe>
+        <iframe height=1080 width=100% src='https://player.youku.com/embed/XNzE4OTcwMzcy' frameborder=0 allowfullscreen></iframe>
     </div>
     <div class="mdui-container-fluid mobile">
         <p>视频演示：</p>
-        <iframe height=240 width=480 src='https://tv.sohu.com/s/sohuplayer/iplay.html?bid=63969766' frameborder=0 allowfullscreen></iframe>
+        <iframe height=240 width=480 src='https://player.youku.com/embed/XNzE4OTcwMzcy' frameborder=0 allowfullscreen></iframe>
     </div>
-
 
 
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
@@ -170,31 +184,31 @@
     <div style=" position:absolute; right:20px;bottom: 5px;">
         <script
             type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-    </div>
-	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
-		<div class="mdui-container-fluid">
-		  <div class="mdui-row mdui-footer-nav">
-			<div class="mdui-col-xs-3">
-			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
-			</div>
-			<div class="mdui-col-xs-4">
-			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
-			  </h3>
-			</div>
-			<div class="mdui-col-xs-5">
-			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
-			</div>
-		  </div>
-		  <div class="mdui-divider footer-divider"></div>
-		  <p></p>
-		  <div class="mdui-text-center">自 2019 - 至今 </div>
-			<div style=" position:absolute; right:20px;bottom:5px;">
-			<script
-			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-		  </div>
-		</div>
-	  </footer>
-    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+            <footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+                <div class="mdui-container-fluid">
+                  <div class="mdui-row mdui-footer-nav">
+                    <div class="mdui-col-xs-3">
+                      <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+                    </div>
+                    <div class="mdui-col-xs-4">
+                      <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+                      </h3>
+                    </div>
+                    <div class="mdui-col-xs-5">
+                      <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+                    </div>
+                  </div>
+                  <div class="mdui-divider footer-divider"></div>
+                  <p></p>
+                  <div class="mdui-text-center">自 2019 - 至今 </div>
+                    <div style=" position:absolute; right:20px;bottom:5px;">
+                    <script
+                      type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+                  </div>
+                </div>
+              </footer>
+            <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+	</div>
 </body>
 
 </html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第86周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第86周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>论坛链接：<a href="http://www.miui.com/thread-541559-1-1.html">【2012年4月20日】MIUI 第86周发布及更新日志</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/2739442">【2012年4月20日】MIUI 第86周发布及更新日志</a></p>
+                    <br>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI V4 2.4.20 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍注意事项</p>
+                    <ol>
+                        <li>刷机有风险，务必要小心；请谨慎操作、认真阅读更新日志和刷机教程，将风险降到最低</li>
+                        <li>第一次刷MIUI 时请务必在 Recovery 中选择wipe 清除数据</li>
+                    </ol>
+                    <br>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>本周迁移Gmail、Gtalk 等应用，建议升级之前备份数据，OTA升级之后Google相关APP可在应用超市中安装</li>
+                        <li>从本周起，MIUI 2.3的机型将不再遵循每周更新的发布机制，仅在有重大修复的时候发布新版本，<a href="https://www.xiaomi.cn/post/2132643" class="text-decoration:none;">见洪帮主公告说明</a>，<a href="http://www.miui.com/thread-541949-1-1.html" class="text-decoration:none;">原论坛链接</a></li>
+                        <li>MIUI V4 已刷推荐版的请在“系统更新-菜单键-检查设置”里关闭“仅升级到推荐版”，否则可能无法检查到系统更新</li>
+                        <li>小米手机从2.3升4.0，请先进行系统分区</li>
+                    </ol>
+                    <hr>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>优化 全局操作栏高度</p>
+                    <p>优化 将部分谷歌应用（地图，邮件，语音搜索，电子市场等）从系统分区转移到数据分区，从而支持删除（可在应用超市中重新安装）</p>
+                    <p>优化 增加长按返回键强制停止当前应用的触发时间（0.5秒->1.5秒）</p>
+                    <p>修复 Instagram不兼容的问题</p>
+                    <p>修复 连接USB弹出询问对话框导致屏幕卡死的问题</p>
+                    <p>修复 UCAM不兼容的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>新增 桌面电话图标支持显示未接电话数量</p>
+                    <p>优化 显著提高电话效率，包括打开速度、搜索效率、滑动流畅度等</p>
+                    <p>优化 时间字段的显示</p>
+                    <p>修复 某些卡无法切换APN的问题</p>
+                    <p>修复 通话结束绿条仍然显示的问题</p>
+                    <p>修复 国际号码不显示归属地的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>优化 详情页重复号码的显示规则（如：带IP前缀和不带IP前缀的相同号码都显示）</p>
+                    <p>修复 进入号码中带","的联系人详情导致FC的问题</p>
+                    <p>修复 联系人选择器名字、号码重复的问题</p>
+                    <p>修复 群组头像显示重复的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 支持在单人对话中查看群发短信并能跳转到对应的群发界面</p>
+                    <p>新增 彩信附件支持保存到SD卡</p>
+                    <p>新增 短信新版v4界面</p>
+                    <p>优化 新短信弹窗，触摸弹窗外区域不关闭窗口</p>
+                    <p>优化 新建短信时，添加大量联系人的加载效率提高2~3倍</p>
+                    <p>优化 短信列表滑动的流畅度</p>
+                    <p>优化 定时短信时间的选择，限制为从当前时间后十年内</p>
+                    <p>修复 发送联系人卡片时，如联系人为合并联系人导致卡片信息重复的问题</p>
+                    <p>修复 群发短信失败导致进度不显示的问题</p>
+                    <p>修复 未启用访问控制，锁屏也不显示彩信预览的问题</p>
+                    <p>修复 收件人过多导致保存短信草稿无响应的问题</p>
+                    <p>修复 某些情况下会话页和收藏页不显示时间的问题</p>
+                    <p>修复 定时彩信无法修改时间的问题</p>
+                    <p>删除 无SIM卡时不显示“保存到SIM卡”的菜单项</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>修复 通知栏下拉状态下，新通知图标不显示的问题</p>
+                    <p>修复 切换通知栏样式或换主题过程中，下拉通知栏可能导致崩溃的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>优化 系统加载主题资源的效率</p>
+                    <p>修复 应用主题时，锁屏样式不生效的问题</p>
+                    <p>修复 混搭主题时，会显示不支持模块的问题</p>
+                    <p>修复 不能备份桌面壁纸的问题</p>
+                    <p>修复 进入详情页面，选择局部项应用没有“其他”模块的问题</p>
+                    <p>修复 详情页点击菜单键导致黑屏的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【相机】</p>
+                    <p>修复 某些第三方照相机在非自动场景的模式下无法录制视频的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【图库】</p>
+                    <p>优化 图册页到照片详情页的速度及动画效果</p>
+                    <p>优化 默认不开启“自动生成收藏图册”的功能</p>
+                    <p>优化 “自动生成收藏图册”的算法</p>
+                    <p>修复 USB热插拔频繁可能导致误删文件和记录的问题</p>
+                    <p>修复 由第三方应用挑选图片时最后一排被挡住的问题</p>
+                    <p>修复 图片详情页查看小图模糊的问题</p>
+                    <p>修复 隐藏相机图册后，首页不显示“拍摄的照片”的问题</p>
+                    <p>修复 关闭触感反馈后进多选模式依旧震动的问题</p>
+                    <p>修复 改变“显示隐藏图册”设置后，首页图册个数错误的问题</p>
+                    <p>修复 无法删除图册或图片的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>优化 单曲模式下支持后台播放</p>
+                    <br>
+                    <p style="font-weight: bolder;">【备份】</p>
+                    <p>优化 备份恢复应用程序的机制，更安全高效</p>
+                    <p>修复 恢复备份时可能出现重复短信的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>优化 附近无可用Wi-Fi时的界面</p>
+                    <p>删除 使用移动卡时，运营商设置中的仅使用3G的选项</p>
+                    <br>
+                    <p style="font-weight: bolder;">【文件管理器】</p>
+                    <p>优化 某些情况下文件管理器界面错位的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【FM收音机】</p>
+                    <p>修复 第一次启用时打开声音会出现白条的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【闹钟】</p>
+                    <p>优化 闹钟设置</p>
+                    <p>修复 某些第三方闹钟程序会清除右上角闹钟状态图标的问题</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+</body>
+
+</html>
