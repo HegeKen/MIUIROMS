@@ -11,14 +11,29 @@
 		<!-- Global site tag (gtag.js) - Google Analytics --> 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
 		<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag() { dataLayer.push(arguments); }
-	  gtag('js', new Date());
-	  gtag('config', 'UA-153213840-1');
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
 	</script> 
-		<title>404 Not Found - MIUI官方ROM仓库</title> 
+		<style>
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+	</style> 
+		<title>MIUI12.5 开发版 下载 - MIUI官方ROM仓库</title> 
 	</head> 
-	<body class="mdui-bottom-nav-fixed"> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
 		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
 			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
 			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
@@ -26,38 +41,42 @@
 			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
 				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
 					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
-						<div class="mdui-list-item-content">
-							<a href="https://roms.miuier.com/index.html">回到首页</a>
+						<div class="mdui-list-item-content"> 
+							<a href="index.html">回到首页</a> 
 						</div> </li> 
 					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
-						<div class="mdui-list-item-content">
-							<a href="https://roms.miuier.com/tutorial.html">刷机教程</a>
+						<div class="mdui-list-item-content"> 
+							<a href="tutorial.html">刷机教程</a> 
 						</div> </li> 
 					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
-						<div class="mdui-list-item-content">
-							<a href="https://roms.miuier.com/weekly/index.html">查看日志</a>
+						<div class="mdui-list-item-content"> 
+							<a href="weekly/index.html">查看日志</a> 
 						</div> </li> 
 					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
-						<div class="mdui-list-item-content">
-							<a href="https://roms.miuier.com/devices/index.html">机型列表</a>
+						<div class="mdui-list-item-content"> 
+							<a href="devices/index.html">机型列表</a> 
 						</div> </li> 
 					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
-						<div class="mdui-list-item-content">
-							<a href="https://roms.miuier.com/tools.html">刷机工具</a>
+						<div class="mdui-list-item-content"> 
+							<a href="tools.html">刷机工具</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">fiber_new</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="bin.html">开发版</a> 
 						</div> </li> 
 					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
-						<div class="mdui-list-item-content">
-							<a href="https://roms.miuier.com/thanks.html">衷心感谢</a>
+						<div class="mdui-list-item-content"> 
+							<a href="thanks.html">衷心感谢</a> 
 						</div> </li> 
 					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
-						<div class="mdui-list-item-content">
-							<a href="https://roms.miuier.com/aboutme.html">站点日志</a>
+						<div class="mdui-list-item-content"> 
+							<a href="aboutme.html">站点日志</a> 
 						</div> </li> 
 					<li class="mdui-collapse-item"> 
 						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
 							<i class="mdui-list-item-icon mdui-icon material-icons">link</i> 
 							<div class="mdui-list-item-content">
-								友情链接
+								 友情链接 
 							</div> 
 							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
 						</div> 
@@ -70,53 +89,23 @@
 				</ul> 
 			</div> 
 		</div> 
-		<p class="mdui-typo-display-3">404 Not Found</p> 
-		<p class="mdui-typo-display-1-opacity">该页面并不存在</p> 
-		<!-- <a href="javascript:history.go(-1);location.reload()"></a> --> 
-		<p class="mdui-typo-display-1-opacity">将在5秒后返回上一页</p> 
-		<script type="text/javascript" language="javascript">
-		var i = 5;
-		intervalid = setInterval("fun()", 1000);
-		function fun(){
-			if(i==0){
-				history.go(-1);
-				clearInterval(intervalid);
-			}
-			i--;
-		}
-		</script> 
-		<!-- <div class="mdui-panel mdui-panel-gapless">
-			<div class="mdui-panel-item mdui-panel-item-open">
-				<div class="mdui-panel-item-header mdui-text-color-red"></div>
-				
-				<div class="mdui-panel-item-body">
-					<p><a href="https://get.miuier.xyz/index.html" style="text-decoration: none;color:blue;">点击返回首页</a></p>
-				</div>
-			</div>
-		</div> --> 
-		<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height: 120px;"> 
-			<div class="mdui-container-fluid"> 
-				<div class="mdui-row mdui-footer-nav"> 
-					<div class="mdui-col-xs-3"> 
-						<h3><a href="../aboutme.html" target="_blank" style="font-size: 15px;">关于我</a></h3> 
+		<div class="mdui-container-fluid"> 
+			<div class="mdui-panel mdui-panel-gapless"> 
+				<div class="mdui-panel-item mdui-panel-item-open"> 
+					<div class="mdui-panel-item-header mdui-text-color-red">
+						 收录说明 
 					</div> 
-					<div class="mdui-col-xs-4"> 
-						<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size: 15px;">我的主页</a> </h3> 
+					<div class="mdui-panel-item-body"> 
+						<ul> 
+							<li>MIUI12.5的收录策略会和MIUI11/MIUI12保持一致，即先收录在每周日志底部，后期再统一合入机型页面中</li> 
+							<li>会包含我能搜罗到的尽可能多的机型数据</li> 
+							<li>没有内测/公测权限的朋友请使用第三方rec刷入</li> 
+							<li>还请各位朋友规避在有官方人员的群里分享该页面数据 </li> 
+						</ul> 
 					</div> 
-					<div class="mdui-col-xs-5"> 
-						<h3><a href="https://www.mdui.org" target="_blank" style="font-size: 15px;">使用MDUI打造</a></h3> 
-					</div> 
-				</div> 
-				<div class="mdui-divider footer-divider"></div> 
-				<p></p> 
-				<div class="mdui-text-center">
-					自 2019 - 至今 
-				</div> 
-				<div style=" position:absolute; right:20px;bottom: 5px;"> 
-					<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
 				</div> 
 			</div> 
-		</footer> 
+		</div> 
 		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
 	</body>
 </html>

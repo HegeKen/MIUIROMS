@@ -1,549 +1,394 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="chinaz-site-verification" content="5BDB6F3CEC5D6F6F">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-  <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-  <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-153213840-1');
-  </script>
-  <style>
-    li a {
-      text-decoration: none;
-      color: blue;
-      font-weight: bolder;
-    }
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="chinaz-site-verification" content="5BDB6F3CEC5D6F6F">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.0/jquery.cookie.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script>
+	<style>
+		li a {
+			text-decoration: none;
+			color: blue;
+			font-weight: bolder;
+		}
 
-    p a {
-      text-decoration: none;
-      color: blue;
-    }
-  </style>
-  <title>MIUI官方ROM仓库--由米柚发烧友整理维护</title>
+		p a {
+			text-decoration: none;
+			color: blue;
+		}
+	</style>
+	<title>MIUI官方ROM仓库--由米柚发烧友整理维护</title>
 </head>
 
 <body>
-  <div class="mdui-toolbar mdui-color-deep-orange-accent">
-    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target:'#main-drawer'}" mdui-drawer-close><i
-        class="mdui-icon material-icons">menu</i></button>
-    <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-    <div class="mdui-toolbar-spacer"></div>
-    <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-      <ul class="mdui-list" mdui-collapse="{accordion:true}">
-        <li class="mdui-list-item mdui-ripple mdui-list-item-active">
-          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-          <div class="mdui-list-item-content"><a href="index.html">首页</a></div>
-        </li>
-
-        <li class="mdui-list-item mdui-ripple">
-          <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-          <div class="mdui-list-item-content"><a href="tutorial.html">刷机教程</a></div>
-        </li>
-
-        <li class="mdui-list-item mdui-ripple">
-          <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-          <div class="mdui-list-item-content"><a href="weekly/index.html">查看日志</a></div>
-        </li>
-
-
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-            <div class="mdui-list-item-content"><a href="devices/index.html">机型列表</a></div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-            <div class="mdui-list-item-content"><a href="tools.html">刷机工具</a></div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-          <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
-          <div class="mdui-list-item-content"><a href="recruit.html">诚招群员</a></div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-          <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-          <div class="mdui-list-item-content"><a href="thanks.html">衷心感谢</a></div>
-        </li>
-        <li class="mdui-list-item mdui-ripple">
-          <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-          <div class="mdui-list-item-content"><a href="aboutme.html">站点日志</a></div>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-
-  <div class "mdui-container">
-
-    <div class="mdui-panel mdui-panel-gapless">
-      <div class="mdui-panel-item mdui-panel-item-open">
-          <div class="mdui-panel-item-header mdui-text-color-red">更新日期：2019.12.11</div>
-          <div class="mdui-panel-item-body">
-              <p>站点版本：V0.5.6-SNAPSHOT</p>
-              <p>更新日志：
-                  <ul>
-                      <li>新增支持：Redmi K30 4G版</li>
-                      <li>近期只会注重于收录新版，旧版本一月再集中开始整理；</li>
-                      <li>更新部分稳定版；</li>
-                  </ul>
-              </p>
-              <p>当前支持：<ul>
-                      <li>小米数字系列：
-                          <a href="devices/gemini.html">小米5</a>/
-                          <a href="devices/capricorn.html">小米5S</a>/
-                          <a href="devices/natrium.html">小米5S Plus</a>/
-                          <a href="devices/tiffany.html">小米5X</a>/
-                          <a href="devices/meri.html">小米5C</a>/
-                          <a href="devices/sagit.html">小米6</a>/
-                          <a href="devices/wayne.html">小米6X</a>/
-                          <a href="devices/dipper.html">小米8</a>/
-                          <a href="devices/ursa.html">小米8透明探索版</a>/
-                          <a href="devices/equuleus.html">小米8屏幕指纹版</a>/
-                          <a href="devices/platina.html">小米8青春版</a>/
-                          <a href="devices/cepheus.html">小米9</a>/
-                          <a href="devices/crux.html">小米9 Pro 5G</a>
-                      </li>
-                      <li>SE系列：
-                          <a href="devices/sirius.html">小米8 SE</a>/
-                          <a href="devices/grus.html">小米9 SE</a>
-                      </li>
-                      <li>CC系列：
-                          <a href="devices/pyxis.html">小米CC9</a>/
-                          <a href="devices/vela.html">小米CC9美图定制版</a>/
-                          <a href="devices/laurus.html">小米CC9e</a>/
-                          <a href="devices/tucana.html">小米CC9 Pro</a>
-                      </li>
-                      <li>Max系列：
-                          <a href="devices/oxygen.html">小米Max2</a>/
-                          <a href="devices/nitrogen.html">小米Max3</a>
-                      </li>
-                      <li>Note系列：
-                          <a href="devices/scorpio.html">小米Note2</a>/
-                          <a href="devices/jason.html">小米Note3</a>
-                      </li>
-                      <li>MIX系列：
-                          <a href="devices/lithium.html">小米MIX</a>/
-                          <a href="devices/chiron.html">小米MIX2</a>/
-                          <a href="devices/polaris.html">小米MIX2S</a>/
-                          <a href="devices/perseus.html">小米MIX3</a>/
-                          <a href="devices/andromeda.html">小米MIX3 5G版</a>
-                      </li>
-                      <li>平板系列：
-                          <a href="devices/clover.html">小米平板4/Plus</a>
-                      </li>
-                      <li>其它小米机型：
-                          <a href="devices/lotus.html">小米Play</a>/
-                          <a href="devices/beryllium.html">小米 POCOPHONE F1</a>/
-                          <a href="devices/tissot.html">小米A1</a>/
-                          <a href="devices/jasmine.html">小米A2</a>/
-                          <a href="devices/daisy.html">小米A2 Lite</a>/
-                          <a href="devices/laurel_sprout.html">小米A3</a>
-                      </li>
-                      <li>红米/Redmi 数字系列：
-                          <a href="devices/markw.html">红米4 高配版</a>/
-                          <a href="devices/santoni.html">红米4X</a>/
-                          <a href="devices/rosy.html">红米5</a>/
-                          <a href="devices/riva.html">红米5A</a>/
-                          <a href="devices/vince.html">红米5Plus</a>/
-                          <a href="devices/cereus.html">红米6</a>/
-                          <a href="devices/cactus.html">红米6A</a>/
-                          <a href="devices/sakura.html">红米6 Pro</a>/
-                          <a href="devices/onclite.html">Redmi 7</a>/
-                          <a href="devices/pine.html">Redmi 7A</a>/
-                          <a href="devices/olive.html">Redmi 8</a>/
-                          <a href="devices/olivelite.html">Redmi 8A</a>
-                      </li>
-                      <li>红米/Redmi Note 系列：
-                          <a href="devices/dior.html">红米Note 4G 单卡版</a>/
-                          <a href="devices/hermes.html">红米Note2</a>/
-                          <a href="devices/hennessy.html">红米Note3 双网通</a>/
-                          <a href="devices/kenzo.html">红米Note3 全网通</a>/
-                          <a href="devices/kate.html">红米Note3 特别版</a>/
-                          <a href="devices/nikel.html">红米Note4/4X(联发科)</a>/
-                          <a href="devices/mido.html">红米Note 4X(高通)</a>/
-                          <a href="devices/whyred.html">红米Note 5</a>/
-                          <a href="devices/ugglite.html">红米Note 5A 标准版</a>/
-                          <a href="devices/ugg.html">红米Note 5A 高配版</a>/
-                          <a href="devices/tulip.html">红米Note 6 Pro</a>/
-                          <a href="devices/lavender.html">Redmi Note 7</a>/
-                          <a href="devices/violet.html">Redmi Note 7 Pro</a>/
-                          <a href="devices/ginkgo.html">Redmi Note 8</a>/
-                          <a href="devices/willow.html">Redmi Note 8T</a>/
-                          <a href="devices/begonia.html">Redmi Note 8 Pro </a>
-                      </li>
-                      <li>Redmi K 系列：
-                          <a href="devices/davinci.html">Redmi K20</a>/
-                          <a href="devices/raphael.html">Redmi K20 Pro</a>/
-                          <a href="devices/raphaels.html">Redmi K20 Pro尊享版</a>/
-                          <a href="devices/phoenix.html">Redmi K30 4G版</a>
-                      </li>
-                      <li>其它红米/Redmi手机：
-                          <a href="devices/ysl.html">红米S2</a>/
-                          <a href="devices/onc.html">红米Y3</a>/
-                          <a href="devices/tiare.html">Redmi Go</a>
-                      </li>
-                  </ul>
-              </p>
-          </div>
-          <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header">稳定版动态</div>
-            <div class="mdui-panel-item-body">
-              <!-- <div>
-                <p>2020.1.10日更新:</p>
-                <ol>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ol>
-              </div> -->
-              <div>
-                <p>2020.1.10日更新:</p>
-                <ol>
-                  <li>小米9 国际版 V11.0.3.0.QFAMIXM</li>
-                  <li>小米9 欧洲EEA版 V11.0.6.0.QFAEUXM</li>
-                  <li>小米9SE 俄罗斯版 V11.0.6.0.PFBRUXM</li>
-                  <li>小米CC9 V11.3.3.0.PFCCNXM</li>
-                  <li>小米MIX3 V11.0.1.0.QEECNXM</li>
-                  <li>小米Play 俄罗斯版 V11.0.2.0.OFIRUXM</li>
-                  <li>Redmi 7 印度版 V11.0.3.0.PFLINXM</li>
-                  <li>Redmi 7A V11.0.2.0.PCMCNXM</li>
-                  <li>Redmi 7A 印度版 V11.0.2.0.PCMINXM</li>
-                  <li>Redmi 8 印度尼西亚版 V11.0.3.0.PCNIDXM</li>
-                  <li>Redmi 8A 印度尼西亚版 V11.0.2.0.PCPIDXM</li>
-                  <li>红米Note6 Pro 欧洲EEA版 V11.0.3.0.PCXEUXM</li>
-                  <li>Redmi Note8 V11.0.4.0.PCOCNXM</li>
-                </ol>
-              </div>
-              
-              <div class="mdui-hidden">
-                <p>2020.1.2日更新:</p>
-                <ol>
-                  <li>小米CC9e V11.0.3.0.PFMCNXM</li>
-                  <li>小米Note3 V11.0.3.0.PCHCNXM</li>
-                  <li>小米Note3 国际版 V11.0.4.0.PCHMIXM</li>
-                  <li>小米Play 国际版 V11.0.2.0.OFIMIXM</li>
-                  <li>红米5 V11.0.4.0.ODACNXM</li>
-                  <li>红米5A V11.0.6.0.OCKCNXM</li>
-                  <li>红米6 Pro 印度版 V11.0.5.0.PDMMIXM</li>
-                  <li>Redmi 7A 俄罗斯版 V11.0.4.0.PCMRUXM</li>
-                  <li>Redmi 8 国际版 V11.0.1.0.PCNMIXM</li>
-                  <li>Redmi 8 国际版 V11.0.3.0.PCNMIXM</li>
-                  <li>Redmi 8 欧洲EEA版 V11.0.2.0.PCNEUXM</li>
-                  <li>Redmi 8 俄罗斯版 V11.0.2.0.PCNRUXM</li>
-                  <li>Redmi 8A 国际版 V11.0.3.0.PCPMIXM</li>
-                  <li>Redmi 8A 俄罗斯版 V11.0.2.0.PCPRUXM</li>
-                  <li>红米Y3 印度版 V11.0.4.0.PFFINXM</li>
-                  <li>红米Note6 Pro 国际版V11.0.2.0.PEKMIXM</li>
-                  <li>Redmi Note7 Pro 印度版 V11.0.6.0.PFHINXM</li>
-                  <li>Redmi Note8 Pro 欧洲EEA版 V11.0.3.0.PGGEUXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.12.25日更新:</p>
-                <ol>
-                  <li>小米8 青春版 V11.0.4.0.PDTCNXM</li>
-                  <li>小米8 青春版 国际版 V11.0.7.0.PDTMIXM</li>
-                  <li>小米8 青春版 俄罗斯版 V11.0.6.0.PDTRUXM</li>
-                  <li>Redmi 7 欧洲EEA版 V11.0.4.0.PFLEUXM</li>
-                  <li>Redmi 7A 欧洲EEA版 V11.0.13.0.PCMEUXM</li>
-                  <li>Redmi 8A 欧洲EEA版 V11.0.2.0.PCPEUXM</li>
-                  <li>Redmi Note8T 欧洲EEA版 V11.0.2.0.PCXEUXM</li>
-                  <li>Redmi Note8 Pro 印度尼西亚版 V11.0.2.0.PGGIDXM</li>
-                  <li>Redmi K20 Pro V11.0.5.0.QFKCNXM</li>
-                  <li>Redmi K20 Pro 印度版 V11.0.3.0.QFKINXM</li>
-                  <li>Redmi K30 4G版 V11.0.9.0.QGHCNXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.12.25日更新:</p>
-                <ol>
-                  <li>小米9 V11.0.5.0.QFACNXM</li>
-                  <li>Redmi Note8 Pro V11.0.2.0.PGGCNXM</li>
-                  <li>Redmi Note8 Pro V11.0.3.0.PGGCNXM</li>
-                  <li>小米CC9 欧洲EEA版 V11.3.4.0.PFCEUXM</li>
-                  <li>小米CC9 欧洲EEA版 V11.3.5.0.PFCEUXM</li>
-                  <li>小米CC9 Pro 欧洲EEA版 V11.0.10.0.PFDEUXM</li>
-                  <li>小米CC9 Pro 欧洲EEA版 V11.0.11.0.PFDEUXM</li>
-                  <li>红米6A 国际版 V11.0.4.0.PCBMIXM</li>
-                  <li>Redmi 7A 国际版 V11.0.5.0.PCMMIXM</li>
-                  <li>Redmi 7A 欧洲EEA版 V11.0.6.0.PCMEUXM</li>
-                  <li>Redmi Note8 Pro 印度版 V11.0.3.0.PGGINXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.12.18日更新:</p>
-                <ol>
-                  <li>小米6X V11.0.3.0.PDCCNXM</li>
-                  <li>小米CC9 国际版 V11.3.4.0.PFCMIXM</li>
-                  <li>Redmi Note8 印度尼西亚版 V11.0.1.0.PCOIDXM</li>
-                  <li>Redmi K30 V11.0.5.0.QGHCNXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.12.16日更新:</p>
-                <ol>
-                  <li>Redmi 8 印度尼西亚版 V11.0.2.0.PCNIDXM</li>
-                  <li>Redmi 8A 印度尼西亚版 V11.0.1.0.PCPIDXM</li>
-                  <li>Redmi Note8 印度版 V11.0.2.0.PCOINXM</li>
-                  <li>Redmi Note8T 国际版 V10.3.1.0.PCXMIXM</li>
-                  <li>Redmi Note8T 欧洲EEA版 V10.3.5.0.PCXEUXM</li>
-                  <li>Redmi Note8T 俄罗斯版 V10.3.2.0.PCXRUXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.12.11日更新:</p>
-                <ol>
-                  <li>小米CC9 美图定制版 V11.3.2.0.PFECNXM</li>
-                  <li>小米CC9 Pro 国际版 V11.0.5.0.PFDMIXM</li>
-                  <li>小米CC9 Pro 欧洲EEA版 V11.0.9.0.PFDEUXM</li>
-                  <li>小米CC9 Pro 俄罗斯版 V11.0.3.0.PFDRUXM</li>
-                  <li>Redmi 8 V11.0.3.0.PCNCNXM</li>
-                  <li>Redmi Note8 Pro 国际版 V11.0.2.0.PGGMIXM</li>
-                  <li>Redmi Note8 Pro 欧洲EEA版 V11.0.1.0.PGGEUXM</li>
-                  <li>Redmi Note8 Pro 欧洲EEA版 V11.0.2.0.PGGEUXM</li>
-                  <li>Redmi K30 4G版 V11.0.4.0.QGHCNXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.12.7日更新:</p>
-                <ol>
-                  <li>小米CC9 Pro V11.0.4.0.PFDCNXM</li>
-                  <li>小米CC9 Pro V11.0.5.0.PFDCNXM</li>
-                  <li>小米CC9 俄罗斯版 V11.3.3.0.PFCRUXM</li>
-                  <li>红米6 国际版 V11.0.1.0.PCGMIXM</li>
-                  <li>红米6A 国际版 V11.0.4.0.PCBMIXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.12.6日更新:</p>
-                <ol>
-                  <li>小米9 Pro 5G V11.0.3.0.PFXCNXM</li>
-                  <li>小米Max3 V11.0.3.0.PEDCNXM</li>
-                  <li>红米5 Plus V11.0.3.0.OEGCNXM</li>
-                  <li>Redmi 8 俄罗斯版 V11.0.1.0.PCNRUXM</li>
-                  <li>Redmi 8A 欧洲EEA版 V11.0.1.0.PCPMIXM</li>
-                  <li>Redmi 8A 俄罗斯版 V11.0.1.0.PCPRUXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                  <p>2019.12.4日更新:</p>
-                  <ol>
-                    <li>小米6 国际版 V11.0.3.0.PCAMIXM</li>
-                    <li>小米Max3 俄罗斯版 V11.0.6.0.PEDRUXM</li>
-                    <li>Redmi K20 Pro 国际版 V11.0.1.0.QFKMIXM</li>
-                    <li>Redmi K20 Pro 俄罗斯版 V11.0.1.0.QFKRUXM</li>
-                  </ol>
-                </div>
-              <div class="mdui-hidden">
-                <p>2019.12.2日更新:</p>
-                <ol>
-                  <li>小米5X V11.0.3.0.ODBCNXM</li>
-                  <li>小米CC9 Pro 国际版 V11.0.3.0.PFDMIXM</li>
-                  <li>小米Max3 国际版 V11.0.6.0.PEDMIXM</li>
-                  <li>小米Play V11.0.3.0.OFICNXM</li>
-                  <li>红米 Note6 Pro 国际版 V11.0.1.0.PEKMIXM</li>
-                  <li>Redmi Note7 V11.0.4.0.PFGCNXM</li>
-                  <li>Redmi Note8 印度版 V11.0.1.0.PCOINXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.11.29日更新:</p>
-                <ol>
-                  <li>小米9 V11.0.4.0.QFACNXM</li>
-                  <li>小米Play 国际版 V11.0.1.0.OFIMIXM</li>
-                  <li>Redmi 7 V11.0.2.0.PFLCNXM</li>
-                  <li>Redmi 8 欧洲EEA版 V11.0.1.0.PCNEUXM</li>
-                  <li>Redmi 8A V11.0.3.0.PCPCNXM</li>
-                  <li>Redmi 8A 国际版 V11.0.1.0.PCPMIXM</li>
-                  <li>Redmi 8A 印度版 V11.0.3.0.PCPINXM</li>
-                  <li>红米Note4X(高通版) V11.0.2.0.NCFCNXM</li>
-                  <li>Redmi Note8 V11.0.3.0.PCOCNXM</li>
-                  <li>Redmi K20 Pro/尊享版 V11.0.4.0.QFKCNXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.11.5/6日更新:</p>
-                <ol>
-                  <li>小米6：V11.0.3.0.PCAMIXM</li>
-                  <li>小米8：V11.0.4.0.PEACNXM、V11.0.6.0.PEAMIXM</li>
-                  <li>小米9：V11.0.2.0.QFAMIXM、V11.0.5.0.QFAEUXM</li>
-                  <li>小米9SE：V11.0.4.0.PFBMIXM、V11.0.4.0.PFBEUXM</li>
-                  <li>小米CC9：V11.3.2.0.PFCCNXM</li>
-                  <li>小米Play：V11.0.2.0.OFICNXM、V11.0.1.0.OFIMIXM、V11.0.1.0.OFIRUXM</li>
-                  <li>小米MIX2：V11.0.3.0.PDEMIXM</li>
-                  <li>小米MIX2S：V11.0.4.0.PDGMIXM</li>
-                  <li>小米MIX3：V11.0.4.0.PEECNXM</li>
-                  <li>Redmi 7：V11.0.2.0.PFLRUXM、V11.0.2.0.PFLINXM、V11.0.3.0.PFLEUXM</li>
-                  <li>Redmi 7A：V11.0.1.0.PCMCNXM、V11.0.4.0.PCMMIXM、V11.0.6.0.PCMEUXM、V11.0.3.0.PCMRUXM</li>
-                  <li>Redmi 8：V10.3.4.0.PCNMIXM、V10.3.3.0.PCNINXM、V10.3.2.0.PCNEUXM、V10.3.3.0.PCNRUXM</li>
-                  <li>Redmi 8A：V10.3.3.0.PCPMIXM、V10.3.3.0.PCPINXM、V10.3.3.0.PCPEUXM、V10.3.3.0.PCPRUXM</li>
-                  <li>红米Note 5A标准版：V11.0.2.0.NDFCNXM、V11.0.3.0.NDFMIXM</li>
-                  <li>红米Note5A 高配版：V11.0.2.0.NDKMIXM</li>
-                  <li>Redmi Note 7 Pro：V11.0.5.0.PFHINXM</li>
-                  <li>Redmi Note 8：V10.3.8.0.PCOCNXM、V10.3.5.0.PCOMIXM、V10.3.3.0.PCOINXM</li>
-                  <li>Redmi Note 8 Pro：V11.0.1.0.PGGCNXM、V10.4.3.0.PGGRUXM</li>
-                  <li>Redmi K20：V11.0.1.0.PFJMIXM</li>
-                  <li>Redmi K20 Pro/尊享版：V11.0.3.0.QFKEUXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.11.4日更新:</p>
-                <ol>
-                  <li>小米6：V11.0.2.0.PCACNXM</li>
-                  <li>小米6X：V11.0.2.0.PDCCNXM</li>
-                  <li>小米8透明探索版：V11.0.3.0.PEHCNXM</li>
-                  <li>小米8屏幕指纹版：V11.0.3.0.PECCNXM</li>
-                  <li>小米9：V11.0.2.0.QFACNXM</li>
-                  <li>小米9SE：V11.0.4.0.PFBRUXM</li>
-                  <li>小米MIX2：V11.0.2.0.PDECNXM</li>
-                  <li>小米MIX2S：V11.0.3.0.PDGCNXM/li>
-                  <li>红米6 Pro：V11.0.3.0.PDICNXM</li>
-                  <li>红米S2：V11.0.1.0.PEFCNXM</li>
-                  <li>红米Note5：V11.0.2.0.PEICNXM</li>
-                  <li>Redmi Note 7：V11.0.3.0.PFGCNXM</li>
-                  <li>Redmi Note 7 Pro：V11.0.4.0.PFHCNXM</li>
-                  <li>Redmi K20 Pro/尊享版：V11.0.2.0.QFKCNXM、V10.3.3.0.PFKRUXM/、V10.3.3.0.PFKMIXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.10.31日更新:</p>
-                <ol>
-                  <li>小米6：V11.0.2.0.PCACNXM</li>
-                  <li>小米手机8青春版：V11.0.5.0.PDTRUXM</li>
-                  <li>小米9：V11.0.2.0.QFACNXM</li>
-                  <li>小米CC9：V11.3.2.0.PFCRUXM、V11.3.2.0.PFCMIXM、V11.3.2.0.PFCEUXM</li>
-                  <li>小米CC9美图定制版：V11.3.1.0.PFECNXM</li>
-                  <li>小米Max3：V11.0.5.0.PEDRUXM</li>
-                  <li>小米Note3：V11.0.3.0.PCHMIXM</li>
-                  <li>小米MIX2：V11.0.2.0.PDECNXM</li>
-                  <li>红米6 Pro：V11.0.3.0.PDICNXM</li>
-                  <li>Redmi 7：V11.0.3.0.PFLEUXM</li>
-                  <li>红米S2：V11.0.1.0.PEFCNXM</li>
-                  <li>Redmi Note 7：V11.0.3.0.PFGCNXM、V11.0.5.0.PFGINXM、V11.0.3.0.PFGMIXM</li>
-                  <li>Redmi Note 8 Pro：V10.4.4.0.PGGINXM</li>
-                  <li>Redmi K20：V11.0.2.0.PFJEUXM</li>
-                  <li>Redmi K20 Pro：V11.0.2.0.QFKCNXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.10.17/18日更新:</p>
-                <ol>
-                  <li>小米8：V11.0.3.0.PEACNXM</li>
-                  <li>小米8透明探索版：V11.0.2.0.PEHCNXM</li>
-                  <li>小米8屏幕指纹版：V11.0.2.0.PECCNXM</li>
-                  <li>小米手机8青春版：V11.0.2.0.PDTCNXM</li>
-                  <li>小米手机8SE：V11.0.3.0.PEBCNXM</li>
-                  <li>小米手机9SE：V11.0.3.0.PFBCNXM</li>
-                  <li>小米Max3：V11.0.2.0.PEDCNXM</li>
-                  <li>小米MIX2S：V11.0.2.0.PDGCNXM</li>
-                  <li>小米MIX3：V11.0.3.0.PEECNXM</li>
-                  <li>Redmi 7：V11.0.1.0.PFLCNXM</li>
-                  <li>Redmi Note 7 Pro：V11.0.3.0.PFHCNXM</li>
-                  <li>Redmi K20：V11.0.3.0.PFJCNXM</li>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p>2019.10.14日更新:</p>
-                <ol>
-                  <ul>1.小米9：V10.2.14.0.PFAMIXM、V10.2.9.0.PFARUXM</ul>
-                  <ul>2.小米CC9：V10.3.1.0.PFCRUXM、V10.3.6.0.PFCEUXM、V10.3.1.0.PFCMIXM</ul>
-                  <ul>3.Redmi 7A：V10.2.10.0.PCMINXM、V10.2.14.0.PCMCNXM</ul>
-                  <ul>4.Redmi Note 8：V10.3.2.0.PCOIDXM、V10.3.1.0.PCOINXM</ul>
-                  <ul>5.Redmi Note 8 Pro：V10.4.10.0.PGGCNXM、V10.4.1.0.PGGMIXM、V10.4.2.0.PGGIDXM</ul>
-                  <ul>6.Redmi K20 Pro:
-                    V10.3.1.0.PFKRUXM、V10.3.2.0.PFKRUXM、V10.3.1.0.PFKEUXM、V10.3.3.0.PFKEUXM、V10.3.4.0.PFKEUXM、V10.3.3.0.PFKINXM、V10.3.5.0.PFKINXM、V10.3.1.0.PFKMIXM、V10.3.2.0.PFKMIXM
-                  </ul>
-                </ol>
-              </div>
-              <div class="mdui-hidden">
-                <p">2019.10.01日更新:</p>
-                  <ol>
-                    <ul>1.Redmi Note 8：V10.3.6.0.PCOCNXM</ul>
-                    <ul>2.Redmi Note 8 Pro：V10.4.9.0.PGGCNXM</ul>
-                  </ol>
-              </div>
-            </div>
-          </div>
+	<div class="mdui-toolbar mdui-color-deep-orange-accent">
+		<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target:'#main-drawer'}" mdui-drawer-close=""><i
+				class="mdui-icon material-icons">menu</i></button>
+		<span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+		<div class="mdui-toolbar-spacer"></div>
+		<div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+			<ul class="mdui-list" mdui-collapse="{accordion:true}">
+				<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i
+						class="mdui-list-item-icon mdui-icon material-icons">home</i>
+					<div class="mdui-list-item-content">
+						<a href="index.html">首页</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+					<div class="mdui-list-item-content">
+						<a href="tutorial.html">刷机教程</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i
+						class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+					<div class="mdui-list-item-content">
+						<a href="weekly/index.html">查看日志</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i
+						class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+					<div class="mdui-list-item-content">
+						<a href="devices/index.html">机型列表</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i
+						class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+					<div class="mdui-list-item-content">
+						<a href="tools.html">刷机工具</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i
+						class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+					<div class="mdui-list-item-content">
+						<a href="thanks.html">衷心感谢</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i
+						class="mdui-list-item-icon mdui-icon material-icons">person</i>
+					<div class="mdui-list-item-content">
+						<a href="aboutme.html">站点日志</a>
+					</div>
+				</li>
+				<li class="mdui-collapse-item">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+						<div class="mdui-list-item-content">
+							友情链接
+						</div>
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a>
+						</li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's
+								Moai</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<div class="mdui-panel mdui-panel-gapless">
+			<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-panel-item-header mdui-text-color-red">
+					更新日期：2021.5.31
+				</div>
+				<div class="mdui-panel-item-body">
+					<p>站点版本：V0.9.1-SNAPSHOT</p>
+					<p>更新日志： </p>
+					<ul>
+						<li>新增支持：Redmi Note 10、Redmi Note 8 2021、Redmi Note 10S、POCO X3 Pro;</li>
+					</ul>
+					<p></p>
+					<p>当前支持： </p>
+					<ul>
+						<li>小米数字系列： 
+							<a href="devices/gemini.html">小米5</a>/
+							<a href="devices/capricorn.html">小米5S</a>/
+							<a href="devices/natrium.html">小米5S Plus</a>/
+							<a href="devices/tiffany.html">小米5X</a>/ 
+							<a href="devices/meri.html">小米5C</a>/ 
+							<a href="devices/sagit.html">小米6</a>/ 
+							<a href="devices/wayne.html">小米6X</a>/ 
+							<a href="devices/dipper.html">小米8</a>/ 
+							<a href="devices/ursa.html">小米8透明探索版</a>/ 
+							<a href="devices/equuleus.html">小米8屏幕指纹版</a>/ 
+							<a href="devices/platina.html">小米8青春版</a>/ 
+							<a href="devices/cepheus.html">小米9</a>/ 
+							<a href="devices/davinci.html">小米9T</a>/ 
+							<a href="devices/raphael.html">小米9T Pro</a>/ 
+							<a href="devices/pyxis.html">小米9 Lite</a>/ 
+							<a href="devices/crux.html">小米9 Pro 5G</a>/ 
+							<a href="devices/umi.html">小米10</a>/ 
+							<a href="devices/thyme.html">小米10S</a>/ 
+							<a href="devices/cmi.html">小米10 Pro</a>/ 
+							<a href="devices/vangogh.html">小米10 青春版</a>/ 
+							<a href="devices/cas.html">小米10 至尊纪念版</a>/ 
+							<a href="devices/monet.html">小米10 Lite</a>/ 
+							<a href="devices/apollo.html">小米10T</a>/ 
+							<a href="devices/apollo.html">小米10T Pro</a>/ 
+							<a href="devices/gauguin.html">小米10T Lite</a>/ 
+							<a href="devices/venus.html">小米11</a>/ 
+							<a href="devices/courbet.html">小米11 Lite 4G</a>/ 
+							<a href="devices/renoir.html">小米11 青春版</a>/ 
+							<a href="devices/star.html">小米11 Pro/Ultra</a>
+						</li>
+						<li>SE系列： 
+							<a href="devices/sirius.html">小米8 SE</a>/ 
+							<a href="devices/grus.html">小米9 SE</a> 
+						</li>
+						<li>CC系列： 
+							<a href="devices/pyxis.html">小米CC9</a>/
+							<a href="devices/vela.html">小米CC9美图定制版</a>/ 
+							<a href="devices/laurus.html">小米CC9e</a>/
+							<a href="devices/tucana.html">小米CC9 Pro</a> 
+						</li>
+						<li>Max系列： 
+							<a href="devices/oxygen.html">小米Max2</a>/ 
+							<a href="devices/nitrogen.html">小米Max3</a>
+						</li>
+						<li>Note系列： 
+							<a href="devices/scorpio.html">小米Note2</a>/ 
+							<a href="devices/jason.html">小米Note3</a>/
+							<a href="devices/tucana.html">小米Note 10</a>/
+							<a href="devices/toco.html">小米Note 10 Lite</a>
+						</li>
+						<li>MIX系列： 
+							<a href="devices/lithium.html">小米MIX</a>/
+							<a href="devices/chiron.html">小米MIX2</a>/
+							<a href="devices/polaris.html">小米MIX2S</a>/
+							<a href="devices/perseus.html">小米MIX3</a>/
+							<a href="devices/andromeda.html">小米MIX3 5G版</a>/
+							<a href="devices/cetus.html">小米MIX FOLD</a>
+						</li>
+						<li>平板系列： 
+							<a href="devices/clover.html">小米平板4/Plus</a> 
+						</li>
+						<li>其它小米机型： 
+							<a href="devices/lotus.html">小米Play</a>/ 
+							<a href="devices/beryllium.html">POCO F1</a>/ 
+							<a href="devices/lmi.html">POCO F2 Pro</a>/ 
+							<a href="devices/shiva.html">POCO M2</a>/ 
+							<a href="devices/gram.html">POCO M2 Pro</a>/ 
+							<a href="devices/citrus.html">POCO M3</a>/ 
+							<a href="devices/phoenix.html">POCO X2</a>/ 
+							<a href="devices/vayu.html">POCO X3 Pro</a>/ 
+							<a href="devices/surya.html">POCO X3 NFC</a>/ 
+							<a href="devices/tissot.html">小米A1</a>/ 
+							<a href="devices/jasmine_sprout.html">小米A2</a>/ 
+							<a href="devices/daisy.html">小米A2 Lite</a>/
+							<a href="devices/laurel_sprout.html">小米A3</a>
+						</li>
+						<li>红米/Redmi 数字系列： 
+							<a href="devices/markw.html">红米4 高配版</a>/ 
+							<a href="devices/santoni.html">红米4X</a>/ 
+							<a href="devices/rosy.html">红米5</a>/ 
+							<a href="devices/riva.html">红米5A</a>/ 
+							<a href="devices/vince.html">红米5Plus</a>/ 
+							<a href="devices/cereus.html">红米6</a>/ 
+							<a href="devices/cactus.html">红米6A</a>/ 
+							<a href="devices/sakura.html">红米6 Pro</a>/ 
+							<a href="devices/onclite.html">Redmi 7</a>/ 
+							<a href="devices/pine.html">Redmi 7A</a>/ 
+							<a href="devices/olive.html">Redmi 8</a>/ 
+							<a href="devices/olivelite.html">Redmi 8A</a>/ 
+							<a href="devices/olivewood.html">Redmi 8A Dual</a>/ 
+							<a href="devices/lancelot.html">Redmi 9</a>/ 
+							<a href="devices/cattail.html">Redmi 9 India</a>/ 
+							<a href="devices/dandelion.html">Redmi 9A</a>/ 
+							<a href="devices/angelica.html">Redmi 9C</a>/ 
+							<a href="devices/angelican.html">Redmi 9C NFC</a>/ 
+							<a href="devices/merlin.html">Redmi 10X 4G</a>/ 
+							<a href="devices/atom.html">Redmi 10X 5G</a>/ 
+							<a href="devices/bomb.html">Redmi 10X Pro</a> 
+						</li>
+						<li>红米/Redmi Note 系列： 
+							<a href="devices/dior.html">红米Note 4G 单卡版</a>/ 
+							<a href="devices/hermes.html">红米Note2</a>/ 
+							<a href="devices/hennessy.html">红米Note3 双网通</a>/
+							<a href="devices/kenzo.html">红米Note3 全网通</a>/ 
+							<a href="devices/kate.html">红米Note3 特别版</a>/
+							<a href="devices/nikel.html">红米Note4/4X(联发科)</a>/ 
+							<a href="devices/mido.html">红米Note 4X(高通)</a>/ 
+							<a href="devices/whyred.html">红米Note 5</a>/ 
+							<a href="devices/ugglite.html">红米Note 5A 标准版</a>/ 
+							<a href="devices/ugg.html">红米Note 5A 高配版</a>/ 
+							<a href="devices/tulip.html">红米Note 6 Pro</a>/ 
+							<a href="devices/lavender.html">Redmi Note 7</a>/ 
+							<a href="devices/violet.html">Redmi Note 7 Pro</a>/ 
+							<a href="devices/ginkgo.html">Redmi Note 8</a>/ 
+							<a href="devices/biloba.html">Redmi Note 8 2021</a>/ 
+							<a href="devices/willow.html">Redmi Note 8T</a>/ 
+							<a href="devices/begonia.html">Redmi Note 8 Pro </a>/ 
+							<a href="devices/lime.html">Redmi Note 9 4G</a>/ 
+							<a href="devices/cannon.html">Redmi Note 9 5G</a>/ 
+							<a href="devices/gauguin.html">Redmi Note 9 Pro</a>/ 
+							<a href="devices/curtana.html">Redmi Note 9S</a>/ 
+							<a href="devices/joyeuse.html">Redmi Note 9 Pro 国际</a>/ 
+							<a href="devices/excalibur.html">Redmi Note 9 Pro Max</a>/ 
+							<a href="devices/camellia.html">Redmi Note 10</a>/ 
+							<a href="devices/chopin.html" class="mdui-hidden">Redmi Note 10 Pro</a>/ 
+							<a href="devices/rosemary.html">Redmi Note 10S</a>/ 
+							<a href="devices/mojito.html">Redmi Note 10 国际</a>/ 
+							<a href="devices/sweet.html">Redmi Note 10 Pro/Pro Max 国际</a>
+						</li>
+						<li>Redmi K 系列： 
+							<a href="devices/davinci.html">Redmi K20</a>/ 
+							<a href="devices/raphael.html">Redmi K20 Pro</a>/ 
+							<a href="devices/raphaels.html">Redmi K20 Pro尊享版</a>/ 
+							<a href="devices/phoenix.html">Redmi K30 4G版</a>/ 
+							<a href="devices/picasso.html">Redmi K30 5G版</a>/ 
+							<a href="devices/picasso_48m.html">Redmi K30i 5G版</a>/ 
+							<a href="devices/lmi.html">Redmi K30 Pro</a>/ 
+							<a href="devices/cezanne.html">Redmi K30 至尊纪念版</a>/ 
+							<a href="devices/apollo.html">Redmi K30S 至尊纪念版</a>/ 
+							<a href="devices/alioth.html">Redmi K40</a>/ 
+							<a href="devices/haydn.html">Redmi K40 Pro</a>/ 
+							<a href="devices/ares.html">Redmi K40 游戏增强版</a> 
+						</li>
+						<li>其它红米/Redmi手机： 
+							<a href="devices/ugglite.html">Redmi Y1 Lite</a>/ 
+							<a href="devices/ugg.html">Redmi Y1</a>/ 
+							<a href="devices/ysl.html">红米S2</a>/ 
+							<a href="devices/onc.html">红米Y3</a>/ 
+							<a href="devices/tiare.html">Redmi Go</a> 
+						</li>
+					</ul>
+				</div>
+				<div class="mdui-panel-item mdui-panel-item-open">
+					<div class="mdui-panel-item-header">
+						稳定版收录日志：
+						<a href="log.html" style="text-decoration:none;color:black;">查看完整版</a>
+					</div>
+					<div class="mdui-panel-item-body">
+						<div>
+							<p>2021.5.31日更新:</p>
+							<ol>
+								<li>小米10：欧洲EEA版 V12.2.8.0.RJBEUXM</li>
+								<li>小米10S：V12.0.11.0.RGACNXM、V12.5.1.0.RGACNXM</li>
+								<li>小米10Pro：欧洲EEA版 V12.2.7.0.RJAEUXM</li>
+                                <li>小米11：国际版 V12.5.3.0.RKBMIXM、欧洲EEA版 V12.5.1.0.RKBEUXM、土耳其版 V12.5.1.0.RKBTRXM</li>
+								<li>小米11 Lite 4G：国际版 V12.0.11.0.RKQMIXM</li>
+								<li>小米11 青春版：V12.0.10.0.RKICNXM</li>
+								<li>小米11 Pro/Ultra：欧洲EEA版 V12.5.2.0.RKAEUXM、欧洲EEA版 V12.5.3.0.RKAEUXM</li>
+								<li>小米CC9：欧洲EEA版 V12.0.7.0.QFCEUXM、俄罗斯版 V12.0.6.0.QFCRUXM</li>
+								<li>小米CC9 Pro：欧洲EEA版 V12.1.4.0.RFDEUXM</li>
+								<li>POCO X3 Pro：台湾地区稳定版 V12.0.1.0.RJUTWXM、台湾地区稳定版 V12.0.2.0.RJUTWXM、国际版 V12.0.4.0.RJUMIXM、国际版 V12.0.6.0.RJUMIXM、欧洲EEA版 V12.0.4.0.RJUEUXM、欧洲EEA版 V12.0.5.0.RJUEUXM、俄罗斯版 V12.0.3.0.RJURUXM、俄罗斯版 V12.0.6.0.RJURUXM、印度版 V12.0.4.0.RJUINXM、印度版 V12.0.5.0.RJUINXM、印尼版 V12.0.3.0.RJUIDXM、土耳其吧 V12.0.2.0.RJUTRXM</li>
+                                <li>POCO X3 NFC：俄罗斯版 V12.0.9.0.QJGRUXM、印尼版 V12.0.7.0.QJGIDXM、土耳其版 V12.0.7.0.QJGTRXM</li>
+								<li>小米A2：国际版 V11.0.26.0.QDIMIXM</li>
+								<li>Redmi 9C：国际版 V12.0.13.0.QCRMIXM</li>
+								<li>Redmi 10X：欧洲EEA版 V12.0.10.0.QJOEUXM、印度版 V12.0.8.0.QJOINXM、印尼版 V12.0.6.0.QJOIDXM、土耳其版 V12.0.7.0.QJOTRXM</li>
+								<li>Redmi Note 8：国际版 V12.0.5.0.QCOMIXM</li>
+								<li>Redmi Note 8 2021：国际版 V12.5.1.0.RCUMIXM、国际版 V12.5.2.0.RCUMIXM、俄罗斯版 V12.5.1.0.RCURUXM</li>
+                                <li>Redmi Note 10：V12.0.5.0.RKSCNXM、国际版 V12.0.1.0.RKSMIXM、欧洲EEA版 V12.0.2.0.RKSEUXM、欧洲EEA版 V12.0.3.0.RKSEUXM、欧洲EEA版 V12.0.7.0.RKSEUXM、欧洲EEA版 V12.0.8.0.RKSEUXM、印尼版 V12.0.1.0.RKSIDXM</li>
+								<li>Redmi Note 10S：国际版 V12.5.2.0.RKLMIXM、国际版 V12.5.4.0.RKLMIXM、国际版 V12.5.5.0.RKLMIXM、国际版 V12.5.7.0.RKLMIXM、欧洲EEA版 V12.5.3.0.RKLEUXM、欧洲EEA版 V12.5.6.0.RKLEUXM、印度版 V12.5.2.0.RKLINXM</li>
+								<li>Redmi Note 10 Pro/Pro Max 国际：台湾地区版 V12.0.6.0.RKFTWXM、土耳其版 V12.0.7.0.RKFTRXM</li>
+								<li>Redmi K30 Pro：欧洲EEA版 V12.2.6.0.RJKEUXM、俄罗斯版 V12.2.4.0.RJKRUXM</li>
+								<li>Redmi K40 Pro/Pro+：国际版 V12.0.3.0.RKKMIXM</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+	  			<!-- <div class="mdui-panel-item-body">
+		  <div>
+			<p>2020.3.17日更新:</p>
+			<ol>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <li></li>
+			  <p>共计xx卡刷包，xx线刷包数据</p>
+			</ol>
+		  </div>
           
-        <div class="mdui-panel-item mdui-panel-item-open">
-          <div class="mdui-panel-item-header">本站点将极力收集MIUI发布的更新</div>
-          <div class="mdui-panel-item-body">
-            <p> </p>
-            <p>开发版正常更新的机型有：</p>
-            <p>小米系列：小米6/小米6X/小米8/小米8探索版/小米8屏幕指纹版/小米8 SE/小米8青春版/小米9/小米9透明版/小米9
-              SE/小米CC9/小米CC9美图定制版/小米CC9e/小米Max 3/小米Play/小米Note 3/小米MIX 2/小米MIX 2S/小米MIX 3</p>
-            <p>Redmi 系列：红米6/红米6A/红米6 Pro/Redmi Note 7/Redmi Note 7 Pro/Redmi Note 8/Redmi Note 8 Pro/Redmi K20/Redmi K20 Pro</p>
-          </div>
-        </div>
-        <div class="mdui-panel-item mdui-panel-item-open mdui-hidden">
-          <div class="mdui-panel-item-header">开发版动态</div>
-          <div class="mdui-panel-item-body">
-            <p>公告：</p>
-            <p>小米手机5S/小米手机5S Plus/小米5X/小米5C/小米Max 2/小米Note 2/小米MIX/红米4X/红米5/红米5A/红米5 Plus/红米Note 4X/红米Note 5A标准版/红米Note
-              5A高配版/小米平板3</p>
-            <p>已于2019年10月14日停止<em style="color:red;font-style:unset;font-weight:bold;">开发版</em>内测/公测</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
-      <div class="mdui-container-fluid">
-        <div class="mdui-row mdui-footer-nav">
-          <div class="mdui-col-xs-3">
-            <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
-          </div>
-          <div class="mdui-col-xs-4">
-            <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
-            </h3>
-          </div>
-          <div class="mdui-col-xs-5">
-            <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
-          </div>
-        </div>
-        <div class="mdui-divider footer-divider"></div>
-        <p></p>
-        <div class="mdui-text-center"">自 2019 - 至今 </div>
-        <div style=" position:absolute; right:20px;bottom:5px;">
-          <script
-            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" :"http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-        </div>
-      </div>
-    </footer>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-      style="position:fixed; right:20px;bottom:40px;"><i class="mdui-icon material-icons"><a href="#top"
-          style="text-decoration:none;color:black;">arrow_upward</a></i></button>
+		</div>
+	  </div> -->
+			<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-panel-item-header">
+					本站点将极力收集MIUI发布的更新
+				</div>
+				<div class="mdui-panel-item-body">
+					<p> </p>
+					<p>当前支持开发版的机型有：</p>
+					<p>小米系列：小米9/小米9透明版/小米9 Pro 5G/小米9SE/小米CC9/小米CC9美图定制版/小米CC9 Pro/小米10/小米10S/小米10 Pro/小米10 青春版/小米10
+						至尊纪念版/小米11/小米11 青春版/小米11 Pro/Ultra
+					</p>
+					<p>Redmi 系列：Redmi 10X 5G/Redmi 10X Pro/Redmi Note 8/Redmi Note 8
+						Pro/Redmi Note 9 4G/Redmi Note 9 5G/Redmi Note 9 Pro/Redmi K20/Redmi K20 Pro/Redmi K30 4G版/Redmi
+						K30
+						5G版/Redmi K30i 5G版/Redmi K30 Pro/Redmi K30 至尊纪念版/Redmi K30S 至尊纪念版/Redmi K40/Redmi K40 Pro/Redmi K40 游戏增强版</p>
+					<p>注：2021年4月24日起，Redmi Note7、Redmi Note7 Pro、小米CC9e 将停止开发版内测公测</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i
+				class="mdui-icon material-icons">arrow_upward</i></button></a>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+			<div class="mdui-row mdui-footer-nav">
+				<div class="mdui-col-xs-3">
+					<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+				</div>
+				<div class="mdui-col-xs-4">
+					<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank"
+							style="font-size:15px;">我的主页</a> </h3>
+				</div>
+				<div class="mdui-col-xs-5">
+					<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+				</div>
+			</div>
+			<div class="mdui-divider footer-divider"></div>
+			<p></p>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+				<script
+					type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+			</div>
+			<div class="mdui-text-center">
+				自 2019 - 2021
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

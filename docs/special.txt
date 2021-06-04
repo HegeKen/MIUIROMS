@@ -1,0 +1,20 @@
+小米手机8 线刷包（电信定制机版）: http://bigota.d.miui.com/V11.0.6.0.QEACNXM/dipper_images_V11.0.6.0.QEACNXM_20191228.0000.00_10.0_cn_chinatelecom_1836964af9.tgz
+小米手机9 Pro 5G 线刷包（电信定制机版）: http://bigota.d.miui.com/V11.0.2.0.PFXCNXM/crux_images_V11.0.2.0.PFXCNXM_20191022.0000.00_9.0_cn_chinatelecom_de08b182e6.tgz
+小米CC9 Pro 线刷包（电信定制机版）: http://bigota.d.miui.com/V11.1.1.0.QFDCNXM/tucana_images_V11.1.1.0.QFDCNXM_20200420.0000.00_10.0_cn_chinatelecom_f26865ef3b.tgz
+小米10 线刷包（电信定制机版）: http://bigota.d.miui.com/V11.0.10.0.QJBCNXM/umi_images_V11.0.10.0.QJBCNXM_20200226.0000.00_10.0_cn_chinatelecom_ee6780d139.tgz
+小米10 Pro 线刷包（电信定制机版）: http://bigota.d.miui.com/V11.0.8.0.QJACNXM/cmi_images_V11.0.8.0.QJACNXM_20200226.0000.00_10.0_cn_chinatelecom_45c3d303d3.tgz
+小米MIX2 线刷包（电信定制机版）: http://bigota.d.miui.com/V10.2.2.0.ODECNXM/chiron_images_V10.2.2.0.ODECNXM_20190105.0000.00_8.0_cn_chinatelecom_b4f834fae1.tgz
+小米MIX2S 线刷包（电信定制机版）: http://bigota.d.miui.com/V9.6.5.0.ODGCNFD/polaris_images_V9.6.5.0.ODGCNFD_20180706.0000.00_8.0_cn_chinatelecom_2d2bfd992a.tgz
+Redmi K30 Pro 线刷包（电信定制机版）: http://bigota.d.miui.com/V11.0.12.0.QJKCNXM/lmi_images_V11.0.12.0.QJKCNXM_20200327.0000.00_10.0_cn_chinatelecom_3e171e0fdf.tgz
+
+
+
+小米手机8 线刷包（移动定制机版）: http://bigota.d.miui.com/V11.0.6.0.QEACNXM/dipper_images_V11.0.6.0.QEACNXM_20191228.0000.00_10.0_cn_chinamobile_c6daffd489.tgz
+小米10 Pro 线刷包（移动定制机版）: http://bigota.d.miui.com/V11.0.2.0.QJACNXM/cmi_images_V11.0.2.0.QJACNXM_20200117.0000.00_10.0_cn_chinamobile_3a2753cade.tgz
+小米MIX2 线刷包（移动定制机版）: http://bigota.d.miui.com/V10.2.2.0.ODECNXM/chiron_images_V10.2.2.0.ODECNXM_20190105.0000.00_8.0_cn_chinamobile_a250ad0f92.tgz
+小米MIX2S 线刷包（移动定制机版）: http://bigota.d.miui.com/V9.6.5.0.ODGCNFD/polaris_images_V9.6.5.0.ODGCNFD_20180706.0000.00_8.0_cn_chinamobile_c08ed166dc.tgz
+小米MIX3 线刷包（移动定制机版）: http://bigota.d.miui.com/V10.0.12.0.PEECNFH/perseus_images_V10.0.12.0.PEECNFH_20181120.0000.00_9.0_cn_chinamobile_2c6b8404cb.tgz
+Redmi K30 Pro 线刷包（移动定制机版）: http://bigota.d.miui.com/V11.0.10.0.QJKCNXM/lmi_images_V11.0.10.0.QJKCNXM_20200324.0000.00_10.0_cn_chinamobile_7f79d25470.tgz
+
+
+
