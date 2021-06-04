@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第323周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第323周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>论坛链接：<a href="http://www.miui.com/thread-7454468-1-1.html">【2017年3月3日】MIUI 第323周更新发布 4c/4S/Note顶配发布公测</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4928810">【2017年3月3日】MIUI 第323周更新发布 4c/4S/Note顶配发布公测</a></p>
+                    <br>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI8 7.3.2 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>MIUI V5 / MIUI 6 / MIUI 7开发版可通过“系统更新”APP 检测升级，升级前务必备份重要数据；</li>
+                        <li>开发版/稳定版相互卡刷时，需备份好重要数据，再进入“系统更新”清除数据卡刷完整包，防止出现异常问题；</li>
+                        <li>新机型有防刷机保护，线刷前请先进行Bootloader解锁</li>
+                    </ol>
+                    <br>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>收到反馈：部分机型的设置-我的设备界面信息显示不准确，开发正在修复并尽快测试验证，如有测试无问题后再开启公测推送。</li>
+                        <li>小米手机4S 已修复升级7.2.9后可能会出现卡在九宫格图形解锁界面的问题，因需要测试验证，本周暂停发布公测。因小米Note 顶配、小米手机4c 和小米手机4S 属于一个代码库，为避免受影响，本周暂停公测。预计下周一，我们会发布一个过渡版本，届时请小米手机4c/小米Note 顶配/小米手机4S 发烧友升级该版本，确保后续接收正式修复版本时，不会出现异常现象</li>
+                        <li>部分机型的设置-我的设备界面信息显示不准确的问题已修复，已发布7.3.6公测版本。</li>
+                        <li>小米手机4c/小米手机4S 已发布7.3.4过渡版本以及公测版本7.3.5，修复因升级前开启手机加密/锁屏加密（含分身空间锁屏加密），导致升级后卡在解锁界面无法进入系统的问题；修复开启手机分身后提示“空间管理服务已停止运行”的问题。</li>
+                        <li>已经在7.3.3的小米手机4c/小米手机4S 发烧友，可直接更新至7.3.5，,7.3.3之前的版本，需要先升级到过渡版本7.3.4，再升级至正式公测版本7.3.5。小米Note 顶配无上述问题，但因属于同一个代码库，为避免受影响此前也同步暂停更新，现已恢复开发版7.3.3更新推送。</li>
+                        <li>小米手机4c，小米Note 顶配版，小米手机4S 若从 Android 5.1升级 Android 7.0，Bootloader 会重新上锁，需要重新解锁。已有解锁资格的发烧友可以根据步骤解锁，还未有解锁资格的发烧友，前往申请解锁资格。</li>
+                    </ol>
+                    <hr>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 相册重命名功能</p>
+                    <p>新增 倒班助手功能，方便设置倒班、轮班、大小班或单双周课程等不规则班休提醒</p>
+                    <p>新增 屏幕录制应用，以视频形式记录手机上的操作</p>
+                    <p>优化 便签以图片分享时的默认样式，增加边框并调整间距</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>优化 系统性能，减少因后台进程占用CPU资源导致的卡顿</p>
+                    <p>修复 某些情况下UC、支付宝、淘宝等应用闪退的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>修复 无法更改密码类型的问题</p>
+                    <p>修复 手机重启后，小米手环2无法解锁手机的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【相册】</p>
+                    <p>新增 相册重命名功能</p>
+                    <p>新增 面孔相册自定义分组功能</p>
+                    <p>新增 相册云备份暂停功能</p>
+                    <br>
+                    <p style="font-weight: bolder;">【应用商店】</p>
+                    <p>优化 当连接了由其他手机提供的WLAN热点时，不对应用自动升级</p>
+                    <br>
+                    <p style="font-weight: bolder;">【屏幕录制】</p>
+                    <p>新增 屏幕录制应用，以视频形式记录手机上的操作</p>
+                    <br>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>新增 倒班助手功能，方便设置倒班、轮班、大小班或单双周课程等不规则班休提醒</p>
+                    <br>
+                    <p style="font-weight: bolder;">【便签】</p>
+                    <p>优化 以图片分享时的默认样式，增加边框并调整间距</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米钱包】</p>
+                    <p>新增 MiPay支持邮储银行上线</p>
+                    <p>新增 根据地理位置提示切换默认公交卡功能</p>
+                    <p>新增 解锁后双击home键打开刷卡界面</p>
+                    <p>优化 公交卡和银行卡开卡操作时，通知栏字体遮盖问题</p>
+                    <p>优化 岭南通开卡体验</p>
+                    <p>优化 深圳通迁移交互细节</p>
+                    <p>优化 充值、提现、转账收银台样式与支付收银台样式的统一</p>
+                    <p>修复 公交卡刷卡时指纹误操作，无法刷卡问题</p>
+                    <p>修复 银行卡排序问题</p>
+                    <p>修复 双击home键会出现轻触失效的情况</p>
+                    <p>修复 一些充值提现过程中偶现的页面崩溃问题</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+</body>
+
+</html>

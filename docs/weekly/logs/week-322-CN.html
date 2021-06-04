@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第322周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第322周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>论坛链接：<a href="http://www.miui.com/thread-7381135-1-1.html">【2017年2月24日】MIUI 第322周发布公告及更新日志 发布7.2.24</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4831071">【2017年2月24日】MIUI 第322周发布公告及更新日志 发布7.2.24</a></p>
+                    <br>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI8 7.2.24 已发布！</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>MIUI V5 / MIUI 6 / MIUI 7开发版可通过“系统更新”APP 检测升级，升级前务必备份重要数据；</li>
+                        <li>开发版/稳定版相互卡刷时，需备份好重要数据，再进入“系统更新”清除数据卡刷完整包，防止出现异常问题；</li>
+                        <li>新机型有防刷机保护，线刷前请先进行Bootloader解锁</li>
+                    </ol>
+                    <br>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>5.0/6.0/7.0相关机型已发布开发版7.2.24。</li>
+                        <li>我们收到反馈，个别发烧友升级最新开发版后有performance停止运行的现象，目前收到5.0/6.0/7.0相关机型升级后会有该现象，为避免影响使用，将暂时停止5.0/6.0/7.0相关机型的更新推送，待排查无误后再开启，4.4机型、小米手机4c/小米Note 顶配不受影响，正常发布更新。</li>
+                        <li>小米手机4S、红米手机1 移动3G/联通3G、红米1S 移动3G 因测试稳定性，本周暂停发布。</li>
+                    </ol>
+                    <hr>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【本周推荐】</p>
+                    <p>新增 计算器百分号针对计算打折场景进行优化，总金额减打折百分比即可计算出最终价格</p>
+                    <p>新增 小米音乐全新改版，畅爽体验；客户端耳目一新，精选、榜单、电台、专栏独立推荐，找歌更方便；搜索更新，在线、本地随心搜</p>
+                    <p>新增 我的音乐全新改版，找歌、听歌更方便；本地音乐展示清晰、易管理</p>
+                    <p>新增 小米金融全新改版</p>
+                    <p>新增 倒数日功能，可以添加比如高考、信用卡还款、放假等重要事件的倒数日，并为用户做提醒</p>
+                    <p>新增 纪念日功能，可以添加如恋爱、结婚、毕业等纪念日，并会在周年时提醒用户，防止错过重要纪念日</p>
+                    <p>优化 智能提示SD卡弹出通知，不打扰长期使用SD卡的用户</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>优化 微信录视频音质</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>优化 通话记录中通话录音显示速度更快，查找通话录音更方便</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 锁屏界面上隐藏验证码信息，输入锁屏密码后再显示，确保验证码信息的安全</p>
+                    <br>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>新增 浏览壁纸时，支持左右滑动切换上下张</p>
+                    <p>优化 非WiFi环境时下载主题和字体，增加网络环境的提示</p>
+                    <br>
+                    <p style="font-weight: bolder;">【音乐】</p>
+                    <p>新增 小米音乐全新改版，畅爽体验；客户端耳目一新，精选、榜单、电台、专栏独立推荐，找歌更方便；搜索更新，在线、本地随心搜</p>
+                    <p>新增 我的音乐全新改版，找歌、听歌更方便；本地音乐展示清晰、易管理</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>优化 智能提示SD卡弹出通知，不打扰长期使用SD卡的用户</p>
+                    <br>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>新增 倒数日功能，可以添加比如高考、信用卡还款、放假等重要事件的倒数日，并为用户做提醒</p>
+                    <p>新增 纪念日功能，可以添加如恋爱、结婚、毕业等纪念日，并会在周年时提醒用户，防止错过重要纪念日</p>
+                    <br>
+                    <p style="font-weight: bolder;">【时钟/计算器】</p>
+                    <p>新增 计算器百分号针对计算打折场景进行优化，总金额减打折百分比即可计算出最终价格</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米金融】</p>
+                    <p>新增 小米金融全新改版</p>
+                    <p>新增 全新的设置页</p>
+                    <p>新增 全新的签到页</p>
+                    <p>新增 应用内搜索理财贷款产品</p>
+                    <p>优化 图片缓存策略，避免页面加载时偶现的图片闪烁</p>
+                    <p>优化 新的加载提示样式</p>
+                    <p>优化 签到页的加载动画</p>
+                    <p>优化 全屏加载动画的大小</p>
+                    <p>优化 新的下拉刷新样式</p>
+                    <p>修复 分享到微博，用户取消微博授权后返回原页面，原页面无法滚动的问题</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+</body>
+
+</html>

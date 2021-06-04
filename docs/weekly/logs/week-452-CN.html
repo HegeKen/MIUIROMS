@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第452周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td a").text("卡刷包");
+            }
+        })
+    </script>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第452周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/19864997">MIUI 第452周发布公告及更新日志</a></p>
+                    <p style="font-weight: bolder;">▍发布时间和机型</p>
+                    <p>MIUI12 开发版20.5.7 14:30发布，部分机型延迟发布</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>MIUI 11开发版可进入“设置→我的设备→MIUI版本”在线升级，升级前务必备份重要数据</li>
+                        <li>部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准</li>
+                    </ol>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>Redmi K20 Pro、小米9 Pro 5G、小米CC9 Pro、Redmi K30、Redmi K20、Redmi K30 5G、Redmi Note 8 Pro、Redmi Note7 Pro 因测试系统稳定性，公测发布延迟</li>
+                        <li>Redmi Note7 因解决重启问题，公测时间请关注官方公告</li>
+                        <li>Redmi Note 8、小米CC 9e 适配Android 10升级，停版一段时间</li>
+                        <li>2020年6月20日起，以下机型将停止开发版内测公测：小米6、红米Note5、小米6X、小米Note3、小米MIX2</li>
+                    </ol>
+                    <hr>
+                    <br>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【推荐】</p>
+                    <p>MIUI 12，触碰想象，感受真实</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统动画设计】</p>
+                    <p>新增 全新物理动画引擎，先进技术架构，使系统动画焕然一新</p>
+                    <p>新增 动态窗体技术，实现全新横竖屏切换动画</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统视觉设计】</p>
+                    <p>全新的可视化设计，跨越语言和文化</p>
+                    <p>杂志级排版，内容层级更清晰</p>
+                    <br>
+                    <p style="font-weight: bolder;">【超级壁纸】</p>
+                    <p>新增 全新超级壁纸，突破空间界限，于指尖触碰想象</p>
+                    <br>
+                    <p style="font-weight: bolder;">【隐私保护】</p>
+                    <p>新增 全球首个通过安卓系统增强隐私保护测试的手机系统</p>
+                    <p>新增 虚拟身份ID，随时关闭或重置个人设备ID</p>
+                    <p>新增 支持设置仅在应用使用中授予权限</p>
+                    <p>新增 支持设置权限为本次运行允许</p>
+                    <p>新增 关闭三方应用获取电话权限</p>
+                    <p>新增 空白通行证支持给应用返回空信息，保护隐私</p>
+                    <p>新增 应用使用录音、摄像、定位权限，实时在状态栏提醒</p>
+                    <p>新增 安全分享，分享生活，但不分享隐私</p>
+                    <p>新增 应用行为记录，一切隐私行为都记录在案，并忠实呈现给你</p>
+                    <p>新增 MIUI隐私网站上线，前往privacy.miui.com了解小米如何保护你的隐私</p>
+                    <p>优化 链式启动管控，完全禁止应用后台相互唤醒</p>
+                    <br>
+                    <p style="font-weight: bolder;">【自由窗口】</p>
+                    <p>新增 下拉聊天类应用悬浮通知，即刻变身自由小窗</p>
+                    <p>新增 迷你小窗功能，可将应用悬挂至前台并保持运行状态</p>
+                    <p>新增 全面屏手势下，支持将应用上推至屏幕右上角变身迷你小窗</p>
+                    <p>新增 最近任务页面新增小窗应用栏，任意时刻都可主动开启小窗</p>
+                    <p>优化 长按最近任务应用卡片，支持启用分屏与小窗功能</p>
+                    <br>
+                    <p style="font-weight: bolder;">【AI通话】</p>
+                    <p>新增 小爱同学帮你自动接听电话</p>
+                    <p>新增 自定义接听开场语，对方接通后可自动播放</p>
+                    <p>新增 智能拨打电话，可设置首句问候语</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米健康】</p>
+                    <p>新增 全新小米健康，人人都能轻松记录健康数据</p>
+                    <p>新增 全新睡眠检测算法，手机放枕边就能自动检测深浅睡和鼾声梦话</p>
+                    <p>新增 支持同步小米手表运动记录和小米体脂秤2的测量数据</p>
+                    <p>新增 站立助手，自动检测记录和提醒站立，帮你远离久坐危害</p>
+                    <p>新增 针对你的健康记录进行健康评估</p>
+                    <p>新增 自研低功耗AI运动算法，手机揣兜里即可自动记录步行、跑步、骑行、爬楼等运动</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米互传】</p>
+                    <p>优化 发送方设备图标样式及动效设计</p>
+                    <br>
+                    <p style="font-weight: bolder;">【控制中心】</p>
+                    <p>新增 从屏幕右上角下滑，唤出全新控制中心</p>
+                    <p>新增 自然动态小图标，每次点击都生动无比</p>
+                    <p>新增 桌面左侧下滑显示通知中心，右侧下滑显示控制中心</p>
+                    <p>优化 新旧版本快捷开关顺序的同步逻辑</p>
+                    <br>
+                    <p style="font-weight: bolder;">【无障碍服务】</p>
+                    <p>新增 小米闻声，帮助听障人士与世界沟通</p>
+                    <br>
+                    <p style="font-weight: bolder;">【深色模式】</p>
+                    <p>新增 三方应用也可以完美变深色，实现更极致的深色模式体验</p>
+                    <p>新增 自动对比度功能，暗光下调低对比度，夜间更护眼</p>
+                    <p>新增 深色模式下精调系统字重，减少炫光和模糊</p>
+                    <p>新增 深色模式下智能压暗壁纸，体验更舒适</p>
+                    <br>
+                    <p style="font-weight: bolder;">【万象息屏】</p>
+                    <p>新增 息屏可使用自定义图片，发挥你的个性</p>
+                    <p>新增 历史记录功能，不错过每一份精彩</p>
+                    <br>
+                    <p style="font-weight: bolder;">【智能出行】</p>
+                    <p>新增 出发至机场火车站的路况耗时和路线推荐功能</p>
+                    <p>新增 出行足迹功能，记录你到过的每一个城市和国家</p>
+                    <p>新增 一键创建出行清单功能</p>
+                    <p>新增 火车到站闹钟功能</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米营业厅】</p>
+                    <p>新增 支持当前SIM卡话费、流量数据查询</p>
+                    <p>新增 支持保存常用号码进行快捷话费充值、流量购买</p>
+                    <p>新增 支持电话卡领取及购买</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>新增 输入法剪贴板新增多种提示形式，并支持自定义设置</p>
+                    <p>新增 输入法剪贴板支持淘口令快速访问</p>
+                    <p>优化 同一页面发生横竖屏旋转时的动画效果</p>
+                    <p>优化 热点支持手动关闭wifi6 以兼容老旧设备</p>
+                    <p>优化 更新谷歌安全补丁（2020#03/2020#04），提升系统安全性</p>
+                    <p>优化 自动调光策略</p>
+                    <br>
+                    <p style="font-weight: bolder;">【电话】</p>
+                    <p>新增 全屏通话时不会锁屏</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 根据内容区分推广短信，打扰更少</p>
+                    <br>
+                    <p style="font-weight: bolder;">【状态栏、通知栏】</p>
+                    <p>新增 全新改版，清爽升级</p>
+                    <p>修复 由屏幕解锁进入应用锁界面不显示指纹图标的问题</p>
+                    <p>修复 自定义快捷开关点击无反应、反应慢、首次打开不可点击等问题</p>
+                    <p>修复 使用错误指纹连续解锁五次以上不显示错误提示</p>
+                    <p>修复 收到日历通知后，息屏消失的问题</p>
+                    <p>修复 深色模式下状态栏颜色异常的问题</p>
+                    <p>修复 播放音乐后出现的通知栏卡顿问题</p>
+                    <p>修复 偶现状态栏时间消失的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏】</p>
+                    <p>修复 偶现指纹图标显示不全的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【桌面】</p>
+                    <p>新增 新增萌拍APP</p>
+                    <p>新增 动态图标，以层层精彩，带来次次惊喜</p>
+                    <p>新增 全新图标删除动画，绽放精彩</p>
+                    <p>新增 引力动画设计，返回桌面自然流畅</p>
+                    <br>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>新增 2000套万象息屏，样式随心搭配</p>
+                    <br>
+                    <p style="font-weight: bolder;">【相机】</p>
+                    <p>新增 相机新增萌拍模式</p>
+                    <p>新增 系统相机中的萌拍模式</p>
+                    <p>新增 录像模式VLOG功能 自动运镜 一键拍大片</p>
+                    <p>新增 专业模式光焦分离、专业拍照功能介绍</p>
+                    <p>新增 电影人像模式，一键拍出电影感</p>
+                    <p>新增 拍照文档模式 支持自动裁切、黑白 增强效果处理以及自动消除阴影功能</p>
+                    <p>优化 专业模式参数名称</p>
+                    <p>优化 Menu平铺样式、分辨率/画幅选择操作更便捷</p>
+                    <p>优化 相机快速变焦轴、一键快速变焦</p>
+                    <p>优化 动态照片开关打开后功能常驻</p>
+                    <p>修复 打开HDR以及AI相机后拍照卡顿问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【屏幕时间管理】</p>
+                    <p>新增 设备连续使用提醒</p>
+                    <p>新增 近四周数据看板及详情</p>
+                    <p>优化 全新设计，数据清晰，健康使用手机从了解自己花费的时间开始</p>
+                    <br>
+                    <p style="font-weight: bolder;">【天气】</p>
+                    <p>新增 全新天气背景动画，亲近自然不必只在窗前</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>新增 声音助手-单独调节应用媒体音控制功能</p>
+                    <p>新增 隐私保护，在一处统一了解和管理隐私</p>
+                    <p>新增 极简模式，长辈也能轻松使用小米手机</p>
+                    <p>新增 全面屏手势3.0，左右滑动底部提示线即可快速切换应用</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统更新】</p>
+                    <p>系统升级后点击推送，可以进入小米社区进行新功能讨论和MIUI12互动</p>
+                    <br>
+                    <p style="font-weight: bolder;">【文件管理器】</p>
+                    <p>新增 页面底部快捷操作悬浮球，快速完成格式筛选、排序方式与页面视图切换</p>
+                    <br>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>新增 横屏周视图，更大视野</p>
+                    <p>新增 月视图下拉、创建日程等动画，丝般顺滑</p>
+                    <p>新增 日程动态卡片，为每一个纪念日增加仪式感</p>
+                    <br>
+                    <p style="font-weight: bolder;">【便签】</p>
+                    <p>新增 便签支持合并成文件夹，管理更方便</p>
+                    <p>新增 便签动态背景，赏心悦目</p>
+                    <p>新增 待办完成动画，为每一个成就喝彩</p>
+                    <p>新增 待办支持添加待办清单，列个清单，事事清楚</p>
+                    <br>
+                    <p style="font-weight: bolder;">【游戏加速】</p>
+                    <p>新增 高能时刻，记录每一个荣耀瞬间</p>
+                    <p>新增 游戏变声，多种声音效果随心选</p>
+                    <br>
+                    <p style="font-weight: bolder;">【省电优化】</p>
+                    <p>新增 自动任务支持备份还原</p>
+                    <p>新增 省电模式新增可选优化项“息屏显示”</p>
+                    <p>优化 低电量弹窗样式</p>
+                    <br>
+                    <p style="font-weight: bolder;">【手机管家】</p>
+                    <p>新增 全新界面动画设计，自然规律般舒适</p>
+                    <p>新增 智能家居预警，家里的安全，关心不担心</p>
+                    <p>新增 视频工具箱，你的煲剧好帮手</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米云服务】</p>
+                    <p>新增 云服务支持家庭共享同一空间</p>
+                    <br>
+                    <p style="font-weight: bolder;">【全球上网】</p>
+                    <p>优化 适配Android Q</p>
+                    <p>修复 部分机型实名认证闪退问题</p>
+                    <p>修复 某些偶现bug</p>
+                    <br>
+                    <p style="font-weight: bolder;">【其他】</p>
+                    <p>部分功能暂不适用于本机型，前往www.miui.com全面了解MIUI 12</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+            <div class="mdui-table-fluid">
+                <table class="mdui-table">
+                    <thead>
+                        <tr>
+                            <th>机型</th>
+                            <th>安卓版本</th>
+                            <th>卡刷包</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>小米6(sagit)</td>
+                            <td>9.0 Pie</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MI6_20.5.7_0d7b49288d_9.0.zip" id="r">miui_MI6_20.5.7_0d7b49288d_9.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米6X(wayne)</td>
+                            <td>9.0 Pie</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MI6X_20.5.7_57bd9bdd51_9.0.zip" id="r">miui_MI6X_20.5.7_57bd9bdd51_9.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米8(dipper)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MI8_20.5.7_50340d2975_10.0.zip" id="r">miui_MI8_20.5.7_50340d2975_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米8探索版(ursa)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MI8Explorer_20.5.7_9e95712bf1_10.0.zip" id="r">miui_MI8Explorer_20.5.7_9e95712bf1_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米8屏幕指纹版(equuleus)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MI8UD_20.5.7_0529b9638e_10.0.zip" id="r">miui_MI8UD_20.5.7_0529b9638e_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米8 SE(sirius)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MI8SE_20.5.7_56fb1aa820_10.0.zip" id="r">miui_MI8SE_20.5.7_56fb1aa820_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米8青春版(platina)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MI8Lite_20.5.7_083c3ae766_10.0.zip" id="r">miui_MI8Lite_20.5.7_083c3ae766_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米9/透明版(cepheus)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_CEPHEUS_20.5.7_b315bee3a9_10.0.zip" id="r">miui_CEPHEUS_20.5.7_b315bee3a9_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米9 Pro 5G(crux)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_CRUX_20.5.7_1012636e0a_10.0.zip" id="r">miui_CRUX_20.5.7_1012636e0a_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米9 SE(grus)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_GRUS_20.5.7_311b85a913_10.0.zip" id="r">miui_GRUS_20.5.7_311b85a913_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米CC9(pyxis)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_PYXIS_20.5.7_3324c10e52_10.0.zip" id="r">miui_PYXIS_20.5.7_3324c10e52_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米CC9美图定制版(vela)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_VELA_20.5.7_7536d272a4_10.0.zip" id="r">miui_VELA_20.5.7_7536d272a4_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米CC9 Pro(tucana)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_TUCANA_20.5.7_1f3284af14_10.0.zip" id="r">miui_TUCANA_20.5.7_1f3284af14_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米10(umi)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_UMI_20.5.7_f929506966_10.0.zip" id="r">miui_UMI_20.5.7_f929506966_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米10 Pro(cmi)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_CMI_20.5.7_fc0b456e4b_10.0.zip" id="r">miui_CMI_20.5.7_fc0b456e4b_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米Max 3(nitrogen)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MIMAX3_20.5.7_ca3633b59e_10.0.zip" id="r">miui_MIMAX3_20.5.7_ca3633b59e_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米Note 3(jason)</td>
+                            <td>9.0 Pie</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MINote3_20.5.7_351ff85d04_9.0.zip" id="r">miui_MINote3_20.5.7_351ff85d04_9.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米MIX 2(chiron)</td>
+                            <td>9.0 Pie</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MIMIX2_20.5.7_abf798b3c9_9.0.zip" id="r">miui_MIMIX2_20.5.7_abf798b3c9_9.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米MIX 2S(polaris)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MIMIX2S_20.5.7_d3bcdb1bd0_10.0.zip" id="r">miui_MIMIX2S_20.5.7_d3bcdb1bd0_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>小米MIX 3(perseus)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_MIMIX3_20.5.7_3a5eb39072_10.0.zip" id="r">miui_MIMIX3_20.5.7_3a5eb39072_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>红米Note 5(whyred)</td>
+                            <td>9.0 Pie</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_HMNote5_20.5.7_76871b1c98_9.0.zip" id="r">miui_HMNote5_20.5.7_76871b1c98_9.0.zip</a></td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Redmi Note 7(lavender)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/">TEXT_HERE</a></td>
+                        </tr> -->
+                        <tr>
+                            <td>Redmi Note 7 Pro(violet)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_VIOLET_20.5.7_657b3a5873_10.0.zip" id="r">miui_VIOLET_20.5.7_657b3a5873_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>Redmi Note 8 Pro(begonia)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_BEGONIA_20.5.7_8910768605_10.0.zip" id="r">miui_BEGONIA_20.5.7_8910768605_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>Redmi K20(davinci)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_DAVINCI_20.5.7_faa284ef59_10.0.zip" id="r">miui_DAVINCI_20.5.7_faa284ef59_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>Redmi K20 Pro/尊享版(raphael)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_RAPHAEL_20.5.7_2487e4007c_10.0.zip" id="r">miui_RAPHAEL_20.5.7_2487e4007c_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>Redmi K30 4G版(phoenix)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_PHOENIX_20.5.7_e20d64f7b4_10.0.zip" id="r">miui_PHOENIX_20.5.7_e20d64f7b4_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>Redmi K30 5G版(Picasso)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_PICASSO_20.5.7_f507bed7ab_10.0.zip" id="r">miui_PICASSO_20.5.7_f507bed7ab_10.0.zip</a></td>
+                        </tr>
+                        <tr>
+                            <td>Redmi K30 Pro(lmi)</td>
+                            <td>10.0</td>
+                            <td><a href="https://bigota.d.miui.com/20.5.7/miui_LMI_20.5.7_b9f4ded3cd_10.0.zip" id="r">miui_LMI_20.5.7_b9f4ded3cd_10.0.zip</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+</body>
+
+</html>

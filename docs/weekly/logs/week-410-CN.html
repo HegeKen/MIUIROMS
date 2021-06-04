@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153213840-1');
+    </script>
+    <style>
+        td a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p a {
+            text-decoration: none;
+        }
+        @media screen and (max-width: 500px){
+            .pc{
+                display: none;
+            }
+            .mobile{
+                display: show;
+            }
+        }
+        @media screen and (min-width: 501px){
+            .pc{
+                display: show;
+            }
+            .mobile{
+                display: none;
+            }
+        }
+    </style>
+    <title>第410周开发版日志 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td a").text("卡刷包");
+            }
+        })
+    </script>
+    <div class="mdui-toolbar mdui-color-deep-orange-accent">
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
+                class="mdui-icon material-icons">menu</i></button>
+        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
+                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple  mdui-list-item-active">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+                    <div class="mdui-list-item-content"><a href="../index.html">查看日志</a></div>
+                </li>
+
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+                    <div class="mdui-list-item-content"><a href="../../devices/index.html">机型列表</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+                    <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mdui-container-fluid">
+        <div>
+            <div class="mdui-panel-item mdui-panel-item-open">
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第410周发布公告及更新日志</div>
+                <div class="mdui-panel-item-body">
+                    <p>论坛链接：<a href="http://www.miui.com/thread-22632892-1-1.html">【2019年3月22日】MIUI 第410周发布公告及更新日志</a></p>
+                    <br>
+                    <p style="font-weight: bolder;">▍发布时间</p>
+                    <p>MIUI10 开发版 9.3.21 已发布</p>
+                    <br>
+                    <p style="font-weight: bolder;">▍升级说明</p>
+                    <ol>
+                        <li>已加入防回刷机制的机型无法降级刷回旧版本的开发版或稳定版，否则会导致手机变砖</li>
+                        <li>MIUI 6/7/8/9开发版可进入“设置→我的设备→MIUI版本”在线升级</li>
+                        <li>MIUI 6/7/8/9稳定版用户，建议通过线刷升级至 MIUI 10开发版，教程请见下方“刷机指南”</li>
+                        <li>部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准</li>
+                    </ol>
+                    <br>
+                    <p style="font-weight: bolder;">▍重要说明</p>
+                    <ol>
+                        <li>小米6X/红米6A/红米6/小米 PLAY/小米8 青春版/小米Max 3/小米8透明探索版/红米Note 7/红米6 Pro已发布公测</li>
+                        <li>小米9已发布公测版本9.3.22</li>
+                        <li>红米Note 4X因排查重启的问题，本周暂停公测</li>
+                        <li>红米Note 5正在内测Android P，期间暂停公测发布</li>
+                        <li>MIUI于2019年3月1日发布小米Max、小米Max 高配版最后一个开发版9.2.28，两款机型将不再支持后续的版本升级。同时我们也准备了稳定版的升级方案，米粉可根据需求选择继续停留开发版或预约升级至后续的MIUI 10.3稳定版（预计4月份发布）</li>
+                        <li>Android P机型招募开发版内测米粉</li>
+                    </ol>
+                    <br>
+                    <p style="font-weight: bolder;">▍刷机指南</p>
+                    <ol>
+                        <li>MIUI 6/7/8/9开发版可点击“设置”→“我的设备”→“MIUI版本”在线升级，升级前务必备份重要数据</li>
+                        <li>MIUI 6/7/8/9稳定版用户版本用户建议通过线刷升级，线刷会清除全部数据</li>
+                        <li>开发版/稳定版相互刷机时，需备份好重要数据，再通过线刷方式清除所有数据进行刷机，防止出现异常问题</li>
+                        <li>新机型有防刷机保护，线刷前请先进行 Bootloader 解锁</li>
+                    </ol>
+                    <hr>
+                    <p style="font-weight: bolder;">▍更新日志</p>
+                    <br>
+                    <p style="font-weight: bolder;">【系统】</p>
+                    <p>新增 全面屏设置中的水滴屏形状切换开关</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>优化 状态栏GPS图标显示</p>
+                    <p>优化 人脸解锁的流程</p>
+                    <p>修复 解锁进入横屏界面时有异常闪亮的问题</p>
+                    <p>修复 横屏状态下未及时展示低电量悬浮通知的问题</p>
+                    <p>修复 锁屏通知栏双重显示问题</p>
+                    <p>修复 个别情况下人脸提示未及时消失的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>优化 无障碍设置显示列表的展示（红米6 Pro/小米Note 3/小米8）</p>
+                    <p>优化 设置首页分组的显示（小米MIX 2S）</p>
+                    <br>
+                    <p style="font-weight: bolder;">【最近任务】</p>
+                    <p>新增 使用小爱同学清理最近任务的能力</p>
+                    <p>优化 最近任务卡片删除流畅性</p>
+                    <p>修复 清理最近任务时卡片动画闪烁的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【游戏加速】</p>
+                    <p>修复 迅游网络加速入口点击不灵敏问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米钱包】</p>
+                    <p>优化 小米公交卡移入成功率</p>
+                    <p>优化 Mi Pay线上支付选卡的用户体验</p>
+                    <p>优化 门卡开卡页引导图（小米9）</p>
+                    <p>修复 米家门锁开卡时，未检查用户录入指纹的问题</p>
+                    <p>修复 开通Mi Pay时查看用户协议后，安全键盘无法调出的问题（小米6）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <div style=" position:absolute; right:20px;bottom: 5px;">
+        <script
+            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+</body>
+
+</html>

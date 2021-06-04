@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
+    <link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
@@ -29,6 +30,14 @@
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td a").text("卡刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -60,10 +69,6 @@
                     <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
                 </li>
                 <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">group_add</i>
-                    <div class="mdui-list-item-content"><a href="../../recruit.html">诚招群员</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
                     <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
                     <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
                 </li>
@@ -80,7 +85,7 @@
             <div class="mdui-panel-item mdui-panel-item-open">
                 <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第442周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>原链接：<a href="https://www.xiaomi.cn/post/17997960">MIUI 第442周发布公告及更新日志</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/17997960">MIUI 第442周发布公告及更新日志</a></p>
                     <p style="font-weight: bolder;">▍发布时间</p>
                     <p>MIUI11 开发版9.12.19 11:00发布，部分机型延迟发布</p>
                     <br>
@@ -152,142 +157,142 @@
                         <tr>
                             <td>小米6(sagit)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI6_9.12.19_e43232293e_9.0.zip">miui_MI6_9.12.19_e43232293e_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI6_9.12.19_e43232293e_9.0.zip" id="r">miui_MI6_9.12.19_e43232293e_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米6X(wayne)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI6X_9.12.19_9acf00808b_9.0.zip">miui_MI6X_9.12.19_9acf00808b_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI6X_9.12.19_9acf00808b_9.0.zip" id="r">miui_MI6X_9.12.19_9acf00808b_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米8(dipper)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8_9.12.19_39e5aa4932_10.0.zip">miui_MI8_9.12.19_39e5aa4932_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8_9.12.19_39e5aa4932_10.0.zip" id="r">miui_MI8_9.12.19_39e5aa4932_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米8探索版(ursa)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8Explorer_9.12.19_d1a062d881_10.0.zip">miui_MI8Explorer_9.12.19_d1a062d881_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8Explorer_9.12.19_d1a062d881_10.0.zip" id="r">miui_MI8Explorer_9.12.19_d1a062d881_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米8屏幕指纹版(equuleus)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8UD_9.12.19_399500e797_10.0.zip">miui_MI8UD_9.12.19_399500e797_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8UD_9.12.19_399500e797_10.0.zip" id="r">miui_MI8UD_9.12.19_399500e797_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米8 SE(sirius)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8SE_9.12.19_322e5eadb0_10.0.zip">miui_MI8SE_9.12.19_322e5eadb0_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8SE_9.12.19_322e5eadb0_10.0.zip" id="r">miui_MI8SE_9.12.19_322e5eadb0_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米8青春版(platina)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8Lite_9.12.19_1c1fdc6013_10.0.zip">miui_MI8Lite_9.12.19_1c1fdc6013_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MI8Lite_9.12.19_1c1fdc6013_10.0.zip" id="r">miui_MI8Lite_9.12.19_1c1fdc6013_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米9/透明版(cepheus)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_CEPHEUS_9.12.19_282af25461_10.0.zip">miui_CEPHEUS_9.12.19_282af25461_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_CEPHEUS_9.12.19_282af25461_10.0.zip" id="r">miui_CEPHEUS_9.12.19_282af25461_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米9 Pro 5G(crux)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_CRUX_9.12.19_369cb91c4a_9.0.zip">miui_CRUX_9.12.19_369cb91c4a_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_CRUX_9.12.19_369cb91c4a_9.0.zip" id="r">miui_CRUX_9.12.19_369cb91c4a_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米9 SE(grus)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_GRUS_9.12.19_801b60bb4b_10.0.zip">miui_GRUS_9.12.19_801b60bb4b_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_GRUS_9.12.19_801b60bb4b_10.0.zip" id="r">miui_GRUS_9.12.19_801b60bb4b_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米CC9(pyxis)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_PYXIS_9.12.19_e168685c1f_10.0.zip">miui_PYXIS_9.12.19_e168685c1f_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_PYXIS_9.12.19_e168685c1f_10.0.zip" id="r">miui_PYXIS_9.12.19_e168685c1f_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米CC9美图定制版(vela)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_VELA_9.12.19_09cd038f5d_10.0.zip">miui_VELA_9.12.19_09cd038f5d_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_VELA_9.12.19_09cd038f5d_10.0.zip" id="r">miui_VELA_9.12.19_09cd038f5d_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米CC9e(laurus)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_LAURUS_9.12.19_e2eb497c25_9.0.zip">miui_LAURUS_9.12.19_e2eb497c25_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_LAURUS_9.12.19_e2eb497c25_9.0.zip" id="r">miui_LAURUS_9.12.19_e2eb497c25_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米CC9 Pro(tucana)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_TUCANA_9.12.19_c6bf901cf0_9.0.zip">miui_TUCANA_9.12.19_c6bf901cf0_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_TUCANA_9.12.19_c6bf901cf0_9.0.zip" id="r">miui_TUCANA_9.12.19_c6bf901cf0_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米Max 3(nitrogen)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMAX3_9.12.19_e0464f1e5b_10.0.zip">miui_MIMAX3_9.12.19_e0464f1e5b_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMAX3_9.12.19_e0464f1e5b_10.0.zip" id="r">miui_MIMAX3_9.12.19_e0464f1e5b_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米Play(lotus)</td>
                             <td>8.1 Oreo</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIPLAY_9.12.19_266eb7e9d9_8.1.zip">miui_MIPLAY_9.12.19_266eb7e9d9_8.1.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIPLAY_9.12.19_266eb7e9d9_8.1.zip" id="r">miui_MIPLAY_9.12.19_266eb7e9d9_8.1.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米Note 3(jason)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MINote3_9.12.19_eff159cb45_9.0.zip">miui_MINote3_9.12.19_eff159cb45_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MINote3_9.12.19_eff159cb45_9.0.zip" id="r">miui_MINote3_9.12.19_eff159cb45_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米MIX 2(chiron)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMIX2_9.12.19_c410af960f_9.0.zip">miui_MIMIX2_9.12.19_c410af960f_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMIX2_9.12.19_c410af960f_9.0.zip" id="r">miui_MIMIX2_9.12.19_c410af960f_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米MIX 2S(polaris)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMIX2S_9.12.19_11351a5c1e_10.0.zip">miui_MIMIX2S_9.12.19_11351a5c1e_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMIX2S_9.12.19_11351a5c1e_10.0.zip" id="r">miui_MIMIX2S_9.12.19_11351a5c1e_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>小米MIX 3(perseus)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMIX3_9.12.19_b79be66d0d_10.0.zip">miui_MIMIX3_9.12.19_b79be66d0d_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_MIMIX3_9.12.19_b79be66d0d_10.0.zip" id="r">miui_MIMIX3_9.12.19_b79be66d0d_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>红米6(cereus)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HM6_9.12.19_8ca2fad92d_9.0.zip">miui_HM6_9.12.19_8ca2fad92d_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HM6_9.12.19_8ca2fad92d_9.0.zip" id="r">miui_HM6_9.12.19_8ca2fad92d_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>红米6A(cactus)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HM6A_9.12.19_b36e8fff03_9.0.zip">miui_HM6A_9.12.19_b36e8fff03_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HM6A_9.12.19_b36e8fff03_9.0.zip" id="r">miui_HM6A_9.12.19_b36e8fff03_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>红米6 Pro(sakura)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HM6Pro_9.12.19_c07c6195a8_9.0.zip">miui_HM6Pro_9.12.19_c07c6195a8_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HM6Pro_9.12.19_c07c6195a8_9.0.zip" id="r">miui_HM6Pro_9.12.19_c07c6195a8_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>红米Note 5(whyred)</td>
                             <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HMNote5_9.12.19_d6395618ed_9.0.zip">miui_HMNote5_9.12.19_d6395618ed_9.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_HMNote5_9.12.19_d6395618ed_9.0.zip" id="r">miui_HMNote5_9.12.19_d6395618ed_9.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>Redmi Note 8 Pro(begonia)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_BEGONIA_9.12.19_7770e4f23a_10.0.zip">miui_BEGONIA_9.12.19_7770e4f23a_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_BEGONIA_9.12.19_7770e4f23a_10.0.zip" id="r">miui_BEGONIA_9.12.19_7770e4f23a_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>Redmi K20(davinci)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_DAVINCI_9.12.19_8bb8c104b5_10.0.zip">miui_DAVINCI_9.12.19_8bb8c104b5_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_DAVINCI_9.12.19_8bb8c104b5_10.0.zip" id="r">miui_DAVINCI_9.12.19_8bb8c104b5_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>Redmi K20 Pro/尊享版(raphael)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_RAPHAEL_9.12.19_867160db8f_10.0.zip">miui_RAPHAEL_9.12.19_867160db8f_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_RAPHAEL_9.12.19_867160db8f_10.0.zip" id="r">miui_RAPHAEL_9.12.19_867160db8f_10.0.zip</a></td>
                         </tr>
                         <tr>
                             <td>Redmi K30 4G版(phoenix)</td>
                             <td>10.0</td>
-                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_PHOENIX_9.12.19_71d8b8c82b_10.0.zip">miui_PHOENIX_9.12.19_71d8b8c82b_10.0.zip</a></td>
+                            <td><a href="https://bigota.d.miui.com/9.12.19/miui_PHOENIX_9.12.19_71d8b8c82b_10.0.zip" id="r">miui_PHOENIX_9.12.19_71d8b8c82b_10.0.zip</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -304,11 +309,30 @@
         <script
             type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
     </div>
-    </div>
-    </footer>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top"
-                style="text-decoration: none;color:black;">arrow_upward</a></i></button>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+		  <div class="mdui-row mdui-footer-nav">
+			<div class="mdui-col-xs-3">
+			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+			</div>
+			<div class="mdui-col-xs-4">
+			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+			  </h3>
+			</div>
+			<div class="mdui-col-xs-5">
+			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+			</div>
+		  </div>
+		  <div class="mdui-divider footer-divider"></div>
+		  <p></p>
+		  <div class="mdui-text-center">自 2019 - 至今 </div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+			<script
+			  type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+		  </div>
+		</div>
+	  </footer>
+    <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
 </body>
 
 </html>
