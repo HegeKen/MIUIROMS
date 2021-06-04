@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="mrjs.js"></script>
+    <title>语言检测中 -- Predicting Language</title>
 </head>
+
 <body>
-    <script>seLang()</script>
+    <script>
+        var jsSrc = (navigator.language || navigator.browserLanguage).toLowerCase();
+        if (jsSrc.indexOf('zh') >= 0) {
+            window.location.href = "zh/index.html";
+        }
+        else if (jsSrc.indexOf('en') >= 0) {
+            window.location.href = "en/index.html";
+        }
+        else {
+            window.location.href = "region.html";
+        }
+    </script>
+
 </body>
+
 </html>

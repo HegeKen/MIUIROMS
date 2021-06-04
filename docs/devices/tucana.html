@@ -1,571 +1,779 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-      <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
-      </script>
-    <style>
-            li a {
-                text-decoration: none;
-                color: blue;
-            }
-    
-            td a {
-                text-decoration: none;
-                color: black;
-            }
-        </style>
-    <title>小米CC9 Pro(tucana)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body>
-    <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
-        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-        <div class="mdui-toolbar-spacer"></div>
-        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                    <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                    <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                        <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                    <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="mdui-panel mdui-panel-gapless">
-        <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-            <div class="mdui-panel-item-body">
-                <ol>
-                    <li>机型：小米CC9 Pro 代号：tucana</li>
-                    <li>此次更新项目：V11.0.10.0.PFDEUXM、V11.0.11.0.PFDEUXM</li>
-                    <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
-                    <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
-                    <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为ROM的正式内容 -->
-
-    <div><br></div>
-    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
-        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
-        <a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
-        <a href="#IN_STABLE" class="mdui-ripple mdui-hidden">印度稳定版</a>
-        <a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a>
-        <a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
-    </div>
-    <div id="CN_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国内稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>6</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>5</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>4</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V11.0.5.0.PFDCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDCNXM/miui_TUCANA_V11.0.5.0.PFDCNXM_1b94e796a6_9.0.zip">miui_TUCANA_V11.0.5.0.PFDCNXM_1b94e796a6_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDCNXM/tucana_images_V11.0.5.0.PFDCNXM_20191126.0000.00_9.0_cn_f52d1bdcfd.tgz">tucana_images_V11.0.5.0.PFDCNXM_20191126.0000.00_9.0_cn_f52d1bdcfd.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V11.0.4.0.PFDCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.4.0.PFDCNXM/miui_TUCANA_V11.0.4.0.PFDCNXM_97be964d93_9.0.zip">miui_TUCANA_V11.0.4.0.PFDCNXM_97be964d93_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V11.0.3.0.PFDCNXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDCNXM/miui_TUCANA_V11.0.3.0.PFDCNXM_c3a4beb98d_9.0.zip">miui_TUCANA_V11.0.3.0.PFDCNXM_c3a4beb98d_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDCNXM/tucana_images_V11.0.3.0.PFDCNXM_20191029.0000.00_9.0_cn_d2f38f6cb6.tgz">tucana_images_V11.0.3.0.PFDCNXM_20191029.0000.00_9.0_cn_d2f38f6cb6.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="GB_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国际稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>6</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>5</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>4</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>3</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V11.0.5.0.PFDMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDMIXM/miui_TUCANAGlobal_V11.0.5.0.PFDMIXM_40dcdd8711_9.0.zip">miui_TUCANAGlobal_V11.0.5.0.PFDMIXM_40dcdd8711_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDMIXM/tucana_global_images_V11.0.5.0.PFDMIXM_20191126.0000.00_9.0_global_2fb93115f1.tgz">tucana_global_images_V11.0.5.0.PFDMIXM_20191126.0000.00_9.0_global_2fb93115f1.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V11.0.3.0.PFDMIXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDMIXM/miui_TUCANAGlobal_V11.0.3.0.PFDMIXM_3a07de6538_9.0.zip">miui_TUCANAGlobal_V11.0.3.0.PFDMIXM_3a07de6538_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="IN_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">印度稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-    <div id="EEA_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">EEA稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>6</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>5</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V11.0.11.0.PFDEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.11.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.11.0.PFDEUXM_9fa3ae20ce_9.0.zip">miui_TUCANAEEAGlobal_V11.0.11.0.PFDEUXM_9fa3ae20ce_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.11.0.PFDEUXM/tucana_eea_global_images_V11.0.11.0.PFDEUXM_20191205.0000.00_9.0_eea_9c16cd6a91.tgz">tucana_eea_global_images_V11.0.11.0.PFDEUXM_20191205.0000.00_9.0_eea_9c16cd6a91.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V11.0.10.0.PFDEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.10.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.10.0.PFDEUXM_b7a8e9a640_9.0.zip">miui_TUCANAEEAGlobal_V11.0.10.0.PFDEUXM_b7a8e9a640_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.10.0.PFDEUXM/tucana_eea_global_images_V11.0.10.0.PFDEUXM_20191125.0000.00_9.0_eea_2f14cc5807.tgz">tucana_eea_global_images_V11.0.10.0.PFDEUXM_20191125.0000.00_9.0_eea_2f14cc5807.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V11.0.9.0.PFDEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.9.0.PFDEUXM_63b5cb970d_9.0.zip">miui_TUCANAEEAGlobal_V11.0.9.0.PFDEUXM_63b5cb970d_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDEUXM/tucana_eea_global_images_V11.0.9.0.PFDEUXM_20191118.0000.00_9.0_eea_b11e577702.tgz">tucana_eea_global_images_V11.0.9.0.PFDEUXM_20191118.0000.00_9.0_eea_b11e577702.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V11.0.5.0.PFDEUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.5.0.PFDEUXM_08e1a88222_9.0.zip">miui_TUCANAEEAGlobal_V11.0.5.0.PFDEUXM_08e1a88222_9.0.zip</a></td>
-                            <td>未发布</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-    <div id="RU_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">俄罗斯稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                            <tr class="mdui-hidden">
-                            <td>10</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>9</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>8</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>7</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>6</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>5</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>4</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>3</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr class="mdui-hidden">
-                            <td>2</td>
-                            <td>TEXT_HERE</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                            <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V11.0.3.0.PFDRUXM</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDRUXM/miui_TUCANARUGlobal_V11.0.3.0.PFDRUXM_cd59013df3_9.0.zip">miui_TUCANARUGlobal_V11.0.3.0.PFDRUXM_cd59013df3_9.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDRUXM/tucana_ru_global_images_V11.0.3.0.PFDRUXM_20191118.0000.00_9.0_global_f2a1136e2b.tgz">tucana_ru_global_images_V11.0.3.0.PFDRUXM_20191118.0000.00_9.0_global_f2a1136e2b.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- 由此向下区域为底部Footer的内容 -->
-
-    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-        <script
-            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-    </div>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-               >arrow_upward</a></i>
-    </button>
-</body>
-
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<style>
+			li a {
+				text-decoration: none;
+				color: blue;
+			}
+	
+			td a {
+				text-decoration: none;
+				color: black;
+			}
+		</style> 
+		<title>小米CC9 Pro(tucana)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：小米CC9 Pro/小米Note 10</li> 
+						<li>机型代号：tucana</li> 
+						<li>此次更新：欧洲EEA版 V12.1.4.0.RFDEUXM</li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
+						<li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/ia6vqunmaIfu">天翼云盘</a>，提取码：fdv1，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<li>第三方Recovery:<a href="https://orangefox.download/zh-CN/device/tucana">橙狐Rec</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#EEA_STABLE" class="mdui-ripple">EEA稳定版</a> 
+			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
+			<a href="#ID_STABLE" class="mdui-ripple">印尼稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI11</td> 
+							<td>20.3.26</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.26/miui_TUCANA_20.3.26_e2623b7ebb_10.0.zip" id="r">miui_TUCANA_20.3.26_e2623b7ebb_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI11</td> 
+							<td>20.3.19</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.19/miui_TUCANA_20.3.19_e0461fd9d9_10.0.zip" id="r">miui_TUCANA_20.3.19_e0461fd9d9_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI11</td> 
+							<td>20.3.12</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.12/miui_TUCANA_20.3.12_a0a2cbfb89_10.0.zip" id="r">miui_TUCANA_20.3.12_a0a2cbfb89_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI11</td> 
+							<td>20.3.5</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.5/miui_TUCANA_20.3.5_e1206d6621_10.0.zip" id="r">miui_TUCANA_20.3.5_e1206d6621_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI11</td> 
+							<td>20.2.27</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/20.2.27/miui_TUCANA_20.2.27_a366102598_10.0.zip" id="r">miui_TUCANA_20.2.27_a366102598_10.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI11</td> 
+							<td>20.1.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.9/miui_TUCANA_20.1.9_3240a7f35f_9.0.zip" id="r">miui_TUCANA_20.1.9_3240a7f35f_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI11</td> 
+							<td>20.1.2</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.2/miui_TUCANA_20.1.2_4215e10bd9_9.0.zip" id="r">miui_TUCANA_20.1.2_4215e10bd9_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI11</td> 
+							<td>9.12.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.26/miui_TUCANA_9.12.26_ad368678c9_9.0.zip" id="r">miui_TUCANA_9.12.26_ad368678c9_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI11</td> 
+							<td>9.12.19</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.19/miui_TUCANA_9.12.19_c6bf901cf0_9.0.zip" id="r">miui_TUCANA_9.12.19_c6bf901cf0_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI11</td> 
+							<td>9.12.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.12/miui_TUCANA_9.12.12_28f0aeefca_9.0.zip" id="r">miui_TUCANA_9.12.12_28f0aeefca_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI11</td> 
+							<td>9.12.5</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.5/miui_TUCANA_9.12.5_2b70682ce5_9.0.zip" id="r">miui_TUCANA_9.12.5_2b70682ce5_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI11</td> 
+							<td>9.11.28</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.28/miui_TUCANA_9.11.28_457de5a45f_9.0.zip" id="r">miui_TUCANA_9.11.28_457de5a45f_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>12</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.1.5.0.RFDCNXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.5.0.RFDCNXM/miui_TUCANA_V12.1.5.0.RFDCNXM_20dc1d4f76_11.0.zip" id="r">miui_TUCANA_V12.1.5.0.RFDCNXM_20dc1d4f76_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.5.0.RFDCNXM/tucana_images_V12.1.5.0.RFDCNXM_20210208.0000.00_11.0_cn_572a9f8b5d.tgz" id="f">tucana_images_V12.1.5.0.RFDCNXM_20210208.0000.00_11.0_cn_572a9f8b5d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.1.3.0.RFDCNXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.3.0.RFDCNXM/miui_TUCANA_V12.1.3.0.RFDCNXM_2a2aeb8727_11.0.zip" id="r">miui_TUCANA_V12.1.3.0.RFDCNXM_2a2aeb8727_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.3.0.RFDCNXM/tucana_images_V12.1.3.0.RFDCNXM_20201230.0000.00_11.0_cn_8f9eb6d202.tgz" id="f">tucana_images_V12.1.3.0.RFDCNXM_20201230.0000.00_11.0_cn_8f9eb6d202.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V12.0.2.0.QFDCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDCNXM/miui_TUCANA_V12.0.2.0.QFDCNXM_88649617b1_10.0.zip" id="r">miui_TUCANA_V12.0.2.0.QFDCNXM_88649617b1_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDCNXM/tucana_images_V12.0.2.0.QFDCNXM_20201018.0000.00_10.0_cn_42e47a2e57.tgz" id="f">tucana_images_V12.0.2.0.QFDCNXM_20201018.0000.00_10.0_cn_42e47a2e57.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V12.0.1.0.QFDCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFDCNXM/miui_TUCANA_V12.0.1.0.QFDCNXM_c1b21a5bf5_10.0.zip" id="r">miui_TUCANA_V12.0.1.0.QFDCNXM_c1b21a5bf5_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFDCNXM/tucana_images_V12.0.1.0.QFDCNXM_20200715.0000.00_10.0_cn_7045ac4594.tgz" id="f">tucana_images_V12.0.1.0.QFDCNXM_20200715.0000.00_10.0_cn_7045ac4594.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.1.2.0.QFDCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.1.2.0.QFDCNXM/miui_TUCANA_V11.1.2.0.QFDCNXM_08747eac1e_10.0.zip" id="r">miui_TUCANA_V11.1.2.0.QFDCNXM_08747eac1e_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.1.2.0.QFDCNXM/tucana_images_V11.1.2.0.QFDCNXM_20200504.0000.00_10.0_cn_9d8b49d8f2.tgz" id="f">tucana_images_V11.1.2.0.QFDCNXM_20200504.0000.00_10.0_cn_9d8b49d8f2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.1.1.0.QFDCNXM</td> 
+							<td>10.0</td> 
+							<td><a href="http://bigota.d.miui.com/V11.1.1.0.QFDCNXM/miui_TUCANA_V11.1.1.0.QFDCNXM_ac86b5aab3_10.0.zip" id="r">miui_TUCANA_V11.1.1.0.QFDCNXM_ac86b5aab3_10.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.1.1.0.QFDCNXM/tucana_images_V11.1.1.0.QFDCNXM_20200420.0000.00_10.0_cn_a8288ad4a1.tgz" id="f">tucana_images_V11.1.1.0.QFDCNXM_20200420.0000.00_10.0_cn_a8288ad4a1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.9.0.PFDCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDCNXM/miui_TUCANA_V11.0.9.0.PFDCNXM_c6fcdf2960_9.0.zip" id="r">miui_TUCANA_V11.0.9.0.PFDCNXM_c6fcdf2960_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDCNXM/tucana_images_V11.0.9.0.PFDCNXM_20200414.0000.00_9.0_cn_08821065b8.tgz" id="f">tucana_images_V11.0.9.0.PFDCNXM_20200414.0000.00_9.0_cn_08821065b8.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V11.0.7.0.PFDCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.7.0.PFDCNXM/miui_TUCANA_V11.0.7.0.PFDCNXM_eb85103afb_9.0.zip" id="r">miui_TUCANA_V11.0.7.0.PFDCNXM_eb85103afb_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.7.0.PFDCNXM/tucana_images_V11.0.7.0.PFDCNXM_20191228.0000.00_9.0_cn_2063e9b1ec.tgz" id="f">tucana_images_V11.0.7.0.PFDCNXM_20191228.0000.00_9.0_cn_2063e9b1ec.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V11.0.5.0.PFDCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDCNXM/miui_TUCANA_V11.0.5.0.PFDCNXM_1b94e796a6_9.0.zip" id="r">miui_TUCANA_V11.0.5.0.PFDCNXM_1b94e796a6_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDCNXM/tucana_images_V11.0.5.0.PFDCNXM_20191126.0000.00_9.0_cn_f52d1bdcfd.tgz" id="f">tucana_images_V11.0.5.0.PFDCNXM_20191126.0000.00_9.0_cn_f52d1bdcfd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V11.0.4.0.PFDCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.4.0.PFDCNXM/miui_TUCANA_V11.0.4.0.PFDCNXM_97be964d93_9.0.zip" id="r">miui_TUCANA_V11.0.4.0.PFDCNXM_97be964d93_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V11.0.3.0.PFDCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDCNXM/miui_TUCANA_V11.0.3.0.PFDCNXM_c3a4beb98d_9.0.zip" id="r">miui_TUCANA_V11.0.3.0.PFDCNXM_c3a4beb98d_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDCNXM/tucana_images_V11.0.3.0.PFDCNXM_20191029.0000.00_9.0_cn_d2f38f6cb6.tgz" id="f">tucana_images_V11.0.3.0.PFDCNXM_20191029.0000.00_9.0_cn_d2f38f6cb6.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="GB_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国际稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>15</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>14</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.1.2.0.RFDMIXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.2.0.RFDMIXM/miui_TUCANAGlobal_V12.1.2.0.RFDMIXM_23bef84d2d_11.0.zip" id="r">miui_TUCANAGlobal_V12.1.2.0.RFDMIXM_23bef84d2d_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.2.0.RFDMIXM/tucana_global_images_V12.1.2.0.RFDMIXM_20210226.0000.00_11.0_global_fdc8e44fec.tgz" id="f">tucana_global_images_V12.1.2.0.RFDMIXM_20210226.0000.00_11.0_global_fdc8e44fec.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.4.0.QFDMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFDMIXM/miui_TUCANAGlobal_V12.0.4.0.QFDMIXM_be49be8fa0_10.0.zip" id="r">miui_TUCANAGlobal_V12.0.4.0.QFDMIXM_be49be8fa0_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.4.0.QFDMIXM/tucana_global_images_V12.0.4.0.QFDMIXM_20210117.0000.00_10.0_global_5d1b5df49b.tgz" id="f">tucana_global_images_V12.0.4.0.QFDMIXM_20210117.0000.00_10.0_global_5d1b5df49b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.3.0.QFDMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDMIXM/miui_TUCANAGlobal_V12.0.3.0.QFDMIXM_919439d60e_10.0.zip" id="r">miui_TUCANAGlobal_V12.0.3.0.QFDMIXM_919439d60e_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDMIXM/tucana_global_images_V12.0.3.0.QFDMIXM_20201026.0000.00_10.0_global_8f1fa67095.tgz" id="f">tucana_global_images_V12.0.3.0.QFDMIXM_20201026.0000.00_10.0_global_8f1fa67095.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V12.0.2.0.QFDMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDMIXM/miui_TUCANAGlobal_V12.0.2.0.QFDMIXM_039bbe8a99_10.0.zip" id="r">miui_TUCANAGlobal_V12.0.2.0.QFDMIXM_039bbe8a99_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDMIXM/tucana_global_images_V12.0.2.0.QFDMIXM_20200818.0000.00_10.0_global_085215716a.tgz" id="f">tucana_global_images_V12.0.2.0.QFDMIXM_20200818.0000.00_10.0_global_085215716a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V12.0.1.0.QFDMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFDMIXM/miui_TUCANAGlobal_V12.0.1.0.QFDMIXM_1dec6077cd_10.0.zip" id="r">miui_TUCANAGlobal_V12.0.1.0.QFDMIXM_1dec6077cd_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFDMIXM/tucana_global_images_V12.0.1.0.QFDMIXM_20200802.0000.00_10.0_global_aea95d7655.tgz" id="f">tucana_global_images_V12.0.1.0.QFDMIXM_20200802.0000.00_10.0_global_aea95d7655.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.1.3.0.QFDMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.3.0.QFDMIXM/miui_TUCANAGlobal_V11.1.3.0.QFDMIXM_92fc5246c5_10.0.zip" id="r">miui_TUCANAGlobal_V11.1.3.0.QFDMIXM_92fc5246c5_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.3.0.QFDMIXM/tucana_global_images_V11.1.3.0.QFDMIXM_20200628.0000.00_10.0_global_e100ca7d5f.tgz" id="f">tucana_global_images_V11.1.3.0.QFDMIXM_20200628.0000.00_10.0_global_e100ca7d5f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.1.2.0.QFDMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.2.0.QFDMIXM/miui_TUCANAGlobal_V11.1.2.0.QFDMIXM_3e27048d54_10.0.zip" id="r">miui_TUCANAGlobal_V11.1.2.0.QFDMIXM_3e27048d54_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.2.0.QFDMIXM/tucana_global_images_V11.1.2.0.QFDMIXM_20200510.0000.00_10.0_global_77ea55f412.tgz" id="f">tucana_global_images_V11.1.2.0.QFDMIXM_20200510.0000.00_10.0_global_77ea55f412.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.1.1.0.QFDMIXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.1.0.QFDMIXM/miui_TUCANAGlobal_V11.1.1.0.QFDMIXM_895807152b_10.0.zip" id="r">miui_TUCANAGlobal_V11.1.1.0.QFDMIXM_895807152b_10.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.9.0.PFDMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDMIXM/miui_TUCANAGlobal_V11.0.9.0.PFDMIXM_f4aa3e3edc_9.0.zip" id="r">miui_TUCANAGlobal_V11.0.9.0.PFDMIXM_f4aa3e3edc_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDMIXM/tucana_global_images_V11.0.9.0.PFDMIXM_20200409.0000.00_9.0_global_1074364dc8.tgz" id="f">tucana_global_images_V11.0.9.0.PFDMIXM_20200409.0000.00_9.0_global_1074364dc8.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V11.0.8.0.PFDMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.8.0.PFDMIXM/miui_TUCANAGlobal_V11.0.8.0.PFDMIXM_85ed799ef6_9.0.zip" id="r">miui_TUCANAGlobal_V11.0.8.0.PFDMIXM_85ed799ef6_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.8.0.PFDMIXM/tucana_global_images_V11.0.8.0.PFDMIXM_20200304.0000.00_9.0_global_375f9b48aa.tgz" id="f">tucana_global_images_V11.0.8.0.PFDMIXM_20200304.0000.00_9.0_global_375f9b48aa.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V11.0.7.0.PFDMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.7.0.PFDMIXM/miui_TUCANAGlobal_V11.0.7.0.PFDMIXM_21ef976ac1_9.0.zip" id="r">miui_TUCANAGlobal_V11.0.7.0.PFDMIXM_21ef976ac1_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.7.0.PFDMIXM/tucana_global_images_V11.0.7.0.PFDMIXM_20200108.0000.00_9.0_global_3d4450882b.tgz" id="f">tucana_global_images_V11.0.7.0.PFDMIXM_20200108.0000.00_9.0_global_3d4450882b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V11.0.5.0.PFDMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDMIXM/miui_TUCANAGlobal_V11.0.5.0.PFDMIXM_40dcdd8711_9.0.zip" id="r">miui_TUCANAGlobal_V11.0.5.0.PFDMIXM_40dcdd8711_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDMIXM/tucana_global_images_V11.0.5.0.PFDMIXM_20191126.0000.00_9.0_global_2fb93115f1.tgz" id="f">tucana_global_images_V11.0.5.0.PFDMIXM_20191126.0000.00_9.0_global_2fb93115f1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V11.0.3.0.PFDMIXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDMIXM/miui_TUCANAGlobal_V11.0.3.0.PFDMIXM_3a07de6538_9.0.zip" id="r">miui_TUCANAGlobal_V11.0.3.0.PFDMIXM_3a07de6538_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="EEA_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">EEA稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>18</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>17</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>16</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>V12.1.4.0.RFDEUXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.4.0.RFDEUXM/miui_TUCANAEEAGlobal_V12.1.4.0.RFDEUXM_e8e5eb8af6_11.0.zip" id="r">miui_TUCANAEEAGlobal_V12.1.4.0.RFDEUXM_e8e5eb8af6_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.4.0.RFDEUXM/tucana_eea_global_images_V12.1.4.0.RFDEUXM_20210428.0000.00_11.0_eea_5820ca91ee.tgz" id="f">tucana_eea_global_images_V12.1.4.0.RFDEUXM_20210428.0000.00_11.0_eea_5820ca91ee.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V12.1.3.0.RFDEUXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.3.0.RFDEUXM/miui_TUCANAEEAGlobal_V12.1.3.0.RFDEUXM_d4648d0d96_11.0.zip" id="r">miui_TUCANAEEAGlobal_V12.1.3.0.RFDEUXM_d4648d0d96_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.3.0.RFDEUXM/tucana_eea_global_images_V12.1.3.0.RFDEUXM_20210217.0000.00_11.0_eea_d27dc0ad7f.tgz" id="f">tucana_eea_global_images_V12.1.3.0.RFDEUXM_20210217.0000.00_11.0_eea_d27dc0ad7f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V12.0.3.0.QFDEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDEUXM/miui_TUCANAEEAGlobal_V12.0.3.0.QFDEUXM_030d9f737b_10.0.zip" id="r">miui_TUCANAEEAGlobal_V12.0.3.0.QFDEUXM_030d9f737b_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDEUXM/tucana_eea_global_images_V12.0.3.0.QFDEUXM_20201113.0000.00_10.0_eea_89272d54c7.tgz" id="f">tucana_eea_global_images_V12.0.3.0.QFDEUXM_20201113.0000.00_10.0_eea_89272d54c7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V12.0.2.0.QFDEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDEUXM/miui_TUCANAEEAGlobal_V12.0.2.0.QFDEUXM_a960539f29_10.0.zip" id="r">miui_TUCANAEEAGlobal_V12.0.2.0.QFDEUXM_a960539f29_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDEUXM/tucana_eea_global_images_V12.0.2.0.QFDEUXM_20201010.0000.00_10.0_eea_1054ffd422.tgz" id="f">tucana_eea_global_images_V12.0.2.0.QFDEUXM_20201010.0000.00_10.0_eea_1054ffd422.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V12.0.1.0.QFDEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFDEUXM/miui_TUCANAEEAGlobal_V12.0.1.0.QFDEUXM_5985ff5318_10.0.zip" id="r">miui_TUCANAEEAGlobal_V12.0.1.0.QFDEUXM_5985ff5318_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.1.0.QFDEUXM/tucana_eea_global_images_V12.0.1.0.QFDEUXM_20200819.0000.00_10.0_eea_4ceffbea99.tgz" id="f">tucana_eea_global_images_V12.0.1.0.QFDEUXM_20200819.0000.00_10.0_eea_4ceffbea99.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V11.1.2.0.QFDEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.2.0.QFDEUXM/miui_TUCANAEEAGlobal_V11.1.2.0.QFDEUXM_782cb61971_10.0.zip" id="r">miui_TUCANAEEAGlobal_V11.1.2.0.QFDEUXM_782cb61971_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.2.0.QFDEUXM/tucana_eea_global_images_V11.1.2.0.QFDEUXM_20200628.0000.00_10.0_eea_1e2df42457.tgz" id="f">tucana_eea_global_images_V11.1.2.0.QFDEUXM_20200628.0000.00_10.0_eea_1e2df42457.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V11.1.1.0.QFDEUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.1.0.QFDEUXM/miui_TUCANAEEAGlobal_V11.1.1.0.QFDEUXM_ff57fb41a1_10.0.zip" id="r">miui_TUCANAEEAGlobal_V11.1.1.0.QFDEUXM_ff57fb41a1_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.1.0.QFDEUXM/tucana_eea_global_images_V11.1.1.0.QFDEUXM_20200511.0000.00_10.0_eea_6a689db5b8.tgz" id="f">tucana_eea_global_images_V11.1.1.0.QFDEUXM_20200511.0000.00_10.0_eea_6a689db5b8.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V11.0.17.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/V11.0.17.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.17.0.PFDEUXM_01ce4d3a55_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.17.0.PFDEUXM_01ce4d3a55_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V11.0.16.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.16.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.16.0.PFDEUXM_9ac25e9dc7_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.16.0.PFDEUXM_9ac25e9dc7_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.16.0.PFDEUXM/tucana_eea_global_images_V11.0.16.0.PFDEUXM_20200304.0000.00_9.0_eea_9a65f20bc2.tgz" id="f">tucana_eea_global_images_V11.0.16.0.PFDEUXM_20200304.0000.00_9.0_eea_9a65f20bc2.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.0.13.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.13.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.13.0.PFDEUXM_61518caa02_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.13.0.PFDEUXM_61518caa02_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.13.0.PFDEUXM/tucana_eea_global_images_V11.0.13.0.PFDEUXM_20200114.0000.00_9.0_eea_290ece7a7b.tgz" id="f">tucana_eea_global_images_V11.0.13.0.PFDEUXM_20200114.0000.00_9.0_eea_290ece7a7b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.0.12.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.12.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.12.0.PFDEUXM_666261a8b0_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.12.0.PFDEUXM_666261a8b0_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V11.0.11.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.11.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.11.0.PFDEUXM_9fa3ae20ce_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.11.0.PFDEUXM_9fa3ae20ce_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.11.0.PFDEUXM/tucana_eea_global_images_V11.0.11.0.PFDEUXM_20191205.0000.00_9.0_eea_9c16cd6a91.tgz" id="f">tucana_eea_global_images_V11.0.11.0.PFDEUXM_20191205.0000.00_9.0_eea_9c16cd6a91.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V11.0.10.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.10.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.10.0.PFDEUXM_b7a8e9a640_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.10.0.PFDEUXM_b7a8e9a640_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.10.0.PFDEUXM/tucana_eea_global_images_V11.0.10.0.PFDEUXM_20191125.0000.00_9.0_eea_2f14cc5807.tgz" id="f">tucana_eea_global_images_V11.0.10.0.PFDEUXM_20191125.0000.00_9.0_eea_2f14cc5807.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V11.0.9.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.9.0.PFDEUXM_63b5cb970d_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.9.0.PFDEUXM_63b5cb970d_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.9.0.PFDEUXM/tucana_eea_global_images_V11.0.9.0.PFDEUXM_20191118.0000.00_9.0_eea_b11e577702.tgz" id="f">tucana_eea_global_images_V11.0.9.0.PFDEUXM_20191118.0000.00_9.0_eea_b11e577702.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V11.0.5.0.PFDEUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PFDEUXM/miui_TUCANAEEAGlobal_V11.0.5.0.PFDEUXM_08e1a88222_9.0.zip" id="r">miui_TUCANAEEAGlobal_V11.0.5.0.PFDEUXM_08e1a88222_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="RU_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">俄罗斯稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>10</td> 
+							<td>TEXT_HERE</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V12.1.1.0.RFDRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.1.0.RFDRUXM/miui_TUCANARUGlobal_V12.1.1.0.RFDRUXM_a09cabac91_11.0.zip" id="r">miui_TUCANARUGlobal_V12.1.1.0.RFDRUXM_a09cabac91_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.1.0.RFDRUXM/tucana_ru_global_images_V12.1.1.0.RFDRUXM_20210317.0000.00_11.0_global_64cc4a413d.tgz" id="f">tucana_ru_global_images_V12.1.1.0.RFDRUXM_20210317.0000.00_11.0_global_64cc4a413d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V12.0.3.0.QFDRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDRUXM/miui_TUCANARUGlobal_V12.0.3.0.QFDRUXM_803e39eb32_10.0.zip" id="r">miui_TUCANARUGlobal_V12.0.3.0.QFDRUXM_803e39eb32_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDRUXM/tucana_ru_global_images_V12.0.3.0.QFDRUXM_20201112.0000.00_10.0_global_355fb7d12e.tgz" id="f">tucana_ru_global_images_V12.0.3.0.QFDRUXM_20201112.0000.00_10.0_global_355fb7d12e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V12.0.2.0.QFDRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDRUXM/miui_TUCANARUGlobal_V12.0.2.0.QFDRUXM_f5500b36c2_10.0.zip" id="r">miui_TUCANARUGlobal_V12.0.2.0.QFDRUXM_f5500b36c2_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDRUXM/tucana_ru_global_images_V12.0.2.0.QFDRUXM_20200904.0000.00_10.0_global_e4bc1b3dbc.tgz" id="f">tucana_ru_global_images_V12.0.2.0.QFDRUXM_20200904.0000.00_10.0_global_e4bc1b3dbc.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V11.1.2.0.QFDRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.2.0.QFDRUXM/miui_TUCANARUGlobal_V11.1.2.0.QFDRUXM_c853e418ee_10.0.zip" id="r">miui_TUCANARUGlobal_V11.1.2.0.QFDRUXM_c853e418ee_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.2.0.QFDRUXM/tucana_ru_global_images_V11.1.2.0.QFDRUXM_20200628.0000.00_10.0_global_8916ac3b68.tgz" id="f">tucana_ru_global_images_V11.1.2.0.QFDRUXM_20200628.0000.00_10.0_global_8916ac3b68.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V11.1.1.0.QFDRUXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.1.0.QFDRUXM/miui_TUCANARUGlobal_V11.1.1.0.QFDRUXM_28759082b1_10.0.zip" id="r">miui_TUCANARUGlobal_V11.1.1.0.QFDRUXM_28759082b1_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.1.0.QFDRUXM/tucana_ru_global_images_V11.1.1.0.QFDRUXM_20200511.0000.00_10.0_global_75f1672564.tgz" id="f">tucana_ru_global_images_V11.1.1.0.QFDRUXM_20200511.0000.00_10.0_global_75f1672564.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V11.0.8.0.PFDRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.8.0.PFDRUXM/miui_TUCANARUGlobal_V11.0.8.0.PFDRUXM_f56a283f6e_9.0.zip" id="r">miui_TUCANARUGlobal_V11.0.8.0.PFDRUXM_f56a283f6e_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.8.0.PFDRUXM/tucana_ru_global_images_V11.0.8.0.PFDRUXM_20200424.0000.00_9.0_global_e21043d36c.tgz" id="f">tucana_ru_global_images_V11.0.8.0.PFDRUXM_20200424.0000.00_9.0_global_e21043d36c.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V11.0.7.0.PFDRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.7.0.PFDRUXM/miui_TUCANARUGlobal_V11.0.7.0.PFDRUXM_444a131f5c_9.0.zip" id="r">miui_TUCANARUGlobal_V11.0.7.0.PFDRUXM_444a131f5c_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.7.0.PFDRUXM/tucana_ru_global_images_V11.0.7.0.PFDRUXM_20200309.0000.00_9.0_global_7f93563324.tgz" id="f">tucana_ru_global_images_V11.0.7.0.PFDRUXM_20200309.0000.00_9.0_global_7f93563324.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V11.0.6.0.PFDRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFDRUXM/miui_TUCANARUGlobal_V11.0.6.0.PFDRUXM_f5b4a667c1_9.0.zip" id="r">miui_TUCANARUGlobal_V11.0.6.0.PFDRUXM_f5b4a667c1_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PFDRUXM/tucana_ru_global_images_V11.0.6.0.PFDRUXM_20200111.0000.00_9.0_global_84f34be7cd.tgz" id="f">tucana_ru_global_images_V11.0.6.0.PFDRUXM_20200111.0000.00_9.0_global_84f34be7cd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V11.0.3.0.PFDRUXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDRUXM/miui_TUCANARUGlobal_V11.0.3.0.PFDRUXM_cd59013df3_9.0.zip" id="r">miui_TUCANARUGlobal_V11.0.3.0.PFDRUXM_cd59013df3_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PFDRUXM/tucana_ru_global_images_V11.0.3.0.PFDRUXM_20191118.0000.00_9.0_global_f2a1136e2b.tgz" id="f">tucana_ru_global_images_V11.0.3.0.PFDRUXM_20191118.0000.00_9.0_global_f2a1136e2b.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div>
+		<div class="mdui-container-fluid" id="ID_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">印尼稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>10</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>9</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>8</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>7</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>6</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr class="mdui-hidden"> 
+							<td>5</td> 
+							<td>TEXT_HERE</td> 
+							<td>11.0</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V12.1.1.0.RFDIDXM</td> 
+							<td>11.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.1.0.RFDIDXM/miui_TUCANAIDGlobal_V12.1.1.0.RFDIDXM_b5f0c7f6b8_11.0.zip" id="r">miui_TUCANAIDGlobal_V12.1.1.0.RFDIDXM_b5f0c7f6b8_11.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.1.1.0.RFDIDXM/tucana_id_global_images_V12.1.1.0.RFDIDXM_20210316.0000.00_11.0_global_112c76910e.tgz" id="f">tucana_id_global_images_V12.1.1.0.RFDIDXM_20210316.0000.00_11.0_global_112c76910e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V12.0.3.0.QFDIDXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDIDXM/miui_TUCANAIDGlobal_V12.0.3.0.QFDIDXM_303bc163c1_10.0.zip" id="r">miui_TUCANAIDGlobal_V12.0.3.0.QFDIDXM_303bc163c1_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.3.0.QFDIDXM/tucana_id_global_images_V12.0.3.0.QFDIDXM_20201113.0000.00_10.0_global_a746a77756.tgz" id="f">tucana_id_global_images_V12.0.3.0.QFDIDXM_20201113.0000.00_10.0_global_a746a77756.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V12.0.2.0.QFDIDXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDIDXM/miui_TUCANAIDGlobal_V12.0.2.0.QFDIDXM_3f5daf06f7_10.0.zip" id="r">miui_TUCANAIDGlobal_V12.0.2.0.QFDIDXM_3f5daf06f7_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V12.0.2.0.QFDIDXM/tucana_id_global_images_V12.0.2.0.QFDIDXM_20200905.0000.00_10.0_global_28f241bbe9.tgz" id="f">tucana_id_global_images_V12.0.2.0.QFDIDXM_20200905.0000.00_10.0_global_28f241bbe9.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V11.1.1.0.QFDIDXM</td> 
+							<td>10.0</td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.1.0.QFDIDXM/miui_TUCANAIDGlobal_V11.1.1.0.QFDIDXM_36928656c1_10.0.zip" id="r">miui_TUCANAIDGlobal_V11.1.1.0.QFDIDXM_36928656c1_10.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/V11.1.1.0.QFDIDXM/tucana_id_global_images_V11.1.1.0.QFDIDXM_20200511.0000.00_10.0_global_63b22e5688.tgz" id="f">tucana_id_global_images_V11.1.1.0.QFDIDXM_20200511.0000.00_10.0_global_63b22e5688.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>

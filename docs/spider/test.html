@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh"> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script type="text/javascript" src="https://roms.miuier.com/data/devices.json"></script>
+1
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<title>获取稳定版最新版本 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<div> 
+			<script type="text/javascript">
+			$.ajax({
+				//请求方式
+				type:"GET",
+				//文件位置
+				url:"https://roms.miuier.com/data/devices.json",
+				//返回数据格式为json,也可以是其他格式如
+				dataType:"JSONP",
+				//请求成功后要执行的函数，拼接html
+				success:function(data){
+                console.log($.parseJSON(data));
+            }
+			});
+			</script>
+		</div>  
+		
+	<div class="div1"></div>
+	</body>
+</html>

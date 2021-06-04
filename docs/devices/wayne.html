@@ -1,833 +1,947 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+				var _hmt = _hmt || [];
+				(function () {
+						var hm = document.createElement("script");
+						hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+						var s = document.getElementsByTagName("script")[0];
+						s.parentNode.insertBefore(hm, s);
+				})();
+		</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'UA-153213840-1');
+		  </script> 
+		<style>
+				li a {
+						text-decoration: none;
+						color: blue;
+				}
 
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-        <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-        <script>
-                var _hmt = _hmt || [];
-                (function () {
-                        var hm = document.createElement("script");
-                        hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-                        var s = document.getElementsByTagName("script")[0];
-                        s.parentNode.insertBefore(hm, s);
-                })();
-        </script>
-          <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'UA-153213840-1');
-          </script>
-        <style>
-                li a {
-                        text-decoration: none;
-                        color: blue;
-                }
-
-                td a {
-                        text-decoration: none;
-                        color: black;
-                }
-        </style>
-        <title>小米6X(wayne)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body>
-        <div class="mdui-toolbar mdui-color-deep-orange-accent">
-                <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i class="mdui-icon material-icons">menu</i></button>
-                <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-                <div class="mdui-toolbar-spacer"></div>
-                <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-                        <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                                        <div class="mdui-list-item-content"><a href="../index.html">回到首页</a></div>
-                                </li>
-
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                                        <div class="mdui-list-item-content"><a href="../tutorial.html">刷机教程</a></div>
-                                </li>
-
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                                        <div class="mdui-list-item-content"><a href="../weekly/index.html">查看日志</a></div>
-                                </li>
-
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                                        <div class="mdui-list-item-content"><a href="index.html">机型列表</a></div>
-                                </li>
-                                <li class="mdui-list-item mdui-ripple">
-                                                <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                                                <div class="mdui-list-item-content"><a href="../tools.html">刷机工具</a></div>
-                                        </li>
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                                        <div class="mdui-list-item-content"><a href="../thanks.html">衷心感谢</a></div>
-                                </li>
-                                <li class="mdui-list-item mdui-ripple">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                                        <div class="mdui-list-item-content"><a href="../aboutme.html">站点日志</a></div>
-                                </li>
-                        </ul>
-                </div>
-        </div>
-
-        <div class="mdui-panel mdui-panel-gapless">
-                <div class="mdui-panel-item mdui-panel-item-open">
-                        <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-                        <div class="mdui-panel-item-body">
-                                <ol>
-                                        <li>机型：小米6X 代号：wayne</li>
-                                        <li>此次更新项目：V11.0.3.0.PDCCNXM</li>
-                                        <li>为保持系统稳定性并确保设备的安全性，近期小米手机6X
-                                                引入了“防回刷”机制。MIUI国内8.8.6及以上的开发版和稳定版V9.6.4.0及以上版本，将无法降级刷回旧版本的开发版或稳定版。</li>
-                                        <li>开发版：</li>
-                                        <ol>
-                                                <li>8.8.6及以上版本，无法刷回8.8.6及之前的版本（卡刷/线刷均不支持）</li>
-                                                <li>8.8.6及之后的版本之间可互刷，但无法刷回8.8.6或之前版本（卡刷/线刷均不支持）</li>
-                                                <li>8.8.6之前的版本之间仍可互刷</li>
-                                        </ol>
-                                        <li>稳定版：</li>
-                                        <ol>
-                                                <li>V9.6.4.0及之后的版本，无法刷回V9.6.4.0之前的版本（卡刷/线刷均不支持）</li>
-                                                <li>V9.6.4.0及之后的版本之间可互刷，但无法刷回V9.6.4.0及之前的版本（卡刷/线刷均不支持）</li>
-                                                <li>V9.6.4.0之前的版本之间仍可互刷</li>
-                                        </ol>
-                                        <li>特别感谢：<a href="http://www.miui.com/space-uid-850489218.html">@格调丨先生</a></li>
-                                        <li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater</a>网站</li>
-                                        <li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li>
-                                        <li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
-                                <br>
-                        </div>
-                </div>
-        </div>
-
-        <!-- 由此向下区域为ROM的正式内容 -->
-
-        <div><br></div>
-        <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
-                <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
-                <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
-        </div>
-        <div id="CN_BETA" class="mdui-p-a-2">
-                <div class="mdui-container-fluid">
-                        <div class="mdui-table-fluid">
-                                <table class="mdui-table">
-                                        <thead>
-                                                <tr>
-                                                        <th class="mdui-text-color-red">国内开发版</th>
-                                                        <th>MIUI版本</th>
-                                                        <th>版本</th>
-                                                        <th>Android版本</th>
-                                                        <th>卡刷包</th>
-                                                        <th>线刷包</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr class="mdui-hidden">
-                                                        <td>65</td>
-                                                        <td>MIUI11</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>64</td>
-                                                        <td>MIUI11</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>63</td>
-                                                        <td>MIUI11</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>62</td>
-                                                        <td>MIUI11</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>61</td>
-                                                        <td>MIUI11</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>60</td>
-                                                        <td>MIUI11</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr class="mdui-hidden">
-                                                        <td>59</td>
-                                                        <td>MIUI11</td>
-                                                        <td>9.9.26</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI6X_9.9.26_a4fb97f331_9.0.zip">miui_MI6X_9.9.26_a4fb97f331_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>58</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.9.3</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.9.3/miui_MI6X_9.9.3_3ad06bc283_9.0.zip">miui_MI6X_9.9.3_3ad06bc283_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.9.3/wayne_images_9.9.3_20190904.0000.00_9.0_cn_5d14ce926d.tgz">wayne_images_9.9.3_20190904.0000.00_9.0_cn_5d14ce926d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>57</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.22</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.22/miui_MI6X_9.8.22_b324974e97_9.0.zip">miui_MI6X_9.8.22_b324974e97_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.22/wayne_images_9.8.22_20190822.0000.00_9.0_cn_069dc34351.tgz">wayne_images_9.8.22_20190822.0000.00_9.0_cn_069dc34351.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>56</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.15</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.15/miui_MI6X_9.8.15_a0c4e59f17_9.0.zip">miui_MI6X_9.8.15_a0c4e59f17_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.15/wayne_images_9.8.15_20190815.0000.00_9.0_cn_d9bea635d0.tgz">wayne_images_9.8.15_20190815.0000.00_9.0_cn_d9bea635d0.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>55</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.9</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.9/miui_MI6X_9.8.9_2dbf8c27e9_9.0.zip">miui_MI6X_9.8.9_2dbf8c27e9_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.9/wayne_images_9.8.9_20190809.0000.00_9.0_cn_2da59df06f.tgz">wayne_images_9.8.9_20190809.0000.00_9.0_cn_2da59df06f.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>54</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.8.1</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.1/miui_MI6X_9.8.1_accdf57425_9.0.zip">miui_MI6X_9.8.1_accdf57425_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.8.1/wayne_images_9.8.1_20190801.0000.00_9.0_cn_442c732e27.tgz">wayne_images_9.8.1_20190801.0000.00_9.0_cn_442c732e27.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>53</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.25</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.25/miui_MI6X_9.7.25_5613958ca3_9.0.zip">miui_MI6X_9.7.25_5613958ca3_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.25/wayne_images_9.7.25_20190725.0000.00_9.0_cn_dd81778963.tgz">wayne_images_9.7.25_20190725.0000.00_9.0_cn_dd81778963.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>52</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.18</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.18/miui_MI6X_9.7.18_ef1bd3ec53_9.0.zip">miui_MI6X_9.7.18_ef1bd3ec53_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.18/wayne_images_9.7.18_20190718.0000.00_9.0_cn_4513d1468b.tgz">wayne_images_9.7.18_20190718.0000.00_9.0_cn_4513d1468b.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>51</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.11</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.11/miui_MI6X_9.7.11_0c6981c782_9.0.zip">miui_MI6X_9.7.11_0c6981c782_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.11/wayne_images_9.7.11_20190711.0000.00_9.0_cn_da38d8a9da.tgz">wayne_images_9.7.11_20190711.0000.00_9.0_cn_da38d8a9da.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>50</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.7.4</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.4/miui_MI6X_9.7.4_e55d838e21_9.0.zip">miui_MI6X_9.7.4_e55d838e21_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.7.4/wayne_images_9.7.4_20190704.0000.00_9.0_cn_a612048c82.tgz">wayne_images_9.7.4_20190704.0000.00_9.0_cn_a612048c82.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>49</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.27</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.27/miui_MI6X_9.6.27_9504af941a_9.0.zip">miui_MI6X_9.6.27_9504af941a_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.27/wayne_images_9.6.27_20190627.0000.00_9.0_cn_0e90ad95bb.tgz">wayne_images_9.6.27_20190627.0000.00_9.0_cn_0e90ad95bb.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>48</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.20</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.20/miui_MI6X_9.6.20_ffb84fb5d0_9.0.zip">miui_MI6X_9.6.20_ffb84fb5d0_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.20/wayne_images_9.6.20_20190620.0000.00_9.0_cn_31bfd5f321.tgz">wayne_images_9.6.20_20190620.0000.00_9.0_cn_31bfd5f321.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>47</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.6.13</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.6.13/miui_MI6X_9.6.13_73ec5e23fb_9.0.zip">miui_MI6X_9.6.13_73ec5e23fb_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>46</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.30</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.30/miui_MI6X_9.5.30_a9474dd754_9.0.zip">miui_MI6X_9.5.30_a9474dd754_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.30/wayne_images_9.5.30_20190530.0000.00_9.0_cn_e7e60d87c5.tgz">wayne_images_9.5.30_20190530.0000.00_9.0_cn_e7e60d87c5.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>45</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.23</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.23/miui_MI6X_9.5.23_b644af8ee8_9.0.zip">miui_MI6X_9.5.23_b644af8ee8_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.23/wayne_images_9.5.23_20190523.0000.00_9.0_cn_cccf755bed.tgz">wayne_images_9.5.23_20190523.0000.00_9.0_cn_cccf755bed.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>44</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.16</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.16/miui_MI6X_9.5.16_bc1bd20a14_9.0.zip">miui_MI6X_9.5.16_bc1bd20a14_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.16/wayne_images_9.5.16_20190516.0000.00_9.0_cn_5f332b758b.tgz">wayne_images_9.5.16_20190516.0000.00_9.0_cn_5f332b758b.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>43</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.5.9</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.9/miui_MI6X_9.5.9_51aebd8e82_9.0.zip">miui_MI6X_9.5.9_51aebd8e82_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.5.9/wayne_images_9.5.9_20190509.0000.00_9.0_cn_b444fc74eb.tgz">wayne_images_9.5.9_20190509.0000.00_9.0_cn_b444fc74eb.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>42</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.25</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.25/miui_MI6X_9.4.25_1df3ff99e7_9.0.zip">miui_MI6X_9.4.25_1df3ff99e7_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.25/wayne_images_9.4.25_20190425.0000.00_9.0_cn_604f649a72.tgz">wayne_images_9.4.25_20190425.0000.00_9.0_cn_604f649a72.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>41</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.18</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.18/miui_MI6X_9.4.18_e42faee5ef_9.0.zip">miui_MI6X_9.4.18_e42faee5ef_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>40</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.4.12</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.4.12/miui_MI6X_9.4.12_668632ed21_9.0.zip">miui_MI6X_9.4.12_668632ed21_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>39</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.28</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.28/miui_MI6X_9.3.28_53d92de9c7_9.0.zip">miui_MI6X_9.3.28_53d92de9c7_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.28/wayne_images_9.3.28_20190328.0000.00_9.0_cn_0a70de3730.tgz">wayne_images_9.3.28_20190328.0000.00_9.0_cn_0a70de3730.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>38</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.21</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.21/miui_MI6X_9.3.21_bcd1c55505_9.0.zip">miui_MI6X_9.3.21_bcd1c55505_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>37</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.14</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.14/miui_MI6X_9.3.14_82bf80da09_9.0.zip">miui_MI6X_9.3.14_82bf80da09_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>36</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.3.1</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.3.1/miui_MI6X_9.3.1_2a0add855a_8.1.zip">miui_MI6X_9.3.1_2a0add855a_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>35</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.2.21</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.21/miui_MI6X_9.2.21_29525e0d6e_8.1.zip">miui_MI6X_9.2.21_29525e0d6e_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>34</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.2.15</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.15/miui_MI6X_9.2.15_50a60edaa3_8.1.zip">miui_MI6X_9.2.15_50a60edaa3_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.2.15/wayne_images_9.2.15_20190215.0000.00_8.1_cn_70d4f9f24a.tgz">wayne_images_9.2.15_20190215.0000.00_8.1_cn_70d4f9f24a.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>33</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.24</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.24/miui_MI6X_9.1.24_1764fa1728_8.1.zip">miui_MI6X_9.1.24_1764fa1728_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.24/wayne_images_9.1.24_20190124.0000.00_8.1_cn_0d2f65733a.tgz">wayne_images_9.1.24_20190124.0000.00_8.1_cn_0d2f65733a.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>32</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.17</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.17/miui_MI6X_9.1.17_e2ead9774b_8.1.zip">miui_MI6X_9.1.17_e2ead9774b_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>31</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.10</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.10/miui_MI6X_9.1.10_75949e8e91_8.1.zip">miui_MI6X_9.1.10_75949e8e91_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.10/wayne_images_9.1.10_20190110.0000.00_8.1_cn_d39877f7ae.tgz">wayne_images_9.1.10_20190110.0000.00_8.1_cn_d39877f7ae.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>30</td>
-                                                        <td>MIUI10</td>
-                                                        <td>9.1.1</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/9.1.1/miui_MI6X_9.1.1_10fa21bcc7_8.1.zip">miui_MI6X_9.1.1_10fa21bcc7_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>29</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.27</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.27/miui_MI6X_8.12.27_c410104063_8.1.zip">miui_MI6X_8.12.27_c410104063_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>28</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.20</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.20/miui_MI6X_8.12.20_2e0cc55431_8.1.zip">miui_MI6X_8.12.20_2e0cc55431_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>27</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.13</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.13/miui_MI6X_8.12.13_51ba02ea09_8.1.zip">miui_MI6X_8.12.13_51ba02ea09_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.13/wayne_images_8.12.13_20181213.0000.00_8.1_cn_8dcc83f27e.tgz">wayne_images_8.12.13_20181213.0000.00_8.1_cn_8dcc83f27e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>26</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.12.6</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.6/miui_MI6X_8.12.6_9ff552aa7c_8.1.zip">miui_MI6X_8.12.6_9ff552aa7c_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.12.6/wayne_images_8.12.6_20181206.0000.00_8.1_cn_6da9c8d33b.tgz">wayne_images_8.12.6_20181206.0000.00_8.1_cn_6da9c8d33b.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>25</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.29</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.29/miui_MI6X_8.11.29_a6fe9472a3_8.1.zip">miui_MI6X_8.11.29_a6fe9472a3_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>24</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.23</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.23/miui_MI6X_8.11.23_ff6e54e466_8.1.zip">miui_MI6X_8.11.23_ff6e54e466_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>23</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.15</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.15/miui_MI6X_8.11.15_6499c2c68d_8.1.zip">miui_MI6X_8.11.15_6499c2c68d_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>22</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.8</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.8/miui_MI6X_8.11.8_749c4846de_8.1.zip">miui_MI6X_8.11.8_749c4846de_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.8/wayne_images_8.11.8_20181108.0000.00_8.1_cn_23b23af939.tgz">wayne_images_8.11.8_20181108.0000.00_8.1_cn_23b23af939.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>21</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.11.1</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.1/miui_MI6X_8.11.1_787cd1d0a5_8.1.zip">miui_MI6X_8.11.1_787cd1d0a5_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.11.1/wayne_images_8.11.1_20181101.0000.00_8.1_cn_73006893a7.tgz">wayne_images_8.11.1_20181101.0000.00_8.1_cn_73006893a7.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>20</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.10.25</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.25/miui_MI6X_8.10.25_f635872eb3_8.1.zip">miui_MI6X_8.10.25_f635872eb3_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.25/wayne_images_8.10.25_20181025.0000.00_8.1_cn_05899b1cca.tgz">wayne_images_8.10.25_20181025.0000.00_8.1_cn_05899b1cca.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>19</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.10.18</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.18/miui_MI6X_8.10.18_065c3cc6fe_8.1.zip">miui_MI6X_8.10.18_065c3cc6fe_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.18/wayne_images_8.10.18_20181018.0000.00_8.1_cn_f73d1df1b1.tgz">wayne_images_8.10.18_20181018.0000.00_8.1_cn_f73d1df1b1.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>18</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.10.11</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.11/miui_MI6X_8.10.11_722287d081_8.1.zip">miui_MI6X_8.10.11_722287d081_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.10.11/wayne_images_8.10.11_20181011.0000.00_8.1_cn_2f10d375e0.tgz">wayne_images_8.10.11_20181011.0000.00_8.1_cn_2f10d375e0.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>17</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.9.20</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.9.20/miui_MI6X_8.9.20_1cea63ad81_8.1.zip">miui_MI6X_8.9.20_1cea63ad81_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.9.20/wayne_images_8.9.20_20180920.0000.00_8.1_cn_39294f2e17.tgz">wayne_images_8.9.20_20180920.0000.00_8.1_cn_39294f2e17.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>16</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.9.13</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.9.13/miui_MI6X_8.9.13_1b4167c2b9_8.1.zip">miui_MI6X_8.9.13_1b4167c2b9_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.9.13/wayne_images_8.9.13_20180913.0000.00_8.1_cn_a9581ca083.tgz">wayne_images_8.9.13_20180913.0000.00_8.1_cn_a9581ca083.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>15</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.9.6</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.9.6/miui_MI6X_8.9.6_95aac3c69f_8.1.zip">miui_MI6X_8.9.6_95aac3c69f_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.9.6/wayne_images_8.9.6_20180906.0000.00_8.1_cn_938dead45b.tgz">wayne_images_8.9.6_20180906.0000.00_8.1_cn_938dead45b.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>14</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.8.23</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.8.23/miui_MI6X_8.8.23_2ca3c0f5ff_8.1.zip">miui_MI6X_8.8.23_2ca3c0f5ff_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.8.23/wayne_images_8.8.23_20180823.0000.00_8.1_cn_8f053946e3.tgz">wayne_images_8.8.23_20180823.0000.00_8.1_cn_8f053946e3.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>13</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.8.16</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.8.16/miui_MI6X_8.8.16_fbd6007cb2_8.1.zip">miui_MI6X_8.8.16_fbd6007cb2_8.1.zip"</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.8.16/wayne_images_8.8.16_20180816.0000.00_8.1_cn_ad6052772f.tgz">wayne_images_8.8.16_20180816.0000.00_8.1_cn_ad6052772f.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>12</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.8.9</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.8.9/miui_MI6X_8.8.9_7198ac14e5_8.1.zip">miui_MI6X_8.8.9_7198ac14e5_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.8.9/wayne_images_8.8.9_20180809.0000.00_8.1_cn_e9aca46296.tgz">wayne_images_8.8.9_20180809.0000.00_8.1_cn_e9aca46296.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>11</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.8.3</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.8.3/miui_MI6X_8.8.3_47d3bc88c6_8.1.zip">miui_MI6X_8.8.3_47d3bc88c6_8.1.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>10</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.7.26</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.7.26/miui_MI6X_8.7.26_9cb8cdebf0_8.1.zip">miui_MI6X_8.7.26_9cb8cdebf0_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.7.26/wayne_images_8.7.26_20180726.0000.00_8.1_cn_446259fe36.tgz">wayne_images_8.7.26_20180726.0000.00_8.1_cn_446259fe36.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>9</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.7.12</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.7.12/miui_MI6X_8.7.12_179af1707a_8.1.zip">miui_MI6X_8.7.12_179af1707a_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.7.12/wayne_images_8.7.12_20180712.0000.00_8.1_cn_6393526cbf.tgz">wayne_images_8.7.12_20180712.0000.00_8.1_cn_6393526cbf.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>8</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.7.5</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.7.5/miui_MI6X_8.7.5_088c3ccc8d_8.1.zip">miui_MI6X_8.7.5_088c3ccc8d_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.7.5/wayne_images_8.7.5_20180705.0000.00_8.1_cn_d16ca8807f.tgz">wayne_images_8.7.5_20180705.0000.00_8.1_cn_d16ca8807f.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>7</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.6.28</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.6.28/miui_MI6X_8.6.28_3f7bdd1417_8.1.zip">miui_MI6X_8.6.28_3f7bdd1417_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.6.28/wayne_images_8.6.28_20180628.0000.00_8.1_cn_15ab946349.tgz">wayne_images_8.6.28_20180628.0000.00_8.1_cn_15ab946349.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>6</td>
-                                                        <td>MIUI10</td>
-                                                        <td>8.6.22</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.6.22/miui_MI6X_8.6.22_0987d98aca_8.1.zip">miui_MI6X_8.6.22_0987d98aca_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.6.22/wayne_images_8.6.22_20180622.0000.00_8.1_cn_b72f08b4e3.tgz">wayne_images_8.6.22_20180622.0000.00_8.1_cn_b72f08b4e3.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>5</td>
-                                                        <td>MIUI9</td>
-                                                        <td>8.5.25</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.25/miui_MI6X_8.5.25_925d7d0775_8.1.zip">miui_MI6X_8.5.25_925d7d0775_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.25/wayne_images_8.5.25_20180524.0000.00_8.1_cn_1bf88cc204.tgz">wayne_images_8.5.25_20180524.0000.00_8.1_cn_1bf88cc204.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>4</td>
-                                                        <td>MIUI9</td>
-                                                        <td>8.5.17</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.17/miui_MI6X_8.5.17_1322c06b37_8.1.zip">miui_MI6X_8.5.17_1322c06b37_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.17/wayne_images_8.5.17_20180517.0000.00_8.1_cn_2af37d031e.tgz">wayne_images_8.5.17_20180517.0000.00_8.1_cn_2af37d031e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>3</td>
-                                                        <td>MIUI9</td>
-                                                        <td>8.5.10</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.10/miui_MI6X_8.5.10_cf9ee4a9d3_8.1.zip">miui_MI6X_8.5.10_cf9ee4a9d3_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.10/wayne_images_8.5.10_20180510.0000.00_8.1_cn_b14dcd168e.tgz">wayne_images_8.5.10_20180510.0000.00_8.1_cn_b14dcd168e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>2</td>
-                                                        <td>MIUI9</td>
-                                                        <td>8.5.3</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.3/miui_MI6X_8.5.3_66d57ace22_8.1.zip">miui_MI6X_8.5.3_66d57ace22_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.5.3/wayne_images_8.5.3_20180503.0000.00_8.1_cn_17885b7236.tgz">wayne_images_8.5.3_20180503.0000.00_8.1_cn_17885b7236.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>MIUI9</td>
-                                                        <td>8.4.26</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/8.4.26/miui_MI6X_8.4.26_538e3b5272_8.1.zip">miui_MI6X_8.4.26_538e3b5272_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/8.4.26/wayne_images_8.4.26_20180426.0000.00_8.1_cn_2cb2dffae6.tgz">wayne_images_8.4.26_20180426.0000.00_8.1_cn_2cb2dffae6.tgz</a></td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-                </div>
-        </div>
-        <div id="CN_STABLE" class="mdui-p-a-2">
-                <div class="mdui-container-fluid">
-                        <div class="mdui-table-fluid">
-                                <table class="mdui-table">
-                                        <thead>
-                                                <tr>
-                                                        <th class="mdui-text-color-red">国内稳定版</th>
-                                                        <th>MIUI版本</th>
-                                                        <th>Android版本</th>
-                                                        <th>卡刷包</th>
-                                                        <th>线刷包</th>
-                                                </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr class="mdui-hidden">
-                                                        <td>20</td>
-                                                        <td>TEXT_HERE</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                        <td><a href="TEXT_HERE">TEXT_HERE</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>19</td>
-                                                        <td>V11.0.3.0.PDCCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PDCCNXM/miui_MI6X_V11.0.3.0.PDCCNXM_9ec1316afd_9.0.zip">miui_MI6X_V11.0.3.0.PDCCNXM_9ec1316afd_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.3.0.PDCCNXM/wayne_images_V11.0.3.0.PDCCNXM_20191127.0000.00_9.0_cn_1f235cc624.tgz">wayne_images_V11.0.3.0.PDCCNXM_20191127.0000.00_9.0_cn_1f235cc624.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>18</td>
-                                                        <td>V11.0.2.0.PDCCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V11.0.2.0.PDCCNXM/miui_MI6X_V11.0.2.0.PDCCNXM_bfe718d74d_9.0.zip">miui_MI6X_V11.0.2.0.PDCCNXM_bfe718d74d_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>17</td>
-                                                        <td>V10.3.6.0.PDCCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PDCCNXM/miui_MI6X_V10.3.6.0.PDCCNXM_3a07c1cad3_9.0.zip">miui_MI6X_V10.3.6.0.PDCCNXM_3a07c1cad3_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.6.0.PDCCNXM/wayne_images_V10.3.6.0.PDCCNXM_20190816.0000.00_9.0_cn_ecdcbc575d.tgz">wayne_images_V10.3.6.0.PDCCNXM_20190816.0000.00_9.0_cn_ecdcbc575d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>16</td>
-                                                        <td>V10.3.5.0.PDCCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PDCCNXM/miui_MI6X_V10.3.5.0.PDCCNXM_de4d42b7ff_9.0.zip">miui_MI6X_V10.3.5.0.PDCCNXM_de4d42b7ff_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.5.0.PDCCNXM/wayne_images_V10.3.5.0.PDCCNXM_20190711.0000.00_9.0_cn_a5560d2fa7.tgz">wayne_images_V10.3.5.0.PDCCNXM_20190711.0000.00_9.0_cn_a5560d2fa7.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>15</td>
-                                                        <td>V10.3.4.0.PDCCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.4.0.PDCCNXM/miui_MI6X_V10.3.4.0.PDCCNXM_1d2eedf2d4_9.0.zip">miui_MI6X_V10.3.4.0.PDCCNXM_1d2eedf2d4_9.0.zip</a></td>
-                                                        <td>未发布</td>
-                                                </tr>
-                                                <tr>
-                                                        <td>14</td>
-                                                        <td>V10.3.3.0.PDCCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.3.0.PDCCNXM/miui_MI6X_V10.3.3.0.PDCCNXM_5d7b6bcf29_9.0.zip">miui_MI6X_V10.3.3.0.PDCCNXM_5d7b6bcf29_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.3.0.PDCCNXM/wayne_images_V10.3.3.0.PDCCNXM_20190514.0000.00_9.0_cn_1d4725ac4d.tgz">wayne_images_V10.3.3.0.PDCCNXM_20190514.0000.00_9.0_cn_1d4725ac4d.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>13</td>
-                                                        <td>V10.3.2.0.PDCCNXM</td>
-                                                        <td>9.0 Pie</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.2.0.PDCCNXM/miui_MI6X_V10.3.2.0.PDCCNXM_ab22fa2506_9.0.zip">miui_MI6X_V10.3.2.0.PDCCNXM_ab22fa2506_9.0.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.3.2.0.PDCCNXM/wayne_images_V10.3.2.0.PDCCNXM_20190426.0000.00_9.0_cn_48179c548e.tgz">wayne_images_V10.3.2.0.PDCCNXM_20190426.0000.00_9.0_cn_48179c548e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>12</td>
-                                                        <td>V10.2.5.0.ODCCNXM</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.5.0.ODCCNXM/miui_MI6X_V10.2.5.0.ODCCNXM_c8eb7d3dd2_8.1.zip">miui_MI6X_V10.2.5.0.ODCCNXM_c8eb7d3dd2_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.5.0.ODCCNXM/wayne_images_V10.2.5.0.ODCCNXM_20190408.0000.00_8.1_cn_9f48c7aaa7.tgz">wayne_images_V10.2.5.0.ODCCNXM_20190408.0000.00_8.1_cn_9f48c7aaa7.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>11</td>
-                                                        <td>V10.2.3.0.ODCCNXM</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.3.0.ODCCNXM/miui_MI6X_V10.2.3.0.ODCCNXM_d8b91e1488_8.1.zip">miui_MI6X_V10.2.3.0.ODCCNXM_d8b91e1488_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.3.0.ODCCNXM/wayne_images_V10.2.3.0.ODCCNXM_20190227.0000.00_8.1_cn_c202bd2b6e.tgz">wayne_images_V10.2.3.0.ODCCNXM_20190227.0000.00_8.1_cn_c202bd2b6e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>10</td>
-                                                        <td>V10.2.2.0.ODCCNXM</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.2.0.ODCCNXM/miui_MI6X_V10.2.2.0.ODCCNXM_3e0311c050_8.1.zip">miui_MI6X_V10.2.2.0.ODCCNXM_3e0311c050_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.2.0.ODCCNXM/wayne_images_V10.2.2.0.ODCCNXM_20190118.0000.00_8.1_cn_cfc2e97a61.tgz">wayne_images_V10.2.2.0.ODCCNXM_20190118.0000.00_8.1_cn_cfc2e97a61.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>9</td>
-                                                        <td>V10.2.1.0.ODCCNXM</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.1.0.ODCCNXM/miui_MI6X_V10.2.1.0.ODCCNXM_f5bf383a66_8.1.zip">miui_MI6X_V10.2.1.0.ODCCNXM_f5bf383a66_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.2.1.0.ODCCNXM/wayne_images_V10.2.1.0.ODCCNXM_20181221.0000.00_8.1_cn_7c7ab2bbea.tgz">wayne_images_V10.2.1.0.ODCCNXM_20181221.0000.00_8.1_cn_7c7ab2bbea.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>8</td>
-                                                        <td>V10.0.3.0.ODCCNFH</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.3.0.ODCCNFH/miui_MI6X_V10.0.3.0.ODCCNFH_97352bf18c_8.1.zip">miui_MI6X_V10.0.3.0.ODCCNFH_97352bf18c_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.3.0.ODCCNFH/wayne_images_V10.0.3.0.ODCCNFH_20181123.0000.00_8.1_cn_cb60e1bbd0.tgz">wayne_images_V10.0.3.0.ODCCNFH_20181123.0000.00_8.1_cn_cb60e1bbd0.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>7</td>
-                                                        <td>V10.0.2.0.ODCCNFH</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.2.0.ODCCNFH/miui_MI6X_V10.0.2.0.ODCCNFH_65371a11df_8.1.zip">miui_MI6X_V10.0.2.0.ODCCNFH_65371a11df_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V10.0.2.0.ODCCNFH/wayne_images_V10.0.2.0.ODCCNFH_20180829.0000.00_8.1_cn_1d8fc15a00.tgz">wayne_images_V10.0.2.0.ODCCNFH_20180829.0000.00_8.1_cn_1d8fc15a00.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>6</td>
-                                                        <td>V9.6.6.0.ODCCNFD</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.6.6.0.ODCCNFD/miui_MI6X_V9.6.6.0.ODCCNFD_01c1448d36_8.1.zip">miui_MI6X_V9.6.6.0.ODCCNFD_01c1448d36_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.6.6.0.ODCCNFD/wayne_images_V9.6.6.0.ODCCNFD_20180823.0000.00_8.1_cn_afa3785ec8.tgz">wayne_images_V9.6.6.0.ODCCNFD_20180823.0000.00_8.1_cn_afa3785ec8.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>5</td>
-                                                        <td>V9.5.15.0.ODCCNFA</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.15.0.ODCCNFA/miui_MI6X_V9.5.15.0.ODCCNFA_69583f9b96_8.1.zip">miui_MI6X_V9.5.15.0.ODCCNFA_69583f9b96_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.15.0.ODCCNFA/wayne_images_V9.5.15.0.ODCCNFA_20180713.0000.00_8.1_cn_cd1f877ab0.tgz">wayne_images_V9.5.15.0.ODCCNFA_20180713.0000.00_8.1_cn_cd1f877ab0.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>4</td>
-                                                        <td>V9.5.14.0.ODCCNFA</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.14.0.ODCCNFA/miui_MI6X_V9.5.14.0.ODCCNFA_b88c3f858d_8.1.zip">miui_MI6X_V9.5.14.0.ODCCNFA_b88c3f858d_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.14.0.ODCCNFA/wayne_images_V9.5.14.0.ODCCNFA_20180626.0000.00_8.1_cn_9c443bec45.tgz">wayne_images_V9.5.14.0.ODCCNFA_20180626.0000.00_8.1_cn_9c443bec45.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>3</td>
-                                                        <td>V9.5.11.0.ODCCNFA</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.11.0.ODCCNFA/miui_MI6X_V9.5.11.0.ODCCNFA_4f9bdb5447_8.1.zip">miui_MI6X_V9.5.11.0.ODCCNFA_4f9bdb5447_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.11.0.ODCCNFA/wayne_images_V9.5.11.0.ODCCNFA_20180605.0000.00_8.1_cn_96e39a1b01.tgz">wayne_images_V9.5.11.0.ODCCNFA_20180605.0000.00_8.1_cn_96e39a1b01.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>2</td>
-                                                        <td>V9.5.8.0.ODCCNFA</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.8.0.ODCCNFA/miui_MI6X_V9.5.8.0.ODCCNFA_0261becd1a_8.1.zip">miui_MI6X_V9.5.8.0.ODCCNFA_0261becd1a_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.8.0.ODCCNFA/wayne_images_V9.5.8.0.ODCCNFA_20180518.0000.00_8.1_cn_aba50b7b8e.tgz">wayne_images_V9.5.8.0.ODCCNFA_20180518.0000.00_8.1_cn_aba50b7b8e.tgz</a></td>
-                                                </tr>
-                                                <tr>
-                                                        <td>1</td>
-                                                        <td>V9.5.7.0.ODCCNFA</td>
-                                                        <td>8.1 Oreo</td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.7.0.ODCCNFA/miui_MI6X_V9.5.7.0.ODCCNFA_ece416caff_8.1.zip">miui_MI6X_V9.5.7.0.ODCCNFA_ece416caff_8.1.zip</a></td>
-                                                        <td><a href="http://bigota.d.miui.com/V9.5.7.0.ODCCNFA/wayne_images_V9.5.7.0.ODCCNFA_20180429.0000.00_8.1_cn_6136d4153f.tgz">wayne_images_V9.5.7.0.ODCCNFA_20180429.0000.00_8.1_cn_6136d4153f.tgz</a></td>
-                                                </tr>
-                                        </tbody>
-                                </table>
-                        </div>
-                </div>
-        </div>
-
-        <!-- 由此向下区域为底部Footer的内容 -->
-
-        <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-                <script
-                        type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-        </div>
-        <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-                style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-                               >arrow_upward</a></i>
-        </button>
-</body>
-
+				td a {
+						text-decoration: none;
+						color: black;
+				}
+		</style> 
+		<title>小米6X(wayne)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../weekly/index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					注：
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：小米6X</li> 
+						<li>机型代号：wayne</li> 
+						<li>此次更新：V11.0.6.0.PDCCNXM</li> 
+						<li>为保持系统稳定性并确保设备的安全性，近期小米手机6X 引入了“防回刷”机制。MIUI国内8.8.6及以上的开发版和稳定版V9.6.4.0及以上版本，将无法降级刷回旧版本的开发版或稳定版。</li> 
+						<li>开发版：</li> 
+						<ol> 
+							<li>8.8.6及以上版本，无法刷回8.8.6及之前的版本（卡刷/线刷均不支持）</li> 
+							<li>8.8.6及之后的版本之间可互刷，但无法刷回8.8.6或之前版本（卡刷/线刷均不支持）</li> 
+							<li>8.8.6之前的版本之间仍可互刷</li> 
+						</ol> 
+						<li>稳定版：</li> 
+						<ol> 
+							<li>V9.6.4.0及之后的版本，无法刷回V9.6.4.0之前的版本（卡刷/线刷均不支持）</li> 
+							<li>V9.6.4.0及之后的版本之间可互刷，但无法刷回V9.6.4.0及之前的版本（卡刷/线刷均不支持）</li> 
+							<li>V9.6.4.0之前的版本之间仍可互刷</li> 
+						</ol> 
+						<li>特别感谢：<a href="http://www.miui.com/space-uid-850489218.html">@格调丨先生</a></li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater</a>网站</li> 
+						<li>本站点将不收录稳定版灰度内测和开发版内测以及体验版</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/ia6vqunmaIfu">天翼云盘</a>，提取码：fdv1，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<li>第三方Recovery:<a href="https://orangefox.download/zh-CN/device/wayne">橙狐Rec</a></li> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<!-- <tr>
+														<td>78</td>
+														<td>MIUI11</td>
+														<td>TEXT_HERE</td>
+														<td>9.0 Pie</td>
+														<td><a href="TEXT_HERE">TEXT_HERE</a></td>
+														<td>不存在的</td>
+												</tr> --> 
+						<tr> 
+							<td>77</td> 
+							<td>MIUI11</td> 
+							<td>20.3.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.26/miui_MI6X_20.3.26_6ea5d3b973_9.0.zip" id="r">miui_MI6X_20.3.26_6ea5d3b973_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>76</td> 
+							<td>MIUI11</td> 
+							<td>20.3.19</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.19/miui_MI6X_20.3.19_779d96d249_9.0.zip" id="r">miui_MI6X_20.3.19_779d96d249_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>75</td> 
+							<td>MIUI11</td> 
+							<td>20.3.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.12/miui_MI6X_20.3.12_bf9d760387_9.0.zip" id="r">miui_MI6X_20.3.12_bf9d760387_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>74</td> 
+							<td>MIUI11</td> 
+							<td>20.3.5</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.3.5/miui_MI6X_20.3.5_906f58ce08_9.0.zip" id="r">miui_MI6X_20.3.5_906f58ce08_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>73</td> 
+							<td>MIUI11</td> 
+							<td>20.2.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.2.27/miui_MI6X_20.2.27_b198355b47_9.0.zip" id="r">miui_MI6X_20.2.27_b198355b47_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>72</td> 
+							<td>MIUI11</td> 
+							<td>20.1.16</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.16/miui_MI6X_20.1.16_17a4a7b7e2_9.0.zip" id="r">miui_MI6X_20.1.16_17a4a7b7e2_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>71</td> 
+							<td>MIUI11</td> 
+							<td>20.1.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.9/miui_MI6X_20.1.9_fb65eb2b00_9.0.zip" id="r">miui_MI6X_20.1.9_fb65eb2b00_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>70</td> 
+							<td>MIUI11</td> 
+							<td>20.1.2</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/20.1.2/miui_MI6X_20.1.2_8c0caef03a_9.0.zip" id="r">miui_MI6X_20.1.2_8c0caef03a_9.0.zip</a></td> 
+							<td><a href="https://bigota.d.miui.com/20.1.2/wayne_images_20.1.2_20200102.0000.00_9.0_cn_062c10015b.tgz" id="f">wayne_images_20.1.2_20200102.0000.00_9.0_cn_062c10015b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>69</td> 
+							<td>MIUI11</td> 
+							<td>9.12.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.26/miui_MI6X_9.12.26_08674fbda5_9.0.zip" id="r">miui_MI6X_9.12.26_08674fbda5_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>68</td> 
+							<td>MIUI11</td> 
+							<td>9.12.19</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.19/miui_MI6X_9.12.19_9acf00808b_9.0.zip" id="r">miui_MI6X_9.12.19_9acf00808b_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>67</td> 
+							<td>MIUI11</td> 
+							<td>9.12.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.12/miui_MI6X_9.12.12_1b11aea690_9.0.zip" id="r">miui_MI6X_9.12.12_1b11aea690_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>66</td> 
+							<td>MIUI11</td> 
+							<td>9.12.5</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.12.5/miui_MI6X_9.12.5_a796e932d6_9.0.zip" id="r">miui_MI6X_9.12.5_a796e932d6_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>65</td> 
+							<td>MIUI11</td> 
+							<td>9.11.28</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.28/miui_MI6X_9.11.28_bea9ddf32a_9.0.zip" id="r">miui_MI6X_9.11.28_bea9ddf32a_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>64</td> 
+							<td>MIUI11</td> 
+							<td>9.11.21</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.21/miui_MI6X_9.11.21_51db9480e0_9.0.zip" id="r">miui_MI6X_9.11.21_51db9480e0_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>63</td> 
+							<td>MIUI11</td> 
+							<td>9.11.7</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.11.7/miui_MI6X_9.11.7_f308f400ce_9.0.zip" id="r">miui_MI6X_9.11.7_f308f400ce_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>62</td> 
+							<td>MIUI11</td> 
+							<td>9.10.31</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.31/miui_MI6X_9.10.31_e2bd260508_9.0.zip" id="r">miui_MI6X_9.10.31_e2bd260508_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>61</td> 
+							<td>MIUI11</td> 
+							<td>9.10.24</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.24/miui_MI6X_9.10.24_af48b1eb57_9.0.zip" id="r">miui_MI6X_9.10.24_af48b1eb57_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>60</td> 
+							<td>MIUI11</td> 
+							<td>9.10.10</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.10.10/miui_MI6X_9.10.10_d6e3eb7791_9.0.zip" id="r">miui_MI6X_9.10.10_d6e3eb7791_9.0.zip</a></td> 
+							<td>不存在的</td> 
+						</tr> 
+						<tr> 
+							<td>59</td> 
+							<td>MIUI11</td> 
+							<td>9.9.26</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="https://bigota.d.miui.com/9.9.26/miui_MI6X_9.9.26_a4fb97f331_9.0.zip" id="r">miui_MI6X_9.9.26_a4fb97f331_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>58</td> 
+							<td>MIUI10</td> 
+							<td>9.9.3</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.9.3/miui_MI6X_9.9.3_3ad06bc283_9.0.zip" id="r">miui_MI6X_9.9.3_3ad06bc283_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.9.3/wayne_images_9.9.3_20190904.0000.00_9.0_cn_5d14ce926d.tgz" id="f">wayne_images_9.9.3_20190904.0000.00_9.0_cn_5d14ce926d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>57</td> 
+							<td>MIUI10</td> 
+							<td>9.8.22</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.22/miui_MI6X_9.8.22_b324974e97_9.0.zip" id="r">miui_MI6X_9.8.22_b324974e97_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.22/wayne_images_9.8.22_20190822.0000.00_9.0_cn_069dc34351.tgz" id="f">wayne_images_9.8.22_20190822.0000.00_9.0_cn_069dc34351.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>56</td> 
+							<td>MIUI10</td> 
+							<td>9.8.15</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.15/miui_MI6X_9.8.15_a0c4e59f17_9.0.zip" id="r">miui_MI6X_9.8.15_a0c4e59f17_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.15/wayne_images_9.8.15_20190815.0000.00_9.0_cn_d9bea635d0.tgz" id="f">wayne_images_9.8.15_20190815.0000.00_9.0_cn_d9bea635d0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>55</td> 
+							<td>MIUI10</td> 
+							<td>9.8.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.9/miui_MI6X_9.8.9_2dbf8c27e9_9.0.zip" id="r">miui_MI6X_9.8.9_2dbf8c27e9_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.9/wayne_images_9.8.9_20190809.0000.00_9.0_cn_2da59df06f.tgz" id="f">wayne_images_9.8.9_20190809.0000.00_9.0_cn_2da59df06f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>54</td> 
+							<td>MIUI10</td> 
+							<td>9.8.1</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.8.1/miui_MI6X_9.8.1_accdf57425_9.0.zip" id="r">miui_MI6X_9.8.1_accdf57425_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.8.1/wayne_images_9.8.1_20190801.0000.00_9.0_cn_442c732e27.tgz" id="f">wayne_images_9.8.1_20190801.0000.00_9.0_cn_442c732e27.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>53</td> 
+							<td>MIUI10</td> 
+							<td>9.7.25</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.25/miui_MI6X_9.7.25_5613958ca3_9.0.zip" id="r">miui_MI6X_9.7.25_5613958ca3_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.25/wayne_images_9.7.25_20190725.0000.00_9.0_cn_dd81778963.tgz" id="f">wayne_images_9.7.25_20190725.0000.00_9.0_cn_dd81778963.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>52</td> 
+							<td>MIUI10</td> 
+							<td>9.7.18</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.18/miui_MI6X_9.7.18_ef1bd3ec53_9.0.zip" id="r">miui_MI6X_9.7.18_ef1bd3ec53_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.18/wayne_images_9.7.18_20190718.0000.00_9.0_cn_4513d1468b.tgz" id="f">wayne_images_9.7.18_20190718.0000.00_9.0_cn_4513d1468b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>51</td> 
+							<td>MIUI10</td> 
+							<td>9.7.11</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.11/miui_MI6X_9.7.11_0c6981c782_9.0.zip" id="r">miui_MI6X_9.7.11_0c6981c782_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.11/wayne_images_9.7.11_20190711.0000.00_9.0_cn_da38d8a9da.tgz" id="f">wayne_images_9.7.11_20190711.0000.00_9.0_cn_da38d8a9da.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>50</td> 
+							<td>MIUI10</td> 
+							<td>9.7.4</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.7.4/miui_MI6X_9.7.4_e55d838e21_9.0.zip" id="r">miui_MI6X_9.7.4_e55d838e21_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.7.4/wayne_images_9.7.4_20190704.0000.00_9.0_cn_a612048c82.tgz" id="f">wayne_images_9.7.4_20190704.0000.00_9.0_cn_a612048c82.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>49</td> 
+							<td>MIUI10</td> 
+							<td>9.6.27</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/miui_MI6X_9.6.27_9504af941a_9.0.zip" id="r">miui_MI6X_9.6.27_9504af941a_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.27/wayne_images_9.6.27_20190627.0000.00_9.0_cn_0e90ad95bb.tgz" id="f">wayne_images_9.6.27_20190627.0000.00_9.0_cn_0e90ad95bb.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>48</td> 
+							<td>MIUI10</td> 
+							<td>9.6.20</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/miui_MI6X_9.6.20_ffb84fb5d0_9.0.zip" id="r">miui_MI6X_9.6.20_ffb84fb5d0_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.6.20/wayne_images_9.6.20_20190620.0000.00_9.0_cn_31bfd5f321.tgz" id="f">wayne_images_9.6.20_20190620.0000.00_9.0_cn_31bfd5f321.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>47</td> 
+							<td>MIUI10</td> 
+							<td>9.6.13</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.6.13/miui_MI6X_9.6.13_73ec5e23fb_9.0.zip" id="r">miui_MI6X_9.6.13_73ec5e23fb_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>46</td> 
+							<td>MIUI10</td> 
+							<td>9.5.30</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/miui_MI6X_9.5.30_a9474dd754_9.0.zip" id="r">miui_MI6X_9.5.30_a9474dd754_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.30/wayne_images_9.5.30_20190530.0000.00_9.0_cn_e7e60d87c5.tgz" id="f">wayne_images_9.5.30_20190530.0000.00_9.0_cn_e7e60d87c5.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>45</td> 
+							<td>MIUI10</td> 
+							<td>9.5.23</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.23/miui_MI6X_9.5.23_b644af8ee8_9.0.zip" id="r">miui_MI6X_9.5.23_b644af8ee8_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.23/wayne_images_9.5.23_20190523.0000.00_9.0_cn_cccf755bed.tgz" id="f">wayne_images_9.5.23_20190523.0000.00_9.0_cn_cccf755bed.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>44</td> 
+							<td>MIUI10</td> 
+							<td>9.5.16</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.16/miui_MI6X_9.5.16_bc1bd20a14_9.0.zip" id="r">miui_MI6X_9.5.16_bc1bd20a14_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.16/wayne_images_9.5.16_20190516.0000.00_9.0_cn_5f332b758b.tgz" id="f">wayne_images_9.5.16_20190516.0000.00_9.0_cn_5f332b758b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>43</td> 
+							<td>MIUI10</td> 
+							<td>9.5.9</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/miui_MI6X_9.5.9_51aebd8e82_9.0.zip" id="r">miui_MI6X_9.5.9_51aebd8e82_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.5.9/wayne_images_9.5.9_20190509.0000.00_9.0_cn_b444fc74eb.tgz" id="f">wayne_images_9.5.9_20190509.0000.00_9.0_cn_b444fc74eb.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>42</td> 
+							<td>MIUI10</td> 
+							<td>9.4.25</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.25/miui_MI6X_9.4.25_1df3ff99e7_9.0.zip" id="r">miui_MI6X_9.4.25_1df3ff99e7_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.4.25/wayne_images_9.4.25_20190425.0000.00_9.0_cn_604f649a72.tgz" id="f">wayne_images_9.4.25_20190425.0000.00_9.0_cn_604f649a72.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>41</td> 
+							<td>MIUI10</td> 
+							<td>9.4.18</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.18/miui_MI6X_9.4.18_e42faee5ef_9.0.zip" id="r">miui_MI6X_9.4.18_e42faee5ef_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>40</td> 
+							<td>MIUI10</td> 
+							<td>9.4.12</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.4.12/miui_MI6X_9.4.12_668632ed21_9.0.zip" id="r">miui_MI6X_9.4.12_668632ed21_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>39</td> 
+							<td>MIUI10</td> 
+							<td>9.3.28</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.28/miui_MI6X_9.3.28_53d92de9c7_9.0.zip" id="r">miui_MI6X_9.3.28_53d92de9c7_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.3.28/wayne_images_9.3.28_20190328.0000.00_9.0_cn_0a70de3730.tgz" id="f">wayne_images_9.3.28_20190328.0000.00_9.0_cn_0a70de3730.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>38</td> 
+							<td>MIUI10</td> 
+							<td>9.3.21</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.21/miui_MI6X_9.3.21_bcd1c55505_9.0.zip" id="r">miui_MI6X_9.3.21_bcd1c55505_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>37</td> 
+							<td>MIUI10</td> 
+							<td>9.3.14</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.14/miui_MI6X_9.3.14_82bf80da09_9.0.zip" id="r">miui_MI6X_9.3.14_82bf80da09_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>36</td> 
+							<td>MIUI10</td> 
+							<td>9.3.1</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/9.3.1/miui_MI6X_9.3.1_2a0add855a_8.1.zip" id="r">miui_MI6X_9.3.1_2a0add855a_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>35</td> 
+							<td>MIUI10</td> 
+							<td>9.2.21</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/9.2.21/miui_MI6X_9.2.21_29525e0d6e_8.1.zip" id="r">miui_MI6X_9.2.21_29525e0d6e_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>34</td> 
+							<td>MIUI10</td> 
+							<td>9.2.15</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/9.2.15/miui_MI6X_9.2.15_50a60edaa3_8.1.zip" id="r">miui_MI6X_9.2.15_50a60edaa3_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.2.15/wayne_images_9.2.15_20190215.0000.00_8.1_cn_70d4f9f24a.tgz" id="f">wayne_images_9.2.15_20190215.0000.00_8.1_cn_70d4f9f24a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>33</td> 
+							<td>MIUI10</td> 
+							<td>9.1.24</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.24/miui_MI6X_9.1.24_1764fa1728_8.1.zip" id="r">miui_MI6X_9.1.24_1764fa1728_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.1.24/wayne_images_9.1.24_20190124.0000.00_8.1_cn_0d2f65733a.tgz" id="f">wayne_images_9.1.24_20190124.0000.00_8.1_cn_0d2f65733a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>32</td> 
+							<td>MIUI10</td> 
+							<td>9.1.17</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.17/miui_MI6X_9.1.17_e2ead9774b_8.1.zip" id="r">miui_MI6X_9.1.17_e2ead9774b_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>31</td> 
+							<td>MIUI10</td> 
+							<td>9.1.10</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.10/miui_MI6X_9.1.10_75949e8e91_8.1.zip" id="r">miui_MI6X_9.1.10_75949e8e91_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/9.1.10/wayne_images_9.1.10_20190110.0000.00_8.1_cn_d39877f7ae.tgz" id="f">wayne_images_9.1.10_20190110.0000.00_8.1_cn_d39877f7ae.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>30</td> 
+							<td>MIUI10</td> 
+							<td>9.1.1</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/9.1.1/miui_MI6X_9.1.1_10fa21bcc7_8.1.zip" id="r">miui_MI6X_9.1.1_10fa21bcc7_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>29</td> 
+							<td>MIUI10</td> 
+							<td>8.12.27</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.27/miui_MI6X_8.12.27_c410104063_8.1.zip" id="r">miui_MI6X_8.12.27_c410104063_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>28</td> 
+							<td>MIUI10</td> 
+							<td>8.12.20</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.20/miui_MI6X_8.12.20_2e0cc55431_8.1.zip" id="r">miui_MI6X_8.12.20_2e0cc55431_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>27</td> 
+							<td>MIUI10</td> 
+							<td>8.12.13</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.13/miui_MI6X_8.12.13_51ba02ea09_8.1.zip" id="r">miui_MI6X_8.12.13_51ba02ea09_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.12.13/wayne_images_8.12.13_20181213.0000.00_8.1_cn_8dcc83f27e.tgz" id="f">wayne_images_8.12.13_20181213.0000.00_8.1_cn_8dcc83f27e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>26</td> 
+							<td>MIUI10</td> 
+							<td>8.12.6</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.12.6/miui_MI6X_8.12.6_9ff552aa7c_8.1.zip" id="r">miui_MI6X_8.12.6_9ff552aa7c_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.12.6/wayne_images_8.12.6_20181206.0000.00_8.1_cn_6da9c8d33b.tgz" id="f">wayne_images_8.12.6_20181206.0000.00_8.1_cn_6da9c8d33b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>25</td> 
+							<td>MIUI10</td> 
+							<td>8.11.29</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.29/miui_MI6X_8.11.29_a6fe9472a3_8.1.zip" id="r">miui_MI6X_8.11.29_a6fe9472a3_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>24</td> 
+							<td>MIUI10</td> 
+							<td>8.11.23</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.23/miui_MI6X_8.11.23_ff6e54e466_8.1.zip" id="r">miui_MI6X_8.11.23_ff6e54e466_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>23</td> 
+							<td>MIUI10</td> 
+							<td>8.11.15</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.15/miui_MI6X_8.11.15_6499c2c68d_8.1.zip" id="r">miui_MI6X_8.11.15_6499c2c68d_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>22</td> 
+							<td>MIUI10</td> 
+							<td>8.11.8</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.8/miui_MI6X_8.11.8_749c4846de_8.1.zip" id="r">miui_MI6X_8.11.8_749c4846de_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.11.8/wayne_images_8.11.8_20181108.0000.00_8.1_cn_23b23af939.tgz" id="f">wayne_images_8.11.8_20181108.0000.00_8.1_cn_23b23af939.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>21</td> 
+							<td>MIUI10</td> 
+							<td>8.11.1</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.11.1/miui_MI6X_8.11.1_787cd1d0a5_8.1.zip" id="r">miui_MI6X_8.11.1_787cd1d0a5_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.11.1/wayne_images_8.11.1_20181101.0000.00_8.1_cn_73006893a7.tgz" id="f">wayne_images_8.11.1_20181101.0000.00_8.1_cn_73006893a7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>20</td> 
+							<td>MIUI10</td> 
+							<td>8.10.25</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.10.25/miui_MI6X_8.10.25_f635872eb3_8.1.zip" id="r">miui_MI6X_8.10.25_f635872eb3_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.10.25/wayne_images_8.10.25_20181025.0000.00_8.1_cn_05899b1cca.tgz" id="f">wayne_images_8.10.25_20181025.0000.00_8.1_cn_05899b1cca.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>19</td> 
+							<td>MIUI10</td> 
+							<td>8.10.18</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.10.18/miui_MI6X_8.10.18_065c3cc6fe_8.1.zip" id="r">miui_MI6X_8.10.18_065c3cc6fe_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.10.18/wayne_images_8.10.18_20181018.0000.00_8.1_cn_f73d1df1b1.tgz" id="f">wayne_images_8.10.18_20181018.0000.00_8.1_cn_f73d1df1b1.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>18</td> 
+							<td>MIUI10</td> 
+							<td>8.10.11</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.10.11/miui_MI6X_8.10.11_722287d081_8.1.zip" id="r">miui_MI6X_8.10.11_722287d081_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.10.11/wayne_images_8.10.11_20181011.0000.00_8.1_cn_2f10d375e0.tgz" id="f">wayne_images_8.10.11_20181011.0000.00_8.1_cn_2f10d375e0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>MIUI10</td> 
+							<td>8.9.20</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.9.20/miui_MI6X_8.9.20_1cea63ad81_8.1.zip" id="r">miui_MI6X_8.9.20_1cea63ad81_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.9.20/wayne_images_8.9.20_20180920.0000.00_8.1_cn_39294f2e17.tgz" id="f">wayne_images_8.9.20_20180920.0000.00_8.1_cn_39294f2e17.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>MIUI10</td> 
+							<td>8.9.13</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.9.13/miui_MI6X_8.9.13_1b4167c2b9_8.1.zip" id="r">miui_MI6X_8.9.13_1b4167c2b9_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.9.13/wayne_images_8.9.13_20180913.0000.00_8.1_cn_a9581ca083.tgz" id="f">wayne_images_8.9.13_20180913.0000.00_8.1_cn_a9581ca083.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>MIUI10</td> 
+							<td>8.9.6</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.9.6/miui_MI6X_8.9.6_95aac3c69f_8.1.zip" id="r">miui_MI6X_8.9.6_95aac3c69f_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.9.6/wayne_images_8.9.6_20180906.0000.00_8.1_cn_938dead45b.tgz" id="f">wayne_images_8.9.6_20180906.0000.00_8.1_cn_938dead45b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>MIUI10</td> 
+							<td>8.8.23</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.8.23/miui_MI6X_8.8.23_2ca3c0f5ff_8.1.zip" id="r">miui_MI6X_8.8.23_2ca3c0f5ff_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.8.23/wayne_images_8.8.23_20180823.0000.00_8.1_cn_8f053946e3.tgz" id="f">wayne_images_8.8.23_20180823.0000.00_8.1_cn_8f053946e3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>MIUI10</td> 
+							<td>8.8.16</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.8.16/miui_MI6X_8.8.16_fbd6007cb2_8.1.zip" id="r">miui_MI6X_8.8.16_fbd6007cb2_8.1.zip"</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.8.16/wayne_images_8.8.16_20180816.0000.00_8.1_cn_ad6052772f.tgz" id="f">wayne_images_8.8.16_20180816.0000.00_8.1_cn_ad6052772f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>MIUI10</td> 
+							<td>8.8.9</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.8.9/miui_MI6X_8.8.9_7198ac14e5_8.1.zip" id="r">miui_MI6X_8.8.9_7198ac14e5_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.8.9/wayne_images_8.8.9_20180809.0000.00_8.1_cn_e9aca46296.tgz" id="f">wayne_images_8.8.9_20180809.0000.00_8.1_cn_e9aca46296.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>MIUI10</td> 
+							<td>8.8.3</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.8.3/miui_MI6X_8.8.3_47d3bc88c6_8.1.zip" id="r">miui_MI6X_8.8.3_47d3bc88c6_8.1.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI10</td> 
+							<td>8.7.26</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.7.26/miui_MI6X_8.7.26_9cb8cdebf0_8.1.zip" id="r">miui_MI6X_8.7.26_9cb8cdebf0_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.7.26/wayne_images_8.7.26_20180726.0000.00_8.1_cn_446259fe36.tgz" id="f">wayne_images_8.7.26_20180726.0000.00_8.1_cn_446259fe36.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI10</td> 
+							<td>8.7.12</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.7.12/miui_MI6X_8.7.12_179af1707a_8.1.zip" id="r">miui_MI6X_8.7.12_179af1707a_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.7.12/wayne_images_8.7.12_20180712.0000.00_8.1_cn_6393526cbf.tgz" id="f">wayne_images_8.7.12_20180712.0000.00_8.1_cn_6393526cbf.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI10</td> 
+							<td>8.7.5</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.7.5/miui_MI6X_8.7.5_088c3ccc8d_8.1.zip" id="r">miui_MI6X_8.7.5_088c3ccc8d_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.7.5/wayne_images_8.7.5_20180705.0000.00_8.1_cn_d16ca8807f.tgz" id="f">wayne_images_8.7.5_20180705.0000.00_8.1_cn_d16ca8807f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI10</td> 
+							<td>8.6.28</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.6.28/miui_MI6X_8.6.28_3f7bdd1417_8.1.zip" id="r">miui_MI6X_8.6.28_3f7bdd1417_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.6.28/wayne_images_8.6.28_20180628.0000.00_8.1_cn_15ab946349.tgz" id="f">wayne_images_8.6.28_20180628.0000.00_8.1_cn_15ab946349.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI10</td> 
+							<td>8.6.22</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.6.22/miui_MI6X_8.6.22_0987d98aca_8.1.zip" id="r">miui_MI6X_8.6.22_0987d98aca_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.6.22/wayne_images_8.6.22_20180622.0000.00_8.1_cn_b72f08b4e3.tgz" id="f">wayne_images_8.6.22_20180622.0000.00_8.1_cn_b72f08b4e3.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI9</td> 
+							<td>8.5.25</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.5.25/miui_MI6X_8.5.25_925d7d0775_8.1.zip" id="r">miui_MI6X_8.5.25_925d7d0775_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.5.25/wayne_images_8.5.25_20180524.0000.00_8.1_cn_1bf88cc204.tgz" id="f">wayne_images_8.5.25_20180524.0000.00_8.1_cn_1bf88cc204.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI9</td> 
+							<td>8.5.17</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.5.17/miui_MI6X_8.5.17_1322c06b37_8.1.zip" id="r">miui_MI6X_8.5.17_1322c06b37_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.5.17/wayne_images_8.5.17_20180517.0000.00_8.1_cn_2af37d031e.tgz" id="f">wayne_images_8.5.17_20180517.0000.00_8.1_cn_2af37d031e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI9</td> 
+							<td>8.5.10</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.5.10/miui_MI6X_8.5.10_cf9ee4a9d3_8.1.zip" id="r">miui_MI6X_8.5.10_cf9ee4a9d3_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.5.10/wayne_images_8.5.10_20180510.0000.00_8.1_cn_b14dcd168e.tgz" id="f">wayne_images_8.5.10_20180510.0000.00_8.1_cn_b14dcd168e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI9</td> 
+							<td>8.5.3</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.5.3/miui_MI6X_8.5.3_66d57ace22_8.1.zip" id="r">miui_MI6X_8.5.3_66d57ace22_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.5.3/wayne_images_8.5.3_20180503.0000.00_8.1_cn_17885b7236.tgz" id="f">wayne_images_8.5.3_20180503.0000.00_8.1_cn_17885b7236.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI9</td> 
+							<td>8.4.26</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/8.4.26/miui_MI6X_8.4.26_538e3b5272_8.1.zip" id="r">miui_MI6X_8.4.26_538e3b5272_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/8.4.26/wayne_images_8.4.26_20180426.0000.00_8.1_cn_2cb2dffae6.tgz" id="f">wayne_images_8.4.26_20180426.0000.00_8.1_cn_2cb2dffae6.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr class="mdui-hidden"> 
+							<td>22</td> 
+							<td>TEXT_HERE</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="TEXT_HERE" id="r">TEXT_HERE</a></td> 
+							<td><a href="TEXT_HERE" id="f">TEXT_HERE</a></td> 
+						</tr> 
+						<tr> 
+							<td>21</td> 
+							<td>V11.0.6.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PDCCNXM/miui_MI6X_V11.0.6.0.PDCCNXM_f049df201b_9.0.zip" id="r">miui_MI6X_V11.0.6.0.PDCCNXM_f049df201b_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.6.0.PDCCNXM/wayne_images_V11.0.6.0.PDCCNXM_20200509.0000.00_9.0_cn_8676922cfa.tgz" id="f">wayne_images_V11.0.6.0.PDCCNXM_20200509.0000.00_9.0_cn_8676922cfa.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>20</td> 
+							<td>V11.0.5.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PDCCNXM/miui_MI6X_V11.0.5.0.PDCCNXM_4b7613f7bc_9.0.zip" id="r">miui_MI6X_V11.0.5.0.PDCCNXM_4b7613f7bc_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.5.0.PDCCNXM/wayne_images_V11.0.5.0.PDCCNXM_20200227.0000.00_9.0_cn_7b37b4068c.tgz" id="f">wayne_images_V11.0.5.0.PDCCNXM_20200227.0000.00_9.0_cn_7b37b4068c.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>19</td> 
+							<td>V11.0.3.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PDCCNXM/miui_MI6X_V11.0.3.0.PDCCNXM_9ec1316afd_9.0.zip" id="r">miui_MI6X_V11.0.3.0.PDCCNXM_9ec1316afd_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.3.0.PDCCNXM/wayne_images_V11.0.3.0.PDCCNXM_20191127.0000.00_9.0_cn_1f235cc624.tgz" id="f">wayne_images_V11.0.3.0.PDCCNXM_20191127.0000.00_9.0_cn_1f235cc624.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>18</td> 
+							<td>V11.0.2.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V11.0.2.0.PDCCNXM/miui_MI6X_V11.0.2.0.PDCCNXM_bfe718d74d_9.0.zip" id="r">miui_MI6X_V11.0.2.0.PDCCNXM_bfe718d74d_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>17</td> 
+							<td>V10.3.6.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PDCCNXM/miui_MI6X_V10.3.6.0.PDCCNXM_3a07c1cad3_9.0.zip" id="r">miui_MI6X_V10.3.6.0.PDCCNXM_3a07c1cad3_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.6.0.PDCCNXM/wayne_images_V10.3.6.0.PDCCNXM_20190816.0000.00_9.0_cn_ecdcbc575d.tgz" id="f">wayne_images_V10.3.6.0.PDCCNXM_20190816.0000.00_9.0_cn_ecdcbc575d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>16</td> 
+							<td>V10.3.5.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PDCCNXM/miui_MI6X_V10.3.5.0.PDCCNXM_de4d42b7ff_9.0.zip" id="r">miui_MI6X_V10.3.5.0.PDCCNXM_de4d42b7ff_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.5.0.PDCCNXM/wayne_images_V10.3.5.0.PDCCNXM_20190711.0000.00_9.0_cn_a5560d2fa7.tgz" id="f">wayne_images_V10.3.5.0.PDCCNXM_20190711.0000.00_9.0_cn_a5560d2fa7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>15</td> 
+							<td>V10.3.4.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.4.0.PDCCNXM/miui_MI6X_V10.3.4.0.PDCCNXM_1d2eedf2d4_9.0.zip" id="r">miui_MI6X_V10.3.4.0.PDCCNXM_1d2eedf2d4_9.0.zip</a></td> 
+							<td>未发布</td> 
+						</tr> 
+						<tr> 
+							<td>14</td> 
+							<td>V10.3.3.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PDCCNXM/miui_MI6X_V10.3.3.0.PDCCNXM_5d7b6bcf29_9.0.zip" id="r">miui_MI6X_V10.3.3.0.PDCCNXM_5d7b6bcf29_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.3.0.PDCCNXM/wayne_images_V10.3.3.0.PDCCNXM_20190514.0000.00_9.0_cn_1d4725ac4d.tgz" id="f">wayne_images_V10.3.3.0.PDCCNXM_20190514.0000.00_9.0_cn_1d4725ac4d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>13</td> 
+							<td>V10.3.2.0.PDCCNXM</td> 
+							<td>9.0 Pie</td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.2.0.PDCCNXM/miui_MI6X_V10.3.2.0.PDCCNXM_ab22fa2506_9.0.zip" id="r">miui_MI6X_V10.3.2.0.PDCCNXM_ab22fa2506_9.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.3.2.0.PDCCNXM/wayne_images_V10.3.2.0.PDCCNXM_20190426.0000.00_9.0_cn_48179c548e.tgz" id="f">wayne_images_V10.3.2.0.PDCCNXM_20190426.0000.00_9.0_cn_48179c548e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>12</td> 
+							<td>V10.2.5.0.ODCCNXM</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.ODCCNXM/miui_MI6X_V10.2.5.0.ODCCNXM_c8eb7d3dd2_8.1.zip" id="r">miui_MI6X_V10.2.5.0.ODCCNXM_c8eb7d3dd2_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.5.0.ODCCNXM/wayne_images_V10.2.5.0.ODCCNXM_20190408.0000.00_8.1_cn_9f48c7aaa7.tgz" id="f">wayne_images_V10.2.5.0.ODCCNXM_20190408.0000.00_8.1_cn_9f48c7aaa7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>11</td> 
+							<td>V10.2.3.0.ODCCNXM</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.ODCCNXM/miui_MI6X_V10.2.3.0.ODCCNXM_d8b91e1488_8.1.zip" id="r">miui_MI6X_V10.2.3.0.ODCCNXM_d8b91e1488_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.3.0.ODCCNXM/wayne_images_V10.2.3.0.ODCCNXM_20190227.0000.00_8.1_cn_c202bd2b6e.tgz" id="f">wayne_images_V10.2.3.0.ODCCNXM_20190227.0000.00_8.1_cn_c202bd2b6e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>10</td> 
+							<td>V10.2.2.0.ODCCNXM</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.2.0.ODCCNXM/miui_MI6X_V10.2.2.0.ODCCNXM_3e0311c050_8.1.zip" id="r">miui_MI6X_V10.2.2.0.ODCCNXM_3e0311c050_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.2.0.ODCCNXM/wayne_images_V10.2.2.0.ODCCNXM_20190118.0000.00_8.1_cn_cfc2e97a61.tgz" id="f">wayne_images_V10.2.2.0.ODCCNXM_20190118.0000.00_8.1_cn_cfc2e97a61.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>V10.2.1.0.ODCCNXM</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.1.0.ODCCNXM/miui_MI6X_V10.2.1.0.ODCCNXM_f5bf383a66_8.1.zip" id="r">miui_MI6X_V10.2.1.0.ODCCNXM_f5bf383a66_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.2.1.0.ODCCNXM/wayne_images_V10.2.1.0.ODCCNXM_20181221.0000.00_8.1_cn_7c7ab2bbea.tgz" id="f">wayne_images_V10.2.1.0.ODCCNXM_20181221.0000.00_8.1_cn_7c7ab2bbea.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>V10.0.3.0.ODCCNFH</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.3.0.ODCCNFH/miui_MI6X_V10.0.3.0.ODCCNFH_97352bf18c_8.1.zip" id="r">miui_MI6X_V10.0.3.0.ODCCNFH_97352bf18c_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.3.0.ODCCNFH/wayne_images_V10.0.3.0.ODCCNFH_20181123.0000.00_8.1_cn_cb60e1bbd0.tgz" id="f">wayne_images_V10.0.3.0.ODCCNFH_20181123.0000.00_8.1_cn_cb60e1bbd0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>V10.0.2.0.ODCCNFH</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.2.0.ODCCNFH/miui_MI6X_V10.0.2.0.ODCCNFH_65371a11df_8.1.zip" id="r">miui_MI6X_V10.0.2.0.ODCCNFH_65371a11df_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V10.0.2.0.ODCCNFH/wayne_images_V10.0.2.0.ODCCNFH_20180829.0000.00_8.1_cn_1d8fc15a00.tgz" id="f">wayne_images_V10.0.2.0.ODCCNFH_20180829.0000.00_8.1_cn_1d8fc15a00.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>V9.6.6.0.ODCCNFD</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.6.6.0.ODCCNFD/miui_MI6X_V9.6.6.0.ODCCNFD_01c1448d36_8.1.zip" id="r">miui_MI6X_V9.6.6.0.ODCCNFD_01c1448d36_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.6.6.0.ODCCNFD/wayne_images_V9.6.6.0.ODCCNFD_20180823.0000.00_8.1_cn_afa3785ec8.tgz" id="f">wayne_images_V9.6.6.0.ODCCNFD_20180823.0000.00_8.1_cn_afa3785ec8.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V9.5.15.0.ODCCNFA</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.15.0.ODCCNFA/miui_MI6X_V9.5.15.0.ODCCNFA_69583f9b96_8.1.zip" id="r">miui_MI6X_V9.5.15.0.ODCCNFA_69583f9b96_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.15.0.ODCCNFA/wayne_images_V9.5.15.0.ODCCNFA_20180713.0000.00_8.1_cn_cd1f877ab0.tgz" id="f">wayne_images_V9.5.15.0.ODCCNFA_20180713.0000.00_8.1_cn_cd1f877ab0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V9.5.14.0.ODCCNFA</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.14.0.ODCCNFA/miui_MI6X_V9.5.14.0.ODCCNFA_b88c3f858d_8.1.zip" id="r">miui_MI6X_V9.5.14.0.ODCCNFA_b88c3f858d_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.14.0.ODCCNFA/wayne_images_V9.5.14.0.ODCCNFA_20180626.0000.00_8.1_cn_9c443bec45.tgz" id="f">wayne_images_V9.5.14.0.ODCCNFA_20180626.0000.00_8.1_cn_9c443bec45.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V9.5.11.0.ODCCNFA</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.11.0.ODCCNFA/miui_MI6X_V9.5.11.0.ODCCNFA_4f9bdb5447_8.1.zip" id="r">miui_MI6X_V9.5.11.0.ODCCNFA_4f9bdb5447_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.11.0.ODCCNFA/wayne_images_V9.5.11.0.ODCCNFA_20180605.0000.00_8.1_cn_96e39a1b01.tgz" id="f">wayne_images_V9.5.11.0.ODCCNFA_20180605.0000.00_8.1_cn_96e39a1b01.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V9.5.8.0.ODCCNFA</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.8.0.ODCCNFA/miui_MI6X_V9.5.8.0.ODCCNFA_0261becd1a_8.1.zip" id="r">miui_MI6X_V9.5.8.0.ODCCNFA_0261becd1a_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.8.0.ODCCNFA/wayne_images_V9.5.8.0.ODCCNFA_20180518.0000.00_8.1_cn_aba50b7b8e.tgz" id="f">wayne_images_V9.5.8.0.ODCCNFA_20180518.0000.00_8.1_cn_aba50b7b8e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V9.5.7.0.ODCCNFA</td> 
+							<td>8.1 Oreo</td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.7.0.ODCCNFA/miui_MI6X_V9.5.7.0.ODCCNFA_ece416caff_8.1.zip" id="r">miui_MI6X_V9.5.7.0.ODCCNFA_ece416caff_8.1.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V9.5.7.0.ODCCNFA/wayne_images_V9.5.7.0.ODCCNFA_20180429.0000.00_8.1_cn_6136d4153f.tgz" id="f">wayne_images_V9.5.7.0.ODCCNFA_20180429.0000.00_8.1_cn_6136d4153f.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>

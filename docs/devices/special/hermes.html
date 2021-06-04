@@ -1,281 +1,279 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.bootcss.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/mdui/0.4.3/js/mdui.min.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?67319535f71174561c4472de9a73b0b7";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-      <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-153213840-1');
-      </script>
-    <style>
-            li a {
-                text-decoration: none;
-                color: blue;
-            }
-    
-            td a {
-                text-decoration: none;
-                color: black;
-            }
-        </style>
-    <title>红米Note 2(hermes)官方ROM合集 -- MIUI官方ROM仓库</title>
-</head>
-
-<body>
-    <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
-        <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
-        <div class="mdui-toolbar-spacer"></div>
-        <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
-            <ul class="mdui-list" mdui-collapse="{accordion: true}">
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-                    <div class="mdui-list-item-content"><a href="../../index.html">回到首页</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">adb</i>
-                    <div class="mdui-list-item-content"><a href="../../tutorial.html">刷机教程</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
-                    <div class="mdui-list-item-content"><a href="../../weekly/index.html">查看日志</a></div>
-                </li>
-
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
-                        <div class="mdui-list-item-content"><a href="../index.html">机型列表</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                        <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
-                        <div class="mdui-list-item-content"><a href="../../tools.html">刷机工具</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
-                    <div class="mdui-list-item-content"><a href="../../thanks.html">衷心感谢</a></div>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
-                    <div class="mdui-list-item-content"><a href="../../aboutme.html">站点日志</a></div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="mdui-panel mdui-panel-gapless">
-        <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">注：</div>
-            <div class="mdui-panel-item-body">
-                <ol>
-                    <li>机型：红米Note 2 代号：hermes</li>
-                    <li>特别感谢：<a href ="http://www.miui.com/space-uid-32116700.html">@温柔@慈悲</a></li>
-                    <li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
-                    <li>本页面仅记录红米Note 2移动版有的小部分与普通版区别开来的线刷包，理论上两者同包，但是前期发布有不一致的线刷包；</li>
-                    <li>正常的版本：<a href="../hermes.html">红米Note 2</a></li>
-                <br>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为ROM的正式内容 -->
-
-    <div><br></div>
-    <div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab>
-        <a href="#CN_BETA" class="mdui-ripple">国内开发版</a>
-        <a href="#CN_STABLE" class="mdui-ripple">国内稳定版</a>
-    </div>
-    <div id="CN_BETA" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国内开发版</th>
-                            <th>MIUI版本</th>
-                            <th>版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>10</td>
-                            <td>MIUI7</td>
-                            <td>6.3.24</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/6.3.24/miui_HMNote2_6.3.24_affa0e37f3_5.0.zip">miui_HMNote2_6.3.24_affa0e37f3_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/6.3.24/hermes_images_6.3.24_20160307.0000.16_5.0_cn_cmonly_64172a483a.tgz">hermes_images_6.3.24_20160307.0000.16_5.0_cn_cmonly_64172a483a.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>MIUI7</td>
-                            <td>6.3.17</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/6.3.17/miui_HMNote2_6.3.17_495e4dcc2d_5.0.zip">miui_HMNote2_6.3.17_495e4dcc2d_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/6.3.17/hermes_images_6.3.17_20160129.0000.14_5.0_cn_cmonly_f1ab7ed88d.tgz">hermes_images_6.3.17_20160129.0000.14_5.0_cn_cmonly_f1ab7ed88d.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>MIUI7</td>
-                            <td>6.2.18</td>
-                            <td>5.0 Lollipop</td>
-                            <td>未收录</td>
-                            <td><a href="http://bigota.d.miui.com/6.2.18/hermes_images_6.2.18_20160125.0000.13_5.0_cn_cmonly_0164aeeef0.tgz">hermes_images_6.2.18_20160125.0000.13_5.0_cn_cmonly_0164aeeef0.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>MIUI7</td>
-                            <td>5.12.4</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/5.12.4/miui_HMNote2_5.12.4_814c32c42f_5.0.zip">miui_HMNote2_5.12.4_814c32c42f_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/5.12.4/hermes_images_5.12.4_20151126.0000.5_5.0_cn_cmonly_9c436af0a0.tgz">hermes_images_5.12.4_20151126.0000.5_5.0_cn_cmonly_9c436af0a0.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>MIUI7</td>
-                            <td>5.11.1</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/5.11.1/miui_HMNote2_5.11.1_87864eb595_5.0.zip">miui_HMNote2_5.11.1_87864eb595_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/5.11.1/hermes_images_5.11.1_20151016.0000.3_5.0_cn_cmonly_2583a19a39.tgz">hermes_images_5.11.1_20151016.0000.3_5.0_cn_cmonly_2583a19a39.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>MIUI7</td>
-                            <td>5.10.22</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/5.10.22/miui_HMNote2_5.10.22_a90b6fd901_5.0.zip">miui_HMNote2_5.10.22_a90b6fd901_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/5.10.22/hermes_images_5.10.22_20151016.0000.3_5.0_cn_cmonly_df25bb82dd.tgz">hermes_images_5.10.22_20151016.0000.3_5.0_cn_cmonly_df25bb82dd.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>MIUI7</td>
-                            <td>5.10.8</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/5.10.8/miui_HMNote2_5.10.8_8f479c6bb9_5.0.zip">miui_HMNote2_5.10.8_8f479c6bb9_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/5.10.8/hermes_images_5.10.8_20150917.0000.1_5.0_cn_cmonly_c62135e564.tgz">hermes_images_5.10.8_20150917.0000.1_5.0_cn_cmonly_c62135e564.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>MIUI7</td>
-                            <td>5.9.24</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/5.9.24/miui_HMNote2_5.9.24_4893fad968_5.0.zip">miui_HMNote2_5.9.24_4893fad968_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/5.9.24/hermes_images_5.9.24_20150917.0000.1_5.0_cn_cmonly_ff7cbbfa9e.tgz">hermes_images_5.9.24_20150917.0000.1_5.0_cn_cmonly_ff7cbbfa9e.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>MIUI7</td>
-                            <td>5.9.2</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/5.9.2/miui_HMNote2_5.9.2_7159cfe142_5.0.zip">miui_HMNote2_5.9.2_7159cfe142_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/5.9.2/hermes_images_5.9.2_20150826.0000.7_5.0_cn_cmonly_45e81ec7b7.tgz">hermes_images_5.9.2_20150826.0000.7_5.0_cn_cmonly_45e81ec7b7.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>MIUI7</td>
-                            <td>5.8.27</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/5.8.27/miui_HMNote2_5.8.27_6032a20061_5.0.zip">miui_HMNote2_5.8.27_6032a20061_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/5.8.27/hermes_images_5.8.27_20150723.0000.6_5.0_cn_cmonly_d9215cfd72.tgz">hermes_images_5.8.27_20150723.0000.6_5.0_cn_cmonly_d9215cfd72.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    <div id="CN_STABLE" class="mdui-p-a-2">
-        <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th class="mdui-text-color-red">国内稳定版</th>
-                            <th>MIUI版本</th>
-                            <th>Android版本</th>
-                            <th>卡刷包</th>
-                            <th>线刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>6</td>
-                            <td>V7.0.6.0.LHMCNCI</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/V7.0.6.0.LHMCNCI/miui_HMNote2_V7.0.6.0.LHMCNCI_327d403c14_5.0.zip">miui_HMNote2_V7.0.6.0.LHMCNCI_327d403c14_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V7.0.6.0.LHMCNCI/hermes_images_V7.0.6.0.LHMCNCI_20151016.0000.3_5.0_cn_cmonly_8a7360fbdb.tgz">hermes_images_V7.0.6.0.LHMCNCI_20151016.0000.3_5.0_cn_cmonly_8a7360fbdb.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>V6.7.11.0.LHMCNCH</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.11.0.LHMCNCH/miui_HMNote2_V6.7.11.0.LHMCNCH_633f62c165_5.0.zip">miui_HMNote2_V6.7.11.0.LHMCNCH_633f62c165_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.11.0.LHMCNCH/hermes_images_V6.7.11.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_33cc28bc3f.tgz">hermes_images_V6.7.11.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_33cc28bc3f.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>V6.7.5.0.LHMCNCH</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.5.0.LHMCNCH/miui_HMNote2_V6.7.5.0.LHMCNCH_7b45a9a562_5.0.zip">miui_HMNote2_V6.7.5.0.LHMCNCH_7b45a9a562_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.5.0.LHMCNCH/hermes_images_V6.7.5.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_7ac0179a8b.tgz">hermes_images_V6.7.5.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_7ac0179a8b.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>V6.7.4.0.LHMCNCH</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.4.0.LHMCNCH/miui_HMNote2_V6.7.4.0.LHMCNCH_1cc9bf9b60_5.0.zip">miui_HMNote2_V6.7.4.0.LHMCNCH_1cc9bf9b60_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.4.0.LHMCNCH/hermes_images_V6.7.4.0.LHMCNCH_20150723.0000.6_5.0_cn_cmonly_28320445d8.tgz">hermes_images_V6.7.4.0.LHMCNCH_20150723.0000.6_5.0_cn_cmonly_28320445d8.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>V6.7.2.0.LHMCNCH</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.2.0.LHMCNCH/miui_HMNote2_V6.7.2.0.LHMCNCH_f92112266c_5.0.zip">miui_HMNote2_V6.7.2.0.LHMCNCH_f92112266c_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V6.7.2.0.LHMCNCH/hermes_images_V6.7.2.0.LHMCNCH_20150723.0000.6_5.0_cmonly_97e0ce9489.tgz">hermes_images_V6.7.2.0.LHMCNCH_20150723.0000.6_5.0_cmonly_97e0ce9489.tgz</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>V6.6.7.0.LHMCNCF</td>
-                            <td>5.0 Lollipop</td>
-                            <td><a href="http://bigota.d.miui.com/V6.6.7.0.LHMCNCF/miui_HERMES_V6.6.7.0.LHMCNCF_b91e029d24_5.0.zip">miui_HERMES_V6.6.7.0.LHMCNCF_b91e029d24_5.0.zip</a></td>
-                            <td><a href="http://bigota.d.miui.com/V6.6.7.0.LHMCNCF/hermes_images_V6.6.7.0.LHMCNCF_20150721.0000.5_5.0_cn_cmonly_d0ae003eef.tgz">hermes_images_V6.6.7.0.LHMCNCF_20150721.0000.5_5.0_cn_cmonly_d0ae003eef.tgz</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <!-- 由此向下区域为底部Footer的内容 -->
-
-    <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
-        <script
-            type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
-    </div>
-    <button class=" mdui-btn mdui-btn-icon mdui-color-deep-orange-accent"
-        style="position: fixed; right: 20px;bottom: 40px;"><i class="mdui-icon material-icons"><a href="#top" style="text-decoration: none;color:black;"
-               >arrow_upward</a></i>
-    </button>
-</body>
-
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.bootcss.com/mdui/1.0.1/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.bootcss.com/mdui/1.0.1/js/mdui.min.js"></script> 
+		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>  
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<style>
+			li a {
+				text-decoration: none;
+				color: blue;
+			}
+	
+			td a {
+				text-decoration: none;
+				color: black;
+			}
+		</style> 
+		<title>红米Note 2(hermes)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../../index.html">回到首页</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../../tutorial.html">刷机教程</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../../weekly/index.html">查看日志</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../index.html">机型列表</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../../tools.html">刷机工具</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../../thanks.html">衷心感谢</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../../aboutme.html">站点日志</a> 
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					 注： 
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型：红米Note 2 代号：hermes</li> 
+						<li>特别感谢：<a href="http://www.miui.com/space-uid-32116700.html">@温柔@慈悲</a></li> 
+						<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
+						<li>本页面仅记录红米Note 2移动版有的小部分与普通版区别开来的线刷包，理论上两者同包，但是前期发布有不一致的线刷包；</li> 
+						<li>第三方Recovery:<a href="https://cloud.189.cn/t/uuIzymZZFbey">天翼云盘</a>，提取码：yzy9，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a></li> 
+						<li>第三方Recovery:<a href="https://twrp.me/xiaomi/xiaomiredminote2.html">TWRP官方</a></li> 
+						<li>第三方Recovery:<a href="https://orangefox.download/zh-CN/device/hermes">橙狐Rec</a></li> 
+						<li>正常的版本：<a href="../hermes.html">红米Note 2</a></li> 
+						<br> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<div> 
+			<br> 
+		</div> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#CN_BETA" class="mdui-ripple">国内开发版</a> 
+			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_BETA"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">国内开发版</th> 
+							<th>MIUI版本</th> 
+							<th>版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>10</td> 
+							<td>MIUI7</td> 
+							<td>6.3.24</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/6.3.24/miui_HMNote2_6.3.24_affa0e37f3_5.0.zip" id="r">miui_HMNote2_6.3.24_affa0e37f3_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/6.3.24/hermes_images_6.3.24_20160307.0000.16_5.0_cn_cmonly_64172a483a.tgz" id="f">hermes_images_6.3.24_20160307.0000.16_5.0_cn_cmonly_64172a483a.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>9</td> 
+							<td>MIUI7</td> 
+							<td>6.3.17</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/6.3.17/miui_HMNote2_6.3.17_495e4dcc2d_5.0.zip" id="r">miui_HMNote2_6.3.17_495e4dcc2d_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/6.3.17/hermes_images_6.3.17_20160129.0000.14_5.0_cn_cmonly_f1ab7ed88d.tgz" id="f">hermes_images_6.3.17_20160129.0000.14_5.0_cn_cmonly_f1ab7ed88d.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>8</td> 
+							<td>MIUI7</td> 
+							<td>6.2.18</td> 
+							<td>5.0 Lollipop</td> 
+							<td>未收录</td> 
+							<td><a href="http://bigota.d.miui.com/6.2.18/hermes_images_6.2.18_20160125.0000.13_5.0_cn_cmonly_0164aeeef0.tgz" id="f">hermes_images_6.2.18_20160125.0000.13_5.0_cn_cmonly_0164aeeef0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>7</td> 
+							<td>MIUI7</td> 
+							<td>5.12.4</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/5.12.4/miui_HMNote2_5.12.4_814c32c42f_5.0.zip" id="r">miui_HMNote2_5.12.4_814c32c42f_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/5.12.4/hermes_images_5.12.4_20151126.0000.5_5.0_cn_cmonly_9c436af0a0.tgz" id="f">hermes_images_5.12.4_20151126.0000.5_5.0_cn_cmonly_9c436af0a0.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>6</td> 
+							<td>MIUI7</td> 
+							<td>5.11.1</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/5.11.1/miui_HMNote2_5.11.1_87864eb595_5.0.zip" id="r">miui_HMNote2_5.11.1_87864eb595_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/5.11.1/hermes_images_5.11.1_20151016.0000.3_5.0_cn_cmonly_2583a19a39.tgz" id="f">hermes_images_5.11.1_20151016.0000.3_5.0_cn_cmonly_2583a19a39.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>MIUI7</td> 
+							<td>5.10.22</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/5.10.22/miui_HMNote2_5.10.22_a90b6fd901_5.0.zip" id="r">miui_HMNote2_5.10.22_a90b6fd901_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/5.10.22/hermes_images_5.10.22_20151016.0000.3_5.0_cn_cmonly_df25bb82dd.tgz" id="f">hermes_images_5.10.22_20151016.0000.3_5.0_cn_cmonly_df25bb82dd.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>MIUI7</td> 
+							<td>5.10.8</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/5.10.8/miui_HMNote2_5.10.8_8f479c6bb9_5.0.zip" id="r">miui_HMNote2_5.10.8_8f479c6bb9_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/5.10.8/hermes_images_5.10.8_20150917.0000.1_5.0_cn_cmonly_c62135e564.tgz" id="f">hermes_images_5.10.8_20150917.0000.1_5.0_cn_cmonly_c62135e564.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>MIUI7</td> 
+							<td>5.9.24</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/5.9.24/miui_HMNote2_5.9.24_4893fad968_5.0.zip" id="r">miui_HMNote2_5.9.24_4893fad968_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/5.9.24/hermes_images_5.9.24_20150917.0000.1_5.0_cn_cmonly_ff7cbbfa9e.tgz" id="f">hermes_images_5.9.24_20150917.0000.1_5.0_cn_cmonly_ff7cbbfa9e.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>MIUI7</td> 
+							<td>5.9.2</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/5.9.2/miui_HMNote2_5.9.2_7159cfe142_5.0.zip" id="r">miui_HMNote2_5.9.2_7159cfe142_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/5.9.2/hermes_images_5.9.2_20150826.0000.7_5.0_cn_cmonly_45e81ec7b7.tgz" id="f">hermes_images_5.9.2_20150826.0000.7_5.0_cn_cmonly_45e81ec7b7.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>MIUI7</td> 
+							<td>5.8.27</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/5.8.27/miui_HMNote2_5.8.27_6032a20061_5.0.zip" id="r">miui_HMNote2_5.8.27_6032a20061_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/5.8.27/hermes_images_5.8.27_20150723.0000.6_5.0_cn_cmonly_d9215cfd72.tgz" id="f">hermes_images_5.8.27_20150723.0000.6_5.0_cn_cmonly_d9215cfd72.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid" id="CN_STABLE"> 
+			<div class="mdui-table-fluid"> 
+				<table class="mdui-table"> 
+					<thead> 
+						<tr> 
+							<th class="mdui-text-color-red">大陆稳定版</th> 
+							<th>MIUI版本</th> 
+							<th>Android版本</th> 
+							<th>卡刷包</th> 
+							<th>线刷包</th> 
+						</tr> 
+					</thead> 
+					<tbody> 
+						<tr> 
+							<td>6</td> 
+							<td>V7.0.6.0.LHMCNCI</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/V7.0.6.0.LHMCNCI/miui_HMNote2_V7.0.6.0.LHMCNCI_327d403c14_5.0.zip" id="r">miui_HMNote2_V7.0.6.0.LHMCNCI_327d403c14_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V7.0.6.0.LHMCNCI/hermes_images_V7.0.6.0.LHMCNCI_20151016.0000.3_5.0_cn_cmonly_8a7360fbdb.tgz" id="f">hermes_images_V7.0.6.0.LHMCNCI_20151016.0000.3_5.0_cn_cmonly_8a7360fbdb.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>5</td> 
+							<td>V6.7.11.0.LHMCNCH</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.11.0.LHMCNCH/miui_HMNote2_V6.7.11.0.LHMCNCH_633f62c165_5.0.zip" id="r">miui_HMNote2_V6.7.11.0.LHMCNCH_633f62c165_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.11.0.LHMCNCH/hermes_images_V6.7.11.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_33cc28bc3f.tgz" id="f">hermes_images_V6.7.11.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_33cc28bc3f.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>4</td> 
+							<td>V6.7.5.0.LHMCNCH</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.5.0.LHMCNCH/miui_HMNote2_V6.7.5.0.LHMCNCH_7b45a9a562_5.0.zip" id="r">miui_HMNote2_V6.7.5.0.LHMCNCH_7b45a9a562_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.5.0.LHMCNCH/hermes_images_V6.7.5.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_7ac0179a8b.tgz" id="f">hermes_images_V6.7.5.0.LHMCNCH_20150826.0000.7_5.0_cn_cmonly_7ac0179a8b.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>3</td> 
+							<td>V6.7.4.0.LHMCNCH</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.4.0.LHMCNCH/miui_HMNote2_V6.7.4.0.LHMCNCH_1cc9bf9b60_5.0.zip" id="r">miui_HMNote2_V6.7.4.0.LHMCNCH_1cc9bf9b60_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.4.0.LHMCNCH/hermes_images_V6.7.4.0.LHMCNCH_20150723.0000.6_5.0_cn_cmonly_28320445d8.tgz" id="f">hermes_images_V6.7.4.0.LHMCNCH_20150723.0000.6_5.0_cn_cmonly_28320445d8.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>2</td> 
+							<td>V6.7.2.0.LHMCNCH</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.2.0.LHMCNCH/miui_HMNote2_V6.7.2.0.LHMCNCH_f92112266c_5.0.zip" id="r">miui_HMNote2_V6.7.2.0.LHMCNCH_f92112266c_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V6.7.2.0.LHMCNCH/hermes_images_V6.7.2.0.LHMCNCH_20150723.0000.6_5.0_cmonly_97e0ce9489.tgz" id="f">hermes_images_V6.7.2.0.LHMCNCH_20150723.0000.6_5.0_cmonly_97e0ce9489.tgz</a></td> 
+						</tr> 
+						<tr> 
+							<td>1</td> 
+							<td>V6.6.7.0.LHMCNCF</td> 
+							<td>5.0 Lollipop</td> 
+							<td><a href="http://bigota.d.miui.com/V6.6.7.0.LHMCNCF/miui_HERMES_V6.6.7.0.LHMCNCF_b91e029d24_5.0.zip" id="r">miui_HERMES_V6.6.7.0.LHMCNCF_b91e029d24_5.0.zip</a></td> 
+							<td><a href="http://bigota.d.miui.com/V6.6.7.0.LHMCNCF/hermes_images_V6.6.7.0.LHMCNCF_20150721.0000.5_5.0_cn_cmonly_d0ae003eef.tgz" id="f">hermes_images_V6.6.7.0.LHMCNCF_20150721.0000.5_5.0_cn_cmonly_d0ae003eef.tgz</a></td> 
+						</tr> 
+					</tbody> 
+				</table> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
 </html>
