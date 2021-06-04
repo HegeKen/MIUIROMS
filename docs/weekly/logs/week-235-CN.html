@@ -43,10 +43,19 @@
             }
         }
     </style>
-    <title>第218周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第235周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -92,80 +101,63 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第218周发布公告及更新日志
-                </div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第235周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-2178776-1-1.html">【2014年12月19日】MIUI 第218周发布公告及更新日志（附视频）</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/2694949">【2014年12月19日】MIUI 第218周发布公告及更新日志（附视频）</a></p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-2522987-1-1.html">【2015年4月30日】MIUI 第235周发布公告及更新日志 恢复更新</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4112188">【2015年4月30日】MIUI 第235周发布公告及更新日志 恢复更新</a></p>
+                    <br>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI6 4.12.19 已发布！</p>
+                    <p>MIUI6 5.5.1 恢复发布</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
                         <li>MIUI V5 / MIUI 6开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
                         <li>较老版本的 MIUI 可通过刷 MIUI V5 / MIUI 6 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）</li>
-                        <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）</li>
+                        <li>跨版本进行升级时（如稳定版刷开发版）需要清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）</li>
+                        <li>其它品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
                     </ol>
+                    <br>
                     <p style="font-weight: bolder;">▍重要说明</p>
                     <ol>
-                        <li>红米系列会有 MIUI 6开发版和稳定版；12月底前争取陆续发出测试版</li>
-                        <li>米2系列已有 MIUI 6特别版，后续将会对开发版和稳定版进行全新适配</li>
-                        <li>米1系列开发版停止更新，最后一个 MIUI V5 版本已于4.12.5发出；无 MIUI 6计划</li>
+                        <li>MIUI 5.5.1已验证完毕，更新推送已重新开启，再次感谢大家的理解，祝节日快乐！</li>
                     </ol>
                     <hr>
-                    <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
                     <p style="font-weight: bolder;">【本周推荐】</p>
-                    <p>新增 音乐正在播放页的蓝牙快捷连接入口</p>
-                    <p>新增 天气桌面插件（桌面编辑模式-添加小工具-天气）</p>
-                    <p>新增 网络助手支持全国联通用户购买流量包</p>
-                    <p>优化 优化 音乐WiFi下默认首页为“发现音乐”，其他网络和无网络时默认“我的音乐”</p>
+                    <p>新增 音乐首次进入页面调整为我的音乐</p>
+                    <p>新增 发快递时可以选用小米商城的常用地址</p>
+                    <p>新增 上门洗车服务（汽车服务-上门洗车）</p>
                     <br>
-                    <p style="font-weight: bolder;">【系统】</p>
-                    <p>修复 在某些情况下，建立无线显示的连接会失败的问题</p>
-                    <p>修复 FTP 下载过程中4G切3G导致下载中断的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【电话】</p>
-                    <p>优化 缩短上滑接听时手指滑动距离</p>
-                    <p>优化 接听手势支持快速上滑，提高接听成功率</p>
-                    <br>
-                    <p style="font-weight: bolder;">【图库】</p>
-                    <p>修复 某些情况下，从相机进入图库时图库崩溃的问题</p>
-                    <p>修复 开启访客模式后，用相机拍照提示图库已停止运行的问题</p>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>修复 双卡拨号按钮 UI 显示不及时的问题（仅双 SIM 卡机型）</p>
                     <br>
                     <p style="font-weight: bolder;">【音乐】</p>
-                    <p>新增 正在播放页的蓝牙快捷连接入口</p>
-                    <p>优化 本地新增文件的扫描速度</p>
-                    <p>优化 WiFi下默认首页为“发现音乐”，其他网络和无网络时默认“我的音乐”</p>
-                    <p>修复 读取本地歌曲时乱码的问题</p>
-                    <p>修复 某些歌曲名显示为空的问题</p>
-                    <p>修复 歌手专辑为空时，歌手页提示错误的问题</p>
-                    <p>修复 FM 加载状态显示错误的问题</p>
+                    <p>优化 音乐首次进入页面调整为我的音乐</p>
+                    <p>修复 HiFi 状态不准确的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【天气】</p>
-                    <p>新增 天气桌面插件（桌面编辑模式-添加小工具-天气）</p>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>优化 某些情况下手环解锁失效的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【电子邮件】</p>
-                    <p>新增 滑动删除邮件的动画效果</p>
-                    <p>修复 Exchange 邮箱修改密码后，手机端同步邮件时不提示密码错误的问题</p>
+                    <p style="font-weight: bolder;">【录音机】</p>
+                    <p>修复 从录音完成通知进入录音机，通知不消失的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【网络助手】</p>
-                    <p>新增 支持全国联通用户购买流量包</p>
-                    <br>
+                    <p style="font-weight: bolder;">【生活黄页】</p>
+                    <p>新增 发快递支持从联系人选择取件地址和电话</p>
+                    <p>新增 发快递时可以选用小米商城的常用地址</p>
+                    <p>新增 上门洗车服务（汽车服务-上门洗车）</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mdui-container-fluid pc">
         <p>视频演示：</p>
-        <iframe height=600 width=100% src='https://player.youku.com/embed/XODUyMDA4Mjg0' frameborder=0 allowfullscreen></iframe>
+        <iframe height=1080 width=100% src='https://player.youku.com/embed/XOTQ1MDk3MTUy' frameborder=0 allowfullscreen></iframe>
     </div>
     <div class="mdui-container-fluid mobile">
         <p>视频演示：</p>
-        <iframe height=240 width=480 src='https://player.youku.com/embed/XODUyMDA4Mjg0' frameborder=0 allowfullscreen></iframe>
+        <iframe height=240 width=480 src='https://player.youku.com/embed/XOTQ1MDk3MTUy' frameborder=0 allowfullscreen></iframe>
     </div>
-
 
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
         <script

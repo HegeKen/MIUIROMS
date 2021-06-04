@@ -43,10 +43,19 @@
             }
         }
     </style>
-    <title>第218周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第237周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -92,80 +101,104 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第218周发布公告及更新日志
-                </div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第237周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-2178776-1-1.html">【2014年12月19日】MIUI 第218周发布公告及更新日志（附视频）</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/2694949">【2014年12月19日】MIUI 第218周发布公告及更新日志（附视频）</a></p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-2547709-1-1.html">【2015年5月15日】MIUI 第237周更新 小米Note顶配版发布 MIUI 5.5.15</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4402399">【2015年5月15日】MIUI 第237周更新 小米Note顶配版发布 MIUI 5.5.15</a></p>
+                    <br>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI6 4.12.19 已发布！</p>
+                    <p>MIUI6 5.5.15 已发布</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
                         <li>MIUI V5 / MIUI 6开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
                         <li>较老版本的 MIUI 可通过刷 MIUI V5 / MIUI 6 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）</li>
-                        <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）</li>
+                        <li>跨版本进行升级时（如稳定版刷开发版）需要清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）</li>
+                        <li>其它品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
                     </ol>
+                    <br>
                     <p style="font-weight: bolder;">▍重要说明</p>
                     <ol>
-                        <li>红米系列会有 MIUI 6开发版和稳定版；12月底前争取陆续发出测试版</li>
-                        <li>米2系列已有 MIUI 6特别版，后续将会对开发版和稳定版进行全新适配</li>
-                        <li>米1系列开发版停止更新，最后一个 MIUI V5 版本已于4.12.5发出；无 MIUI 6计划</li>
+                        <li>小米Note顶配版发布公测开发版 MIUI 5.5.15，需清除数据后再刷入开发版的包，请务必做好数据备份！</li>
                     </ol>
                     <hr>
-                    <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
                     <p style="font-weight: bolder;">【本周推荐】</p>
-                    <p>新增 音乐正在播放页的蓝牙快捷连接入口</p>
-                    <p>新增 天气桌面插件（桌面编辑模式-添加小工具-天气）</p>
-                    <p>新增 网络助手支持全国联通用户购买流量包</p>
-                    <p>优化 优化 音乐WiFi下默认首页为“发现音乐”，其他网络和无网络时默认“我的音乐”</p>
+                    <p>新增 设置功能，允许红米用户通过设置，将主题存储到SD卡中</p>
+                    <p>新增 垃圾短信举报功能</p>
+                    <p>新增 小米钱包新增信用卡账单读取功能</p>
                     <br>
                     <p style="font-weight: bolder;">【系统】</p>
-                    <p>修复 在某些情况下，建立无线显示的连接会失败的问题</p>
-                    <p>修复 FTP 下载过程中4G切3G导致下载中断的问题</p>
+                    <p>优化 MI2/2S 机型合并分区，Recovery 清除数据将删除手机全部，包括虚拟 SD 卡中数据</p>
                     <br>
-                    <p style="font-weight: bolder;">【电话】</p>
-                    <p>优化 缩短上滑接听时手指滑动距离</p>
-                    <p>优化 接听手势支持快速上滑，提高接听成功率</p>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>修复 查询 SIM 卡容量后可能造成闪退的问题</p>
+                    <p>修复 退出小米帐号后，联系人应用可能无响应的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【图库】</p>
-                    <p>修复 某些情况下，从相机进入图库时图库崩溃的问题</p>
-                    <p>修复 开启访客模式后，用相机拍照提示图库已停止运行的问题</p>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>新增 垃圾短信举报功能</p>
+                    <p>优化 短信会话界面UI显示</p>
+                    <p>优化 短信内联系人名片的 UI 样式</p>
+                    <p>修复 编辑短信收信人时 UI 显示错误的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>修复 某些情况下，下拉通知栏高斯模糊实效的问题</p>
+                    <p>修复 某些情况下，双卡机型运营商信息显示错误的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【桌面】</p>
+                    <p>修复 首次进近期任务，锁定应用提示显示不正确的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【音乐】</p>
-                    <p>新增 正在播放页的蓝牙快捷连接入口</p>
-                    <p>优化 本地新增文件的扫描速度</p>
-                    <p>优化 WiFi下默认首页为“发现音乐”，其他网络和无网络时默认“我的音乐”</p>
-                    <p>修复 读取本地歌曲时乱码的问题</p>
-                    <p>修复 某些歌曲名显示为空的问题</p>
-                    <p>修复 歌手专辑为空时，歌手页提示错误的问题</p>
-                    <p>修复 FM 加载状态显示错误的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【天气】</p>
-                    <p>新增 天气桌面插件（桌面编辑模式-添加小工具-天气）</p>
+                    <p>优化 专辑默认背景</p>
+                    <p>修复 睡眠模式结束后，按钮状态显示不一致的的问题</p>
+                    <p>修复 排序按钮文案被遮挡的问题</p>
+                    <p>修复 专辑名和歌手名同时为空时，可以修改歌手封面的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【电子邮件】</p>
-                    <p>新增 滑动删除邮件的动画效果</p>
-                    <p>修复 Exchange 邮箱修改密码后，手机端同步邮件时不提示密码错误的问题</p>
+                    <p>新增 联系人管理功能</p>
+                    <p>优化 邮件正文下载失败后可重试</p>
+                    <p>修复 对于使用 IMAP 协议和 POP3 协议的帐户无法打开 zip 附件的问题</p>
+                    <p>修复 大字号 UI 适配问题​</p>
                     <br>
-                    <p style="font-weight: bolder;">【网络助手】</p>
-                    <p>新增 支持全国联通用户购买流量包</p>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>新增 2015年9月3-5日中国人民抗日战争暨世界反法西斯战争胜利70周年纪念日调休放假数据</p>
+                    <p>优化 新建事件时，可以不添加标题</p>
                     <br>
+                    <p style="font-weight: bolder;">【米币中心】</p>
+                    <p>新增 米币首页活动条支持多个活动显示</p>
+                    <p>优化 米币中心新版首页适配小米Note</p>
+                    <p>优化 充值金额超限时会显示金额限制</p>
+                    <p>优化 充值弹窗打开时，点击空白处可以关闭弹窗</p>
+                    <p>优化 优化活动界面的错误显示</p>
+                    <p>优化 米币中心首页在小米Note 和小米Note 顶配版上的适配</p>
+                    <p>修复 米币中心首页出现网络错误时状态栏和标题栏的显示问题</p>
+                    <p>修复 手势密码可能会导致部分页面显示错误的问题</p>
+                    <p>修复 手势密码不会正确出现的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米钱包】</p>
+                    <p>新增 信用卡账单读取功能</p>
+                    <p>新增 支付收银台支持活动提示</p>
+                    <p>新增 流量购买功能的入口</p>
+                    <p>优化 钱包各界面的描述语句，更加准确</p>
+                    <p>优化 手环免密的流程减少弹窗的跳动</p>
+                    <p>修复 修复信用卡申请时光大银行界面显示不正确的问题</p>
+                    <p>修复 修复使用手环免密功能可能会 FC 的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米金融】</p>
+                    <p>修复 某些情况下分享失败的问题</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mdui-container-fluid pc">
         <p>视频演示：</p>
-        <iframe height=600 width=100% src='https://player.youku.com/embed/XODUyMDA4Mjg0' frameborder=0 allowfullscreen></iframe>
+        <iframe height=1080 width=100% src='https://player.youku.com/embed/XOTU2MTYwODky' frameborder=0 allowfullscreen></iframe>
     </div>
     <div class="mdui-container-fluid mobile">
         <p>视频演示：</p>
-        <iframe height=240 width=480 src='https://player.youku.com/embed/XODUyMDA4Mjg0' frameborder=0 allowfullscreen></iframe>
+        <iframe height=240 width=480 src='https://player.youku.com/embed/XOTU2MTYwODky' frameborder=0 allowfullscreen></iframe>
     </div>
-
 
     <div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
         <script

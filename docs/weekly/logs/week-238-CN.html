@@ -43,10 +43,19 @@
             }
         }
     </style>
-    <title>第218周开发版日志 - MIUI官方ROM仓库</title>
+    <title>第238周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let height = $(document).width();
+            if (height < "550") {
+                $("td #r").text("卡刷包");
+                $("td #f").text("线刷包");
+            }
+        })
+    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
         <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
                 class="mdui-icon material-icons">menu</i></button>
@@ -92,78 +101,115 @@
     <div class="mdui-container-fluid">
         <div>
             <div class="mdui-panel-item mdui-panel-item-open">
-                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第218周发布公告及更新日志
-                </div>
+                <div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">MIUI 第238周发布公告及更新日志</div>
                 <div class="mdui-panel-item-body">
-                    <p>论坛链接：<a href="http://www.miui.com/thread-2178776-1-1.html">【2014年12月19日】MIUI 第218周发布公告及更新日志（附视频）</a></p>
-                    <p>社区链接：<a href="https://www.xiaomi.cn/post/2694949">【2014年12月19日】MIUI 第218周发布公告及更新日志（附视频）</a></p>
+                    <p>论坛链接：<a href="http://www.miui.com/thread-2567908-1-1.html">【2015年5月22日】MIUI 第238周发布公告及更新日志（附视频）</a></p>
+                    <p>社区链接：<a href="https://www.xiaomi.cn/post/4680949">【2015年5月22日】MIUI 第238周发布公告及更新日志（附视频）</a></p>
+                    <br>
                     <p style="font-weight: bolder;">▍发布时间</p>
-                    <p>MIUI6 4.12.19 已发布！</p>
+                    <p>MIUI6 5.5.22 已发布</p>
                     <br>
                     <p style="font-weight: bolder;">▍升级说明</p>
                     <ol>
                         <li>MIUI V5 / MIUI 6开发版可以直接 OTA 升级（方法：系统更新 - 检查更新 - 选择最新版本升级）</li>
                         <li>较老版本的 MIUI 可通过刷 MIUI V5 / MIUI 6 最新完整包快速升级（方法：小米手机可通过系统更新 - Menu - 选择安装包进行升级，第三方机型需手动进入 Recovery 选择完整包进行升级）</li>
-                        <li>跨版本进行升级时（如稳定版刷开发版）尽量清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）</li>
-                    </ol>
-                    <p style="font-weight: bolder;">▍重要说明</p>
-                    <ol>
-                        <li>红米系列会有 MIUI 6开发版和稳定版；12月底前争取陆续发出测试版</li>
-                        <li>米2系列已有 MIUI 6特别版，后续将会对开发版和稳定版进行全新适配</li>
-                        <li>米1系列开发版停止更新，最后一个 MIUI V5 版本已于4.12.5发出；无 MIUI 6计划</li>
+                        <li>跨版本进行升级时（如稳定版刷开发版）需要清除所有数据，以避免因数据冲突出现个例问题；清除数据前务必主动备份数据，以免丢失（方法：设置 - 备份和重置 - 本地备份）</li>
+                        <li>其它品牌手机首次刷 MIUI ROM 请严格按照刷机教程进行刷机</li>
                     </ol>
                     <hr>
-                    <br>
                     <p style="font-weight: bolder;">▍更新日志</p>
                     <br>
                     <p style="font-weight: bolder;">【本周推荐】</p>
-                    <p>新增 音乐正在播放页的蓝牙快捷连接入口</p>
-                    <p>新增 天气桌面插件（桌面编辑模式-添加小工具-天气）</p>
-                    <p>新增 网络助手支持全国联通用户购买流量包</p>
-                    <p>优化 优化 音乐WiFi下默认首页为“发现音乐”，其他网络和无网络时默认“我的音乐”</p>
+                    <p>新增 可将日历事件的开始时间和结束时间设为农历</p>
+                    <p>新增 陌生来电在接听后如果短时间内挂断，提示是否标记此号码</p>
+                    <p>新增 应用商店全新改版，同时搜索结果页会突出显示最多人安装的应用</p>
+                    <p>新增 状态栏支持显示虚拟运营商名称、充电时显示充电图标、开启热点时显示热点图标、同时优化了状态栏图标颜色的对比度</p>
+                    <p>新增 新手机可通过云服务恢复闹钟设置</p>
+                    <p>新增 视频相册功能，方便浏览和管理所有视频</p>
                     <br>
                     <p style="font-weight: bolder;">【系统】</p>
-                    <p>修复 在某些情况下，建立无线显示的连接会失败的问题</p>
-                    <p>修复 FTP 下载过程中4G切3G导致下载中断的问题</p>
+                    <p>修复 充电指示灯不亮的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【电话】</p>
-                    <p>优化 缩短上滑接听时手指滑动距离</p>
-                    <p>优化 接听手势支持快速上滑，提高接听成功率</p>
+                    <p>新增 陌生来电在接听后如果短时间内挂断，提示是否标记此号码</p>
+                    <br>
+                    <p style="font-weight: bolder;">【联系人】</p>
+                    <p>修复 导入或删除 SIM 卡联系人时可能会出现的卡顿或闪退问题</p>
+                    <p>修复 在搜索时输入单引号可能导致闪退的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【短信】</p>
+                    <p>修复 使用小米手环时，收到彩信后手环震动提醒失效的问题</p>
+                    <p>修复 群发短信时，收信人数量过多会导致应用无响应的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【锁屏、状态栏、通知栏】</p>
+                    <p>新增 开启 WLAN 热点时，状态栏显示热点图标</p>
+                    <p>新增 充电时状态栏显示充电图标</p>
+                    <p>新增 支持显示虚拟运营商名称</p>
+                    <p>优化 状态栏图标颜色对比度</p>
+                    <br>
+                    <p style="font-weight: bolder;">【主题】</p>
+                    <p>修复 部分红米用户在某些情况下开机无响应的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【图库】</p>
-                    <p>修复 某些情况下，从相机进入图库时图库崩溃的问题</p>
-                    <p>修复 开启访客模式后，用相机拍照提示图库已停止运行的问题</p>
-                    <br>
-                    <p style="font-weight: bolder;">【音乐】</p>
-                    <p>新增 正在播放页的蓝牙快捷连接入口</p>
-                    <p>优化 本地新增文件的扫描速度</p>
-                    <p>优化 WiFi下默认首页为“发现音乐”，其他网络和无网络时默认“我的音乐”</p>
-                    <p>修复 读取本地歌曲时乱码的问题</p>
-                    <p>修复 某些歌曲名显示为空的问题</p>
-                    <p>修复 歌手专辑为空时，歌手页提示错误的问题</p>
-                    <p>修复 FM 加载状态显示错误的问题</p>
+                    <p>新增 视频相册功能，方便浏览和管理所有视频</p>
+                    <p>优化 打开云相册大图时的加载速度</p>
+                    <p>优化 减少进入大图页的内存消耗</p>
+                    <p>优化 加快从相机进入图库的速度</p>
+                    <p>优化 优化首页滑动的流畅性</p>
+                    <p>优化 本地相册页面的加载速度</p>
+                    <p>优化 修改私密相册页面设置密码的图标</p>
+                    <p>修复 在某些情况下，在图库首页浏览图片时会发生闪退的问题</p>
+                    <p>修复 小米Note 多选图片添加到云相册时布局错乱​的问题</p>
+                    <p>修复 开机后图库的CPU占用过高的问题</p>
+                    <p>修复 某些情况下，删除本地相册时闪退的问题</p>
                     <br>
                     <p style="font-weight: bolder;">【天气】</p>
-                    <p>新增 天气桌面插件（桌面编辑模式-添加小工具-天气）</p>
+                    <p>修复 某些情况下，城市天气动画异常的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【电子邮件】</p>
-                    <p>新增 滑动删除邮件的动画效果</p>
-                    <p>修复 Exchange 邮箱修改密码后，手机端同步邮件时不提示密码错误的问题</p>
+                    <p style="font-weight: bolder;">【设置】</p>
+                    <p>新增 WiFi 连接过渡动画</p>
+                    <p>修复 某些情况下 WiFi 密码错误弹窗长时间不显示的问题</p>
                     <br>
-                    <p style="font-weight: bolder;">【网络助手】</p>
-                    <p>新增 支持全国联通用户购买流量包</p>
+                    <p style="font-weight: bolder;">【应用商店】</p>
+                    <p>新增 应用商店全新改版，更多内容等你来逛</p>
+                    <p>新增 搜索结果页突出显示最多人安装的应用</p>
+                    <p>优化 搜索结果页在特殊情况下的 UI 显示</p>
+                    <p>优化 因缺少系统组件导致某些应用安装失败的提示</p>
+                    <p>修复 在某些情况下，“用户反馈”页面闪退的问题</p>
                     <br>
+                    <p style="font-weight: bolder;">【文件管理器】</p>
+                    <p>修复 加载缩略图时卡顿的问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【日历】</p>
+                    <p>新增 可将日历事件的开始时间和结束时间设为农历</p>
+                    <p>新增 朋友快过生日时，可向 TA 赠送生日礼物</p>
+                    <p>新增 农历事件支持云同步</p>
+                    <br>
+                    <p style="font-weight: bolder;">【时钟/计算器】</p>
+                    <p>修复 大字体模式下的 UI 显示问题</p>
+                    <br>
+                    <p style="font-weight: bolder;">【生活黄页】</p>
+                    <p>优化 商户详情页的关注按钮样式优化</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米云服务】</p>
+                    <p>新增 新手机可通过云服务恢复闹钟设置</p>
+                    <p>新增 全新会员体系，可以选择三档会员获取更大空间和其他特权</p>
+                    <p>优化 云服务设置界面</p>
+                    <br>
+                    <p style="font-weight: bolder;">【小米钱包】</p>
+                    <p>修复 从信用卡账单界面解绑按户还款的信用卡时会闪退的问题</p>
+                    <p>修复 有时小米邮箱收到账单邮件后小米钱包中没有读取账单邮件的问题</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="mdui-container-fluid pc">
         <p>视频演示：</p>
-        <iframe height=600 width=100% src='https://player.youku.com/embed/XODUyMDA4Mjg0' frameborder=0 allowfullscreen></iframe>
+        <iframe height=1080 width=100% src='https://player.youku.com/embed/XOTYxNDQ4OTE2' frameborder=0 allowfullscreen></iframe>
     </div>
     <div class="mdui-container-fluid mobile">
         <p>视频演示：</p>
-        <iframe height=240 width=480 src='https://player.youku.com/embed/XODUyMDA4Mjg0' frameborder=0 allowfullscreen></iframe>
+        <iframe height=240 width=480 src='https://player.youku.com/embed/XOTYxNDQ4OTE2' frameborder=0 allowfullscreen></iframe>
     </div>
 
 
