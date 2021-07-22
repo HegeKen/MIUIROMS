@@ -1,0 +1,105 @@
+{
+    "cn":{
+        "us":{
+            "mione_plus":{
+                "name":"小米1/小米1S"
+            }
+        },
+        "su":{
+            "gemini":{
+                "name":"小米5"
+            },
+            "capricorn":{
+                "name":"小米5S"
+            },
+            "natrium":{
+                "name":"小米5S Plus"
+            },
+            "tiffany":{
+                "name":"小米5X"
+            },
+            "meri":{
+                "name":"小米5C"
+            },
+            "sagit":{
+                "name":"小米6"
+            },"wayne":{
+                "name":"小米6X"
+            },
+            "dipper":{
+                "name":"小米8"
+            },
+            "ursa":{
+                "name":"小米8透明探索版"
+            },
+            "equuleus":{
+                "name":"小米8屏幕指纹版"
+            },
+            "platina":{
+                "name":"小米8青春版"
+            },
+            "sirius":{
+                "name":"小米8SE"
+            },
+            "cepheus":{
+                "name":"小米9"
+            },
+            "grus":{
+                "name":"小米9SE"
+            },
+            "crux":{
+                "name":"小米9 Pro 5G"
+            },
+            "pyxis":{
+                "name":"小米CC9"
+            },
+            "vela":{
+                "name":"小米CC9美图定制版"
+            },
+            "laurus":{
+                "name":"小米CC9e"
+            },
+            "tucana":{
+                "name":"小米CC9 Pro"
+            },
+            "umi":{
+                "name":"小米10"
+            },
+            "thyme":{
+                "name":"小米10S"
+            },
+            "cmi":{
+                "name":"小米10 Pro"
+            },
+            "cas":{
+                "name":"小米10 至尊纪念版"
+            },
+            "vangaugh":{
+                "name":"小米10 青春版"
+            },
+            "monet":{
+                "name":"小米10 Lite"
+            },
+            "venus":{
+                "name":"小米11"
+            },
+            "courbet":{
+                "name":"小米11 Lite 4G"
+            },
+            "renoir":{
+                "name":"小米11 青春版"
+            },
+            "star":{
+                "name":"小米11 Pro/Ultra"
+            }
+        }
+    },
+    "en":{
+        "us":{
+
+        },
+        "su":{
+
+        }
+    }
+}
