@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script> 
+		<style>
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+
+		p a {
+			text-decoration: none;
+		}
+		@media screen and (max-width: 500px){
+			.pc{
+				display: none;
+			}
+			.mobile{
+				display: show;
+			}
+		}
+		@media screen and (min-width: 501px){
+			.pc{
+				display: show;
+			}
+			.mobile{
+				display: none;
+			}
+		}
+	</style> 
+		<title>第012周开发版日志 - MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple  mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../devices/index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid"> 
+			<div> 
+				<div class="mdui-panel-item mdui-panel-item-open"> 
+					<div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">
+						【2010年11月12日】MIUI 第012周发布
+					</div> 
+					<div class="mdui-panel-item-body"> 
+						<p>论坛链接：<a href="https://www.miui.com/thread-4400-1-1.html">【2010年11月12日】MIUI 第012周发布</a></p> 
+						<p class="mdui-hidden">社区链接：<a href="TEXT_HERE">【2010年11月12日】MIUI 第012周发布</a></p> 
+						<p style="font-weight: bolder;">▍发布时间</p> 
+						<p>2010年11月12日</p> 
+						<br> 
+						<p style="font-weight: bolder;">▍支持机型</p> 
+						<ul> 
+							<li>Nexus One G5 | HTC Desire</li> 
+						</ul> 
+						<hr> 
+						<br> 
+						<p style="font-weight: bolder;">▍更新日志</p> 
+						<br> 
+						<p style="font-weight: bolder;">【推荐功能】</p> 
+						<p>快到短信附件里看一下,平时常用的短语都在里面了。</p> 
+                        <p>手机连接USB后自动弹出对于USB的选项。</p> 
+						<br> 
+						<p style="font-weight: bolder;">【短信】</p> 
+						<p>新增 增加短信常用语。</p> 
+                        <p>新增 未读条数。</p> 
+                        <p>修复 备份恢复后时间变为1970的问题。</p> 
+                        <p>修复 清空联系人后短信点击头像出现错位。</p> 
+                        <p>修复 彩信偶尔出现错位的问题。</p> 
+                        <p>修复 解锁进入后不显示第二条新短信弹出框的问题。</p> 
+						<br> 
+						<p style="font-weight: bolder;">【联系人】</p> 
+						<p>修复 把电话添加到已有联系人的时候点击完成,跳到别的联系人里的问题。</p> 
+						<br> 
+                        <p style="font-weight: bolder;">【桌面】</p> 
+						<p>新增 锁屏农历显示。</p> 
+                        <p>优化 锁屏状态栏去掉时间。</p> 
+                        <p>优化 锁屏音乐控制键兼容性提高。</p> 
+                        <p>优化 桌面小工具离顶部距离变小。</p> 
+						<br> 
+						<p style="font-weight: bolder;">【设置】</p> 
+						<p>新增 手机连接USB后自动弹出对于USB的选项。</p> 
+                        <p>新增 新安装的输入法自动设成默认输入法并打开程序。</p> 
+                        <p>修复 设置壁纸会自动拉伸的问题。新增 设置时间的新控件。</p> 
+                        <p>新增 设置我的位置。</p> 
+						<br> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid">
+			<div class="mdui-table-fluid">
+				<table class="mdui-table">
+					<thead>
+						<tr>
+							<th>机型</th>
+							<th>MIUI版本</th>
+							<th>卡刷包1</th>
+                            <th>卡刷包2</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Nexus One G5</td>
+							<td></td>
+							<td><a href="http://www.177wan.com/miui/ota/miui-n1-0.11.12.zip" id="r">miui-n1-0.11.12.zip</a></td>
+                            <td><a href="http://u.115.com/file/t7997f164e" id="r">http://u.115.com/file/t7997f164e</a></td>
+						</tr>
+						<tr>
+							<td>HTC Desire</td>
+							<td></td>
+							<td><a href="http://www.177wan.com/miui/ota/miui-desire-0.11.12.zip" id="r">miui-desire-0.11.12.zip</a></td>
+                            <td><a href="http://u.115.com/file/t7a62fe04a" id="r">http://u.115.com/file/t7a62fe04a</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<br />
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<div style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;"> 
+			<div class="mdui-container-fluid"> 
+				<div class="mdui-row mdui-footer-nav"> 
+					<div class="mdui-col-xs-3"> 
+						<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3> 
+					</div> 
+					<div class="mdui-col-xs-4"> 
+						<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a> </h3> 
+					</div> 
+					<div class="mdui-col-xs-5"> 
+						<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3> 
+					</div> 
+				</div> 
+				<div class="mdui-divider footer-divider"></div> 
+				<p></p> 
+				<div class="mdui-text-center">
+					自 2019 - 至今 
+				</div> 
+				<div style=" position:absolute; right:20px;bottom:5px;"> 
+					<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+				</div> 
+			</div> 
+		</footer> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>

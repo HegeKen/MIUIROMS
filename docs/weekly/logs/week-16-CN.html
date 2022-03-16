@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script> 
+		<style>
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+
+		p a {
+			text-decoration: none;
+		}
+		@media screen and (max-width: 500px){
+			.pc{
+				display: none;
+			}
+			.mobile{
+				display: show;
+			}
+		}
+		@media screen and (min-width: 501px){
+			.pc{
+				display: show;
+			}
+			.mobile{
+				display: none;
+			}
+		}
+	</style> 
+		<title>第016周开发版日志 - MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple  mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../devices/index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid"> 
+			<div> 
+				<div class="mdui-panel-item mdui-panel-item-open"> 
+					<div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">
+						[12月11日]MIUI第16周OTA下载及问题反馈集结[修正发布]
+					</div> 
+					<div class="mdui-panel-item-body"> 
+						<p>论坛链接：<a href="https://www.miui.com/thread-12102-1-1.html">[12月11日]MIUI第16周OTA下载及问题反馈集结[修正发布]</a></p> 
+						<p>社区链接：<a href="https://www.xiaomi.cn/post/1880194">[12月11日]MIUI第16周OTA下载及问题反馈集结[修正发布]</a></p> 
+						<p style="font-weight: bolder;">▍发布时间</p> 
+						<p>2010年12月11日</p> 
+						<br> 
+						<p style="font-weight: bolder;">▍注意事项</p> 
+						<ul> 
+							<li>12月11日修正升级包已经发布，可以通过OTA更新。</li> 
+							<li>首次刷MIUI ROM的用户，需要按照官方教程刷机，下载完整包：</li> 
+							<li>注意：第一次刷MIUI ROM 一定要自己手工进recovery ， wipe下数据。如果不会这一步的需要先学会再刷，这是刷新ROM必须的步骤，切记！</li> 
+							<li>由于升级时下载用户较多，速度较慢，老用户可以选择自行下载OTA文件，手工升级，请根据自己的手机型号以及版本号选择。</li> 
+						</ul> 
+						<br> 
+						<p style="font-weight: bolder;">▍支持机型</p> 
+						<ul> 
+							<li>Nexus One G5 | HTC Desire | MOTO Milestone</li> 
+						</ul> 
+						<hr> 
+						<br> 
+						<p style="font-weight: bolder;">▍更新日志</p> 
+						<br> 
+						<p style="font-weight: bolder;">【推荐功能】</p> 
+						<p>全新的文件管理器beta版！可以分类浏览、管理SD卡和无线管理你的文件。</p> 
+                        <p>优化过的“防干扰”功能，让复杂的设置简单化。</p> 
+                        <p>在线音乐，海量音乐无限试听、一键下载、直接添加到播放列表</p> 
+						<br> 
+						<p style="font-weight: bolder;">【短信】</p> 
+						<p>新增 短信快速删除收件人</p> 
+                        <p>新增 飞信好友显示飞信图标</p> 
+                        <p>修复 删除短信不更新会话时间的问题。</p> 
+                        <p>修复 在会话中点菜单中的删除会话不能删除的问题。</p> 
+                        <p>修复 短信弹出框可以在所有程序上都弹出。</p> 
+                        <p>优化 短信换主题界面。</p> 
+						<br> 
+						<p style="font-weight: bolder;">【联系人】</p> 
+						<p>新增 支持导出联系人到SIM卡</p> 
+                        <p>新增 联系人详情电话长按支持IP电话</p> 
+                        <p>新增 选择联系人界面支持快捷多选和全选</p> 
+                        <p>修复 编辑联系人多个号码中删除一个号码时UI错位</p> 
+						<br> 
+                        <p style="font-weight: bolder;">【桌面】</p> 
+						<p>优化 加快了桌面的启动速度。</p> 
+                        <p>修复 文件夹异常关闭的问题。</p> 
+                        <p>修复 导致图标丢失的另一种情况。</p> 
+                        <p>修复 锁屏快捷键返回下拉通知开关。</p> 
+                        <p>修复 通知栏看不到联通运营商信息问题。</p> 
+						<br> 
+						<p style="font-weight: bolder;">【防打扰】</p> 
+						<p>优化 界面调整。</p> 
+                        <p>新增 陌生人一声响铃的开关</p> 
+						<br> 
+						<p style="font-weight: bolder;">【MIUI备份】</p> 
+						<p>优化 界面调整。</p> 
+                        <p>优化 备份短信时不再关闭通信。</p> 
+                        <p>优化 加入用户提示。</p> 
+						<br> 
+                        <p style="font-weight: bolder;">【MIUI音乐】</p> 
+						<p>新增 在线音乐。</p> 
+                        <p>新增 4*4音乐widget。</p> 
+						<br> 
+						<p style="font-weight: bolder;">【MIUI文件管理器】</p> 
+						<p>新增 全新的文件管理器。</p> 
+						<br> 
+                        <p style="font-weight: bolder;">【设置】</p> 
+						<p>新增 系统－LED灯，Milestone和Desire的LED灯设置。</p> 
+                        <p>新增 程序－启动器，桌面绘图质量开关。</p> 
+                        <p>新增 程序－启动器，是否常驻内存的开关。</p> 
+						<br> 
+						<p style="font-weight: bolder;">【其它】</p> 
+						<p>改善GPS不能获取时间的问题</p> 
+                        <p>电子市场、GMail更新到最新版。</p> 
+						<br> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid">
+			<div class="mdui-table-fluid">
+				<table class="mdui-table">
+					<thead>
+						<tr>
+							<th>机型</th>
+							<th>MIUI版本</th>
+							<th>下载链接</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Nexus One G5</td>
+							<td></td>
+                            <td><a href="http://update.miuirom.com/updates/miui-n1-0.12.11.zip" id="r">miui-n1-0.12.11.zip</a></td>
+						</tr>
+						<tr>
+							<td>HTC Desire</td>
+							<td></td>
+                            <td><a href="http://update.miuirom.com/updates/miui-desire-0.12.11.zip" id="r">miui-desire-0.12.11.zip</a></td>
+						</tr>
+                        <tr>
+							<td>MOTO Milestone</td>
+							<td></td>
+                            <td><a href="http://update.miuirom.com/updates/miui-milestone-0.12.11.zip" id="r">miui-milestone-0.12.11.zip</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<br />
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<div style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;"> 
+			<div class="mdui-container-fluid"> 
+				<div class="mdui-row mdui-footer-nav"> 
+					<div class="mdui-col-xs-3"> 
+						<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3> 
+					</div> 
+					<div class="mdui-col-xs-4"> 
+						<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a> </h3> 
+					</div> 
+					<div class="mdui-col-xs-5"> 
+						<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3> 
+					</div> 
+				</div> 
+				<div class="mdui-divider footer-divider"></div> 
+				<p></p> 
+				<div class="mdui-text-center">
+					自 2019 - 至今 
+				</div> 
+				<div style=" position:absolute; right:20px;bottom:5px;"> 
+					<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+				</div> 
+			</div> 
+		</footer> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>

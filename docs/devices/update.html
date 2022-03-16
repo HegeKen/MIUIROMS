@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js""></script>
+		<style>
+		.mobile p {
+			size: 100px;
+			color:rgb(253, 100, 64);
+			font-size: 18px;
+		}
+
+		div a {
+			text-decoration: none;
+			color: black;
+		}
+	</style> 
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<title>机型列表 - MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../index.html">回到首页</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../tutorial.html">刷机教程</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../weekly/index.html">查看日志</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple  mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="index.html">机型列表</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../tools.html">刷机工具</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../thanks.html">衷心感谢</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../aboutme.html">站点日志</a> 
+						</div> </li> 
+					<li class="mdui-collapse-item"> 
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+							<i class="mdui-list-item-icon mdui-icon material-icons">link</i> 
+							<div class="mdui-list-item-content">
+								 友情链接 
+							</div> 
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
+						</div> 
+						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
+<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
+							<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li> 
+							<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li> 
+							<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li> 
+							<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li> 
+						</ul> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-deep-orange-accent" mdui-tab=""> 
+			<a href="#Xiaomi" class="mdui-ripple">小米机型</a> 
+			<a href="#Redmi" class="mdui-ripple mdui-text-capitalize">Redmi 机型</a> 
+			<a href="#POCO" class="mdui-ripple">POCO</a> 
+			<a href="#Router" class="mdui-ripple mdui-hidden">路由器</a> 
+		</div> 
+		<!-- <div class="mdui-chip">
+		<span class="mdui-chip-title"><a href="TEXT_HERE">TEXT_HERE</a></span>
+	</div> --> 
+		<!-- 小米机型展示 --> 
+		<div id="Xiaomi" class="mdui-p-a-2"> 
+			<div class="mobile"> 
+				<p>小米数字系列</p> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/dipper" target="_blank"><span class="mdui-chip-title">小米8(dipper)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/ursa" target="_blank"><span class="mdui-chip-title">小米8透明探索版(ursa)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/equuleus" target="_blank"><span class="mdui-chip-title">小米8屏幕指纹版(equuleus)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/platina" target="_blank"><span class="mdui-chip-title">小米8青春版(platina)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/cepheus" target="_blank"><span class="mdui-chip-title">小米9/透明版(cepheus)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/crux" target="_blank"><span class="mdui-chip-title">小米9 Pro 5G(crux)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/umi" target="_blank"><span class="mdui-chip-title">小米10(umi)</span> </a>
+				</div>
+                <div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/thyme" target="_blank"><span class="mdui-chip-title">小米10S(thyme)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/cmi" target="_blank"><span class="mdui-chip-title">小米10 Pro(cmi)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/vangogh" target="_blank"><span class="mdui-chip-title">小米10 青春版(vangogh)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/cas" target="_blank"><span class="mdui-chip-title">小米10 至尊纪念版(cas)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/monet" target="_blank"><span class="mdui-chip-title">小米10 Lite(monet)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/venus" target="_blank"><span class="mdui-chip-title">小米11(venus)</span> </a>
+				</div>
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/courbet" target="_blank"><span class="mdui-chip-title">小米11 Lite 4G(courbet)</span></a> 
+				</div>
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/renoir" target="_blank"><span class="mdui-chip-title">小米11 青春版(renoir)</span></a> 
+				</div>
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/lisa" target="_blank"><span class="mdui-chip-title">小米11 青春活力版(lisa)</span></a> 
+				</div>
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/star" target="_blank"><span class="mdui-chip-title">小米11 Pro/Ultra(star)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/agate" target="_blank"><span class="mdui-chip-title">小米11T(agate)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/vili" target="_blank"><span class="mdui-chip-title">小米11T Pro(vili)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/cupid" target="_blank"><span class="mdui-chip-title">小米12(cupid)</span> </a>
+				</div>
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/psyche" target="_blank"><span class="mdui-chip-title">小米12X(psyche)</span> </a>
+				</div>
+				<div class="mdui-chip"> 
+					<a href="https://xiaomifirmwareupdater.com/archive/miui/zeus" target="_blank"><span class="mdui-chip-title">小米12 Pro(zeus)</span></a> 
+				</div> 
+				<div> 
+					<p>SE系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/grus" target="_blank"><span class="mdui-chip-title">小米9 SE(grus)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>CC系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/pyxis" target="_blank"><span class="mdui-chip-title">小米CC9(pyxis)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/vela" target="_blank"><span class="mdui-chip-title">小米CC9美图定制版(vela)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/tucana" target="_blank"><span class="mdui-chip-title">小米CC9 Pro(tucana)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>Note系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/toco" target="_blank"><span class="mdui-chip-title">小米Note 10 Lite(toco)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>MIX系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/perseus" target="_blank"><span class="mdui-chip-title">小米MIX 3(perseus)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/andromeda" target="_blank"><span class="mdui-chip-title">小米MIX3 5G版(andromeda)</span> </a>
+					</div>
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/cetus" target="_blank"><span class="mdui-chip-title">小米MIX FOLD(cetus)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/odin" target="_blank"><span class="mdui-chip-title">小米MIX 4(odin)</span></a> 
+					</div> 
+				</div> 
+				<div> 
+					<p>平板系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/nabu" target="_blank"><span class="mdui-chip-title">小米平板5(nabu)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/enuma" target="_blank"><span class="mdui-chip-title">小米平板5 Pro 5G(enuma)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/elish" target="_blank"><span class="mdui-chip-title">小米平板5 Pro WiFi(elish)</span></a> 
+					</div> 
+				</div> 
+				<div> 
+					<p>其它</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/mona" target="_blank"><span class="mdui-chip-title">小米 Civi(mona)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/jasmine" target="_blank"><span class="mdui-chip-title">小米A2(jasmine_sprout)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/daisy" target="_blank"><span class="mdui-chip-title">小米A2 Lite(daisy)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/laurel" target="_blank"><span class="mdui-chip-title">小米A3(laurel_sprout)</span> </a>
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- Redmi机型展示 --> 
+		<div id="Redmi" class="mdui-p-a-2"> 
+			<div class="mobile"> 
+				<div> 
+					<p>Redmi 数字系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/onclite" target="_blank"><span class="mdui-chip-title">Redmi 7(onclite)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/pine" target="_blank"><span class="mdui-chip-title">Redmi 7A(pine)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/olive" target="_blank"><span class="mdui-chip-title">Redmi 8(olive)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/olivelite" target="_blank"><span class="mdui-chip-title">Redmi 8A(olivelite)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/olivewood" target="_blank"><span class="mdui-chip-title">Redmi 8A Dual(olivewood)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/lancelot" target="_blank"><span class="mdui-chip-title">Redmi 9(lancelot)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/cattail" target="_blank"><span class="mdui-chip-title">Redmi 9 Activ(cattail)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/dandelion" target="_blank"><span class="mdui-chip-title">Redmi 9A(dandelion)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/angelica" target="_blank"><span class="mdui-chip-title">Redmi 9C(angelica)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/angelican" target="_blank"><span class="mdui-chip-title">Redmi 9C NFC(angelican)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/merlin" target="_blank"><span class="mdui-chip-title">Redmi 10X 4G(merlin)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/atom" target="_blank"><span class="mdui-chip-title">Redmi 10X 5G(atom)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/bomb" target="_blank"><span class="mdui-chip-title">Redmi 10X Pro(bomb)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/selene" target="_blank"><span class="mdui-chip-title">Redmi 10/Prime(selene)</span></a> 
+					</div> 
+				</div> 
+				<div> 
+					<p>Redmi Note 系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/lavender" target="_blank"><span class="mdui-chip-title">Redmi Note 7(lavender)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/violet" target="_blank"><span class="mdui-chip-title">Redmi Note 7 Pro(violet)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/ginkgo" target="_blank"><span class="mdui-chip-title">Redmi Note 8(ginkgo)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/biloba" target="_blank"><span class="mdui-chip-title">Redmi Note 8 2021(biloba)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/willow" target="_blank"><span class="mdui-chip-title">Redmi Note 8T(willow)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/begonia" target="_blank"><span class="mdui-chip-title">Redmi Note 8 Pro(begonia)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/lime" target="_blank"><span class="mdui-chip-title">Redmi Note 9 4G(lime)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/cannon" target="_blank"><span class="mdui-chip-title">Redmi Note 9 5G(cannon)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/curtana" target="_blank"><span class="mdui-chip-title">Redmi Note 9S (curtana)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/gauguin" target="_blank"><span class="mdui-chip-title">Redmi Note 9 Pro(gauguin)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/joyeuse" target="_blank"><span class="mdui-chip-title">Redmi Note 9 Pro 国际(joyeuse)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/excalibur" target="_blank"><span class="mdui-chip-title">Redmi Note 9 Pro Max(excalibur)</span> </a>
+					</div>
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/camellia" target="_blank"><span class="mdui-chip-title">Redmi Note 10(camellia)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/curtana_rf" target="_blank"><span class="mdui-chip-title">Redmi Note 10 Lite (curtana)</span> </a>
+					</div> 
+                    <div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/chopin" target="_blank"><span class="mdui-chip-title">Redmi Note 10 Pro(chopin)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/rosemary" target="_blank"><span class="mdui-chip-title">Redmi Note 10S(rosemary)</span> </a>
+					</div> 
+                    <div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/mojito" target="_blank"><span class="mdui-chip-title">Redmi Note 10 国际(mojito)</span> </a>
+					</div> 
+                    <div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/sweet" target="_blank"><span class="mdui-chip-title">Redmi Note 10 Pro/Pro Max 国际(sweet)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/selenes" target="_blank"><span class="mdui-chip-title">Redmi Note 11 4G(selenes)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/evergo" target="_blank"><span class="mdui-chip-title">Redmi Note 11 5G(evergo)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/fleur" target="_blank"><span class="mdui-chip-title">Redmi Note 11S(fleur)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/pissarro" target="_blank"><span class="mdui-chip-title">Redmi Note 11 Pro/Pro+(pissarro)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/veux" target="_blank"><span class="mdui-chip-title">Redmi Note 11 Pro 5G(veux)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>Redmi K系列</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/davinci" target="_blank"><span class="mdui-chip-title">Redmi K20(davinci)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/raphael" target="_blank"><span class="mdui-chip-title">Redmi K20 Pro(raphael)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/raphaels" target="_blank"><span class="mdui-chip-title">Redmi K20 Pro尊享版(raphaels)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/phoenix" target="_blank"><span class="mdui-chip-title">Redmi K30 4G版(phoenix)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/picasso" target="_blank"><span class="mdui-chip-title">Redmi K30 5G版(picasso)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/picasso_48m" target="_blank"><span class="mdui-chip-title">Redmi K30i 5G版(picasso_48m)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/lmi" target="_blank"><span class="mdui-chip-title">Redmi K30 Pro(lmi)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/cezanne" target="_blank"><span class="mdui-chip-title">Redmi K30 至尊纪念版(cezanne)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/apollo" target="_blank"><span class="mdui-chip-title">Redmi K30S 至尊纪念版(apollo)</span></a>
+				    	</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/alioth" target="_blank"><span class="mdui-chip-title">Redmi K40(alioth)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/haydn" target="_blank"><span class="mdui-chip-title">Redmi K40 Pro(haydn)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/ares" target="_blank"><span class="mdui-chip-title">Redmi K40 游戏增强版(ares)</span></a> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<div id="POCO" class="mdui-p-a-2"> 
+				<div> 
+					<p>POCO F</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/lmi" target="_blank"><span class="mdui-chip-title">POCO F2 Pro (lmi)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/alioth" target="_blank"><span class="mdui-chip-title">POCO F3 (alioth) </span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/ares" target="_blank"><span class="mdui-chip-title">POCO F3 GT(ares) </span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>POCO C</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/angelica" target="_blank"><span class="mdui-chip-title">POCO C3 (angelica)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/angelica_c31" target="_blank"><span class="mdui-chip-title">POCO C31 (angelica_c31)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>POCO M</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/shiva" target="_blank"><span class="mdui-chip-title">POCO M2 (shiva)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/gram" target="_blank"><span class="mdui-chip-title">POCO M2 Pro (gram)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/citrus" target="_blank"><span class="mdui-chip-title">POCO M3 (citrus)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/fleur" target="_blank"><span class="mdui-chip-title">POCO M4 Pro 4G (fleur)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/evergreen" target="_blank"><span class="mdui-chip-title">POCO M4 Pro 5G (evergreen)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>POCO X</p> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/phoenix" target="_blank"><span class="mdui-chip-title">POCO X2 (phoenix)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/surya" target="_blank"><span class="mdui-chip-title">POCO X3 NFC (surya)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/chopin" target="_blank"><span class="mdui-chip-title">POCO X3 GT (chopin)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="https://xiaomifirmwareupdater.com/archive/miui/vayu" target="_blank"><span class="mdui-chip-title">POCO X3 Pro (vayu)</span> </a>
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- <div id="example1-tab3" class="mdui-p-a-2">images content</div> --> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>

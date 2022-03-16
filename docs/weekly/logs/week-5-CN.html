@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css" rel="stylesheet"> 
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script> 
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script> 
+		<style>
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+
+		p a {
+			text-decoration: none;
+		}
+		@media screen and (max-width: 500px){
+			.pc{
+				display: none;
+			}
+			.mobile{
+				display: show;
+			}
+		}
+		@media screen and (min-width: 501px){
+			.pc{
+				display: show;
+			}
+			.mobile{
+				display: none;
+			}
+		}
+	</style> 
+		<title>第005周开发版日志 - MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../index.html">回到首页</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../tutorial.html">刷机教程</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple  mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content">
+							<a href="../index.html">查看日志</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../devices/index.html">机型列表</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../tools.html">刷机工具</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../thanks.html">衷心感谢</a>
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content">
+							<a href="../../aboutme.html">站点日志</a>
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid"> 
+			<div> 
+				<div class="mdui-panel-item mdui-panel-item-open"> 
+					<div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">
+						【2010年9月17日】MIUI 第005周发布
+					</div> 
+					<div class="mdui-panel-item-body"> 
+						<p>论坛链接：<a href="https://www.miui.com/thread-1012-1-1.html">【2010年9月17日】MIUI 第005周发布</a></p> 
+						<p class="mdui-hidden">社区链接：<a href="TEXT_HERE">【2010年9月17日】MIUI 第005周发布</a></p> 
+						<p style="font-weight: bolder;">▍发布时间</p> 
+						<p>2010年9月17日</p> 
+						<br> 
+                        <p style="font-weight: bolder;">▍目前可能遇到的Bug</p> 
+						<ol>
+                            <li>FM在后台运行的时候，拔耳机有一定概率可能导致通话话筒和来电响铃没有音量，调节也失效。 这时候解决方法，进FM应用，手工切换一下外放和耳机，切到外放状态。然后拔耳机。关FM。</li>
+                            <li>没有插好耳机就开FM， 然后又没有继续插耳机听FM正常关掉。也会出现铃声音量从此失效，没有音量了。 解决方案：插好耳机后，进入FM，切换到外放，然后拔下耳机，退出FM。</li>
+                        </ol>
+                        <p>建议：尽可能不要在FM在后台的时候插拔耳机。在FM应用里面插拔耳机。然后自然关FM退出比较好。先插好耳机然后打开FM。</p>
+						<br> 
+						<p style="font-weight: bolder;">▍支持机型</p> 
+						<ul> 
+							<li>Nexus One G5 | HTC Desire</li> 
+						</ul> 
+						<hr> 
+						<br> 
+						<p style="font-weight: bolder;">▍更新日志</p> 
+						<br> 
+						<p style="font-weight: bolder;">【本周推荐功能】</p> 
+						<p>FM复古收音机</p> 
+						<br> 
+						<p style="font-weight: bolder;">【桌面】</p> 
+						<p>新增 通知栏快捷开关智能排序（需要使用一段时间学习用户行为模式后才能体现效果）</p> 
+                        <p>修改 电量充足时回到省电前设置</p> 
+                        <p>修改 省电模式下自动关闭2G、3G数据</p> 
+                        <p>修复 横屏下安装app导致Launcher出错</p> 
+						<br> 
+						<p style="font-weight: bolder;">【短信】</p> 
+						<p>新增 短信添加联系人支持多选操作。</p> 
+                        <p>新增 陌生人短信，在会话页面显示归属地。</p> 
+                        <p>修改 锁屏后短信解锁指向到短信主界面并关闭弹出窗口。</p> 
+                        <p>修改 新建短信，输入联系人光标焦点丢失问题。</p> 
+						<br> 
+                        <p style="font-weight: bolder;">【联系人】</p> 
+						<p>新增 群设铃声。</p> 
+                        <p>修复 编辑联系人头像出错问题。</p> 
+						<br> 
+                        <p style="font-weight: bolder;">【网盘】</p> 
+						<p>新增 点击可直接进入已安装程序。</p> 
+						<br> 
+                        <p style="font-weight: bolder;">【其它】</p> 
+						<p>新增 支持wma播放</p> 
+                        <p>新增 插入耳机后，标题栏显示耳机图标。</p> 
+                        <p>修复 cpu频率设置问题</p> 
+                        <p>修复 充电未满时绿灯亮的问题</p> 
+                        <p>修复 一些软件无法安装问题</p> 
+                        <p>修复 照相机像素只有300万的问题</p> 
+                        <p>更换 网络联接图标</p> 
+						<br> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<div class="mdui-container-fluid">
+			<div class="mdui-table-fluid">
+				<table class="mdui-table">
+					<thead>
+						<tr>
+							<th>机型</th>
+                            <th>MIUI版本</th>
+							<th>卡刷包</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Nexus One G5</td>
+                            <td>0.9.17</td>
+							<td><a href="http://u.115.com/file/f725486fbf" id="r">http://u.115.com/file/f725486fbf</a></td>
+						</tr>
+						<tr>
+							<td>HTC Desire</td>
+                            <td>0.9.17</td>
+							<td><a href="http://u.115.com/file/f7f7e0e8e5" id="r">http://u.115.com/file/f7f7e0e8e5</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<br />
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<div style=" position:absolute; right:20px;bottom: 5px;"> 
+			<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+		</div> 
+		<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;"> 
+			<div class="mdui-container-fluid"> 
+				<div class="mdui-row mdui-footer-nav"> 
+					<div class="mdui-col-xs-3"> 
+						<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3> 
+					</div> 
+					<div class="mdui-col-xs-4"> 
+						<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a> </h3> 
+					</div> 
+					<div class="mdui-col-xs-5"> 
+						<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3> 
+					</div> 
+				</div> 
+				<div class="mdui-divider footer-divider"></div> 
+				<p></p> 
+				<div class="mdui-text-center">
+					自 2019 - 至今 
+				</div> 
+				<div style=" position:absolute; right:20px;bottom:5px;"> 
+					<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1278047585'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278047585%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script> 
+				</div> 
+			</div> 
+		</footer> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>
