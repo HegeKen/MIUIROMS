@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="../assets/mdui/css/mdui.min.css" rel="stylesheet"> 
+		<script src="../assets/mdui/js/mdui.min.js"></script> 
+		<script src="../assets/jquery/jquery.min.js"></script>
+		<style>
+		.mobile p {
+			size: 100px;
+			color:rgb(253, 100, 64);
+			font-size: 18px;
+		}
+
+		div a {
+			text-decoration: none;
+			color: black;
+		}
+	</style> 
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	  </script> 
+		<title>机型列表 - MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../index.html">回到首页</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../tutorial.html">刷机教程</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../weekly/index.html">查看日志</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple  mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="index.html">机型列表</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../tools.html">刷机工具</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../thanks.html">衷心感谢</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../aboutme.html">站点日志</a> 
+						</div> </li> 
+					<li class="mdui-collapse-item"> 
+						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+							<i class="mdui-list-item-icon mdui-icon material-icons">link</i> 
+							<div class="mdui-list-item-content">
+								 友情链接 
+							</div> 
+							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
+						</div> 
+						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
+							<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
+							<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li> 
+							<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li> 
+							<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li> 
+							<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li> 
+						</ul> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-deep-orange-accent" mdui-tab=""> 
+			<a href="#Xiaomi" class="mdui-ripple">小米机型</a> 
+			<a href="#Redmi" class="mdui-ripple mdui-text-capitalize">Redmi 机型</a> 
+			<a href="#POCO" class="mdui-ripple">POCO</a> 
+			<a href="#Router" class="mdui-ripple mdui-hidden">路由器</a> 
+		</div> 
+		<!-- <div class="mdui-chip">
+		<span class="mdui-chip-title"><a href="TEXT_HERE">TEXT_HERE</a></span>
+	</div> --> 
+		<!-- 小米机型展示 --> 
+		<div id="Xiaomi" class="mdui-p-a-2"> 
+			<div class="mobile"> 
+				<p>小米数字系列</p> 
+				<div class="mdui-chip"> 
+					<a href="cepheus.html" target="_blank"><span class="mdui-chip-title">小米9/透明版(cepheus)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="crux.html" target="_blank"><span class="mdui-chip-title">小米9 Pro 5G(crux)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="umi.html" target="_blank"><span class="mdui-chip-title">小米10(umi)</span> </a>
+				</div>
+                <div class="mdui-chip"> 
+					<a href="thyme.html" target="_blank"><span class="mdui-chip-title">小米10S(thyme)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="cmi.html" target="_blank"><span class="mdui-chip-title">小米10 Pro(cmi)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="vangogh.html" target="_blank"><span class="mdui-chip-title">小米10 青春版(vangogh)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="cas.html" target="_blank"><span class="mdui-chip-title">小米10 至尊纪念版(cas)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="monet.html" target="_blank"><span class="mdui-chip-title">小米10 Lite(monet)</span> </a>
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="venus.html" target="_blank"><span class="mdui-chip-title">小米11(venus)</span> </a>
+				</div>
+				<div class="mdui-chip"> 
+					<a href="courbet.html" target="_blank"><span class="mdui-chip-title">小米11 Lite 4G(courbet)</span></a> 
+				</div>
+				<div class="mdui-chip"> 
+					<a href="renoir.html" target="_blank"><span class="mdui-chip-title">小米11 青春版(renoir)</span></a> 
+				</div>
+				<div class="mdui-chip"> 
+					<a href="lisa.html" target="_blank"><span class="mdui-chip-title">小米11 青春活力版(lisa)</span></a> 
+				</div>
+				<div class="mdui-chip"> 
+					<a href="star.html" target="_blank"><span class="mdui-chip-title">小米11 Pro/Ultra(star)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="agate.html" target="_blank"><span class="mdui-chip-title">小米11T(agate)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="vili.html" target="_blank"><span class="mdui-chip-title">小米11T Pro(vili)</span></a> 
+				</div> 
+				<div class="mdui-chip"> 
+					<a href="cupid.html" target="_blank"><span class="mdui-chip-title">小米12(cupid)</span> </a>
+				</div>
+				<div class="mdui-chip"> 
+					<a href="psyche.html" target="_blank"><span class="mdui-chip-title">小米12X(psyche)</span> </a>
+				</div>
+				<div class="mdui-chip"> 
+					<a href="zeus.html" target="_blank"><span class="mdui-chip-title">小米12 Pro(zeus)</span></a> 
+				</div> 
+				<div> 
+					<p>CC系列</p> 
+					<div class="mdui-chip"> 
+						<a href="tucana.html" target="_blank"><span class="mdui-chip-title">小米CC9 Pro(tucana)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>Note系列</p> 
+					<div class="mdui-chip"> 
+						<a href="toco.html" target="_blank"><span class="mdui-chip-title">小米Note 10 Lite(toco)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>MIX系列</p> 
+					<div class="mdui-chip"> 
+						<a href="cetus.html" target="_blank"><span class="mdui-chip-title">小米MIX FOLD(cetus)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="odin.html" target="_blank"><span class="mdui-chip-title">小米MIX 4(odin)</span></a> 
+					</div> 
+				</div> 
+				<div> 
+					<p>平板系列</p> 
+					<div class="mdui-chip"> 
+						<a href="nabu.html" target="_blank"><span class="mdui-chip-title">小米平板5(nabu)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="enuma.html" target="_blank"><span class="mdui-chip-title">小米平板5 Pro 5G(enuma)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="elish.html" target="_blank"><span class="mdui-chip-title">小米平板5 Pro WiFi(elish)</span></a> 
+					</div> 
+				</div> 
+				<div> 
+					<p>其它</p> 
+					<div class="mdui-chip"> 
+						<a href="mona.html" target="_blank"><span class="mdui-chip-title">小米 Civi(mona)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="laurel_sprout.html" target="_blank"><span class="mdui-chip-title">小米A3(laurel_sprout)</span> </a>
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- Redmi机型展示 --> 
+		<div id="Redmi" class="mdui-p-a-2"> 
+			<div class="mobile"> 
+				<div> 
+					<p>Redmi 数字系列</p> 
+					<div class="mdui-chip"> 
+						<a href="onclite.html" target="_blank"><span class="mdui-chip-title">Redmi 7(onclite)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="pine.html" target="_blank"><span class="mdui-chip-title">Redmi 7A(pine)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="olive.html" target="_blank"><span class="mdui-chip-title">Redmi 8(olive)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="olivelite.html" target="_blank"><span class="mdui-chip-title">Redmi 8A(olivelite)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="olivewood.html" target="_blank"><span class="mdui-chip-title">Redmi 8A Dual(olivewood)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="lancelot.html" target="_blank"><span class="mdui-chip-title">Redmi 9(lancelot)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="cattail.html" target="_blank"><span class="mdui-chip-title">Redmi 9 Activ(cattail)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="dandelion.html" target="_blank"><span class="mdui-chip-title">Redmi 9A(dandelion)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="angelica.html" target="_blank"><span class="mdui-chip-title">Redmi 9C(angelica)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="angelican.html" target="_blank"><span class="mdui-chip-title">Redmi 9C NFC(angelican)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="merlin.html" target="_blank"><span class="mdui-chip-title">Redmi 10X 4G(merlin)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="atom.html" target="_blank"><span class="mdui-chip-title">Redmi 10X 5G(atom)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="bomb.html" target="_blank"><span class="mdui-chip-title">Redmi 10X Pro(bomb)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="selene.html" target="_blank"><span class="mdui-chip-title">Redmi 10/Prime(selene)</span></a> 
+					</div> 
+				</div> 
+				<div> 
+					<p>Redmi Note 系列</p> 
+					<div class="mdui-chip"> 
+						<a href="lavender.html" target="_blank"><span class="mdui-chip-title">Redmi Note 7(lavender)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="violet.html" target="_blank"><span class="mdui-chip-title">Redmi Note 7 Pro(violet)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="ginkgo.html" target="_blank"><span class="mdui-chip-title">Redmi Note 8(ginkgo)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="biloba.html" target="_blank"><span class="mdui-chip-title">Redmi Note 8 2021(biloba)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="willow.html" target="_blank"><span class="mdui-chip-title">Redmi Note 8T(willow)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="begonia.html" target="_blank"><span class="mdui-chip-title">Redmi Note 8 Pro(begonia)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="lime.html" target="_blank"><span class="mdui-chip-title">Redmi Note 9 4G(lime)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="cannon.html" target="_blank"><span class="mdui-chip-title">Redmi Note 9 5G(cannon)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="curtana.html" target="_blank"><span class="mdui-chip-title">Redmi Note 9S (curtana)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="gauguin.html" target="_blank"><span class="mdui-chip-title">Redmi Note 9 Pro(gauguin)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="joyeuse.html" target="_blank"><span class="mdui-chip-title">Redmi Note 9 Pro 国际(joyeuse)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="excalibur.html" target="_blank"><span class="mdui-chip-title">Redmi Note 9 Pro Max(excalibur)</span> </a>
+					</div>
+					<div class="mdui-chip"> 
+						<a href="camellia.html" target="_blank"><span class="mdui-chip-title">Redmi Note 10(camellia)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="curtana_rf.html" target="_blank"><span class="mdui-chip-title">Redmi Note 10 Lite (curtana)</span> </a>
+					</div> 
+                    <div class="mdui-chip"> 
+						<a href="chopin.html" target="_blank"><span class="mdui-chip-title">Redmi Note 10 Pro(chopin)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="rosemary.html" target="_blank"><span class="mdui-chip-title">Redmi Note 10S(rosemary)</span> </a>
+					</div> 
+                    <div class="mdui-chip"> 
+						<a href="mojito.html" target="_blank"><span class="mdui-chip-title">Redmi Note 10 国际(mojito)</span> </a>
+					</div> 
+                    <div class="mdui-chip"> 
+						<a href="sweet.html" target="_blank"><span class="mdui-chip-title">Redmi Note 10 Pro/Pro Max 国际(sweet)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="selenes.html" target="_blank"><span class="mdui-chip-title">Redmi Note 11 4G(selenes)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="evergo.html" target="_blank"><span class="mdui-chip-title">Redmi Note 11 5G(evergo)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="fleur.html" target="_blank"><span class="mdui-chip-title">Redmi Note 11S(fleur)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="spes.html" target="_blank"><span class="mdui-chip-title">Redmi Note 11 国际版(spes)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="spesn.html" target="_blank"><span class="mdui-chip-title">Redmi Note 11 NFC 国际版(spesn)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="pissarro.html" target="_blank"><span class="mdui-chip-title">Redmi Note 11 Pro/Pro+(pissarro)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="veux.html" target="_blank"><span class="mdui-chip-title">Redmi Note 11 Pro 5G(veux)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>Redmi K系列</p> 
+					<div class="mdui-chip"> 
+						<a href="phoenix.html" target="_blank"><span class="mdui-chip-title">Redmi K30 4G版(phoenix)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="picasso.html" target="_blank"><span class="mdui-chip-title">Redmi K30 5G版(picasso)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="picasso_48m.html" target="_blank"><span class="mdui-chip-title">Redmi K30i 5G版(picasso_48m)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="lmi.html" target="_blank"><span class="mdui-chip-title">Redmi K30 Pro(lmi)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="cezanne.html" target="_blank"><span class="mdui-chip-title">Redmi K30 至尊纪念版(cezanne)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="apollo.html" target="_blank"><span class="mdui-chip-title">Redmi K30S 至尊纪念版(apollo)</span></a>
+				    	</div> 
+					<div class="mdui-chip"> 
+						<a href="alioth.html" target="_blank"><span class="mdui-chip-title">Redmi K40(alioth)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="haydn.html" target="_blank"><span class="mdui-chip-title">Redmi K40 Pro(haydn)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="ares.html" target="_blank"><span class="mdui-chip-title">Redmi K40 游戏增强版(ares)</span></a> 
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="ingres.html" target="_blank"><span class="mdui-chip-title">Redmi K50 电竞版(ingres)</span></a> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<div id="POCO" class="mdui-p-a-2"> 
+				<div> 
+					<p>POCO F</p> 
+					<div class="mdui-chip"> 
+						<a href="lmi.html" target="_blank"><span class="mdui-chip-title">POCO F2 Pro (lmi)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="alioth.html" target="_blank"><span class="mdui-chip-title">POCO F3 (alioth) </span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="ares.html" target="_blank"><span class="mdui-chip-title">POCO F3 GT(ares) </span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="ingres.html" target="_blank"><span class="mdui-chip-title">POCO F4 GT(ingres) </span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>POCO C</p> 
+					<div class="mdui-chip"> 
+						<a href="angelica.html" target="_blank"><span class="mdui-chip-title">POCO C3 (angelica)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="angelica_c31.html" target="_blank"><span class="mdui-chip-title">POCO C31 (angelica_c31)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>POCO M</p> 
+					<div class="mdui-chip"> 
+						<a href="shiva.html" target="_blank"><span class="mdui-chip-title">POCO M2 (shiva)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="gram.html" target="_blank"><span class="mdui-chip-title">POCO M2 Pro (gram)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="citrus.html" target="_blank"><span class="mdui-chip-title">POCO M3 (citrus)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="fleur.html" target="_blank"><span class="mdui-chip-title">POCO M4 Pro 4G (fleur)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="evergreen.html" target="_blank"><span class="mdui-chip-title">POCO M4 Pro 5G (evergreen)</span> </a>
+					</div> 
+				</div> 
+				<div> 
+					<p>POCO X</p> 
+					<div class="mdui-chip"> 
+						<a href="phoenix.html" target="_blank"><span class="mdui-chip-title">POCO X2 (phoenix)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="surya.html" target="_blank"><span class="mdui-chip-title">POCO X3 NFC (surya)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="chopin.html" target="_blank"><span class="mdui-chip-title">POCO X3 GT (chopin)</span> </a>
+					</div> 
+					<div class="mdui-chip"> 
+						<a href="vayu.html" target="_blank"><span class="mdui-chip-title">POCO X3 Pro (vayu)</span> </a>
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>

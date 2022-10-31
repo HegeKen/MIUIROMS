@@ -1,0 +1,17 @@
+Redmi K50 Pro:
+miui_MATISSE_V13.0.4.1.22.DEV_1218c98e51_12.0.zip
+miui_MATISSE_V13.0.9.1.23.DEV_8bd31d8dee_12.0.zip
+miui_MATISSE_V13.0.11.1.27.DEV_1f20fa43b3_12.0.zip
+
+
+Redmi K50:
+miui_RUBENS_V13.0.7.1.22.DEV_0ae5a441d3_12.0.zip
+rubens_images_V13.0.7.1.22.DEV_20220328.0000.00_12.0_cn_ee2087e82b.tgz
+miui_RUBENS_V13.0.7.1.23.DEV_76f57d3d93_12.0.zip
+miui_RUBENS_V13.0.8.1.26.DEV_ebd764789d_12.0.zip
+
+
+Redmi K40S:
+miui_MUNCH_V13.0.5.1.22.DEV_2b4fd8805c_12.0.zip
+miui_MUNCH_V13.0.6.1.26.DEV_1a0694af6e_12.0.zip
+miui_MUNCH_V13.0.6.1.27.DEV_3e603ff005_12.0.zip

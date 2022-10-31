@@ -1,0 +1,51 @@
+{
+    "supports":{
+        "mi":{
+            "text_cns":"小米数字系列",
+            "text_cnt":"小米數位系列",
+            "text_eng":"Mi Series",
+            "devices":{
+                "gemini":{
+                    "name_cns":"小米5",
+                    "name_cnt":"小米5",
+                    "name_eng":"Mi 5"
+                },
+               "capricorn":{
+                    "name_cns":"小米5S",
+                    "name_cnt":"小米5S",
+                    "name_eng":"Mi 5S"
+                },
+               "natrium":{
+                    "name_cns":"小米5S Plus",
+                    "name_cnt":"小米5S Plus",
+                    "name_eng":"Mi 5S Plus"
+                },
+               "meri":{
+                    "name_cns":"小米5C",
+                    "name_cnt":"小米5C",
+                    "name_eng":"Mi 5C"
+                },
+               "tiffany":{
+                    "name_cns":"小米5X",
+                    "name_cnt":"小米5X",
+                    "name_eng":"Mi 5X"
+                },
+               "sagit":{
+                    "name_cns":"小米6",
+                    "name_cnt":"小米6",
+                    "name_eng":"Mi 6"
+                },
+               "wayne":{
+                    "name_cns":"小米6X",
+                    "name_cnt":"小米6X",
+                    "name_eng":"Mi 6X"
+                },
+               "venus":{
+                    "name_cns":"小米11",
+                    "name_cnt":"小米11",
+                    "name_eng":"Mi 11"
+                }          
+            }
+        }
+    }
+}

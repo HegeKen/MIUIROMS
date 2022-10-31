@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh"> 
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="assets/mdui/css/mdui.min.css" rel="stylesheet"> 
+		<script src="assets/mdui/js/mdui.min.js"></script> 
+		<script src="assets/jquery/jquery.min.js"></script>
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<title>获取稳定版最新版本 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<div> 
+			<script type="text/javascript">
+			$.ajax({
+				//请求方式
+				type : "GET",
+				//文件位置
+				url : "../data/devices.json",
+				//返回数据格式为json,也可以是其他格式如
+				dataType : "JSON",
+				//请求成功后要执行的函数，拼接html
+				success:function(data){
+				    //alert(data);
+					console.log(data);
+            	}
+			});
+			</script>
+		</div>  
+		
+	<div class="div1"></div>
+	</body>
+</html>

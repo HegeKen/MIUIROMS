@@ -1,0 +1,43 @@
+{
+    "info":{
+        "codename":"venus",
+        "CNS":"小米11",
+        "CNT":"小米11",
+        "ENG":"Mi 11"
+    },
+    "branches":{
+        "CN_STABLE":{
+        "CNS":"大陆稳定版",
+        "CNT":"大陸穩定版",
+        "ENG":"China Mainland Stable"
+        }
+    },
+    "roms":{
+        "CN_STABLE":{
+            "V12.0.17.0.RKBCNXM":{
+                "MIUI":"MIUI12",
+                "Android":"11.0",
+                "recovery":"miui_VENUS_V12.0.17.0.RKBCNXM_b654820651_11.0.zip",
+                "fastboot":"venus_images_V12.0.17.0.RKBCNXM_20210115.0000.00_11.0_cn_a7e08081d4.tgz"
+            },
+			"V12.0.16.0.RKBCNXM":{
+             	"MIUI":"MIUI12",
+                "Android":"11.0",
+				"recovery":"miui_VENUS_V12.0.16.0.RKBCNXM_84865bd2a8_11.0.zip",
+                "fastboot":""
+			},
+			"V12.0.13.0.RKBCNXM":{
+             	"MIUI":"MIUI12",
+                "Android":"11.0",
+				"recovery":"miui_VENUS_V12.0.13.0.RKBCNXM_f3ce7d5c25_11.0.zip",
+                "fastboot":""
+			},
+			"V12.0.12.0.RKBCNXM":{
+             	"MIUI":"MIUI12",
+                "Android":"11.0",
+				"recovery":"miui_VENUS_V12.0.12.0.RKBCNXM_ac944cedc8_11.0.zip",
+                "fastboot":"venus_images_V12.0.12.0.RKBCNXM_20201230.0000.00_11.0_cn_6d36d7a7ca.tgz"
+			}
+        }
+    }
+}

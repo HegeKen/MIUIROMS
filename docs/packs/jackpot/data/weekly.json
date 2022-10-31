@@ -1,0 +1,95 @@
+{
+    "latest":"505",
+    "weeks":[{
+            "ver":"MIUI 12.5",
+            "date":["",""],
+            "ends":"505",
+            "starts":"481",
+            "included":["506","505","504","503","502","501","500","499","498","497","496","495","494","493","492","491","490","489","488","487","486","485","484","483","482","481"]
+        },
+        {
+            "ver":"MIUI 12",
+            "date":["",""],
+            "ends":"480",
+            "starts":"452",
+            "included":[]
+        },
+        {
+            "ver":"MIUI 11",
+            "date":["",""],
+            "ends":"451",
+            "starts":"431",
+            "included":[]
+        },
+        {
+            "ver":"MIUI 10",
+            "date":["",""],
+            "ends":"430",
+            "starts":"375",
+            "included":[]
+        },
+        {
+            "ver":"MIUI 9",
+            "date":["",""],
+            "ends":"374",
+            "starts":"343",
+            "included":[]
+        },
+        {
+            "ver":"MIUI 8",
+            "date":["",""],
+            "ends":"342",
+            "starts":"289",
+            "included":[]
+        },
+        {
+            "ver":"MIUI 7",
+            "date":["",""],
+            "ends":"288",
+            "starts":"250",
+            "included":[]
+        },
+        {
+            "ver":"MIUI 6",
+            "date":["",""],
+            "ends":"249",
+            "starts":"201",
+            "included":[]
+        },
+        {
+            "ver":"MIUI V5",
+            "date":["",""],
+            "ends":"200",
+            "starts":"128",
+            "included":[]
+        },
+        {
+            "ver":"MIUI V4",
+            "date":["",""],
+            "ends":"127",
+            "starts":"74",
+            "included":[]
+        },
+        {
+            "ver":"MIUI V3",
+            "date":["",""],
+            "ends":"73",
+            "starts":"31",
+            "included":[]
+        },
+        {
+            "ver":"MIUI V2",
+            "date":["",""],
+            "ends":"30",
+            "starts":"10",
+            "included":[]
+        },
+        {
+            "ver":"MIUI V1",
+            "date":["",""],
+            "ends":"9",
+            "starts":"1",
+            "included":[]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+# This is a comment
+/secure/page
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+/static/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet
+
+https://myproject.pages.dev/*
+  X-Robots-Tag: noindex

@@ -1,0 +1,14 @@
+body {
+    font-family: "MISans";
+}
+
+li a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+
+p a {
+    text-decoration: none;
+    color: blue;
+}

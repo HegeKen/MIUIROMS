@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言检测中 -- Predicting Language</title>
+</head>
+
+<body>
+    <script>
+        var jsSrc = (navigator.language || navigator.browserLanguage).toLowerCase();
+        if (jsSrc.indexOf('zh') >= 0) {
+            window.location.href = "cn/index.html";
+        }
+        else {
+            window.location.href = "en/index.html";
+        }
+    </script>
+</body>
+
+</html>
