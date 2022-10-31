@@ -1,6 +1,6 @@
 # MIUI官方ROM仓库
 
-### 网站地址：https://roms.miuier.com  
+### 网站地址：https://roms.miuier.com(Test)  
 ### 网站作者：海格Hege  
 ### 衷心感谢：  
 
