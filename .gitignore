@@ -1,4 +1,2 @@
-node_modules
-miuirom
-docs/test
-docs/aspnet_client
+/aspnet_client
+/web.config
