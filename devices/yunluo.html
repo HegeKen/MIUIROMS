@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="zh">
+	<head> 
+		<meta charset="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+		<link href="../assets/mdui/css/mdui.min.css" rel="stylesheet"> 
+		<script src="../assets/mdui/js/mdui.min.js"></script> 
+		<script src="../assets/jquery/jquery.min.js"></script>
+		<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script> 
+		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
+		<!-- Global site tag (gtag.js) - Google Analytics --> 
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script> 
+		<style>
+		li a {
+			text-decoration: none;
+			color: blue;
+		}
+
+		td a {
+			text-decoration: none;
+			color: black;
+		}
+	</style> 
+		<title>Redmi Pad(yunluo)官方ROM合集 -- MIUI官方ROM仓库</title> 
+	</head> 
+	<body> 
+		<script type="text/javascript">
+		$(document).ready(function () {
+			let height = $(document).width();
+			if (height < "550") {
+				$("td #r").text("卡刷包");
+				$("td #f").text("线刷包");
+			}
+		})
+	</script> 
+		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
+			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
+			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
+			<div class="mdui-toolbar-spacer"></div> 
+			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
+				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../index.html">回到首页</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">adb</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../tutorial.html">刷机教程</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../weekly/index.html">查看日志</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="index.html">机型列表</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../tools.html">刷机工具</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../thanks.html">衷心感谢</a> 
+						</div> </li> 
+					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
+						<div class="mdui-list-item-content"> 
+							<a href="../aboutme.html">站点日志</a> 
+						</div> </li> 
+				</ul> 
+			</div> 
+		</div> 
+		<div class="mdui-panel mdui-panel-gapless"> 
+			<div class="mdui-panel-item mdui-panel-item-open"> 
+				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+					 注： 
+				</div> 
+				<div class="mdui-panel-item-body"> 
+					<ol> 
+						<li>机型名称：Redmi Pad</li> 
+						<li>机型代号：yunluo</li> 
+						<li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
+						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
+						<!-- <li>第三方Recovery:<a href="">百度网盘</a>，提取码：，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a
+							href="https://www.weibo.com/u/6033736159">wzsx150</a></li>
+					<li>第三方Recovery:<a href="">TWRP官方</a></li>
+					<li>第三方Recovery:<a href="">橙狐测试版</a>，<a href="">橙狐稳定版</a></li>
+					<br> --> 
+					</ol> 
+				</div> 
+			</div> 
+		</div> 
+		<!-- 由此向下区域为ROM的正式内容 --> 
+		<br> 
+		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
+			<a href="#TW_STABLE" class="mdui-ripple">台湾稳定版</a> 
+			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
+			<a href="#EEA_STABLE" class="mdui-ripple">欧洲稳定版</a> 
+			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
+			<a href="#IN_STABLE" class="mdui-ripple">印度稳定版</a> 
+		</div> 
+		<br> 
+		<div class="mdui-table-fluid" id="TW_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">台湾稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>5</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>4</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>3</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>2</td> 
+						<td>V13.1.2.0.SLYTWXM</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYTWXM/miui_YUNLUOTWGlobal_V13.1.2.0.SLYTWXM_6d2b5a3023_12.0.zip" id="r">miui_YUNLUOTWGlobal_V13.1.2.0.SLYTWXM_6d2b5a3023_12.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYTWXM/yunluo_tw_global_images_V13.1.2.0.SLYTWXM_20221019.0000.00_12.0_global_5ce608ce4e.tgz" id="f">yunluo_tw_global_images_V13.1.2.0.SLYTWXM_20221019.0000.00_12.0_global_5ce608ce4e.tgz</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V13.1.1.0.SLYTWXM</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.1.0.SLYTWXM/miui_YUNLUOTWGlobal_V13.1.1.0.SLYTWXM_e37a1e3250_12.0.zip" id="r">miui_YUNLUOTWGlobal_V13.1.1.0.SLYTWXM_e37a1e3250_12.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.1.0.SLYTWXM/yunluo_tw_global_images_V13.1.1.0.SLYTWXM_20220907.0000.00_12.0_global_ef6608941d.tgz" id="f">yunluo_tw_global_images_V13.1.1.0.SLYTWXM_20220907.0000.00_12.0_global_ef6608941d.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="GB_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">国际稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>5</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>4</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>3</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>2</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V13.1.4.0.SLYMIXM</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.4.0.SLYMIXM/miui_YUNLUOGlobal_V13.1.4.0.SLYMIXM_ebb88d24cd_12.0.zip" id="r">miui_YUNLUOGlobal_V13.1.4.0.SLYMIXM_ebb88d24cd_12.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.4.0.SLYMIXM/yunluo_global_images_V13.1.4.0.SLYMIXM_20220922.0000.00_12.0_global_c8b7819d44.tgz" id="f">yunluo_global_images_V13.1.4.0.SLYMIXM_20220922.0000.00_12.0_global_c8b7819d44.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="EEA_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">欧洲稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>5</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>4</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>3</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>2</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V13.1.2.0.SLYEUXM</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYEUXM/miui_YUNLUOEEAGlobal_V13.1.2.0.SLYEUXM_2cf3e2e6b4_12.0.zip" id="r">miui_YUNLUOEEAGlobal_V13.1.2.0.SLYEUXM_2cf3e2e6b4_12.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYEUXM/yunluo_eea_global_images_V13.1.2.0.SLYEUXM_20220927.0000.00_12.0_eea_01b77e705b.tgz" id="f">yunluo_eea_global_images_V13.1.2.0.SLYEUXM_20220927.0000.00_12.0_eea_01b77e705b.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="RU_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">俄罗斯稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>5</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>4</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>3</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>2</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V13.1.2.0.SLYRUXM</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYRUXM/miui_YUNLUORUGlobal_V13.1.2.0.SLYRUXM_6e5d1627fe_12.0.zip" id="r">miui_YUNLUORUGlobal_V13.1.2.0.SLYRUXM_6e5d1627fe_12.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYRUXM/yunluo_ru_global_images_V13.1.2.0.SLYRUXM_20220929.0000.00_12.0_global_d4eb43175c.tgz" id="f">yunluo_ru_global_images_V13.1.2.0.SLYRUXM_20220929.0000.00_12.0_global_d4eb43175c.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<div class="mdui-table-fluid" id="IN_STABLE"> 
+			<table class="mdui-table"> 
+				<thead> 
+					<tr> 
+						<th class="mdui-text-color-red">印度稳定版</th> 
+						<th>MIUI版本</th> 
+						<th>Android版本</th> 
+						<th>卡刷包</th> 
+						<th>线刷包</th> 
+					</tr> 
+				</thead> 
+				<tbody> 
+					<tr class="mdui-hidden"> 
+						<td>10</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>9</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>8</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>7</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>6</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>5</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>4</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>3</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr class="mdui-hidden"> 
+						<td>2</td> 
+						<td>TEXT_HERE</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
+						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td> 
+					</tr> 
+					<tr> 
+						<td>1</td> 
+						<td>V13.1.2.0.SLYINXM</td> 
+						<td>12.0</td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYINXM/miui_YUNLUOINGlobal_V13.1.2.0.SLYINXM_67084afb98_12.0.zip" id="r">miui_YUNLUOINGlobal_V13.1.2.0.SLYINXM_67084afb98_12.0.zip</a></td> 
+						<td><a href="https://bigota.d.miui.com/V13.1.2.0.SLYINXM/yunluo_in_global_images_V13.1.2.0.SLYINXM_20220927.0000.00_12.0_in_c0c1647ba4.tgz" id="f">yunluo_in_global_images_V13.1.2.0.SLYINXM_20220927.0000.00_12.0_in_c0c1647ba4.tgz</a></td> 
+					</tr> 
+				</tbody> 
+			</table> 
+		</div> 
+		<!-- 由此向下区域为底部Footer的内容 --> 
+		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
+			
+		</div> 
+		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
+	</body>
+</html>

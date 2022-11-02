@@ -1,5 +1,16 @@
+https://new.c.mi.com/global/miuidownload/detail/guide/global
+
+新机型：
+POCO M5/Redmi 11 Prime 4G	rock    
+
+
+
+
+
+老机型：
 MI 1S	mione
 Mi 2A	taurus
+MI 2S	aries
 MI 3 TD	pisces
 MI 4i	ferrari
 Mi 4c	libra
@@ -9,6 +20,7 @@ Mi Max	hydrogen
 Mi Max Prime	helium
 MiPad 1	mocha
 Mi Pad 3	cappu
+
 Redmi 1	HM2013022
 Redmi 1 W	HM2013023
 Redmi 1S	armani
@@ -24,28 +36,4 @@ Redmi 4A	rolex
 
 Redmi Note 3G/Redmi Note 1 TD	lcsh92
 Redmi Note 1S 4G	gucci
-
-Xiaomi Civi 1S	zijin
-Redmi 10C	fog
-Redmi Note 11E	light
-Redmi Note 11S 5G	opal
-Redmi Note 11 Pro 4G	viva
-Redmi K40S	munch
-Redmi K50	rubens
-Redmi K50 Pro	matisse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Redmi Pro
