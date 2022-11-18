@@ -1,0 +1,24 @@
+{
+  "sitemap.xml": {
+    "Protocol": "https",
+    "DomainName": "roms.miuier.com",
+    "Root": "./",
+    "IncludeExt": [
+      ".html"
+    ],
+    "Exclude": [
+    ],
+    "TagsToInclude": [
+      "priority",
+      "lastmod",
+      "changefreq"
+    ],
+    "DefaultChangeFrequency": "weekly",
+    "TabCharacters": "\t",
+    "bIncludeWWW": false,
+    "bRemoveFileExtentions": false,
+    "bUseTrailingSlash": false,
+    "bAutomaticallyUpdateSitemap": true,
+    "bMinimized": false
+  }
+}
