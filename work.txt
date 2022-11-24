@@ -1,11 +1,5 @@
 https://new.c.mi.com/global/miuidownload/detail/guide/global
-
-新机型：
-POCO M5/Redmi 11 Prime 4G	rock    
-
-
-
-
+  
 
 老机型：
 MI 1S	mione
@@ -36,4 +30,4 @@ Redmi 4A	rolex
 
 Redmi Note 3G/Redmi Note 1 TD	lcsh92
 Redmi Note 1S 4G	gucci
-Redmi Pro
+Redmi Pro omega

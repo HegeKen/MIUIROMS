@@ -3,44 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link href="../../assets/mdui/css/mdui.min.css" rel="stylesheet"> 
-		<script src="../../assets/mdui/js/mdui.min.js"></script> 
-		<script src="../../assets/jquery/jquery.min.js"></script>
-    <meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='msvalidate.01' content='D0A12F85D732BE57318CA28F52500432'>
+    <meta name='chinaz-site-verification' content='5BDB6F3CEC5D6F6F'>
+    <meta name='google-site-verification' content='1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q'>
+    <link href="https://roms.miuier.com/assets/mdui/css/mdui.min.css" rel="stylesheet">
+    <script src="https://roms.miuier.com/assets/mdui/js/mdui.min.js"></script>
+    <script src="https://roms.miuier.com/assets/jquery/jquery.min.js"></script>
+    <link href="https://roms.miuier.com/assets/miuiroms.css" rel="stylesheet">
+    <script src="https://roms.miuier.com/assets/miuiroms.js"></script>
+    <link href='https://font.sec.miui.com/font/css?family=MiSans:300,450,500,650:Chinese_Simplify,Latin&display=swap' rel='stylesheet'>
+    <link rel='icon' type='image/x-icon' href='https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/favicon.ico'>
+    <script async src='https://www.googletagmanager.com/gtag/js?id=UA-153213840-1'></script>
+    <script>
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "ecb8j7x9aw");
+    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-153213840-1');
     </script>
-    <style>
-        td a {
-            text-decoration: none;
-            color: black;
-        }
-        p a{
-            text-decoration: none;
-        }
-    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
     <title>第431周开发版日志 - MIUI官方ROM仓库</title>
 </head>
 
 <body>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            let height = $(document).width();
-            if (height < "550") {
-                $("td a").text("卡刷包");
-            }
-        })
-    </script>
     <div class="mdui-toolbar mdui-color-deep-orange-accent">
-        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i
-                class="mdui-icon material-icons">menu</i></button>
+        <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close><i class="mdui-icon material-icons">menu</i></button>
         <span class="mdui-typo-headline">MIUI官方ROM仓库</span>
         <div class="mdui-toolbar-spacer"></div>
         <div class="mdui-drawer mdui-drawer-close" id="main-drawer">
@@ -156,215 +159,217 @@
         </div>
     </div>
     <div class="mdui-container-fluid">
-            <div class="mdui-table-fluid">
-                <table class="mdui-table">
-                    <thead>
-                        <tr>
-                            <th>机型</th>
-                            <th>安卓版本</th>
-                            <th>卡刷包</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>小米5S(capricorn)</td>
-                            <td>8.0 Oreo</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5S_9.9.26_9274a709a1_8.0.zip" id="r">miui_MI5S_9.9.26_9274a709a1_8.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米5S Plus(natrium)</td>
-                            <td>8.0 Oreo</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5SPlus_9.9.26_a80a087632_8.0.zip" id="r">miui_MI5SPlus_9.9.26_a80a087632_8.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米5X(tiffany)</td>
-                            <td>8.1 Oreo</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5X_9.9.26_08483d94d0_8.1.zip" id="r">miui_MI5X_9.9.26_08483d94d0_8.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米5C(meri)</td>
-                            <td>7.1 Nougat</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MI5C_9.9.26_756c192d4c_7.1.zip" id="r">miui_MI5C_9.9.26_756c192d4c_7.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米6(sagit)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI6_9.9.26_f4d59ad7b2_9.0.zip" id="r">miui_MI6_9.9.26_f4d59ad7b2_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米6X(wayne)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI6X_9.9.26_a4fb97f331_9.0.zip" id="r">miui_MI6X_9.9.26_a4fb97f331_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米8(dipper)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.27/miui_MI8_9.9.27_8c7dad29c5_9.0.zip" id="r">miui_MI8_9.9.27_8c7dad29c5_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米8探索版(ursa)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8Explorer_9.9.26_308dfca23f_9.0.zip" id="r">miui_MI8Explorer_9.9.26_308dfca23f_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米8屏幕指纹版(equuleus)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8UD_9.9.26_27b9d13be9_9.0.zip" id="r">miui_MI8UD_9.9.26_27b9d13be9_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米8 SE(sirius)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8SE_9.9.26_249e7cd055_9.0.zip" id="r">miui_MI8SE_9.9.26_249e7cd055_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米9 Pro 5G(crux)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="https://bigota.d.miui.com/9.9.26/miui_CRUX_9.9.26_e1c3b481c6_9.0.zip" id="r">miui_CRUX_9.9.26_e1c3b481c6_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米9 SE(grus)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_GRUS_9.9.26_bbf36d803f_9.0.zip" id="r">miui_GRUS_9.9.26_bbf36d803f_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米Max 2(oxygen)</td>
-                            <td>7.1 Nougat</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMAX2_9.9.26_88732c2073_7.1.zip" id="r">miui_MIMAX2_9.9.26_88732c2073_7.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米Max 3(nitrogen)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMAX3_9.9.26_39aa0a455a_9.0.zip" id="r">miui_MIMAX3_9.9.26_39aa0a455a_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米Play(lotus)</td>
-                            <td>8.1 Oreo</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIPLAY_9.9.26_08e21f652e_8.1.zip" id="r">miui_MIPLAY_9.9.26_08e21f652e_8.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米Note 2(scorpio)</td>
-                            <td>8.0 Oreo</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MINote2_9.9.26_230fde18bb_8.0.zip" id="r">miui_MINote2_9.9.26_230fde18bb_8.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米Note 3(jason)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MINote3_9.9.26_2263bdd3a5_9.0.zip" id="r">miui_MINote3_9.9.26_2263bdd3a5_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米MIX(lithium)</td>
-                            <td>8.0 Oreo</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX_9.9.26_6fec175e2b_8.0.zip" id="r">miui_MIMIX_9.9.26_6fec175e2b_8.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米MIX 2(chiron)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX2_9.9.26_906253ee45_9.0.zip" id="r">miui_MIMIX2_9.9.26_906253ee45_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米MIX 2S(polaris)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX2S_9.9.26_cf76d77c17_9.0.zip" id="r">miui_MIMIX2S_9.9.26_cf76d77c17_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米MIX 3(perseus)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX3_9.9.26_b243c43ee2_9.0.zip" id="r">miui_MIMIX3_9.9.26_b243c43ee2_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米4X(santoni)</td>
-                            <td>7.1 Nougat</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM4X_9.9.26_b561a83be6_7.1.zip" id="r">miui_HM4X_9.9.26_b561a83be6_7.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米5(rosy)</td>
-                            <td>8.1 Oreo</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM5_9.9.26_fbc4c738c3_8.1.zip" id="r">miui_HM5_9.9.26_fbc4c738c3_8.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米5A(riva)</td>
-                            <td>8.1 Oreo</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM5A_9.9.26_4169c0eea5_8.1.zip" id="r">miui_HM5A_9.9.26_4169c0eea5_8.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米5 Plus(vince)</td>
-                            <td>8.1 Oreo</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM5Plus_9.9.26_90aeca981c_8.1.zip" id="r">miui_HM5Plus_9.9.26_90aeca981c_8.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米Note 4X(高通平台)(mido)</td>
-                            <td>7.0 Nougat</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote4X_9.9.26_41249b6d4d_7.0.zip" id="r">miui_HMNote4X_9.9.26_41249b6d4d_7.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米Note 5(whyred)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote5_9.9.26_78f6d318be_9.0.zip" id="r">miui_HMNote5_9.9.26_78f6d318be_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米Note 5A 标准版(ugglite)</td>
-                            <td>7.1 Nougat</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote5ALITE_9.9.26_b728aa65ad_7.1.zip" id="r">miui_HMNote5ALITE_9.9.26_b728aa65ad_7.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>红米Note 5A 高配版(ugg)</td>
-                            <td>7.1 Nougat</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote5A_9.9.26_fd7ec57f08_7.1.zip" id="r">miui_HMNote5A_9.9.26_fd7ec57f08_7.1.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>Redmi Note 7(lavender)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_LAVENDER_9.9.26_d6152462ab_9.0.zip" id="r">miui_LAVENDER_9.9.26_d6152462ab_9.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>Redmi K20(davinci)</td>
-                            <td>10.0</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_DAVINCI_9.9.26_a762411128_10.0.zip" id="r">miui_DAVINCI_9.9.26_a762411128_10.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>Redmi K20 Pro(raphael)</td>
-                            <td>10.0</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.26/miui_RAPHAEL_9.9.26_c74ffeeec0_10.0.zip" id="r">miui_RAPHAEL_9.9.26_c74ffeeec0_10.0.zip</a></td>
-                        </tr>
-                        <tr>
-                            <td>小米9/透明版(cepheus)</td>
-                            <td>10.0</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.27/miui_CEPHEUS_9.9.27_b783312598_10.0.zip" id="r">miui_CEPHEUS_9.9.27_b783312598_10.0.zip</a></td>                            </tr>
-                        <tr>
-                            <td>小米CC9(pyxis)</td>
-                            <td>9.0 Pie</td>
-                            <td><a href="http://bigota.d.miui.com/9.9.27/miui_PYXIS_9.9.27_ca2bbe94a4_9.0.zip" id="r">miui_PYXIS_9.9.27_ca2bbe94a4_9.0.zip</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="mdui-table-fluid">
+            <table class="mdui-table">
+                <thead>
+                    <tr>
+                        <th>机型</th>
+                        <th>安卓版本</th>
+                        <th>卡刷包</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>小米5S(capricorn)</td>
+                        <td>8.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5S_9.9.26_9274a709a1_8.0.zip" id="r">miui_MI5S_9.9.26_9274a709a1_8.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5S Plus(natrium)</td>
+                        <td>8.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5SPlus_9.9.26_a80a087632_8.0.zip" id="r">miui_MI5SPlus_9.9.26_a80a087632_8.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5X(tiffany)</td>
+                        <td>8.1</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI5X_9.9.26_08483d94d0_8.1.zip" id="r">miui_MI5X_9.9.26_08483d94d0_8.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米5C(meri)</td>
+                        <td>7.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MI5C_9.9.26_756c192d4c_7.1.zip" id="r">miui_MI5C_9.9.26_756c192d4c_7.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米6(sagit)</td>
+                        <td>9.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI6_9.9.26_f4d59ad7b2_9.0.zip" id="r">miui_MI6_9.9.26_f4d59ad7b2_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米6X(wayne)</td>
+                        <td>9.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI6X_9.9.26_a4fb97f331_9.0.zip" id="r">miui_MI6X_9.9.26_a4fb97f331_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8(dipper)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.27/miui_MI8_9.9.27_8c7dad29c5_9.0.zip" id="r">miui_MI8_9.9.27_8c7dad29c5_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8探索版(ursa)</td>
+                        <td>9.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8Explorer_9.9.26_308dfca23f_9.0.zip" id="r">miui_MI8Explorer_9.9.26_308dfca23f_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8屏幕指纹版(equuleus)</td>
+                        <td>9.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8UD_9.9.26_27b9d13be9_9.0.zip" id="r">miui_MI8UD_9.9.26_27b9d13be9_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米8 SE(sirius)</td>
+                        <td>9.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_MI8SE_9.9.26_249e7cd055_9.0.zip" id="r">miui_MI8SE_9.9.26_249e7cd055_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9 Pro 5G(crux)</td>
+                        <td>9.0</td>
+                        <td><a href="https://bigota.d.miui.com/9.9.26/miui_CRUX_9.9.26_e1c3b481c6_9.0.zip" id="r">miui_CRUX_9.9.26_e1c3b481c6_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9 SE(grus)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_GRUS_9.9.26_bbf36d803f_9.0.zip" id="r">miui_GRUS_9.9.26_bbf36d803f_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Max 2(oxygen)</td>
+                        <td>7.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMAX2_9.9.26_88732c2073_7.1.zip" id="r">miui_MIMAX2_9.9.26_88732c2073_7.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Max 3(nitrogen)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMAX3_9.9.26_39aa0a455a_9.0.zip" id="r">miui_MIMAX3_9.9.26_39aa0a455a_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Play(lotus)</td>
+                        <td>8.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIPLAY_9.9.26_08e21f652e_8.1.zip" id="r">miui_MIPLAY_9.9.26_08e21f652e_8.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note 2(scorpio)</td>
+                        <td>8.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MINote2_9.9.26_230fde18bb_8.0.zip" id="r">miui_MINote2_9.9.26_230fde18bb_8.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米Note 3(jason)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MINote3_9.9.26_2263bdd3a5_9.0.zip" id="r">miui_MINote3_9.9.26_2263bdd3a5_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX(lithium)</td>
+                        <td>8.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX_9.9.26_6fec175e2b_8.0.zip" id="r">miui_MIMIX_9.9.26_6fec175e2b_8.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 2(chiron)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX2_9.9.26_906253ee45_9.0.zip" id="r">miui_MIMIX2_9.9.26_906253ee45_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 2S(polaris)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX2S_9.9.26_cf76d77c17_9.0.zip" id="r">miui_MIMIX2S_9.9.26_cf76d77c17_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米MIX 3(perseus)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_MIMIX3_9.9.26_b243c43ee2_9.0.zip" id="r">miui_MIMIX3_9.9.26_b243c43ee2_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米4X(santoni)</td>
+                        <td>7.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM4X_9.9.26_b561a83be6_7.1.zip" id="r">miui_HM4X_9.9.26_b561a83be6_7.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米5(rosy)</td>
+                        <td>8.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM5_9.9.26_fbc4c738c3_8.1.zip" id="r">miui_HM5_9.9.26_fbc4c738c3_8.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米5A(riva)</td>
+                        <td>8.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM5A_9.9.26_4169c0eea5_8.1.zip" id="r">miui_HM5A_9.9.26_4169c0eea5_8.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米5 Plus(vince)</td>
+                        <td>8.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HM5Plus_9.9.26_90aeca981c_8.1.zip" id="r">miui_HM5Plus_9.9.26_90aeca981c_8.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 4X(高通平台)(mido)</td>
+                        <td>7.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote4X_9.9.26_41249b6d4d_7.0.zip" id="r">miui_HMNote4X_9.9.26_41249b6d4d_7.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 5(whyred)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote5_9.9.26_78f6d318be_9.0.zip" id="r">miui_HMNote5_9.9.26_78f6d318be_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 5A 标准版(ugglite)</td>
+                        <td>7.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote5ALITE_9.9.26_b728aa65ad_7.1.zip" id="r">miui_HMNote5ALITE_9.9.26_b728aa65ad_7.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>红米Note 5A 高配版(ugg)</td>
+                        <td>7.1</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_HMNote5A_9.9.26_fd7ec57f08_7.1.zip" id="r">miui_HMNote5A_9.9.26_fd7ec57f08_7.1.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi Note 7(lavender)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_LAVENDER_9.9.26_d6152462ab_9.0.zip" id="r">miui_LAVENDER_9.9.26_d6152462ab_9.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi K20(davinci)</td>
+                        <td>10.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_DAVINCI_9.9.26_a762411128_10.0.zip" id="r">miui_DAVINCI_9.9.26_a762411128_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>Redmi K20 Pro(raphael)</td>
+                        <td>10.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.26/miui_RAPHAEL_9.9.26_c74ffeeec0_10.0.zip" id="r">miui_RAPHAEL_9.9.26_c74ffeeec0_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米9/透明版(cepheus)</td>
+                        <td>10.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.27/miui_CEPHEUS_9.9.27_b783312598_10.0.zip" id="r">miui_CEPHEUS_9.9.27_b783312598_10.0.zip</a></td>
+                    </tr>
+                    <tr>
+                        <td>小米CC9(pyxis)</td>
+                        <td>9.0</td>
+                        <td><a href="http://bigota.d.miui.com/9.9.27/miui_PYXIS_9.9.27_ca2bbe94a4_9.0.zip" id="r">miui_PYXIS_9.9.27_ca2bbe94a4_9.0.zip</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        
+    </div>
 
 
 
 
-	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
-		<div class="mdui-container-fluid">
-		  <div class="mdui-row mdui-footer-nav">
-			<div class="mdui-col-xs-3">
-			  <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
-			</div>
-			<div class="mdui-col-xs-4">
-			  <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
-			  </h3>
-			</div>
-			<div class="mdui-col-xs-5">
-			  <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
-			</div>
-		  </div>
-		  <div class="mdui-divider footer-divider"></div>
-		  <p></p>
-		  <div class="mdui-text-center">2019 - 2022</div>
 
-		</div>
-	  </footer>
+    <footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+        <div class="mdui-container-fluid">
+            <div class="mdui-row mdui-footer-nav">
+                <div class="mdui-col-xs-3">
+                    <h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+                </div>
+                <div class="mdui-col-xs-4">
+                    <h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a>
+                    </h3>
+                </div>
+                <div class="mdui-col-xs-5">
+                    <h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+                </div>
+            </div>
+            <div class="mdui-divider footer-divider"></div>
+            <p></p>
+            <div class="mdui-text-center">2019 - 2022</div>
+
+        </div>
+    </footer>
     <a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e0818275b9944a59d625e2df596aaca"}'></script>
 </body>
 
 </html>

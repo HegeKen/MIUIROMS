@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="zh">
-	<head> 
-		<meta charset="UTF-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-		<link href="../assets/mdui/css/mdui.min.css" rel="stylesheet"> 
-		<script src="../assets/mdui/js/mdui.min.js"></script> 
-		<script src="../assets/jquery/jquery.min.js"></script>
-		<script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='msvalidate.01' content='D0A12F85D732BE57318CA28F52500432'>
+	<meta name='chinaz-site-verification' content='5BDB6F3CEC5D6F6F'>
+	<meta name='google-site-verification' content='1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q'>
+	<link href="https://roms.miuier.com/assets/mdui/css/mdui.min.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/mdui/js/mdui.min.js"></script>
+	<script src="https://roms.miuier.com/assets/jquery/jquery.min.js"></script>
+	<link href="https://roms.miuier.com/assets/miuiroms.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/miuiroms.js"></script>
+	<link href='https://font.sec.miui.com/font/css?family=MiSans:300,450,500,650:Chinese_Simplify,Latin&display=swap' rel='stylesheet'>
+	<link rel='icon' type='image/x-icon' href='https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/favicon.ico'>
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-153213840-1'></script>
+	<script>
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "ecb8j7x9aw");
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script>
+	<script>
 		var _hmt = _hmt || [];
 		(function () {
 			var hm = document.createElement("script");
@@ -15,660 +37,640 @@
 			var s = document.getElementsByTagName("script")[0];
 			s.parentNode.insertBefore(hm, s);
 		})();
-	</script> 
-		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
-		<!-- Global site tag (gtag.js) - Google Analytics --> 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-153213840-1');
-	</script> 
-		<style>
-		li a {
-			text-decoration: none;
-			color: blue;
-		}
+	</script>
+	<title>小米11 青春版(renoir)官方ROM合集 -- MIUI官方ROM仓库</title>
+</head>
 
-		td a {
-			text-decoration: none;
-			color: black;
-		}
-	</style> 
-		<title>小米11 青春版(renoir)官方ROM合集 -- MIUI官方ROM仓库</title> 
-	</head> 
-	<body> 
-		<script type="text/javascript">
-		$(document).ready(function () {
-			let height = $(document).width();
-			if (height < "550") {
-				$("td #r").text("卡刷包");
-				$("td #f").text("线刷包");
-			}
-		})
-	</script> 
-		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
-			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
-			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
-			<div class="mdui-toolbar-spacer"></div> 
-			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
-				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="../index.html">回到首页</a> 
-						</div> </li> 
-					
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="../weekly/index.html">查看日志</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="index.html">机型列表</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="../tools.html">刷机工具</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="../thanks.html">衷心感谢</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="../aboutme.html">站点日志</a> 
-						</div> </li> 
-				</ul> 
-			</div> 
-		</div> 
-		<div class="mdui-panel mdui-panel-gapless"> 
-			<div class="mdui-panel-item mdui-panel-item-open"> 
-				<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
-					 注： 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<ol> 
-						<li>机型名称：小米11 青春版</li> 
-						<li>机型代号：renoir</li> 
-						<li>特别感谢：<a href ="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li> 
-						<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li> 
-						<!-- <li>第三方Recovery:<a href="">百度网盘</a>，提取码：，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a
+<body>
+	<div class="mdui-toolbar mdui-color-deep-orange-accent">
+		<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button>
+		<span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+		<div class="mdui-toolbar-spacer"></div>
+		<div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+			<ul class="mdui-list" mdui-collapse="{accordion: true}">
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+					<div class="mdui-list-item-content">
+						<a href="../index.html">回到首页</a>
+					</div>
+				</li>
+
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+					<div class="mdui-list-item-content">
+						<a href="../weekly/index.html">查看日志</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+					<div class="mdui-list-item-content">
+						<a href="index.html">机型列表</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+					<div class="mdui-list-item-content">
+						<a href="../tools.html">刷机工具</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+					<div class="mdui-list-item-content">
+						<a href="../thanks.html">衷心感谢</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+					<div class="mdui-list-item-content">
+						<a href="../aboutme.html">站点日志</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="mdui-panel mdui-panel-gapless">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red" style="font-size: 25px;">
+				注：
+			</div>
+			<div class="mdui-panel-item-body">
+				<ol>
+					<li>机型名称：小米11 青春版</li>
+					<li>机型代号：renoir</li>
+					<li>特别感谢：<a href="https://xiaomifirmwareupdater.com/">Xiaomi Firmware Updater </a>网站</li>
+					<li>所有线刷都以解锁Bootloader为前提，并且解锁Bootloader时会清除数据，请提前做好备份工作，<a href="http://www.miui.com/unlock">传送门</a></li>
+					<!-- <li>第三方Recovery:<a href="">百度网盘</a>，提取码：，感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a
 							href="https://www.weibo.com/u/6033736159">wzsx150</a></li>
 					<li>第三方Recovery:<a href="">TWRP官方</a></li>
 					<li>第三方Recovery:<a href="">橙狐测试版</a>，<a href="">橙狐稳定版</a></li>
-					<br> --> 
-					</ol> 
-				</div> 
-			</div> 
-		</div> 
-		<!-- 由此向下区域为ROM的正式内容 --> 
-		<br> 
-		<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab=""> 
-			<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a> 
-			<a href="#TW_STABLE" class="mdui-ripple">台湾稳定版</a> 
-			<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a> 
-			<a href="#EEA_STABLE" class="mdui-ripple">欧洲稳定版</a> 
-			<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a> 
-			<a href="#JP_STABLE" class="mdui-ripple">日本稳定版</a> 
-		</div> 
-		<br> 
-		<div class="mdui-table-fluid" id="CN_STABLE"> 
-			<table class="mdui-table"> 
-				<thead> 
-					<tr> 
-						<th class="mdui-text-color-red">大陆稳定版</th> 
-						<th>MIUI版本</th> 
-						<th>Android版本</th> 
-						<th>卡刷包</th> 
-						<th>线刷包</th> 
-					</tr> 
-				</thead> 
-				<tbody> 
-					<tr class="mdui-hidden"> 
-						<td>11</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr> 
-						<td>10</td> 
-						<td>V13.0.9.0.SKICNXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.9.0.SKICNXM/miui_RENOIR_V13.0.9.0.SKICNXM_d14041e8b9_12.0.zip" id="r">miui_RENOIR_V13.0.9.0.SKICNXM_d14041e8b9_12.0.zip</a></td> 
-						<td>未公布</td>  
-					</tr> 
-					<tr> 
-						<td>9</td> 
-						<td>V13.0.8.0.SKICNXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKICNXM/miui_RENOIR_V13.0.8.0.SKICNXM_77776103d0_12.0.zip" id="r">miui_RENOIR_V13.0.8.0.SKICNXM_77776103d0_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKICNXM/renoir_images_V13.0.8.0.SKICNXM_20220304.0000.00_12.0_cn_9cbd3691ff.tgz" id="f">renoir_images_V13.0.8.0.SKICNXM_20220304.0000.00_12.0_cn_9cbd3691ff.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>8</td> 
-						<td>V13.0.7.0.SKICNXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKICNXM/miui_RENOIR_V13.0.7.0.SKICNXM_401be18e6f_12.0.zip" id="r">miui_RENOIR_V13.0.7.0.SKICNXM_401be18e6f_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKICNXM/renoir_images_V13.0.7.0.SKICNXM_20220122.0000.00_12.0_cn_8e7b28e2c0.tgz" id="f">renoir_images_V13.0.7.0.SKICNXM_20220122.0000.00_12.0_cn_8e7b28e2c0.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>7</td> 
-						<td>V13.0.4.0.SKICNXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKICNXM/miui_RENOIR_V13.0.4.0.SKICNXM_40f0bd0d21_12.0.zip" id="r">miui_RENOIR_V13.0.4.0.SKICNXM_40f0bd0d21_12.0.zip</a></td> 
-						<td>未公布</td>  
-					</tr> 
-					<tr> 
-						<td>6</td> 
-						<td>V12.5.8.0.RKICNXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.8.0.RKICNXM/miui_RENOIR_V12.5.8.0.RKICNXM_0cd4a91d5b_11.0.zip" id="r">miui_RENOIR_V12.5.8.0.RKICNXM_0cd4a91d5b_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.8.0.RKICNXM/renoir_images_V12.5.8.0.RKICNXM_20211027.0000.00_11.0_cn_78a271dc5c.tgz" id="f">renoir_images_V12.5.8.0.RKICNXM_20211027.0000.00_11.0_cn_78a271dc5c.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>5</td> 
-						<td>V12.5.5.0.RKICNXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKICNXM/miui_RENOIR_V12.5.5.0.RKICNXM_dfcbb54c9a_11.0.zip" id="r">miui_RENOIR_V12.5.5.0.RKICNXM_dfcbb54c9a_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKICNXM/renoir_images_V12.5.5.0.RKICNXM_20210915.0000.00_11.0_cn_2fc4dbbae7.tgz" id="f">renoir_images_V12.5.5.0.RKICNXM_20210915.0000.00_11.0_cn_2fc4dbbae7.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>4</td> 
-						<td>V12.5.3.0.RKICNXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKICNXM/miui_RENOIR_V12.5.3.0.RKICNXM_53350fda17_11.0.zip" id="r">miui_RENOIR_V12.5.3.0.RKICNXM_53350fda17_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKICNXM/renoir_images_V12.5.3.0.RKICNXM_20210623.0000.00_11.0_cn_98e2d648dc.tgz" id="f">renoir_images_V12.5.3.0.RKICNXM_20210623.0000.00_11.0_cn_98e2d648dc.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>3</td> 
-						<td>V12.5.2.0.RKICNXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKICNXM/miui_RENOIR_V12.5.2.0.RKICNXM_5d23f3cbfa_11.0.zip" id="r">miui_RENOIR_V12.5.2.0.RKICNXM_5d23f3cbfa_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKICNXM/renoir_images_V12.5.2.0.RKICNXM_20210526.0000.00_11.0_cn_2fea770c40.tgz" id="f">renoir_images_V12.5.2.0.RKICNXM_20210526.0000.00_11.0_cn_2fea770c40.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>2</td> 
-						<td>V12.0.10.0.RKICNXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.10.0.RKICNXM/miui_RENOIR_V12.0.10.0.RKICNXM_5694b9a774_11.0.zip" id="r">miui_RENOIR_V12.0.10.0.RKICNXM_5694b9a774_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.10.0.RKICNXM/renoir_images_V12.0.10.0.RKICNXM_20210518.0000.00_11.0_cn_1b34791095.tgz" id="f">renoir_images_V12.0.10.0.RKICNXM_20210518.0000.00_11.0_cn_1b34791095.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>1</td> 
-						<td>V12.0.7.0.RKICNXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.7.0.RKICNXM/miui_RENOIR_V12.0.7.0.RKICNXM_ccf60ab5b4_11.0.zip" id="r">miui_RENOIR_V12.0.7.0.RKICNXM_ccf60ab5b4_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.7.0.RKICNXM/renoir_images_V12.0.7.0.RKICNXM_20210419.0000.00_11.0_cn_626e6efd82.tgz" id="f">renoir_images_V12.0.7.0.RKICNXM_20210419.0000.00_11.0_cn_626e6efd82.tgz</a></td> 
-					</tr> 
-				</tbody> 
-			</table> 
-		</div> 
-		<div class="mdui-table-fluid" id="TW_STABLE"> 
-			<table class="mdui-table"> 
-				<thead> 
-					<tr> 
-						<th class="mdui-text-color-red">台湾稳定版</th> 
-						<th>MIUI版本</th> 
-						<th>Android版本</th> 
-						<th>卡刷包</th> 
-						<th>线刷包</th> 
-					</tr> 
-				</thead> 
-				<tbody> 
-					<tr class="mdui-hidden"> 
-						<td>10</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr class="mdui-hidden"> 
-						<td>9</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr> 
-						<td>8</td> 
-						<td>V13.0.3.0.SKITWXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKITWXM/miui_RENOIRTWGlobal_V13.0.3.0.SKITWXM_e672597947_12.0.zip" id="r">miui_RENOIRTWGlobal_V13.0.3.0.SKITWXM_e672597947_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKITWXM/renoir_tw_global_images_V13.0.3.0.SKITWXM_20220712.0000.00_12.0_global_26f3b2bedc.tgz" id="f">renoir_tw_global_images_V13.0.3.0.SKITWXM_20220712.0000.00_12.0_global_26f3b2bedc.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>7</td> 
-						<td>V13.0.2.0.SKITWXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKITWXM/miui_RENOIRTWGlobal_V13.0.2.0.SKITWXM_7dd31dc804_12.0.zip" id="r">miui_RENOIRTWGlobal_V13.0.2.0.SKITWXM_7dd31dc804_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKITWXM/renoir_tw_global_images_V13.0.2.0.SKITWXM_20220426.0000.00_12.0_global_eb0198aeb1.tgz" id="f">renoir_tw_global_images_V13.0.2.0.SKITWXM_20220426.0000.00_12.0_global_eb0198aeb1.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>6</td> 
-						<td>V13.0.1.0.SKITWXM</td> 
-						<td>2.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKITWXM/miui_RENOIRTWGlobal_V13.0.1.0.SKITWXM_b84da5491f_12.0.zip" id="r">miui_RENOIRTWGlobal_V13.0.1.0.SKITWXM_b84da5491f_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKITWXM/renoir_tw_global_images_V13.0.1.0.SKITWXM_20220225.0000.00_12.0_global_a6cf0b04db.tgz" id="f">renoir_tw_global_images_V13.0.1.0.SKITWXM_20220225.0000.00_12.0_global_a6cf0b04db.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>5</td> 
-						<td>V12.5.4.0.RKITWXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.4.0.RKITWXM_715aa9996b_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.4.0.RKITWXM_715aa9996b_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKITWXM/renoir_tw_global_images_V12.5.4.0.RKITWXM_20211110.0000.00_11.0_global_9f17562562.tgz" id="f">renoir_tw_global_images_V12.5.4.0.RKITWXM_20211110.0000.00_11.0_global_9f17562562.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>4</td> 
-						<td>V12.5.3.0.RKITWXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.3.0.RKITWXM_277004d52f_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.3.0.RKITWXM_277004d52f_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKITWXM/renoir_tw_global_images_V12.5.3.0.RKITWXM_20210831.0000.00_11.0_global_78aa0236ba.tgz" id="f">renoir_tw_global_images_V12.5.3.0.RKITWXM_20210831.0000.00_11.0_global_78aa0236ba.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>3</td> 
-						<td>V12.5.2.0.RKITWXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.2.0.RKITWXM_0489753994_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.2.0.RKITWXM_0489753994_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKITWXM/renoir_tw_global_images_V12.5.2.0.RKITWXM_20210701.0000.00_11.0_global_c4ceed646e.tgz" id="f">renoir_tw_global_images_V12.5.2.0.RKITWXM_20210701.0000.00_11.0_global_c4ceed646e.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>2</td> 
-						<td>V12.5.1.0.RKITWXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.1.0.RKITWXM_cf10b13290_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.1.0.RKITWXM_cf10b13290_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKITWXM/renoir_tw_global_images_V12.5.1.0.RKITWXM_20210526.0000.00_11.0_global_05758cd6a0.tg" id="f">renoir_tw_global_images_V12.5.1.0.RKITWXM_20210526.0000.00_11.0_global_05758cd6a0.tg</a></td> 
-					</tr> 
-					<tr> 
-						<td>1</td> 
-						<td>V12.0.2.0.RKITWXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKITWXM/miui_RENOIRTWGlobal_V12.0.2.0.RKITWXM_0d269385ab_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.0.2.0.RKITWXM_0d269385ab_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKITWXM/renoir_tw_global_images_V12.0.2.0.RKITWXM_20210419.0000.00_11.0_global_9ad3c2d9bb.tgz" id="f">renoir_tw_global_images_V12.0.2.0.RKITWXM_20210419.0000.00_11.0_global_9ad3c2d9bb.tgz</a></td> 
-					</tr> 
-				</tbody> 
-			</table> 
-		</div> 
-		<div class="mdui-table-fluid" id="GB_STABLE"> 
-			<table class="mdui-table"> 
-				<thead> 
-					<tr> 
-						<th class="mdui-text-color-red">国际稳定版</th> 
-						<th>MIUI版本</th> 
-						<th>Android版本</th> 
-						<th>卡刷包</th> 
-						<th>线刷包</th> 
-					</tr> 
-				</thead> 
-				<tbody> 
-					<tr class="mdui-hidden"> 
-						<td>12</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr> 
-						<td>11</td> 
-						<td>V13.0.8.0.SKIMIXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKIMIXM/miui_RENOIRGlobal_V13.0.8.0.SKIMIXM_c784136170_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.8.0.SKIMIXM_c784136170_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKIMIXM/renoir_global_images_V13.0.8.0.SKIMIXM_20220902.0000.00_12.0_global_4f47c5c850.tgz" id="f">renoir_global_images_V13.0.8.0.SKIMIXM_20220902.0000.00_12.0_global_4f47c5c850.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>10</td> 
-						<td>V13.0.6.0.SKIMIXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIMIXM/miui_RENOIRGlobal_V13.0.6.0.SKIMIXM_4a715c3ae4_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.6.0.SKIMIXM_4a715c3ae4_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIMIXM/renoir_global_images_V13.0.6.0.SKIMIXM_20220622.0000.00_12.0_global_d6c79068b9.tgz" id="f">renoir_global_images_V13.0.6.0.SKIMIXM_20220622.0000.00_12.0_global_d6c79068b9.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>9</td> 
-						<td>V13.0.4.0.SKIMIXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIMIXM/miui_RENOIRGlobal_V13.0.4.0.SKIMIXM_e66cdbaec5_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.4.0.SKIMIXM_e66cdbaec5_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIMIXM/renoir_global_images_V13.0.4.0.SKIMIXM_20220412.0000.00_12.0_global_fe20cdc5c1.tgz" id="f">renoir_global_images_V13.0.4.0.SKIMIXM_20220412.0000.00_12.0_global_fe20cdc5c1.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>8</td> 
-						<td>V13.0.3.0.SKIMIXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIMIXM/miui_RENOIRGlobal_V13.0.3.0.SKIMIXM_b771addef2_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.3.0.SKIMIXM_b771addef2_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIMIXM/renoir_global_images_V13.0.3.0.SKIMIXM_20220222.0000.00_12.0_global_a66d98554c.tgz" id="f">renoir_global_images_V13.0.3.0.SKIMIXM_20220222.0000.00_12.0_global_a66d98554c.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>7</td> 
-						<td>V13.0.2.0.SKIMIXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIMIXM/miui_RENOIRGlobal_V13.0.2.0.SKIMIXM_7cc269e5ce_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.2.0.SKIMIXM_7cc269e5ce_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIMIXM/renoir_global_images_V13.0.2.0.SKIMIXM_20220123.0000.00_12.0_global_b1dad9edb2.tgz" id="f">renoir_global_images_V13.0.2.0.SKIMIXM_20220123.0000.00_12.0_global_b1dad9edb2.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>6</td> 
-						<td>V12.5.7.0.RKIMIXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIMIXM/miui_RENOIRGlobal_V12.5.7.0.RKIMIXM_8f9da4976d_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.7.0.RKIMIXM_8f9da4976d_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIMIXM/renoir_global_images_V12.5.7.0.RKIMIXM_20220105.0000.00_11.0_global_869083686d.tgz" id="f">renoir_global_images_V12.5.7.0.RKIMIXM_20220105.0000.00_11.0_global_869083686d.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>5</td> 
-						<td>V12.5.6.0.RKIMIXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIMIXM/miui_RENOIRGlobal_V12.5.6.0.RKIMIXM_046844758f_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.6.0.RKIMIXM_046844758f_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIMIXM/renoir_global_images_V12.5.6.0.RKIMIXM_20211027.0000.00_11.0_global_5da6ef76a9.tgz" id="f">renoir_global_images_V12.5.6.0.RKIMIXM_20211027.0000.00_11.0_global_5da6ef76a9.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>4</td> 
-						<td>V12.5.5.0.RKIMIXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIMIXM/miui_RENOIRGlobal_V12.5.5.0.RKIMIXM_58b3a9e618_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.5.0.RKIMIXM_58b3a9e618_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIMIXM/renoir_global_images_V12.5.5.0.RKIMIXM_20210805.0000.00_11.0_global_9f22a26eac.tgz" id="f">renoir_global_images_V12.5.5.0.RKIMIXM_20210805.0000.00_11.0_global_9f22a26eac.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>3</td> 
-						<td>V12.5.2.0.RKIMIXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIMIXM/miui_RENOIRGlobal_V12.5.2.0.RKIMIXM_ab83d0ceea_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.2.0.RKIMIXM_ab83d0ceea_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIMIXM/renoir_global_images_V12.5.2.0.RKIMIXM_20210701.0000.00_11.0_global_548cd1be24.tgz" id="f">renoir_global_images_V12.5.2.0.RKIMIXM_20210701.0000.00_11.0_global_548cd1be24.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>2</td> 
-						<td>V12.5.1.0.RKIMIXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIMIXM/miui_RENOIRGlobal_V12.5.1.0.RKIMIXM_740820bef6_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.1.0.RKIMIXM_740820bef6_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIMIXM/renoir_global_images_V12.5.1.0.RKIMIXM_20210528.0000.00_11.0_global_d4b08503ae.tgz" id="f">renoir_global_images_V12.5.1.0.RKIMIXM_20210528.0000.00_11.0_global_d4b08503ae.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>1</td> 
-						<td>V12.0.2.0.RKIMIXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIMIXM/miui_RENOIRGlobal_V12.0.2.0.RKIMIXM_18d2ad9cd4_11.0.zip" id="r">miui_RENOIRGlobal_V12.0.2.0.RKIMIXM_18d2ad9cd4_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIMIXM/renoir_global_images_V12.0.2.0.RKIMIXM_20210427.0000.00_11.0_global_73c4bc36a4.tgz" id="f">renoir_global_images_V12.0.2.0.RKIMIXM_20210427.0000.00_11.0_global_73c4bc36a4.tgz</a></td> 
-					</tr> 
-				</tbody> 
-			</table> 
-		</div> 
-		<div class="mdui-table-fluid" id="EEA_STABLE"> 
-			<table class="mdui-table"> 
-				<thead> 
-					<tr> 
-						<th class="mdui-text-color-red">欧洲稳定版</th> 
-						<th>MIUI版本</th> 
-						<th>Android版本</th> 
-						<th>卡刷包</th> 
-						<th>线刷包</th> 
-					</tr> 
-				</thead> 
-				<tbody> 
-					<tr class="mdui-hidden"> 
-						<td>12</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr> 
-						<td>11</td> 
-						<td>V13.0.7.0.SKIEUXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.7.0.SKIEUXM_7dda0df5f7_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.7.0.SKIEUXM_7dda0df5f7_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKIEUXM/renoir_eea_global_images_V13.0.7.0.SKIEUXM_20220902.0000.00_12.0_eea_2246d2d00b.tgz" id="f">renoir_eea_global_images_V13.0.7.0.SKIEUXM_20220902.0000.00_12.0_eea_2246d2d00b.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>10</td> 
-						<td>V13.0.6.0.SKIEUXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.6.0.SKIEUXM_6e0f470c75_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.6.0.SKIEUXM_6e0f470c75_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIEUXM/renoir_eea_global_images_V13.0.6.0.SKIEUXM_20220630.0000.00_12.0_eea_a4c1905f12.tgz" id="f">renoir_eea_global_images_V13.0.6.0.SKIEUXM_20220630.0000.00_12.0_eea_a4c1905f12.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>9</td> 
-						<td>V13.0.5.0.SKIEUXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.5.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.5.0.SKIEUXM_de56c8afa0_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.5.0.SKIEUXM_de56c8afa0_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.5.0.SKIEUXM/renoir_eea_global_images_V13.0.5.0.SKIEUXM_20220425.0000.00_12.0_eea_056d8fdcf9.tgz" id="f">renoir_eea_global_images_V13.0.5.0.SKIEUXM_20220425.0000.00_12.0_eea_056d8fdcf9.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>8</td> 
-						<td>V13.0.4.0.SKIEUXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.4.0.SKIEUXM_6154fb0712_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.4.0.SKIEUXM_6154fb0712_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIEUXM/renoir_eea_global_images_V13.0.4.0.SKIEUXM_20220224.0000.00_12.0_eea_d58b0aec96.tgz" id="f">renoir_eea_global_images_V13.0.4.0.SKIEUXM_20220224.0000.00_12.0_eea_d58b0aec96.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>7</td> 
-						<td>V12.5.7.0.RKIEUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip" id="f">miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip</a></td>  
-					</tr> 
-					<tr> 
-						<td>6</td> 
-						<td>V12.5.6.0.RKIEUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.6.0.RKIEUXM_9e679fe693_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.6.0.RKIEUXM_9e679fe693_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIEUXM/renoir_eea_global_images_V12.5.6.0.RKIEUXM_20211103.0000.00_11.0_eea_bb914ce4b0.tgz" id="f">renoir_eea_global_images_V12.5.6.0.RKIEUXM_20211103.0000.00_11.0_eea_bb914ce4b0.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>5</td> 
-						<td>V12.5.5.0.RKIEUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.5.0.RKIEUXM_5503f9cf02_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.5.0.RKIEUXM_5503f9cf02_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIEUXM/renoir_eea_global_images_V12.5.5.0.RKIEUXM_20210825.0000.00_11.0_eea_9deccd3009.tgz" id="f">renoir_eea_global_images_V12.5.5.0.RKIEUXM_20210825.0000.00_11.0_eea_9deccd3009.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>4</td> 
-						<td>V12.5.3.0.RKIEUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz" id="f">renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>3</td> 
-						<td>V12.5.3.0.RKIEUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz" id="f">renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>2</td> 
-						<td>V12.5.1.0.RKIEUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.1.0.RKIEUXM_fe2996d265_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.1.0.RKIEUXM_fe2996d265_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIEUXM/renoir_eea_global_images_V12.5.1.0.RKIEUXM_20210525.0000.00_11.0_eea_170c6182d9.tgz" id="f">renoir_eea_global_images_V12.5.1.0.RKIEUXM_20210525.0000.00_11.0_eea_170c6182d9.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>1</td> 
-						<td>V12.0.8.0.RKIEUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.8.0.RKIEUXM/miui_RENOIREEAGlobal_V12.0.8.0.RKIEUXM_c832608d97_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.0.8.0.RKIEUXM_c832608d97_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.8.0.RKIEUXM/renoir_eea_global_images_V12.0.8.0.RKIEUXM_20210419.0000.00_11.0_eea_1e3641e85a.tgz" id="f">renoir_eea_global_images_V12.0.8.0.RKIEUXM_20210419.0000.00_11.0_eea_1e3641e85a.tgz</a></td> 
-					</tr> 
-				</tbody> 
-			</table> 
-		</div> 
-		<div class="mdui-table-fluid" id="RU_STABLE"> 
-			<table class="mdui-table"> 
-				<thead> 
-					<tr> 
-						<th class="mdui-text-color-red">俄罗斯稳定版</th> 
-						<th>MIUI版本</th> 
-						<th>Android版本</th> 
-						<th>卡刷包</th> 
-						<th>线刷包</th> 
-					</tr> 
-				</thead> 
-				<tbody> 
-					<tr class="mdui-hidden"> 
-						<td>10</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr class="mdui-hidden"> 
-						<td>9</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr> 
-						<td>8</td> 
-						<td>V13.0.3.0.SKIRUXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIRUXM/miui_RENOIRRUGlobal_V13.0.3.0.SKIRUXM_01543a6b11_12.0.zip" id="r">miui_RENOIRRUGlobal_V13.0.3.0.SKIRUXM_01543a6b11_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIRUXM/renoir_ru_global_images_V13.0.3.0.SKIRUXM_20220712.0000.00_12.0_global_67fe623366.tgz" id="f">renoir_ru_global_images_V13.0.3.0.SKIRUXM_20220712.0000.00_12.0_global_67fe623366.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>7</td> 
-						<td>V13.0.2.0.SKIRUXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIRUXM/miui_RENOIRRUGlobal_V13.0.2.0.SKIRUXM_e231fdbc5e_12.0.zip" id="r">miui_RENOIRRUGlobal_V13.0.2.0.SKIRUXM_e231fdbc5e_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIRUXM/renoir_ru_global_images_V13.0.2.0.SKIRUXM_20220426.0000.00_12.0_global_4afd4cb8c9.tgz" id="f">renoir_ru_global_images_V13.0.2.0.SKIRUXM_20220426.0000.00_12.0_global_4afd4cb8c9.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>6</td> 
-						<td>V13.0.1.0.SKIRUXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIRUXM/miui_RENOIRRUGlobal_V13.0.1.0.SKIRUXM_0711b086d3_12.0.zip" id="r">miui_RENOIRRUGlobal_V13.0.1.0.SKIRUXM_0711b086d3_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIRUXM/renoir_ru_global_images_V13.0.1.0.SKIRUXM_20220301.0000.00_12.0_global_4076e85ec0.tgz" id="f">renoir_ru_global_images_V13.0.1.0.SKIRUXM_20220301.0000.00_12.0_global_4076e85ec0.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>5</td> 
-						<td>V12.5.4.0.RKIRUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.4.0.RKIRUXM_2d12286bd5_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.4.0.RKIRUXM_2d12286bd5_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIRUXM/renoir_ru_global_images_V12.5.4.0.RKIRUXM_20211111.0000.00_11.0_global_3cf833e8a0.tgz" id="f">renoir_ru_global_images_V12.5.4.0.RKIRUXM_20211111.0000.00_11.0_global_3cf833e8a0.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>4</td> 
-						<td>V12.5.3.0.RKIRUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.3.0.RKIRUXM_f45f878e21_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.3.0.RKIRUXM_f45f878e21_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIRUXM/renoir_ru_global_images_V12.5.3.0.RKIRUXM_20210830.0000.00_11.0_global_bff4a0918a.tgz" id="f">renoir_ru_global_images_V12.5.3.0.RKIRUXM_20210830.0000.00_11.0_global_bff4a0918a.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>3</td> 
-						<td>V12.5.2.0.RKIRUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.2.0.RKIRUXM_dbafe73a3a_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.2.0.RKIRUXM_dbafe73a3a_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIRUXM/renoir_ru_global_images_V12.5.2.0.RKIRUXM_20210622.0000.00_11.0_global_cb2aaf0447.tgz" id="f">renoir_ru_global_images_V12.5.2.0.RKIRUXM_20210622.0000.00_11.0_global_cb2aaf0447.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>2</td> 
-						<td>V12.5.1.0.RKIRUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.1.0.RKIRUXM_79f946df1e_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.1.0.RKIRUXM_79f946df1e_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIRUXM/renoir_ru_global_images_V12.5.1.0.RKIRUXM_20210528.0000.00_11.0_global_9d55819ae5.tgz" id="f">renoir_ru_global_images_V12.5.1.0.RKIRUXM_20210528.0000.00_11.0_global_9d55819ae5.tgz</a></td> 
-					</tr> 
-					<tr> 
-						<td>1</td> 
-						<td>V12.0.2.0.RKIRUXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIRUXM/miui_RENOIRRUGlobal_V12.0.2.0.RKIRUXM_b5314f8775_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.0.2.0.RKIRUXM_b5314f8775_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIRUXM/renoir_ru_global_images_V12.0.2.0.RKIRUXM_20210427.0000.00_11.0_global_6aed0d562f.tgz" id="f">renoir_ru_global_images_V12.0.2.0.RKIRUXM_20210427.0000.00_11.0_global_6aed0d562f.tgz</a></td> 
-					</tr> 
-				</tbody> 
-			</table> 
-		</div> 
-		<div class="mdui-table-fluid" id="JP_STABLE"> 
-			<table class="mdui-table"> 
-				<thead> 
-					<tr> 
-						<th class="mdui-text-color-red">日本稳定版</th> 
-						<th>MIUI版本</th> 
-						<th>Android版本</th> 
-						<th>卡刷包</th> 
-						<th>线刷包</th> 
-					</tr> 
-				</thead> 
-				<tbody> 
-					<tr class="mdui-hidden"> 
-						<td>11</td> 
-						<td>TEXT_HERE</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td> 
-						<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>  
-					</tr> 
-					<tr> 
-						<td>10</td> 
-						<td>V13.0.6.0.SKIJPXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.6.0.SKIJPXM_5f76384c48_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.6.0.SKIJPXM_5f76384c48_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIJPXM/renoir_jp_global_images_V13.0.6.0.SKIJPXM_20220928.0000.00_12.0_global_e282f56395.tgz" id="f">renoir_jp_global_images_V13.0.6.0.SKIJPXM_20220928.0000.00_12.0_global_e282f56395.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>9</td> 
-						<td>V13.0.4.0.SKIJPXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.4.0.SKIJPXM_6d3de6f27a_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.4.0.SKIJPXM_6d3de6f27a_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIJPXM/renoir_jp_global_images_V13.0.4.0.SKIJPXM_20220705.0000.00_12.0_global_0e34e93495.tgz" id="f">renoir_jp_global_images_V13.0.4.0.SKIJPXM_20220705.0000.00_12.0_global_0e34e93495.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>8</td> 
-						<td>V13.0.3.0.SKIJPXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.3.0.SKIJPXM_cea2075c88_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.3.0.SKIJPXM_cea2075c88_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIJPXM/renoir_jp_global_images_V13.0.3.0.SKIJPXM_20220420.0000.00_12.0_global_f11bfa1f87.tgz" id="f">renoir_jp_global_images_V13.0.3.0.SKIJPXM_20220420.0000.00_12.0_global_f11bfa1f87.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>7</td> 
-						<td>V13.0.2.0.SKIJPXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.2.0.SKIJPXM_fcc987c060_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.2.0.SKIJPXM_fcc987c060_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIJPXM/renoir_jp_global_images_V13.0.2.0.SKIJPXM_20220317.0000.00_12.0_global_34caf57647.tgz" id="f">renoir_jp_global_images_V13.0.2.0.SKIJPXM_20220317.0000.00_12.0_global_34caf57647.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>6</td> 
-						<td>V13.0.1.0.SKIJPXM</td> 
-						<td>12.0</td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.1.0.SKIJPXM_bf3cb8a296_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.1.0.SKIJPXM_bf3cb8a296_12.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIJPXM/renoir_jp_global_images_V13.0.1.0.SKIJPXM_20220225.0000.00_12.0_global_8d4d15b3d0.tgz" id="f">renoir_jp_global_images_V13.0.1.0.SKIJPXM_20220225.0000.00_12.0_global_8d4d15b3d0.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>5</td> 
-						<td>V12.5.9.0.RKIJPXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.9.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.9.0.RKIJPXM_70c801406f_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.9.0.RKIJPXM_70c801406f_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.9.0.RKIJPXM/renoir_jp_global_images_V12.5.9.0.RKIJPXM_20220208.0000.00_11.0_global_1f21aed2c7.tgz" id="f">renoir_jp_global_images_V12.5.9.0.RKIJPXM_20220208.0000.00_11.0_global_1f21aed2c7.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>4</td> 
-						<td>V12.5.7.0.RKIJPXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.7.0.RKIJPXM_0bfa188f7b_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.7.0.RKIJPXM_0bfa188f7b_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIJPXM/renoir_jp_global_images_V12.5.7.0.RKIJPXM_20220105.0000.00_11.0_global_99ec36a94c.tgz" id="f">renoir_jp_global_images_V12.5.7.0.RKIJPXM_20220105.0000.00_11.0_global_99ec36a94c.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>3</td> 
-						<td>V12.5.6.0.RKIJPXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.6.0.RKIJPXM_8dabafc656_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.6.0.RKIJPXM_8dabafc656_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIJPXM/renoir_jp_global_images_V12.5.6.0.RKIJPXM_20211102.0000.00_11.0_global_5b06efc4ff.tgz" id="f">renoir_jp_global_images_V12.5.6.0.RKIJPXM_20211102.0000.00_11.0_global_5b06efc4ff.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>2</td> 
-						<td>V12.5.4.0.RKIJPXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.4.0.RKIJPXM_b95548a39f_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.4.0.RKIJPXM_b95548a39f_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIJPXM/renoir_jp_global_images_V12.5.4.0.RKIJPXM_20210824.0000.00_11.0_global_207c42e65e.tgz" id="f">renoir_jp_global_images_V12.5.4.0.RKIJPXM_20210824.0000.00_11.0_global_207c42e65e.tgz</a></td>  
-					</tr> 
-					<tr> 
-						<td>1</td> 
-						<td>V12.5.2.0.RKIJPXM</td> 
-						<td>11.0</td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.2.0.RKIJPXM_0ebdcd021b_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.2.0.RKIJPXM_0ebdcd021b_11.0.zip</a></td> 
-						<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIJPXM/renoir_jp_global_images_V12.5.2.0.RKIJPXM_20210711.0000.00_11.0_global_4919d2bf5d.tgz" id="f">renoir_jp_global_images_V12.5.2.0.RKIJPXM_20210711.0000.00_11.0_global_4919d2bf5d.tgz</a></td> 
-					</tr> 
-				</tbody> 
-			</table> 
-		</div> 
-		<!-- 由此向下区域为底部Footer的内容 --> 
-		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
-			
-		</div> 
-		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
-	</body>
+					<br> -->
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- 由此向下区域为ROM的正式内容 -->
+	<br>
+	<div class="mdui-tab mdui-tab-full-width mdui-color-white-accent" mdui-tab="">
+		<a href="#CN_STABLE" class="mdui-ripple">大陆稳定版</a>
+		<a href="#TW_STABLE" class="mdui-ripple">台湾稳定版</a>
+		<a href="#GB_STABLE" class="mdui-ripple">国际稳定版</a>
+		<a href="#EEA_STABLE" class="mdui-ripple">欧洲稳定版</a>
+		<a href="#RU_STABLE" class="mdui-ripple">俄罗斯稳定版</a>
+		<a href="#JP_STABLE" class="mdui-ripple">日本稳定版</a>
+	</div>
+	<br>
+	<div class="mdui-table-fluid" id="CN_STABLE">
+		<table class="mdui-table">
+			<thead>
+				<tr>
+					<th class="mdui-text-color-red">大陆稳定版</th>
+					<th>MIUI版本</th>
+					<th>Android版本</th>
+					<th>卡刷包</th>
+					<th>线刷包</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="mdui-hidden">
+					<td>11</td>
+					<td>TEXT_HERE</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td>
+					<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>V13.0.9.0.SKICNXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.9.0.SKICNXM/miui_RENOIR_V13.0.9.0.SKICNXM_d14041e8b9_12.0.zip" id="r">miui_RENOIR_V13.0.9.0.SKICNXM_d14041e8b9_12.0.zip</a></td>
+					<td>未公布</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>V13.0.8.0.SKICNXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKICNXM/miui_RENOIR_V13.0.8.0.SKICNXM_77776103d0_12.0.zip" id="r">miui_RENOIR_V13.0.8.0.SKICNXM_77776103d0_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKICNXM/renoir_images_V13.0.8.0.SKICNXM_20220304.0000.00_12.0_cn_9cbd3691ff.tgz" id="f">renoir_images_V13.0.8.0.SKICNXM_20220304.0000.00_12.0_cn_9cbd3691ff.tgz</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>V13.0.7.0.SKICNXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKICNXM/miui_RENOIR_V13.0.7.0.SKICNXM_401be18e6f_12.0.zip" id="r">miui_RENOIR_V13.0.7.0.SKICNXM_401be18e6f_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKICNXM/renoir_images_V13.0.7.0.SKICNXM_20220122.0000.00_12.0_cn_8e7b28e2c0.tgz" id="f">renoir_images_V13.0.7.0.SKICNXM_20220122.0000.00_12.0_cn_8e7b28e2c0.tgz</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>V13.0.4.0.SKICNXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKICNXM/miui_RENOIR_V13.0.4.0.SKICNXM_40f0bd0d21_12.0.zip" id="r">miui_RENOIR_V13.0.4.0.SKICNXM_40f0bd0d21_12.0.zip</a></td>
+					<td>未公布</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>V12.5.8.0.RKICNXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.8.0.RKICNXM/miui_RENOIR_V12.5.8.0.RKICNXM_0cd4a91d5b_11.0.zip" id="r">miui_RENOIR_V12.5.8.0.RKICNXM_0cd4a91d5b_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.8.0.RKICNXM/renoir_images_V12.5.8.0.RKICNXM_20211027.0000.00_11.0_cn_78a271dc5c.tgz" id="f">renoir_images_V12.5.8.0.RKICNXM_20211027.0000.00_11.0_cn_78a271dc5c.tgz</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>V12.5.5.0.RKICNXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKICNXM/miui_RENOIR_V12.5.5.0.RKICNXM_dfcbb54c9a_11.0.zip" id="r">miui_RENOIR_V12.5.5.0.RKICNXM_dfcbb54c9a_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKICNXM/renoir_images_V12.5.5.0.RKICNXM_20210915.0000.00_11.0_cn_2fc4dbbae7.tgz" id="f">renoir_images_V12.5.5.0.RKICNXM_20210915.0000.00_11.0_cn_2fc4dbbae7.tgz</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>V12.5.3.0.RKICNXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKICNXM/miui_RENOIR_V12.5.3.0.RKICNXM_53350fda17_11.0.zip" id="r">miui_RENOIR_V12.5.3.0.RKICNXM_53350fda17_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKICNXM/renoir_images_V12.5.3.0.RKICNXM_20210623.0000.00_11.0_cn_98e2d648dc.tgz" id="f">renoir_images_V12.5.3.0.RKICNXM_20210623.0000.00_11.0_cn_98e2d648dc.tgz</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>V12.5.2.0.RKICNXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKICNXM/miui_RENOIR_V12.5.2.0.RKICNXM_5d23f3cbfa_11.0.zip" id="r">miui_RENOIR_V12.5.2.0.RKICNXM_5d23f3cbfa_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKICNXM/renoir_images_V12.5.2.0.RKICNXM_20210526.0000.00_11.0_cn_2fea770c40.tgz" id="f">renoir_images_V12.5.2.0.RKICNXM_20210526.0000.00_11.0_cn_2fea770c40.tgz</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>V12.0.10.0.RKICNXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.0.10.0.RKICNXM/miui_RENOIR_V12.0.10.0.RKICNXM_5694b9a774_11.0.zip" id="r">miui_RENOIR_V12.0.10.0.RKICNXM_5694b9a774_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.0.10.0.RKICNXM/renoir_images_V12.0.10.0.RKICNXM_20210518.0000.00_11.0_cn_1b34791095.tgz" id="f">renoir_images_V12.0.10.0.RKICNXM_20210518.0000.00_11.0_cn_1b34791095.tgz</a></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>V12.0.7.0.RKICNXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.0.7.0.RKICNXM/miui_RENOIR_V12.0.7.0.RKICNXM_ccf60ab5b4_11.0.zip" id="r">miui_RENOIR_V12.0.7.0.RKICNXM_ccf60ab5b4_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.0.7.0.RKICNXM/renoir_images_V12.0.7.0.RKICNXM_20210419.0000.00_11.0_cn_626e6efd82.tgz" id="f">renoir_images_V12.0.7.0.RKICNXM_20210419.0000.00_11.0_cn_626e6efd82.tgz</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mdui-table-fluid" id="TW_STABLE">
+		<table class="mdui-table">
+			<thead>
+				<tr>
+					<th class="mdui-text-color-red">台湾稳定版</th>
+					<th>MIUI版本</th>
+					<th>Android版本</th>
+					<th>卡刷包</th>
+					<th>线刷包</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="mdui-hidden">
+					<td>10</td>
+					<td>TEXT_HERE</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td>
+					<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>V13.0.4.0.SKITWXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKITWXM/miui_RENOIRTWGlobal_V13.0.4.0.SKITWXM_e16e412678_12.0.zip" id="r">miui_RENOIRTWGlobal_V13.0.4.0.SKITWXM_e16e412678_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKITWXM/renoir_tw_global_images_V13.0.4.0.SKITWXM_20221011.0000.00_12.0_global_ad875adb34.tgz" id="f">renoir_tw_global_images_V13.0.4.0.SKITWXM_20221011.0000.00_12.0_global_ad875adb34.tgz</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>V13.0.3.0.SKITWXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKITWXM/miui_RENOIRTWGlobal_V13.0.3.0.SKITWXM_e672597947_12.0.zip" id="r">miui_RENOIRTWGlobal_V13.0.3.0.SKITWXM_e672597947_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKITWXM/renoir_tw_global_images_V13.0.3.0.SKITWXM_20220712.0000.00_12.0_global_26f3b2bedc.tgz" id="f">renoir_tw_global_images_V13.0.3.0.SKITWXM_20220712.0000.00_12.0_global_26f3b2bedc.tgz</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>V13.0.2.0.SKITWXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKITWXM/miui_RENOIRTWGlobal_V13.0.2.0.SKITWXM_7dd31dc804_12.0.zip" id="r">miui_RENOIRTWGlobal_V13.0.2.0.SKITWXM_7dd31dc804_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKITWXM/renoir_tw_global_images_V13.0.2.0.SKITWXM_20220426.0000.00_12.0_global_eb0198aeb1.tgz" id="f">renoir_tw_global_images_V13.0.2.0.SKITWXM_20220426.0000.00_12.0_global_eb0198aeb1.tgz</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>V13.0.1.0.SKITWXM</td>
+					<td>2.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKITWXM/miui_RENOIRTWGlobal_V13.0.1.0.SKITWXM_b84da5491f_12.0.zip" id="r">miui_RENOIRTWGlobal_V13.0.1.0.SKITWXM_b84da5491f_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKITWXM/renoir_tw_global_images_V13.0.1.0.SKITWXM_20220225.0000.00_12.0_global_a6cf0b04db.tgz" id="f">renoir_tw_global_images_V13.0.1.0.SKITWXM_20220225.0000.00_12.0_global_a6cf0b04db.tgz</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>V12.5.4.0.RKITWXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.4.0.RKITWXM_715aa9996b_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.4.0.RKITWXM_715aa9996b_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKITWXM/renoir_tw_global_images_V12.5.4.0.RKITWXM_20211110.0000.00_11.0_global_9f17562562.tgz" id="f">renoir_tw_global_images_V12.5.4.0.RKITWXM_20211110.0000.00_11.0_global_9f17562562.tgz</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>V12.5.3.0.RKITWXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.3.0.RKITWXM_277004d52f_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.3.0.RKITWXM_277004d52f_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKITWXM/renoir_tw_global_images_V12.5.3.0.RKITWXM_20210831.0000.00_11.0_global_78aa0236ba.tgz" id="f">renoir_tw_global_images_V12.5.3.0.RKITWXM_20210831.0000.00_11.0_global_78aa0236ba.tgz</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>V12.5.2.0.RKITWXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.2.0.RKITWXM_0489753994_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.2.0.RKITWXM_0489753994_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKITWXM/renoir_tw_global_images_V12.5.2.0.RKITWXM_20210701.0000.00_11.0_global_c4ceed646e.tgz" id="f">renoir_tw_global_images_V12.5.2.0.RKITWXM_20210701.0000.00_11.0_global_c4ceed646e.tgz</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>V12.5.1.0.RKITWXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKITWXM/miui_RENOIRTWGlobal_V12.5.1.0.RKITWXM_cf10b13290_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.5.1.0.RKITWXM_cf10b13290_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKITWXM/renoir_tw_global_images_V12.5.1.0.RKITWXM_20210526.0000.00_11.0_global_05758cd6a0.tg" id="f">renoir_tw_global_images_V12.5.1.0.RKITWXM_20210526.0000.00_11.0_global_05758cd6a0.tg</a></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>V12.0.2.0.RKITWXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKITWXM/miui_RENOIRTWGlobal_V12.0.2.0.RKITWXM_0d269385ab_11.0.zip" id="r">miui_RENOIRTWGlobal_V12.0.2.0.RKITWXM_0d269385ab_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKITWXM/renoir_tw_global_images_V12.0.2.0.RKITWXM_20210419.0000.00_11.0_global_9ad3c2d9bb.tgz" id="f">renoir_tw_global_images_V12.0.2.0.RKITWXM_20210419.0000.00_11.0_global_9ad3c2d9bb.tgz</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mdui-table-fluid" id="GB_STABLE">
+		<table class="mdui-table">
+			<thead>
+				<tr>
+					<th class="mdui-text-color-red">国际稳定版</th>
+					<th>MIUI版本</th>
+					<th>Android版本</th>
+					<th>卡刷包</th>
+					<th>线刷包</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="mdui-hidden">
+					<td>12</td>
+					<td>TEXT_HERE</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td>
+					<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>V13.0.8.0.SKIMIXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKIMIXM/miui_RENOIRGlobal_V13.0.8.0.SKIMIXM_c784136170_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.8.0.SKIMIXM_c784136170_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.8.0.SKIMIXM/renoir_global_images_V13.0.8.0.SKIMIXM_20220902.0000.00_12.0_global_4f47c5c850.tgz" id="f">renoir_global_images_V13.0.8.0.SKIMIXM_20220902.0000.00_12.0_global_4f47c5c850.tgz</a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>V13.0.6.0.SKIMIXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIMIXM/miui_RENOIRGlobal_V13.0.6.0.SKIMIXM_4a715c3ae4_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.6.0.SKIMIXM_4a715c3ae4_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIMIXM/renoir_global_images_V13.0.6.0.SKIMIXM_20220622.0000.00_12.0_global_d6c79068b9.tgz" id="f">renoir_global_images_V13.0.6.0.SKIMIXM_20220622.0000.00_12.0_global_d6c79068b9.tgz</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>V13.0.4.0.SKIMIXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIMIXM/miui_RENOIRGlobal_V13.0.4.0.SKIMIXM_e66cdbaec5_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.4.0.SKIMIXM_e66cdbaec5_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIMIXM/renoir_global_images_V13.0.4.0.SKIMIXM_20220412.0000.00_12.0_global_fe20cdc5c1.tgz" id="f">renoir_global_images_V13.0.4.0.SKIMIXM_20220412.0000.00_12.0_global_fe20cdc5c1.tgz</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>V13.0.3.0.SKIMIXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIMIXM/miui_RENOIRGlobal_V13.0.3.0.SKIMIXM_b771addef2_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.3.0.SKIMIXM_b771addef2_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIMIXM/renoir_global_images_V13.0.3.0.SKIMIXM_20220222.0000.00_12.0_global_a66d98554c.tgz" id="f">renoir_global_images_V13.0.3.0.SKIMIXM_20220222.0000.00_12.0_global_a66d98554c.tgz</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>V13.0.2.0.SKIMIXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIMIXM/miui_RENOIRGlobal_V13.0.2.0.SKIMIXM_7cc269e5ce_12.0.zip" id="r">miui_RENOIRGlobal_V13.0.2.0.SKIMIXM_7cc269e5ce_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIMIXM/renoir_global_images_V13.0.2.0.SKIMIXM_20220123.0000.00_12.0_global_b1dad9edb2.tgz" id="f">renoir_global_images_V13.0.2.0.SKIMIXM_20220123.0000.00_12.0_global_b1dad9edb2.tgz</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>V12.5.7.0.RKIMIXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIMIXM/miui_RENOIRGlobal_V12.5.7.0.RKIMIXM_8f9da4976d_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.7.0.RKIMIXM_8f9da4976d_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIMIXM/renoir_global_images_V12.5.7.0.RKIMIXM_20220105.0000.00_11.0_global_869083686d.tgz" id="f">renoir_global_images_V12.5.7.0.RKIMIXM_20220105.0000.00_11.0_global_869083686d.tgz</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>V12.5.6.0.RKIMIXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIMIXM/miui_RENOIRGlobal_V12.5.6.0.RKIMIXM_046844758f_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.6.0.RKIMIXM_046844758f_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIMIXM/renoir_global_images_V12.5.6.0.RKIMIXM_20211027.0000.00_11.0_global_5da6ef76a9.tgz" id="f">renoir_global_images_V12.5.6.0.RKIMIXM_20211027.0000.00_11.0_global_5da6ef76a9.tgz</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>V12.5.5.0.RKIMIXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIMIXM/miui_RENOIRGlobal_V12.5.5.0.RKIMIXM_58b3a9e618_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.5.0.RKIMIXM_58b3a9e618_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIMIXM/renoir_global_images_V12.5.5.0.RKIMIXM_20210805.0000.00_11.0_global_9f22a26eac.tgz" id="f">renoir_global_images_V12.5.5.0.RKIMIXM_20210805.0000.00_11.0_global_9f22a26eac.tgz</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>V12.5.2.0.RKIMIXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIMIXM/miui_RENOIRGlobal_V12.5.2.0.RKIMIXM_ab83d0ceea_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.2.0.RKIMIXM_ab83d0ceea_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIMIXM/renoir_global_images_V12.5.2.0.RKIMIXM_20210701.0000.00_11.0_global_548cd1be24.tgz" id="f">renoir_global_images_V12.5.2.0.RKIMIXM_20210701.0000.00_11.0_global_548cd1be24.tgz</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>V12.5.1.0.RKIMIXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIMIXM/miui_RENOIRGlobal_V12.5.1.0.RKIMIXM_740820bef6_11.0.zip" id="r">miui_RENOIRGlobal_V12.5.1.0.RKIMIXM_740820bef6_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIMIXM/renoir_global_images_V12.5.1.0.RKIMIXM_20210528.0000.00_11.0_global_d4b08503ae.tgz" id="f">renoir_global_images_V12.5.1.0.RKIMIXM_20210528.0000.00_11.0_global_d4b08503ae.tgz</a></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>V12.0.2.0.RKIMIXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIMIXM/miui_RENOIRGlobal_V12.0.2.0.RKIMIXM_18d2ad9cd4_11.0.zip" id="r">miui_RENOIRGlobal_V12.0.2.0.RKIMIXM_18d2ad9cd4_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIMIXM/renoir_global_images_V12.0.2.0.RKIMIXM_20210427.0000.00_11.0_global_73c4bc36a4.tgz" id="f">renoir_global_images_V12.0.2.0.RKIMIXM_20210427.0000.00_11.0_global_73c4bc36a4.tgz</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mdui-table-fluid" id="EEA_STABLE">
+		<table class="mdui-table">
+			<thead>
+				<tr>
+					<th class="mdui-text-color-red">欧洲稳定版</th>
+					<th>MIUI版本</th>
+					<th>Android版本</th>
+					<th>卡刷包</th>
+					<th>线刷包</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="mdui-hidden">
+					<td>12</td>
+					<td>TEXT_HERE</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td>
+					<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>V13.0.7.0.SKIEUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.7.0.SKIEUXM_7dda0df5f7_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.7.0.SKIEUXM_7dda0df5f7_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.7.0.SKIEUXM/renoir_eea_global_images_V13.0.7.0.SKIEUXM_20220902.0000.00_12.0_eea_2246d2d00b.tgz" id="f">renoir_eea_global_images_V13.0.7.0.SKIEUXM_20220902.0000.00_12.0_eea_2246d2d00b.tgz</a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>V13.0.6.0.SKIEUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.6.0.SKIEUXM_6e0f470c75_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.6.0.SKIEUXM_6e0f470c75_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIEUXM/renoir_eea_global_images_V13.0.6.0.SKIEUXM_20220630.0000.00_12.0_eea_a4c1905f12.tgz" id="f">renoir_eea_global_images_V13.0.6.0.SKIEUXM_20220630.0000.00_12.0_eea_a4c1905f12.tgz</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>V13.0.5.0.SKIEUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.5.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.5.0.SKIEUXM_de56c8afa0_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.5.0.SKIEUXM_de56c8afa0_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.5.0.SKIEUXM/renoir_eea_global_images_V13.0.5.0.SKIEUXM_20220425.0000.00_12.0_eea_056d8fdcf9.tgz" id="f">renoir_eea_global_images_V13.0.5.0.SKIEUXM_20220425.0000.00_12.0_eea_056d8fdcf9.tgz</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>V13.0.4.0.SKIEUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIEUXM/miui_RENOIREEAGlobal_V13.0.4.0.SKIEUXM_6154fb0712_12.0.zip" id="r">miui_RENOIREEAGlobal_V13.0.4.0.SKIEUXM_6154fb0712_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIEUXM/renoir_eea_global_images_V13.0.4.0.SKIEUXM_20220224.0000.00_12.0_eea_d58b0aec96.tgz" id="f">renoir_eea_global_images_V13.0.4.0.SKIEUXM_20220224.0000.00_12.0_eea_d58b0aec96.tgz</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>V12.5.7.0.RKIEUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip" id="f">miui_RENOIREEAGlobal_V12.5.7.0.RKIEUXM_325e38b5bf_11.0.zip</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>V12.5.6.0.RKIEUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.6.0.RKIEUXM_9e679fe693_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.6.0.RKIEUXM_9e679fe693_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIEUXM/renoir_eea_global_images_V12.5.6.0.RKIEUXM_20211103.0000.00_11.0_eea_bb914ce4b0.tgz" id="f">renoir_eea_global_images_V12.5.6.0.RKIEUXM_20211103.0000.00_11.0_eea_bb914ce4b0.tgz</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>V12.5.5.0.RKIEUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.5.0.RKIEUXM_5503f9cf02_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.5.0.RKIEUXM_5503f9cf02_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.5.0.RKIEUXM/renoir_eea_global_images_V12.5.5.0.RKIEUXM_20210825.0000.00_11.0_eea_9deccd3009.tgz" id="f">renoir_eea_global_images_V12.5.5.0.RKIEUXM_20210825.0000.00_11.0_eea_9deccd3009.tgz</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>V12.5.3.0.RKIEUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz" id="f">renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>V12.5.3.0.RKIEUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.3.0.RKIEUXM_916fd07eb1_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIEUXM/renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz" id="f">renoir_eea_global_images_V12.5.3.0.RKIEUXM_20210630.0000.00_11.0_eea_c5bf9d415d.tgz</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>V12.5.1.0.RKIEUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIEUXM/miui_RENOIREEAGlobal_V12.5.1.0.RKIEUXM_fe2996d265_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.5.1.0.RKIEUXM_fe2996d265_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIEUXM/renoir_eea_global_images_V12.5.1.0.RKIEUXM_20210525.0000.00_11.0_eea_170c6182d9.tgz" id="f">renoir_eea_global_images_V12.5.1.0.RKIEUXM_20210525.0000.00_11.0_eea_170c6182d9.tgz</a></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>V12.0.8.0.RKIEUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.0.8.0.RKIEUXM/miui_RENOIREEAGlobal_V12.0.8.0.RKIEUXM_c832608d97_11.0.zip" id="r">miui_RENOIREEAGlobal_V12.0.8.0.RKIEUXM_c832608d97_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.0.8.0.RKIEUXM/renoir_eea_global_images_V12.0.8.0.RKIEUXM_20210419.0000.00_11.0_eea_1e3641e85a.tgz" id="f">renoir_eea_global_images_V12.0.8.0.RKIEUXM_20210419.0000.00_11.0_eea_1e3641e85a.tgz</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mdui-table-fluid" id="RU_STABLE">
+		<table class="mdui-table">
+			<thead>
+				<tr>
+					<th class="mdui-text-color-red">俄罗斯稳定版</th>
+					<th>MIUI版本</th>
+					<th>Android版本</th>
+					<th>卡刷包</th>
+					<th>线刷包</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="mdui-hidden">
+					<td>10</td>
+					<td>TEXT_HERE</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td>
+					<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>V13.0.4.0.SKIRUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIRUXM/miui_RENOIRRUGlobal_V13.0.4.0.SKIRUXM_8f8cb4451a_12.0.zip" id="r">miui_RENOIRRUGlobal_V13.0.4.0.SKIRUXM_8f8cb4451a_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIRUXM/renoir_ru_global_images_V13.0.4.0.SKIRUXM_20221011.0000.00_12.0_global_f36de7c722.tgz" id="f">renoir_ru_global_images_V13.0.4.0.SKIRUXM_20221011.0000.00_12.0_global_f36de7c722.tgz</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>V13.0.3.0.SKIRUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIRUXM/miui_RENOIRRUGlobal_V13.0.3.0.SKIRUXM_01543a6b11_12.0.zip" id="r">miui_RENOIRRUGlobal_V13.0.3.0.SKIRUXM_01543a6b11_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIRUXM/renoir_ru_global_images_V13.0.3.0.SKIRUXM_20220712.0000.00_12.0_global_67fe623366.tgz" id="f">renoir_ru_global_images_V13.0.3.0.SKIRUXM_20220712.0000.00_12.0_global_67fe623366.tgz</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>V13.0.2.0.SKIRUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIRUXM/miui_RENOIRRUGlobal_V13.0.2.0.SKIRUXM_e231fdbc5e_12.0.zip" id="r">miui_RENOIRRUGlobal_V13.0.2.0.SKIRUXM_e231fdbc5e_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIRUXM/renoir_ru_global_images_V13.0.2.0.SKIRUXM_20220426.0000.00_12.0_global_4afd4cb8c9.tgz" id="f">renoir_ru_global_images_V13.0.2.0.SKIRUXM_20220426.0000.00_12.0_global_4afd4cb8c9.tgz</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>V13.0.1.0.SKIRUXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIRUXM/miui_RENOIRRUGlobal_V13.0.1.0.SKIRUXM_0711b086d3_12.0.zip" id="r">miui_RENOIRRUGlobal_V13.0.1.0.SKIRUXM_0711b086d3_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIRUXM/renoir_ru_global_images_V13.0.1.0.SKIRUXM_20220301.0000.00_12.0_global_4076e85ec0.tgz" id="f">renoir_ru_global_images_V13.0.1.0.SKIRUXM_20220301.0000.00_12.0_global_4076e85ec0.tgz</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>V12.5.4.0.RKIRUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.4.0.RKIRUXM_2d12286bd5_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.4.0.RKIRUXM_2d12286bd5_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIRUXM/renoir_ru_global_images_V12.5.4.0.RKIRUXM_20211111.0000.00_11.0_global_3cf833e8a0.tgz" id="f">renoir_ru_global_images_V12.5.4.0.RKIRUXM_20211111.0000.00_11.0_global_3cf833e8a0.tgz</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>V12.5.3.0.RKIRUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.3.0.RKIRUXM_f45f878e21_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.3.0.RKIRUXM_f45f878e21_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.3.0.RKIRUXM/renoir_ru_global_images_V12.5.3.0.RKIRUXM_20210830.0000.00_11.0_global_bff4a0918a.tgz" id="f">renoir_ru_global_images_V12.5.3.0.RKIRUXM_20210830.0000.00_11.0_global_bff4a0918a.tgz</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>V12.5.2.0.RKIRUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.2.0.RKIRUXM_dbafe73a3a_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.2.0.RKIRUXM_dbafe73a3a_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIRUXM/renoir_ru_global_images_V12.5.2.0.RKIRUXM_20210622.0000.00_11.0_global_cb2aaf0447.tgz" id="f">renoir_ru_global_images_V12.5.2.0.RKIRUXM_20210622.0000.00_11.0_global_cb2aaf0447.tgz</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>V12.5.1.0.RKIRUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIRUXM/miui_RENOIRRUGlobal_V12.5.1.0.RKIRUXM_79f946df1e_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.5.1.0.RKIRUXM_79f946df1e_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.1.0.RKIRUXM/renoir_ru_global_images_V12.5.1.0.RKIRUXM_20210528.0000.00_11.0_global_9d55819ae5.tgz" id="f">renoir_ru_global_images_V12.5.1.0.RKIRUXM_20210528.0000.00_11.0_global_9d55819ae5.tgz</a></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>V12.0.2.0.RKIRUXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIRUXM/miui_RENOIRRUGlobal_V12.0.2.0.RKIRUXM_b5314f8775_11.0.zip" id="r">miui_RENOIRRUGlobal_V12.0.2.0.RKIRUXM_b5314f8775_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.0.2.0.RKIRUXM/renoir_ru_global_images_V12.0.2.0.RKIRUXM_20210427.0000.00_11.0_global_6aed0d562f.tgz" id="f">renoir_ru_global_images_V12.0.2.0.RKIRUXM_20210427.0000.00_11.0_global_6aed0d562f.tgz</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="mdui-table-fluid" id="JP_STABLE">
+		<table class="mdui-table">
+			<thead>
+				<tr>
+					<th class="mdui-text-color-red">日本稳定版</th>
+					<th>MIUI版本</th>
+					<th>Android版本</th>
+					<th>卡刷包</th>
+					<th>线刷包</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="mdui-hidden">
+					<td>11</td>
+					<td>TEXT_HERE</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com//" id="r">TEXT_HERE</a></td>
+					<td><a href="https://bigota.d.miui.com//" id="f">TEXT_HERE</a></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>V13.0.6.0.SKIJPXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.6.0.SKIJPXM_5f76384c48_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.6.0.SKIJPXM_5f76384c48_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.6.0.SKIJPXM/renoir_jp_global_images_V13.0.6.0.SKIJPXM_20220928.0000.00_12.0_global_e282f56395.tgz" id="f">renoir_jp_global_images_V13.0.6.0.SKIJPXM_20220928.0000.00_12.0_global_e282f56395.tgz</a></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>V13.0.4.0.SKIJPXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.4.0.SKIJPXM_6d3de6f27a_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.4.0.SKIJPXM_6d3de6f27a_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.4.0.SKIJPXM/renoir_jp_global_images_V13.0.4.0.SKIJPXM_20220705.0000.00_12.0_global_0e34e93495.tgz" id="f">renoir_jp_global_images_V13.0.4.0.SKIJPXM_20220705.0000.00_12.0_global_0e34e93495.tgz</a></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>V13.0.3.0.SKIJPXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.3.0.SKIJPXM_cea2075c88_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.3.0.SKIJPXM_cea2075c88_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.3.0.SKIJPXM/renoir_jp_global_images_V13.0.3.0.SKIJPXM_20220420.0000.00_12.0_global_f11bfa1f87.tgz" id="f">renoir_jp_global_images_V13.0.3.0.SKIJPXM_20220420.0000.00_12.0_global_f11bfa1f87.tgz</a></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>V13.0.2.0.SKIJPXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.2.0.SKIJPXM_fcc987c060_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.2.0.SKIJPXM_fcc987c060_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.2.0.SKIJPXM/renoir_jp_global_images_V13.0.2.0.SKIJPXM_20220317.0000.00_12.0_global_34caf57647.tgz" id="f">renoir_jp_global_images_V13.0.2.0.SKIJPXM_20220317.0000.00_12.0_global_34caf57647.tgz</a></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>V13.0.1.0.SKIJPXM</td>
+					<td>12.0</td>
+					<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIJPXM/miui_RENOIRJPGlobal_V13.0.1.0.SKIJPXM_bf3cb8a296_12.0.zip" id="r">miui_RENOIRJPGlobal_V13.0.1.0.SKIJPXM_bf3cb8a296_12.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V13.0.1.0.SKIJPXM/renoir_jp_global_images_V13.0.1.0.SKIJPXM_20220225.0000.00_12.0_global_8d4d15b3d0.tgz" id="f">renoir_jp_global_images_V13.0.1.0.SKIJPXM_20220225.0000.00_12.0_global_8d4d15b3d0.tgz</a></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>V12.5.9.0.RKIJPXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.9.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.9.0.RKIJPXM_70c801406f_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.9.0.RKIJPXM_70c801406f_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.9.0.RKIJPXM/renoir_jp_global_images_V12.5.9.0.RKIJPXM_20220208.0000.00_11.0_global_1f21aed2c7.tgz" id="f">renoir_jp_global_images_V12.5.9.0.RKIJPXM_20220208.0000.00_11.0_global_1f21aed2c7.tgz</a></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>V12.5.7.0.RKIJPXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.7.0.RKIJPXM_0bfa188f7b_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.7.0.RKIJPXM_0bfa188f7b_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.7.0.RKIJPXM/renoir_jp_global_images_V12.5.7.0.RKIJPXM_20220105.0000.00_11.0_global_99ec36a94c.tgz" id="f">renoir_jp_global_images_V12.5.7.0.RKIJPXM_20220105.0000.00_11.0_global_99ec36a94c.tgz</a></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>V12.5.6.0.RKIJPXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.6.0.RKIJPXM_8dabafc656_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.6.0.RKIJPXM_8dabafc656_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.6.0.RKIJPXM/renoir_jp_global_images_V12.5.6.0.RKIJPXM_20211102.0000.00_11.0_global_5b06efc4ff.tgz" id="f">renoir_jp_global_images_V12.5.6.0.RKIJPXM_20211102.0000.00_11.0_global_5b06efc4ff.tgz</a></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>V12.5.4.0.RKIJPXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.4.0.RKIJPXM_b95548a39f_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.4.0.RKIJPXM_b95548a39f_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.4.0.RKIJPXM/renoir_jp_global_images_V12.5.4.0.RKIJPXM_20210824.0000.00_11.0_global_207c42e65e.tgz" id="f">renoir_jp_global_images_V12.5.4.0.RKIJPXM_20210824.0000.00_11.0_global_207c42e65e.tgz</a></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>V12.5.2.0.RKIJPXM</td>
+					<td>11.0</td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIJPXM/miui_RENOIRJPGlobal_V12.5.2.0.RKIJPXM_0ebdcd021b_11.0.zip" id="r">miui_RENOIRJPGlobal_V12.5.2.0.RKIJPXM_0ebdcd021b_11.0.zip</a></td>
+					<td><a href="https://bigota.d.miui.com/V12.5.2.0.RKIJPXM/renoir_jp_global_images_V12.5.2.0.RKIJPXM_20210711.0000.00_11.0_global_4919d2bf5d.tgz" id="f">renoir_jp_global_images_V12.5.2.0.RKIJPXM_20210711.0000.00_11.0_global_4919d2bf5d.tgz</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- 由此向下区域为底部Footer的内容 -->
+	<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+
+	</div>
+	<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e0818275b9944a59d625e2df596aaca"}'></script>
+</body>
+
 </html>

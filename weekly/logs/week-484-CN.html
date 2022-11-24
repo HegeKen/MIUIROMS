@@ -1,320 +1,318 @@
 <!doctype html>
 <html lang="zh">
-	<head> 
-		<meta charset="UTF-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-		<link href="../../assets/mdui/css/mdui.min.css" rel="stylesheet"> 
-		<script src="../../assets/mdui/js/mdui.min.js"></script> 
-		<script src="../../assets/jquery/jquery.min.js"></script>
-		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
-		<!-- Global site tag (gtag.js) - Google Analytics --> 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
-		<script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='msvalidate.01' content='D0A12F85D732BE57318CA28F52500432'>
+	<meta name='chinaz-site-verification' content='5BDB6F3CEC5D6F6F'>
+	<meta name='google-site-verification' content='1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q'>
+	<link href="https://roms.miuier.com/assets/mdui/css/mdui.min.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/mdui/js/mdui.min.js"></script>
+	<script src="https://roms.miuier.com/assets/jquery/jquery.min.js"></script>
+	<link href="https://roms.miuier.com/assets/miuiroms.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/miuiroms.js"></script>
+	<link href='https://font.sec.miui.com/font/css?family=MiSans:300,450,500,650:Chinese_Simplify,Latin&display=swap' rel='stylesheet'>
+	<link rel='icon' type='image/x-icon' href='https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/favicon.ico'>
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-153213840-1'></script>
+	<script>
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "ecb8j7x9aw");
+	</script>
+	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'UA-153213840-1');
-	</script> 
-		<style>
-		td a {
-			text-decoration: none;
-			color: black;
-		}
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<title>第484周开发版日志 - MIUI官方ROM仓库</title>
+</head>
 
-		p a {
-			text-decoration: none;
-		}
-		@media screen and (max-width: 500px){
-			.pc{
-				display: none;
-			}
-			.mobile{
-				display: show;
-			}
-		}
-		@media screen and (min-width: 501px){
-			.pc{
-				display: show;
-			}
-			.mobile{
-				display: none;
-			}
-		}
-	</style> 
-		<title>第484周开发版日志 - MIUI官方ROM仓库</title> 
-	</head> 
-	<body> 
-		<script type="text/javascript">
-		$(document).ready(function () {
-			let height = $(document).width();
-			if (height < "550") {
-				$("td a").text("卡刷包");
-			}
-		})
-	</script> 
-		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
-			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
-			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
-			<div class="mdui-toolbar-spacer"></div> 
-			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
-				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
-						<div class="mdui-list-item-content">
-							<a href="../../index.html">回到首页</a>
-						</div> </li> 
-					
-					<li class="mdui-list-item mdui-ripple  mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
-						<div class="mdui-list-item-content">
-							<a href="../index.html">查看日志</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
-						<div class="mdui-list-item-content">
-							<a href="../../devices/index.html">机型列表</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
-						<div class="mdui-list-item-content">
-							<a href="../../tools.html">刷机工具</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
-						<div class="mdui-list-item-content">
-							<a href="../../thanks.html">衷心感谢</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
-						<div class="mdui-list-item-content">
-							<a href="../../aboutme.html">站点日志</a>
-						</div> </li> 
-				</ul> 
-			</div> 
-		</div> 
-		<div class="mdui-container-fluid"> 
-			<div> 
-				<div class="mdui-panel-item mdui-panel-item-open"> 
-					<div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">
-						MIUI 第484周发布公告及更新日志
-					</div> 
-					<div class="mdui-panel-item-body"> 
-						<p>社区链接：<a href="https://www.xiaomi.cn/post/24548325">MIUI 第484周发布公告及更新日志</a></p> 
-						<p style="font-weight: bolder;">▍发布时间和机型</p> 
-						<p>MIUI12.5 开发版21.2.3版本 13:00前发布，部分机型已发布</p> 
-						<br> 
-						<p style="font-weight: bolder;">▍升级说明</p> 
-						<ol> 
-							<li>MIUI 开发版可进入“设置—&gt;我的设备—&gt;MIUI版本”在线升级，升级前务必备份重要数据</li> 
-							<li>部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准</li> 
-						</ol> 
-						<p style="font-weight: bolder;">▍重要说明</p> 
-						<ol> 
-							<li>今日预计13点前发布，部分机型已发布，感谢大家的理解</li> 
-							<li>由于正在解决影响使用体验的问题，Redmi Note 9 4G、Redmi K30 至尊纪念版 预计2月6日24点前发布，感谢大家的理解</li> 
-							<li>为给米粉朋友们，相对更好的测试版使用体验，近期发版计划如下，感谢大家的理解<br>①. 2021年2月1日-2月5日：开发版内测、开发版公测正常发布<br>②. 2021年2月8日-2月19日：开发版内测、开发版公测暂停发布<br>③. 2021年2月22日起：开发版内测、开发版公测恢复发布</li> 
-							<li>2021年4月24日起，Redmi Note7、Redmi Note7 Pro、小米CC9e 将停止开发版内测公测，感谢大家的理解</li>
-						</ol> 
-						<hr> 
-						<br> 
-						<p style="font-weight: bolder;">▍更新日志</p> 
-						<br> 
-						<p style="font-weight: bolder;">【系统】</p> 
-						<p>更新谷歌安全补丁（2021#01），提升系统安全性(适配机型： Redmi Note 8 Pro、Redmi Note 9、Redmi K30 至尊纪念版、Redmi 10X、Redmi 10X Pro)</p> 
-						<br> 
-						<p style="font-weight: bolder;">【系统】</p> 
-						<p>修复 微信朋友圈个别场景的卡顿问题</p>
-                  		<p>修复 个别场景Android系统权限导致的应用报错(适配机型：小米11)</p>
-						<br> 
-					</div> 
-				</div> 
-			</div> 
-		</div> 
-		<div class="mdui-container-fluid"> 
-			<div class="mdui-table-fluid"> 
-				<table class="mdui-table"> 
-					<thead> 
-						<tr> 
-							<th>机型</th> 
-							<th>安卓版本</th> 
-							<th>卡刷包</th> 
-						</tr> 
-					</thead> 
-					<tbody> 
-						<tr> 
-							<td>小米9/透明版(cepheus)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_CEPHEUS_21.2.3_60881427b7_11.0.zip" id="r">miui_CEPHEUS_21.2.3_60881427b7_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米9 Pro 5G(crux)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_CRUX_21.2.3_ede071d572_11.0.zip" id="r">miui_CRUX_21.2.3_ede071d572_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米9 SE(grus)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_GRUS_21.2.3_60342cd1f2_11.0.zip" id="r">miui_GRUS_21.2.3_60342cd1f2_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米CC9(pyxis)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_PYXIS_21.2.3_d7747670b5_11.0.zip" id="r">miui_PYXIS_21.2.3_d7747670b5_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米CC9美图定制版(vela)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_VELA_21.2.3_d763fb1c5c_11.0.zip" id="r">miui_VELA_21.2.3_d763fb1c5c_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米CC9e(laurus)</td> 
-							<td>10.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_LAURUS_21.2.3_c420c6775c_10.0.zip" id="r">miui_LAURUS_21.2.3_c420c6775c_10.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米CC9 Pro(tucana)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_TUCANA_21.2.3_0e5214e74a_11.0.zip" id="r">miui_TUCANA_21.2.3_0e5214e74a_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米10(umi)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_UMI_21.2.3_2a96fd9670_11.0.zip" id="r">miui_UMI_21.2.3_2a96fd9670_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米10 Pro(cmi)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_CMI_21.2.3_8d1149a447_11.0.zip" id="r">miui_CMI_21.2.3_8d1149a447_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米10 青春版(vangogh)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.4/miui_VANGOGH_21.2.4_50f812e70f_11.0.zip" id="r">miui_VANGOGH_21.2.4_50f812e70f_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米10 至尊纪念版(cas)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_CAS_21.2.3_db773eef6f_11.0.zip" id="r">miui_CAS_21.2.3_db773eef6f_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>小米11(venus)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_VENUS_21.2.3_e3bb334655_11.0.zip" id="r">miui_VENUS_21.2.3_e3bb334655_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi 10X 5G(atom)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.4/miui_ATOM_21.2.4_762bc59ef6_11.0.zip" id="r">miui_ATOM_21.2.4_762bc59ef6_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi 10X Pro(bomb)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.4/miui_BOMB_21.2.4_edce8357d7_11.0.zip" id="r">miui_BOMB_21.2.4_edce8357d7_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi Note 7(lavender)</td> 
-							<td>10.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_LAVENDER_21.2.3_2ad1f35faa_10.0.zip" id="r">miui_LAVENDER_21.2.3_2ad1f35faa_10.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi Note 7 Pro(violet)</td> 
-							<td>10.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_VIOLET_21.2.3_581daa24ff_10.0.zip" id="r">miui_VIOLET_21.2.3_581daa24ff_10.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi Note 8(ginkgo)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.4/miui_GINKGO_21.2.4_569aad7c5a_11.0.zip" id="r">miui_GINKGO_21.2.4_569aad7c5a_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi Note 8 Pro(begonia)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.4/miui_BEGONIA_21.2.4_fbe1fa8bbb_11.0.zip" id="r">miui_BEGONIA_21.2.4_fbe1fa8bbb_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi Note 9 4G(lime)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.2/miui_LIME_21.2.2_4ee99cdf45_11.0.zip" id="r">miui_LIME_21.2.2_4ee99cdf45_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi Note 9 5G(cannon)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.4/miui_CANNON_21.2.4_4d8d21ebff_11.0.zip" id="r">miui_CANNON_21.2.4_4d8d21ebff_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi Note 9 Pro(gauguin)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_GAUGUIN_21.2.3_cfb0f4714f_11.0.zip" id="r">miui_GAUGUIN_21.2.3_cfb0f4714f_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K20(davinci)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_DAVINCI_21.2.3_6d5111b469_11.0.zip" id="r">miui_DAVINCI_21.2.3_6d5111b469_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K20 Pro/尊享版(raphael)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_RAPHAEL_21.2.3_c3d0e773c3_11.0.zip" id="r">miui_RAPHAEL_21.2.3_c3d0e773c3_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K30 4G版(phoenix)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_PHOENIX_21.2.3_1191cd19ca_11.0.zip" id="r">miui_PHOENIX_21.2.3_1191cd19ca_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K30 5G版(Picasso)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_PICASSO_21.2.3_2307ec632f_11.0.zip" id="r">miui_PICASSO_21.2.3_2307ec632f_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K30i 5G版(Picasso_48m)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_PICASSO48M_21.2.3_5b6917c021_11.0.zip" id="r">miui_PICASSO48M_21.2.3_5b6917c021_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K30 Pro(lmi)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.4/miui_LMI_21.2.4_db5889cf65_11.0.zip" id="r">miui_LMI_21.2.4_db5889cf65_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K30 至尊纪念版(cezanne)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.5/miui_CEZANNE_21.2.5_8167756928_11.0.zip" id="r">miui_CEZANNE_21.2.5_8167756928_11.0.zip</a></td> 
-						</tr> 
-						<tr> 
-							<td>Redmi K30S 至尊纪念版(apollo)</td> 
-							<td>11.0</td> 
-							<td><a href="https://bigota.d.miui.com/21.2.3/miui_APOLLO_21.2.3_826badda8a_11.0.zip" id="r">miui_APOLLO_21.2.3_826badda8a_11.0.zip</a></td> 
-						</tr> 
-					</tbody> 
-				</table> 
-			</div> 
-		</div> 
-      <br>
-		<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
-			
-		</div> 
-		<div style=" position:absolute; right:20px;bottom: 5px;"> 
-			
-		</div> 
-		<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;"> 
-			<div class="mdui-container-fluid"> 
-				<div class="mdui-row mdui-footer-nav"> 
-					<div class="mdui-col-xs-3"> 
-						<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3> 
-					</div> 
-					<div class="mdui-col-xs-4"> 
-						<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a> </h3> 
-					</div> 
-					<div class="mdui-col-xs-5"> 
-						<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3> 
-					</div> 
-				</div> 
-				<div class="mdui-divider footer-divider"></div> 
-				<p></p> 
-				<div class="mdui-text-center">
-					2019 - 2022
-				</div> 
-				<div style=" position:absolute; right:20px;bottom:5px;"> 
-					
-				</div> 
-			</div> 
-		</footer> 
-		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
-	</body>
+<body>
+
+	<div class="mdui-toolbar mdui-color-deep-orange-accent">
+		<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button>
+		<span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+		<div class="mdui-toolbar-spacer"></div>
+		<div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+			<ul class="mdui-list" mdui-collapse="{accordion: true}">
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+					<div class="mdui-list-item-content">
+						<a href="../../index.html">回到首页</a>
+					</div>
+				</li>
+
+				<li class="mdui-list-item mdui-ripple  mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+					<div class="mdui-list-item-content">
+						<a href="../index.html">查看日志</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+					<div class="mdui-list-item-content">
+						<a href="../../devices/index.html">机型列表</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+					<div class="mdui-list-item-content">
+						<a href="../../tools.html">刷机工具</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+					<div class="mdui-list-item-content">
+						<a href="../../thanks.html">衷心感谢</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+					<div class="mdui-list-item-content">
+						<a href="../../aboutme.html">站点日志</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="mdui-container-fluid">
+		<div>
+			<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-panel-item-header" style="font-weight: bolder;font-size: larger;">
+					MIUI 第484周发布公告及更新日志
+				</div>
+				<div class="mdui-panel-item-body">
+					<p>社区链接：<a href="https://www.xiaomi.cn/post/24548325">MIUI 第484周发布公告及更新日志</a></p>
+					<p style="font-weight: bolder;">▍发布时间和机型</p>
+					<p>MIUI12.5 开发版21.2.3版本 13:00前发布，部分机型已发布</p>
+					<br>
+					<p style="font-weight: bolder;">▍升级说明</p>
+					<ol>
+						<li>MIUI 开发版可进入“设置—&gt;我的设备—&gt;MIUI版本”在线升级，升级前务必备份重要数据</li>
+						<li>部分机型可能因功能进版时间略有差异，具体功能请以手机端展示日志为准</li>
+					</ol>
+					<p style="font-weight: bolder;">▍重要说明</p>
+					<ol>
+						<li>今日预计13点前发布，部分机型已发布，感谢大家的理解</li>
+						<li>由于正在解决影响使用体验的问题，Redmi Note 9 4G、Redmi K30 至尊纪念版 预计2月6日24点前发布，感谢大家的理解</li>
+						<li>为给米粉朋友们，相对更好的测试版使用体验，近期发版计划如下，感谢大家的理解<br>①. 2021年2月1日-2月5日：开发版内测、开发版公测正常发布<br>②. 2021年2月8日-2月19日：开发版内测、开发版公测暂停发布<br>③. 2021年2月22日起：开发版内测、开发版公测恢复发布</li>
+						<li>2021年4月24日起，Redmi Note7、Redmi Note7 Pro、小米CC9e 将停止开发版内测公测，感谢大家的理解</li>
+					</ol>
+					<hr>
+					<br>
+					<p style="font-weight: bolder;">▍更新日志</p>
+					<br>
+					<p style="font-weight: bolder;">【系统】</p>
+					<p>更新谷歌安全补丁（2021#01），提升系统安全性(适配机型： Redmi Note 8 Pro、Redmi Note 9、Redmi K30 至尊纪念版、Redmi 10X、Redmi 10X Pro)</p>
+					<br>
+					<p style="font-weight: bolder;">【系统】</p>
+					<p>修复 微信朋友圈个别场景的卡顿问题</p>
+					<p>修复 个别场景Android系统权限导致的应用报错(适配机型：小米11)</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mdui-container-fluid">
+		<div class="mdui-table-fluid">
+			<table class="mdui-table">
+				<thead>
+					<tr>
+						<th>机型</th>
+						<th>安卓版本</th>
+						<th>卡刷包</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>小米9/透明版(cepheus)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_CEPHEUS_21.2.3_60881427b7_11.0.zip" id="r">miui_CEPHEUS_21.2.3_60881427b7_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米9 Pro 5G(crux)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_CRUX_21.2.3_ede071d572_11.0.zip" id="r">miui_CRUX_21.2.3_ede071d572_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米9 SE(grus)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_GRUS_21.2.3_60342cd1f2_11.0.zip" id="r">miui_GRUS_21.2.3_60342cd1f2_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米CC9(pyxis)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_PYXIS_21.2.3_d7747670b5_11.0.zip" id="r">miui_PYXIS_21.2.3_d7747670b5_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米CC9美图定制版(vela)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_VELA_21.2.3_d763fb1c5c_11.0.zip" id="r">miui_VELA_21.2.3_d763fb1c5c_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米CC9e(laurus)</td>
+						<td>10.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_LAURUS_21.2.3_c420c6775c_10.0.zip" id="r">miui_LAURUS_21.2.3_c420c6775c_10.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米CC9 Pro(tucana)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_TUCANA_21.2.3_0e5214e74a_11.0.zip" id="r">miui_TUCANA_21.2.3_0e5214e74a_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米10(umi)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_UMI_21.2.3_2a96fd9670_11.0.zip" id="r">miui_UMI_21.2.3_2a96fd9670_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米10 Pro(cmi)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_CMI_21.2.3_8d1149a447_11.0.zip" id="r">miui_CMI_21.2.3_8d1149a447_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米10 青春版(vangogh)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.4/miui_VANGOGH_21.2.4_50f812e70f_11.0.zip" id="r">miui_VANGOGH_21.2.4_50f812e70f_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米10 至尊纪念版(cas)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_CAS_21.2.3_db773eef6f_11.0.zip" id="r">miui_CAS_21.2.3_db773eef6f_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>小米11(venus)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_VENUS_21.2.3_e3bb334655_11.0.zip" id="r">miui_VENUS_21.2.3_e3bb334655_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi 10X 5G(atom)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.4/miui_ATOM_21.2.4_762bc59ef6_11.0.zip" id="r">miui_ATOM_21.2.4_762bc59ef6_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi 10X Pro(bomb)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.4/miui_BOMB_21.2.4_edce8357d7_11.0.zip" id="r">miui_BOMB_21.2.4_edce8357d7_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi Note 7(lavender)</td>
+						<td>10.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_LAVENDER_21.2.3_2ad1f35faa_10.0.zip" id="r">miui_LAVENDER_21.2.3_2ad1f35faa_10.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi Note 7 Pro(violet)</td>
+						<td>10.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_VIOLET_21.2.3_581daa24ff_10.0.zip" id="r">miui_VIOLET_21.2.3_581daa24ff_10.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi Note 8(ginkgo)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.4/miui_GINKGO_21.2.4_569aad7c5a_11.0.zip" id="r">miui_GINKGO_21.2.4_569aad7c5a_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi Note 8 Pro(begonia)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.4/miui_BEGONIA_21.2.4_fbe1fa8bbb_11.0.zip" id="r">miui_BEGONIA_21.2.4_fbe1fa8bbb_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi Note 9 4G(lime)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.2/miui_LIME_21.2.2_4ee99cdf45_11.0.zip" id="r">miui_LIME_21.2.2_4ee99cdf45_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi Note 9 5G(cannon)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.4/miui_CANNON_21.2.4_4d8d21ebff_11.0.zip" id="r">miui_CANNON_21.2.4_4d8d21ebff_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi Note 9 Pro(gauguin)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_GAUGUIN_21.2.3_cfb0f4714f_11.0.zip" id="r">miui_GAUGUIN_21.2.3_cfb0f4714f_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K20(davinci)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_DAVINCI_21.2.3_6d5111b469_11.0.zip" id="r">miui_DAVINCI_21.2.3_6d5111b469_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K20 Pro/尊享版(raphael)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_RAPHAEL_21.2.3_c3d0e773c3_11.0.zip" id="r">miui_RAPHAEL_21.2.3_c3d0e773c3_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K30 4G版(phoenix)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_PHOENIX_21.2.3_1191cd19ca_11.0.zip" id="r">miui_PHOENIX_21.2.3_1191cd19ca_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K30 5G版(Picasso)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_PICASSO_21.2.3_2307ec632f_11.0.zip" id="r">miui_PICASSO_21.2.3_2307ec632f_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K30i 5G版(Picasso_48m)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_PICASSO48M_21.2.3_5b6917c021_11.0.zip" id="r">miui_PICASSO48M_21.2.3_5b6917c021_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K30 Pro(lmi)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.4/miui_LMI_21.2.4_db5889cf65_11.0.zip" id="r">miui_LMI_21.2.4_db5889cf65_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K30 至尊纪念版(cezanne)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.5/miui_CEZANNE_21.2.5_8167756928_11.0.zip" id="r">miui_CEZANNE_21.2.5_8167756928_11.0.zip</a></td>
+					</tr>
+					<tr>
+						<td>Redmi K30S 至尊纪念版(apollo)</td>
+						<td>11.0</td>
+						<td><a href="https://bigota.d.miui.com/21.2.3/miui_APOLLO_21.2.3_826badda8a_11.0.zip" id="r">miui_APOLLO_21.2.3_826badda8a_11.0.zip</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<br>
+	<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+
+	</div>
+	<div style=" position:absolute; right:20px;bottom: 5px;">
+
+	</div>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+			<div class="mdui-row mdui-footer-nav">
+				<div class="mdui-col-xs-3">
+					<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+				</div>
+				<div class="mdui-col-xs-4">
+					<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a> </h3>
+				</div>
+				<div class="mdui-col-xs-5">
+					<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+				</div>
+			</div>
+			<div class="mdui-divider footer-divider"></div>
+			<p></p>
+			<div class="mdui-text-center">
+				2019 - 2022
+			</div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+
+			</div>
+		</div>
+	</footer>
+	<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e0818275b9944a59d625e2df596aaca"}'></script>
+</body>
+
 </html>

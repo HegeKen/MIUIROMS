@@ -3,18 +3,21 @@ body {
 }
 a {
     text-decoration: none;
-    color:white;
+    color:blue;
 }
-.mdui-tab-active {
-    color:white !important;
+
+.mdui-list-item-content a{
+    color:black;
+}
+.mdui-chip a{
+    color:black;
+}
+mdui-btn a {
+    color:black;
 }
 li a {
-
-    color: blue;
     font-weight: bolder;
 }
-
 p a {
     text-decoration: none;
-    color: blue;
 }

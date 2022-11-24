@@ -1,108 +1,166 @@
 <!doctype html>
 <html lang="zh">
-	<head> 
-		<meta charset="UTF-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta name="chinaz-site-verification" content="5BDB6F3CEC5D6F6F"> 
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-		<link href="assets/mdui/css/mdui.min.css" rel="stylesheet"> 
-		<script src="assets/mdui/js/mdui.min.js"></script> 
-		<script src="assets/jquery/jquery.min.js"></script>
-		<script>
-	var _hmt = _hmt || [];
-	(function () {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
-	  var s = document.getElementsByTagName("script")[0];
-	  s.parentNode.insertBefore(hm, s);
-	})();
-  </script> 
-		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
-		<!-- Global site tag (gtag.js) - Google Analytics --> 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
-		<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() { dataLayer.push(arguments); }
-	gtag('js', new Date());
-	gtag('config', 'UA-153213840-1');
-  </script> 
-		<style>
-	li a {
-	  text-decoration: none;
-	  color: blue;
-	  font-weight: bolder;
-	}
 
-	p a {
-	  text-decoration: none;
-	  color: blue;
-	}
-  </style> 
-		<title>MIUI稳定版收录日志--由米柚发烧友整理维护</title> 
-	</head> 
-	<body> 
-		<script type="text/javascript">
-		$(document).ready(function () {
-			let height = $(document).width();
-			if (height < "550") {
-				$("td #r").text("卡刷包");
-				$("td #f").text("线刷包");
-			}
-		})
-	</script> 
-		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
-			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target:'#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
-			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
-			<div class="mdui-toolbar-spacer"></div> 
-			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
-				<ul class="mdui-list" mdui-collapse="{accordion:true}"> 
-					<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="index.html">首页</a> 
-						</div> </li> 
-					
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="weekly/index.html">查看日志</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="devices/index.html">机型列表</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="tools.html">刷机工具</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="thanks.html">衷心感谢</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="aboutme.html">站点日志</a> 
-						</div> </li> 
-					<li class="mdui-collapse-item"> 
-						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
-							<i class="mdui-list-item-icon mdui-icon material-icons">link</i> 
-							<div class="mdui-list-item-content">
-								 友情链接 
-							</div> 
-							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
-						</div> 
-						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
-<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li> 
-						</ul> </li> 
-				</ul> 
-			</div> 
-		</div> 
-		<div class="mdui-container-fluid">
-		<div class="mdui-panel-item mdui-panel-item-open mdui-panel-gapless"> 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='msvalidate.01' content='D0A12F85D732BE57318CA28F52500432'>
+	<meta name='chinaz-site-verification' content='5BDB6F3CEC5D6F6F'>
+	<meta name='google-site-verification' content='1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q'>
+	<link href="https://roms.miuier.com/assets/mdui/css/mdui.min.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/mdui/js/mdui.min.js"></script>
+	<script src="https://roms.miuier.com/assets/jquery/jquery.min.js"></script>
+	<link href="https://roms.miuier.com/assets/miuiroms.css" rel="stylesheet">
+	<link href='https://font.sec.miui.com/font/css?family=MiSans:300,450,500,650:Chinese_Simplify,Latin&display=swap' rel='stylesheet'>
+	<link rel='icon' type='image/x-icon' href='https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/favicon.ico'>
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-153213840-1'></script>
+	<script>
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "ecb8j7x9aw");
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<title>MIUI稳定版收录日志--由米柚发烧友整理维护</title>
+</head>
+
+<body>
+	<div class="mdui-toolbar mdui-color-deep-orange-accent">
+		<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target:'#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button>
+		<span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+		<div class="mdui-toolbar-spacer"></div>
+		<div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+			<ul class="mdui-list" mdui-collapse="{accordion:true}">
+				<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+					<div class="mdui-list-item-content">
+						<a href="index.html">首页</a>
+					</div>
+				</li>
+
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+					<div class="mdui-list-item-content">
+						<a href="weekly/index.html">查看日志</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+					<div class="mdui-list-item-content">
+						<a href="devices/index.html">机型列表</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+					<div class="mdui-list-item-content">
+						<a href="tools.html">刷机工具</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+					<div class="mdui-list-item-content">
+						<a href="thanks.html">衷心感谢</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+					<div class="mdui-list-item-content">
+						<a href="aboutme.html">站点日志</a>
+					</div>
+				</li>
+				<li class="mdui-collapse-item">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+						<div class="mdui-list-item-content">
+							友情链接
+						</div>
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+						<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="mdui-container-fluid">
+		<div class="mdui-panel-item mdui-panel-item-open mdui-panel-gapless">
 			<div class="mdui-panel-item-header">
-				 <h2>稳定版收录日志</h2>
+				<h2>稳定版收录日志</h2>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2022.11.25日更新:</p>
+					<ol>
+						<li>小米11：V13.0.5.0.SKBMIXM;V13.0.8.0.SKBEUXM;V13.0.4.0.SKBIDXM</li>
+						<li>小米11 Lite 4G：V13.0.10.0.SKQMIXM;V13.0.5.0.SKQINXM;V13.0.5.0.SKQTRXM</li>
+						<li>小米11 青春版：V13.0.4.0.SKITWXM;V13.0.4.0.SKIRUXM</li>
+						<li>小米11 青春活力版：V13.0.5.0.SKOTWXM;V13.0.6.0.SKOMIXM;V13.0.9.0.SKOINXM;V13.0.5.0.SKOTRXM</li>
+						<li>小米11 Pro/Ultra：V13.0.5.0.SKAINXM</li>
+						<li>小米11T：V13.0.8.0.SKWEUXM;V13.0.3.0.SKWIDXM</li>
+						<li>小米11T Pro：V13.0.7.0.SKDMIXM;V13.0.16.0.SKDEUXM;V13.0.18.0.SKDEUXM;V13.0.20.0.SKDEUXM;V13.0.10.0.SKDINXM;V13.0.5.0.SKDTRXM</li>
+						<li>小米12：V13.0.10.0.SLCMIXM;V13.0.5.0.SLCIDXM</li>
+						<li>小米12T：V13.0.5.0.SLQMIXM;V13.0.8.0.SLQEUXM;V13.0.10.0.SLQEUXM</li>
+						<li>小米12 Lite：V13.0.4.0.SLITWXM;V13.0.5.0.SLIMIXM;V13.0.13.0.SLIEUXM;V13.0.4.0.SLIRUXM</li>
+						<li>小米12X：V13.0.7.0.SLDCNXM;V13.0.4.0.SLDTWXM;V13.0.5.0.SLDMIXM;V13.0.4.0.SLDRUXM</li>
+						<li>小米12 Pro：V13.0.41.0.SLBCNXM;V13.0.25.0.SLBEUXM;V13.0.4.0.SLBIDXM</li>
+						<li>小米Note 10 Lite：V13.0.4.0.SFNMIXM;V13.0.2.0.SFNTRXM</li>
+						<li>小米MIX FOLD：V13.1.1.0.SJTCNXM</li>
+						<li>小米平板5：V13.0.3.0.RKXTRXM</li>
+						<li>小米 Civi 2：V13.0.7.0.SLLCNXM;V13.0.8.0.SLLCNXM</li>
+						<li>Redmi 9A：V12.5.7.0.RCDEUXM</li>
+						<li>Redmi 10/Prime：V13.0.2.0.SKUTWXM;V13.0.3.0.SKURUXM;V13.0.2.0.SKUTRXM</li>
+						<li>Redmi 10C：V13.0.4.0.SGEMIXM;V13.0.7.0.RGEEUXM;V13.0.2.0.SGERUXM;V13.0.2.0.SGEINXM;V13.0.1.0.SGEIDXM</li>
+						<li>Redmi 10X 4G：V13.0.2.0.SJOMIXM</li>
+						<li>Redmi Note 9 4G：V12.5.10.0.RJQEUXM;V12.5.9.0.RJQRUXM;V12.5.10.0.RJQINXM;V12.5.9.0.RJQIDXM;V12.5.6.0.RJQTRXM</li>
+						<li>Redmi Note 9S：V13.0.2.0.SJWEUXM;V13.0.1.0.SJWINXM</li>
+						<li>Redmi Note 9 Pro：V13.0.3.0.SJSTWXM;V13.0.11.0.SJSEUXM;V13.0.7.0.SJSINXM</li>
+						<li>Redmi Note 9 Pro 国际：V13.0.2.0.SJZEUXM;V12.5.4.0.RJZRUXM</li>
+						<li>Redmi Note 9 Pro Max：V13.0.1.0.SJXINXM</li>
+						<li>Redmi Note 10：V13.0.3.0.SKSINXM;V13.0.3.0.SKSIDXM</li>
+						<li>Redmi Note 10 Pro：V13.0.11.0.SKPCNXM;V13.0.13.0.SKPCNXM;V13.0.6.0.SKPMIXM</li>
+						<li>Redmi Note 10S：V13.0.10.0.SKLMIXM;V13.0.4.0.SKLRUXM;V13.0.4.0.SKLINXM</li>
+						<li>Redmi Note 10T：V13.0.2.0.SKNJPXM</li>
+						<li>Redmi Note 10 Pro/Pro Max 国际：V13.0.6.0.SKFTWXM;V13.0.14.0.SKFMIXM;V13.0.15.0.SKFEUXM;V13.0.5.0.SKFRUXM;V13.0.7.0.SKFIDXM;V13.0.5.0.SKFTRXM;V13.0.6.0.SKFTRXM</li>
+						<li>Redmi Note 11E：V13.0.8.0.SLSEUXM</li>
+						<li>Redmi Note 11 国际版：V13.0.5.0.SGCMIXM;V13.0.2.0.SGCINXM</li>
+						<li>Redmi Note 11 NFC 国际版：V13.0.14.0.RGKEUXM;V13.0.2.0.SGKRUXM;V13.0.2.0.SGKIDXM</li>
+						<li>Redmi Note 11 Pro 4G：V13.0.10.0.RGDEUXM;V13.0.4.0.SGDIDXM</li>
+						<li>Redmi Note 11 Pro 5G：V13.0.4.0.SKCMIXM;V13.0.1.0.SKCINXM;V13.0.3.0.RKCJPXM</li>
+						<li>Redmi Note 11 Pro/Pro+：V13.0.6.0.SKTCNXM;V13.0.7.0.SKTCNXM;V13.0.6.0.SKTMIXM</li>
+						<li>Redmi Note 11S 4G：V13.0.10.0.RKEEUXM</li>
+						<li>Redmi Note 11S 5G：V13.0.3.0.SGLEUXM</li>
+						<li>Redmi K30 5G版：V13.0.3.0.SGICNXM</li>
+						<li>Redmi K30 Pro：V13.0.5.0.SJKCNXM;V13.0.6.0.SJKCNXM</li>
+						<li>Redmi K30 至尊纪念版：</li>
+						<li>Redmi K30S 至尊纪念版：</li>
+						<li>Redmi K40：V13.0.7.0.SKHCNXM;V13.0.6.0.SKHMIXM;V13.0.9.0.SKHEUXM;V13.0.4.0.SKHRUXM;V13.0.8.0.SKHINXM;V13.0.4.0.SKHIDXM</li>
+						<li>Redmi K40 游戏增强版：V13.0.4.0.SKJINXM</li>
+						<li>Redmi K50 电竞版：V13.0.10.0.SLJMIXM;</li>
+						<li>Redmi K50 至尊版：V13.0.7.0.SLFCNXM;V13.0.4.0.SLFMIXM;V13.0.11.0.SLFEUXM</li>
+						<li>Redmi A1/A1+：V13.0.3.0.SGMTWXM;V13.0.13.0.SGMMIXM;V13.0.5.0.SGMRUXM;V13.0.4.0.SGMIDXM</li>
+						<li>Redmi Pad：V13.1.2.0.SLYCNXM;</li>
+						<li>POCO M2 Pro：V13.0.1.0.SJPINXM</li>
+						<li>POCO M3：V12.5.8.0.RJFRUXM;V12.5.9.0.RJFIDXM</li>
+						<li>POCO M4 Pro 5G：V13.0.2.0.SGBTWXM</li>
+						<li>POCO M5：V13.0.2.0.SLUTWXM;V13.0.5.0.SLUMIXM;V13.0.5.0.SLUEUXM</li>
+						<li>POCO X3 NFC：V13.0.3.0.SJGEUXM;V13.0.4.0.SJGIDXM</li>
+					</ol>
+				</div>
 			</div>
 			<div class="mdui-panel-item-body">
 				<div>
@@ -419,7 +477,7 @@
 						<li>Redmi Note 9 Pro：国际版 V12.5.2.0.RJSMIXM、欧洲版 V12.0.4.0.RJSEUXM、欧洲版 V12.5.3.0.RJSEUXM</li>
 						<li>Redmi Note 9 Pro 国际：国际版 V12.0.4.0.RJZMIXM、俄罗斯版 V12.0.4.0.QJZRUXM、俄罗斯版 V12.0.1.0.RJZRUXM</li>
 						<li>Redmi Note 10：V12.0.8.0.RKSCNXM、台湾省版 V12.0.1.0.RKSTWXM、国际版 V12.0.6.0.RKSMIXM、印度版 V12.0.3.0.RKSINXM</li>
-						<li>Redmi Note 10 Pro：V12.5.6.0.RKPCNXM、国际版  V12.5.2.0.RKPMIXM</li>
+						<li>Redmi Note 10 Pro：V12.5.6.0.RKPCNXM、国际版 V12.5.2.0.RKPMIXM</li>
 						<li>Redmi Note 10S：国际版 V12.5.12.0.RKLMIXM</li>
 						<li>Redmi Note 10 国际：国际版 V12.5.2.0.RKGMIX</li>
 						<li>Redmi Note 10 Pro/Pro Max：国际版 V12.5.6.0.RKFMIXM、印度版 V12.5.1.0.RKFINXM、印度版 V12.5.2.0.RKFINXM、印度版 V12.5.4.0.RKFINXM</li>
@@ -592,7 +650,7 @@
 						<li>Redmi Note 10 Pro/Pro Max：国际版 V12.5.1.0.RKFMIXM、欧洲稳定版 V12.5.1.0.RKFEUXM、欧洲稳定版 V12.5.2.0.RKFEUXM</li>
 						<li>Redmi K30 5G：V12.5.2.0.RGICNXM</li>
 						<li>Redmi K30S 至尊纪念版 ：国际版 V12.1.3.0.RJDMIXM</li>
-						<li>Redmi K40：	V12.5.3.0.RKHCNXM、台湾省版 V12.5.1.0.RKHTWXM、俄罗斯版 V12.5.1.0.RKHRUXM、印度版 V12.5.1.0.RKHINX、印尼版 V12.5.1.0.RKHIDXM、土耳其版 12.5.1.0.RKHTRXM</li>
+						<li>Redmi K40： V12.5.3.0.RKHCNXM、台湾省版 V12.5.1.0.RKHTWXM、俄罗斯版 V12.5.1.0.RKHRUXM、印度版 V12.5.1.0.RKHINX、印尼版 V12.5.1.0.RKHIDXM、土耳其版 12.5.1.0.RKHTRXM</li>
 						<li>Redmi K40 Pro：V12.5.4.0.RKKCNXM、欧洲稳定版 V12.0.4.0.RKKEUXM</li>
 						<li>Redmi K40 游戏增强版：V12.5.5.0.RKJCNXM</li>
 					</ol>
@@ -626,27 +684,27 @@
 					</ol>
 				</div>
 			</div>
-            <div class="mdui-panel-item-body">
-						<div>
-							<p>2021.5.24日更新:</p>
-							<ol>
-								<li>小米11：V12.5.7.0.RKBCNXM、国际版 V12.5.1.0.RKBMIXM</li>
-                                <li>小米MIX FOLD：V12.0.11.0.RJTCNXM</li>
-                                <li>POCO M3：欧洲稳定版 V12.0.9.0.QJFEUXM</li>
-                                <li>POCO X3 NFC：国际版 V12.0.9.0.QJGMIXM、</li>
-                                <li>小米A2 Lite：国际版 V11.0.19.0.QDLMIXM</li>
-                                <li>小米A3：欧洲稳定版 V12.0.7.0.RFQEUXM</li>
-                                <li>Redmi 10X 5G：V12.0.7.0.QJHCNXM、V12.0.8.0.QJHCNXM、V12.0.1.0.RJHCNXM、V12.0.2.0.RJHCNXM</li>
-                                <li>Redmi 10 Pro：V12.0.8.0.QJLCNXM、V12.0.2.0.RJLCNXM</li>
-                                <li>Redmi Note 9 4G：国际版 V12.0.9.0.QJQMIXM、印尼版 V12.0.5.0.QJQIDXM</li>
-                                <li>Redmi Note 9 Pro 5G：印度版 V12.0.1.0.RJSINXM、印度版 V12.0.2.0.RJSINXM</li>
-                                <li>Redmi Note 10 Pro/Max：国际版 V12.0.15.0.RKFMIXM、欧洲稳定版 V12.0.16.0.RKFEUXM、印尼版 V12.0.6.0.RKFIDXM</li>
-                                <li>Redmi K30 Pro：V12.5.2.0.RJKCNXM</li>
-                                <li>Redmi K30S 至尊纪念版：V12.5.1.0.RJDCNXM、土耳其版 V12.1.2.0.RJDTRXM</li>
-                                <li>Redmi K40 Pro/Pro+：国际版 V12.0.1.0.RKKMIXM、欧洲版 V12.0.3.0.RKKEUXM、欧洲版 V12.0.4.0.RKKEUXM、印度版 V12.0.1.0.RKKINXM、印度版 V12.0.2.0.RKKINXM</li>
-							</ol>
-						</div>
-					</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2021.5.24日更新:</p>
+					<ol>
+						<li>小米11：V12.5.7.0.RKBCNXM、国际版 V12.5.1.0.RKBMIXM</li>
+						<li>小米MIX FOLD：V12.0.11.0.RJTCNXM</li>
+						<li>POCO M3：欧洲稳定版 V12.0.9.0.QJFEUXM</li>
+						<li>POCO X3 NFC：国际版 V12.0.9.0.QJGMIXM、</li>
+						<li>小米A2 Lite：国际版 V11.0.19.0.QDLMIXM</li>
+						<li>小米A3：欧洲稳定版 V12.0.7.0.RFQEUXM</li>
+						<li>Redmi 10X 5G：V12.0.7.0.QJHCNXM、V12.0.8.0.QJHCNXM、V12.0.1.0.RJHCNXM、V12.0.2.0.RJHCNXM</li>
+						<li>Redmi 10 Pro：V12.0.8.0.QJLCNXM、V12.0.2.0.RJLCNXM</li>
+						<li>Redmi Note 9 4G：国际版 V12.0.9.0.QJQMIXM、印尼版 V12.0.5.0.QJQIDXM</li>
+						<li>Redmi Note 9 Pro 5G：印度版 V12.0.1.0.RJSINXM、印度版 V12.0.2.0.RJSINXM</li>
+						<li>Redmi Note 10 Pro/Max：国际版 V12.0.15.0.RKFMIXM、欧洲稳定版 V12.0.16.0.RKFEUXM、印尼版 V12.0.6.0.RKFIDXM</li>
+						<li>Redmi K30 Pro：V12.5.2.0.RJKCNXM</li>
+						<li>Redmi K30S 至尊纪念版：V12.5.1.0.RJDCNXM、土耳其版 V12.1.2.0.RJDTRXM</li>
+						<li>Redmi K40 Pro/Pro+：国际版 V12.0.1.0.RKKMIXM、欧洲版 V12.0.3.0.RKKEUXM、欧洲版 V12.0.4.0.RKKEUXM、印度版 V12.0.1.0.RKKINXM、印度版 V12.0.2.0.RKKINXM</li>
+					</ol>
+				</div>
+			</div>
 			<div class="mdui-panel-item-body">
 				<div>
 					<p>2021.5.17日更新:</p>
@@ -682,51 +740,51 @@
 					<p>2021.5.3日更新:</p>
 					<ol>
 						<li>小米8透明探索版：V12.0.5.0.QEHCNXM</li>
-			  <li>小米8屏幕指纹版：V12.0.5.0.QECCNXM</li>
-			  <li>小米9：欧洲稳定版 V12.0.5.0.QFAEUXM</li>
-			  <li>小米10：V12.2.10.0.RJBCNXM、V12.5.3.0.RJBCNXM、欧洲稳定版 V12.2.7.0.RJBEUXM、俄罗斯版 V12.2.5.0.RJBRUXM、印度版 V12.2.6.0.RJBINXM、印度版 V12.2.7.0.RJBINXM、印尼稳定版 V12.2.4.0.RJBIDXM、印尼稳定版 V12.2.5.0.RJBIDXM</li>
-			  <li>小米10 Pro：V12.2.4.0.RJACNXM、V12.5.3.0.RJACNXM、国际版 V12.2.6.0.RJAMIXM、欧洲稳定版 V12.2.6.0.RJAEUXM</li>
-			  <li>小米10 至尊纪念版：V12.5.1.0.RJJCNXM</li>
-			  <li>小米10 Lite：国际版 V12.1.4.0.RJIMIXM</li>
-			  <li>小米11：V12.5.1.0.RKBCNXM、V12.5.2.0.RKBCNXM、V12.5.3.0.RKBCNXM、V12.5.4.0.RKBCNXM、V12.5.5.0.RKBCNXM、台湾地区版 V12.0.1.0.RKBTWXM、国际版 V12.0.9.0.RKBMIXM、欧洲稳定版 V12.0.11.0.RKBEUXM、欧洲稳定版 V12.0.13.0.RKBEUXM、俄罗斯版 V12.0.2.0.RKBRUXM、印尼稳定版 V12.0.3.0.RKBIDXM、土耳其版 V12.0.2.0.RKBTRXM</li>
-			  <li>小米11 Lite 4G：国际版 V12.0.8.0.RKQMIXM、欧洲稳定版 V12.0.4.0.RKQEUXM、俄罗斯版 V12.0.3.0.RKQRUXM、土耳其版 V12.0.2.0.RKQTRXM</li>
-			  <li>小米11 青春版：V12.0.7.0.RKICNXM、国际版 V12.0.2.0.RKIMIXM、欧洲稳定版 V12.0.8.0.RKIEUXM、俄罗斯版 V12.0.2.0.RKIRUXM</li>
-			  <li>小米11 Pro/Ultra：V12.0.10.0.RKACNXM、V12.0.13.0.RKACNXM、V12.5.2.0.RKACNXM、国际版 V12.0.1.0.RKAMIXM、欧洲稳定版 V12.0.4.0.RKAEUXM、欧洲稳定版 V12.0.6.0.RKAEUXM、印尼稳定版 V12.0.1.0.RKAIDXM</li>
-			  <li>小米9SE：V12.5.1.0.RFBCNXM、欧洲稳定版 V12.0.5.0.QFBEUXM</li>
-			  <li>小米CC9e：V12.0.4.0.QFMCNXM</li>
-			  <li>小米Note 10 Lite：土耳其版 V12.1.3.0.RFNTRXM</li>
-			  <li>小米MIX2S：V12.0.3.0.QDGCNXM</li>
-			  <li>小米MIX3：V12.0.4.0.QEECNXM</li>
-			  <li>POCO M2：印度版 V12.0.3.0.QJRINXM</li>
-			  <li>POCO M3：印度版 V12.0.5.0.QJFINXM、印尼稳定版 V12.0.7.0.QJFIDXM、土耳其版 V12.0.6.0.QJFTRXM</li>
-			  <li>POCO X3：印度版 V12.0.10.0.QJGINXM</li>
-			  <li>小米A3：国际版 V12.0.8.0.RFQMIXM、欧洲稳定版 V12.0.6.0.RFQEUXM</li>
-			  <li>Redmi 7：印度版 V11.0.4.0.QFLINXM</li>
-			  <li>Redmi 7A：V12.0.3.0.QCMCNXM、国际版 V12.0.2.0.QCMMIXM、欧洲稳定版 V12.0.2.0.QCMEUXM、俄罗斯版 V12.0.2.0.QCMRUXM、印度版 V12.0.2.0.QCMINXM</li>
-			  <li>Redmi 8：V12.0.2.0.QCNCNXM、国际版 V12.0.2.0.QCNMIXM、印度版 V12.0.2.0.QCNINXM</li>
-			  <li>Redmi 8A：V12.0.2.0.QCPCNXM、国际版 V12.0.2.0.QCPMIXM、俄罗斯版 V12.0.2.0.QCPRUXM、印度版 V12.0.2.0.QCPINXM、印尼稳定版 V12.0.2.0.QCPIDXM</li>
-			  <li>Redmi 8A Dual：印度版 V12.0.3.0.QCQINXM、印尼稳定版 V12.0.4.0.QCQIDXM</li>
-			  <li>Redmi 9：国际版 V12.0.4.0.QJCMIXM、欧洲稳定版 V12.0.2.0.QJCEUXM、土耳其版 V12.0.2.0.QJCTRXM</li>
-			  <li>Redmi 9A：V12.0.11.0.QCDCNXM、V12.0.12.0.QCDCNXM、国际版 V12.0.12.0.QCDMIXM、欧洲稳定版 V12.0.12.0.QCDEUXM、俄罗斯版 MIUI V12.0.9.0.QCDRUXM、印尼稳定版 V12.0.7.0.QCDIDXM</li>
-			  <li>Redmi 9C：国际版 V12.0.12.0.QCRMIXM、欧洲稳定版 V12.0.7.0.QCREUXM、印尼稳定版 V12.0.7.0.QCRIDXM、土耳其版 V12.0.6.0.QCRTRXM</li>
-			  <li>Redmi 9C NFC：国际版 V12.0.7.0.QCSMIXM、欧洲稳定版 V12.0.7.0.QCSEUXM</li>
-			  <li>Redmi Y3：印度版 V11.0.6.0.QFFINXM</li>
-			  <li>Redmi Note 8：国际版 V12.0.4.0.QCOMIXM、欧洲稳定版 V12.0.6.0.QCOEUXM</li>
-			  <li>Redmi Note 8T：国际版 V12.0.3.0.QCXMIXM、欧洲稳定版 V12.0.3.0.QCXEUXM、俄罗斯版 V12.0.4.0.QCXRUXM</li>
-			  <li>Redmi Note 8 Pro：印度版 V12.0.5.0.QGGINXM</li>
-			  <li>Redmi Note 9 4G：V12.0.13.0.QJQCNXM、欧洲稳定版 V12.0.9.0.QJQEUXM、俄罗斯版 V12.0.1.0.QJQRUXM、俄罗斯版 V12.0.2.0.QJQRUXM、俄罗斯版 V12.0.3.0.QJQRUXM、印度版 V12.0.7.0.QJQINXM、土耳其版 V12.0.4.0.QJQTRXM</li>
-			  <li>Redmi Note 9 5G：俄罗斯版 V12.0.2.0.QJERUXM</li>
-			  <li>Redmi Note 9S：国际版 V12.0.6.0.QJWMIXM</li>
-			  <li>Redmi Note 9 Pro 国际：国际版 V12.0.3.0.QJZMIXM、印尼稳定版 V12.0.5.0.QJZIDXM、土耳其版 V12.0.5.0.QJZTRXM</li>
-			  <li>Redmi Note 10：国际版 V12.0.5.0.RKGMIXM、国际版 V12.0.7.0.RKGMIXM、欧洲稳定版 V12.0.3.0.RKGEUXM、俄罗斯版 V12.0.1.0.RKGRUXM、俄罗斯版 V12.0.2.0.RKGRUXM、印度版 V12.0.1.0.RKGINXM、印尼稳定版 V12.0.1.0.RKGIDXM、印尼稳定版 V12.0.2.0.RKGIDXM</li>
-			  <li>Redmi Note 10 Pro：台湾稳定版 V12.0.5.0.RKFTWXM、国际版 V12.0.12.0.RKFMIXM、欧洲稳定版 V12.0.13.0.RKFEUXM、印度版 V12.0.8.0.RKFINXM、印尼稳定版 V12.0.4.0.RKFIDXM、印尼稳定版 V12.0.5.0.RKFIDXM、土耳其版 V12.0.6.0.RKFTRXM</li>
-			  <li>Redmi K20：V12.1.2.0.RFJCNXM</li>
-			  <li>Redmi K20 Pro：欧洲稳定版 V12.0.5.0.QFKEUXM、印度版 V12.0.5.0.QFKINXM</li>
-			  <li>Redmi K30 Pro：国际版 V12.2.5.0.RJKMIXM、欧洲稳定版 V12.2.5.0.RJKEUXM</li>
-			  <li>Redmi K30 至尊纪念版：V12.0.21.0.QJNCNXM</li>
-			  <li>Redmi K30S 至尊纪念版：V12.1.2.0.RJDCNXM、欧洲稳定版 V12.1.4.0.RJDEUXM、欧洲稳定版 V12.1.5.0.RJDEUXM、印度版 V12.1.2.0.RJDINXM、印尼稳定版 V12.1.1.0.RJDIDXM</li>
-			  <li>Redmi K40：V12.0.8.0.RKHCNXM、V12.5.2.0.RKHCNXM、台湾稳定版 V12.0.1.0.RKHTWXM、国际版 V12.0.3.0.RKHMIXM、欧洲稳定版 V12.0.2.0.RKHEUXM、欧洲稳定版 V12.0.4.0.RKHEUXM、欧洲稳定版 V12.0.5.0.RKHEUXM、俄罗斯版 V12.0.2.0.RKHRUXM、俄罗斯版 V12.0.3.0.RKHRUXM、印度版 V12.0.3.0.RKHINXM、印度版 V12.0.4.0.RKHINXM、印尼稳定版 V12.0.2.0.RKHIDXM、土耳其版 V12.0.1.0.RKHTRXM</li>
-			  <li>Redmi K40 Pro：V12.0.9.0.RKKCNXM</li>
+						<li>小米8屏幕指纹版：V12.0.5.0.QECCNXM</li>
+						<li>小米9：欧洲稳定版 V12.0.5.0.QFAEUXM</li>
+						<li>小米10：V12.2.10.0.RJBCNXM、V12.5.3.0.RJBCNXM、欧洲稳定版 V12.2.7.0.RJBEUXM、俄罗斯版 V12.2.5.0.RJBRUXM、印度版 V12.2.6.0.RJBINXM、印度版 V12.2.7.0.RJBINXM、印尼稳定版 V12.2.4.0.RJBIDXM、印尼稳定版 V12.2.5.0.RJBIDXM</li>
+						<li>小米10 Pro：V12.2.4.0.RJACNXM、V12.5.3.0.RJACNXM、国际版 V12.2.6.0.RJAMIXM、欧洲稳定版 V12.2.6.0.RJAEUXM</li>
+						<li>小米10 至尊纪念版：V12.5.1.0.RJJCNXM</li>
+						<li>小米10 Lite：国际版 V12.1.4.0.RJIMIXM</li>
+						<li>小米11：V12.5.1.0.RKBCNXM、V12.5.2.0.RKBCNXM、V12.5.3.0.RKBCNXM、V12.5.4.0.RKBCNXM、V12.5.5.0.RKBCNXM、台湾地区版 V12.0.1.0.RKBTWXM、国际版 V12.0.9.0.RKBMIXM、欧洲稳定版 V12.0.11.0.RKBEUXM、欧洲稳定版 V12.0.13.0.RKBEUXM、俄罗斯版 V12.0.2.0.RKBRUXM、印尼稳定版 V12.0.3.0.RKBIDXM、土耳其版 V12.0.2.0.RKBTRXM</li>
+						<li>小米11 Lite 4G：国际版 V12.0.8.0.RKQMIXM、欧洲稳定版 V12.0.4.0.RKQEUXM、俄罗斯版 V12.0.3.0.RKQRUXM、土耳其版 V12.0.2.0.RKQTRXM</li>
+						<li>小米11 青春版：V12.0.7.0.RKICNXM、国际版 V12.0.2.0.RKIMIXM、欧洲稳定版 V12.0.8.0.RKIEUXM、俄罗斯版 V12.0.2.0.RKIRUXM</li>
+						<li>小米11 Pro/Ultra：V12.0.10.0.RKACNXM、V12.0.13.0.RKACNXM、V12.5.2.0.RKACNXM、国际版 V12.0.1.0.RKAMIXM、欧洲稳定版 V12.0.4.0.RKAEUXM、欧洲稳定版 V12.0.6.0.RKAEUXM、印尼稳定版 V12.0.1.0.RKAIDXM</li>
+						<li>小米9SE：V12.5.1.0.RFBCNXM、欧洲稳定版 V12.0.5.0.QFBEUXM</li>
+						<li>小米CC9e：V12.0.4.0.QFMCNXM</li>
+						<li>小米Note 10 Lite：土耳其版 V12.1.3.0.RFNTRXM</li>
+						<li>小米MIX2S：V12.0.3.0.QDGCNXM</li>
+						<li>小米MIX3：V12.0.4.0.QEECNXM</li>
+						<li>POCO M2：印度版 V12.0.3.0.QJRINXM</li>
+						<li>POCO M3：印度版 V12.0.5.0.QJFINXM、印尼稳定版 V12.0.7.0.QJFIDXM、土耳其版 V12.0.6.0.QJFTRXM</li>
+						<li>POCO X3：印度版 V12.0.10.0.QJGINXM</li>
+						<li>小米A3：国际版 V12.0.8.0.RFQMIXM、欧洲稳定版 V12.0.6.0.RFQEUXM</li>
+						<li>Redmi 7：印度版 V11.0.4.0.QFLINXM</li>
+						<li>Redmi 7A：V12.0.3.0.QCMCNXM、国际版 V12.0.2.0.QCMMIXM、欧洲稳定版 V12.0.2.0.QCMEUXM、俄罗斯版 V12.0.2.0.QCMRUXM、印度版 V12.0.2.0.QCMINXM</li>
+						<li>Redmi 8：V12.0.2.0.QCNCNXM、国际版 V12.0.2.0.QCNMIXM、印度版 V12.0.2.0.QCNINXM</li>
+						<li>Redmi 8A：V12.0.2.0.QCPCNXM、国际版 V12.0.2.0.QCPMIXM、俄罗斯版 V12.0.2.0.QCPRUXM、印度版 V12.0.2.0.QCPINXM、印尼稳定版 V12.0.2.0.QCPIDXM</li>
+						<li>Redmi 8A Dual：印度版 V12.0.3.0.QCQINXM、印尼稳定版 V12.0.4.0.QCQIDXM</li>
+						<li>Redmi 9：国际版 V12.0.4.0.QJCMIXM、欧洲稳定版 V12.0.2.0.QJCEUXM、土耳其版 V12.0.2.0.QJCTRXM</li>
+						<li>Redmi 9A：V12.0.11.0.QCDCNXM、V12.0.12.0.QCDCNXM、国际版 V12.0.12.0.QCDMIXM、欧洲稳定版 V12.0.12.0.QCDEUXM、俄罗斯版 MIUI V12.0.9.0.QCDRUXM、印尼稳定版 V12.0.7.0.QCDIDXM</li>
+						<li>Redmi 9C：国际版 V12.0.12.0.QCRMIXM、欧洲稳定版 V12.0.7.0.QCREUXM、印尼稳定版 V12.0.7.0.QCRIDXM、土耳其版 V12.0.6.0.QCRTRXM</li>
+						<li>Redmi 9C NFC：国际版 V12.0.7.0.QCSMIXM、欧洲稳定版 V12.0.7.0.QCSEUXM</li>
+						<li>Redmi Y3：印度版 V11.0.6.0.QFFINXM</li>
+						<li>Redmi Note 8：国际版 V12.0.4.0.QCOMIXM、欧洲稳定版 V12.0.6.0.QCOEUXM</li>
+						<li>Redmi Note 8T：国际版 V12.0.3.0.QCXMIXM、欧洲稳定版 V12.0.3.0.QCXEUXM、俄罗斯版 V12.0.4.0.QCXRUXM</li>
+						<li>Redmi Note 8 Pro：印度版 V12.0.5.0.QGGINXM</li>
+						<li>Redmi Note 9 4G：V12.0.13.0.QJQCNXM、欧洲稳定版 V12.0.9.0.QJQEUXM、俄罗斯版 V12.0.1.0.QJQRUXM、俄罗斯版 V12.0.2.0.QJQRUXM、俄罗斯版 V12.0.3.0.QJQRUXM、印度版 V12.0.7.0.QJQINXM、土耳其版 V12.0.4.0.QJQTRXM</li>
+						<li>Redmi Note 9 5G：俄罗斯版 V12.0.2.0.QJERUXM</li>
+						<li>Redmi Note 9S：国际版 V12.0.6.0.QJWMIXM</li>
+						<li>Redmi Note 9 Pro 国际：国际版 V12.0.3.0.QJZMIXM、印尼稳定版 V12.0.5.0.QJZIDXM、土耳其版 V12.0.5.0.QJZTRXM</li>
+						<li>Redmi Note 10：国际版 V12.0.5.0.RKGMIXM、国际版 V12.0.7.0.RKGMIXM、欧洲稳定版 V12.0.3.0.RKGEUXM、俄罗斯版 V12.0.1.0.RKGRUXM、俄罗斯版 V12.0.2.0.RKGRUXM、印度版 V12.0.1.0.RKGINXM、印尼稳定版 V12.0.1.0.RKGIDXM、印尼稳定版 V12.0.2.0.RKGIDXM</li>
+						<li>Redmi Note 10 Pro：台湾稳定版 V12.0.5.0.RKFTWXM、国际版 V12.0.12.0.RKFMIXM、欧洲稳定版 V12.0.13.0.RKFEUXM、印度版 V12.0.8.0.RKFINXM、印尼稳定版 V12.0.4.0.RKFIDXM、印尼稳定版 V12.0.5.0.RKFIDXM、土耳其版 V12.0.6.0.RKFTRXM</li>
+						<li>Redmi K20：V12.1.2.0.RFJCNXM</li>
+						<li>Redmi K20 Pro：欧洲稳定版 V12.0.5.0.QFKEUXM、印度版 V12.0.5.0.QFKINXM</li>
+						<li>Redmi K30 Pro：国际版 V12.2.5.0.RJKMIXM、欧洲稳定版 V12.2.5.0.RJKEUXM</li>
+						<li>Redmi K30 至尊纪念版：V12.0.21.0.QJNCNXM</li>
+						<li>Redmi K30S 至尊纪念版：V12.1.2.0.RJDCNXM、欧洲稳定版 V12.1.4.0.RJDEUXM、欧洲稳定版 V12.1.5.0.RJDEUXM、印度版 V12.1.2.0.RJDINXM、印尼稳定版 V12.1.1.0.RJDIDXM</li>
+						<li>Redmi K40：V12.0.8.0.RKHCNXM、V12.5.2.0.RKHCNXM、台湾稳定版 V12.0.1.0.RKHTWXM、国际版 V12.0.3.0.RKHMIXM、欧洲稳定版 V12.0.2.0.RKHEUXM、欧洲稳定版 V12.0.4.0.RKHEUXM、欧洲稳定版 V12.0.5.0.RKHEUXM、俄罗斯版 V12.0.2.0.RKHRUXM、俄罗斯版 V12.0.3.0.RKHRUXM、印度版 V12.0.3.0.RKHINXM、印度版 V12.0.4.0.RKHINXM、印尼稳定版 V12.0.2.0.RKHIDXM、土耳其版 V12.0.1.0.RKHTRXM</li>
+						<li>Redmi K40 Pro：V12.0.9.0.RKKCNXM</li>
 					</ol>
 				</div>
 			</div>
@@ -735,42 +793,42 @@
 					<p>2021.4.11日更新:</p>
 					<ol>
 						<li>小米8：V12.0.4.0.QEACNXM</li>
-						  <li>小米8 青春版：V12.0.2.0.QDTCNXM</li>
-						  <li>小米9SE：国际版 V12.0.4.0.QFBMIXM、欧洲稳定版 V12.0.4.0.QFBEUXM、俄罗斯版 V12.0.3.0.QFBRUXM</li>
+						<li>小米8 青春版：V12.0.2.0.QDTCNXM</li>
+						<li>小米9SE：国际版 V12.0.4.0.QFBMIXM、欧洲稳定版 V12.0.4.0.QFBEUXM、俄罗斯版 V12.0.3.0.QFBRUXM</li>
 						<li>小米CC9：国际版 V12.0.6.0.QFCMIXM、俄罗斯版 V12.0.5.0.QFCRUXM</li>
 						<li>小米CC9 Pro：国际版 V12.1.2.0.RFDMIXM、俄罗斯版 V12.1.1.0.RFDRUXM、印尼稳定版 V12.1.1.0.RFDIDXM</li>
 						<li>小米10：土耳其版 V11.0.2.0.QJBTRXM、土耳其版 V11.0.3.0.QJBTRXM、土耳其版 V12.0.1.0.QJBTRXM、土耳其版 V12.2.2.0.RJBTRXM、土耳其版 V12.2.3.0.RJBTRXM</li>
 						<li>小米10S：V12.0.8.0.RGACNXM、V12.0.10.0.RGACNXM</li>
 						<li>小米10 Lite：台湾地区版 V12.1.2.0.RJITWXM</li>
-						  <li>小米11 Lite 4G：国际版 V12.0.2.0.RKQMIXM、国际版 V12.0.3.0.RKQMIXM、国际版 V12.0.5.0.RKQMIXM、欧洲稳定版 V12.0.1.0.RKQEUXM、欧洲稳定版 V12.0.2.0.RKQEUXM、欧洲稳定版 V12.0.3.0.RKQEUXM</li>
-						  <li>小米11 Pro/Ultra：V12.0.9.0.RKACNXM、欧洲稳定版 V12.0.3.0.RKAEUXM、印度版 V12.0.2.0.RKAINXM</li>
+						<li>小米11 Lite 4G：国际版 V12.0.2.0.RKQMIXM、国际版 V12.0.3.0.RKQMIXM、国际版 V12.0.5.0.RKQMIXM、欧洲稳定版 V12.0.1.0.RKQEUXM、欧洲稳定版 V12.0.2.0.RKQEUXM、欧洲稳定版 V12.0.3.0.RKQEUXM</li>
+						<li>小米11 Pro/Ultra：V12.0.9.0.RKACNXM、欧洲稳定版 V12.0.3.0.RKAEUXM、印度版 V12.0.2.0.RKAINXM</li>
 						<li>小米Max3：V12.0.2.0.QEDCNXM</li>
-						  <li>小米Note 10 Lite：欧洲稳定版 V12.1.4.0.RFNEUXM</li>
-						  <li>小米MIX 3 5G版：国际版 V12.0.4.0.PEMMIXM</li>
+						<li>小米Note 10 Lite：欧洲稳定版 V12.1.4.0.RFNEUXM</li>
+						<li>小米MIX 3 5G版：国际版 V12.0.4.0.PEMMIXM</li>
 						<li>小米MIX Fold：V12.0.5.0.RJTCNXM</li>
-						  <li>POCO M2：印度版 V12.0.2.0.QJRINXM</li>
+						<li>POCO M2：印度版 V12.0.2.0.QJRINXM</li>
 						<li>POCO M3：国际版 V12.0.6.0.QJFMIXM、欧洲稳定版 V12.0.8.0.QJFEUXM、俄罗斯版 V12.0.5.0.QJFRUXM</li>
-						  <li>POCO X3 NFC：俄罗斯版 V12.0.7.0.QJGRUXM</li>
-						  <li>Redmi 7：欧洲稳定版 V11.0.2.0.QFLEUXM、俄罗斯版 V11.0.2.0.QFLRUXM</li>
+						<li>POCO X3 NFC：俄罗斯版 V12.0.7.0.QJGRUXM</li>
+						<li>Redmi 7：欧洲稳定版 V11.0.2.0.QFLEUXM、俄罗斯版 V11.0.2.0.QFLRUXM</li>
 						<li>Redmi 8：欧洲稳定版 V12.0.2.0.QCNEUXM、俄罗斯版 V12.0.2.0.QCNRUXM</li>
-						  <li>Redmi 8A：欧洲稳定版 V12.0.2.0.QCPEUXM</li>
-						  <li>Redmi 9：V12.0.8.0.QJCCNXM、俄罗斯版 V12.0.3.0.QJCRUXM、印度版 V12.0.2.0.QJCINXM</li>
+						<li>Redmi 8A：欧洲稳定版 V12.0.2.0.QCPEUXM</li>
+						<li>Redmi 9：V12.0.8.0.QJCCNXM、俄罗斯版 V12.0.3.0.QJCRUXM、印度版 V12.0.2.0.QJCINXM</li>
 						<li>Redmi 9 India：印度版 V12.0.8.0.QCTINXM</li>
-						  <li>Redmi 9A：俄罗斯版 V12.0.8.0.QCDRUXM、印度版 V12.0.11.0.QCDINXM</li>
+						<li>Redmi 9A：俄罗斯版 V12.0.8.0.QCDRUXM、印度版 V12.0.11.0.QCDINXM</li>
 						<li>Redmi 9C：印度版 V12.0.8.0.QCRINXM</li>
-						  <li>Redmi 9C NFC：俄罗斯版 V12.0.7.0.QCSRUXM</li>
-						  <li>Redmi 10X 4G：俄罗斯版 V12.0.6.0.QJORUXM、印度版 V12.0.7.0.QJOINXM、印尼稳定版 V12.0.5.0.QJOIDXM、土耳其版 V12.0.4.0.QJOTRXM、土耳其版 V12.0.5.0.QJOTRXM、土耳其版 V12.0.6.0.QJOTRXM</li>
+						<li>Redmi 9C NFC：俄罗斯版 V12.0.7.0.QCSRUXM</li>
+						<li>Redmi 10X 4G：俄罗斯版 V12.0.6.0.QJORUXM、印度版 V12.0.7.0.QJOINXM、印尼稳定版 V12.0.5.0.QJOIDXM、土耳其版 V12.0.4.0.QJOTRXM、土耳其版 V12.0.5.0.QJOTRXM、土耳其版 V12.0.6.0.QJOTRXM</li>
 						<li>Redmi Note 8：印尼稳定版 V12.0.2.0.QCOIDXM</li>
-						  <li>Redmi Note 8 Pro：国际版 V12.0.7.0.QGGMIXM</li>
-						  <li>Redmi Note 9 4G：台湾地区版 V12.0.3.0.QJQTWXM、国际版 V12.0.7.0.QJQMIXM、国际版 V12.0.8.0.QJQMIXM、欧洲稳定版 V12.0.8.0.QJQEUXM、印尼稳定版 V12.0.4.0.QJQIDXM</li>
+						<li>Redmi Note 8 Pro：国际版 V12.0.7.0.QGGMIXM</li>
+						<li>Redmi Note 9 4G：台湾地区版 V12.0.3.0.QJQTWXM、国际版 V12.0.7.0.QJQMIXM、国际版 V12.0.8.0.QJQMIXM、欧洲稳定版 V12.0.8.0.QJQEUXM、印尼稳定版 V12.0.4.0.QJQIDXM</li>
 						<li>Redmi Note 9 5G：V12.0.8.0.QJECNXM、V12.0.9.0.QJECNXM、国际版 V12.0.8.0.QJEMIXM、欧洲稳定版 V12.0.7.0.QJEEUXM</li>
-						  <li>Redmi Note 9S：印度版 V12.0.4.0.RJWINXM、土耳其版 V12.0.4.0.QJWTRXM</li>
+						<li>Redmi Note 9S：印度版 V12.0.4.0.RJWINXM、土耳其版 V12.0.4.0.QJWTRXM</li>
 						<li>Redmi Note 10：国际版 V12.0.4.0.RKGMIXM、欧洲稳定版 V12.0.2.0.RKGEUXM</li>
-						  <li>Redmi K20：V12.1.1.0.RFJCNXM</li>
-						  <li>Redmi K30i 5G：V12.1.2.0.RGICMXM</li>
+						<li>Redmi K20：V12.1.1.0.RFJCNXM</li>
+						<li>Redmi K30i 5G：V12.1.2.0.RGICMXM</li>
 						<li>Redmi K30 Pro：V12.2.3.0.RJKCNXM</li>
-						  <li>Redmi K30S 至尊纪念版：V12.1.1.0.RJDCNXM、台湾地区版 V12.1.1.0.RJDTWXM、国际版 V12.1.1.0.RJDMIXM、国际版 V12.1.2.0.RJDMIXM\俄罗斯版 V12.0.4.0.QJDRUXM</li>
-						  <li>Redmi K40：V12.0.7.0.RKHCNXM、国际版 V12.0.2.0.RKHMIXM、欧洲稳定版 V12.0.1.0.RKHEUXM</li>
+						<li>Redmi K30S 至尊纪念版：V12.1.1.0.RJDCNXM、台湾地区版 V12.1.1.0.RJDTWXM、国际版 V12.1.1.0.RJDMIXM、国际版 V12.1.2.0.RJDMIXM\俄罗斯版 V12.0.4.0.QJDRUXM</li>
+						<li>Redmi K40：V12.0.7.0.RKHCNXM、国际版 V12.0.2.0.RKHMIXM、欧洲稳定版 V12.0.1.0.RKHEUXM</li>
 						<li>Redmi K40 Pro：V12.0.8.0.RKKCNXM</li>
 					</ol>
 				</div>
@@ -826,1128 +884,1130 @@
 					</ol>
 				</div>
 			</div>
-            <div class="mdui-panel-item-body"> 
-							<div> 
-								<p>2021.2.26日更新:</p> 
-								<ol> 
-									<li>小米9：欧洲稳定版  V12.0.4.0.QFAEUXM</li> 
-									<li>小米10：V12.2.9.0.RJBCNXM、印度版 V12.2.5.0.RJBINXM</li> 
-									<li>小米10 Pro：V12.2.3.0.RJACNXM</li> 
-									<li>小米10 Lite：台湾地区版 V12.1.1.0.RJITWXM、国际版 V12.1.2.0.RJIMIXM</li> 
-									<li>小米11 V12.0.19.0.RKBCNXM、V12.0.21.0.RKBCNXM、V12.0.22.0.RKBCNXM</li> 
-									<li>小米Note 10 Lite：欧洲稳定版 V12.1.1.0.RFNEUXM、土耳其版 V12.0.3.0.QFNTRXM</li> 
-									<li>小米MIX3 5G：国际版 V12.0.2.0.PEMMIXM</li> 
-									<li>小米Play：俄罗斯版 V11.0.11.0.OFIRUXM</li> 
-									<li>POCO F1：俄罗斯版 V12.0.3.0.QEJRUXM</li> 
-									<li>POCO M3 台湾地区版 V12.0.2.0.QJFTWXM、国际版 V12.0.4.0.QJFMIXM、欧洲稳定版 V12.0.6.0.QJFEUXM、俄罗斯版 V12.0.4.0.QJFRUXM、印尼稳定版 V12.0.5.0.QJFIDXM、土耳其版 V12.0.4.0.QJFTRXM</li> 
-									<li>小米A2：国际版 V11.0.21.0.QDIMIXM</li> 
-									<li>小米A2 Lite：国际版 V11.0.18.0.QDLMIXM</li> 
-									<li>小米A3：欧洲稳定版 V12.0.3.0.RFQEUXM</li> 
-									<li>Redmi 7：V12.0.1.0.QFLCNXM、俄罗斯版 V11.0.1.0.QFLRUXM</li> 
-									<li>Redmi 7A：V12.0.2.0.QCMCNXM、国际版 V12.0.1.0.QCMMIXM、印度版 V12.0.1.0.QCMINXM</li> 
-									<li>Redmi 8：V12.0.1.0.QCNCNXM、欧洲稳定版 V12.0.1.0.QCNEUXM、俄罗斯版 V12.0.1.0.QCNRUXM</li> 
-									<li>Redmi 8A：国际版 V12.0.1.0.QCPMIXM、欧洲稳定版 V12.0.1.0.QCPEUXM、俄罗斯版 V12.0.1.0.QCPRUXM、印度版 V12.0.1.0.QCPINXM、印尼稳定版 V12.0.1.0.QCPIDXM</li> 
-									<li>Redmi 9：欧洲稳定版 V12.0.1.0.QJCEUXM</li> 
-									<li>Redmi 9 India：印度版 V12.0.7.0.QCTINXM</li> 
-									<li>Redmi 9A：印尼稳定版 V12.0.5.0.QCDIDXM、土耳其版 V12.0.2.0.QCDTRXM、土耳其版 V12.0.3.0.QCDTRXM</li> 
-									<li>Redmi 9C：国际版 V12.0.10.0.QCRMIXM、欧洲稳定版 V12.0.6.0.QCREUXM、印尼稳定版 V12.0.6.0.QCRIDXM、土耳其版 V12.0.2.0.QCRTRXM、土耳其版 V12.0.3.0.QCRTRXM、土耳其版 V12.0.4.0.QCRTRXM、土耳其版 V12.0.5.0.QCRTRXM</li> 
-									<li>Redmi 9C NFC：国际版 V12.0.6.0.QCSMIXM、欧洲稳定版 V12.0.6.0.QCSEUXM、俄罗斯版 V12.0.6.0.QCSRUXM</li> 
-									<li>Redmi 10X 4G 台湾地区版 V12.0.1.0.QJOTWXM、台湾地区版 V12.0.2.0.QJOTWXM</li> 
-									<li>Redmi Note 7：V12.0.3.0.QFGCNXM、俄罗斯版 V12.0.2.0.QFGRUXM</li> 
-									<li>Redmi Note 8：印度版 V12.0.2.0.QCOINXM</li> 
-									<li>Redmi Note 8T：国际版 V12.0.2.0.QCXMIXM、欧洲稳定版 V12.0.2.0.QCXEUXM、俄罗斯版 V12.0.3.0.QCXRUXM</li> 
-									<li>Redmi Note 8 Pro：国际版 V12.0.6.0.QGGMIXM</li> 
-									<li>Redmi Note 9 4G：印度版 V12.0.5.0.QJQINXM、印尼稳定版 V12.0.2.0.QJQIDXM、土耳其版 V12.0.2.0.QJQTRXM</li> 
-									<li>Redmi Note 9 5G：台湾地区版 V12.0.4.0.QJETWXM、国际版 V12.0.5.0.QJEMIXM、国际版 V12.0.6.0.QJEMIXM、欧洲稳定版 V12.0.4.0.QJEEUXM</li> 
-									<li>Redmi Note 9S：国际版 V12.0.3.0.QJWMIXM、俄罗斯版 V12.0.3.0.QJWRUXM、土耳其版 V12.0.3.0.QJWTRXM</li> 
-									<li>Redmi Note 9 Pro：V12.0.8.0.QJSCNXM、欧洲稳定版 V12.0.9.0.QJSEUXM</li> 
-									<li>Redmi Note 9 Pro 国际：国际版 V12.0.2.0.QJZMIXM、欧洲稳定版 V12.0.2.0.QJZEUXM、俄罗斯版 V12.0.3.0.QJZRUXM、印尼稳定版 V12.0.4.0.QJZIDXM</li> 
-									<li>Redmi K20：国际版 V12.0.7.0.QFJMIXM、欧洲稳定版 V12.0.4.0.QFJEUXM</li> 
-									<li>Redmi K20 Pro：欧洲稳定版 V12.0.4.0.QFKEUXM</li> 
-									<li>Redmi K30 5G：V12.1.5.0.RGICNXM</li> 
-									<li>Redmi K30i 5G：V12.1.1.0.RGICMXM</li> 
-									<li>Redmi K30 至尊纪念版：V12.0.19.0.QJNCNXM</li> 
-									<li>Redmi K30S 至尊纪念版：台湾地区版 V12.0.1.0.QJDTWXM、国际版 V12.0.11.0.QJDMIXM、欧洲稳定版 V12.0.19.0.QJDEUXM、印度版 V12.0.5.0.QJDINXM、印尼稳定版 V12.0.3.0.QJDIDXM、土耳其版 V12.0.3.0.QJDTRXM</li> 
-									<li>Redmi Go：国际版 V10.2.25.0.OCLMIXM</li>
-									<p>共计89卡刷包，线刷86包数据</p> 
-								</ol> 
-							</div> 
-						</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2021.1.30日更新:</p> 
-					<ol> 
-						<li>小米9：国际版 V12.0.4.0.QFAMIXM </li> 
-						<li>小米10：欧洲稳定版 V12.2.4.0.RJBEUXM</li> 
-						<li>小米10 Lite：台湾地区版 V12.0.1.0.QJITWXM、欧洲稳定版 V12.1.3.0.RJIEUXM</li> 
-						<li>小米Note 10 Lite：国际版 V12.1.1.0.RFNMIXM</li> 
-						<li>小米MIX3 5G版：国际版 V12.0.3.0.PEMMIXM</li> 
-						<li>小米Play：国际版 V11.0.10.0.OFIMIXM</li> 
-						<li>POCO M2：印度版 V11.0.4.0.QJRINXM、印度版 V11.0.5.0.QJRINXM、印度版 V12.0.1.0.QJRINXM</li> 
-						<li>POCO M3：台湾地区版 V12.0.1.0.QJFTWXM、国际版 V12.0.1.0.QJFMIXM、国际版 V12.0.3.0.QJFMIXM、欧洲稳定版 V12.0.1.0.QJFEUXM、欧洲稳定版 V12.0.3.0.QJFEUXM、欧洲稳定版 V12.0.4.0.QJFEUXM、欧洲稳定版 V12.0.5.0.QJFEUXM、俄罗斯版 V12.0.2.0.QJFRUXM、俄罗斯版 V12.0.3.0.QJFRUXM、印度版 V12.0.1.0.QJFINXM、印度版 V12.0.3.0.QJFINXM、印尼稳定版 V12.0.4.0.QJFIDXM、土耳其版 V12.0.2.0.QJFTRXM</li> 
-						<li>小米A2：国际版 V11.0.20.0.QDIMIXM</li> 
-						<li>Redmi Note 7：欧洲稳定版 V12.0.3.0.QFGEUXM</li> 
-						<li>Redmi Note 9 4G：欧洲稳定版 V12.0.2.0.QJQEUXM</li> 
-						<li>Redmi Note 9S：土耳其版 V12.0.4.0.QJZTRXM</li> 
-						<li>Redmi.K20 Pro：国际版 V12.0.4.0.QFKMIXM</li> 
-						<li>Redmi K30 4G 印度版 V12.1.2.0.RGHINXM</li> 
-						<li>Redmi K30S 至尊纪念版：欧洲稳定版 V12.0.16.0.QJDEUXM、欧洲稳定版 V12.0.18.0.QJDEUXM</li> 
-						<p>共计31卡刷包，线刷28包数据</p> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2021.1.24日更新:</p> 
-					<ol> 
-						<li>小米8透明探索版：V12.0.4.0.QEHCNXM</li> 
-						<li>小米8屏幕指纹版：V12.0.4.0.QECCNXM</li> 
-						<li>小米9 SE：国际版V12.0.3.0.QFBMIXM、俄罗斯版V12.0.2.0.QFBRUXM</li> 
-						<li>小米10：V12.2.7.0.RJBCNXM、V12.2.8.0.RJBCNXM</li> 
-						<li>小米10 Pro：V12.2.1.0.RJACNXM、V12.2.2.0.RJACNXM</li> 
-						<li>小米10 青春版：V12.1.4.0.RJVCNXM</li> 
-						<li>小米10 Lite：国际版V12.1.1.0.RJIMIXM、欧洲稳定版V12.1.2.0.RJIEUXM</li> 
-						<li>小米11：V12.0.13.0.RKBCNXM、V12.0.16.0.RKBCNXM、V12.0.17.0.RKBCNXM</li> 
-						<li>小米CC9：国际版V12.0.5.0.QFCMIXM、欧洲稳定版V12.0.5.0.QFCEUXM、俄罗斯版V12.0.4.0.QFCRUXM</li> 
-						<li>小米CC9美图定制版：V12.0.3.0.QFECNXM</li> 
-						<li>小米CC9 Pro：V12.1.3.0.RFDCNXM</li> 
-						<li>小米MIX2S：国际版 V12.0.3.0.QDGMIXM、俄罗斯版V12.0.2.0.QDGRUXM</li> 
-						<li>小米MIX3：V12.0.3.0.QEECNXM</li> 
-						<li>POCO F1：国际版V12.0.3.0.QEJMIXM</li> 
-						<li>POCO M2 Pro：印度版V12.0.2.0.QJPINXM</li> 
-						<li>POCO X3 NFC：国际版V12.0.6.0.QJGMIXM、国际版V12.0.7.0.QJGMIXM、欧洲稳定版V12.0.6.0.QJGEUXM、欧洲稳定版V12.0.7.0.QJGEUXM、俄罗斯版V12.0.5.0.QJGRUXM、印度版V12.0.8.0.QJGINXM、土耳其版V12.0.5.0.QJGTRXM</li> 
-						<li>小米A2 Lite：国际版V11.0.16.0.QDLMIXM、国际版V11.0.17.0.QDLMIXM</li> 
-						<li>Redmi 7：国际版V11.0.1.0.QFLMIXM、欧洲稳定版V11.0.1.0.QFLEUXM、印度版V11.0.3.0.QFLINXM</li> 
-						<li>Redmi 8：国际版V12.0.1.0.QCNMIXM</li> 
-						<li>Redmi 8A：V12.0.1.0.QCPCNXM</li> 
-						<li>Redmi 9：V12.0.6.0.QJCCNXM、国际版V12.0.2.0.QJCMIX、印度版V12.0.1.0.QJCINXM</li> 
-						<li>Redmi 9 India：印度版V12.0.5.0.QCTINXM</li> 
-						<li>Redmi 9A：V12.0.6.0.QCDCNXM、国际版V12.0.10.0.QCDMIX、欧洲稳定版V12.0.10.0.QCDEUXM、俄罗斯版V12.0.7.0.QCDRUXM、印度版V12.0.8.0.QCDINXM、印度版V12.0.9.0.QCDINXM</li> 
-						<li>Redmi 9C：国际版V12.0.6.0.QCRMIXM、国际版V12.0.8.0.QCRMIXM、印度版V12.0.5.0.QCRINXM、印尼稳定版V12.0.5.0.QCRIDXM</li> 
-						<li>Redmi 9C NFC：国际版V12.0.5.0.QCSMIXM、欧洲稳定版V12.0.5.0.QCSEUXM、俄罗斯版V12.0.5.0.QCSRUXM</li> 
-						<li>Redmi 10X 4G：V12.0.7.0.QJOCNXM、V12.0.8.0.QJOCNXM、国际版V12.0.6.0.QJOMIXM、欧洲稳定版V12.0.5.0.QJOEUXM、俄罗斯版V12.0.4.0.QJORUXM、印度版V12.0.6.0.QJOINXM、印尼稳定版V12.0.4.0.QJOIDXM</li> 
-						<li>Redmi 10X 5G：V12.0.6.0.QJHCNXM</li> 
-						<li>Redmi 10X Pro：V12.0.6.0.QJLCNXM</li> 
-						<li>红米Note 6 Pro：国际版V12.0.1.0.PEKMIXM</li> 
-						<li>Redmi Note 7：印度版V12.0.2.0.QFGINXM</li> 
-						<li>Redmi Note 7 Pro：印度版V12.0.5.0.QFHINXM</li> 
-						<li>Redmi Note 8：国际版V12.0.2.0.QCOMIXM、国际版V12.0.3.0.QCOMIXM、欧洲稳定版V12.0.2.0.QCOEUXM、欧洲稳定版V12.0.3.0.QCOEUXM</li> 
-						<li>Redmi Note 9 4G：V12.0.10.0.QJQCNXM、V12.0.11.0.QJQCNXM、台湾地区版V12.0.1.0.QJQTWXM、台湾地区版V12.0.2.0.QJQTWXM、国际版V12.0.3.0.QJQMIXM、国际版V12.0.4.0.QJQMIXM、印度版V12.0.4.0.QJQINXM</li> 
-						<li>Redmi Note 9 5G：V12.0.5.0.QJECNXM、V12.0.6.0.QJECNXM</li> 
-						<li>Redmi Note 9S：印度版V12.0.2.0.QJWINXM</li> 
-						<li>Redmi Note 9 Pro：V12.0.7.0.QJSCNXM、国际版V12.0.7.0.QJSMIXM、欧洲稳定版V12.0.8.0.QJSEUXM、印度版V12.0.3.0.QJSINXM、印度版V12.0.4.0.QJSINXM</li> 
-						<li>Redmi Note 9 Pro 国际版：台湾地区版V12.0.2.0.QJZTWXM</li> 
-						<li>Redmi K20 Pro：V12.0.6.0.QFKCNXM、印度版V12.0.4.0.QFKINXM</li> 
-						<li>Redmi K30 4G版：V12.1.3.0.RGHCNXM</li> 
-						<li>Redmi K30 5G版：V12.1.1.0.RGICNXM、V12.1.4.0.RGICNXM</li> 
-						<li>Redmi K30 Pro：V12.1.3.0.RJKCNXM、V12.2.1.0.RJKCNXM、V12.2.2.0.RJKCNXM、国际版V12.2.1.0.RJKMIXM、国际版V12.2.3.0.RJKMIXM、国际版V12.2.4.0.RJKMIXM、欧洲稳定版V12.2.1.0.RJKEUXM、欧洲稳定版V12.2.3.0.RJKEUXM、欧洲稳定版V12.2.4.0.RJKEUXM</li> 
-						<li>Redmi K30S 至尊纪念版：V12.0.3.0.QJDCNXM、V12.0.6.0.QJDCNXM、V12.0.8.0.QJDCNXM、V12.0.10.0.QJDCNXM、国际版V12.0.9.0.QJDMIXM、国际版V12.0.10.0.QJDMIXM、欧洲稳定版V12.0.15.0.QJDEUXM、俄罗斯版V12.0.2.0.QJDRUXM</li> 
-						<p>共计109卡刷包，93线刷包数据</p> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2021.1.8日更新:</p> 
-					<ol> 
-						<li>小米8：俄罗斯版 V12.0.1.0.QEARUXM</li> 
-						<li>小米8 屏幕指纹板：V12.0.3.0.QECCNXM、国际版V12.0.1.0.QECMIXM、俄罗斯版V12.0.1.0.QECRUXM</li> 
-						<li>小米9：V12.0.6.0.QFACNXM、国际版 V12.0.3.0.QFAMIXM、欧洲稳定版V12.0.3.0.QFAEUXM</li> 
-						<li>小米9 SE：V12.0.3.0.QFBCNXM、欧洲稳定版V12.0.3.0.QFBEUXM</li> 
-						<li>小米9 Pro 5G：V12.0.5.0.QFXCNXM</li> 
-						<li>小米CC9：欧洲稳定版V12.0.4.0.QFCEUXM、俄罗斯版V12.0.3.0.QFCRUXM</li> 
-						<li>小米CC9e：V12.0.3.0.QFMCNXM</li> 
-						<li>小米CC9 Pro：国际版V12.0.3.0.QFDMIXM、欧洲稳定版V12.0.2.0.QFDEUXM、欧洲稳定版、V12.0.3.0.QFDEUXM、俄罗斯版V12.0.3.0.QFDRUXM、印尼稳定版V12.0.3.0.QFDIDXM</li> 
-						<li>小米10：V12.1.3.0.RJBCNXM、V12.1.5.0.RJBCNXM、V12.2.2.0.RJBCNXM</li> 
-						<li>小米10 Pro：国际版V12.2.1.0.RJAMIXM</li> 
-						<li>小米10青春版：V12.1.3.0.RJVCNXM</li> 
-						<li>小米10 至尊纪念版：V12.0.14.0.QJJCNXM、V12.0.15.0.QJJCNXM</li> 
-						<li>小米10 Lite：国际版V12.1.1.0.RJIMIXM、台湾地区版V12.0.1.0.QJITWXM</li> 
-						<li>小米11：V12.0.12.0.RKBCNXM</li> 
-						<li>小米Note10 Lite：国际版V12.0.3.0.QFNMIXM、欧洲稳定版V12.0.2.0.QFNEUXM、俄罗斯版V12.0.2.0.QFNRUXM、土耳其版V12.0.2.0.QFNTRXM</li> 
-						<li>小米MIX2S：V12.0.2.0.QDGCNXM、国际版V12.0.2.0.QDGRUXM</li> 
-						<li>小米MIX3：国际版V12.0.2.0.QEEMIXM、欧洲稳定版V12.0.3.0.QEERUXM</li> 
-						<li>小米MIX3 5G版：欧洲稳定版V12.0.2.0.PEMEUXM</li> 
-						<li>小米Play：V11.0.8.0.OFICNXM</li> 
-						<li>POCO X3 NFC：俄罗斯版V12.0.3.0.QJGRUXM、印尼稳定版V12.0.3.0.QJGIDXM 、土耳其版V12.0.3.0.QJGTRXM、土耳其版V12.0.4.0.QJGTRXM</li> 
-						<li>小米A2：国际版V11.0.17.0.QDIMIXM、国际版V11.0.19.0.QDIMIXM</li> 
-						<li>小米A2 Lite：国际版V11.0.14.0.QDLMIXM</li> 
-						<li>小米A3：国际版V11.0.23.0.QFQMIXM、欧洲稳定版V11.0.10.0.QFQEUXM</li> 
-						<li>红米6 Pro：印度版V12.0.2.0.PDMMIXM、印度版V12.0.4.0.PDMMIXM</li> 
-						<li>Redmi 7：V11.0.3.0.QFLCNXM、国际版V11.0.7.0.PFLMIXM、欧洲稳定版V11.0.11.0.PFLEUXM、俄罗斯版V11.0.9.0.PFLRUXM</li> 
-						<li>Redmi 7A：国际版V11.0.5.0.QCMMIXM、欧洲稳定版V11.0.5.0.QCMEUXM、俄罗斯版V11.0.4.0.QCMRUXM</li> 
-						<li>Redmi 8：印度版V11.0.2.0.QCNINXM、印尼稳定版V11.0.2.0.QCNIDXM</li> 
-						<li>Redmi 8A：国际版V11.0.3.0.QCPMIXM、俄罗斯版V11.0.2.0.QCPRUXM、印度版V11.0.2.0.QCPINXM、印尼稳定版V11.0.2.0.QCPIDXM</li> 
-						<li>Redmi 8A Dual：印度版V11.0.3.0.QCQINXM</li> 
-						<li>Redmi 9：国际版V11.0.9.0.QJCMIXM、国际版V12.0.1.0.QJCMIXM、欧洲稳定版V11.0.9.0.QJCEUXM、俄罗斯版V12.0.1.0.QJCRUXM、印度版V11.0.6.0.QJCINXM、印尼稳定版V12.0.1.0.QJCIDXM</li> 
-						<li>Redmi 9A：V12.0.5.0.QCDCNXM、国际版V12.0.8.0.QCDMIXM、欧洲稳定版V12.0.9.0.QCDEUXM、俄罗斯版V12.0.6.0.QCDRUXM、印度版V12.0.7.0.QCDINXM、印尼稳定版V12.0.4.0.QCDIDXM</li> 
-						<li>Redmi 10X 4G：V12.0.6.0.QJOCNXM、国际版V12.0.5.0.QJOMIXM、欧洲稳定版V12.0.4.0.QJOEUXM、俄罗斯版V12.0.3.0.QJORUXM、印度版V12.0.5.0.QJOINXM、印尼稳定版V12.0.2.0.QJOIDXM、印尼稳定版V12.0.3.0.QJOIDXM、土耳其版V12.0.3.0.QJOTRXM</li> 
-						<li>红米S2：俄罗斯版V12.0.1.0.PEFRUXM</li> 
-						<li>Redmi Y3：印度版V11.0.12.0.PFFINXM</li> 
-						<li>Redmi Note 7：国际版V12.0.1.0.QFGMIXM、印度版V12.0.1.0.QFGINXM</li> 
-						<li>Redmi Note 7 Pro：印度版V12.0.4.0.QFHINXM</li> 
-						<li>Redmi Note 8：V12.0.3.0.QCOCNXM、国际版V11.0.12.0.PCOMIXM、欧洲稳定版V12.0.1.0.QCOEUXM、印度版V12.0.1.0.QCOINXM、印尼稳定版V12.0.1.0.QCOIDXM</li> 
-						<li>Redmi Note 8T：俄罗斯版V12.0.2.0.QCXRUXM</li> 
-						<li>Redmi Note 8 Pro：V12.0.4.0.QGGCNXM、国际版V12.0.5.0.QGGMIXM、欧洲稳定版V12.0.3.0.QGGEUXM、俄罗斯版V12.0.6.0.QGGRUXM、印度版V12.0.3.0.QGGINXM、印尼稳定版V12.0.3.0.QGGIDXM</li> 
-						<li>Redmi Note 9 4G：V12.0.1.0.QJQCNXM、V12.0.3.0.QJQCNXM、V12.0.5.0.QJQCNXM、V12.0.6.0.QJQCNXM、V12.0.9.0.QJQCNXM、国际版V12.0.1.0.QJQMIXM、印度版V12.0.1.0.QJQINXM、印度版V12.0.2.0.QJQINXM、印度版V12.0.3.0.QJQINXM</li> 
-						<li>Redmi Note 9 5G：V12.0.3.0.QJECNXM</li> 
-						<li>Redmi Note 9 Pro：V12.0.2.0.QJSCNXM、V12.0.4.0.QJSCNXM、V12.0.6.0.QJSCNXM、国际版V12.0.1.0.QJSMIXM、国际版V12.0.5.0.QJSMIXM、国际版V12.0.6.0.QJSMIXM、欧洲稳定版V12.0.4.0.QJSEUXM、欧洲稳定版V12.0.5.0.QJSEUXM、欧洲稳定版V12.0.6.0.QJSEUXM</li> 
-						<li>Redmi Note 9S：国际版V12.0.2.0.QJWMIXM、欧洲稳定版V12.0.2.0.QJWEUXM、俄罗斯版V12.0.2.0.QJWRUXM、土耳其版V12.0.2.0.QJWTRXM</li> 
-						<li>Redmi Note 9 Pro 国际版：国际版V12.0.1.0.QJZMIXM、欧洲稳定版V11.0.6.0.QJZEUXM、欧洲稳定版V12.0.1.0.QJZEUXM、俄罗斯版V12.0.2.0.QJZRUXM、印尼稳定版V12.0.3.0.QJZIDXM、土耳其版V12.0.3.0.QJZTRXM</li> 
-						<li>Redmi K20：V12.0.6.0.QFJCNXM</li> 
-						<li>Redmi K30 至尊纪念版：V12.0.16.0.QJNCNXM、V12.0.18.0.QJNCNXM</li> 
-						<li>Redmi K30S 至尊纪念版：V12.0.5.0.QJDCNXM、V12.0.7.0.QJDCNXM、国际版V12.0.7.0.QJDMIXM、国际版V12.0.8.0.QJDMIXM、欧洲稳定版V12.0.11.0.QJDEUXM、欧洲稳定版V12.0.13.0.QJDEUXM、欧洲稳定版V12.0.14.0.QJDEUXM、俄罗斯版V12.0.1.0.QJDRUXM、印度版V12.0.3.0.QJDINXM、印度版V12.0.4.0.QJDINXM、印尼稳定版V12.0.1.0.QJDIDXM、土耳其版V12.0.1.0.QJDTRXM</li> 
-						<li>Redmi Go：国际版V10.2.22.0.OCLMIXM、欧洲稳定版V10.2.18.0.OCLEUXM、俄罗斯版V10.2.16.0.OCLRUXM、俄罗斯版V10.2.17.0.OCLRUXM、印度版V10.2.17.0.OCLINXM、印度版V10.2.18.0.OCLINXM</li> 
-						<p>共计148卡刷包，135线刷包数据</p> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.11.13日更新:</p> 
-					<ol> 
-						<li>小米8：V12.0.2.0.QEACNXM、V12.0.3.0.QEACNXM</li> 
-						<li>小米9SE：欧洲稳定版 V12.0.2.0.QFBEUXM</li> 
-						<li>小米CC9：国际版 V12.0.4.0.QFCMIXM</li> 
-						<li>小米CC9 Pro：V12.0.2.0.QFDCNXM、欧洲稳定版 V12.0.1.0.QFDEUXM</li> 
-						<li>小米10 Lite：欧洲稳定版 V12.0.3.0.QJIEUXM</li> 
-						<li>小米10T Lite：欧洲稳定版 V12.0.2.0.QJSEUXM</li> 
-						<li>POCO F1：国际版 V12.0.1.0.QEJMIXM、国际版 V12.0.2.0.QEJMIXM</li> 
-						<li>POCO X3 NFC：国际版 V12.0.4.0.QJGMIXM、欧洲稳定版 V12.0.4.0.QJGEUXM、印度版 V12.0.5.0.QJGINXM</li> 
-						<li>Redmi 7A：国际版 V11.0.4.0.QCMMIXM、俄罗斯版 V11.0.3.0.QCMRUXM</li> 
-						<li>Redmi 8：俄罗斯版 V11.0.2.0.QCNRUXM</li> 
-						<li>Redmi 9 India：印度版 V12.0.3.0.QCTINXM</li> 
-						<li>Redmi 9A：国际版 V12.0.7.0.QCDMIXM、欧洲稳定版 V12.0.8.0.QCDEUXM、俄罗斯版 V12.0.5.0.QCDRUXM、印尼稳定版 V12.0.3.0.QCDIDXM</li> 
-						<li>Redmi 9C：欧洲稳定版 V12.0.5.0.QCREUXM、印度版 V12.0.2.0.QCRINXM、印度版 V12.0.3.0.QCRINXM</li> 
-						<li>Redmi 9C NFC：国际版 V12.0.3.0.QCSMIXM、欧洲稳定版 V12.0.4.0.QCSEUXM</li> 
-						<li>Redmi Note 7：V12.0.2.0.QFGCNXM、俄罗斯版 V12.0.1.0.QFGRUXM</li> 
-						<li>Redmi Note 8：国际版 V12.0.1.0.QCOMIXM</li> 
-						<li>Redmi Note 8T：国际版 V12.0.1.0.QCXMIXM、欧洲稳定版 V12.0.1.0.QCXEUXM</li> 
-						<li>Redmi K20：国际版 V12.0.5.0.QFJMIXM、欧洲稳定版 V12.0.3.0.QFJEUXM、俄罗斯版 V12.0.2.0.QFJRUXM、印度版 V12.0.5.0.QFJINXM</li> 
-						<li>Redmi K30 4G：印度版 V12.0.2.0.QGHINXM</li> 
-						<li>Redmi K30 至尊纪念版：V12.0.12.0.QJNCNXM、V12.0.13.0.QJNCNXM</li> 
-						<li>Redmi K30S 至尊纪念版：国际版 V12.0.6.0.QJDMIXM</li> 
-						<p>共计39卡刷包，36线刷包数据</p> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.11.6日更新:</p> 
-					<ol> 
-						<li>小米9：V12.0.5.0.QFACNXM</li> 
-						<li>小米10：V12.0.11.0.QJBCNXM、欧洲稳定版 V12.0.6.0.QJBEUXM</li> 
-						<li>小米10 Pro：V12.0.5.0.QJAMIXM、国际版 V12.0.5.0.QJAMIXM、欧洲稳定版 V12.0.5.0.QJAEUXM</li> 
-						<li>小米10 Lite：国际版 V12.0.2.0.QJIMIXM</li> 
-						<li>小米Play：国际版 V11.0.9.0.OFIMIXM、俄罗斯版 V11.0.10.0.OFIRUXM</li> 
-						<li>小米A3：国际版 V11.0.22.0.QFQMIXM、欧洲稳定版 V11.0.9.0.QFQEUXM</li> 
-						<li>Redmi 7A：V11.0.2.0.QCMCNXM、印度版 V11.0.3.0.QCMINXM</li> 
-						<li>Redmi 8：V11.0.2.0.QCNCNXM、欧洲稳定版 V11.0.3.0.QCNEUXM</li> 
-						<li>Redmi 8A：国际版 V11.0.2.0.QCPMIXM、欧洲稳定版 V11.0.3.0.QCPEUXM</li> 
-						<li>Redmi 9A：V12.0.4.0.QCDCNXM 、印度版 V12.0.6.0.QCDINXM</li> 
-						<li>Redmi 9C：国际版 V12.0.7.0.QCRMIXM、印尼稳定版 V12.0.3.0.QCRIDXM</li> 
-						<li>Redmi 9C NFC：俄罗斯版 V12.0.4.0.QCSRUXM</li> 
-						<li>Redmi 10X 5G：V12.0.5.0.QJHCNXM</li> 
-						<li>Redmi Note 6 Pro：国际版 V11.0.5.0.PEKMIXM、国际版 V11.0.6.0.PEKMIXM</li> 
-						<li>Redmi Note 7：欧洲稳定版 V12.0.2.0.QFGEUXM</li> 
-						<li>Redmi Note 8：印尼稳定版 V11.0.7.0.PCOIDXM</li> 
-						<li>Redmi Note 8 Pro：V12.0.3.0.QGGCNXM、欧洲稳定版 V12.0.2.0.QGGEUXM、俄罗斯版 V12.0.5.0.QGGRUXM、印度版 V12.0.2.0.QGGINXM、印尼稳定版 V12.0.2.0.QGGIDXM</li> 
-						<li>Redmi Note 9S：国际版 12.0.1.0.QJWMIXM、欧洲稳定版 V12.0.1.0.QJWEUXM</li> 
-						<li>Redmi Note 9 Pro 国际版：俄罗斯版 V12.0.1.0.QJZRUXM、印尼稳定版 V12.0.2.0.QJZIDXM、土耳其版 V12.0.1.0.QJZTRXM、土耳其版 V12.0.2.0.QJZTRXM</li> 
-						<li>Redmi K20 Pro：V12.0.4.0.QFKCNXM、V12.0.5.0.QFKCNXM、国际版 V12.0.3.0.QFKMIXM、欧洲稳定版 V12.0.3.0.QFKEUXM</li> 
-						<li>Redmi K30 4G版：V12.0.5.0.QGHCNXM</li> 
-						<li>Redmi K30 5G版：V12.0.7.0.QGICNXM </li> 
-						<li>Redmi K30 Pro：俄罗斯版 V12.0.4.0.QJKRUXM</li> 
-						<li>Redmi K30S 至尊纪念版：欧洲稳定版 V12.0.10.0.QJDEUXM</li> 
-						<p>共计47卡刷包，46线刷包数据</p> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.10.30日更新:</p> 
-					<ol> 
-						<li>小米8：V12.0.2.0.QEACNXM</li> 
-						<li>小米9：V12.0.4.0.QFACNXM</li> 
-						<li>小米9 Pro 5G：V12.0.4.0.QFXCNXM</li> 
-						<li>小米9SE：国际版 V12.0.2.0.QFBMIXM</li> 
-						<li>小米10：印度版 V12.0.3.0.QJBINXM</li> 
-						<li>小米10 至尊纪念版：V12.0.10.0.QJJCNXM、V12.0.13.0.QJJCNXM</li> 
-						<li>小米Max3：国际版 V12.0.1.0.QEDMIXM、俄罗斯版 V12.0.1.0.QEDRUXM</li> 
-						<li>小米MIX2：国际版 V12.0.1.0.PDEMIXM</li> 
-						<li>POCO X3 NFC：国际版 V12.0.3.0.QJGMIXM、欧洲稳定版 V12.0.3.0.QJGEUXM、土耳其版 V12.0.2.0.QJGTRXM</li> 
-						<li>小米A2：国际版 V11.0.15.0.QDIMIXM</li> 
-						<li>小米A2 Lite：国际版 V11.0.12.0.QDLMIXM</li> 
-						<li>小米A3：欧洲稳定版 V10.3.15.0.PFQEUXM、欧洲稳定版 V11.0.1.0.QFQEUXM、欧洲稳定版 V11.0.2.0.QFQEUXM、欧洲稳定版 V11.0.3.0.QFQEUXM、欧洲稳定版 V11.0.5.0.QFQEUXM、欧洲稳定版 V11.0.6.0.QFQEUXM、欧洲稳定版 V11.0.8.0.QFQEUXM</li> 
-						<li>Redmi 8A：国际版 V11.0.2.0.QCPMIXM</li> 
-						<li>Redmi 9A：欧洲稳定版 V12.0.7.0.QCDEUXM、俄罗斯版 V12.0.4.0.QCDRUXM</li> 
-						<li>Redmi 9C：印度版 V12.0.1.0.QCRINXM</li> 
-						<li>红米S2：国际版 V12.0.2.0.PEFMIXM</li> 
-						<li>Redmi 10X 5G：V12.0.5.0.QJHCNXM</li> 
-						<li>Redmi Note 7 Pro：印度版 V12.0.1.0.QFHINXM</li> 
-						<li>Redmi Note 8：V11.0.8.0.PCOCNXM</li> 
-						<li>Redmi Note 9S：俄罗斯版 V12.0.1.0.QJWRUXM</li> 
-						<li>Redmi Note 9 Pro 国际版：土耳其版 V11.0.1.0.QJZTRXM、土耳其版 V11.0.2.0.QJZTRXM</li> 
-						<li>Redmi K30 Pro：欧洲稳定版 V12.0.3.0.QJKEUXM</li> 
-						<li>Redmi K30S 至尊纪念版：国际版 V12.0.3.0.QJDMIXM、欧洲稳定版 V12.0.4.0.QJDEUXM、欧洲稳定版 V12.0.5.0.QJDEUXM、欧洲稳定版 V12.0.6.0.QJDEUXM、印度版 V12.0.2.0.QJDINXM</li> 
-						<p>共计39卡刷包，34线刷包数据</p> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.10.15日更新:</p> 
-					<ol> 
-						<li>小米8：V11.0.8.0.QEACNXM、V12.0.1.0.QEACNXM、国际版 V11.0.5.0.QEAMIXM、俄罗斯版 V11.0.3.0.QEARUXM、俄罗斯版 V11.0.4.0.QEARUXM</li> 
-						<li>小米8透明探索版：V12.0.2.0.QEHCNXM</li> 
-						<li>小米8屏幕指纹版：V12.0.2.0.QECCNXM、国际版 V11.0.7.0.QECMIXM、国际版 V11.0.9.0.QECMIXM、国际版 V11.0.11.0.QECMIXM、俄罗斯版 V11.0.3.0.QECRUXM、俄罗斯版 V11.0.4.0.QECRUXM</li> 
-						<li>小米8SE：V11.0.3.0.QEBCNXM、V12.0.2.0.QEBCNXM</li> 
-						<li>小米8青春版：V12.0.1.0.QDTCNXM、国际版 V11.0.2.0.QDTMIXM、国际版 V11.0.3.0.QDTMIXM、国际版 V12.0.3.0.QDTMIXM、俄罗斯版 V11.0.2.0.QDTRUXM、俄罗斯版 V12.0.1.0.QDTRUXM</li> 
-						<li>小米9：V11.0.7.1.QFACNXM、V12.0.1.0.QFACNXM、V12.0.2.0.QFACNXM、V12.0.3.0.QFACNXM、国际版 V12.0.0.8.QFAMIXM、国际版 V12.0.1.0.QFAMIXM、国际版 V12.0.2.0.QFAMIXM、欧洲稳定版 V12.0.0.9.QFAEUXM、欧洲稳定版 V12.0.1.0.QFAEUXM、欧洲稳定版 V12.0.2.0.QFAEUXM、俄罗斯版 V11.0.5.0.QFARUXM、俄罗斯版 V12.0.1.0.QFARUXM、俄罗斯版 V12.0.2.0.QFARUXM</li> 
-						<li>小米9 Pro 5G：V11.0.4.0.QFXCNXM、V11.0.6.0.QFXCNXM、V12.0.1.0.QFXCNXM、V12.0.2.0.QFXCNXM、V12.0.3.0.QFXCNXM</li> 
-						<li>小米9SE：V12.0.1.0.QFBCNXM、V12.0.2.0.QFBCNXM、国际版 V11.0.3.0.QFBMIXM、国际版 V11.0.4.0.QFBMIXM、国际版 V12.0.1.0.QFBMIXM、欧洲稳定版 V11.0.5.0.QFBEUXM、欧洲稳定版 V11.0.6.0.QFBEUXM、欧洲稳定版 V11.0.9.0.QFBEUXM、欧洲稳定版 V12.0.1.0.QFBEUXM、俄罗斯版 V11.0.3.0.QFBRUXM、俄罗斯版 V11.0.4.0.QFBRUXM、俄罗斯版 V12.0.1.0.QFBRUXM</li> 
-						<li>小米CC9：V11.0.4.0.QFCCNXM、V12.0.2.0.QFCCNXM、国际版 V11.0.2.0.QFCMIXM、国际版 V11.0.3.0.QFCMIXM、国际版 V12.0.3.0.QFCMIXM、欧洲稳定版 V11.0.2.0.QFCEUXM、欧洲稳定版 V11.0.3.0.QFCEUXM、欧洲稳定版 V12.0.3.0.QFCEUXM、俄罗斯版 V11.0.2.0.QFCRUXM、俄罗斯版 V11.0.3.0.QFCRUXM</li> 
-						<li>小米CC9 美图定制版：V11.0.4.0.QFECNXM、V12.0.2.0.QFECNXM</li> 
-						<li>小米CC9e：V11.0.6.0.PFMCNXM</li> 
-						<li>小米CC9 Pro：V12.0.1.0.QFDCNXM、国际版 V11.1.1.0.QFDMIXM、国际版 V11.1.2.0.QFDMIXM、国际版 V11.1.3.0.QFDMIXM、国际版 V12.0.1.0.QFDMIXM、国际版 V12.0.2.0.QFDMIXM、欧洲稳定版 V11.0.17.0.PFDEUXM、欧洲稳定版 V11.1.1.0.QFDEUXM、欧洲稳定版 V11.1.2.0.QFDEUXM、欧洲稳定版 V12.0.1.0.QFDEUXM、俄罗斯版 V11.1.1.0.QFDRUXM、俄罗斯版 V11.1.2.0.QFDRUXM、俄罗斯版 V12.0.2.0.QFDRUXM、印度尼西亚 V11.1.1.0.QFDIDXM、印度尼西亚 V12.0.2.0.QFDIDXM</li> 
-						<li>小米10：V11.0.25.0.QJBCNXM、V12.0.1.0.QJBCNXM、V12.0.4.0.QJBCNXM、V12.0.7.0.QJBCNXM、V12.0.8.0.QJBCNXM、国际版 V11.0.5.0.QJBMIXM、国际版 V12.0.1.0.QJBMIXM、欧洲稳定版 V11.0.9.0.QJBEUXM、欧洲稳定版 V11.0.12.0.QJBEUXM、欧洲稳定版 V11.0.13.0.QJBEUXM、欧洲稳定版 V11.0.14.0.QJBEUXM、欧洲稳定版 V11.0.15.0.QJBEUXM、欧洲稳定版 V11.0.18.0.QJBEUXM、欧洲稳定版 V12.0.1.0.QJBEUXM、俄罗斯版 V11.0.1.0.QJBRUXM、俄罗斯版 V12.0.1.0.QJBRUXM、印度版 V11.0.5.0.QJBINXM、印度版 V11.0.7.0.QJBINXM、印度版 V12.0.2.0.QJBINXM、印尼稳定版 V11.0.3.0.QJBIDXM、印尼稳定版 V11.0.4.0.QJBIDXM、印尼稳定版 V11.0.5.0.QJBIDXM、印尼稳定版 V12.0.1.0.QJBIDXM</li> 
-						<li>小米10 Pro：V11.0.18.0.QJACNXM、V12.0.1.0.QJACNXM、V12.0.2.0.QJACNXM、V12.0.3.0.QJACNXM、V12.0.4.0.QJACNXM、V12.0.6.0.QJACNXM、国际版 V11.0.4.0.QJAMIXM、国际版 V12.0.1.0.QJAMIXM、欧洲稳定版 V11.0.11.0.QJAEUXM、欧洲稳定版 V11.0.12.0.QJAEUXM、欧洲稳定版 V12.0.1.0.QJAEUXM</li> 
-						<li>小米10 至尊纪念版：V12.0.6.0.QJJCNXM、V12.0.7.0.QJJCNXM、V12.0.8.0.QJJCNXM</li> 
-						<li>小米10 青春版：V11.0.9.0.QJVCNXM、V11.0.10.0.QJVCNXM、V12.0.3.0.QJVCNXM、V12.0.4.0.QJVCNXM、V12.0.5.0.QJVCNXM、V12.0.6.0.QJVCNXM</li> 
-						<li>小米10 Lite：国际版 V11.0.4.0.QJIMIXM、国际版 V12.0.1.0.QJIMIXM、欧洲稳定版 V11.0.10.0.QJIEUXM、欧洲稳定版 V11.0.11.0.QJIEUXM、欧洲稳定版 V12.0.1.0.QJIEUXM、欧洲稳定版 V12.0.2.0.QJIEUXM</li> 
-						<li>小米10T Lite：欧洲稳定版 V12.0.1.0.QJSEUXM</li> 
-						<li>小米MIX2：V12.0.1.0.PDECNXM</li> 
-						<li>小米MIX2S：V12.0.1.0.QDGCNXM、国际版 V11.0.5.0.QDGMIXM、国际版 V12.0.1.0.QDGMIXM、俄罗斯版 V11.0.2.0.QDGRUXM、俄罗斯版 V12.0.1.0.QDGRUXM</li> 
-						<li>小米MIX3：V11.0.3.0.QEECNXM、V12.0.1.0.QEECNXM、国际版 V11.0.4.0.QEEMIXM、国际版 V11.0.5.0.QEEMIXM、国际版 V12.0.1.0.QEEMIXM、俄罗斯版 V11.0.4.0.QEERUXM、俄罗斯版 V12.0.2.0.QEERUXM</li> 
-						<li>小米MIX3 5G：国际版 V12.0.1.0.PEMMIXM、欧洲稳定版 V10.3.25.0.PEMEUXM、欧洲稳定版 V12.0.1.0.PEMEUXM</li> 
-						<li>小米MAX3：V12.0.1.0.QEDCNXM、国际版 V11.0.2.0.QEDMIXM、国际版 V11.0.4.0.QEDMIXM、俄罗斯版 V11.0.2.0.QEDRUXM</li> 
-						<li>小米Note3：V12.0.1.0.PCHCNXM、国际版 V12.0.1.0.PCHMIXM</li> 
-						<li>小米Note 10 Lite：国际版 V11.0.2.0.QFNMIXM、国际版 V11.0.4.0.QFNMIXM、国际版 V11.0.4.0.QFNMIXM、国际版 V11.0.6.0.QFNMIXM、国际版 V11.0.7.0.QFNMIXM、国际版 V11.0.8.0.QFNMIXM、国际版 V12.0.2.0.QFNMIXM、欧洲稳定版 V11.0.8.0.QFNEUXM、欧洲稳定版 V11.0.10.0.QFNEUXM、欧洲稳定版 V11.0.11.0.QFNEUXM、欧洲稳定版 V12.0.1.0.QFNEUXM、俄罗斯版 V11.0.4.0.QFNRUXM、俄罗斯版 V11.0.5.0.QFNRUXM、俄罗斯版 V12.0.1.0.QFNRUXM、土耳其版 V11.0.4.0.QFNTRXM、土耳其版 V12.0.1.0.QFNTRXM</li> 
-						<li>小米Play：V11.0.7.0.OFICNXM、国际版 V11.0.6.0.OFIMIXM、国际版 V11.0.8.0.OFIMIXM、俄罗斯版 V11.0.6.0.OFIRUXM、俄罗斯版 V11.0.9.0.OFIRUXM</li> 
-						<li>小米A1：国际版 V10.0.13.0.PDHMIXM、国际版 V10.0.14.0.PDHMIXM、国际版 V10.0.15.0.PDHMIXM、国际版 V10.0.16.0.PDHMIXM、国际版 V10.0.17.0.PDHMIXM、国际版 V10.0.18.0.PDHMIXM、国际版 V10.0.19.0.PDHMIXM、国际版 V10.0.20.0.PDHMIXM、国际版 V10.0.21.0.PDHMIXM、国际版 V10.0.22.0.PDHMIXM、国际版 V10.0.23.0.PDHMIXM、国际版 V10.0.24.0.PDHMIXM</li> 
-						<li>小米A2：国际版 V10.0.15.0.QDIMIXM、国际版 V10.0.16.0.QDIMIXM、国际版 V10.0.17.0.QDIMIXM、国际版 V11.0.4.0.QDIMIXM、国际版 V11.0.5.0.QDIMIXM、国际版 V11.0.6.0.QDIMIXM、国际版 V11.0.8.0.QDIMIXM、国际版 V11.0.10.0.QDIMIXM、国际版 V11.0.11.0.QDIMIXM、国际版 V11.0.12.0.QDIMIXM、国际版 V11.0.13.0.QDIMIXM、国际版 V11.0.14.0.QDIMIXM</li> 
-						<li>小米A2 Lite：国际版 V10.0.14.0.PDLMIXM、国际版 V10.0.15.0.PDLMIXM、国际版 V10.0.16.0.PDLMIXM、国际版 V10.0.17.0.PDLMIXM、国际版 V10.0.18.0.PDLMIXM、国际版 V10.0.20.0.PDLMIXM、国际版 V11.0.2.0.QDLMIXM、国际版 V11.0.4.0.QDLMIXM、国际版 V11.0.5.0.QDLMIXM、国际版 V11.0.7.0.QDLMIXM、国际版 V11.0.9.0.QDLMIXM、国际版 V11.0.10.0.QDLMIXM、国际版 V11.0.11.0.QDLMIXM</li> 
-						<li>小米A3：国际版 V10.3.5.0.PFQMIXM、国际版 V10.3.6.0.PFQMIXM、国际版 V10.3.8.0.PFQMIXM、国际版 V10.3.9.0.PFQMIXM、国际版 V10.3.12.0.PFQMIXM、国际版 V10.3.13.0.PFQMIXM、国际版 V10.3.14.0.PFQMIXM、国际版 V10.3.16.0.PFQMIXM、国际版 V11.0.7.0.QFQMIXM、国际版 V11.0.8.0.QFQMIXM、国际版 V11.0.14.0.QFQMIXM、国际版 V11.0.15.0.QFQMIXM、国际版 V11.0.16.0.QFQMIXM、国际版 V11.0.19.0.QFQMIXM、国际版 V11.0.20.0.QFQMIXM、国际版 V11.0.21.0.QFQMIXM</li> 
-						<li>POCO F1：国际版 V11.0.9.0.QEJMIXM、俄罗斯版 V11.0.4.0.QEJRUXM、俄罗斯版 V12.0.2.0.QEJRUXM</li> 
-						<li>POCO M2 Pro：印度版 V11.0.2.0.QJPINXM、印度版 V11.0.3.0.QJPINXM、印度版 V12.0.1.0.QJPINXM</li> 
-						<li>POCO X3 NFC：国际版 V12.0.2.0.QJGMIXM、欧洲稳定版 V12.0.2.0.QJGEUXM、印度版 V12.0.2.0.QJGINXM、俄罗斯版 V12.0.1.0.QJGRUXM、土耳其版 V12.0.1.0.QJGTRXM</li> 
-						<li>红米6：国际版 V11.0.4.0.PCGMIXM、国际版 V11.0.5.0.PCGMIXM、俄罗斯版 V11.0.4.0.PCGRUXM、俄罗斯版 V11.0.5.0.PCGRUXM</li> 
-						<li>红米6A：国际版 V11.0.9.0.PCBMIXM、俄罗斯版 V11.0.4.0.PCBRUXM</li> 
-						<li>红米6Pro：V11.0.6.0.PDICNXM、V12.0.1.0.PDICNXM</li> 
-						<li>Redmi 7：V11.0.5.0.PFLCNXM、国际版 V11.0.6.0.PFLMIXM、欧洲稳定版 V11.0.7.0.PFLEUXM、欧洲稳定版 V11.0.10.0.PFLEUXM、俄罗斯版 V11.0.6.0.PFLRUXM、俄罗斯版 V11.0.8.0.PFLRUXM、印度版 V11.0.7.0.PFLINXM</li> 
-						<li>Redmi 7A：V11.0.1.0.QCMCNXM、国际版 V11.0.2.0.QCMMIXM、国际版 V11.0.3.0.QCMMIXM、欧洲稳定版 V11.0.1.0.QCMEUXM、欧洲稳定版 V11.0.2.0.QCMEUXM、欧洲稳定版 V11.0.3.0.QCMEUXM、欧洲稳定版 V11.0.4.0.QCMEUXM、俄罗斯版 V11.0.1.0.QCMRUXM、俄罗斯版 V11.0.2.0.QCMRUXM、印度版 V11.0.1.0.QCMINXM、印度版 V11.0.2.0.QCMINXM</li> 
-						<li>Redmi 8：V11.0.11.0.PCNCNXM、V11.0.1.0.QCNCNXM、国际版 V11.0.11.0.PCNMIXM、国际版 V11.0.2.0.QCNMIXM、国际版 V11.0.3.0.QCNMIXM、欧洲稳定版 V11.0.7.0.PCNEUXM、欧洲稳定版 V11.0.1.0.QCNEUXM、欧洲稳定版 V11.0.2.0.QCNEUXM、俄罗斯版 V11.0.6.0.PCNRUXM、俄罗斯版 V11.0.1.0.QCNRUXM、印度版 V11.0.11.0.PCNINXM、印度版 V11.0.12.0.PCNINXM、印度版 V11.0.1.0.QCNINXM、印尼稳定版 V11.0.7.0.PCNIDXM、印尼稳定版 V11.0.1.0.QCNIDXM</li> 
-						<li>Redmi 8A：V11.0.10.0.PCPCNXM、V11.0.2.0.QCPCNXM、V11.0.3.0.QCPCNXM、国际版 V11.0.7.0.PCPMIXM、国际版 V11.0.1.0.QCPMIXM、欧洲稳定版 V11.0.5.0.PCPEUXM、欧洲稳定版 V11.0.1.0.QCPEUXM、欧洲稳定版 V11.0.2.0.QCPEUXM、俄罗斯版 V11.0.5.0.PCPRUXM、俄罗斯版 V11.0.1.0.QCPRUXM、印度版 V11.0.9.0.PCPINXM、印度版 V11.0.1.0.QCPINXM、印尼稳定版 V11.0.5.0.PCPIDXM、印尼稳定版 V11.0.1.0.QCPIDXM</li> 
-						<li>Redmi 8A Dual：印度版 V11.0.7.0.PCQINXM、印度版 V11.0.8.0.PCQINXM、印度版 V11.0.1.0.QCQINXM、印尼稳定版 V11.0.4.0.PCQIDXM、印尼稳定版 V11.0.1.0.QCQIDXM</li> 
-						<li>Redmi 9：V11.0.1.0.QJCCNXM、V11.0.2.0.QJCCNXM、V11.0.3.0.QJCCNXM、V11.0.4.0.QJCCNXM、V11.0.5.0.QJCCNXM、V11.0.7.0.QJCCNXM、V12.0.1.0.QJCCNXM、V12.0.4.0.QJCCNXM、国际版 V11.0.4.0.QJCMIXM、国际版 V11.0.5.0.QJCMIXM、国际版 V11.0.7.0.QJCMIXM、国际版 V11.0.8.0.QJCMIXM、欧洲稳定版 V11.0.2.0.QJCEUXM、欧洲稳定版 V11.0.3.0.QJCEUXM、欧洲稳定版 V11.0.4.0.QJCEUXM、欧洲稳定版 V11.0.5.0.QJCEUXM、欧洲稳定版 V11.0.7.0.QJCEUXM、欧洲稳定版 V11.0.8.0.QJCEUXM、俄罗斯版 V11.0.5.0.QJCRUXM、俄罗斯版 V11.0.7.0.QJCRUXM、印度版 V11.0.2.0.QJCINXM、印度版 V11.0.4.0.QJCINXM、印尼稳定版 V11.0.3.0.QJCIDXM、印尼稳定版 V11.0.6.0.QJCIDXM</li> 
-						<li>Redmi 9 India：印度版 V12.0.1.0.QCTINXM、印度版 V12.0.2.0.QCTINXM</li> 
-						<li>Redmi 9A：V12.0.1.0.QCDCNXM、V12.0.2.0.QCDCNXM、V12.0.3.0.QCDCNXM、国际版 V12.0.3.0.QCDMIXM、国际版 V12.0.5.0.QCDMIXM、国际版 V12.0.6.0.QCDMIXM、欧洲稳定版 V12.0.4.0.QCDEUXM、欧洲稳定版 V12.0.6.0.QCDEUXM、俄罗斯版 V12.0.1.0.QCDRUXM、俄罗斯版 V12.0.3.0.QCDRUXM、印度版 V12.0.3.0.QCDINXM、印度版 V12.0.4.0.QCDINXM、印尼稳定版 V12.0.1.0.QCDIDXM、印尼稳定版 V12.0.2.0.QCDIDXM</li> 
-						<li>Redmi 9C：国际版 V12.0.4.0.QCRMIXM、国际版 V12.0.5.0.QCRMIXM、欧洲稳定版 V12.0.3.0.QCREUXM、欧洲稳定版 V12.0.4.0.QCREUXM、印尼稳定版 V12.0.1.0.QCRIDXM、印尼稳定版 V12.0.2.0.QCRIDXM</li> 
-						<li>Redmi 9C NFC：国际版 V12.0.2.0.QCSMIXM、欧洲稳定版 V12.0.3.0.QCSEUXM、俄罗斯版 V12.0.3.0.QCSRUXM</li> 
-						<li>Redmi 10X 4G：V11.0.4.0.QJOCNXM、V11.0.6.0.QJOCNXM、V12.0.1.0.QJOCNXM、V12.0.3.0.QJOCNXM、V12.0.4.0.QJOCNXM、V12.0.5.0.QJOCNXM</li> 
-						<li>Redmi 10X 5G：V11.0.2.0.QJHCNXM、V11.0.4.0.QJHCNXM、V11.0.5.0.QJHCNXM、V11.0.6.0.QJHCNXM、V12.0.2.0.QJHCNXM、V12.0.4.0.QJHCNXM</li> 
-						<li>Redmi 10X Pro：V11.0.1.0.QJLCNXM、V11.0.2.0.QJLCNXM、V11.0.3.0.QJLCNXM、V11.0.5.0.QJLCNXM、V12.0.2.0.QJLCNXM、V12.0.5.0.QJLCNXM</li> 
-						<li>Redmi Note 7：V11.0.1.0.QFGCNXM、V11.0.2.0.QFGCNXM、V12.0.1.0.QFGCNXM、国际版 V11.0.1.0.QFGMIXM、欧洲稳定版 V11.0.1.0.QFGEUXM、俄罗斯版 V11.0.1.0.QFGRUXM、印度版 V11.0.2.0.QFGINXM、印度版 V11.0.4.0.QFGINXM、印度版 V11.0.5.0.QFGINXM</li> 
-						<li>Redmi Note 7 Pro：V11.0.1.0.QFHCNXM、V12.0.2.0.QFHCNXM、印度版 V11.0.10.0.PFHINXM、印度版 V11.0.2.0.QFHINXM</li> 
-						<li>Redmi Note 8：V11.0.7.0.PCOCNXM、国际版 V11.0.9.0.PCOMIXM、国际版 V11.0.10.0.PCOMIXM、国际版 V11.0.11.0.PCOMIXM、印度版 V11.0.5.0.PCOINXM、印度版 V11.0.6.0.PCOINXM、印尼稳定版 V11.0.5.0.PCOIDXM、印尼稳定版 V11.0.6.0.PCOIDXM</li> 
-						<li>Redmi Note 8T：国际版 V11.0.4.0.PCXMIXM、国际版 V11.0.5.0.PCXMIXM、欧洲稳定版 V11.0.9.0.PCXEUXM、欧洲稳定版 V11.0.10.0.PCXEUXM、欧洲稳定版 V11.0.11.0.PCXEUXM、俄罗斯版 V11.0.4.0.PCXRUXM、俄罗斯版 V11.0.5.0.PCXRUXM</li> 
-						<li>Redmi Note 8 Pro：V11.0.1.0.QGGCNXM、V11.0.2.0.QGGCNXM、V11.0.3.0.QGGCNXM、V12.0.2.0.QGGCNXM、V12.0.4.0.QGGCNXM、国际版 V11.0.1.0.QGGMIXM、国际版 V11.0.4.0.QGGMIXM、国际版 V11.0.5.0.QGGMIXM、国际版 V12.0.0.4.QGGMIXM、国际版 V12.0.2.0.QGGMIXM、国际版 V12.0.3.0.QGGMIXM、欧洲稳定版 V11.0.2.0.QGGEUXM、欧洲稳定版 V11.0.3.0.QGGEUXM、欧洲稳定版 V12.0.1.0.QGGEUXM、俄罗斯版 V11.0.2.0.QGGRUXM、俄罗斯版 V11.0.3.0.QGGRUXM、印度版 V11.0.2.0.QGGINXM、印度版 V11.0.3.0.QGGINXM、印度版 V11.0.4.0.QGGINXM、印度版 V12.0.1.0.QGGINXM、印尼稳定版 V11.0.1.0.QGGIDXM、印尼稳定版 V11.0.2.0.QGGIDXM、印尼稳定版 V12.0.1.0.QGGIDXM</li> 
-						<li>Redmi Note 9：国际版 V11.0.4.0.QJOMIXM、国际版 V11.0.5.0.QJOMIXM、国际版 V12.0.2.0.QJOMIXM、国际版 V12.0.3.0.QJOMIXM、国际版 V12.0.4.0.QJOMIXM、欧洲稳定版 V11.0.4.0.QJOEUXM、欧洲稳定版 V11.0.5.0.QJOEUXM、欧洲稳定版 V12.0.1.0.QJOEUXM、欧洲稳定版 V12.0.2.0.QJOEUXM、欧洲稳定版 V12.0.3.0.QJOEUXM、俄罗斯版 V11.0.2.0.QJORUXM、俄罗斯版 V11.0.3.0.QJORUXM、俄罗斯版 V12.0.1.0.QJORUXM、印度版 V11.0.2.0.QJOINXM、印度版 V11.0.3.0.QJOINXM、印度版 V11.0.5.0.QJOINXM、印度版 V12.0.1.0.QJOINXM、印度版 V12.0.2.0.QJOINXM、印度版 V12.0.4.0.QJOINXM、印尼稳定版 V11.0.1.0.QJOIDXM、印尼稳定版 V11.0.2.0.QJOIDXM、印尼稳定版 V12.0.1.0.QJOIDXM、土耳其版 V11.0.2.0.QJOTRXM、土耳其版 V11.0.3.0.QJOTRXM、土耳其版 V12.0.1.0.QJOTRXM</li> 
-						<li>Redmi Note 9S：国际版 V11.0.9.0.QJWMIXM、国际版 V11.0.10.0.QJWMIXM、国际版 V11.0.11.0.QJWMIXM、欧洲稳定版 V11.0.3.0.QJWEUXM、欧洲稳定版 V11.0.4.0.QJWEUXM、俄罗斯版 V11.0.3.0.QJWRUXM、印度版 V11.0.7.0.QJWINXM、印度版 V11.0.8.0.QJWINXM、印度版 V11.0.8.0.QJWINXM、土耳其版 V11.0.2.0.QJWTRXM、土耳其版 V11.0.6.0.QJWTRXM、土耳其版 V12.0.1.0.QJWTRXM</li> 
-						<li>Redmi Note 9 Pro 国际版：国际版 V11.0.2.0.QJZMIXM、国际版 V11.0.4.0.QJZMIXM、国际版 V11.0.5.0.QJZMIXM、国际版 V11.0.7.0.QJZMIXM、欧洲稳定版 V11.0.3.0.QJZEUXM、欧洲稳定版 V11.0.4.0.QJZEUXM、俄罗斯版 V11.0.1.0.QJZRUXM、俄罗斯版 V11.0.2.0.QJZRUXM、俄罗斯版 V11.0.3.0.QJZRUXM、印尼稳定版 V11.0.2.0.QJZIDXM、印尼稳定版 V11.0.3.0.QJZIDXM、土耳其版 V11.0.1.0.QJZTRXM、土耳其版 V11.0.2.0.QJZTRXM</li> 
-						<li>Redmi Note 9 Pro 国际版 Max：印度版 V11.0.4.0.QJXINXM</li> 
-						<li>Redmi K20：V12.0.2.0.QFJCNXM、V12.0.3.0.QFJCNXM、V12.0.4.0.QFJCNXM、国际版 V11.0.6.0.QFJMIXM、国际版 V12.0.0.11.QFJMIXM、国际版 V12.0.1.0.QFJMIXM、国际版 V12.0.2.0.QFJMIXM、国际版 V12.0.3.0.QFJMIXM、欧洲稳定版 V11.0.6.0.QFJEUXM、欧洲稳定版 V12.0.2.0.QFJEUXM、俄罗斯版 V12.0.1.0.QFJRUXM、印度版 V11.0.4.0.QFJINXM、印度版 V12.0.1.0.QFJINXM、印度版 V12.0.2.0.QFJINXM、印度版 V12.0.3.0.QFJINXM</li> 
-						<li>Redmi K20Pro：V12.0.1.0.QFKCNXM、V12.0.2.0.QFKCNXM、V12.0.3.0.QFKCNXM、国际版 V12.0.0.8.QFKMIXM、国际版 V12.0.1.0.QFKMIXM、国际版 V12.0.2.0.QFKMIXM、欧洲稳定版 V12.0.1.0.QFKEUXM、欧洲稳定版 V12.0.2.0.QFKEUXM、俄罗斯版 V11.0.3.0.QFKRUXM、俄罗斯版 V12.0.2.0.QFKRUXM、俄罗斯版 V12.0.1.0.QFKRUXM、印度版 V11.0.6.0.QFKINXM、印度版 V12.0.0.9.QFKINXM、印度版 V12.0.1.0.QFKINXM、印度版 V12.0.2.0.QFKINXM、印度版 V12.0.3.0.QFKINXM</li> 
-						<li>Redmi K30 4G：V12.0.2.0.QGHCNXM、V12.0.3.0.QGHCNXM、V12.0.4.0.QGHCNXM、印度版 V11.0.10.0.QGHINXM、印度版 V11.0.11.0.QGHINXM、印度版 V12.0.1.0.QGHINXM</li> 
-						<li>Redmi K30 5G：V12.0.1.0.QGICNXM、V12.0.2.0.QGICNXM、V12.0.5.0.QGICNXM</li> 
-						<li>Redmi K30i 5G：V11.1.27.0.QGICMXM、V12.0.3.0.QGICMXM</li> 
-						<li>Redmi K30 Pro：V11.0.19.0.QJKCNXM、V12.0.1.0.QJKCNXM、V12.0.2.0.QJKCNXM、V12.0.5.0.QJKCNXM、V12.0.8.0.QJKCNXM、V12.0.9.0.QJKCNXM、国际版 V11.0.2.0.QJKMIXM、国际版 V12.0.1.0.QJKMIXM、国际版 V12.0.3.0.QJKMIXM、国际版 V12.0.4.0.QJKMIXM、欧洲稳定版 V12.0.1.0.QJKEUXM、欧洲稳定版 V12.0.2.0.QJKEUXM、俄罗斯版 V12.0.1.0.QJKRUXM、俄罗斯版 V12.0.3.0.QJKRUXM、印尼稳定版 V12.0.1.0.QJKIDXM、印尼稳定版 V12.0.2.0.QJKIDXM、印尼稳定版 V12.0.4.0.QJKIDXM</li> 
-						<li>Redmi K30 至尊纪念版：V12.0.8.0.QJNCNXM、V12.0.11.0.QJNCNXM</li> 
-						<li>红米S2：V12.0.4.0.PEFCNXM</li> 
-						<li>红米Y3：印度版 V11.0.10.0.PFFINXM</li> 
-						<li>Redmi Go：国际版 V10.2.15.0.OCLMIXM、国际版 V10.2.16.0.OCLMIXM、国际版 V10.2.17.0.OCLMIXM、国际版 V10.2.18.0.OCLMIXM、国际版 V10.2.19.0.OCLMIXM、国际版 V10.2.20.0.OCLMIXM、欧洲稳定版 V10.2.10.0.OCLEUXM、欧洲稳定版 V10.2.11.0.OCLEUXM、欧洲稳定版 V10.2.12.0.OCLEUXM、欧洲稳定版 V10.2.13.0.OCLEUXM、欧洲稳定版 V10.2.14.0.OCLEUXM、欧洲稳定版 V10.2.15.0.OCLEUXM、欧洲稳定版 V10.2.16.0.OCLEUXM、俄罗斯版 V10.2.11.0.OCLRUXM、俄罗斯版 V10.2.12.0.OCLRUXM、俄罗斯版 V10.2.13.0.OCLRUXM、俄罗斯版 V10.2.14.0.OCLRUXM、俄罗斯版 V10.2.15.0.OCLRUXM、印度版 V10.2.8.0.OCLINXM、印度版 V10.2.9.0.OCLINXM、印度版 V10.2.10.0.OCLINXM、印度版 V10.2.11.0.OCLINXM、印度版 V10.2.12.0.OCLINXM、印度版 V10.2.13.0.OCLINXM、印度版 V10.2.14.0.OCLINXM、印度版 V10.2.15.0.OCLINXM、印度版 V10.2.16.0.OCLINXM</li> 
-						<p>共计552条卡刷包，430条线刷包数据</p> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.5.23日收录:</p> 
-					<ol> 
-						<li>小米6X V11.0.6.0.PDCCNXM</li> 
-						<li>小米8屏幕指纹版 国际版 V11.0.5.0.QECMIXM</li> 
-						<li>红米6 俄罗斯版 V11.0.3.0.PCGRUXM</li> 
-						<li>红米6A 俄罗斯版 V11.0.3.0.PCBRUXM</li> 
-						<li>红米6Pro 印度版 V11.0.7.0.PDMMIXM</li> 
-						<li>红米Note 6 Pro 国际版 V11.0.4.0.PEKMIXM</li> 
-						<li>Redmi Note 7 国际版 V11.0.6.0.PFGMIXM</li> 
-						<li>Redmi Note 7 欧洲稳定版 V11.0.8.0.PFGEUXM</li> 
-						<li>Redmi Note 7 俄罗斯版 V11.0.9.0.PFGRUXM</li> 
-						<li>Redmi Note 9S 国际版 V11.0.8.0.QJWMIXM</li> 
-						<li>Redmi K20 俄罗斯版 V11.0.5.0.QFJRUXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.5.22日收录:</p> 
-					<ol> 
-						<li>小米8青春版 V11.0.2.0.QDTCNXM</li> 
-						<li>小米CC9 Pro V11.1.2.0.QFDCNXM</li> 
-						<li>小米Max3 V11.0.2.0.QEDCNXM</li> 
-						<li>小米Max3 V11.0.4.0.QEDCNXM</li> 
-						<li>Redmi Note 9 V11.0.3.0.QJOCNXM</li> 
-						<li>Redmi K30 5G版 V11.1.25.0.QGICNXM</li> 
-						<li>小米10 欧洲稳定版 V11.0.13.0.QJBEUXM</li> 
-						<li>小米10 Pro 欧洲稳定版 V11.0.10.0.QJAEUXM</li> 
-						<li>小米Note 10 Lite 欧洲稳定版 V11.0.7.0.QFNEUXM</li> 
-						<li>小米MIX3 俄罗斯版 V11.0.3.0.QEERUXM</li> 
-						<li>POCO F1 国际版 V11.0.8.0.QEJMIXM</li> 
-						<li>红米6A 国际版 V11.0.8.0.PCBMIXM</li> 
-						<li>Redmi 7A 印度版 V11.0.5.0.PCMINXM</li> 
-						<li>Redmi Y3 印度版 V11.0.9.0.PFFINXM</li> 
-						<li>Redmi Note 7 Pro 印度版 V11.0.9.0.PFHINXM</li> 
-						<li>Redmi Note 9 国际版 V11.0.2.0.QJOMIXM</li> 
-						<li>Redmi Note 9 欧洲稳定版 V11.0.3.0.QJOEUXM</li> 
-						<li>Redmi Note 9 印尼稳定版 V11.0.1.0.QJOIDXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.5.18日收录:</p> 
-					<ol> 
-						<li>小米9SE V11.0.3.0.QFBCNXM</li> 
-						<li>小米10 Pro V11.0.17.0.QJACNXM</li> 
-						<li>小米 10 青春版 V11.0.6.0.QJVCNXM</li> 
-						<li>红米6 V11.0.4.0.PCGCNXM</li> 
-						<li>Redmi 7 V11.0.4.0.PFLCNXM</li> 
-						<li>Redmi K30 5G版 V11.1.23.0.QGICNXM</li> 
-						<li>小米9 国际版 V11.0.6.0.QFAMIXM</li> 
-						<li>小米9 欧洲稳定版 V11.0.9.0.QFAEUXM</li> 
-						<li>小米10 国际版 V11.0.2.0.QJBMIXM</li> 
-						<li>小米10 印度版 V11.0.4.0.QJBINXM</li> 
-						<li>小米MIX 3 俄罗斯版 V11.0.2.0.QEERUXM</li> 
-						<li>Redmi 7 印度版 V11.0.6.0.PFLINXM</li> 
-						<li>Redmi 7A 俄罗斯版 V11.0.6.0.PCMRUXM</li> 
-						<li>Redmi 8A Dual 印尼稳定版 V11.0.3.0.PCQIDXM</li> 
-						<li>Redmi Note 8 印尼稳定版 V11.0.4.0.PCOIDXM</li> 
-						<li>Redmi Note 8T 俄罗斯版 V11.0.3.0.PCXRUXM</li> 
-						<li>Redmi Note 9S 印度版 V11.0.5.0.QJWINXM</li> 
-						<li>Redmi Note 9S 印度版 V11.0.6.0.QJWINXM</li> 
-						<li>Redmi K20 Pro 国际版 V11.0.4.0.QFKMIXM</li> 
-						<li>Redmi K20 Pro 欧洲稳定版 V11.0.6.0.QFKEUXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.5.12日收录:</p> 
-					<ol> 
-						<li>小米 Note 10 Lite 国际版 V11.0.1.0.QFNMIXM</li> 
-						<li>小米 Note 10 Lite 欧洲稳定版 V11.0.3.0.QFNEUXM</li> 
-						<li>小米 Note 10 Lite 俄罗斯版 V11.0.1.0.QFNRUXM</li> 
-						<li>POCO F2 Pro 欧洲稳定版 V11.0.6.0.QJKEUXM</li> 
-						<li>Redmi Note9 欧洲稳定版 V11.0.2.0.QJOEUXM</li> 
-						<li>Redmi Note 9 Pro 国际版 国际版 V11.0.1.0.QJZMIXM</li> 
-						<li>Redmi Note 9 Pro 国际版 印尼稳定版 V11.0.1.0.QJZIDXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.5.8日收录:</p> 
-					<ol> 
-						<li>小米6 V11.0.5.0.PCACNXM</li> 
-						<li>小米8 V11.0.7.0.QEACNXM</li> 
-						<li>小米CC9 V11.0.3.0.QFCCNXM</li> 
-						<li>小米CC9美图定制版 V11.0.3.0.QFECNXM</li> 
-						<li>小米10 V11.0.24.0.QJBCNXM</li> 
-						<li>小米MIX2S V11.0.3.0.QDGCNXM</li> 
-						<li>小米Note10 俄罗斯版 V11.0.8.0.PFDRUXM</li> 
-						<li>小米POCOPHONE F1 俄罗斯版 V11.0.2.0.QEJRUXM</li> 
-						<li>Redmi Note 9S 国际版 V11.0.7.0.QJWMIXM</li> 
-						<li>Redmi Note 9S 俄罗斯版 V11.0.2.0.QJWRUXM</li> 
-						<li>Redmi Note 9 Pro 国际版 Max 印度版 V11.0.2.0.QJXINXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.5.3日收录:</p> 
-					<ol> 
-						<li>小米CC9 Pro V11.1.1.0.QFDCNXM</li> 
-						<li>Redmi K30 Pro V11.0.14.0.QJKCNXM</li> 
-						<li>Redmi K30 Pro V11.0.16.0.QJKCNXM</li> 
-						<li>Redmi Note 9S 欧洲稳定版 V11.0.2.0.QJWEUXM</li> 
-						<li>Redmi Note 9 Pro 国际版 欧洲稳定版 V11.0.1.0.QJZEUXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.4.28日收录:</p> 
-					<ol> 
-						<li>Redmi K30 4G版 V11.0.14.0.QGHCNXM</li> 
-						<li>Redmi K30 4G版 V11.0.15.0.QGHCNXM</li> 
-						<li>Redmi K30 5G版 V11.1.20.0.QGICNXM</li> 
-						<li>小米8 国际版 V11.0.4.0.QEAMIXM</li> 
-						<li>Redmi 8A 印尼稳定版 V11.0.4.0.PCPIDXM</li> 
-						<li>Redmi 8A 欧洲稳定版 V11.0.3.0.PCPEUXM</li> 
-						<li>Redmi 8A 欧洲稳定版 V11.0.4.0.PCPEUXM</li> 
-						<li>Redmi 8A Dual 印度版 V11.0.6.0.PCQINXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.4.24日收录:</p> 
-					<ol> 
-						<li>小米8透明探索版 V11.0.3.0.QEHCNXM</li> 
-						<li>小米CC9 Pro V11.0.9.0.PFDCNXM</li> 
-						<li>Redmi K20 V11.0.6.0.QFJCNXM</li> 
-						<li>小米POCOPHONE X2 印度版 V11.0.6.0.QGHINXM</li> 
-						<li>小米POCOPHONE X2 印度版 V11.0.7.0.QGHINXM</li> 
-						<li>Redmi Note 9S 国际版 V11.0.5.0.QJWMIXM</li> 
-						<li>Redmi Note 9S 国际版 V11.0.6.0.QJWMIXM</li> 
-						<li>Redmi K20 国际版 V11.0.5.0.QFJMIXM</li> 
-						<li>Redmi K20 欧洲稳定版 V11.0.5.0.QFJEUXM</li> 
-						<li>Redmi K20 印度版 V11.0.3.0.QFJINXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.4.21日收录:</p> 
-					<ol> 
-						<li>小米9 V11.0.7.0.QFACNXM</li> 
-						<li>小米9 V11.0.9.0.QFACNXM</li> 
-						<li>Redmi 7A V11.0.6.0.PCMCNXM</li> 
-						<li>小米Note 10 国际版 V11.0.9.0.PFDMIXM</li> 
-						<li>Redmi 7A 国际版 V11.0.7.0.PCMMIXM</li> 
-						<li>Redmi 8A 俄罗斯版 V11.0.3.0.PCPRUXM</li> 
-						<li>Redmi 8A 俄罗斯版 V11.0.4.0.PCPRUXM</li> 
-						<li>Redmi Note 9S 欧洲稳定版 V11.0.1.0.QJWEUXM</li> 
-						<li>Redmi Note 9S 俄罗斯版 V11.0.1.0.QJWRUXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.4.17日收录:</p> 
-					<ol> 
-						<li>小米8屏幕指纹版 V11.0.2.0.QECCNXM</li> 
-						<li>小米Play V11.0.6.0.OFICNXM</li> 
-						<li>Redmi K20 Pro V11.0.8.0.QFKCNXM</li> 
-						<li>Redmi K30 5G版 V11.1.19.0.QGICNXM</li> 
-						<li>小米10 欧洲稳定版 V11.0.9.0.QJBEUXM</li> 
-						<li>小米10 Pro 欧洲稳定版 V11.0.7.0.QJAEUXM</li> 
-						<li>小米MIX 2S 国际版 V11.0.4.0.QDGMIXM</li> 
-						<li>Redmi 7A 欧洲稳定版 V11.0.18.0.PCMEUXM</li> 
-						<li>Redmi 8 国际版 V11.0.10.0.PCNMIXM</li> 
-						<li>Redmi 8 欧洲稳定版 V11.0.6.0.PCNEUXM</li> 
-						<li>Redmi 8 印度版 V11.0.10.0.PCNINXM</li> 
-						<li>Redmi 8A 国际版 V11.0.5.0.PCPMIXM</li> 
-						<li>Redmi 8A 国际版 V11.0.6.0.PCPMIXM</li> 
-						<li>Redmi 8A 印度版 V11.0.5.0.PCPINXM</li> 
-						<li>Redmi 8A 印度版 V11.0.7.0.PCPINXM</li> 
-						<li>Redmi 8A 印度版 V11.0.8.0.PCPINXM</li> 
-						<li>Redmi Note 9 Pro 国际版/Redmi Note 9S 国际版 V11.0.1.0.QJWMIXM</li> 
-						<li>Redmi Note 9 Pro 国际版/Redmi Note 9S 国际版 V11.0.3.0.QJWMIXM</li> 
-						<li>Redmi Note 9 Pro 国际版 Max 印度版 V11.0.1.0.QJXINXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.4.9日收录:</p> 
-					<ol> 
-						<li>小米10 V11.0.17.0.QJBCNXM</li> 
-						<li>小米10 V11.0.20.0.QJBCNXM</li> 
-						<li>Redmi 8 V11.0.10.0.PCNCNXM</li> 
-						<li>小米8 青春版 俄罗斯版 V11.0.1.0.QDTRUXM</li> 
-						<li>小米CC9 Pro 俄罗斯版 V11.0.7.0.PFDRUXM</li> 
-						<li>小米MIX 2S 俄罗斯版 V11.0.1.0.QDGRUXM</li> 
-						<li>红米6 国际版 V11.0.3.0.PCGMIXM</li> 
-						<li>Redmi 8 俄罗斯版 V11.0.5.0.PCNRUXM</li> 
-						<li>Redmi Note8 印度版 V11.0.4.0.PCOINXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.4.6日收录:</p> 
-					<ol> 
-						<li>Redmi K30 5G版 V11.1.15.0.QGICNXM</li> 
-						<li>Redmi K30 5G版 V11.1.18.0.QGICNXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.4.3日收录:</p> 
-					<ol> 
-						<li>小米6X V11.0.5.0.PDCCNXM</li> 
-						<li>小米10 Pro V11.0.16.0.QJACNXM</li> 
-						<li>Redmi K30 Pro V11.0.12.0.QJKCNXM</li> 
-						<li>小米8 青春版 国际版 V11.0.1.0.QDTMIXM</li> 
-						<li>小米CC9 欧洲稳定版 V11.3.9.0.PFCEUXM</li> 
-						<li>小米CC9 欧洲稳定版 V11.0.1.0.QFCEUXM</li> 
-						<li>小米Max3 俄罗斯版 V11.0.1.0.QEDRUXM</li> 
-						<li>Redmi 8 印尼稳定版 V11.0.5.0.PCNIDXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.3.31日收录:</p> 
-					<ol> 
-						<li>小米8青春版 V11.0.1.0.QDTCNXM</li> 
-						<li>红米6A V11.0.5.0.PCBCNXM</li> 
-						<li>红米6Pro V11.0.5.0.PDICNXM</li> 
-						<li>Redmi 8A V11.0.9.0.PCPCNXM</li> 
-						<li>Redmi Note7 V11.0.6.0.PFGCNXM</li> 
-						<li>Redmi Note7 V11.0.7.0.PFGCNXM</li> 
-						<li>Redmi K20 Pro V11.0.7.0.QFKCNXM</li> 
-						<li>小米6 国际版 V11.0.6.0.PCAMIXM</li> 
-						<li>小米9SE 国际版 V11.0.2.0.QFBMIXM</li> 
-						<li>小米9SE 欧洲稳定版 V11.0.2.0.QFBEUXM</li> 
-						<li>小米9SE 俄罗斯版 V11.0.2.0.QFBRUXM</li> 
-						<li>小米CC9 国际版 V11.0.1.0.QFCMIXM</li> 
-						<li>小米CC9 俄罗斯版 V11.0.1.0.QFCRUXM</li> 
-						<li>小米Max3 国际版 V11.0.1.0.QEDMIXM</li> 
-						<li>Redmi Note7 欧洲稳定版 V11.0.7.0.PFGEUXM</li> 
-						<li>Redmi Note 8 国际版 V11.0.8.0.PCOMIXM</li> 
-						<li>Redmi Note 8T 国际版 V11.0.3.0.PCXMIXM</li> 
-						<li>Redmi K20 俄罗斯版 V11.0.3.0.QFJRUXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.3.27/28日收录:</p> 
-					<ol> 
-						<li>Redmi 8A V11.0.8.0.PCPCNXM</li> 
-						<li>Redmi Note8 V11.0.6.0.PCOCNXM</li> 
-						<li>Redmi K30 Pro V11.0.10.0.QJKCNXM</li> 
-						<li>小米CC9 Pro 国际版 V11.0.8.0.PFDMIXM</li> 
-						<li>小米CC9 Pro 欧洲稳定版 V11.0.16.0.PFDEUXM</li> 
-						<li>小米MIX2 国际版 V11.0.6.0.PDEMIXM</li> 
-						<li>红米 6A 国际版 V11.0.7.0.PCBMIXM</li> 
-						<li>Redmi 7 国际版 V11.0.5.0.PFLMIXM</li> 
-						<li>Redmi 7 欧洲稳定版 V11.0.6.0.PFLEUXM</li> 
-						<li>Redmi 7 印度版 V11.0.5.0.PFLINXM</li> 
-						<li>Redmi 7 俄罗斯版 V11.0.5.0.PFLRUXM</li> 
-						<li>红米 Note 6 Pro 国际版 V11.0.3.0.PEKMIXM</li> 
-						<li>Redmi Note7 印度版 V11.0.9.0.PFGINXM</li> 
-						<li>Redmi Note7 俄罗斯版 V11.0.6.0.PFGRUXM</li> 
-						<li>Redmi Note7 俄罗斯版 V11.0.7.0.PFGRUXM</li> 
-						<li>Redmi Note 8T 欧洲稳定版 V11.0.6.0.PCXEUXM</li> 
-						<li>Redmi Note 8T 欧洲稳定版 V11.0.7.0.PCXEUXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<div> 
-					<p>2020.3.20日收录:</p> 
-					<ol> 
-						<li>小米Play V11.0.5.0.OFICNXM</li> 
-						<li>红米S2 V11.0.3.0.PEFCNXM</li> 
-						<li>小米9 俄罗斯版 V11.0.4.0.QFARUXM</li> 
-						<li>小米Play 国际版 V11.0.3.0.OFIMIXM</li> 
-						<li>小米Play 俄罗斯版 V11.0.3.0.OFIRUXM</li> 
-						<li>红米6Pro 印度版 V11.0.6.0.PDMMIXM</li> 
-						<li>红米S2 国际版 V11.0.5.0.PEFMIXM</li> 
-						<li>红米Y3 印度版 V11.0.8.0.PFFINXM</li> 
-						<li>Redmi Note 8 国际版 V11.0.7.0.PCOMIXM</li> 
-						<li>Redmi K20 Pro 印度版 V11.0.4.0.QFKINXM</li> 
-						<li>Redmi K20 Pro 俄罗斯版 V11.0.2.0.QFKRUXM</li> 
-					</ol> 
-				</div> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.3.17日收录:</p> 
-				<ol> 
-					<li>小米CC9 V11.3.4.0.PFCCNXM</li> 
-					<li>小米CC9 V11.0.1.0.QFCCNXM</li> 
-					<li>小米CC9 美图定制版 V11.3.3.0.PFECNXM</li> 
-					<li>小米CC9 美图定制版 V11.0.1.0.QFECNXM</li> 
-					<li>小米MIX2 V11.0.5.0.PDECNXM</li> 
-					<li>小米MIX3 V11.0.2.0.QEECNXM</li> 
-					<li>Redmi 7A V11.0.5.0.PCMCNXM</li> 
-					<li>Redmi Note7 Pro V11.0.8.0.PFHCNXM</li> 
-					<li>Redmi 7A 印度版 V11.0.4.0.PCMINXM</li> 
-					<li>Redmi 8 印度版 V11.0.8.0.PCNINXM</li> 
-					<li>Redmi Note7 Pro 印度版 V11.0.8.0.PFHINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.3.17日收录:</p> 
-				<ol> 
-					<li>小米CC9 V11.3.4.0.PFCCNXM</li> 
-					<li>小米CC9 V11.0.1.0.QFCCNXM</li> 
-					<li>小米CC9 美图定制版 V11.3.3.0.PFECNXM</li> 
-					<li>小米CC9 美图定制版 V11.0.1.0.QFECNXM</li> 
-					<li>小米MIX2 V11.0.5.0.PDECNXM</li> 
-					<li>小米MIX3 V11.0.2.0.QEECNXM</li> 
-					<li>Redmi 7A V11.0.5.0.PCMCNXM</li> 
-					<li>Redmi Note7 Pro V11.0.8.0.PFHCNXM</li> 
-					<li>Redmi 7A 印度版 V11.0.4.0.PCMINXM</li> 
-					<li>Redmi 8 印度版 V11.0.8.0.PCNINXM</li> 
-					<li>Redmi Note7 Pro 印度版 V11.0.8.0.PFHINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.3.14日收录:</p> 
-				<ol> 
-					<li>小米MIX3 国际版 V11.0.3.0.QEEMIXM</li> 
-					<li>小米POCOPHONE F1 俄罗斯版 V11.0.1.0.QEJRUXM</li> 
-					<li>Redmi 8A Dual 印度版 V11.0.5.0.PCQINXM</li> 
-					<li>Redmi Note 9 Pro 国际版 印度版 V11.0.3.0.QJWINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.3.13日收录:</p> 
-				<ol> 
-					<li>小米10 V11.0.15.0.QJBCNXM</li> 
-					<li>小米10 Pro V11.0.13.0.QJACNXM</li> 
-					<li>小米8屏幕指纹板 国际版 V11.0.3.0.QECMIXM</li> 
-					<li>小米POCOPHONE F1 国际版 V11.0.6.0.QEJMIXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.3.10日收录:</p> 
-				<ol> 
-					<li>小米8 V11.0.5.0.QEACNXM</li> 
-					<li>小米8 V11.0.6.0.QEACNXM</li> 
-					<li>小米10 Pro V11.0.12.0.QJACNXM</li> 
-					<li>Redmi 8 V11.0.8.0.PCNCNXM</li> 
-					<li>小米8 俄罗斯版 V11.0.2.0.QEARUXM</li> 
-					<li>小米8屏幕指纹板 俄罗斯版 V11.0.1.0.QECRUXM</li> 
-					<li>小米9 国际版 V11.0.4.0.QFAMIXM</li> 
-					<li>小米9 国际版 V11.0.5.0.QFAMIXM</li> 
-					<li>小米9 欧洲稳定版 V11.0.7.0.QFAEUXM</li> 
-					<li>小米9 欧洲稳定版 V11.0.8.0.QFAEUXM</li> 
-					<li>小米Note3 国际版 V11.0.5.0.PCHMIXM</li> 
-					<li>小米MIX 2S 俄罗斯版 V11.0.1.0.PDGRUXM</li> 
-					<li>Redmi 8 印尼稳定版 V11.0.4.0.PCNIDXM</li> 
-					<li>Redmi Note 8 印度版 V11.0.3.0.PCOINXM</li> 
-					<li>Redmi Note 8 印尼稳定版 V11.0.3.0.PCOIDXM</li> 
-					<li>Redmi Note 8T 俄罗斯版 V11.0.2.0.PCXRUXM</li> 
-					<li>Redmi K20 Pro 国际版 V11.0.3.0.QFKMIXM</li> 
-					<li>Redmi K20 Pro 欧洲稳定版 V11.0.5.0.QFKEUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.3.4日收录:</p> 
-				<ol> 
-					<li>小米10 V11.0.9.0.QJBCNXM</li> 
-					<li>小米10 V11.0.10.0.QJBCNXM</li> 
-					<li>小米10 Pro V11.0.7.0.QJACNXM</li> 
-					<li>小米10 Pro V11.0.8.0.QJACNXM</li> 
-					<li>小米Note3 V11.0.4.0.PCHCNXM</li> 
-					<li>Redmi K20 V11.0.2.0.QFJCNXM</li> 
-					<li>Redmi K20 V11.0.4.0.QFJCNXM</li> 
-					<li>Redmi 7A 国际版 V11.0.6.0.PCMMIXM</li> 
-					<li>Redmi 7A 欧洲稳定版 V11.0.14.0.PCMEUXM</li> 
-					<li>Redmi 7A 俄罗斯版 V11.0.5.0.PCMRUXM</li> 
-					<li>Redmi K20 印度版 V11.0.3.0.PFJINXM</li> 
-					<li>Redmi K20 印度版 V11.0.2.0.QFJINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.3.3日收录:</p> 
-				<ol> 
-					<li>小米8SE V11.0.1.0.QEBCNXM</li> 
-					<li>小米8SE V11.0.2.0.QEBCNXM</li> 
-					<li>小米9SE V11.0.1.0.QFBCNXM</li> 
-					<li>小米9SE V11.0.2.0.QFBCNXM</li> 
-					<li>小米平板4/Plus V9.6.4.0.ODJCNFD</li> 
-					<li>小米8 国际版 V11.0.6.0.PEAMIXM</li> 
-					<li>小米8 国际版 V11.0.3.0.QEAMIXM</li> 
-					<li>小米CC9 俄罗斯版 V11.3.5.0.PFCRUXM</li> 
-					<li>小米CC9 Pro 欧洲稳定版 V11.0.12.0.PFDEUXM</li> 
-					<li>小米CC9 Pro 欧洲稳定版 V11.0.13.0.PFDEUXM</li> 
-					<li>Redmi 8 国际版 V11.0.7.0.PCNMIXM</li> 
-					<li>Redmi 8 欧洲稳定版 V11.0.4.0.PCNEUXM</li> 
-					<li>Redmi 8 俄罗斯版 V11.0.4.0.PCNRUXM</li> 
-					<li>Redmi 8 印度版 V11.0.7.0.PCNINXM</li> 
-					<li>Redmi Note 8T 国际版 V11.0.2.0.PCXMIXM</li> 
-					<li>Redmi Note 8T 欧洲稳定版 V11.0.5.0.PCXEUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.2.24/25/26日收录:</p> 
-				<ol> 
-					<li>Redmi Note 8 V11.0.5.0.PCOCNXM</li> 
-					<li>Redmi K30 4G版 V11.0.10.0.QGHCNXM</li> 
-					<li>Redmi K30 4G版 V11.0.13.0.QGHCNXM</li> 
-					<li>Redmi K30 5G版 V11.0.9.0.QGICNXM</li> 
-					<li>Redmi K30 5G版 V11.0.11.0.QGICNXM</li> 
-					<li>小米POCOPHONE X2 印度版 V11.0.4.0.QGHINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.2.19日收录:</p> 
-				<ol> 
-					<li>小米CC9e V11.0.4.0.PFMCNXM</li> 
-					<li>小米POCOPHONE F1 国际版 V11.0.4.0.QEJMIXM</li> 
-					<li>Redmi Note 7 国际版V11.0.5.0.PFGMIXM</li> 
-					<li>Redmi Note8 国际版 V11.0.6.0.PCOMIXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.2.16日收录:</p> 
-				<ol> 
-					<li>小米MIX2S 国际版 V11.0.3.0.QDGMIXM</li> 
-					<li>Redmi 8 印度版 V11.0.5.0.PCNINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.2.14日收录:</p> 
-				<ol> 
-					<li>小米10 V11.0.7.0.QJBCNXM</li> 
-					<li>小米10 Pro V11.0.4.0.QJACNXM</li> 
-					<li>Redmi 8 V11.0.7.0.PCNCNXM</li> 
-					<li>Redmi 8A V11.0.4.0.PCPCNXM</li> 
-					<li>Redmi 8A V11.0.7.0.PCPCNXM</li> 
-					<li>Redmi K20 国际版 V11.0.4.0.QFJMIXM</li> 
-					<li>Redmi K20 欧洲稳定版 V11.0.4.0.QFJEUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.2.13日收录:</p> 
-				<ol> 
-					<li>小米10 V11.0.5.0.QJBCNXM</li> 
-					<li>小米10 Pro V11.0.2.0.QJACNXM</li> 
-					<li>小米MIX3 5G版 欧洲稳定版 V10.3.23.0.PEMEUXM</li> 
-					<li>Redmi 8 国际版 V11.0.6.0.PCNMIXM</li> 
-					<li>Redmi Note8 Pro 国际版 V11.0.6.0.PGGMIXM</li> 
-					<li>Redmi Note8 Pro 俄罗斯版 V11.0.3.0.PGGRUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.1.22日收录:</p> 
-				<ol> 
-					<li>小米5C V11.0.3.0.NCJCNXM</li> 
-					<li>小米8 屏幕指纹版 V11.0.1.0.QECCNXM</li> 
-					<li>小米8 透明探索版 V11.0.2.0.QEHCNXM</li> 
-					<li>小米CC9 Pro V11.0.7.0.PFDCNXM</li> 
-					<li>小米MIX2S V11.0.1.0.QDGCNXM</li> 
-					<li>红米6 Pro V11.0.4.0.PDICNXM</li> 
-					<li>Redmi 7A V11.0.3.0.PFLCNXM</li> 
-					<li>红米S2 V11.0.2.0.PEFCNXM</li> 
-					<li>Redmi K30 5G V11.0.7.0.QGICNXM</li> 
-					<li>小米8青春版 国际版 V11.0.8.0.PDTMIXM</li> 
-					<li>小米8青春版 俄罗斯版 V11.0.7.0.PDTRUXM</li> 
-					<li>小米9SE 国际版 V11.0.6.0.PFBMIXM</li> 
-					<li>小米9SE 欧洲稳定版 V11.0.6.0.PFBEUXM</li> 
-					<li>小米CC9 Pro 国际版 V11.0.7.0.PFDMIXM</li> 
-					<li>小米CC9 Pro 俄罗斯版 V11.0.6.0.PFDRUXM</li> 
-					<li>小米Max3 国际版 V11.0.7.0.PEDMIXM</li> 
-					<li>小米Max3 俄罗斯版 V11.0.7.0.PEDRUXM</li> 
-					<li>红米5 国际版 V11.0.2.0.ODAMIXM</li> 
-					<li>红米6 国际版 V11.0.2.0.PCGMIXM</li> 
-					<li>红米6A 国际版 V11.0.5.0.PCBMIXM</li> 
-					<li>Redmi 7 国际版 V11.0.3.0.PFLMIXM</li> 
-					<li>Redmi 7 俄罗斯版 V11.0.3.0.PFLRUXM</li> 
-					<li>Redmi 8 国际版 V11.0.4.0.PCNMIXM</li> 
-					<li>Redmi 8 印度版 V11.0.4.0.PCNINXM</li> 
-					<li>红米S2 国际版 V11.0.3.0.PEFMIXM</li> 
-					<li>Redmi Note8 国际版 V11.0.4.0.PCOMIXM</li> 
-					<li>Redmi Note8T 国际版 V11.0.1.0.PCXMIXM</li> 
-					<li>Redmi Note8T 俄罗斯版 V11.0.1.0.PCXRUXM</li> 
-					<li>Redmi Note8 Pro 印度版 V11.0.4.0.PGGINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.1.10日收录:</p> 
-				<ol> 
-					<li>小米9 国际版 V11.0.3.0.QFAMIXM</li> 
-					<li>小米9 欧洲稳定版 V11.0.6.0.QFAEUXM</li> 
-					<li>小米9SE 俄罗斯版 V11.0.6.0.PFBRUXM</li> 
-					<li>小米CC9 V11.3.3.0.PFCCNXM</li> 
-					<li>小米MIX3 V11.0.1.0.QEECNXM</li> 
-					<li>小米Play 俄罗斯版 V11.0.2.0.OFIRUXM</li> 
-					<li>Redmi 7 印度版 V11.0.3.0.PFLINXM</li> 
-					<li>Redmi 7A V11.0.2.0.PCMCNXM</li> 
-					<li>Redmi 7A 印度版 V11.0.2.0.PCMINXM</li> 
-					<li>Redmi 8 印尼稳定版 V11.0.3.0.PCNIDXM</li> 
-					<li>Redmi 8A 印尼稳定版 V11.0.2.0.PCPIDXM</li> 
-					<li>红米Note6 Pro 欧洲稳定版 V11.0.3.0.PCXEUXM</li> 
-					<li>Redmi Note8 V11.0.4.0.PCOCNXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2020.1.2日收录:</p> 
-				<ol> 
-					<li>小米CC9e V11.0.3.0.PFMCNXM</li> 
-					<li>小米Note3 V11.0.3.0.PCHCNXM</li> 
-					<li>小米Note3 国际版 V11.0.4.0.PCHMIXM</li> 
-					<li>小米Play 国际版 V11.0.2.0.OFIMIXM</li> 
-					<li>红米5 V11.0.4.0.ODACNXM</li> 
-					<li>红米5A V11.0.6.0.OCKCNXM</li> 
-					<li>红米6 Pro 印度版 V11.0.5.0.PDMMIXM</li> 
-					<li>Redmi 7A 俄罗斯版 V11.0.4.0.PCMRUXM</li> 
-					<li>Redmi 8 国际版 V11.0.1.0.PCNMIXM</li> 
-					<li>Redmi 8 国际版 V11.0.3.0.PCNMIXM</li> 
-					<li>Redmi 8 欧洲稳定版 V11.0.2.0.PCNEUXM</li> 
-					<li>Redmi 8 俄罗斯版 V11.0.2.0.PCNRUXM</li> 
-					<li>Redmi 8A 国际版 V11.0.3.0.PCPMIXM</li> 
-					<li>Redmi 8A 俄罗斯版 V11.0.2.0.PCPRUXM</li> 
-					<li>红米Y3 印度版 V11.0.4.0.PFFINXM</li> 
-					<li>红米Note6 Pro 国际版V11.0.2.0.PEKMIXM</li> 
-					<li>Redmi Note7 Pro 印度版 V11.0.6.0.PFHINXM</li> 
-					<li>Redmi Note8 Pro 欧洲稳定版 V11.0.3.0.PGGEUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.25日收录:</p> 
-				<ol> 
-					<li>小米8 青春版 V11.0.4.0.PDTCNXM</li> 
-					<li>小米8 青春版 国际版 V11.0.7.0.PDTMIXM</li> 
-					<li>小米8 青春版 俄罗斯版 V11.0.6.0.PDTRUXM</li> 
-					<li>Redmi 7 欧洲稳定版 V11.0.4.0.PFLEUXM</li> 
-					<li>Redmi 7A 欧洲稳定版 V11.0.13.0.PCMEUXM</li> 
-					<li>Redmi 8A 欧洲稳定版 V11.0.2.0.PCPEUXM</li> 
-					<li>Redmi Note8T 欧洲稳定版 V11.0.2.0.PCXEUXM</li> 
-					<li>Redmi Note8 Pro 印尼稳定版 V11.0.2.0.PGGIDXM</li> 
-					<li>Redmi K20 Pro V11.0.5.0.QFKCNXM</li> 
-					<li>Redmi K20 Pro 印度版 V11.0.3.0.QFKINXM</li> 
-					<li>Redmi K30 4G版 V11.0.9.0.QGHCNXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.25日收录:</p> 
-				<ol> 
-					<li>小米9 V11.0.5.0.QFACNXM</li> 
-					<li>Redmi Note8 Pro V11.0.2.0.PGGCNXM</li> 
-					<li>Redmi Note8 Pro V11.0.3.0.PGGCNXM</li> 
-					<li>小米CC9 欧洲稳定版 V11.3.4.0.PFCEUXM</li> 
-					<li>小米CC9 欧洲稳定版 V11.3.5.0.PFCEUXM</li> 
-					<li>小米CC9 Pro 欧洲稳定版 V11.0.10.0.PFDEUXM</li> 
-					<li>小米CC9 Pro 欧洲稳定版 V11.0.11.0.PFDEUXM</li> 
-					<li>红米6A 国际版 V11.0.4.0.PCBMIXM</li> 
-					<li>Redmi 7A 国际版 V11.0.5.0.PCMMIXM</li> 
-					<li>Redmi 7A 欧洲稳定版 V11.0.6.0.PCMEUXM</li> 
-					<li>Redmi Note8 Pro 印度版 V11.0.3.0.PGGINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.18日收录:</p> 
-				<ol> 
-					<li>小米6X V11.0.3.0.PDCCNXM</li> 
-					<li>小米CC9 国际版 V11.3.4.0.PFCMIXM</li> 
-					<li>Redmi Note8 印尼稳定版 V11.0.1.0.PCOIDXM</li> 
-					<li>Redmi K30 V11.0.5.0.QGHCNXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.16日收录:</p> 
-				<ol> 
-					<li>Redmi 8 印尼稳定版 V11.0.2.0.PCNIDXM</li> 
-					<li>Redmi 8A 印尼稳定版 V11.0.1.0.PCPIDXM</li> 
-					<li>Redmi Note8 印度版 V11.0.2.0.PCOINXM</li> 
-					<li>Redmi Note8T 国际版 V10.3.1.0.PCXMIXM</li> 
-					<li>Redmi Note8T 欧洲稳定版 V10.3.5.0.PCXEUXM</li> 
-					<li>Redmi Note8T 俄罗斯版 V10.3.2.0.PCXRUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.11日收录:</p> 
-				<ol> 
-					<li>小米CC9 美图定制版 V11.3.2.0.PFECNXM</li> 
-					<li>小米CC9 Pro 国际版 V11.0.5.0.PFDMIXM</li> 
-					<li>小米CC9 Pro 欧洲稳定版 V11.0.9.0.PFDEUXM</li> 
-					<li>小米CC9 Pro 俄罗斯版 V11.0.3.0.PFDRUXM</li> 
-					<li>Redmi 8 V11.0.3.0.PCNCNXM</li> 
-					<li>Redmi Note8 Pro 国际版 V11.0.2.0.PGGMIXM</li> 
-					<li>Redmi Note8 Pro 欧洲稳定版 V11.0.1.0.PGGEUXM</li> 
-					<li>Redmi Note8 Pro 欧洲稳定版 V11.0.2.0.PGGEUXM</li> 
-					<li>Redmi K30 4G版 V11.0.4.0.QGHCNXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.7日收录:</p> 
-				<ol> 
-					<li>小米CC9 Pro V11.0.4.0.PFDCNXM</li> 
-					<li>小米CC9 Pro V11.0.5.0.PFDCNXM</li> 
-					<li>小米CC9 俄罗斯版 V11.3.3.0.PFCRUXM</li> 
-					<li>红米6 国际版 V11.0.1.0.PCGMIXM</li> 
-					<li>红米6A 国际版 V11.0.4.0.PCBMIXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.6日收录:</p> 
-				<ol> 
-					<li>小米9 Pro 5G V11.0.3.0.PFXCNXM</li> 
-					<li>小米Max3 V11.0.3.0.PEDCNXM</li> 
-					<li>红米5 Plus V11.0.3.0.OEGCNXM</li> 
-					<li>Redmi 8 俄罗斯版 V11.0.1.0.PCNRUXM</li> 
-					<li>Redmi 8A 欧洲稳定版 V11.0.1.0.PCPMIXM</li> 
-					<li>Redmi 8A 俄罗斯版 V11.0.1.0.PCPRUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.4日收录:</p> 
-				<ol> 
-					<li>小米6 国际版 V11.0.3.0.PCAMIXM</li> 
-					<li>小米Max3 俄罗斯版 V11.0.6.0.PEDRUXM</li> 
-					<li>Redmi K20 Pro 国际版 V11.0.1.0.QFKMIXM</li> 
-					<li>Redmi K20 Pro 俄罗斯版 V11.0.1.0.QFKRUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.12.2日收录:</p> 
-				<ol> 
-					<li>小米5X V11.0.3.0.ODBCNXM</li> 
-					<li>小米CC9 Pro 国际版 V11.0.3.0.PFDMIXM</li> 
-					<li>小米Max3 国际版 V11.0.6.0.PEDMIXM</li> 
-					<li>小米Play V11.0.3.0.OFICNXM</li> 
-					<li>红米 Note6 Pro 国际版 V11.0.1.0.PEKMIXM</li> 
-					<li>Redmi Note7 V11.0.4.0.PFGCNXM</li> 
-					<li>Redmi Note8 印度版 V11.0.1.0.PCOINXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.11.29日收录:</p> 
-				<ol> 
-					<li>小米9 V11.0.4.0.QFACNXM</li> 
-					<li>小米Play 国际版 V11.0.1.0.OFIMIXM</li> 
-					<li>Redmi 7 V11.0.2.0.PFLCNXM</li> 
-					<li>Redmi 8 欧洲稳定版 V11.0.1.0.PCNEUXM</li> 
-					<li>Redmi 8A V11.0.3.0.PCPCNXM</li> 
-					<li>Redmi 8A 国际版 V11.0.1.0.PCPMIXM</li> 
-					<li>Redmi 8A 印度版 V11.0.3.0.PCPINXM</li> 
-					<li>红米Note4X(高通版) V11.0.2.0.NCFCNXM</li> 
-					<li>Redmi Note8 V11.0.3.0.PCOCNXM</li> 
-					<li>Redmi K20 Pro/尊享版 V11.0.4.0.QFKCNXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.11.5/6日收录:</p> 
-				<ol> 
-					<li>小米6：V11.0.3.0.PCAMIXM</li> 
-					<li>小米8：V11.0.4.0.PEACNXM、V11.0.6.0.PEAMIXM</li> 
-					<li>小米9：V11.0.2.0.QFAMIXM、V11.0.5.0.QFAEUXM</li> 
-					<li>小米9SE：V11.0.4.0.PFBMIXM、V11.0.4.0.PFBEUXM</li> 
-					<li>小米CC9：V11.3.2.0.PFCCNXM</li> 
-					<li>小米Play：V11.0.2.0.OFICNXM、V11.0.1.0.OFIMIXM、V11.0.1.0.OFIRUXM</li> 
-					<li>小米MIX2：V11.0.3.0.PDEMIXM</li> 
-					<li>小米MIX2S：V11.0.4.0.PDGMIXM</li> 
-					<li>小米MIX3：V11.0.4.0.PEECNXM</li> 
-					<li>Redmi 7：V11.0.2.0.PFLRUXM、V11.0.2.0.PFLINXM、V11.0.3.0.PFLEUXM</li> 
-					<li>Redmi 7A：V11.0.1.0.PCMCNXM、V11.0.4.0.PCMMIXM、V11.0.6.0.PCMEUXM、V11.0.3.0.PCMRUXM</li> 
-					<li>Redmi 8：V10.3.4.0.PCNMIXM、V10.3.3.0.PCNINXM、V10.3.2.0.PCNEUXM、V10.3.3.0.PCNRUXM</li> 
-					<li>Redmi 8A：V10.3.3.0.PCPMIXM、V10.3.3.0.PCPINXM、V10.3.3.0.PCPEUXM、V10.3.3.0.PCPRUXM</li> 
-					<li>红米Note 5A标准版：V11.0.2.0.NDFCNXM、V11.0.3.0.NDFMIXM</li> 
-					<li>红米Note5A 高配版：V11.0.2.0.NDKMIXM</li> 
-					<li>Redmi Note 7 Pro：V11.0.5.0.PFHINXM</li> 
-					<li>Redmi Note 8：V10.3.8.0.PCOCNXM、V10.3.5.0.PCOMIXM、V10.3.3.0.PCOINXM</li> 
-					<li>Redmi Note 8 Pro：V11.0.1.0.PGGCNXM、V10.4.3.0.PGGRUXM</li> 
-					<li>Redmi K20：V11.0.1.0.PFJMIXM</li> 
-					<li>Redmi K20 Pro/尊享版：V11.0.3.0.QFKEUXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.11.4日收录:</p> 
-				<ol> 
-					<li>小米6：V11.0.2.0.PCACNXM</li> 
-					<li>小米6X：V11.0.2.0.PDCCNXM</li> 
-					<li>小米8透明探索版：V11.0.3.0.PEHCNXM</li> 
-					<li>小米8屏幕指纹版：V11.0.3.0.PECCNXM</li> 
-					<li>小米9：V11.0.2.0.QFACNXM</li> 
-					<li>小米9SE：V11.0.4.0.PFBRUXM</li> 
-					<li>小米MIX2：V11.0.2.0.PDECNXM</li> 
-					<li>小米MIX2S：V11.0.3.0.PDGCNXM/li&gt; </li> 
-					<li>红米6 Pro：V11.0.3.0.PDICNXM</li> 
-					<li>红米S2：V11.0.1.0.PEFCNXM</li> 
-					<li>红米Note5：V11.0.2.0.PEICNXM</li> 
-					<li>Redmi Note 7：V11.0.3.0.PFGCNXM</li> 
-					<li>Redmi Note 7 Pro：V11.0.4.0.PFHCNXM</li> 
-					<li>Redmi K20 Pro/尊享版：V11.0.2.0.QFKCNXM、V10.3.3.0.PFKRUXM/、V10.3.3.0.PFKMIXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.10.31日收录:</p> 
-				<ol> 
-					<li>小米6：V11.0.2.0.PCACNXM</li> 
-					<li>小米手机8青春版：V11.0.5.0.PDTRUXM</li> 
-					<li>小米9：V11.0.2.0.QFACNXM</li> 
-					<li>小米CC9：V11.3.2.0.PFCRUXM、V11.3.2.0.PFCMIXM、V11.3.2.0.PFCEUXM</li> 
-					<li>小米CC9美图定制版：V11.3.1.0.PFECNXM</li> 
-					<li>小米Max3：V11.0.5.0.PEDRUXM</li> 
-					<li>小米Note3：V11.0.3.0.PCHMIXM</li> 
-					<li>小米MIX2：V11.0.2.0.PDECNXM</li> 
-					<li>红米6 Pro：V11.0.3.0.PDICNXM</li> 
-					<li>Redmi 7：V11.0.3.0.PFLEUXM</li> 
-					<li>红米S2：V11.0.1.0.PEFCNXM</li> 
-					<li>Redmi Note 7：V11.0.3.0.PFGCNXM、V11.0.5.0.PFGINXM、V11.0.3.0.PFGMIXM</li> 
-					<li>Redmi Note 8 Pro：V10.4.4.0.PGGINXM</li> 
-					<li>Redmi K20：V11.0.2.0.PFJEUXM</li> 
-					<li>Redmi K20 Pro：V11.0.2.0.QFKCNXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.10.17/18日收录:</p> 
-				<ol> 
-					<li>小米8：V11.0.3.0.PEACNXM</li> 
-					<li>小米8透明探索版：V11.0.2.0.PEHCNXM</li> 
-					<li>小米8屏幕指纹版：V11.0.2.0.PECCNXM</li> 
-					<li>小米手机8青春版：V11.0.2.0.PDTCNXM</li> 
-					<li>小米手机8SE：V11.0.3.0.PEBCNXM</li> 
-					<li>小米手机9SE：V11.0.3.0.PFBCNXM</li> 
-					<li>小米Max3：V11.0.2.0.PEDCNXM</li> 
-					<li>小米MIX2S：V11.0.2.0.PDGCNXM</li> 
-					<li>小米MIX3：V11.0.3.0.PEECNXM</li> 
-					<li>Redmi 7：V11.0.1.0.PFLCNXM</li> 
-					<li>Redmi Note 7 Pro：V11.0.3.0.PFHCNXM</li> 
-					<li>Redmi K20：V11.0.3.0.PFJCNXM</li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.10.14日收录:</p> 
-				<ol> 
-					<li>小米9：V10.2.14.0.PFAMIXM、V10.2.9.0.PFARUXM</li> 
-					<li>小米CC9：V10.3.1.0.PFCRUXM、V10.3.6.0.PFCEUXM、V10.3.1.0.PFCMIXM</li> 
-					<li>Redmi 7A：V10.2.10.0.PCMINXM、V10.2.14.0.PCMCNXM</li> 
-					<li>Redmi Note 8：V10.3.2.0.PCOIDXM、V10.3.1.0.PCOINXM</li> 
-					<li>Redmi Note 8 Pro：V10.4.10.0.PGGCNXM、V10.4.1.0.PGGMIXM、V10.4.2.0.PGGIDXM</li> 
-					<li>Redmi K20 Pro:V10.3.1.0.PFKRUXM、V10.3.2.0.PFKRUXM、V10.3.1.0.PFKEUXM、V10.3.3.0.PFKEUXM、V10.3.4.0.PFKEUXM、V10.3.3.0.PFKINXM、V10.3.5.0.PFKINXM、V10.3.1.0.PFKMIXM、V10.3.2.0.PFKMIXM </li> 
-				</ol> 
-			</div> 
-			<div class="mdui-panel-item-body"> 
-				<p>2019.10.01日收录:</p> 
-				<ol> 
-					<li>Redmi Note 8：V10.3.6.0.PCOCNXM</li> 
-					<li>Redmi Note 8 Pro：V10.4.9.0.PGGCNXM</li> 
-				</ol> 
-			</div> 
-		</div> 
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2021.2.26日更新:</p>
+					<ol>
+						<li>小米9：欧洲稳定版 V12.0.4.0.QFAEUXM</li>
+						<li>小米10：V12.2.9.0.RJBCNXM、印度版 V12.2.5.0.RJBINXM</li>
+						<li>小米10 Pro：V12.2.3.0.RJACNXM</li>
+						<li>小米10 Lite：台湾地区版 V12.1.1.0.RJITWXM、国际版 V12.1.2.0.RJIMIXM</li>
+						<li>小米11 V12.0.19.0.RKBCNXM、V12.0.21.0.RKBCNXM、V12.0.22.0.RKBCNXM</li>
+						<li>小米Note 10 Lite：欧洲稳定版 V12.1.1.0.RFNEUXM、土耳其版 V12.0.3.0.QFNTRXM</li>
+						<li>小米MIX3 5G：国际版 V12.0.2.0.PEMMIXM</li>
+						<li>小米Play：俄罗斯版 V11.0.11.0.OFIRUXM</li>
+						<li>POCO F1：俄罗斯版 V12.0.3.0.QEJRUXM</li>
+						<li>POCO M3 台湾地区版 V12.0.2.0.QJFTWXM、国际版 V12.0.4.0.QJFMIXM、欧洲稳定版 V12.0.6.0.QJFEUXM、俄罗斯版 V12.0.4.0.QJFRUXM、印尼稳定版 V12.0.5.0.QJFIDXM、土耳其版 V12.0.4.0.QJFTRXM</li>
+						<li>小米A2：国际版 V11.0.21.0.QDIMIXM</li>
+						<li>小米A2 Lite：国际版 V11.0.18.0.QDLMIXM</li>
+						<li>小米A3：欧洲稳定版 V12.0.3.0.RFQEUXM</li>
+						<li>Redmi 7：V12.0.1.0.QFLCNXM、俄罗斯版 V11.0.1.0.QFLRUXM</li>
+						<li>Redmi 7A：V12.0.2.0.QCMCNXM、国际版 V12.0.1.0.QCMMIXM、印度版 V12.0.1.0.QCMINXM</li>
+						<li>Redmi 8：V12.0.1.0.QCNCNXM、欧洲稳定版 V12.0.1.0.QCNEUXM、俄罗斯版 V12.0.1.0.QCNRUXM</li>
+						<li>Redmi 8A：国际版 V12.0.1.0.QCPMIXM、欧洲稳定版 V12.0.1.0.QCPEUXM、俄罗斯版 V12.0.1.0.QCPRUXM、印度版 V12.0.1.0.QCPINXM、印尼稳定版 V12.0.1.0.QCPIDXM</li>
+						<li>Redmi 9：欧洲稳定版 V12.0.1.0.QJCEUXM</li>
+						<li>Redmi 9 India：印度版 V12.0.7.0.QCTINXM</li>
+						<li>Redmi 9A：印尼稳定版 V12.0.5.0.QCDIDXM、土耳其版 V12.0.2.0.QCDTRXM、土耳其版 V12.0.3.0.QCDTRXM</li>
+						<li>Redmi 9C：国际版 V12.0.10.0.QCRMIXM、欧洲稳定版 V12.0.6.0.QCREUXM、印尼稳定版 V12.0.6.0.QCRIDXM、土耳其版 V12.0.2.0.QCRTRXM、土耳其版 V12.0.3.0.QCRTRXM、土耳其版 V12.0.4.0.QCRTRXM、土耳其版 V12.0.5.0.QCRTRXM</li>
+						<li>Redmi 9C NFC：国际版 V12.0.6.0.QCSMIXM、欧洲稳定版 V12.0.6.0.QCSEUXM、俄罗斯版 V12.0.6.0.QCSRUXM</li>
+						<li>Redmi 10X 4G 台湾地区版 V12.0.1.0.QJOTWXM、台湾地区版 V12.0.2.0.QJOTWXM</li>
+						<li>Redmi Note 7：V12.0.3.0.QFGCNXM、俄罗斯版 V12.0.2.0.QFGRUXM</li>
+						<li>Redmi Note 8：印度版 V12.0.2.0.QCOINXM</li>
+						<li>Redmi Note 8T：国际版 V12.0.2.0.QCXMIXM、欧洲稳定版 V12.0.2.0.QCXEUXM、俄罗斯版 V12.0.3.0.QCXRUXM</li>
+						<li>Redmi Note 8 Pro：国际版 V12.0.6.0.QGGMIXM</li>
+						<li>Redmi Note 9 4G：印度版 V12.0.5.0.QJQINXM、印尼稳定版 V12.0.2.0.QJQIDXM、土耳其版 V12.0.2.0.QJQTRXM</li>
+						<li>Redmi Note 9 5G：台湾地区版 V12.0.4.0.QJETWXM、国际版 V12.0.5.0.QJEMIXM、国际版 V12.0.6.0.QJEMIXM、欧洲稳定版 V12.0.4.0.QJEEUXM</li>
+						<li>Redmi Note 9S：国际版 V12.0.3.0.QJWMIXM、俄罗斯版 V12.0.3.0.QJWRUXM、土耳其版 V12.0.3.0.QJWTRXM</li>
+						<li>Redmi Note 9 Pro：V12.0.8.0.QJSCNXM、欧洲稳定版 V12.0.9.0.QJSEUXM</li>
+						<li>Redmi Note 9 Pro 国际：国际版 V12.0.2.0.QJZMIXM、欧洲稳定版 V12.0.2.0.QJZEUXM、俄罗斯版 V12.0.3.0.QJZRUXM、印尼稳定版 V12.0.4.0.QJZIDXM</li>
+						<li>Redmi K20：国际版 V12.0.7.0.QFJMIXM、欧洲稳定版 V12.0.4.0.QFJEUXM</li>
+						<li>Redmi K20 Pro：欧洲稳定版 V12.0.4.0.QFKEUXM</li>
+						<li>Redmi K30 5G：V12.1.5.0.RGICNXM</li>
+						<li>Redmi K30i 5G：V12.1.1.0.RGICMXM</li>
+						<li>Redmi K30 至尊纪念版：V12.0.19.0.QJNCNXM</li>
+						<li>Redmi K30S 至尊纪念版：台湾地区版 V12.0.1.0.QJDTWXM、国际版 V12.0.11.0.QJDMIXM、欧洲稳定版 V12.0.19.0.QJDEUXM、印度版 V12.0.5.0.QJDINXM、印尼稳定版 V12.0.3.0.QJDIDXM、土耳其版 V12.0.3.0.QJDTRXM</li>
+						<li>Redmi Go：国际版 V10.2.25.0.OCLMIXM</li>
+						<p>共计89卡刷包，线刷86包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2021.1.30日更新:</p>
+					<ol>
+						<li>小米9：国际版 V12.0.4.0.QFAMIXM </li>
+						<li>小米10：欧洲稳定版 V12.2.4.0.RJBEUXM</li>
+						<li>小米10 Lite：台湾地区版 V12.0.1.0.QJITWXM、欧洲稳定版 V12.1.3.0.RJIEUXM</li>
+						<li>小米Note 10 Lite：国际版 V12.1.1.0.RFNMIXM</li>
+						<li>小米MIX3 5G版：国际版 V12.0.3.0.PEMMIXM</li>
+						<li>小米Play：国际版 V11.0.10.0.OFIMIXM</li>
+						<li>POCO M2：印度版 V11.0.4.0.QJRINXM、印度版 V11.0.5.0.QJRINXM、印度版 V12.0.1.0.QJRINXM</li>
+						<li>POCO M3：台湾地区版 V12.0.1.0.QJFTWXM、国际版 V12.0.1.0.QJFMIXM、国际版 V12.0.3.0.QJFMIXM、欧洲稳定版 V12.0.1.0.QJFEUXM、欧洲稳定版 V12.0.3.0.QJFEUXM、欧洲稳定版 V12.0.4.0.QJFEUXM、欧洲稳定版 V12.0.5.0.QJFEUXM、俄罗斯版 V12.0.2.0.QJFRUXM、俄罗斯版 V12.0.3.0.QJFRUXM、印度版 V12.0.1.0.QJFINXM、印度版 V12.0.3.0.QJFINXM、印尼稳定版 V12.0.4.0.QJFIDXM、土耳其版 V12.0.2.0.QJFTRXM</li>
+						<li>小米A2：国际版 V11.0.20.0.QDIMIXM</li>
+						<li>Redmi Note 7：欧洲稳定版 V12.0.3.0.QFGEUXM</li>
+						<li>Redmi Note 9 4G：欧洲稳定版 V12.0.2.0.QJQEUXM</li>
+						<li>Redmi Note 9S：土耳其版 V12.0.4.0.QJZTRXM</li>
+						<li>Redmi.K20 Pro：国际版 V12.0.4.0.QFKMIXM</li>
+						<li>Redmi K30 4G 印度版 V12.1.2.0.RGHINXM</li>
+						<li>Redmi K30S 至尊纪念版：欧洲稳定版 V12.0.16.0.QJDEUXM、欧洲稳定版 V12.0.18.0.QJDEUXM</li>
+						<p>共计31卡刷包，线刷28包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2021.1.24日更新:</p>
+					<ol>
+						<li>小米8透明探索版：V12.0.4.0.QEHCNXM</li>
+						<li>小米8屏幕指纹版：V12.0.4.0.QECCNXM</li>
+						<li>小米9 SE：国际版V12.0.3.0.QFBMIXM、俄罗斯版V12.0.2.0.QFBRUXM</li>
+						<li>小米10：V12.2.7.0.RJBCNXM、V12.2.8.0.RJBCNXM</li>
+						<li>小米10 Pro：V12.2.1.0.RJACNXM、V12.2.2.0.RJACNXM</li>
+						<li>小米10 青春版：V12.1.4.0.RJVCNXM</li>
+						<li>小米10 Lite：国际版V12.1.1.0.RJIMIXM、欧洲稳定版V12.1.2.0.RJIEUXM</li>
+						<li>小米11：V12.0.13.0.RKBCNXM、V12.0.16.0.RKBCNXM、V12.0.17.0.RKBCNXM</li>
+						<li>小米CC9：国际版V12.0.5.0.QFCMIXM、欧洲稳定版V12.0.5.0.QFCEUXM、俄罗斯版V12.0.4.0.QFCRUXM</li>
+						<li>小米CC9美图定制版：V12.0.3.0.QFECNXM</li>
+						<li>小米CC9 Pro：V12.1.3.0.RFDCNXM</li>
+						<li>小米MIX2S：国际版 V12.0.3.0.QDGMIXM、俄罗斯版V12.0.2.0.QDGRUXM</li>
+						<li>小米MIX3：V12.0.3.0.QEECNXM</li>
+						<li>POCO F1：国际版V12.0.3.0.QEJMIXM</li>
+						<li>POCO M2 Pro：印度版V12.0.2.0.QJPINXM</li>
+						<li>POCO X3 NFC：国际版V12.0.6.0.QJGMIXM、国际版V12.0.7.0.QJGMIXM、欧洲稳定版V12.0.6.0.QJGEUXM、欧洲稳定版V12.0.7.0.QJGEUXM、俄罗斯版V12.0.5.0.QJGRUXM、印度版V12.0.8.0.QJGINXM、土耳其版V12.0.5.0.QJGTRXM</li>
+						<li>小米A2 Lite：国际版V11.0.16.0.QDLMIXM、国际版V11.0.17.0.QDLMIXM</li>
+						<li>Redmi 7：国际版V11.0.1.0.QFLMIXM、欧洲稳定版V11.0.1.0.QFLEUXM、印度版V11.0.3.0.QFLINXM</li>
+						<li>Redmi 8：国际版V12.0.1.0.QCNMIXM</li>
+						<li>Redmi 8A：V12.0.1.0.QCPCNXM</li>
+						<li>Redmi 9：V12.0.6.0.QJCCNXM、国际版V12.0.2.0.QJCMIX、印度版V12.0.1.0.QJCINXM</li>
+						<li>Redmi 9 India：印度版V12.0.5.0.QCTINXM</li>
+						<li>Redmi 9A：V12.0.6.0.QCDCNXM、国际版V12.0.10.0.QCDMIX、欧洲稳定版V12.0.10.0.QCDEUXM、俄罗斯版V12.0.7.0.QCDRUXM、印度版V12.0.8.0.QCDINXM、印度版V12.0.9.0.QCDINXM</li>
+						<li>Redmi 9C：国际版V12.0.6.0.QCRMIXM、国际版V12.0.8.0.QCRMIXM、印度版V12.0.5.0.QCRINXM、印尼稳定版V12.0.5.0.QCRIDXM</li>
+						<li>Redmi 9C NFC：国际版V12.0.5.0.QCSMIXM、欧洲稳定版V12.0.5.0.QCSEUXM、俄罗斯版V12.0.5.0.QCSRUXM</li>
+						<li>Redmi 10X 4G：V12.0.7.0.QJOCNXM、V12.0.8.0.QJOCNXM、国际版V12.0.6.0.QJOMIXM、欧洲稳定版V12.0.5.0.QJOEUXM、俄罗斯版V12.0.4.0.QJORUXM、印度版V12.0.6.0.QJOINXM、印尼稳定版V12.0.4.0.QJOIDXM</li>
+						<li>Redmi 10X 5G：V12.0.6.0.QJHCNXM</li>
+						<li>Redmi 10X Pro：V12.0.6.0.QJLCNXM</li>
+						<li>红米Note 6 Pro：国际版V12.0.1.0.PEKMIXM</li>
+						<li>Redmi Note 7：印度版V12.0.2.0.QFGINXM</li>
+						<li>Redmi Note 7 Pro：印度版V12.0.5.0.QFHINXM</li>
+						<li>Redmi Note 8：国际版V12.0.2.0.QCOMIXM、国际版V12.0.3.0.QCOMIXM、欧洲稳定版V12.0.2.0.QCOEUXM、欧洲稳定版V12.0.3.0.QCOEUXM</li>
+						<li>Redmi Note 9 4G：V12.0.10.0.QJQCNXM、V12.0.11.0.QJQCNXM、台湾地区版V12.0.1.0.QJQTWXM、台湾地区版V12.0.2.0.QJQTWXM、国际版V12.0.3.0.QJQMIXM、国际版V12.0.4.0.QJQMIXM、印度版V12.0.4.0.QJQINXM</li>
+						<li>Redmi Note 9 5G：V12.0.5.0.QJECNXM、V12.0.6.0.QJECNXM</li>
+						<li>Redmi Note 9S：印度版V12.0.2.0.QJWINXM</li>
+						<li>Redmi Note 9 Pro：V12.0.7.0.QJSCNXM、国际版V12.0.7.0.QJSMIXM、欧洲稳定版V12.0.8.0.QJSEUXM、印度版V12.0.3.0.QJSINXM、印度版V12.0.4.0.QJSINXM</li>
+						<li>Redmi Note 9 Pro 国际版：台湾地区版V12.0.2.0.QJZTWXM</li>
+						<li>Redmi K20 Pro：V12.0.6.0.QFKCNXM、印度版V12.0.4.0.QFKINXM</li>
+						<li>Redmi K30 4G版：V12.1.3.0.RGHCNXM</li>
+						<li>Redmi K30 5G版：V12.1.1.0.RGICNXM、V12.1.4.0.RGICNXM</li>
+						<li>Redmi K30 Pro：V12.1.3.0.RJKCNXM、V12.2.1.0.RJKCNXM、V12.2.2.0.RJKCNXM、国际版V12.2.1.0.RJKMIXM、国际版V12.2.3.0.RJKMIXM、国际版V12.2.4.0.RJKMIXM、欧洲稳定版V12.2.1.0.RJKEUXM、欧洲稳定版V12.2.3.0.RJKEUXM、欧洲稳定版V12.2.4.0.RJKEUXM</li>
+						<li>Redmi K30S 至尊纪念版：V12.0.3.0.QJDCNXM、V12.0.6.0.QJDCNXM、V12.0.8.0.QJDCNXM、V12.0.10.0.QJDCNXM、国际版V12.0.9.0.QJDMIXM、国际版V12.0.10.0.QJDMIXM、欧洲稳定版V12.0.15.0.QJDEUXM、俄罗斯版V12.0.2.0.QJDRUXM</li>
+						<p>共计109卡刷包，93线刷包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2021.1.8日更新:</p>
+					<ol>
+						<li>小米8：俄罗斯版 V12.0.1.0.QEARUXM</li>
+						<li>小米8 屏幕指纹板：V12.0.3.0.QECCNXM、国际版V12.0.1.0.QECMIXM、俄罗斯版V12.0.1.0.QECRUXM</li>
+						<li>小米9：V12.0.6.0.QFACNXM、国际版 V12.0.3.0.QFAMIXM、欧洲稳定版V12.0.3.0.QFAEUXM</li>
+						<li>小米9 SE：V12.0.3.0.QFBCNXM、欧洲稳定版V12.0.3.0.QFBEUXM</li>
+						<li>小米9 Pro 5G：V12.0.5.0.QFXCNXM</li>
+						<li>小米CC9：欧洲稳定版V12.0.4.0.QFCEUXM、俄罗斯版V12.0.3.0.QFCRUXM</li>
+						<li>小米CC9e：V12.0.3.0.QFMCNXM</li>
+						<li>小米CC9 Pro：国际版V12.0.3.0.QFDMIXM、欧洲稳定版V12.0.2.0.QFDEUXM、欧洲稳定版、V12.0.3.0.QFDEUXM、俄罗斯版V12.0.3.0.QFDRUXM、印尼稳定版V12.0.3.0.QFDIDXM</li>
+						<li>小米10：V12.1.3.0.RJBCNXM、V12.1.5.0.RJBCNXM、V12.2.2.0.RJBCNXM</li>
+						<li>小米10 Pro：国际版V12.2.1.0.RJAMIXM</li>
+						<li>小米10青春版：V12.1.3.0.RJVCNXM</li>
+						<li>小米10 至尊纪念版：V12.0.14.0.QJJCNXM、V12.0.15.0.QJJCNXM</li>
+						<li>小米10 Lite：国际版V12.1.1.0.RJIMIXM、台湾地区版V12.0.1.0.QJITWXM</li>
+						<li>小米11：V12.0.12.0.RKBCNXM</li>
+						<li>小米Note10 Lite：国际版V12.0.3.0.QFNMIXM、欧洲稳定版V12.0.2.0.QFNEUXM、俄罗斯版V12.0.2.0.QFNRUXM、土耳其版V12.0.2.0.QFNTRXM</li>
+						<li>小米MIX2S：V12.0.2.0.QDGCNXM、国际版V12.0.2.0.QDGRUXM</li>
+						<li>小米MIX3：国际版V12.0.2.0.QEEMIXM、欧洲稳定版V12.0.3.0.QEERUXM</li>
+						<li>小米MIX3 5G版：欧洲稳定版V12.0.2.0.PEMEUXM</li>
+						<li>小米Play：V11.0.8.0.OFICNXM</li>
+						<li>POCO X3 NFC：俄罗斯版V12.0.3.0.QJGRUXM、印尼稳定版V12.0.3.0.QJGIDXM 、土耳其版V12.0.3.0.QJGTRXM、土耳其版V12.0.4.0.QJGTRXM</li>
+						<li>小米A2：国际版V11.0.17.0.QDIMIXM、国际版V11.0.19.0.QDIMIXM</li>
+						<li>小米A2 Lite：国际版V11.0.14.0.QDLMIXM</li>
+						<li>小米A3：国际版V11.0.23.0.QFQMIXM、欧洲稳定版V11.0.10.0.QFQEUXM</li>
+						<li>红米6 Pro：印度版V12.0.2.0.PDMMIXM、印度版V12.0.4.0.PDMMIXM</li>
+						<li>Redmi 7：V11.0.3.0.QFLCNXM、国际版V11.0.7.0.PFLMIXM、欧洲稳定版V11.0.11.0.PFLEUXM、俄罗斯版V11.0.9.0.PFLRUXM</li>
+						<li>Redmi 7A：国际版V11.0.5.0.QCMMIXM、欧洲稳定版V11.0.5.0.QCMEUXM、俄罗斯版V11.0.4.0.QCMRUXM</li>
+						<li>Redmi 8：印度版V11.0.2.0.QCNINXM、印尼稳定版V11.0.2.0.QCNIDXM</li>
+						<li>Redmi 8A：国际版V11.0.3.0.QCPMIXM、俄罗斯版V11.0.2.0.QCPRUXM、印度版V11.0.2.0.QCPINXM、印尼稳定版V11.0.2.0.QCPIDXM</li>
+						<li>Redmi 8A Dual：印度版V11.0.3.0.QCQINXM</li>
+						<li>Redmi 9：国际版V11.0.9.0.QJCMIXM、国际版V12.0.1.0.QJCMIXM、欧洲稳定版V11.0.9.0.QJCEUXM、俄罗斯版V12.0.1.0.QJCRUXM、印度版V11.0.6.0.QJCINXM、印尼稳定版V12.0.1.0.QJCIDXM</li>
+						<li>Redmi 9A：V12.0.5.0.QCDCNXM、国际版V12.0.8.0.QCDMIXM、欧洲稳定版V12.0.9.0.QCDEUXM、俄罗斯版V12.0.6.0.QCDRUXM、印度版V12.0.7.0.QCDINXM、印尼稳定版V12.0.4.0.QCDIDXM</li>
+						<li>Redmi 10X 4G：V12.0.6.0.QJOCNXM、国际版V12.0.5.0.QJOMIXM、欧洲稳定版V12.0.4.0.QJOEUXM、俄罗斯版V12.0.3.0.QJORUXM、印度版V12.0.5.0.QJOINXM、印尼稳定版V12.0.2.0.QJOIDXM、印尼稳定版V12.0.3.0.QJOIDXM、土耳其版V12.0.3.0.QJOTRXM</li>
+						<li>红米S2：俄罗斯版V12.0.1.0.PEFRUXM</li>
+						<li>Redmi Y3：印度版V11.0.12.0.PFFINXM</li>
+						<li>Redmi Note 7：国际版V12.0.1.0.QFGMIXM、印度版V12.0.1.0.QFGINXM</li>
+						<li>Redmi Note 7 Pro：印度版V12.0.4.0.QFHINXM</li>
+						<li>Redmi Note 8：V12.0.3.0.QCOCNXM、国际版V11.0.12.0.PCOMIXM、欧洲稳定版V12.0.1.0.QCOEUXM、印度版V12.0.1.0.QCOINXM、印尼稳定版V12.0.1.0.QCOIDXM</li>
+						<li>Redmi Note 8T：俄罗斯版V12.0.2.0.QCXRUXM</li>
+						<li>Redmi Note 8 Pro：V12.0.4.0.QGGCNXM、国际版V12.0.5.0.QGGMIXM、欧洲稳定版V12.0.3.0.QGGEUXM、俄罗斯版V12.0.6.0.QGGRUXM、印度版V12.0.3.0.QGGINXM、印尼稳定版V12.0.3.0.QGGIDXM</li>
+						<li>Redmi Note 9 4G：V12.0.1.0.QJQCNXM、V12.0.3.0.QJQCNXM、V12.0.5.0.QJQCNXM、V12.0.6.0.QJQCNXM、V12.0.9.0.QJQCNXM、国际版V12.0.1.0.QJQMIXM、印度版V12.0.1.0.QJQINXM、印度版V12.0.2.0.QJQINXM、印度版V12.0.3.0.QJQINXM</li>
+						<li>Redmi Note 9 5G：V12.0.3.0.QJECNXM</li>
+						<li>Redmi Note 9 Pro：V12.0.2.0.QJSCNXM、V12.0.4.0.QJSCNXM、V12.0.6.0.QJSCNXM、国际版V12.0.1.0.QJSMIXM、国际版V12.0.5.0.QJSMIXM、国际版V12.0.6.0.QJSMIXM、欧洲稳定版V12.0.4.0.QJSEUXM、欧洲稳定版V12.0.5.0.QJSEUXM、欧洲稳定版V12.0.6.0.QJSEUXM</li>
+						<li>Redmi Note 9S：国际版V12.0.2.0.QJWMIXM、欧洲稳定版V12.0.2.0.QJWEUXM、俄罗斯版V12.0.2.0.QJWRUXM、土耳其版V12.0.2.0.QJWTRXM</li>
+						<li>Redmi Note 9 Pro 国际版：国际版V12.0.1.0.QJZMIXM、欧洲稳定版V11.0.6.0.QJZEUXM、欧洲稳定版V12.0.1.0.QJZEUXM、俄罗斯版V12.0.2.0.QJZRUXM、印尼稳定版V12.0.3.0.QJZIDXM、土耳其版V12.0.3.0.QJZTRXM</li>
+						<li>Redmi K20：V12.0.6.0.QFJCNXM</li>
+						<li>Redmi K30 至尊纪念版：V12.0.16.0.QJNCNXM、V12.0.18.0.QJNCNXM</li>
+						<li>Redmi K30S 至尊纪念版：V12.0.5.0.QJDCNXM、V12.0.7.0.QJDCNXM、国际版V12.0.7.0.QJDMIXM、国际版V12.0.8.0.QJDMIXM、欧洲稳定版V12.0.11.0.QJDEUXM、欧洲稳定版V12.0.13.0.QJDEUXM、欧洲稳定版V12.0.14.0.QJDEUXM、俄罗斯版V12.0.1.0.QJDRUXM、印度版V12.0.3.0.QJDINXM、印度版V12.0.4.0.QJDINXM、印尼稳定版V12.0.1.0.QJDIDXM、土耳其版V12.0.1.0.QJDTRXM</li>
+						<li>Redmi Go：国际版V10.2.22.0.OCLMIXM、欧洲稳定版V10.2.18.0.OCLEUXM、俄罗斯版V10.2.16.0.OCLRUXM、俄罗斯版V10.2.17.0.OCLRUXM、印度版V10.2.17.0.OCLINXM、印度版V10.2.18.0.OCLINXM</li>
+						<p>共计148卡刷包，135线刷包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.11.13日更新:</p>
+					<ol>
+						<li>小米8：V12.0.2.0.QEACNXM、V12.0.3.0.QEACNXM</li>
+						<li>小米9SE：欧洲稳定版 V12.0.2.0.QFBEUXM</li>
+						<li>小米CC9：国际版 V12.0.4.0.QFCMIXM</li>
+						<li>小米CC9 Pro：V12.0.2.0.QFDCNXM、欧洲稳定版 V12.0.1.0.QFDEUXM</li>
+						<li>小米10 Lite：欧洲稳定版 V12.0.3.0.QJIEUXM</li>
+						<li>小米10T Lite：欧洲稳定版 V12.0.2.0.QJSEUXM</li>
+						<li>POCO F1：国际版 V12.0.1.0.QEJMIXM、国际版 V12.0.2.0.QEJMIXM</li>
+						<li>POCO X3 NFC：国际版 V12.0.4.0.QJGMIXM、欧洲稳定版 V12.0.4.0.QJGEUXM、印度版 V12.0.5.0.QJGINXM</li>
+						<li>Redmi 7A：国际版 V11.0.4.0.QCMMIXM、俄罗斯版 V11.0.3.0.QCMRUXM</li>
+						<li>Redmi 8：俄罗斯版 V11.0.2.0.QCNRUXM</li>
+						<li>Redmi 9 India：印度版 V12.0.3.0.QCTINXM</li>
+						<li>Redmi 9A：国际版 V12.0.7.0.QCDMIXM、欧洲稳定版 V12.0.8.0.QCDEUXM、俄罗斯版 V12.0.5.0.QCDRUXM、印尼稳定版 V12.0.3.0.QCDIDXM</li>
+						<li>Redmi 9C：欧洲稳定版 V12.0.5.0.QCREUXM、印度版 V12.0.2.0.QCRINXM、印度版 V12.0.3.0.QCRINXM</li>
+						<li>Redmi 9C NFC：国际版 V12.0.3.0.QCSMIXM、欧洲稳定版 V12.0.4.0.QCSEUXM</li>
+						<li>Redmi Note 7：V12.0.2.0.QFGCNXM、俄罗斯版 V12.0.1.0.QFGRUXM</li>
+						<li>Redmi Note 8：国际版 V12.0.1.0.QCOMIXM</li>
+						<li>Redmi Note 8T：国际版 V12.0.1.0.QCXMIXM、欧洲稳定版 V12.0.1.0.QCXEUXM</li>
+						<li>Redmi K20：国际版 V12.0.5.0.QFJMIXM、欧洲稳定版 V12.0.3.0.QFJEUXM、俄罗斯版 V12.0.2.0.QFJRUXM、印度版 V12.0.5.0.QFJINXM</li>
+						<li>Redmi K30 4G：印度版 V12.0.2.0.QGHINXM</li>
+						<li>Redmi K30 至尊纪念版：V12.0.12.0.QJNCNXM、V12.0.13.0.QJNCNXM</li>
+						<li>Redmi K30S 至尊纪念版：国际版 V12.0.6.0.QJDMIXM</li>
+						<p>共计39卡刷包，36线刷包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.11.6日更新:</p>
+					<ol>
+						<li>小米9：V12.0.5.0.QFACNXM</li>
+						<li>小米10：V12.0.11.0.QJBCNXM、欧洲稳定版 V12.0.6.0.QJBEUXM</li>
+						<li>小米10 Pro：V12.0.5.0.QJAMIXM、国际版 V12.0.5.0.QJAMIXM、欧洲稳定版 V12.0.5.0.QJAEUXM</li>
+						<li>小米10 Lite：国际版 V12.0.2.0.QJIMIXM</li>
+						<li>小米Play：国际版 V11.0.9.0.OFIMIXM、俄罗斯版 V11.0.10.0.OFIRUXM</li>
+						<li>小米A3：国际版 V11.0.22.0.QFQMIXM、欧洲稳定版 V11.0.9.0.QFQEUXM</li>
+						<li>Redmi 7A：V11.0.2.0.QCMCNXM、印度版 V11.0.3.0.QCMINXM</li>
+						<li>Redmi 8：V11.0.2.0.QCNCNXM、欧洲稳定版 V11.0.3.0.QCNEUXM</li>
+						<li>Redmi 8A：国际版 V11.0.2.0.QCPMIXM、欧洲稳定版 V11.0.3.0.QCPEUXM</li>
+						<li>Redmi 9A：V12.0.4.0.QCDCNXM 、印度版 V12.0.6.0.QCDINXM</li>
+						<li>Redmi 9C：国际版 V12.0.7.0.QCRMIXM、印尼稳定版 V12.0.3.0.QCRIDXM</li>
+						<li>Redmi 9C NFC：俄罗斯版 V12.0.4.0.QCSRUXM</li>
+						<li>Redmi 10X 5G：V12.0.5.0.QJHCNXM</li>
+						<li>Redmi Note 6 Pro：国际版 V11.0.5.0.PEKMIXM、国际版 V11.0.6.0.PEKMIXM</li>
+						<li>Redmi Note 7：欧洲稳定版 V12.0.2.0.QFGEUXM</li>
+						<li>Redmi Note 8：印尼稳定版 V11.0.7.0.PCOIDXM</li>
+						<li>Redmi Note 8 Pro：V12.0.3.0.QGGCNXM、欧洲稳定版 V12.0.2.0.QGGEUXM、俄罗斯版 V12.0.5.0.QGGRUXM、印度版 V12.0.2.0.QGGINXM、印尼稳定版 V12.0.2.0.QGGIDXM</li>
+						<li>Redmi Note 9S：国际版 12.0.1.0.QJWMIXM、欧洲稳定版 V12.0.1.0.QJWEUXM</li>
+						<li>Redmi Note 9 Pro 国际版：俄罗斯版 V12.0.1.0.QJZRUXM、印尼稳定版 V12.0.2.0.QJZIDXM、土耳其版 V12.0.1.0.QJZTRXM、土耳其版 V12.0.2.0.QJZTRXM</li>
+						<li>Redmi K20 Pro：V12.0.4.0.QFKCNXM、V12.0.5.0.QFKCNXM、国际版 V12.0.3.0.QFKMIXM、欧洲稳定版 V12.0.3.0.QFKEUXM</li>
+						<li>Redmi K30 4G版：V12.0.5.0.QGHCNXM</li>
+						<li>Redmi K30 5G版：V12.0.7.0.QGICNXM </li>
+						<li>Redmi K30 Pro：俄罗斯版 V12.0.4.0.QJKRUXM</li>
+						<li>Redmi K30S 至尊纪念版：欧洲稳定版 V12.0.10.0.QJDEUXM</li>
+						<p>共计47卡刷包，46线刷包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.10.30日更新:</p>
+					<ol>
+						<li>小米8：V12.0.2.0.QEACNXM</li>
+						<li>小米9：V12.0.4.0.QFACNXM</li>
+						<li>小米9 Pro 5G：V12.0.4.0.QFXCNXM</li>
+						<li>小米9SE：国际版 V12.0.2.0.QFBMIXM</li>
+						<li>小米10：印度版 V12.0.3.0.QJBINXM</li>
+						<li>小米10 至尊纪念版：V12.0.10.0.QJJCNXM、V12.0.13.0.QJJCNXM</li>
+						<li>小米Max3：国际版 V12.0.1.0.QEDMIXM、俄罗斯版 V12.0.1.0.QEDRUXM</li>
+						<li>小米MIX2：国际版 V12.0.1.0.PDEMIXM</li>
+						<li>POCO X3 NFC：国际版 V12.0.3.0.QJGMIXM、欧洲稳定版 V12.0.3.0.QJGEUXM、土耳其版 V12.0.2.0.QJGTRXM</li>
+						<li>小米A2：国际版 V11.0.15.0.QDIMIXM</li>
+						<li>小米A2 Lite：国际版 V11.0.12.0.QDLMIXM</li>
+						<li>小米A3：欧洲稳定版 V10.3.15.0.PFQEUXM、欧洲稳定版 V11.0.1.0.QFQEUXM、欧洲稳定版 V11.0.2.0.QFQEUXM、欧洲稳定版 V11.0.3.0.QFQEUXM、欧洲稳定版 V11.0.5.0.QFQEUXM、欧洲稳定版 V11.0.6.0.QFQEUXM、欧洲稳定版 V11.0.8.0.QFQEUXM</li>
+						<li>Redmi 8A：国际版 V11.0.2.0.QCPMIXM</li>
+						<li>Redmi 9A：欧洲稳定版 V12.0.7.0.QCDEUXM、俄罗斯版 V12.0.4.0.QCDRUXM</li>
+						<li>Redmi 9C：印度版 V12.0.1.0.QCRINXM</li>
+						<li>红米S2：国际版 V12.0.2.0.PEFMIXM</li>
+						<li>Redmi 10X 5G：V12.0.5.0.QJHCNXM</li>
+						<li>Redmi Note 7 Pro：印度版 V12.0.1.0.QFHINXM</li>
+						<li>Redmi Note 8：V11.0.8.0.PCOCNXM</li>
+						<li>Redmi Note 9S：俄罗斯版 V12.0.1.0.QJWRUXM</li>
+						<li>Redmi Note 9 Pro 国际版：土耳其版 V11.0.1.0.QJZTRXM、土耳其版 V11.0.2.0.QJZTRXM</li>
+						<li>Redmi K30 Pro：欧洲稳定版 V12.0.3.0.QJKEUXM</li>
+						<li>Redmi K30S 至尊纪念版：国际版 V12.0.3.0.QJDMIXM、欧洲稳定版 V12.0.4.0.QJDEUXM、欧洲稳定版 V12.0.5.0.QJDEUXM、欧洲稳定版 V12.0.6.0.QJDEUXM、印度版 V12.0.2.0.QJDINXM</li>
+						<p>共计39卡刷包，34线刷包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.10.15日更新:</p>
+					<ol>
+						<li>小米8：V11.0.8.0.QEACNXM、V12.0.1.0.QEACNXM、国际版 V11.0.5.0.QEAMIXM、俄罗斯版 V11.0.3.0.QEARUXM、俄罗斯版 V11.0.4.0.QEARUXM</li>
+						<li>小米8透明探索版：V12.0.2.0.QEHCNXM</li>
+						<li>小米8屏幕指纹版：V12.0.2.0.QECCNXM、国际版 V11.0.7.0.QECMIXM、国际版 V11.0.9.0.QECMIXM、国际版 V11.0.11.0.QECMIXM、俄罗斯版 V11.0.3.0.QECRUXM、俄罗斯版 V11.0.4.0.QECRUXM</li>
+						<li>小米8SE：V11.0.3.0.QEBCNXM、V12.0.2.0.QEBCNXM</li>
+						<li>小米8青春版：V12.0.1.0.QDTCNXM、国际版 V11.0.2.0.QDTMIXM、国际版 V11.0.3.0.QDTMIXM、国际版 V12.0.3.0.QDTMIXM、俄罗斯版 V11.0.2.0.QDTRUXM、俄罗斯版 V12.0.1.0.QDTRUXM</li>
+						<li>小米9：V11.0.7.1.QFACNXM、V12.0.1.0.QFACNXM、V12.0.2.0.QFACNXM、V12.0.3.0.QFACNXM、国际版 V12.0.0.8.QFAMIXM、国际版 V12.0.1.0.QFAMIXM、国际版 V12.0.2.0.QFAMIXM、欧洲稳定版 V12.0.0.9.QFAEUXM、欧洲稳定版 V12.0.1.0.QFAEUXM、欧洲稳定版 V12.0.2.0.QFAEUXM、俄罗斯版 V11.0.5.0.QFARUXM、俄罗斯版 V12.0.1.0.QFARUXM、俄罗斯版 V12.0.2.0.QFARUXM</li>
+						<li>小米9 Pro 5G：V11.0.4.0.QFXCNXM、V11.0.6.0.QFXCNXM、V12.0.1.0.QFXCNXM、V12.0.2.0.QFXCNXM、V12.0.3.0.QFXCNXM</li>
+						<li>小米9SE：V12.0.1.0.QFBCNXM、V12.0.2.0.QFBCNXM、国际版 V11.0.3.0.QFBMIXM、国际版 V11.0.4.0.QFBMIXM、国际版 V12.0.1.0.QFBMIXM、欧洲稳定版 V11.0.5.0.QFBEUXM、欧洲稳定版 V11.0.6.0.QFBEUXM、欧洲稳定版 V11.0.9.0.QFBEUXM、欧洲稳定版 V12.0.1.0.QFBEUXM、俄罗斯版 V11.0.3.0.QFBRUXM、俄罗斯版 V11.0.4.0.QFBRUXM、俄罗斯版 V12.0.1.0.QFBRUXM</li>
+						<li>小米CC9：V11.0.4.0.QFCCNXM、V12.0.2.0.QFCCNXM、国际版 V11.0.2.0.QFCMIXM、国际版 V11.0.3.0.QFCMIXM、国际版 V12.0.3.0.QFCMIXM、欧洲稳定版 V11.0.2.0.QFCEUXM、欧洲稳定版 V11.0.3.0.QFCEUXM、欧洲稳定版 V12.0.3.0.QFCEUXM、俄罗斯版 V11.0.2.0.QFCRUXM、俄罗斯版 V11.0.3.0.QFCRUXM</li>
+						<li>小米CC9 美图定制版：V11.0.4.0.QFECNXM、V12.0.2.0.QFECNXM</li>
+						<li>小米CC9e：V11.0.6.0.PFMCNXM</li>
+						<li>小米CC9 Pro：V12.0.1.0.QFDCNXM、国际版 V11.1.1.0.QFDMIXM、国际版 V11.1.2.0.QFDMIXM、国际版 V11.1.3.0.QFDMIXM、国际版 V12.0.1.0.QFDMIXM、国际版 V12.0.2.0.QFDMIXM、欧洲稳定版 V11.0.17.0.PFDEUXM、欧洲稳定版 V11.1.1.0.QFDEUXM、欧洲稳定版 V11.1.2.0.QFDEUXM、欧洲稳定版 V12.0.1.0.QFDEUXM、俄罗斯版 V11.1.1.0.QFDRUXM、俄罗斯版 V11.1.2.0.QFDRUXM、俄罗斯版 V12.0.2.0.QFDRUXM、印度尼西亚 V11.1.1.0.QFDIDXM、印度尼西亚 V12.0.2.0.QFDIDXM</li>
+						<li>小米10：V11.0.25.0.QJBCNXM、V12.0.1.0.QJBCNXM、V12.0.4.0.QJBCNXM、V12.0.7.0.QJBCNXM、V12.0.8.0.QJBCNXM、国际版 V11.0.5.0.QJBMIXM、国际版 V12.0.1.0.QJBMIXM、欧洲稳定版 V11.0.9.0.QJBEUXM、欧洲稳定版 V11.0.12.0.QJBEUXM、欧洲稳定版 V11.0.13.0.QJBEUXM、欧洲稳定版 V11.0.14.0.QJBEUXM、欧洲稳定版 V11.0.15.0.QJBEUXM、欧洲稳定版 V11.0.18.0.QJBEUXM、欧洲稳定版 V12.0.1.0.QJBEUXM、俄罗斯版 V11.0.1.0.QJBRUXM、俄罗斯版 V12.0.1.0.QJBRUXM、印度版 V11.0.5.0.QJBINXM、印度版 V11.0.7.0.QJBINXM、印度版 V12.0.2.0.QJBINXM、印尼稳定版 V11.0.3.0.QJBIDXM、印尼稳定版 V11.0.4.0.QJBIDXM、印尼稳定版 V11.0.5.0.QJBIDXM、印尼稳定版 V12.0.1.0.QJBIDXM</li>
+						<li>小米10 Pro：V11.0.18.0.QJACNXM、V12.0.1.0.QJACNXM、V12.0.2.0.QJACNXM、V12.0.3.0.QJACNXM、V12.0.4.0.QJACNXM、V12.0.6.0.QJACNXM、国际版 V11.0.4.0.QJAMIXM、国际版 V12.0.1.0.QJAMIXM、欧洲稳定版 V11.0.11.0.QJAEUXM、欧洲稳定版 V11.0.12.0.QJAEUXM、欧洲稳定版 V12.0.1.0.QJAEUXM</li>
+						<li>小米10 至尊纪念版：V12.0.6.0.QJJCNXM、V12.0.7.0.QJJCNXM、V12.0.8.0.QJJCNXM</li>
+						<li>小米10 青春版：V11.0.9.0.QJVCNXM、V11.0.10.0.QJVCNXM、V12.0.3.0.QJVCNXM、V12.0.4.0.QJVCNXM、V12.0.5.0.QJVCNXM、V12.0.6.0.QJVCNXM</li>
+						<li>小米10 Lite：国际版 V11.0.4.0.QJIMIXM、国际版 V12.0.1.0.QJIMIXM、欧洲稳定版 V11.0.10.0.QJIEUXM、欧洲稳定版 V11.0.11.0.QJIEUXM、欧洲稳定版 V12.0.1.0.QJIEUXM、欧洲稳定版 V12.0.2.0.QJIEUXM</li>
+						<li>小米10T Lite：欧洲稳定版 V12.0.1.0.QJSEUXM</li>
+						<li>小米MIX2：V12.0.1.0.PDECNXM</li>
+						<li>小米MIX2S：V12.0.1.0.QDGCNXM、国际版 V11.0.5.0.QDGMIXM、国际版 V12.0.1.0.QDGMIXM、俄罗斯版 V11.0.2.0.QDGRUXM、俄罗斯版 V12.0.1.0.QDGRUXM</li>
+						<li>小米MIX3：V11.0.3.0.QEECNXM、V12.0.1.0.QEECNXM、国际版 V11.0.4.0.QEEMIXM、国际版 V11.0.5.0.QEEMIXM、国际版 V12.0.1.0.QEEMIXM、俄罗斯版 V11.0.4.0.QEERUXM、俄罗斯版 V12.0.2.0.QEERUXM</li>
+						<li>小米MIX3 5G：国际版 V12.0.1.0.PEMMIXM、欧洲稳定版 V10.3.25.0.PEMEUXM、欧洲稳定版 V12.0.1.0.PEMEUXM</li>
+						<li>小米MAX3：V12.0.1.0.QEDCNXM、国际版 V11.0.2.0.QEDMIXM、国际版 V11.0.4.0.QEDMIXM、俄罗斯版 V11.0.2.0.QEDRUXM</li>
+						<li>小米Note3：V12.0.1.0.PCHCNXM、国际版 V12.0.1.0.PCHMIXM</li>
+						<li>小米Note 10 Lite：国际版 V11.0.2.0.QFNMIXM、国际版 V11.0.4.0.QFNMIXM、国际版 V11.0.4.0.QFNMIXM、国际版 V11.0.6.0.QFNMIXM、国际版 V11.0.7.0.QFNMIXM、国际版 V11.0.8.0.QFNMIXM、国际版 V12.0.2.0.QFNMIXM、欧洲稳定版 V11.0.8.0.QFNEUXM、欧洲稳定版 V11.0.10.0.QFNEUXM、欧洲稳定版 V11.0.11.0.QFNEUXM、欧洲稳定版 V12.0.1.0.QFNEUXM、俄罗斯版 V11.0.4.0.QFNRUXM、俄罗斯版 V11.0.5.0.QFNRUXM、俄罗斯版 V12.0.1.0.QFNRUXM、土耳其版 V11.0.4.0.QFNTRXM、土耳其版 V12.0.1.0.QFNTRXM</li>
+						<li>小米Play：V11.0.7.0.OFICNXM、国际版 V11.0.6.0.OFIMIXM、国际版 V11.0.8.0.OFIMIXM、俄罗斯版 V11.0.6.0.OFIRUXM、俄罗斯版 V11.0.9.0.OFIRUXM</li>
+						<li>小米A1：国际版 V10.0.13.0.PDHMIXM、国际版 V10.0.14.0.PDHMIXM、国际版 V10.0.15.0.PDHMIXM、国际版 V10.0.16.0.PDHMIXM、国际版 V10.0.17.0.PDHMIXM、国际版 V10.0.18.0.PDHMIXM、国际版 V10.0.19.0.PDHMIXM、国际版 V10.0.20.0.PDHMIXM、国际版 V10.0.21.0.PDHMIXM、国际版 V10.0.22.0.PDHMIXM、国际版 V10.0.23.0.PDHMIXM、国际版 V10.0.24.0.PDHMIXM</li>
+						<li>小米A2：国际版 V10.0.15.0.QDIMIXM、国际版 V10.0.16.0.QDIMIXM、国际版 V10.0.17.0.QDIMIXM、国际版 V11.0.4.0.QDIMIXM、国际版 V11.0.5.0.QDIMIXM、国际版 V11.0.6.0.QDIMIXM、国际版 V11.0.8.0.QDIMIXM、国际版 V11.0.10.0.QDIMIXM、国际版 V11.0.11.0.QDIMIXM、国际版 V11.0.12.0.QDIMIXM、国际版 V11.0.13.0.QDIMIXM、国际版 V11.0.14.0.QDIMIXM</li>
+						<li>小米A2 Lite：国际版 V10.0.14.0.PDLMIXM、国际版 V10.0.15.0.PDLMIXM、国际版 V10.0.16.0.PDLMIXM、国际版 V10.0.17.0.PDLMIXM、国际版 V10.0.18.0.PDLMIXM、国际版 V10.0.20.0.PDLMIXM、国际版 V11.0.2.0.QDLMIXM、国际版 V11.0.4.0.QDLMIXM、国际版 V11.0.5.0.QDLMIXM、国际版 V11.0.7.0.QDLMIXM、国际版 V11.0.9.0.QDLMIXM、国际版 V11.0.10.0.QDLMIXM、国际版 V11.0.11.0.QDLMIXM</li>
+						<li>小米A3：国际版 V10.3.5.0.PFQMIXM、国际版 V10.3.6.0.PFQMIXM、国际版 V10.3.8.0.PFQMIXM、国际版 V10.3.9.0.PFQMIXM、国际版 V10.3.12.0.PFQMIXM、国际版 V10.3.13.0.PFQMIXM、国际版 V10.3.14.0.PFQMIXM、国际版 V10.3.16.0.PFQMIXM、国际版 V11.0.7.0.QFQMIXM、国际版 V11.0.8.0.QFQMIXM、国际版 V11.0.14.0.QFQMIXM、国际版 V11.0.15.0.QFQMIXM、国际版 V11.0.16.0.QFQMIXM、国际版 V11.0.19.0.QFQMIXM、国际版 V11.0.20.0.QFQMIXM、国际版 V11.0.21.0.QFQMIXM</li>
+						<li>POCO F1：国际版 V11.0.9.0.QEJMIXM、俄罗斯版 V11.0.4.0.QEJRUXM、俄罗斯版 V12.0.2.0.QEJRUXM</li>
+						<li>POCO M2 Pro：印度版 V11.0.2.0.QJPINXM、印度版 V11.0.3.0.QJPINXM、印度版 V12.0.1.0.QJPINXM</li>
+						<li>POCO X3 NFC：国际版 V12.0.2.0.QJGMIXM、欧洲稳定版 V12.0.2.0.QJGEUXM、印度版 V12.0.2.0.QJGINXM、俄罗斯版 V12.0.1.0.QJGRUXM、土耳其版 V12.0.1.0.QJGTRXM</li>
+						<li>红米6：国际版 V11.0.4.0.PCGMIXM、国际版 V11.0.5.0.PCGMIXM、俄罗斯版 V11.0.4.0.PCGRUXM、俄罗斯版 V11.0.5.0.PCGRUXM</li>
+						<li>红米6A：国际版 V11.0.9.0.PCBMIXM、俄罗斯版 V11.0.4.0.PCBRUXM</li>
+						<li>红米6Pro：V11.0.6.0.PDICNXM、V12.0.1.0.PDICNXM</li>
+						<li>Redmi 7：V11.0.5.0.PFLCNXM、国际版 V11.0.6.0.PFLMIXM、欧洲稳定版 V11.0.7.0.PFLEUXM、欧洲稳定版 V11.0.10.0.PFLEUXM、俄罗斯版 V11.0.6.0.PFLRUXM、俄罗斯版 V11.0.8.0.PFLRUXM、印度版 V11.0.7.0.PFLINXM</li>
+						<li>Redmi 7A：V11.0.1.0.QCMCNXM、国际版 V11.0.2.0.QCMMIXM、国际版 V11.0.3.0.QCMMIXM、欧洲稳定版 V11.0.1.0.QCMEUXM、欧洲稳定版 V11.0.2.0.QCMEUXM、欧洲稳定版 V11.0.3.0.QCMEUXM、欧洲稳定版 V11.0.4.0.QCMEUXM、俄罗斯版 V11.0.1.0.QCMRUXM、俄罗斯版 V11.0.2.0.QCMRUXM、印度版 V11.0.1.0.QCMINXM、印度版 V11.0.2.0.QCMINXM</li>
+						<li>Redmi 8：V11.0.11.0.PCNCNXM、V11.0.1.0.QCNCNXM、国际版 V11.0.11.0.PCNMIXM、国际版 V11.0.2.0.QCNMIXM、国际版 V11.0.3.0.QCNMIXM、欧洲稳定版 V11.0.7.0.PCNEUXM、欧洲稳定版 V11.0.1.0.QCNEUXM、欧洲稳定版 V11.0.2.0.QCNEUXM、俄罗斯版 V11.0.6.0.PCNRUXM、俄罗斯版 V11.0.1.0.QCNRUXM、印度版 V11.0.11.0.PCNINXM、印度版 V11.0.12.0.PCNINXM、印度版 V11.0.1.0.QCNINXM、印尼稳定版 V11.0.7.0.PCNIDXM、印尼稳定版 V11.0.1.0.QCNIDXM</li>
+						<li>Redmi 8A：V11.0.10.0.PCPCNXM、V11.0.2.0.QCPCNXM、V11.0.3.0.QCPCNXM、国际版 V11.0.7.0.PCPMIXM、国际版 V11.0.1.0.QCPMIXM、欧洲稳定版 V11.0.5.0.PCPEUXM、欧洲稳定版 V11.0.1.0.QCPEUXM、欧洲稳定版 V11.0.2.0.QCPEUXM、俄罗斯版 V11.0.5.0.PCPRUXM、俄罗斯版 V11.0.1.0.QCPRUXM、印度版 V11.0.9.0.PCPINXM、印度版 V11.0.1.0.QCPINXM、印尼稳定版 V11.0.5.0.PCPIDXM、印尼稳定版 V11.0.1.0.QCPIDXM</li>
+						<li>Redmi 8A Dual：印度版 V11.0.7.0.PCQINXM、印度版 V11.0.8.0.PCQINXM、印度版 V11.0.1.0.QCQINXM、印尼稳定版 V11.0.4.0.PCQIDXM、印尼稳定版 V11.0.1.0.QCQIDXM</li>
+						<li>Redmi 9：V11.0.1.0.QJCCNXM、V11.0.2.0.QJCCNXM、V11.0.3.0.QJCCNXM、V11.0.4.0.QJCCNXM、V11.0.5.0.QJCCNXM、V11.0.7.0.QJCCNXM、V12.0.1.0.QJCCNXM、V12.0.4.0.QJCCNXM、国际版 V11.0.4.0.QJCMIXM、国际版 V11.0.5.0.QJCMIXM、国际版 V11.0.7.0.QJCMIXM、国际版 V11.0.8.0.QJCMIXM、欧洲稳定版 V11.0.2.0.QJCEUXM、欧洲稳定版 V11.0.3.0.QJCEUXM、欧洲稳定版 V11.0.4.0.QJCEUXM、欧洲稳定版 V11.0.5.0.QJCEUXM、欧洲稳定版 V11.0.7.0.QJCEUXM、欧洲稳定版 V11.0.8.0.QJCEUXM、俄罗斯版 V11.0.5.0.QJCRUXM、俄罗斯版 V11.0.7.0.QJCRUXM、印度版 V11.0.2.0.QJCINXM、印度版 V11.0.4.0.QJCINXM、印尼稳定版 V11.0.3.0.QJCIDXM、印尼稳定版 V11.0.6.0.QJCIDXM</li>
+						<li>Redmi 9 India：印度版 V12.0.1.0.QCTINXM、印度版 V12.0.2.0.QCTINXM</li>
+						<li>Redmi 9A：V12.0.1.0.QCDCNXM、V12.0.2.0.QCDCNXM、V12.0.3.0.QCDCNXM、国际版 V12.0.3.0.QCDMIXM、国际版 V12.0.5.0.QCDMIXM、国际版 V12.0.6.0.QCDMIXM、欧洲稳定版 V12.0.4.0.QCDEUXM、欧洲稳定版 V12.0.6.0.QCDEUXM、俄罗斯版 V12.0.1.0.QCDRUXM、俄罗斯版 V12.0.3.0.QCDRUXM、印度版 V12.0.3.0.QCDINXM、印度版 V12.0.4.0.QCDINXM、印尼稳定版 V12.0.1.0.QCDIDXM、印尼稳定版 V12.0.2.0.QCDIDXM</li>
+						<li>Redmi 9C：国际版 V12.0.4.0.QCRMIXM、国际版 V12.0.5.0.QCRMIXM、欧洲稳定版 V12.0.3.0.QCREUXM、欧洲稳定版 V12.0.4.0.QCREUXM、印尼稳定版 V12.0.1.0.QCRIDXM、印尼稳定版 V12.0.2.0.QCRIDXM</li>
+						<li>Redmi 9C NFC：国际版 V12.0.2.0.QCSMIXM、欧洲稳定版 V12.0.3.0.QCSEUXM、俄罗斯版 V12.0.3.0.QCSRUXM</li>
+						<li>Redmi 10X 4G：V11.0.4.0.QJOCNXM、V11.0.6.0.QJOCNXM、V12.0.1.0.QJOCNXM、V12.0.3.0.QJOCNXM、V12.0.4.0.QJOCNXM、V12.0.5.0.QJOCNXM</li>
+						<li>Redmi 10X 5G：V11.0.2.0.QJHCNXM、V11.0.4.0.QJHCNXM、V11.0.5.0.QJHCNXM、V11.0.6.0.QJHCNXM、V12.0.2.0.QJHCNXM、V12.0.4.0.QJHCNXM</li>
+						<li>Redmi 10X Pro：V11.0.1.0.QJLCNXM、V11.0.2.0.QJLCNXM、V11.0.3.0.QJLCNXM、V11.0.5.0.QJLCNXM、V12.0.2.0.QJLCNXM、V12.0.5.0.QJLCNXM</li>
+						<li>Redmi Note 7：V11.0.1.0.QFGCNXM、V11.0.2.0.QFGCNXM、V12.0.1.0.QFGCNXM、国际版 V11.0.1.0.QFGMIXM、欧洲稳定版 V11.0.1.0.QFGEUXM、俄罗斯版 V11.0.1.0.QFGRUXM、印度版 V11.0.2.0.QFGINXM、印度版 V11.0.4.0.QFGINXM、印度版 V11.0.5.0.QFGINXM</li>
+						<li>Redmi Note 7 Pro：V11.0.1.0.QFHCNXM、V12.0.2.0.QFHCNXM、印度版 V11.0.10.0.PFHINXM、印度版 V11.0.2.0.QFHINXM</li>
+						<li>Redmi Note 8：V11.0.7.0.PCOCNXM、国际版 V11.0.9.0.PCOMIXM、国际版 V11.0.10.0.PCOMIXM、国际版 V11.0.11.0.PCOMIXM、印度版 V11.0.5.0.PCOINXM、印度版 V11.0.6.0.PCOINXM、印尼稳定版 V11.0.5.0.PCOIDXM、印尼稳定版 V11.0.6.0.PCOIDXM</li>
+						<li>Redmi Note 8T：国际版 V11.0.4.0.PCXMIXM、国际版 V11.0.5.0.PCXMIXM、欧洲稳定版 V11.0.9.0.PCXEUXM、欧洲稳定版 V11.0.10.0.PCXEUXM、欧洲稳定版 V11.0.11.0.PCXEUXM、俄罗斯版 V11.0.4.0.PCXRUXM、俄罗斯版 V11.0.5.0.PCXRUXM</li>
+						<li>Redmi Note 8 Pro：V11.0.1.0.QGGCNXM、V11.0.2.0.QGGCNXM、V11.0.3.0.QGGCNXM、V12.0.2.0.QGGCNXM、V12.0.4.0.QGGCNXM、国际版 V11.0.1.0.QGGMIXM、国际版 V11.0.4.0.QGGMIXM、国际版 V11.0.5.0.QGGMIXM、国际版 V12.0.0.4.QGGMIXM、国际版 V12.0.2.0.QGGMIXM、国际版 V12.0.3.0.QGGMIXM、欧洲稳定版 V11.0.2.0.QGGEUXM、欧洲稳定版 V11.0.3.0.QGGEUXM、欧洲稳定版 V12.0.1.0.QGGEUXM、俄罗斯版 V11.0.2.0.QGGRUXM、俄罗斯版 V11.0.3.0.QGGRUXM、印度版 V11.0.2.0.QGGINXM、印度版 V11.0.3.0.QGGINXM、印度版 V11.0.4.0.QGGINXM、印度版 V12.0.1.0.QGGINXM、印尼稳定版 V11.0.1.0.QGGIDXM、印尼稳定版 V11.0.2.0.QGGIDXM、印尼稳定版 V12.0.1.0.QGGIDXM</li>
+						<li>Redmi Note 9：国际版 V11.0.4.0.QJOMIXM、国际版 V11.0.5.0.QJOMIXM、国际版 V12.0.2.0.QJOMIXM、国际版 V12.0.3.0.QJOMIXM、国际版 V12.0.4.0.QJOMIXM、欧洲稳定版 V11.0.4.0.QJOEUXM、欧洲稳定版 V11.0.5.0.QJOEUXM、欧洲稳定版 V12.0.1.0.QJOEUXM、欧洲稳定版 V12.0.2.0.QJOEUXM、欧洲稳定版 V12.0.3.0.QJOEUXM、俄罗斯版 V11.0.2.0.QJORUXM、俄罗斯版 V11.0.3.0.QJORUXM、俄罗斯版 V12.0.1.0.QJORUXM、印度版 V11.0.2.0.QJOINXM、印度版 V11.0.3.0.QJOINXM、印度版 V11.0.5.0.QJOINXM、印度版 V12.0.1.0.QJOINXM、印度版 V12.0.2.0.QJOINXM、印度版 V12.0.4.0.QJOINXM、印尼稳定版 V11.0.1.0.QJOIDXM、印尼稳定版 V11.0.2.0.QJOIDXM、印尼稳定版 V12.0.1.0.QJOIDXM、土耳其版 V11.0.2.0.QJOTRXM、土耳其版 V11.0.3.0.QJOTRXM、土耳其版 V12.0.1.0.QJOTRXM</li>
+						<li>Redmi Note 9S：国际版 V11.0.9.0.QJWMIXM、国际版 V11.0.10.0.QJWMIXM、国际版 V11.0.11.0.QJWMIXM、欧洲稳定版 V11.0.3.0.QJWEUXM、欧洲稳定版 V11.0.4.0.QJWEUXM、俄罗斯版 V11.0.3.0.QJWRUXM、印度版 V11.0.7.0.QJWINXM、印度版 V11.0.8.0.QJWINXM、印度版 V11.0.8.0.QJWINXM、土耳其版 V11.0.2.0.QJWTRXM、土耳其版 V11.0.6.0.QJWTRXM、土耳其版 V12.0.1.0.QJWTRXM</li>
+						<li>Redmi Note 9 Pro 国际版：国际版 V11.0.2.0.QJZMIXM、国际版 V11.0.4.0.QJZMIXM、国际版 V11.0.5.0.QJZMIXM、国际版 V11.0.7.0.QJZMIXM、欧洲稳定版 V11.0.3.0.QJZEUXM、欧洲稳定版 V11.0.4.0.QJZEUXM、俄罗斯版 V11.0.1.0.QJZRUXM、俄罗斯版 V11.0.2.0.QJZRUXM、俄罗斯版 V11.0.3.0.QJZRUXM、印尼稳定版 V11.0.2.0.QJZIDXM、印尼稳定版 V11.0.3.0.QJZIDXM、土耳其版 V11.0.1.0.QJZTRXM、土耳其版 V11.0.2.0.QJZTRXM</li>
+						<li>Redmi Note 9 Pro 国际版 Max：印度版 V11.0.4.0.QJXINXM</li>
+						<li>Redmi K20：V12.0.2.0.QFJCNXM、V12.0.3.0.QFJCNXM、V12.0.4.0.QFJCNXM、国际版 V11.0.6.0.QFJMIXM、国际版 V12.0.0.11.QFJMIXM、国际版 V12.0.1.0.QFJMIXM、国际版 V12.0.2.0.QFJMIXM、国际版 V12.0.3.0.QFJMIXM、欧洲稳定版 V11.0.6.0.QFJEUXM、欧洲稳定版 V12.0.2.0.QFJEUXM、俄罗斯版 V12.0.1.0.QFJRUXM、印度版 V11.0.4.0.QFJINXM、印度版 V12.0.1.0.QFJINXM、印度版 V12.0.2.0.QFJINXM、印度版 V12.0.3.0.QFJINXM</li>
+						<li>Redmi K20Pro：V12.0.1.0.QFKCNXM、V12.0.2.0.QFKCNXM、V12.0.3.0.QFKCNXM、国际版 V12.0.0.8.QFKMIXM、国际版 V12.0.1.0.QFKMIXM、国际版 V12.0.2.0.QFKMIXM、欧洲稳定版 V12.0.1.0.QFKEUXM、欧洲稳定版 V12.0.2.0.QFKEUXM、俄罗斯版 V11.0.3.0.QFKRUXM、俄罗斯版 V12.0.2.0.QFKRUXM、俄罗斯版 V12.0.1.0.QFKRUXM、印度版 V11.0.6.0.QFKINXM、印度版 V12.0.0.9.QFKINXM、印度版 V12.0.1.0.QFKINXM、印度版 V12.0.2.0.QFKINXM、印度版 V12.0.3.0.QFKINXM</li>
+						<li>Redmi K30 4G：V12.0.2.0.QGHCNXM、V12.0.3.0.QGHCNXM、V12.0.4.0.QGHCNXM、印度版 V11.0.10.0.QGHINXM、印度版 V11.0.11.0.QGHINXM、印度版 V12.0.1.0.QGHINXM</li>
+						<li>Redmi K30 5G：V12.0.1.0.QGICNXM、V12.0.2.0.QGICNXM、V12.0.5.0.QGICNXM</li>
+						<li>Redmi K30i 5G：V11.1.27.0.QGICMXM、V12.0.3.0.QGICMXM</li>
+						<li>Redmi K30 Pro：V11.0.19.0.QJKCNXM、V12.0.1.0.QJKCNXM、V12.0.2.0.QJKCNXM、V12.0.5.0.QJKCNXM、V12.0.8.0.QJKCNXM、V12.0.9.0.QJKCNXM、国际版 V11.0.2.0.QJKMIXM、国际版 V12.0.1.0.QJKMIXM、国际版 V12.0.3.0.QJKMIXM、国际版 V12.0.4.0.QJKMIXM、欧洲稳定版 V12.0.1.0.QJKEUXM、欧洲稳定版 V12.0.2.0.QJKEUXM、俄罗斯版 V12.0.1.0.QJKRUXM、俄罗斯版 V12.0.3.0.QJKRUXM、印尼稳定版 V12.0.1.0.QJKIDXM、印尼稳定版 V12.0.2.0.QJKIDXM、印尼稳定版 V12.0.4.0.QJKIDXM</li>
+						<li>Redmi K30 至尊纪念版：V12.0.8.0.QJNCNXM、V12.0.11.0.QJNCNXM</li>
+						<li>红米S2：V12.0.4.0.PEFCNXM</li>
+						<li>红米Y3：印度版 V11.0.10.0.PFFINXM</li>
+						<li>Redmi Go：国际版 V10.2.15.0.OCLMIXM、国际版 V10.2.16.0.OCLMIXM、国际版 V10.2.17.0.OCLMIXM、国际版 V10.2.18.0.OCLMIXM、国际版 V10.2.19.0.OCLMIXM、国际版 V10.2.20.0.OCLMIXM、欧洲稳定版 V10.2.10.0.OCLEUXM、欧洲稳定版 V10.2.11.0.OCLEUXM、欧洲稳定版 V10.2.12.0.OCLEUXM、欧洲稳定版 V10.2.13.0.OCLEUXM、欧洲稳定版 V10.2.14.0.OCLEUXM、欧洲稳定版 V10.2.15.0.OCLEUXM、欧洲稳定版 V10.2.16.0.OCLEUXM、俄罗斯版 V10.2.11.0.OCLRUXM、俄罗斯版 V10.2.12.0.OCLRUXM、俄罗斯版 V10.2.13.0.OCLRUXM、俄罗斯版 V10.2.14.0.OCLRUXM、俄罗斯版 V10.2.15.0.OCLRUXM、印度版 V10.2.8.0.OCLINXM、印度版 V10.2.9.0.OCLINXM、印度版 V10.2.10.0.OCLINXM、印度版 V10.2.11.0.OCLINXM、印度版 V10.2.12.0.OCLINXM、印度版 V10.2.13.0.OCLINXM、印度版 V10.2.14.0.OCLINXM、印度版 V10.2.15.0.OCLINXM、印度版 V10.2.16.0.OCLINXM</li>
+						<p>共计552条卡刷包，430条线刷包数据</p>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.5.23日收录:</p>
+					<ol>
+						<li>小米6X V11.0.6.0.PDCCNXM</li>
+						<li>小米8屏幕指纹版 国际版 V11.0.5.0.QECMIXM</li>
+						<li>红米6 俄罗斯版 V11.0.3.0.PCGRUXM</li>
+						<li>红米6A 俄罗斯版 V11.0.3.0.PCBRUXM</li>
+						<li>红米6Pro 印度版 V11.0.7.0.PDMMIXM</li>
+						<li>红米Note 6 Pro 国际版 V11.0.4.0.PEKMIXM</li>
+						<li>Redmi Note 7 国际版 V11.0.6.0.PFGMIXM</li>
+						<li>Redmi Note 7 欧洲稳定版 V11.0.8.0.PFGEUXM</li>
+						<li>Redmi Note 7 俄罗斯版 V11.0.9.0.PFGRUXM</li>
+						<li>Redmi Note 9S 国际版 V11.0.8.0.QJWMIXM</li>
+						<li>Redmi K20 俄罗斯版 V11.0.5.0.QFJRUXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.5.22日收录:</p>
+					<ol>
+						<li>小米8青春版 V11.0.2.0.QDTCNXM</li>
+						<li>小米CC9 Pro V11.1.2.0.QFDCNXM</li>
+						<li>小米Max3 V11.0.2.0.QEDCNXM</li>
+						<li>小米Max3 V11.0.4.0.QEDCNXM</li>
+						<li>Redmi Note 9 V11.0.3.0.QJOCNXM</li>
+						<li>Redmi K30 5G版 V11.1.25.0.QGICNXM</li>
+						<li>小米10 欧洲稳定版 V11.0.13.0.QJBEUXM</li>
+						<li>小米10 Pro 欧洲稳定版 V11.0.10.0.QJAEUXM</li>
+						<li>小米Note 10 Lite 欧洲稳定版 V11.0.7.0.QFNEUXM</li>
+						<li>小米MIX3 俄罗斯版 V11.0.3.0.QEERUXM</li>
+						<li>POCO F1 国际版 V11.0.8.0.QEJMIXM</li>
+						<li>红米6A 国际版 V11.0.8.0.PCBMIXM</li>
+						<li>Redmi 7A 印度版 V11.0.5.0.PCMINXM</li>
+						<li>Redmi Y3 印度版 V11.0.9.0.PFFINXM</li>
+						<li>Redmi Note 7 Pro 印度版 V11.0.9.0.PFHINXM</li>
+						<li>Redmi Note 9 国际版 V11.0.2.0.QJOMIXM</li>
+						<li>Redmi Note 9 欧洲稳定版 V11.0.3.0.QJOEUXM</li>
+						<li>Redmi Note 9 印尼稳定版 V11.0.1.0.QJOIDXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.5.18日收录:</p>
+					<ol>
+						<li>小米9SE V11.0.3.0.QFBCNXM</li>
+						<li>小米10 Pro V11.0.17.0.QJACNXM</li>
+						<li>小米 10 青春版 V11.0.6.0.QJVCNXM</li>
+						<li>红米6 V11.0.4.0.PCGCNXM</li>
+						<li>Redmi 7 V11.0.4.0.PFLCNXM</li>
+						<li>Redmi K30 5G版 V11.1.23.0.QGICNXM</li>
+						<li>小米9 国际版 V11.0.6.0.QFAMIXM</li>
+						<li>小米9 欧洲稳定版 V11.0.9.0.QFAEUXM</li>
+						<li>小米10 国际版 V11.0.2.0.QJBMIXM</li>
+						<li>小米10 印度版 V11.0.4.0.QJBINXM</li>
+						<li>小米MIX 3 俄罗斯版 V11.0.2.0.QEERUXM</li>
+						<li>Redmi 7 印度版 V11.0.6.0.PFLINXM</li>
+						<li>Redmi 7A 俄罗斯版 V11.0.6.0.PCMRUXM</li>
+						<li>Redmi 8A Dual 印尼稳定版 V11.0.3.0.PCQIDXM</li>
+						<li>Redmi Note 8 印尼稳定版 V11.0.4.0.PCOIDXM</li>
+						<li>Redmi Note 8T 俄罗斯版 V11.0.3.0.PCXRUXM</li>
+						<li>Redmi Note 9S 印度版 V11.0.5.0.QJWINXM</li>
+						<li>Redmi Note 9S 印度版 V11.0.6.0.QJWINXM</li>
+						<li>Redmi K20 Pro 国际版 V11.0.4.0.QFKMIXM</li>
+						<li>Redmi K20 Pro 欧洲稳定版 V11.0.6.0.QFKEUXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.5.12日收录:</p>
+					<ol>
+						<li>小米 Note 10 Lite 国际版 V11.0.1.0.QFNMIXM</li>
+						<li>小米 Note 10 Lite 欧洲稳定版 V11.0.3.0.QFNEUXM</li>
+						<li>小米 Note 10 Lite 俄罗斯版 V11.0.1.0.QFNRUXM</li>
+						<li>POCO F2 Pro 欧洲稳定版 V11.0.6.0.QJKEUXM</li>
+						<li>Redmi Note9 欧洲稳定版 V11.0.2.0.QJOEUXM</li>
+						<li>Redmi Note 9 Pro 国际版 国际版 V11.0.1.0.QJZMIXM</li>
+						<li>Redmi Note 9 Pro 国际版 印尼稳定版 V11.0.1.0.QJZIDXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.5.8日收录:</p>
+					<ol>
+						<li>小米6 V11.0.5.0.PCACNXM</li>
+						<li>小米8 V11.0.7.0.QEACNXM</li>
+						<li>小米CC9 V11.0.3.0.QFCCNXM</li>
+						<li>小米CC9美图定制版 V11.0.3.0.QFECNXM</li>
+						<li>小米10 V11.0.24.0.QJBCNXM</li>
+						<li>小米MIX2S V11.0.3.0.QDGCNXM</li>
+						<li>小米Note10 俄罗斯版 V11.0.8.0.PFDRUXM</li>
+						<li>小米POCOPHONE F1 俄罗斯版 V11.0.2.0.QEJRUXM</li>
+						<li>Redmi Note 9S 国际版 V11.0.7.0.QJWMIXM</li>
+						<li>Redmi Note 9S 俄罗斯版 V11.0.2.0.QJWRUXM</li>
+						<li>Redmi Note 9 Pro 国际版 Max 印度版 V11.0.2.0.QJXINXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.5.3日收录:</p>
+					<ol>
+						<li>小米CC9 Pro V11.1.1.0.QFDCNXM</li>
+						<li>Redmi K30 Pro V11.0.14.0.QJKCNXM</li>
+						<li>Redmi K30 Pro V11.0.16.0.QJKCNXM</li>
+						<li>Redmi Note 9S 欧洲稳定版 V11.0.2.0.QJWEUXM</li>
+						<li>Redmi Note 9 Pro 国际版 欧洲稳定版 V11.0.1.0.QJZEUXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.4.28日收录:</p>
+					<ol>
+						<li>Redmi K30 4G版 V11.0.14.0.QGHCNXM</li>
+						<li>Redmi K30 4G版 V11.0.15.0.QGHCNXM</li>
+						<li>Redmi K30 5G版 V11.1.20.0.QGICNXM</li>
+						<li>小米8 国际版 V11.0.4.0.QEAMIXM</li>
+						<li>Redmi 8A 印尼稳定版 V11.0.4.0.PCPIDXM</li>
+						<li>Redmi 8A 欧洲稳定版 V11.0.3.0.PCPEUXM</li>
+						<li>Redmi 8A 欧洲稳定版 V11.0.4.0.PCPEUXM</li>
+						<li>Redmi 8A Dual 印度版 V11.0.6.0.PCQINXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.4.24日收录:</p>
+					<ol>
+						<li>小米8透明探索版 V11.0.3.0.QEHCNXM</li>
+						<li>小米CC9 Pro V11.0.9.0.PFDCNXM</li>
+						<li>Redmi K20 V11.0.6.0.QFJCNXM</li>
+						<li>小米POCOPHONE X2 印度版 V11.0.6.0.QGHINXM</li>
+						<li>小米POCOPHONE X2 印度版 V11.0.7.0.QGHINXM</li>
+						<li>Redmi Note 9S 国际版 V11.0.5.0.QJWMIXM</li>
+						<li>Redmi Note 9S 国际版 V11.0.6.0.QJWMIXM</li>
+						<li>Redmi K20 国际版 V11.0.5.0.QFJMIXM</li>
+						<li>Redmi K20 欧洲稳定版 V11.0.5.0.QFJEUXM</li>
+						<li>Redmi K20 印度版 V11.0.3.0.QFJINXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.4.21日收录:</p>
+					<ol>
+						<li>小米9 V11.0.7.0.QFACNXM</li>
+						<li>小米9 V11.0.9.0.QFACNXM</li>
+						<li>Redmi 7A V11.0.6.0.PCMCNXM</li>
+						<li>小米Note 10 国际版 V11.0.9.0.PFDMIXM</li>
+						<li>Redmi 7A 国际版 V11.0.7.0.PCMMIXM</li>
+						<li>Redmi 8A 俄罗斯版 V11.0.3.0.PCPRUXM</li>
+						<li>Redmi 8A 俄罗斯版 V11.0.4.0.PCPRUXM</li>
+						<li>Redmi Note 9S 欧洲稳定版 V11.0.1.0.QJWEUXM</li>
+						<li>Redmi Note 9S 俄罗斯版 V11.0.1.0.QJWRUXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.4.17日收录:</p>
+					<ol>
+						<li>小米8屏幕指纹版 V11.0.2.0.QECCNXM</li>
+						<li>小米Play V11.0.6.0.OFICNXM</li>
+						<li>Redmi K20 Pro V11.0.8.0.QFKCNXM</li>
+						<li>Redmi K30 5G版 V11.1.19.0.QGICNXM</li>
+						<li>小米10 欧洲稳定版 V11.0.9.0.QJBEUXM</li>
+						<li>小米10 Pro 欧洲稳定版 V11.0.7.0.QJAEUXM</li>
+						<li>小米MIX 2S 国际版 V11.0.4.0.QDGMIXM</li>
+						<li>Redmi 7A 欧洲稳定版 V11.0.18.0.PCMEUXM</li>
+						<li>Redmi 8 国际版 V11.0.10.0.PCNMIXM</li>
+						<li>Redmi 8 欧洲稳定版 V11.0.6.0.PCNEUXM</li>
+						<li>Redmi 8 印度版 V11.0.10.0.PCNINXM</li>
+						<li>Redmi 8A 国际版 V11.0.5.0.PCPMIXM</li>
+						<li>Redmi 8A 国际版 V11.0.6.0.PCPMIXM</li>
+						<li>Redmi 8A 印度版 V11.0.5.0.PCPINXM</li>
+						<li>Redmi 8A 印度版 V11.0.7.0.PCPINXM</li>
+						<li>Redmi 8A 印度版 V11.0.8.0.PCPINXM</li>
+						<li>Redmi Note 9 Pro 国际版/Redmi Note 9S 国际版 V11.0.1.0.QJWMIXM</li>
+						<li>Redmi Note 9 Pro 国际版/Redmi Note 9S 国际版 V11.0.3.0.QJWMIXM</li>
+						<li>Redmi Note 9 Pro 国际版 Max 印度版 V11.0.1.0.QJXINXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.4.9日收录:</p>
+					<ol>
+						<li>小米10 V11.0.17.0.QJBCNXM</li>
+						<li>小米10 V11.0.20.0.QJBCNXM</li>
+						<li>Redmi 8 V11.0.10.0.PCNCNXM</li>
+						<li>小米8 青春版 俄罗斯版 V11.0.1.0.QDTRUXM</li>
+						<li>小米CC9 Pro 俄罗斯版 V11.0.7.0.PFDRUXM</li>
+						<li>小米MIX 2S 俄罗斯版 V11.0.1.0.QDGRUXM</li>
+						<li>红米6 国际版 V11.0.3.0.PCGMIXM</li>
+						<li>Redmi 8 俄罗斯版 V11.0.5.0.PCNRUXM</li>
+						<li>Redmi Note8 印度版 V11.0.4.0.PCOINXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.4.6日收录:</p>
+					<ol>
+						<li>Redmi K30 5G版 V11.1.15.0.QGICNXM</li>
+						<li>Redmi K30 5G版 V11.1.18.0.QGICNXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.4.3日收录:</p>
+					<ol>
+						<li>小米6X V11.0.5.0.PDCCNXM</li>
+						<li>小米10 Pro V11.0.16.0.QJACNXM</li>
+						<li>Redmi K30 Pro V11.0.12.0.QJKCNXM</li>
+						<li>小米8 青春版 国际版 V11.0.1.0.QDTMIXM</li>
+						<li>小米CC9 欧洲稳定版 V11.3.9.0.PFCEUXM</li>
+						<li>小米CC9 欧洲稳定版 V11.0.1.0.QFCEUXM</li>
+						<li>小米Max3 俄罗斯版 V11.0.1.0.QEDRUXM</li>
+						<li>Redmi 8 印尼稳定版 V11.0.5.0.PCNIDXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.3.31日收录:</p>
+					<ol>
+						<li>小米8青春版 V11.0.1.0.QDTCNXM</li>
+						<li>红米6A V11.0.5.0.PCBCNXM</li>
+						<li>红米6Pro V11.0.5.0.PDICNXM</li>
+						<li>Redmi 8A V11.0.9.0.PCPCNXM</li>
+						<li>Redmi Note7 V11.0.6.0.PFGCNXM</li>
+						<li>Redmi Note7 V11.0.7.0.PFGCNXM</li>
+						<li>Redmi K20 Pro V11.0.7.0.QFKCNXM</li>
+						<li>小米6 国际版 V11.0.6.0.PCAMIXM</li>
+						<li>小米9SE 国际版 V11.0.2.0.QFBMIXM</li>
+						<li>小米9SE 欧洲稳定版 V11.0.2.0.QFBEUXM</li>
+						<li>小米9SE 俄罗斯版 V11.0.2.0.QFBRUXM</li>
+						<li>小米CC9 国际版 V11.0.1.0.QFCMIXM</li>
+						<li>小米CC9 俄罗斯版 V11.0.1.0.QFCRUXM</li>
+						<li>小米Max3 国际版 V11.0.1.0.QEDMIXM</li>
+						<li>Redmi Note7 欧洲稳定版 V11.0.7.0.PFGEUXM</li>
+						<li>Redmi Note 8 国际版 V11.0.8.0.PCOMIXM</li>
+						<li>Redmi Note 8T 国际版 V11.0.3.0.PCXMIXM</li>
+						<li>Redmi K20 俄罗斯版 V11.0.3.0.QFJRUXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.3.27/28日收录:</p>
+					<ol>
+						<li>Redmi 8A V11.0.8.0.PCPCNXM</li>
+						<li>Redmi Note8 V11.0.6.0.PCOCNXM</li>
+						<li>Redmi K30 Pro V11.0.10.0.QJKCNXM</li>
+						<li>小米CC9 Pro 国际版 V11.0.8.0.PFDMIXM</li>
+						<li>小米CC9 Pro 欧洲稳定版 V11.0.16.0.PFDEUXM</li>
+						<li>小米MIX2 国际版 V11.0.6.0.PDEMIXM</li>
+						<li>红米 6A 国际版 V11.0.7.0.PCBMIXM</li>
+						<li>Redmi 7 国际版 V11.0.5.0.PFLMIXM</li>
+						<li>Redmi 7 欧洲稳定版 V11.0.6.0.PFLEUXM</li>
+						<li>Redmi 7 印度版 V11.0.5.0.PFLINXM</li>
+						<li>Redmi 7 俄罗斯版 V11.0.5.0.PFLRUXM</li>
+						<li>红米 Note 6 Pro 国际版 V11.0.3.0.PEKMIXM</li>
+						<li>Redmi Note7 印度版 V11.0.9.0.PFGINXM</li>
+						<li>Redmi Note7 俄罗斯版 V11.0.6.0.PFGRUXM</li>
+						<li>Redmi Note7 俄罗斯版 V11.0.7.0.PFGRUXM</li>
+						<li>Redmi Note 8T 欧洲稳定版 V11.0.6.0.PCXEUXM</li>
+						<li>Redmi Note 8T 欧洲稳定版 V11.0.7.0.PCXEUXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<div>
+					<p>2020.3.20日收录:</p>
+					<ol>
+						<li>小米Play V11.0.5.0.OFICNXM</li>
+						<li>红米S2 V11.0.3.0.PEFCNXM</li>
+						<li>小米9 俄罗斯版 V11.0.4.0.QFARUXM</li>
+						<li>小米Play 国际版 V11.0.3.0.OFIMIXM</li>
+						<li>小米Play 俄罗斯版 V11.0.3.0.OFIRUXM</li>
+						<li>红米6Pro 印度版 V11.0.6.0.PDMMIXM</li>
+						<li>红米S2 国际版 V11.0.5.0.PEFMIXM</li>
+						<li>红米Y3 印度版 V11.0.8.0.PFFINXM</li>
+						<li>Redmi Note 8 国际版 V11.0.7.0.PCOMIXM</li>
+						<li>Redmi K20 Pro 印度版 V11.0.4.0.QFKINXM</li>
+						<li>Redmi K20 Pro 俄罗斯版 V11.0.2.0.QFKRUXM</li>
+					</ol>
+				</div>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.3.17日收录:</p>
+				<ol>
+					<li>小米CC9 V11.3.4.0.PFCCNXM</li>
+					<li>小米CC9 V11.0.1.0.QFCCNXM</li>
+					<li>小米CC9 美图定制版 V11.3.3.0.PFECNXM</li>
+					<li>小米CC9 美图定制版 V11.0.1.0.QFECNXM</li>
+					<li>小米MIX2 V11.0.5.0.PDECNXM</li>
+					<li>小米MIX3 V11.0.2.0.QEECNXM</li>
+					<li>Redmi 7A V11.0.5.0.PCMCNXM</li>
+					<li>Redmi Note7 Pro V11.0.8.0.PFHCNXM</li>
+					<li>Redmi 7A 印度版 V11.0.4.0.PCMINXM</li>
+					<li>Redmi 8 印度版 V11.0.8.0.PCNINXM</li>
+					<li>Redmi Note7 Pro 印度版 V11.0.8.0.PFHINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.3.17日收录:</p>
+				<ol>
+					<li>小米CC9 V11.3.4.0.PFCCNXM</li>
+					<li>小米CC9 V11.0.1.0.QFCCNXM</li>
+					<li>小米CC9 美图定制版 V11.3.3.0.PFECNXM</li>
+					<li>小米CC9 美图定制版 V11.0.1.0.QFECNXM</li>
+					<li>小米MIX2 V11.0.5.0.PDECNXM</li>
+					<li>小米MIX3 V11.0.2.0.QEECNXM</li>
+					<li>Redmi 7A V11.0.5.0.PCMCNXM</li>
+					<li>Redmi Note7 Pro V11.0.8.0.PFHCNXM</li>
+					<li>Redmi 7A 印度版 V11.0.4.0.PCMINXM</li>
+					<li>Redmi 8 印度版 V11.0.8.0.PCNINXM</li>
+					<li>Redmi Note7 Pro 印度版 V11.0.8.0.PFHINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.3.14日收录:</p>
+				<ol>
+					<li>小米MIX3 国际版 V11.0.3.0.QEEMIXM</li>
+					<li>小米POCOPHONE F1 俄罗斯版 V11.0.1.0.QEJRUXM</li>
+					<li>Redmi 8A Dual 印度版 V11.0.5.0.PCQINXM</li>
+					<li>Redmi Note 9 Pro 国际版 印度版 V11.0.3.0.QJWINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.3.13日收录:</p>
+				<ol>
+					<li>小米10 V11.0.15.0.QJBCNXM</li>
+					<li>小米10 Pro V11.0.13.0.QJACNXM</li>
+					<li>小米8屏幕指纹板 国际版 V11.0.3.0.QECMIXM</li>
+					<li>小米POCOPHONE F1 国际版 V11.0.6.0.QEJMIXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.3.10日收录:</p>
+				<ol>
+					<li>小米8 V11.0.5.0.QEACNXM</li>
+					<li>小米8 V11.0.6.0.QEACNXM</li>
+					<li>小米10 Pro V11.0.12.0.QJACNXM</li>
+					<li>Redmi 8 V11.0.8.0.PCNCNXM</li>
+					<li>小米8 俄罗斯版 V11.0.2.0.QEARUXM</li>
+					<li>小米8屏幕指纹板 俄罗斯版 V11.0.1.0.QECRUXM</li>
+					<li>小米9 国际版 V11.0.4.0.QFAMIXM</li>
+					<li>小米9 国际版 V11.0.5.0.QFAMIXM</li>
+					<li>小米9 欧洲稳定版 V11.0.7.0.QFAEUXM</li>
+					<li>小米9 欧洲稳定版 V11.0.8.0.QFAEUXM</li>
+					<li>小米Note3 国际版 V11.0.5.0.PCHMIXM</li>
+					<li>小米MIX 2S 俄罗斯版 V11.0.1.0.PDGRUXM</li>
+					<li>Redmi 8 印尼稳定版 V11.0.4.0.PCNIDXM</li>
+					<li>Redmi Note 8 印度版 V11.0.3.0.PCOINXM</li>
+					<li>Redmi Note 8 印尼稳定版 V11.0.3.0.PCOIDXM</li>
+					<li>Redmi Note 8T 俄罗斯版 V11.0.2.0.PCXRUXM</li>
+					<li>Redmi K20 Pro 国际版 V11.0.3.0.QFKMIXM</li>
+					<li>Redmi K20 Pro 欧洲稳定版 V11.0.5.0.QFKEUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.3.4日收录:</p>
+				<ol>
+					<li>小米10 V11.0.9.0.QJBCNXM</li>
+					<li>小米10 V11.0.10.0.QJBCNXM</li>
+					<li>小米10 Pro V11.0.7.0.QJACNXM</li>
+					<li>小米10 Pro V11.0.8.0.QJACNXM</li>
+					<li>小米Note3 V11.0.4.0.PCHCNXM</li>
+					<li>Redmi K20 V11.0.2.0.QFJCNXM</li>
+					<li>Redmi K20 V11.0.4.0.QFJCNXM</li>
+					<li>Redmi 7A 国际版 V11.0.6.0.PCMMIXM</li>
+					<li>Redmi 7A 欧洲稳定版 V11.0.14.0.PCMEUXM</li>
+					<li>Redmi 7A 俄罗斯版 V11.0.5.0.PCMRUXM</li>
+					<li>Redmi K20 印度版 V11.0.3.0.PFJINXM</li>
+					<li>Redmi K20 印度版 V11.0.2.0.QFJINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.3.3日收录:</p>
+				<ol>
+					<li>小米8SE V11.0.1.0.QEBCNXM</li>
+					<li>小米8SE V11.0.2.0.QEBCNXM</li>
+					<li>小米9SE V11.0.1.0.QFBCNXM</li>
+					<li>小米9SE V11.0.2.0.QFBCNXM</li>
+					<li>小米平板4/Plus V9.6.4.0.ODJCNFD</li>
+					<li>小米8 国际版 V11.0.6.0.PEAMIXM</li>
+					<li>小米8 国际版 V11.0.3.0.QEAMIXM</li>
+					<li>小米CC9 俄罗斯版 V11.3.5.0.PFCRUXM</li>
+					<li>小米CC9 Pro 欧洲稳定版 V11.0.12.0.PFDEUXM</li>
+					<li>小米CC9 Pro 欧洲稳定版 V11.0.13.0.PFDEUXM</li>
+					<li>Redmi 8 国际版 V11.0.7.0.PCNMIXM</li>
+					<li>Redmi 8 欧洲稳定版 V11.0.4.0.PCNEUXM</li>
+					<li>Redmi 8 俄罗斯版 V11.0.4.0.PCNRUXM</li>
+					<li>Redmi 8 印度版 V11.0.7.0.PCNINXM</li>
+					<li>Redmi Note 8T 国际版 V11.0.2.0.PCXMIXM</li>
+					<li>Redmi Note 8T 欧洲稳定版 V11.0.5.0.PCXEUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.2.24/25/26日收录:</p>
+				<ol>
+					<li>Redmi Note 8 V11.0.5.0.PCOCNXM</li>
+					<li>Redmi K30 4G版 V11.0.10.0.QGHCNXM</li>
+					<li>Redmi K30 4G版 V11.0.13.0.QGHCNXM</li>
+					<li>Redmi K30 5G版 V11.0.9.0.QGICNXM</li>
+					<li>Redmi K30 5G版 V11.0.11.0.QGICNXM</li>
+					<li>小米POCOPHONE X2 印度版 V11.0.4.0.QGHINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.2.19日收录:</p>
+				<ol>
+					<li>小米CC9e V11.0.4.0.PFMCNXM</li>
+					<li>小米POCOPHONE F1 国际版 V11.0.4.0.QEJMIXM</li>
+					<li>Redmi Note 7 国际版V11.0.5.0.PFGMIXM</li>
+					<li>Redmi Note8 国际版 V11.0.6.0.PCOMIXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.2.16日收录:</p>
+				<ol>
+					<li>小米MIX2S 国际版 V11.0.3.0.QDGMIXM</li>
+					<li>Redmi 8 印度版 V11.0.5.0.PCNINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.2.14日收录:</p>
+				<ol>
+					<li>小米10 V11.0.7.0.QJBCNXM</li>
+					<li>小米10 Pro V11.0.4.0.QJACNXM</li>
+					<li>Redmi 8 V11.0.7.0.PCNCNXM</li>
+					<li>Redmi 8A V11.0.4.0.PCPCNXM</li>
+					<li>Redmi 8A V11.0.7.0.PCPCNXM</li>
+					<li>Redmi K20 国际版 V11.0.4.0.QFJMIXM</li>
+					<li>Redmi K20 欧洲稳定版 V11.0.4.0.QFJEUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.2.13日收录:</p>
+				<ol>
+					<li>小米10 V11.0.5.0.QJBCNXM</li>
+					<li>小米10 Pro V11.0.2.0.QJACNXM</li>
+					<li>小米MIX3 5G版 欧洲稳定版 V10.3.23.0.PEMEUXM</li>
+					<li>Redmi 8 国际版 V11.0.6.0.PCNMIXM</li>
+					<li>Redmi Note8 Pro 国际版 V11.0.6.0.PGGMIXM</li>
+					<li>Redmi Note8 Pro 俄罗斯版 V11.0.3.0.PGGRUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.1.22日收录:</p>
+				<ol>
+					<li>小米5C V11.0.3.0.NCJCNXM</li>
+					<li>小米8 屏幕指纹版 V11.0.1.0.QECCNXM</li>
+					<li>小米8 透明探索版 V11.0.2.0.QEHCNXM</li>
+					<li>小米CC9 Pro V11.0.7.0.PFDCNXM</li>
+					<li>小米MIX2S V11.0.1.0.QDGCNXM</li>
+					<li>红米6 Pro V11.0.4.0.PDICNXM</li>
+					<li>Redmi 7A V11.0.3.0.PFLCNXM</li>
+					<li>红米S2 V11.0.2.0.PEFCNXM</li>
+					<li>Redmi K30 5G V11.0.7.0.QGICNXM</li>
+					<li>小米8青春版 国际版 V11.0.8.0.PDTMIXM</li>
+					<li>小米8青春版 俄罗斯版 V11.0.7.0.PDTRUXM</li>
+					<li>小米9SE 国际版 V11.0.6.0.PFBMIXM</li>
+					<li>小米9SE 欧洲稳定版 V11.0.6.0.PFBEUXM</li>
+					<li>小米CC9 Pro 国际版 V11.0.7.0.PFDMIXM</li>
+					<li>小米CC9 Pro 俄罗斯版 V11.0.6.0.PFDRUXM</li>
+					<li>小米Max3 国际版 V11.0.7.0.PEDMIXM</li>
+					<li>小米Max3 俄罗斯版 V11.0.7.0.PEDRUXM</li>
+					<li>红米5 国际版 V11.0.2.0.ODAMIXM</li>
+					<li>红米6 国际版 V11.0.2.0.PCGMIXM</li>
+					<li>红米6A 国际版 V11.0.5.0.PCBMIXM</li>
+					<li>Redmi 7 国际版 V11.0.3.0.PFLMIXM</li>
+					<li>Redmi 7 俄罗斯版 V11.0.3.0.PFLRUXM</li>
+					<li>Redmi 8 国际版 V11.0.4.0.PCNMIXM</li>
+					<li>Redmi 8 印度版 V11.0.4.0.PCNINXM</li>
+					<li>红米S2 国际版 V11.0.3.0.PEFMIXM</li>
+					<li>Redmi Note8 国际版 V11.0.4.0.PCOMIXM</li>
+					<li>Redmi Note8T 国际版 V11.0.1.0.PCXMIXM</li>
+					<li>Redmi Note8T 俄罗斯版 V11.0.1.0.PCXRUXM</li>
+					<li>Redmi Note8 Pro 印度版 V11.0.4.0.PGGINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.1.10日收录:</p>
+				<ol>
+					<li>小米9 国际版 V11.0.3.0.QFAMIXM</li>
+					<li>小米9 欧洲稳定版 V11.0.6.0.QFAEUXM</li>
+					<li>小米9SE 俄罗斯版 V11.0.6.0.PFBRUXM</li>
+					<li>小米CC9 V11.3.3.0.PFCCNXM</li>
+					<li>小米MIX3 V11.0.1.0.QEECNXM</li>
+					<li>小米Play 俄罗斯版 V11.0.2.0.OFIRUXM</li>
+					<li>Redmi 7 印度版 V11.0.3.0.PFLINXM</li>
+					<li>Redmi 7A V11.0.2.0.PCMCNXM</li>
+					<li>Redmi 7A 印度版 V11.0.2.0.PCMINXM</li>
+					<li>Redmi 8 印尼稳定版 V11.0.3.0.PCNIDXM</li>
+					<li>Redmi 8A 印尼稳定版 V11.0.2.0.PCPIDXM</li>
+					<li>红米Note6 Pro 欧洲稳定版 V11.0.3.0.PCXEUXM</li>
+					<li>Redmi Note8 V11.0.4.0.PCOCNXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2020.1.2日收录:</p>
+				<ol>
+					<li>小米CC9e V11.0.3.0.PFMCNXM</li>
+					<li>小米Note3 V11.0.3.0.PCHCNXM</li>
+					<li>小米Note3 国际版 V11.0.4.0.PCHMIXM</li>
+					<li>小米Play 国际版 V11.0.2.0.OFIMIXM</li>
+					<li>红米5 V11.0.4.0.ODACNXM</li>
+					<li>红米5A V11.0.6.0.OCKCNXM</li>
+					<li>红米6 Pro 印度版 V11.0.5.0.PDMMIXM</li>
+					<li>Redmi 7A 俄罗斯版 V11.0.4.0.PCMRUXM</li>
+					<li>Redmi 8 国际版 V11.0.1.0.PCNMIXM</li>
+					<li>Redmi 8 国际版 V11.0.3.0.PCNMIXM</li>
+					<li>Redmi 8 欧洲稳定版 V11.0.2.0.PCNEUXM</li>
+					<li>Redmi 8 俄罗斯版 V11.0.2.0.PCNRUXM</li>
+					<li>Redmi 8A 国际版 V11.0.3.0.PCPMIXM</li>
+					<li>Redmi 8A 俄罗斯版 V11.0.2.0.PCPRUXM</li>
+					<li>红米Y3 印度版 V11.0.4.0.PFFINXM</li>
+					<li>红米Note6 Pro 国际版V11.0.2.0.PEKMIXM</li>
+					<li>Redmi Note7 Pro 印度版 V11.0.6.0.PFHINXM</li>
+					<li>Redmi Note8 Pro 欧洲稳定版 V11.0.3.0.PGGEUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.25日收录:</p>
+				<ol>
+					<li>小米8 青春版 V11.0.4.0.PDTCNXM</li>
+					<li>小米8 青春版 国际版 V11.0.7.0.PDTMIXM</li>
+					<li>小米8 青春版 俄罗斯版 V11.0.6.0.PDTRUXM</li>
+					<li>Redmi 7 欧洲稳定版 V11.0.4.0.PFLEUXM</li>
+					<li>Redmi 7A 欧洲稳定版 V11.0.13.0.PCMEUXM</li>
+					<li>Redmi 8A 欧洲稳定版 V11.0.2.0.PCPEUXM</li>
+					<li>Redmi Note8T 欧洲稳定版 V11.0.2.0.PCXEUXM</li>
+					<li>Redmi Note8 Pro 印尼稳定版 V11.0.2.0.PGGIDXM</li>
+					<li>Redmi K20 Pro V11.0.5.0.QFKCNXM</li>
+					<li>Redmi K20 Pro 印度版 V11.0.3.0.QFKINXM</li>
+					<li>Redmi K30 4G版 V11.0.9.0.QGHCNXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.25日收录:</p>
+				<ol>
+					<li>小米9 V11.0.5.0.QFACNXM</li>
+					<li>Redmi Note8 Pro V11.0.2.0.PGGCNXM</li>
+					<li>Redmi Note8 Pro V11.0.3.0.PGGCNXM</li>
+					<li>小米CC9 欧洲稳定版 V11.3.4.0.PFCEUXM</li>
+					<li>小米CC9 欧洲稳定版 V11.3.5.0.PFCEUXM</li>
+					<li>小米CC9 Pro 欧洲稳定版 V11.0.10.0.PFDEUXM</li>
+					<li>小米CC9 Pro 欧洲稳定版 V11.0.11.0.PFDEUXM</li>
+					<li>红米6A 国际版 V11.0.4.0.PCBMIXM</li>
+					<li>Redmi 7A 国际版 V11.0.5.0.PCMMIXM</li>
+					<li>Redmi 7A 欧洲稳定版 V11.0.6.0.PCMEUXM</li>
+					<li>Redmi Note8 Pro 印度版 V11.0.3.0.PGGINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.18日收录:</p>
+				<ol>
+					<li>小米6X V11.0.3.0.PDCCNXM</li>
+					<li>小米CC9 国际版 V11.3.4.0.PFCMIXM</li>
+					<li>Redmi Note8 印尼稳定版 V11.0.1.0.PCOIDXM</li>
+					<li>Redmi K30 V11.0.5.0.QGHCNXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.16日收录:</p>
+				<ol>
+					<li>Redmi 8 印尼稳定版 V11.0.2.0.PCNIDXM</li>
+					<li>Redmi 8A 印尼稳定版 V11.0.1.0.PCPIDXM</li>
+					<li>Redmi Note8 印度版 V11.0.2.0.PCOINXM</li>
+					<li>Redmi Note8T 国际版 V10.3.1.0.PCXMIXM</li>
+					<li>Redmi Note8T 欧洲稳定版 V10.3.5.0.PCXEUXM</li>
+					<li>Redmi Note8T 俄罗斯版 V10.3.2.0.PCXRUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.11日收录:</p>
+				<ol>
+					<li>小米CC9 美图定制版 V11.3.2.0.PFECNXM</li>
+					<li>小米CC9 Pro 国际版 V11.0.5.0.PFDMIXM</li>
+					<li>小米CC9 Pro 欧洲稳定版 V11.0.9.0.PFDEUXM</li>
+					<li>小米CC9 Pro 俄罗斯版 V11.0.3.0.PFDRUXM</li>
+					<li>Redmi 8 V11.0.3.0.PCNCNXM</li>
+					<li>Redmi Note8 Pro 国际版 V11.0.2.0.PGGMIXM</li>
+					<li>Redmi Note8 Pro 欧洲稳定版 V11.0.1.0.PGGEUXM</li>
+					<li>Redmi Note8 Pro 欧洲稳定版 V11.0.2.0.PGGEUXM</li>
+					<li>Redmi K30 4G版 V11.0.4.0.QGHCNXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.7日收录:</p>
+				<ol>
+					<li>小米CC9 Pro V11.0.4.0.PFDCNXM</li>
+					<li>小米CC9 Pro V11.0.5.0.PFDCNXM</li>
+					<li>小米CC9 俄罗斯版 V11.3.3.0.PFCRUXM</li>
+					<li>红米6 国际版 V11.0.1.0.PCGMIXM</li>
+					<li>红米6A 国际版 V11.0.4.0.PCBMIXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.6日收录:</p>
+				<ol>
+					<li>小米9 Pro 5G V11.0.3.0.PFXCNXM</li>
+					<li>小米Max3 V11.0.3.0.PEDCNXM</li>
+					<li>红米5 Plus V11.0.3.0.OEGCNXM</li>
+					<li>Redmi 8 俄罗斯版 V11.0.1.0.PCNRUXM</li>
+					<li>Redmi 8A 欧洲稳定版 V11.0.1.0.PCPMIXM</li>
+					<li>Redmi 8A 俄罗斯版 V11.0.1.0.PCPRUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.4日收录:</p>
+				<ol>
+					<li>小米6 国际版 V11.0.3.0.PCAMIXM</li>
+					<li>小米Max3 俄罗斯版 V11.0.6.0.PEDRUXM</li>
+					<li>Redmi K20 Pro 国际版 V11.0.1.0.QFKMIXM</li>
+					<li>Redmi K20 Pro 俄罗斯版 V11.0.1.0.QFKRUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.12.2日收录:</p>
+				<ol>
+					<li>小米5X V11.0.3.0.ODBCNXM</li>
+					<li>小米CC9 Pro 国际版 V11.0.3.0.PFDMIXM</li>
+					<li>小米Max3 国际版 V11.0.6.0.PEDMIXM</li>
+					<li>小米Play V11.0.3.0.OFICNXM</li>
+					<li>红米 Note6 Pro 国际版 V11.0.1.0.PEKMIXM</li>
+					<li>Redmi Note7 V11.0.4.0.PFGCNXM</li>
+					<li>Redmi Note8 印度版 V11.0.1.0.PCOINXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.11.29日收录:</p>
+				<ol>
+					<li>小米9 V11.0.4.0.QFACNXM</li>
+					<li>小米Play 国际版 V11.0.1.0.OFIMIXM</li>
+					<li>Redmi 7 V11.0.2.0.PFLCNXM</li>
+					<li>Redmi 8 欧洲稳定版 V11.0.1.0.PCNEUXM</li>
+					<li>Redmi 8A V11.0.3.0.PCPCNXM</li>
+					<li>Redmi 8A 国际版 V11.0.1.0.PCPMIXM</li>
+					<li>Redmi 8A 印度版 V11.0.3.0.PCPINXM</li>
+					<li>红米Note4X(高通版) V11.0.2.0.NCFCNXM</li>
+					<li>Redmi Note8 V11.0.3.0.PCOCNXM</li>
+					<li>Redmi K20 Pro/尊享版 V11.0.4.0.QFKCNXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.11.5/6日收录:</p>
+				<ol>
+					<li>小米6：V11.0.3.0.PCAMIXM</li>
+					<li>小米8：V11.0.4.0.PEACNXM、V11.0.6.0.PEAMIXM</li>
+					<li>小米9：V11.0.2.0.QFAMIXM、V11.0.5.0.QFAEUXM</li>
+					<li>小米9SE：V11.0.4.0.PFBMIXM、V11.0.4.0.PFBEUXM</li>
+					<li>小米CC9：V11.3.2.0.PFCCNXM</li>
+					<li>小米Play：V11.0.2.0.OFICNXM、V11.0.1.0.OFIMIXM、V11.0.1.0.OFIRUXM</li>
+					<li>小米MIX2：V11.0.3.0.PDEMIXM</li>
+					<li>小米MIX2S：V11.0.4.0.PDGMIXM</li>
+					<li>小米MIX3：V11.0.4.0.PEECNXM</li>
+					<li>Redmi 7：V11.0.2.0.PFLRUXM、V11.0.2.0.PFLINXM、V11.0.3.0.PFLEUXM</li>
+					<li>Redmi 7A：V11.0.1.0.PCMCNXM、V11.0.4.0.PCMMIXM、V11.0.6.0.PCMEUXM、V11.0.3.0.PCMRUXM</li>
+					<li>Redmi 8：V10.3.4.0.PCNMIXM、V10.3.3.0.PCNINXM、V10.3.2.0.PCNEUXM、V10.3.3.0.PCNRUXM</li>
+					<li>Redmi 8A：V10.3.3.0.PCPMIXM、V10.3.3.0.PCPINXM、V10.3.3.0.PCPEUXM、V10.3.3.0.PCPRUXM</li>
+					<li>红米Note 5A标准版：V11.0.2.0.NDFCNXM、V11.0.3.0.NDFMIXM</li>
+					<li>红米Note5A 高配版：V11.0.2.0.NDKMIXM</li>
+					<li>Redmi Note 7 Pro：V11.0.5.0.PFHINXM</li>
+					<li>Redmi Note 8：V10.3.8.0.PCOCNXM、V10.3.5.0.PCOMIXM、V10.3.3.0.PCOINXM</li>
+					<li>Redmi Note 8 Pro：V11.0.1.0.PGGCNXM、V10.4.3.0.PGGRUXM</li>
+					<li>Redmi K20：V11.0.1.0.PFJMIXM</li>
+					<li>Redmi K20 Pro/尊享版：V11.0.3.0.QFKEUXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.11.4日收录:</p>
+				<ol>
+					<li>小米6：V11.0.2.0.PCACNXM</li>
+					<li>小米6X：V11.0.2.0.PDCCNXM</li>
+					<li>小米8透明探索版：V11.0.3.0.PEHCNXM</li>
+					<li>小米8屏幕指纹版：V11.0.3.0.PECCNXM</li>
+					<li>小米9：V11.0.2.0.QFACNXM</li>
+					<li>小米9SE：V11.0.4.0.PFBRUXM</li>
+					<li>小米MIX2：V11.0.2.0.PDECNXM</li>
+					<li>小米MIX2S：V11.0.3.0.PDGCNXM/li&gt; </li>
+					<li>红米6 Pro：V11.0.3.0.PDICNXM</li>
+					<li>红米S2：V11.0.1.0.PEFCNXM</li>
+					<li>红米Note5：V11.0.2.0.PEICNXM</li>
+					<li>Redmi Note 7：V11.0.3.0.PFGCNXM</li>
+					<li>Redmi Note 7 Pro：V11.0.4.0.PFHCNXM</li>
+					<li>Redmi K20 Pro/尊享版：V11.0.2.0.QFKCNXM、V10.3.3.0.PFKRUXM/、V10.3.3.0.PFKMIXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.10.31日收录:</p>
+				<ol>
+					<li>小米6：V11.0.2.0.PCACNXM</li>
+					<li>小米手机8青春版：V11.0.5.0.PDTRUXM</li>
+					<li>小米9：V11.0.2.0.QFACNXM</li>
+					<li>小米CC9：V11.3.2.0.PFCRUXM、V11.3.2.0.PFCMIXM、V11.3.2.0.PFCEUXM</li>
+					<li>小米CC9美图定制版：V11.3.1.0.PFECNXM</li>
+					<li>小米Max3：V11.0.5.0.PEDRUXM</li>
+					<li>小米Note3：V11.0.3.0.PCHMIXM</li>
+					<li>小米MIX2：V11.0.2.0.PDECNXM</li>
+					<li>红米6 Pro：V11.0.3.0.PDICNXM</li>
+					<li>Redmi 7：V11.0.3.0.PFLEUXM</li>
+					<li>红米S2：V11.0.1.0.PEFCNXM</li>
+					<li>Redmi Note 7：V11.0.3.0.PFGCNXM、V11.0.5.0.PFGINXM、V11.0.3.0.PFGMIXM</li>
+					<li>Redmi Note 8 Pro：V10.4.4.0.PGGINXM</li>
+					<li>Redmi K20：V11.0.2.0.PFJEUXM</li>
+					<li>Redmi K20 Pro：V11.0.2.0.QFKCNXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.10.17/18日收录:</p>
+				<ol>
+					<li>小米8：V11.0.3.0.PEACNXM</li>
+					<li>小米8透明探索版：V11.0.2.0.PEHCNXM</li>
+					<li>小米8屏幕指纹版：V11.0.2.0.PECCNXM</li>
+					<li>小米手机8青春版：V11.0.2.0.PDTCNXM</li>
+					<li>小米手机8SE：V11.0.3.0.PEBCNXM</li>
+					<li>小米手机9SE：V11.0.3.0.PFBCNXM</li>
+					<li>小米Max3：V11.0.2.0.PEDCNXM</li>
+					<li>小米MIX2S：V11.0.2.0.PDGCNXM</li>
+					<li>小米MIX3：V11.0.3.0.PEECNXM</li>
+					<li>Redmi 7：V11.0.1.0.PFLCNXM</li>
+					<li>Redmi Note 7 Pro：V11.0.3.0.PFHCNXM</li>
+					<li>Redmi K20：V11.0.3.0.PFJCNXM</li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.10.14日收录:</p>
+				<ol>
+					<li>小米9：V10.2.14.0.PFAMIXM、V10.2.9.0.PFARUXM</li>
+					<li>小米CC9：V10.3.1.0.PFCRUXM、V10.3.6.0.PFCEUXM、V10.3.1.0.PFCMIXM</li>
+					<li>Redmi 7A：V10.2.10.0.PCMINXM、V10.2.14.0.PCMCNXM</li>
+					<li>Redmi Note 8：V10.3.2.0.PCOIDXM、V10.3.1.0.PCOINXM</li>
+					<li>Redmi Note 8 Pro：V10.4.10.0.PGGCNXM、V10.4.1.0.PGGMIXM、V10.4.2.0.PGGIDXM</li>
+					<li>Redmi K20 Pro:V10.3.1.0.PFKRUXM、V10.3.2.0.PFKRUXM、V10.3.1.0.PFKEUXM、V10.3.3.0.PFKEUXM、V10.3.4.0.PFKEUXM、V10.3.3.0.PFKINXM、V10.3.5.0.PFKINXM、V10.3.1.0.PFKMIXM、V10.3.2.0.PFKMIXM </li>
+				</ol>
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>2019.10.01日收录:</p>
+				<ol>
+					<li>Redmi Note 8：V10.3.6.0.PCOCNXM</li>
+					<li>Redmi Note 8 Pro：V10.4.9.0.PGGCNXM</li>
+				</ol>
+			</div>
+		</div>
 	</div>
-		<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;"> 
-			<div class="mdui-container-fluid"> 
-				<div class="mdui-row mdui-footer-nav"> 
-					<div class="mdui-col-xs-3"> 
-						<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3> 
-					</div> 
-					<div class="mdui-col-xs-4"> 
-						<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a> </h3> 
-					</div> 
-					<div class="mdui-col-xs-5"> 
-						<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3> 
-					</div> 
-				</div> 
-				<div class="mdui-divider footer-divider"></div> 
-				<p></p> 
-				<div class="mdui-text-center">
-					 2019 - 2022
-				</div> 
-				<div style=" position:absolute; right:20px;bottom:5px;"> 
-					
-				</div> 
-			</div> 
-		</footer> 
-		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
-	</body>
+	<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height:120px;">
+		<div class="mdui-container-fluid">
+			<div class="mdui-row mdui-footer-nav">
+				<div class="mdui-col-xs-3">
+					<h3><a href="../aboutme.html" target="_blank" style="font-size:15px;">关于我</a></h3>
+				</div>
+				<div class="mdui-col-xs-4">
+					<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size:15px;">我的主页</a> </h3>
+				</div>
+				<div class="mdui-col-xs-5">
+					<h3><a href="https://www.mdui.org" target="_blank" style="font-size:15px;">使用MDUI打造</a></h3>
+				</div>
+			</div>
+			<div class="mdui-divider footer-divider"></div>
+			<p></p>
+			<div class="mdui-text-center">
+				2019 - 2022
+			</div>
+			<div style=" position:absolute; right:20px;bottom:5px;">
+
+			</div>
+		</div>
+	</footer>
+	<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e0818275b9944a59d625e2df596aaca"}'></script>
+</body>
+
 </html>

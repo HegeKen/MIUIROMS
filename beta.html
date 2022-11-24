@@ -1,1739 +1,1758 @@
 <!doctype html>
 <html lang="zh">
-	<head> 
-		<meta charset="UTF-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-		<link href="assets/mdui/css/mdui.min.css" rel="stylesheet"> 
-		<script src="assets/mdui/js/mdui.min.js"></script> 
-		<script src="assets/jquery/jquery.min.js"></script>
-		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
-		<!-- Global site tag (gtag.js) - Google Analytics --> 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
-		<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag() { dataLayer.push(arguments); }
-	  gtag('js', new Date());
-	  gtag('config', 'UA-153213840-1');
-	</script> 
-		<style>
-			td a{
-				text-decoration: none;
-				color:black;
-			}
-		</style> 
-		<title>开发版内测收录站 - MIUI官方ROM仓库</title> 
-	</head> 
-	<body> 
-		<script type="text/javascript">
-		$(document).ready(function () {
-			let height = $(document).width();
-			if (height < "550") {
-				$("td #r").text("卡刷包");
-				$("td #f").text("线刷包");
-			}
-		})
-	</script> 
-		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
-			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
-			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
-			<div class="mdui-toolbar-spacer"></div> 
-			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
-				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='msvalidate.01' content='D0A12F85D732BE57318CA28F52500432'>
+	<meta name='chinaz-site-verification' content='5BDB6F3CEC5D6F6F'>
+	<meta name='google-site-verification' content='1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q'>
+	<link href="https://roms.miuier.com/assets/mdui/css/mdui.min.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/mdui/js/mdui.min.js"></script>
+	<script src="https://roms.miuier.com/assets/jquery/jquery.min.js"></script>
+	<link href="https://roms.miuier.com/assets/miuiroms.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/miuiroms.js"></script>
+	<link href='https://font.sec.miui.com/font/css?family=MiSans:300,450,500,650:Chinese_Simplify,Latin&display=swap' rel='stylesheet'>
+	<link rel='icon' type='image/x-icon' href='https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/favicon.ico'>
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-153213840-1'></script>
+	<script>
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "ecb8j7x9aw");
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-153213840-1');
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<title>开发版内测收录站 - MIUI官方ROM仓库</title>
+</head>
+
+<body>
+	<div class="mdui-toolbar mdui-color-deep-orange-accent">
+		<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button>
+		<span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+		<div class="mdui-toolbar-spacer"></div>
+		<div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+			<ul class="mdui-list" mdui-collapse="{accordion: true}">
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+					<div class="mdui-list-item-content">
+						<a href="index.html">回到首页</a>
+					</div>
+				</li>
+
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+					<div class="mdui-list-item-content">
+						<a href="weekly/index.html">查看日志</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+					<div class="mdui-list-item-content">
+						<a href="devices/index.html">机型列表</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+					<div class="mdui-list-item-content">
+						<a href="tools.html">刷机工具</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">new_releases</i>
+					<div class="mdui-list-item-content">
+						<a href="beta.html">内测版</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">fiber_new</i>
+					<div class="mdui-list-item-content">
+						<a href="bin.html">开发版</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+					<div class="mdui-list-item-content">
+						<a href="thanks.html">衷心感谢</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+					<div class="mdui-list-item-content">
+						<a href="aboutme.html">站点日志</a>
+					</div>
+				</li>
+				<li class="mdui-collapse-item">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons">link</i>
 						<div class="mdui-list-item-content">
-							<a href="index.html">回到首页</a>
-						</div> </li> 
-					
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
-						<div class="mdui-list-item-content">
-							<a href="weekly/index.html">查看日志</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
-						<div class="mdui-list-item-content">
-							<a href="devices/index.html">机型列表</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
-						<div class="mdui-list-item-content">
-							<a href="tools.html">刷机工具</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">new_releases</i> 
-						<div class="mdui-list-item-content">
-							<a href="beta.html">内测版</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">fiber_new</i> 
-						<div class="mdui-list-item-content">
-							<a href="bin.html">开发版</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
-						<div class="mdui-list-item-content">
-							<a href="thanks.html">衷心感谢</a>
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
-						<div class="mdui-list-item-content">
-							<a href="aboutme.html">站点日志</a>
-						</div> </li> 
-					<li class="mdui-collapse-item"> 
-						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
-							<i class="mdui-list-item-icon mdui-icon material-icons">link</i> 
-							<div class="mdui-list-item-content">
-								友情链接
-							</div> 
-							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
-						</div> 
-						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
-<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li> 
-						</ul> </li> 
-				</ul> 
-			</div> 
-		</div> 
-		<div class="mdui-container"> 
-			<div class="mdui-panel mdui-panel-gapless"> 
-				<div class="mdui-panel-item mdui-panel-item-open"> 
-					<div class="mdui-panel-item-header mdui-text-color-red">
-						页面说明
-					</div> 
-					<div class="mdui-panel-item-body"> 
-						<ul> 
-							<li>请不要外传本页面链接!</li> 
-							<li>本页面收录开发版内测链接,能想到最有用的用途就是,某天的内测续航等表现很好,希望保存一下,以供以后养老用;</li> 
-						</ul> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 20.1.8
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8屏幕指纹版(equuleus)</td> 
-												<td>20.1.8</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/20.1.8/miui_MI8UD_20.1.8_3415eac822_10.0.zip" id="r">miui_MI8UD_20.1.8_3415eac822_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>20.1.8</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/20.1.8/miui_MINote3_20.1.8_b10eee0bdf_9.0.zip" id="r">miui_MINote3_20.1.8_b10eee0bdf_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>红米Note 5(whyred)</td> 
-												<td>20.1.8</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/20.1.8/miui_HMNote5_20.1.8_b3ffbf957c_9.0.zip" id="r">miui_HMNote5_20.1.8_b3ffbf957c_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 20.1.7
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>20.1.7</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/20.1.7/miui_MINote3_20.1.7_1f9db31c39_9.0.zip" id="r">miui_MINote3_20.1.7_1f9db31c39_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.31
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.31</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.31/miui_MINote3_9.12.31_cc5f59e0c6_ 9.0.zip" id="r">miui_MINote3_9.12.31_cc5f59e0c6_ 9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 8 Pro(begonia)</td> 
-												<td>9.12.31</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.31/miui_BEGONIA_9.12.31_e872eaeb45_10.0.zip" id="r">miui_BEGONIA_9.12.31_e872eaeb45_10.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.30
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.30</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.30/miui_MINote3_9.12.30_e1f04d6783_9.0.zip" id="r">miui_MINote3_9.12.30_e1f04d6783_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.30
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.12.30</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.30/miui_MI8_9.12.30_49bf28972f_10.0.zip" id="r">miui_MI8_9.12.30_49bf28972f_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.25
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.25</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.25/miui_MINote3_9.12.25_0a02048e0f_9.0.zip" id="r">miui_MINote3_9.12.25_0a02048e0f_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.24
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.12.24</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.24/miui_MI8_9.12.24_7f1a84f8c5_10.0.zip" id="r">miui_MI8_9.12.24_7f1a84f8c5_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.23
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.12.23</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.23/miui_MI8_9.12.23_cf6cae1c0c_10.0.zip" id="r">miui_MI8_9.12.23_cf6cae1c0c_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.23</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.23/miui_MINote3_9.12.23_d76dd8135d_9.0.zip" id="r">miui_MINote3_9.12.16_d76dd8135d_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.18
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>Redmi Note 8 Pro(begonia)</td> 
-												<td>9.12.18</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.18/miui_BEGONIA_9.12.18_be8ecdc0e5_10.0.zip" id="r">miui_BEGONIA_9.12.18_be8ecdc0e5_10.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.17
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8屏幕指纹板(equuleus)</td> 
-												<td>9.12.17</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.17/miui_MI8UD_9.12.17_3bde3e70cd_10.0.zip" id="r">miui_MI8UD_9.12.17_3bde3e70cd_10.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.16
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.16</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.16/miui_MINote3_9.12.16_115ae9562b_9.0.zip" id="r">miui_MINote3_9.12.16_115ae9562b_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>Redmi K30(phoenix)</td> 
-												<td>9.12.16</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.16/miui_PHOENIX_9.12.16_89890fd9db_10.0.zip" id="r">miui_PHOENIX_9.12.16_89890fd9db_10.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.10
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.10</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.10/miui_MINote3_9.12.10_1314e52a28_9.0.zip" id="r">miui_MINote3_9.12.10_1314e52a28_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 8 Pro(begonia)</td> 
-												<td>9.12.10</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.10/miui_BEGONIA_9.12.10_8583f3373d_10.0.zip" id="r">miui_BEGONIA_9.12.10_8583f3373d_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.4
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.12.4</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.4/miui_MI8_9.12.4_ca1ab76379_10.0.zip" id="r">miui_MI8_9.12.4_ca1ab76379_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米8青春版(platina)</td> 
-												<td>9.12.4</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.4/miui_MI8Lite_9.12.4_0b768d6e10_10.0.zip" id="r">miui_MI8Lite_9.12.4_0b768d6e10_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Max 3(nitrogen)</td> 
-												<td>9.12.4</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.4/miui_MIMAX3_9.12.4_f7788a3f9a_10.0.zip" id="r">miui_MIMAX3_9.12.4_f7788a3f9a_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.4</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.4/miui_MINote3_9.12.4_163b81ca8d_9.0.zip" id="r">miui_MINote3_9.12.4_163b81ca8d_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.3
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.12.3</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.3/miui_MI8_9.12.3_98d3844905_10.0.zip" id="r">miui_MI8_9.12.3_98d3844905_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.12.3</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.3/miui_MINote3_9.12.3_1dd1ea303c_9.0.zip" id="r">miui_MINote3_9.12.3_1dd1ea303c_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.12.2
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.12.2</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.2/miui_MI6_9.12.2_f6e92ab715_9.0.zip" id="r">miui_MI6_9.12.2_f6e92ab715_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.12.2</td> 
-												<td>10.0</td> 
-												<td><a href="http://hugeota.d.miui.com/9.12.2/miui_MI8_9.12.2_e4ee2682a9_10.0.zip" id="r">miui_MI8_9.12.2_e4ee2682a9_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米9 Pro 5G(crux)</td> 
-												<td>9.12.2</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.12.2/miui_CRUX_9.12.2_f4a6696237_9.0.zip" id="r">miui_CRUX_9.12.2_f4a6696237_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.27
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.27</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.27/miui_MI6_9.11.27_9ccdda36b9_9.0.zip" id="r">miui_MI6_9.11.27_9ccdda36b9_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.11.27</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.27/miui_MINote3_9.11.27_311c27d84b_9.0.zip" id="r">miui_MINote3_9.11.27_311c27d84b_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>红米6A(cactus)</td> 
-												<td>9.11.27</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.27/miui_HM6A_9.11.27_0a6ed7ecdf_9.0.zip" id="r">miui_HM6A_9.11.27_0a6ed7ecdf_ 9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.26
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.26</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.26/miui_MI6_9.11.26_c9a787455a_9.0.zip" id="r">miui_MI6_9.11.26_c9a787455a_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.26</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.26/miui_MI8_9.11.26_21be356921_10.0.zip" id="r">miui_MI8_9.11.26_21be356921_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米9 Pro 5G(crux)</td> 
-												<td>9.11.26</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.26/miui_CRUX_9.11.26_7ea1c37711_9.0.zip" id="r">miui_CRUX_9.11.26_7ea1c37711_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.11.26</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.26/miui_MINote3_9.11.26_311c27d84b_9.0.zip" id="r">miui_MINote3_9.11.26_311c27d84b_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.25
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.25</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.25/miui_MI6_9.11.25_baec756257_9.0.zip" id="r">miui_MI6_9.11.25_baec756257_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.25</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.25/miui_MI8_9.11.25_7de4e36f7e_10.0.zip" id="r">miui_MI8_9.11.25_7de4e36f7e_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米9 Pro 5G(crux)</td> 
-												<td>9.11.25</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.25/miui_CRUX_9.11.25_69349356e0_9.0.zip" id="r">miui_CRUX_9.11.25_69349356e0_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.11.25</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.25/miui_MINote3_9.11.25_9d8fb40701_9.0.zip" id="r">miui_MINote3_9.11.25_9d8fb40701_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.20
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.20</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_MI6_9.11.20_7c1c67efbb_9.0.zip" id="r">miui_MI6_9.11.20_7c1c67efbb_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米6X(wayne)</td> 
-												<td>9.11.20</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_MI6X_9.11.20_fd20c4c3d6_9.0.zip" id="r">miui_MI6X_9.11.20_fd20c4c3d6_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8 SE(sirius)</td> 
-												<td>9.11.20</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_MI8SE_9.11.20_54d5615ea5_10.0.zip" id="r">miui_MI8SE_9.11.20_54d5615ea5_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米9 Pro 5G(crux)</td> 
-												<td>9.11.20</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_CRUX_9.11.20_0f05937f65_9.0.zip" id="r">miui_CRUX_9.11.20_0f05937f65_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米9 SE(grus)</td> 
-												<td>9.11.20</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_GRUS_9.11.20_0269b1e8d5_10.0.zip" id="r">miui_GRUS_9.11.20_0269b1e8d5_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米Play(lotus)</td> 
-												<td>9.11.20</td> 
-												<td>8.1 Oreo</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_MIPLAY_9.11.20_15fee55a7c_8.1.zip" id="r">miui_MIPLAY_9.11.20_15fee55a7c_8.1.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.11.20</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_MINote3_9.11.20_4a69acdf66_9.0.zip" id="r">miui_MINote3_9.11.20_4a69acdf66_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米MIX 2(chiron)</td> 
-												<td>9.11.20</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_MIMIX2_9.11.20_c76294d8c9_9.0.zip" id="r">miui_MIMIX2_9.11.20_c76294d8c9_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>红米Note 5(whyred)</td> 
-												<td>9.11.20</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_HMNote5_9.11.20_61a5358ce8_9.0.zip" id="r">miui_HMNote5_9.11.20_61a5358ce8_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 7(lavender)</td> 
-												<td>9.11.20</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.20/miui_LAVENDER_9.11.20_5b3d934f29_9.0.zip" id="r">miui_LAVENDER_9.11.20_5b3d934f29_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.19
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.19</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.19/miui_MI6_9.11.19_97735d6c85_9.0.zip" id="r">miui_MI6_9.11.19_97735d6c85_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.19</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.19/miui_MI8_9.11.19_464b8f1114_10.0.zip" id="r">miui_MI8_9.11.19_464b8f1114_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米8屏幕指纹版(equuleus)</td> 
-												<td>9.11.19</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.19/miui_MI8UD_9.11.19_f6f0a435dd_10.0.zip" id="r">miui_MI8UD_9.11.19_f6f0a435dd_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米9/透明版(cepheus)</td> 
-												<td>9.11.19</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.19/miui_CEPHEUS_9.11.19_7c3108f116_10.0.zip" id="r">miui_CEPHEUS_9.11.19_7c3108f116_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米9 Pro 5G(crux)</td> 
-												<td>9.11.19</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.19/miui_CRUX_9.11.19_0a91d38287_9.0.zip" id="r">miui_CRUX_9.11.19_0a91d38287_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.11.19</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.19/miui_MINote3_9.11.19_273712c4b1_9.0.zip" id="r">miui_MINote3_9.11.19_273712c4b1_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.18
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.18</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.18/miui_MI6_9.11.18_144f4c26c8_9.0.zip" id="r">miui_MI6_9.11.18_144f4c26c8_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.13
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.13</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.13/miui_MI6_9.11.13_30f45a7a17_9.0.zip" id="r">miui_MI6_9.11.13_30f45a7a17_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.13</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.13/miui_MI8_9.11.13_519c1773cf_10.0.zip" id="r">miui_MI8_9.11.13_519c1773cf_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米CC9(pyxis)</td> 
-												<td>9.11.13</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.13/miui_PYXIS_9.11.13_0e4f9e88d0_10.0.zip" id="r">miui_PYXIS_9.11.13_0e4f9e88d0_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 8(ginkgo)</td> 
-												<td>9.11.13</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.13/miui_GINKGO_9.11.13_b574ced519_9.0.zip" id="r">miui_GINKGO_9.11.13_b574ced519_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.12
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.12</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.12/miui_MI6_9.11.12_3ca68f1b6a_9.0.zip" id="r">miui_MI6_9.11.12_3ca68f1b6a_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米6X(wayne)</td> 
-												<td>9.11.12</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.12/miui_MI6X_9.11.12_acc870ab6b_9.0.zip" id="r">miui_MI6X_9.11.12_acc870ab6b_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.12</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.12/miui_MI8_9.11.12_87e17a84ad_10.0.zip" id="r">miui_MI8_9.11.12_87e17a84ad_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.11.12</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.12/miui_MINote3_9.11.12_cc1cdb0eb3_9.0.zip" id="r">miui_MINote3_9.11.12_cc1cdb0eb3_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 8(ginkgo)</td> 
-												<td>9.11.12</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.12/miui_GINKGO_9.11.12_06b2d7afd2_9.0.zip" id="r">miui_GINKGO_9.11.12_06b2d7afd2_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.11
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI6_9.11.11_5b6b49c6bd_9.0.zip" id="r">miui_MI6_9.11.11_5b6b49c6bd_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米6X(wayne)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI6X_9.11.11_4c987bb60b_9.0.zip" id="r">miui_MI6X_9.11.11_4c987bb60b_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8_9.11.11_99d92c11ef_10.0.zip" id="r">miui_MI8_9.11.11_99d92c11ef_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米8屏幕指纹版(equuleus)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8UD_9.11.11_17bb80f8eb_10.0.zip" id="r">miui_MI8UD_9.11.11_17bb80f8eb_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8 SE(sirius)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8SE_9.11.11_896c8a3113_10.0.zip" id="r">miui_MI8SE_9.11.11_896c8a3113_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8青春版(platina)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8Lite_9.11.11_82c044d27c_9.0.zip" id="r">miui_MI8Lite_9.11.11_82c044d27c_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米9/透明版(cepheus)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_CEPHEUS_9.11.11_203ec2fa85_10.0.zip" id="r">miui_CEPHEUS_9.11.11_203ec2fa85_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米9 Pro 5G(crux)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_CRUX_9.11.11_eeef17399b_9.0.zip" id="r">miui_CRUX_9.11.11_eeef17399b_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米9 SE(grus)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_GRUS_9.11.11_ab19bf35c2_10.0.zip" id="r">miui_GRUS_9.11.11_ab19bf35c2_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米Max 3(nitrogen)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMAX3_9.11.11_8702957ba9_9.0.zip" id="r">miui_MIMAX3_9.11.11_8702957ba9_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Play(lotus)</td> 
-												<td>9.11.11</td> 
-												<td>8.1 Oreo</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIPLAY_9.11.11_e90eb107e2_8.1.zip" id="r">miui_MIPLAY_9.11.11_e90eb107e2_8.1.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MINote3_9.11.11_c3c7d638e4_9.0.zip" id="r">miui_MINote3_9.11.11_c3c7d638e4_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米MIX 2(chiron)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMIX2_9.11.11_98526777dd_9.0.zip" id="r">miui_MIMIX2_9.11.11_98526777dd_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米MIX 2S(polaris)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMIX2S_9.11.11_a1acb47614_10.0.zip" id="r">miui_MIMIX2S_9.11.11_a1acb47614_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米MIX 3(perseus)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMIX3_9.11.11_46ab1205e3_10.0.zip" id="r">miui_MIMIX3_9.11.11_46ab1205e3_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>红米Note 5(whyred)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_HMNote5_9.11.11_4379958f78_9.0.zip" id="r">miui_HMNote5_9.11.11_4379958f78_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 7(lavender)</td> 
-												<td>9.11.11</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_LAVENDER_9.11.11_13864afe75_9.0.zip" id="r">miui_LAVENDER_9.11.11_13864afe75_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi K20(davinci)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_DAVINCI_9.11.11_a1d035e82b_10.0.zip" id="r">miui_DAVINCI_9.11.11_a1d035e82b_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi K20 Pro/尊享版(raphael)</td> 
-												<td>9.11.11</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.11/miui_RAPHAEL_9.11.11_47d56b4f95_10.0.zip" id="r">miui_RAPHAEL_9.11.11_47d56b4f95_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.6
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.6</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.6/miui_MI8_9.11.6_283749edfa_10.0.zip" id="r">miui_MI8_9.11.6_283749edfa_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米8屏幕指纹版(equuleus)</td> 
-												<td>9.11.6</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.6/miui_MI8UD_9.11.6_ec3880b444_10.0.zip" id="r">miui_MI8UD_9.11.6_ec3880b444_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米9/透明版(cepheus)</td> 
-												<td>9.11.6</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.6/miui_CEPHEUS_9.11.6_4db03d110a_10.0.zip" id="r">miui_CEPHEUS_9.11.6_4db03d110a_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 8 Pro(begonia)</td> 
-												<td>9.11.6</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.6/miui_BEGONIA_9.11.6_8a7d079899_9.0.zip" id="r">miui_BEGONIA_9.11.6_8a7d079899_9.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.5
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.5</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.5/miui_MI6_9.11.5_14080345f1_9.0.zip" id="r">miui_MI6_9.11.5_14080345f1_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.11.4
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.11.4</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.4/miui_MI6_9.11.4_94715d77b0_9.0.zip" id="r">miui_MI6_9.11.4_94715d77b0_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米6X(wayne)</td> 
-												<td>9.11.5</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.11.4/miui_MI6X_9.11.4_397da8333f_9.0.zip" id="r">miui_MI6X_9.11.4_397da8333f_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.11.4</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.11.4/miui_MI8_9.11.4_9f7da1d7b1_10.0.zip" id="r">miui_MI8_9.11.4_9f7da1d7b1_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.30
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.30</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.30/miui_MI6_9.10.30_a0106922e2_9.0.zip" id="r">miui_MI6_9.10.30_a0106922e2_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米6X(wayne)</td> 
-												<td>9.10.30</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.30/miui_MI6X_9.10.30_cabfbe68ba_9.0.zip" id="r">miui_MI6X_9.10.30_cabfbe68ba_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米MIX 2S(polaris)</td> 
-												<td>9.10.30</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.10.30/miui_MIMIX2S_9.10.30_0a01fe24a8_10.0.zip" id="r">miui_MIMIX2S_9.10.30_0a01fe24a8_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.29
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.29</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.29/miui_MI6_9.10.29_aa2d0580f1_9.0.zip" id="r">miui_MI6_9.10.29_aa2d0580f1_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米6X(wayne)</td> 
-												<td>9.10.29</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.29/miui_MI6X_9.10.29_bad8fb2ae4_9.0.zip" id="r">miui_MI6X_9.10.29_bad8fb2ae4_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.28
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.28</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.28/miui_MI6_9.10.28_0104033105_9.0.zip" id="r">miui_MI6_9.10.28_0104033105_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.23
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.23</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.23/miui_MI6_9.10.23_ab7a5821f1_9.0.zip" id="r">miui_MI6_9.10.23_ab7a5821f1_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.21
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.21</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI6_9.10.21_a9e7dd929f_9.0.zip" id="r">miui_MI6_9.10.21_a9e7dd929f_9.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8(dipper)</td> 
-												<td>9.10.21</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.10.21/miui_MI8_9.10.21_f2cf05316a_10.0.zip" id="r">miui_MI8_9.10.21_f2cf05316a_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米8探索版(ursa)</td> 
-												<td>9.10.21</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI8Explorer_9.10.21_c27ea86345_10.0.zip" id="r">miui_MI8Explorer_9.10.21_c27ea86345_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米8屏幕指纹版(equuleus)</td> 
-												<td>9.10.21</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI8UD_9.10.21_2efd65aaa0_10.0.zip" id="r">miui_MI8UD_9.10.21_2efd65aaa0_10.0.zip</a></td> 
-											</tr> 
-											<tr> 
-												<td>小米8青春版(platina)</td> 
-												<td>9.10.21</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI8Lite_9.10.21_30d2489ca1_9.0.zip" id="r">miui_MI8Lite_9.10.21_30d2489ca1_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米Note 3(jason)</td> 
-												<td>9.10.21</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_MINote3_9.10.21_db875c453a_9.0.zip" id="r">miui_MINote3_9.10.21_db875c453a_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米MIX 2S(polaris)</td> 
-												<td>9.10.21</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_MIMIX2S_9.10.21_2578536973_10.0.zip" id="r">miui_MIMIX2S_9.10.21_2578536973_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>小米MIX 3(perseus)</td> 
-												<td>9.10.21</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_MIMIX3_9.10.21_570f74da93_10.0.zip" id="r">miui_MIMIX3_9.10.21_570f74da93_10.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>红米Note 5(whyred)</td> 
-												<td>9.10.21</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_HMNote5_9.10.21_deaf720773_9.0.zip" id="r">miui_HMNote5_9.10.21_deaf720773_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi Note 7(lavender)</td> 
-												<td>9.10.21</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_LAVENDER_9.10.21_a09e6c9fc3_9.0.zip" id="r">miui_LAVENDER_9.10.21_a09e6c9fc3_9.0.zip</a> </td> 
-											</tr> 
-											<tr> 
-												<td>Redmi K20(davinci)</td> 
-												<td>9.10.21</td> 
-												<td>10.0</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.21/miui_DAVINCI_9.10.21_938ec5324a_10.0.zip" id="r">miui_DAVINCI_9.10.21_938ec5324a_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.16
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.16</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.16/miui_MI6_9.10.16_eb8062868b_9.0.zip" id="r">miui_MI6_9.10.16_eb8062868b_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.15
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.15</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.15/miui_MI6_9.10.15_ef89d58fb5_9.0.zip" id="r">miui_MI6_9.10.15_ef89d58fb5_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.14
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.14</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.14/miui_MI6_9.10.14_06cb1673ef_9.0.zip" id="r">miui_MI6_9.10.14_06cb1673ef_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.11
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米MIX 2S(polaris)</td> 
-												<td>9.10.11</td> 
-												<td>10.0</td> 
-												<td><a href="http://bigota.d.miui.com/9.10.11/miui_MIMIX2S_9.10.11_0f4e74b42a_10.0.zip" id="r">miui_MIMIX2S_9.10.11_0f4e74b42a_10.0.zip</a> </td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.9
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.9</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.9/miui_MI6_9.10.9_e7d9c8c35d_9.0.zip" id="r">miui_MI6_9.10.9_e7d9c8c35d_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.10.8
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.10.8</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.10.8/miui_MI6_9.10.8_c764d100f7_9.0.zip" id="r">miui_MI6_9.10.8_c764d100f7_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.9.25
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.9.25</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.9.25/miui_MI6_9.9.25_b7ada4f435_9.0.zip" id="r">miui_MI6_9.9.25_b7ada4f435_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-					<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}"> 
-						<div class="mdui-panel-item"> 
-							<div class="mdui-panel-item-header mdui-text-color-red">
-								MIUI11 9.9.24
-							</div> 
-							<div class="mdui-panel-item-body"> 
-								<div class="mdui-table-fluid"> 
-									<table class="mdui-table"> 
-										<thead> 
-											<tr> 
-												<th>机型</th> 
-												<th>版本</th> 
-												<th>安卓版本</th> 
-												<th>卡刷包</th> 
-											</tr> 
-										</thead> 
-										<tbody> 
-											<tr> 
-												<td>小米6(sagit)</td> 
-												<td>9.9.24</td> 
-												<td>9.0 Pie</td> 
-												<td><a href="https://bigota.d.miui.com/9.9.24/miui_MI6_9.9.24_1311e25b28_9.0.zip" id="r">miui_MI6_9.9.24_1311e25b28_9.0.zip</a></td> 
-											</tr> 
-										</tbody> 
-									</table> 
-								</div> 
-							</div> 
-						</div> 
-					</div> 
-				</div> 
-				<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;"> 
-					
-				</div> 
-				<div style=" position:absolute; right:20px;bottom: 5px;"> 
-					
-				</div> 
-			</div> 
-		</div> 
-		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
-	</body>
+							友情链接
+						</div>
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+						<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="mdui-container">
+		<div class="mdui-panel mdui-panel-gapless">
+			<div class="mdui-panel-item mdui-panel-item-open">
+				<div class="mdui-panel-item-header mdui-text-color-red">
+					页面说明
+				</div>
+				<div class="mdui-panel-item-body">
+					<ul>
+						<li>请不要外传本页面链接!</li>
+						<li>本页面收录开发版内测链接,能想到最有用的用途就是,某天的内测续航等表现很好,希望保存一下,以供以后养老用;</li>
+					</ul>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 20.1.8
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8屏幕指纹版(equuleus)</td>
+											<td>20.1.8</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/20.1.8/miui_MI8UD_20.1.8_3415eac822_10.0.zip" id="r">miui_MI8UD_20.1.8_3415eac822_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>20.1.8</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/20.1.8/miui_MINote3_20.1.8_b10eee0bdf_9.0.zip" id="r">miui_MINote3_20.1.8_b10eee0bdf_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>红米Note 5(whyred)</td>
+											<td>20.1.8</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/20.1.8/miui_HMNote5_20.1.8_b3ffbf957c_9.0.zip" id="r">miui_HMNote5_20.1.8_b3ffbf957c_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 20.1.7
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>20.1.7</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/20.1.7/miui_MINote3_20.1.7_1f9db31c39_9.0.zip" id="r">miui_MINote3_20.1.7_1f9db31c39_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.31
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.31</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.31/miui_MINote3_9.12.31_cc5f59e0c6_ 9.0.zip" id="r">miui_MINote3_9.12.31_cc5f59e0c6_ 9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>Redmi Note 8 Pro(begonia)</td>
+											<td>9.12.31</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.31/miui_BEGONIA_9.12.31_e872eaeb45_10.0.zip" id="r">miui_BEGONIA_9.12.31_e872eaeb45_10.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.30
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.30</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.30/miui_MINote3_9.12.30_e1f04d6783_9.0.zip" id="r">miui_MINote3_9.12.30_e1f04d6783_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.30
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.12.30</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.30/miui_MI8_9.12.30_49bf28972f_10.0.zip" id="r">miui_MI8_9.12.30_49bf28972f_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.25
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.25</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.25/miui_MINote3_9.12.25_0a02048e0f_9.0.zip" id="r">miui_MINote3_9.12.25_0a02048e0f_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.24
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.12.24</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.24/miui_MI8_9.12.24_7f1a84f8c5_10.0.zip" id="r">miui_MI8_9.12.24_7f1a84f8c5_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.23
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.12.23</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.23/miui_MI8_9.12.23_cf6cae1c0c_10.0.zip" id="r">miui_MI8_9.12.23_cf6cae1c0c_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.23</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.23/miui_MINote3_9.12.23_d76dd8135d_9.0.zip" id="r">miui_MINote3_9.12.16_d76dd8135d_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.18
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Redmi Note 8 Pro(begonia)</td>
+											<td>9.12.18</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.18/miui_BEGONIA_9.12.18_be8ecdc0e5_10.0.zip" id="r">miui_BEGONIA_9.12.18_be8ecdc0e5_10.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.17
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8屏幕指纹板(equuleus)</td>
+											<td>9.12.17</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.17/miui_MI8UD_9.12.17_3bde3e70cd_10.0.zip" id="r">miui_MI8UD_9.12.17_3bde3e70cd_10.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.16
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.16</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.16/miui_MINote3_9.12.16_115ae9562b_9.0.zip" id="r">miui_MINote3_9.12.16_115ae9562b_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>Redmi K30(phoenix)</td>
+											<td>9.12.16</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.16/miui_PHOENIX_9.12.16_89890fd9db_10.0.zip" id="r">miui_PHOENIX_9.12.16_89890fd9db_10.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.10
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.10</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.10/miui_MINote3_9.12.10_1314e52a28_9.0.zip" id="r">miui_MINote3_9.12.10_1314e52a28_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi Note 8 Pro(begonia)</td>
+											<td>9.12.10</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.10/miui_BEGONIA_9.12.10_8583f3373d_10.0.zip" id="r">miui_BEGONIA_9.12.10_8583f3373d_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.4
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.12.4</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.4/miui_MI8_9.12.4_ca1ab76379_10.0.zip" id="r">miui_MI8_9.12.4_ca1ab76379_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米8青春版(platina)</td>
+											<td>9.12.4</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.4/miui_MI8Lite_9.12.4_0b768d6e10_10.0.zip" id="r">miui_MI8Lite_9.12.4_0b768d6e10_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Max 3(nitrogen)</td>
+											<td>9.12.4</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.4/miui_MIMAX3_9.12.4_f7788a3f9a_10.0.zip" id="r">miui_MIMAX3_9.12.4_f7788a3f9a_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.4</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.4/miui_MINote3_9.12.4_163b81ca8d_9.0.zip" id="r">miui_MINote3_9.12.4_163b81ca8d_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.3
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.12.3</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.3/miui_MI8_9.12.3_98d3844905_10.0.zip" id="r">miui_MI8_9.12.3_98d3844905_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.12.3</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.3/miui_MINote3_9.12.3_1dd1ea303c_9.0.zip" id="r">miui_MINote3_9.12.3_1dd1ea303c_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.12.2
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.12.2</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.2/miui_MI6_9.12.2_f6e92ab715_9.0.zip" id="r">miui_MI6_9.12.2_f6e92ab715_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.12.2</td>
+											<td>10.0</td>
+											<td><a href="http://hugeota.d.miui.com/9.12.2/miui_MI8_9.12.2_e4ee2682a9_10.0.zip" id="r">miui_MI8_9.12.2_e4ee2682a9_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米9 Pro 5G(crux)</td>
+											<td>9.12.2</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.12.2/miui_CRUX_9.12.2_f4a6696237_9.0.zip" id="r">miui_CRUX_9.12.2_f4a6696237_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.27
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.27</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.27/miui_MI6_9.11.27_9ccdda36b9_9.0.zip" id="r">miui_MI6_9.11.27_9ccdda36b9_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.11.27</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.27/miui_MINote3_9.11.27_311c27d84b_9.0.zip" id="r">miui_MINote3_9.11.27_311c27d84b_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>红米6A(cactus)</td>
+											<td>9.11.27</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.27/miui_HM6A_9.11.27_0a6ed7ecdf_9.0.zip" id="r">miui_HM6A_9.11.27_0a6ed7ecdf_ 9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.26
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.26</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.26/miui_MI6_9.11.26_c9a787455a_9.0.zip" id="r">miui_MI6_9.11.26_c9a787455a_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.26</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.26/miui_MI8_9.11.26_21be356921_10.0.zip" id="r">miui_MI8_9.11.26_21be356921_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米9 Pro 5G(crux)</td>
+											<td>9.11.26</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.26/miui_CRUX_9.11.26_7ea1c37711_9.0.zip" id="r">miui_CRUX_9.11.26_7ea1c37711_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.11.26</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.26/miui_MINote3_9.11.26_311c27d84b_9.0.zip" id="r">miui_MINote3_9.11.26_311c27d84b_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.25
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.25</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.25/miui_MI6_9.11.25_baec756257_9.0.zip" id="r">miui_MI6_9.11.25_baec756257_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.25</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.25/miui_MI8_9.11.25_7de4e36f7e_10.0.zip" id="r">miui_MI8_9.11.25_7de4e36f7e_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米9 Pro 5G(crux)</td>
+											<td>9.11.25</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.25/miui_CRUX_9.11.25_69349356e0_9.0.zip" id="r">miui_CRUX_9.11.25_69349356e0_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.11.25</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.25/miui_MINote3_9.11.25_9d8fb40701_9.0.zip" id="r">miui_MINote3_9.11.25_9d8fb40701_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.20
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.20</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_MI6_9.11.20_7c1c67efbb_9.0.zip" id="r">miui_MI6_9.11.20_7c1c67efbb_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米6X(wayne)</td>
+											<td>9.11.20</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_MI6X_9.11.20_fd20c4c3d6_9.0.zip" id="r">miui_MI6X_9.11.20_fd20c4c3d6_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8 SE(sirius)</td>
+											<td>9.11.20</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_MI8SE_9.11.20_54d5615ea5_10.0.zip" id="r">miui_MI8SE_9.11.20_54d5615ea5_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米9 Pro 5G(crux)</td>
+											<td>9.11.20</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_CRUX_9.11.20_0f05937f65_9.0.zip" id="r">miui_CRUX_9.11.20_0f05937f65_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米9 SE(grus)</td>
+											<td>9.11.20</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_GRUS_9.11.20_0269b1e8d5_10.0.zip" id="r">miui_GRUS_9.11.20_0269b1e8d5_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米Play(lotus)</td>
+											<td>9.11.20</td>
+											<td>8.1</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_MIPLAY_9.11.20_15fee55a7c_8.1.zip" id="r">miui_MIPLAY_9.11.20_15fee55a7c_8.1.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.11.20</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_MINote3_9.11.20_4a69acdf66_9.0.zip" id="r">miui_MINote3_9.11.20_4a69acdf66_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米MIX 2(chiron)</td>
+											<td>9.11.20</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_MIMIX2_9.11.20_c76294d8c9_9.0.zip" id="r">miui_MIMIX2_9.11.20_c76294d8c9_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>红米Note 5(whyred)</td>
+											<td>9.11.20</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_HMNote5_9.11.20_61a5358ce8_9.0.zip" id="r">miui_HMNote5_9.11.20_61a5358ce8_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi Note 7(lavender)</td>
+											<td>9.11.20</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.20/miui_LAVENDER_9.11.20_5b3d934f29_9.0.zip" id="r">miui_LAVENDER_9.11.20_5b3d934f29_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.19
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.19</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.19/miui_MI6_9.11.19_97735d6c85_9.0.zip" id="r">miui_MI6_9.11.19_97735d6c85_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.19</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.19/miui_MI8_9.11.19_464b8f1114_10.0.zip" id="r">miui_MI8_9.11.19_464b8f1114_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米8屏幕指纹版(equuleus)</td>
+											<td>9.11.19</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.19/miui_MI8UD_9.11.19_f6f0a435dd_10.0.zip" id="r">miui_MI8UD_9.11.19_f6f0a435dd_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米9/透明版(cepheus)</td>
+											<td>9.11.19</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.19/miui_CEPHEUS_9.11.19_7c3108f116_10.0.zip" id="r">miui_CEPHEUS_9.11.19_7c3108f116_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米9 Pro 5G(crux)</td>
+											<td>9.11.19</td>
+											<td>9.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.19/miui_CRUX_9.11.19_0a91d38287_9.0.zip" id="r">miui_CRUX_9.11.19_0a91d38287_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.11.19</td>
+											<td>9.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.19/miui_MINote3_9.11.19_273712c4b1_9.0.zip" id="r">miui_MINote3_9.11.19_273712c4b1_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.18
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.18</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.18/miui_MI6_9.11.18_144f4c26c8_9.0.zip" id="r">miui_MI6_9.11.18_144f4c26c8_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.13
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.13</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.13/miui_MI6_9.11.13_30f45a7a17_9.0.zip" id="r">miui_MI6_9.11.13_30f45a7a17_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.13</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.13/miui_MI8_9.11.13_519c1773cf_10.0.zip" id="r">miui_MI8_9.11.13_519c1773cf_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米CC9(pyxis)</td>
+											<td>9.11.13</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.13/miui_PYXIS_9.11.13_0e4f9e88d0_10.0.zip" id="r">miui_PYXIS_9.11.13_0e4f9e88d0_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi Note 8(ginkgo)</td>
+											<td>9.11.13</td>
+											<td>9.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.13/miui_GINKGO_9.11.13_b574ced519_9.0.zip" id="r">miui_GINKGO_9.11.13_b574ced519_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.12
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.12</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.12/miui_MI6_9.11.12_3ca68f1b6a_9.0.zip" id="r">miui_MI6_9.11.12_3ca68f1b6a_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米6X(wayne)</td>
+											<td>9.11.12</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.12/miui_MI6X_9.11.12_acc870ab6b_9.0.zip" id="r">miui_MI6X_9.11.12_acc870ab6b_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.12</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.12/miui_MI8_9.11.12_87e17a84ad_10.0.zip" id="r">miui_MI8_9.11.12_87e17a84ad_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.11.12</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.12/miui_MINote3_9.11.12_cc1cdb0eb3_9.0.zip" id="r">miui_MINote3_9.11.12_cc1cdb0eb3_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>Redmi Note 8(ginkgo)</td>
+											<td>9.11.12</td>
+											<td>9.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.12/miui_GINKGO_9.11.12_06b2d7afd2_9.0.zip" id="r">miui_GINKGO_9.11.12_06b2d7afd2_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.11
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI6_9.11.11_5b6b49c6bd_9.0.zip" id="r">miui_MI6_9.11.11_5b6b49c6bd_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米6X(wayne)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI6X_9.11.11_4c987bb60b_9.0.zip" id="r">miui_MI6X_9.11.11_4c987bb60b_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8_9.11.11_99d92c11ef_10.0.zip" id="r">miui_MI8_9.11.11_99d92c11ef_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米8屏幕指纹版(equuleus)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8UD_9.11.11_17bb80f8eb_10.0.zip" id="r">miui_MI8UD_9.11.11_17bb80f8eb_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8 SE(sirius)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8SE_9.11.11_896c8a3113_10.0.zip" id="r">miui_MI8SE_9.11.11_896c8a3113_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8青春版(platina)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MI8Lite_9.11.11_82c044d27c_9.0.zip" id="r">miui_MI8Lite_9.11.11_82c044d27c_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米9/透明版(cepheus)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_CEPHEUS_9.11.11_203ec2fa85_10.0.zip" id="r">miui_CEPHEUS_9.11.11_203ec2fa85_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米9 Pro 5G(crux)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_CRUX_9.11.11_eeef17399b_9.0.zip" id="r">miui_CRUX_9.11.11_eeef17399b_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米9 SE(grus)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_GRUS_9.11.11_ab19bf35c2_10.0.zip" id="r">miui_GRUS_9.11.11_ab19bf35c2_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米Max 3(nitrogen)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMAX3_9.11.11_8702957ba9_9.0.zip" id="r">miui_MIMAX3_9.11.11_8702957ba9_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Play(lotus)</td>
+											<td>9.11.11</td>
+											<td>8.1</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIPLAY_9.11.11_e90eb107e2_8.1.zip" id="r">miui_MIPLAY_9.11.11_e90eb107e2_8.1.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MINote3_9.11.11_c3c7d638e4_9.0.zip" id="r">miui_MINote3_9.11.11_c3c7d638e4_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米MIX 2(chiron)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMIX2_9.11.11_98526777dd_9.0.zip" id="r">miui_MIMIX2_9.11.11_98526777dd_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米MIX 2S(polaris)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMIX2S_9.11.11_a1acb47614_10.0.zip" id="r">miui_MIMIX2S_9.11.11_a1acb47614_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米MIX 3(perseus)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_MIMIX3_9.11.11_46ab1205e3_10.0.zip" id="r">miui_MIMIX3_9.11.11_46ab1205e3_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>红米Note 5(whyred)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_HMNote5_9.11.11_4379958f78_9.0.zip" id="r">miui_HMNote5_9.11.11_4379958f78_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi Note 7(lavender)</td>
+											<td>9.11.11</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_LAVENDER_9.11.11_13864afe75_9.0.zip" id="r">miui_LAVENDER_9.11.11_13864afe75_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi K20(davinci)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_DAVINCI_9.11.11_a1d035e82b_10.0.zip" id="r">miui_DAVINCI_9.11.11_a1d035e82b_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi K20 Pro/尊享版(raphael)</td>
+											<td>9.11.11</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.11/miui_RAPHAEL_9.11.11_47d56b4f95_10.0.zip" id="r">miui_RAPHAEL_9.11.11_47d56b4f95_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.6
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.6</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.6/miui_MI8_9.11.6_283749edfa_10.0.zip" id="r">miui_MI8_9.11.6_283749edfa_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米8屏幕指纹版(equuleus)</td>
+											<td>9.11.6</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.6/miui_MI8UD_9.11.6_ec3880b444_10.0.zip" id="r">miui_MI8UD_9.11.6_ec3880b444_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米9/透明版(cepheus)</td>
+											<td>9.11.6</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.6/miui_CEPHEUS_9.11.6_4db03d110a_10.0.zip" id="r">miui_CEPHEUS_9.11.6_4db03d110a_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>Redmi Note 8 Pro(begonia)</td>
+											<td>9.11.6</td>
+											<td>9.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.6/miui_BEGONIA_9.11.6_8a7d079899_9.0.zip" id="r">miui_BEGONIA_9.11.6_8a7d079899_9.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.5
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.5</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.5/miui_MI6_9.11.5_14080345f1_9.0.zip" id="r">miui_MI6_9.11.5_14080345f1_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.11.4
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.11.4</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.4/miui_MI6_9.11.4_94715d77b0_9.0.zip" id="r">miui_MI6_9.11.4_94715d77b0_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米6X(wayne)</td>
+											<td>9.11.5</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.11.4/miui_MI6X_9.11.4_397da8333f_9.0.zip" id="r">miui_MI6X_9.11.4_397da8333f_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.11.4</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.11.4/miui_MI8_9.11.4_9f7da1d7b1_10.0.zip" id="r">miui_MI8_9.11.4_9f7da1d7b1_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.30
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.30</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.30/miui_MI6_9.10.30_a0106922e2_9.0.zip" id="r">miui_MI6_9.10.30_a0106922e2_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米6X(wayne)</td>
+											<td>9.10.30</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.30/miui_MI6X_9.10.30_cabfbe68ba_9.0.zip" id="r">miui_MI6X_9.10.30_cabfbe68ba_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米MIX 2S(polaris)</td>
+											<td>9.10.30</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.10.30/miui_MIMIX2S_9.10.30_0a01fe24a8_10.0.zip" id="r">miui_MIMIX2S_9.10.30_0a01fe24a8_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.29
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.29</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.29/miui_MI6_9.10.29_aa2d0580f1_9.0.zip" id="r">miui_MI6_9.10.29_aa2d0580f1_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米6X(wayne)</td>
+											<td>9.10.29</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.29/miui_MI6X_9.10.29_bad8fb2ae4_9.0.zip" id="r">miui_MI6X_9.10.29_bad8fb2ae4_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.28
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.28</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.28/miui_MI6_9.10.28_0104033105_9.0.zip" id="r">miui_MI6_9.10.28_0104033105_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.23
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.23</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.23/miui_MI6_9.10.23_ab7a5821f1_9.0.zip" id="r">miui_MI6_9.10.23_ab7a5821f1_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.21
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.21</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI6_9.10.21_a9e7dd929f_9.0.zip" id="r">miui_MI6_9.10.21_a9e7dd929f_9.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8(dipper)</td>
+											<td>9.10.21</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.10.21/miui_MI8_9.10.21_f2cf05316a_10.0.zip" id="r">miui_MI8_9.10.21_f2cf05316a_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米8探索版(ursa)</td>
+											<td>9.10.21</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI8Explorer_9.10.21_c27ea86345_10.0.zip" id="r">miui_MI8Explorer_9.10.21_c27ea86345_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米8屏幕指纹版(equuleus)</td>
+											<td>9.10.21</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI8UD_9.10.21_2efd65aaa0_10.0.zip" id="r">miui_MI8UD_9.10.21_2efd65aaa0_10.0.zip</a></td>
+										</tr>
+										<tr>
+											<td>小米8青春版(platina)</td>
+											<td>9.10.21</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_MI8Lite_9.10.21_30d2489ca1_9.0.zip" id="r">miui_MI8Lite_9.10.21_30d2489ca1_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米Note 3(jason)</td>
+											<td>9.10.21</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_MINote3_9.10.21_db875c453a_9.0.zip" id="r">miui_MINote3_9.10.21_db875c453a_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米MIX 2S(polaris)</td>
+											<td>9.10.21</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_MIMIX2S_9.10.21_2578536973_10.0.zip" id="r">miui_MIMIX2S_9.10.21_2578536973_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>小米MIX 3(perseus)</td>
+											<td>9.10.21</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_MIMIX3_9.10.21_570f74da93_10.0.zip" id="r">miui_MIMIX3_9.10.21_570f74da93_10.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>红米Note 5(whyred)</td>
+											<td>9.10.21</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_HMNote5_9.10.21_deaf720773_9.0.zip" id="r">miui_HMNote5_9.10.21_deaf720773_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi Note 7(lavender)</td>
+											<td>9.10.21</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_LAVENDER_9.10.21_a09e6c9fc3_9.0.zip" id="r">miui_LAVENDER_9.10.21_a09e6c9fc3_9.0.zip</a> </td>
+										</tr>
+										<tr>
+											<td>Redmi K20(davinci)</td>
+											<td>9.10.21</td>
+											<td>10.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.21/miui_DAVINCI_9.10.21_938ec5324a_10.0.zip" id="r">miui_DAVINCI_9.10.21_938ec5324a_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.16
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.16</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.16/miui_MI6_9.10.16_eb8062868b_9.0.zip" id="r">miui_MI6_9.10.16_eb8062868b_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.15
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.15</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.15/miui_MI6_9.10.15_ef89d58fb5_9.0.zip" id="r">miui_MI6_9.10.15_ef89d58fb5_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.14
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.14</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.14/miui_MI6_9.10.14_06cb1673ef_9.0.zip" id="r">miui_MI6_9.10.14_06cb1673ef_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.11
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米MIX 2S(polaris)</td>
+											<td>9.10.11</td>
+											<td>10.0</td>
+											<td><a href="http://bigota.d.miui.com/9.10.11/miui_MIMIX2S_9.10.11_0f4e74b42a_10.0.zip" id="r">miui_MIMIX2S_9.10.11_0f4e74b42a_10.0.zip</a> </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.9
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.9</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.9/miui_MI6_9.10.9_e7d9c8c35d_9.0.zip" id="r">miui_MI6_9.10.9_e7d9c8c35d_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.10.8
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.10.8</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.10.8/miui_MI6_9.10.8_c764d100f7_9.0.zip" id="r">miui_MI6_9.10.8_c764d100f7_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.9.25
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.9.25</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.9.25/miui_MI6_9.9.25_b7ada4f435_9.0.zip" id="r">miui_MI6_9.9.25_b7ada4f435_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-panel mdui-panel-gapless" mdui-panel="{accordion: true}">
+					<div class="mdui-panel-item">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							MIUI11 9.9.24
+						</div>
+						<div class="mdui-panel-item-body">
+							<div class="mdui-table-fluid">
+								<table class="mdui-table">
+									<thead>
+										<tr>
+											<th>机型</th>
+											<th>版本</th>
+											<th>安卓版本</th>
+											<th>卡刷包</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>小米6(sagit)</td>
+											<td>9.9.24</td>
+											<td>9.0</td>
+											<td><a href="https://bigota.d.miui.com/9.9.24/miui_MI6_9.9.24_1311e25b28_9.0.zip" id="r">miui_MI6_9.9.24_1311e25b28_9.0.zip</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mdui-hidden" style=" position:absolute; right:20px;bottom: 5px;">
+
+			</div>
+			<div style=" position:absolute; right:20px;bottom: 5px;">
+
+			</div>
+		</div>
+	</div>
+	<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e0818275b9944a59d625e2df596aaca"}'></script>
+</body>
+
 </html>

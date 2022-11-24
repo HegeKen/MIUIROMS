@@ -1,827 +1,852 @@
 <!doctype html>
 <html lang="zh">
-	<head> 
-		<meta charset="UTF-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-		<link href="assets/mdui/css/mdui.min.css" rel="stylesheet"> 
-		<script src="assets/mdui/js/mdui.min.js"></script> 
-		<script src="assets/jquery/jquery.min.js"></script>
-		<meta name="google-site-verification" content="1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q"> 
-		<!-- Global site tag (gtag.js) - Google Analytics --> 
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153213840-1"></script> 
-		<script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='msvalidate.01' content='D0A12F85D732BE57318CA28F52500432'>
+	<meta name='chinaz-site-verification' content='5BDB6F3CEC5D6F6F'>
+	<meta name='google-site-verification' content='1eNyA6u9gVIE5LzXP0FGw3I6yT9JnVNt0DVo4ujE-8Q'>
+	<link href="https://roms.miuier.com/assets/mdui/css/mdui.min.css" rel="stylesheet">
+	<script src="https://roms.miuier.com/assets/mdui/js/mdui.min.js"></script>
+	<script src="https://roms.miuier.com/assets/jquery/jquery.min.js"></script>
+	<link href="https://roms.miuier.com/assets/miuiroms.css" rel="stylesheet">
+	<link href='https://font.sec.miui.com/font/css?family=MiSans:300,450,500,650:Chinese_Simplify,Latin&display=swap' rel='stylesheet'>
+	<link rel='icon' type='image/x-icon' href='https://miuiroms-1251747223.cos.ap-shanghai.myqcloud.com/images/logo/favicon.ico'>
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-153213840-1'></script>
+	<script>
+		(function (c, l, a, r, i, t, y) {
+			c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+			t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+			y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+		})(window, document, "clarity", "script", "ecb8j7x9aw");
+	</script>
+	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 		gtag('config', 'UA-153213840-1');
-	</script> 
-		<style>
-		li a {
-			text-decoration: none;
-			color: blue;
-			font-weight: bolder;
-		}
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?f107e28fc41495046dc606c8b53ee24e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<title>站点日志 - MIUI官方ROM仓库</title>
+</head>
 
-		p a {
-			text-decoration: none;
-			color: blue;
-		}
-	</style> 
-		<title>站点日志 - MIUI官方ROM仓库</title> 
-	</head> 
-	<body> 
-		<script type="text/javascript">
-		$(document).ready(function () {
-			let height = $(document).width();
-			if (height < "550") {
-				$("td #r").text("卡刷包");
-				$("td #f").text("线刷包");
-			}
-		})
-	</script> 
-		<div class="mdui-toolbar mdui-color-deep-orange-accent"> 
-			<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button> 
-			<span class="mdui-typo-headline">MIUI官方ROM仓库</span> 
-			<div class="mdui-toolbar-spacer"></div> 
-			<div class="mdui-drawer mdui-drawer-close" id="main-drawer"> 
-				<ul class="mdui-list" mdui-collapse="{accordion: true}"> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="index.html">回到首页</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="weekly/index.html">查看日志</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="devices/index.html">机型列表</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="tools.html">刷机工具</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="thanks.html">衷心感谢</a> 
-						</div> </li> 
-					<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i> 
-						<div class="mdui-list-item-content"> 
-							<a href="aboutme.html">站点日志</a> 
-						</div> </li> 
-					<li class="mdui-collapse-item"> 
-						<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
-							<i class="mdui-list-item-icon mdui-icon material-icons">link</i> 
-							<div class="mdui-list-item-content">
-								 友情链接 
-							</div> 
-							<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
-						</div> 
-						<ul class="mdui-collapse-item-body mdui-list mdui-list-dense"> 
-<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li> 
-							<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li> 
-						</ul> </li> 
-				</ul> 
-			</div> 
-		</div> 
-		<div class="mdui-panel mdui-panel-gapless">
-			<div class="mdui-panel-item mdui-panel-item-open">
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					更新日期：2022.11.2
-				</div>
-				<div class="mdui-panel-item-body">
-					<p>站点版本：V0.9.30-SNAPSHOT</p>
-					<p>更新日志： </p>
-					<ul>
-						<li>新增支持：小米12T；Xiaomi 12 Lite；小米12 Pro 天玑版；小米12S；小米12S Pro；小米12S Ultra；小米MIX FOLD 2；小米平板5 Pro 12.4；小米 Civi 1S；小米 Civi 2；Redmi 10C；Redmi 10A Sport；Redmi Note 11E；Redmi Note 11 Pro 4G；Redmi Note 11 Pro 4G India；Redmi Note 11S 5G；Redmi Note 11T Pro/Pro+；Redmi Note 12；Redmi Note 12 Pro/Pro+/探索版；Redmi K40S；Redmi K50；Redmi K50 Pro；Redmi K50 至尊版；Redmi Pad；POCO C40；POCO M5；POCO M5S；</li>
-					</ul>
+<body>
+	<div class="mdui-toolbar mdui-color-deep-orange-accent">
+		<button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#main-drawer'}" mdui-drawer-close=""><i class="mdui-icon material-icons">menu</i></button>
+		<span class="mdui-typo-headline">MIUI官方ROM仓库</span>
+		<div class="mdui-toolbar-spacer"></div>
+		<div class="mdui-drawer mdui-drawer-close" id="main-drawer">
+			<ul class="mdui-list" mdui-collapse="{accordion: true}">
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+					<div class="mdui-list-item-content">
+						<a href="index.html">回到首页</a>
 					</div>
-				</div>
-		</div>
-		<div class="mdui-panel mdui-panel-gapless">
-			<div class="mdui-panel-item mdui-panel-item-open">
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					更新日期：2022.3.6
-				</div>
-				<div class="mdui-panel-item-body">
-					<p>站点版本：V0.9.12-SNAPSHOT</p>
-					<p>更新日志： </p>
-					<ul>
-						<li>新增支持：Redmi Note 11 国际版、Redmi Note 11 NFC 国际版、Redmi K50 电竞版；
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">developer_mode</i>
+					<div class="mdui-list-item-content">
+						<a href="weekly/index.html">查看日志</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">devices</i>
+					<div class="mdui-list-item-content">
+						<a href="devices/index.html">机型列表</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">computer</i>
+					<div class="mdui-list-item-content">
+						<a href="tools.html">刷机工具</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple"> <i class="mdui-list-item-icon mdui-icon material-icons">favorite</i>
+					<div class="mdui-list-item-content">
+						<a href="thanks.html">衷心感谢</a>
+					</div>
+				</li>
+				<li class="mdui-list-item mdui-ripple mdui-list-item-active"> <i class="mdui-list-item-icon mdui-icon material-icons">person</i>
+					<div class="mdui-list-item-content">
+						<a href="aboutme.html">站点日志</a>
+					</div>
+				</li>
+				<li class="mdui-collapse-item">
+					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+						<i class="mdui-list-item-icon mdui-icon material-icons">link</i>
+						<div class="mdui-list-item-content">
+							友情链接
+						</div>
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+					</div>
+					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+						<li class="mdui-list-item mdui-ripple"><a href="https://sj.biada.cn/">MIUI相关资源导航站</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.miuibbs.cn/">柚坛社区</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="http://66886.ys168.com/">MI8&amp;2s玩机资源导航区</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.shawnleetttt.xyz/">Squidward's Moai</a></li>
+						<li class="mdui-list-item mdui-ripple"><a href="https://www.itmibbs.cn/">ITMI社区</a></li>
 					</ul>
-				</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="mdui-panel mdui-panel-gapless">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2022.11.25
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.31-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：Redmi Note 10T；</li>
+				</ul>
 			</div>
 		</div>
-		<div class="mdui-panel mdui-panel-gapless">
-			<div class="mdui-panel-item mdui-panel-item-open">
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					更新日期：2022.2.5
-				</div>
-				<div class="mdui-panel-item-body">
-					<p>站点版本：V0.9.9-SNAPSHOT</p>
-					<p>更新日志： </p>
-					<ul>
-						<li>新增支持：小米11T、小米11T Pro、小米11 青春活力版、小米12、小米12X、小米12 Pro、小米 Civi、POCO M4 Pro 5G、POCO C31 India、Redmi 10 Prime、Redmi Note 11 4G、Redmi Note 11 5G、Redmi Note 11S、Redmi Note 11 Pro/Pro+、Redmi Note 11 Pro 5G；
-					</ul>
-				</div>
+	</div>
+	<div class="mdui-panel mdui-panel-gapless">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2022.11.2
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.30-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：小米12T；Xiaomi 12 Lite；小米12 Pro 天玑版；小米12S；小米12S Pro；小米12S Ultra；小米MIX FOLD 2；小米平板5 Pro 12.4；小米 Civi 1S；小米 Civi 2；Redmi 10C；Redmi 10A Sport；Redmi Note 11E；Redmi Note 11 Pro 4G；Redmi Note 11 Pro 4G India；Redmi Note 11S 5G；Redmi Note 11T Pro/Pro+；Redmi Note 12；Redmi Note 12 Pro/Pro+/探索版；Redmi K40S；Redmi K50；Redmi K50 Pro；Redmi K50 至尊版；Redmi Pad；POCO C40；POCO M5；POCO M5S；</li>
+				</ul>
 			</div>
 		</div>
-		<div class="mdui-panel mdui-panel-gapless">
-			<div class="mdui-panel-item mdui-panel-item-open">
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					更新日期：2021.8.15
-				</div>
-				<div class="mdui-panel-item-body">
-					<p>站点版本：V0.9.5-SNAPSHOT</p>
-					<p>更新日志： </p>
-					<ul>
-						<li>新增支持：小米MIX 4、小米平板5、小米平板5 Pro 5G 、小米平板5 Pro WiFi；
-					</ul>
-				</div>
-				</div>
+	</div>
+	<div class="mdui-panel mdui-panel-gapless">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2022.3.6
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.12-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：Redmi Note 11 国际版、Redmi Note 11 NFC 国际版、Redmi K50 电竞版；
+				</ul>
+			</div>
 		</div>
-		<div class="mdui-panel mdui-panel-gapless">
-			<div class="mdui-panel-item mdui-panel-item-open">
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					更新日期：2021.6.9
-				</div>
-				<div class="mdui-panel-item-body">
-					<p>站点版本：V0.9.2-SNAPSHOT</p>
-					<p>更新日志： </p>
-					<ul>
-						<li>新增支持：Redmi Note 10 Pro;</li>
-					</ul>
-				</div>
+	</div>
+	<div class="mdui-panel mdui-panel-gapless">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2022.2.5
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.9-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：小米11T、小米11T Pro、小米11 青春活力版、小米12、小米12X、小米12 Pro、小米 Civi、POCO M4 Pro 5G、POCO C31 India、Redmi 10 Prime、Redmi Note 11 4G、Redmi Note 11 5G、Redmi Note 11S、Redmi Note 11 Pro/Pro+、Redmi Note 11 Pro 5G；
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mdui-panel mdui-panel-gapless">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2021.8.15
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.5-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：小米MIX 4、小米平板5、小米平板5 Pro 5G 、小米平板5 Pro WiFi；
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mdui-panel mdui-panel-gapless">
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2021.6.9
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.2-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：Redmi Note 10 Pro;</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2021.5.31
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.1-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：Redmi Note 10、Redmi Note 8 2021、Redmi Note 10S、POCO X3 Pro;</li>
+				</ul>
+			</div>
+		</div>
+		<div class="mdui-panel-item mdui-panel-item-open">
+			<div class="mdui-panel-item-header mdui-text-color-red">
+				更新日期：2021.5.3
+			</div>
+			<div class="mdui-panel-item-body">
+				<p>站点版本：V0.9.0-SNAPSHOT</p>
+				<p>更新日志： </p>
+				<ul>
+					<li>新增支持：小米11Pro/Ultra、小米11 青春版、小米11 Lite 4G、小米 MIX FOLD、Redmi K40 游戏增强版；</li>
+				</ul>
+				<p></p>
 			</div>
 			<div class="mdui-panel-item mdui-panel-item-open">
 				<div class="mdui-panel-item-header mdui-text-color-red">
-					更新日期：2021.5.31
+					更新日期：2021.3.16
 				</div>
 				<div class="mdui-panel-item-body">
-					<p>站点版本：V0.9.1-SNAPSHOT</p>
+					<p>站点版本：V0.8.7-SNAPSHOT</p>
 					<p>更新日志： </p>
 					<ul>
-						<li>新增支持：Redmi Note 10、Redmi Note 8 2021、Redmi Note 10S、POCO X3 Pro;</li>
-					</ul>
-				</div>
-			</div>
-			<div class="mdui-panel-item mdui-panel-item-open"> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					更新日期：2021.5.3
-				</div>
-				<div class="mdui-panel-item-body">
-					<p>站点版本：V0.9.0-SNAPSHOT</p>
-					<p>更新日志： </p>
-					<ul>
-						<li>新增支持：小米11Pro/Ultra、小米11 青春版、小米11 Lite 4G、小米 MIX FOLD、Redmi K40 游戏增强版；</li>
+						<li>新增支持：小米10S、Redmi Note 10、Redmi Note 10 Pro/Pro Max</li>
 					</ul>
 					<p></p>
-				</div> 
-        <div class="mdui-panel-item mdui-panel-item-open"> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2021.3.16
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.8.7-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米10S、Redmi Note 10、Redmi Note 10 Pro/Pro Max</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-            <div class="mdui-panel-item mdui-panel-item-open"> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2021.3.12
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.8.4-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi K40、Redmi K40 Pro</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-			<div class="mdui-panel-item mdui-panel-item-open"> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2021.1.30 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.8.2-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：POCO M2、POCO M3</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2021.1.8 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.8.0-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米11、Redmi Note 9 4G、Redmi Note 9 5G、Redmi Note 9 Pro</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.10.30 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.7.6-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi K30S 至尊纪念版;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.10.15 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.7.5-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米10 至尊纪念版、小米10 Lite、小米10T Lite、POCO M2 Pro、POCO X3 NFC、Redmi 9、Redmi 9 India、Redmi 9A、Redmi 9C、Redmi 9C NFC、Redmi 10X 4G、Redmi 10X 5G、Redmi 10X Pro、Redmi K30 至尊纪念版、Redmi K30i 5G;</li> 
-						<li>替换LR.Team制作的第三方rec链接，再次感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>;</li> 
-						<li>替换橙狐Rec链接;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.05.18 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.6.7-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米10 青春版;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.05.18 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.6.7-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米10 青春版;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.05.12 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.6.6-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米Note10 Lite、POCO F2 Pro、Redmi Note 9;</li> 
-						<li>感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.04.17 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.6.4-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi Note 9 Pro Max;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.03.28 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.6.3-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi K30 Pro;</li> 
-						<li>补充部分国内和海外名称不同机型的标注；</li> 
-						<li>部分页面做了基础的移动端优化；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.03.14 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.6.2-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi 8A Dual、Redmi Note 9 Pro;</li> 
-						<li>补充部分国内和海外名称不同机型的标注；</li> 
-						<li>感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.02.16 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.6.0-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>机型详情页加入了第三方Recovery入口，包括LR.Team出品的，TWRP官方的，橙狐的;</li> 
-						<li>给部分国内和海外名称不同的机型做了标注，后续也会持续补充；</li> 
-						<li>感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>；</li> 
-						<li>感谢<a href="http://www.coolapk.com/u/2863368">博emmmm</a>同学帮忙联系LR.Team；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.02.13 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.5.9-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米10、小米10 Pro;</li> 
-						<li>更新部分稳定版；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2020.01.17 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.5.7-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi K30 5G版</li> 
-						<li>更新部分稳定版；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.12.11 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.5.6-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi K30 4G版</li> 
-						<li>近期只会注重于收录新版，旧版本一月再集中开始整理；</li> 
-						<li>更新部分稳定版；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.12.6 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.5.5-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>近期只会注重于收录新版，旧版本一月再集中开始整理；</li> 
-						<li>修正部分错误；</li> 
-						<li>更新部分稳定版；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.29 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.5.5-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>做了<a href="weekly/index.html">更新日志</a>查看页面，将<a href="bin.html">开发版</a>页面的资料转移了过去，按现在的样子看来这也是个较大的工程，后续也会慢慢补充的；</li> 
-						<li>更新部分稳定版；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.24 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.5.3-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米Note 4G 单卡版、红米Note2、红米Note3 特别版；</li> 
-						<li>把一些针对海外的机型整理了进去；</li> 
-						<li>更新部分稳定版；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.23 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.5.0-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米MIX3 5G版、红米Note 6 Pro、Redmi Note 8T 、Redmi Go、小米 POCOPHONE F1、小米A1、小米A2、小米A2 Lite、小米A3；</li> 
-						<li>把一些针对海外的机型整理了进去；</li> 
-						<li>更新部分稳定版；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.21 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.4.1-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米Note3 双网通;</li> 
-						<li>更新部分稳定版</li> 
-						<li>小小调整了一下“首页”和“站点日志”页面的支持列表样式，希望更好找</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.19 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.3.8-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米Note3 全网通、红米Note4/4X(联发科);</li> 
-						<li>更新部分稳定版</li> 
-						<li>新添加<a href="tools.html">"刷机工具"</a>页面，可以在左侧菜单栏找到入口，起底了小米助手老版本到最新版能找到的版本以及更新日志；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.17 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.3.8-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米5;</li> 
-						<li>更新部分稳定版</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.15 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.3.7-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米5S Plus、红米4 高配版;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.11 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.3.5-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米CC9 Pro、小米Max2、红米4X;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.10 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.3.2-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米5X、红米5;</li> 
-						<li>修正部分错误;</li> 
-						<li>收录诸多MIUI11稳定版刷机包；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.8 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.3.0-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米5Plus、红米5A;</li> 
-						<li>修正部分错误;</li> 
-						<li>收录诸多MIUI11稳定版刷机包；</li> 
-						<li>更新小米助手链接到最新版，由新小米社区相关官方开发发布，原帖：<a href="https://web.vip.miui.com/page/info/mio-pc/detail?postId=6100562" target="_blank">小米助手最新版本</a></li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.11.3 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.2.8-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米5S、小米5C、小米MIX、小米Note2;</li> 
-						<li>以上机型的国际版留后续补充，现在由于原国际版MIUI论坛下线的原因，找老包变得不太容易了，需要用时光机去慢慢补充；</li> 
-						<li>修正部分错误;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.30 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.2.6-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<!-- 、小米MIX、红米Pro、、 --> 
-						<li>新增支持：小米Play、红米Y3;</li> 
-						<li>修正部分错误;</li> 
-						<li>调整部分代码,文件体积减少,一定程度减少加载时间;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.29 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.2.4-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：无;</li> 
-						<li>删去了右侧机型列表,新增机型入口:<a href="devices/index.html">机型列表</a>;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.22 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.2.3-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米6、红米S2;</li> 
-						<li>补充小米8版本:V9.5.6.0.OEACNFA, 感谢酷友 <a href="http://www.coolapk.com/u/2232409" style="text-decoration: none;color:rgb(60, 182, 60);">@ee恶ee</a>;</li> 
-						<li>更新一部分机型的稳定版;</li> 
-						<li>将小米助手3.0 Beta更换成了小米助手 4.0.529.193;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.19 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.2.1-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米Max3;</li> 
-						<li>补充部分加入"防回刷"功能机型的提醒内容;</li> 
-						<li>第一批12个机型的MIUI11已经收录完毕;</li> 
-						<li>正式公布<a href="bin.html">开发版</a>目录,入口只在"站点日志"页面里展示;</li> 
-						<li>关于开发版目录:</li> 
-						<ol> 
-							<li>页面资料均来自网络;</li> 
-							<li style="color: crimson;font-weight: 900;">从这里刷机刷出了问题,别去找官方的麻烦,此种情况找官方只会害人害己;</li> 
-							<li>请不要在有官方人员的地方宣传本页面;</li> 
-						</ol> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.17 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.2.0-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米Note 5;</li> 
-						<li>更新一部分机型的MIUI11稳定版;</li> 
-						<li>修改了部分排版设计;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.15 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.1.9-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：Redmi 8、Redmi 8A;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.14 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.1.7-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米Note 5A 标准版;</li> 
-						<li>新增<a href="thanks.html" style="text-decoration: none;color:red;font-weight: bolder;;">鸣谢页面</a>;</li> 
-						<li>更新一部分机型的稳定版;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.13 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.1.6-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米Note 5A 高配版;</li> 
-						<li>红米Note 5A 标准版正在整理,下一个红米Note5;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.10 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.1.5-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米6X;</li> 
-						<li>修正一些小错误;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.8 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.1.4-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：红米Note4X(高通);</li> 
-						<li>修正一些小错误;</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.6 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.1.3-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米8、小米8透明探索版；</li> 
-						<li>下一个整理红米Note4X(高通)(mido)，之前就有老哥提过；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.5 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.1.1-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米8屏幕指纹版、小米8青春版、小米8 SE；</li> 
-						<li>原本准备把小米8系列一并做完的，来不及了，小米8和小米8探索版明天做起来；</li> 
-						<li>新增<a href="recruit.html" style="text-decoration: none;color:red;">招募页面</a>：为了有效收集MIUI11链接，综合考虑过后决定现建群，再研究技术细节，初步计划每个机型一两人； </li> 
-						<li>具体细节，请在酷安私信我(<a href="http://www.coolapk.com/u/689716" style="text-decoration: none;color:rgb(60, 182, 60);">@海力力</a>)进行了解，请标注机型和权限类型(公测/内测)； </li> 
-						<li>非常感谢大家的帮助！</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.3 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.0.8-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>新增支持：小米MIX2；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.10.1 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.0.7-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>祝大家国庆节快乐，祝我国生日快乐；</li> 
-						<li>更新部分机型的稳定版；</li> 
-						<li>去掉了除首页和站点日志以外页面的页眉模块；</li> 
-						<li>修复机型页面里的统计平台的问题；</li> 
-						<li>新增支持：红米6A；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.9.29 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.0.6-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>更新了部分机型的稳定版；</li> 
-						<li>新增支持：小米9 SE、Redmi 7A、红米6 Pro；</li> 
-						<li>请注意，红米6 Pro 引入了“防回刷”机制，谨记相关限制，以防损坏手机；</li> 
-						<li><del>新添加了开发版页面；</del> </li> 
-						<li><del>出于各种原因，该页面会收录MIUI11 开发版，一周一更，资源来自于网络，并非经过“官方”认证，有需要来拿就好；</del></li> 
-						<li><del>以上页面如果没有收录某个机型，那么说明我没找到该机型的链接亦或者官方没有发布该机型的该版本；</del></li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.9.27 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.0.5-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>将站点icon换成了MIUI11的；</li> 
-						<li>改了点样式；</li> 
-						<li>新增支持：小米9 Pro 5G、Redmi 7；</li> 
-						<li>原本想着MIUI论坛里的收集起来还是OK的，但是没想到部分合集帖已经被屏蔽掉了，只能等待后续通过Wayback Machine去找了；</li> 
-						<li>不过论坛上能找到的，我都保存了一下，近期更新的都会是这些机型；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.9.22 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.0.4-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>机型名称后边加上了代号，日志算昨天的，忘了写了；</li> 
-						<li>新增支持：小米9、小米MIX3；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.9.21 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.0.3-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>22:50 ，小米Note 3 算是搞定了，不过对比其余机型缺少的版本内容挺多的，看看往后有没有机会补充吧；</li> 
-						<li>新增支持Redmi Note8、Redmi K20 Pro尊享版、小米平板4/Plus，小米Note3；</li> 
-						<li>修复回到顶部在footer区域不显示的问题；</li> 
-						<li>引入站长统计平台；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item-header mdui-text-color-red">
-					 更新日期：2019.9.20 
-				</div> 
-				<div class="mdui-panel-item-body"> 
-					<p>站点版本：V0.0.2-SNAPSHOT</p> 
-					<p>更新日志： </p> 
-					<ul> 
-						<li>先把几个新机型做了进去，毕竟整理起来简单一些，剩下的就是老机型了；</li> 
-						<li>新增机型：小米CC9、小米CC9e、小米CC9美图定制版、Redmi Note 7、Redmi Note 7 Pro、Redmi Note 8 Pro；</li> 
-						<li>修复之前小米助手3.0由于MIUI论坛原因无法下载的问题，这次换成了百度云；</li> 
-						<li>把“站点日志”页面做出来了；</li> 
-					</ul> 
-					<p></p> 
-				</div> 
-				<div class="mdui-panel-item mdui-panel-item-open"> 
+				</div>
+				<div class="mdui-panel-item mdui-panel-item-open">
 					<div class="mdui-panel-item-header mdui-text-color-red">
-						 更新日期：2019.9.19 
-					</div> 
-					<div class="mdui-panel-item-body"> 
-						<p>站点版本：V0.0.1-SNAPSHOT</p> 
-						<p>更新日志： </p> 
-						<ul> 
-							<li>新增机型：小米6、小米MIX2S、Redmi K20、Redmi K20 Pro；</li> 
-							<li>当前只制作上线部分机型的最新刷机包页面，其余的慢慢补充吧；</li> 
-						</ul> 
-						<p></p> 
-						<br> 
-					</div> 
-				</div> 
-			</div> 
-		</div> 
-		<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height: 120px;"> 
-			<div class="mdui-container-fluid"> 
-				<div class="mdui-row mdui-footer-nav"> 
-					<div class="mdui-col-xs-3"> 
-						<h3><a href="../aboutme.html" target="_blank" style="font-size: 15px;">关于我</a></h3> 
-					</div> 
-					<div class="mdui-col-xs-4"> 
-						<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size: 15px;">我的主页</a> </h3> 
-					</div> 
-					<div class="mdui-col-xs-5"> 
-						<h3><a href="https://www.mdui.org" target="_blank" style="font-size: 15px;">使用MDUI打造</a></h3> 
-					</div> 
-				</div> 
-				<div class="mdui-divider footer-divider"></div> 
-				<p></p> 
-				<div class="mdui-text-center">
-					 2019 - 2022
-				</div> 
-				<div style=" position:absolute; right:20px;bottom: 5px;"> 
-					
-				</div> 
-			</div> 
-		</footer> 
-		<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>  
-	</body>
+						更新日期：2021.3.12
+					</div>
+					<div class="mdui-panel-item-body">
+						<p>站点版本：V0.8.4-SNAPSHOT</p>
+						<p>更新日志： </p>
+						<ul>
+							<li>新增支持：Redmi K40、Redmi K40 Pro</li>
+						</ul>
+						<p></p>
+					</div>
+					<div class="mdui-panel-item mdui-panel-item-open">
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2021.1.30
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.8.2-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：POCO M2、POCO M3</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2021.1.8
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.8.0-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米11、Redmi Note 9 4G、Redmi Note 9 5G、Redmi Note 9 Pro</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.10.30
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.7.6-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：Redmi K30S 至尊纪念版;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.10.15
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.7.5-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米10 至尊纪念版、小米10 Lite、小米10T Lite、POCO M2 Pro、POCO X3 NFC、Redmi 9、Redmi 9 India、Redmi 9A、Redmi 9C、Redmi 9C NFC、Redmi 10X 4G、Redmi 10X 5G、Redmi 10X Pro、Redmi K30 至尊纪念版、Redmi K30i 5G;</li>
+								<li>替换LR.Team制作的第三方rec链接，再次感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>;</li>
+								<li>替换橙狐Rec链接;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.05.18
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.6.7-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米10 青春版;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.05.18
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.6.7-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米10 青春版;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.05.12
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.6.6-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米Note10 Lite、POCO F2 Pro、Redmi Note 9;</li>
+								<li>感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.04.17
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.6.4-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：Redmi Note 9 Pro Max;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.03.28
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.6.3-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：Redmi K30 Pro;</li>
+								<li>补充部分国内和海外名称不同机型的标注；</li>
+								<li>部分页面做了基础的移动端优化；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.03.14
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.6.2-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：Redmi 8A Dual、Redmi Note 9 Pro;</li>
+								<li>补充部分国内和海外名称不同机型的标注；</li>
+								<li>感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.02.16
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.6.0-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>机型详情页加入了第三方Recovery入口，包括LR.Team出品的，TWRP官方的，橙狐的;</li>
+								<li>给部分国内和海外名称不同的机型做了标注，后续也会持续补充；</li>
+								<li>感谢<a href="https://weibo.com/ilrteam">LRTeam官微</a>以及<a href="https://www.weibo.com/u/6033736159">wzsx150</a>；</li>
+								<li>感谢<a href="http://www.coolapk.com/u/2863368">博emmmm</a>同学帮忙联系LR.Team；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.02.13
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.5.9-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米10、小米10 Pro;</li>
+								<li>更新部分稳定版；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2020.01.17
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.5.7-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：Redmi K30 5G版</li>
+								<li>更新部分稳定版；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.12.11
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.5.6-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：Redmi K30 4G版</li>
+								<li>近期只会注重于收录新版，旧版本一月再集中开始整理；</li>
+								<li>更新部分稳定版；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.12.6
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.5.5-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>近期只会注重于收录新版，旧版本一月再集中开始整理；</li>
+								<li>修正部分错误；</li>
+								<li>更新部分稳定版；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.29
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.5.5-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>做了<a href="weekly/index.html">更新日志</a>查看页面，将<a href="bin.html">开发版</a>页面的资料转移了过去，按现在的样子看来这也是个较大的工程，后续也会慢慢补充的；</li>
+								<li>更新部分稳定版；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.24
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.5.3-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米Note 4G 单卡版、红米Note2、红米Note3 特别版；</li>
+								<li>把一些针对海外的机型整理了进去；</li>
+								<li>更新部分稳定版；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.23
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.5.0-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米MIX3 5G版、红米Note 6 Pro、Redmi Note 8T 、Redmi Go、小米 POCOPHONE F1、小米A1、小米A2、小米A2 Lite、小米A3；</li>
+								<li>把一些针对海外的机型整理了进去；</li>
+								<li>更新部分稳定版；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.21
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.4.1-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米Note3 双网通;</li>
+								<li>更新部分稳定版</li>
+								<li>小小调整了一下“首页”和“站点日志”页面的支持列表样式，希望更好找</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.19
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.3.8-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米Note3 全网通、红米Note4/4X(联发科);</li>
+								<li>更新部分稳定版</li>
+								<li>新添加<a href="tools.html">"刷机工具"</a>页面，可以在左侧菜单栏找到入口，起底了小米助手老版本到最新版能找到的版本以及更新日志；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.17
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.3.8-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米5;</li>
+								<li>更新部分稳定版</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.15
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.3.7-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米5S Plus、红米4 高配版;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.11
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.3.5-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米CC9 Pro、小米Max2、红米4X;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.10
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.3.2-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米5X、红米5;</li>
+								<li>修正部分错误;</li>
+								<li>收录诸多MIUI11稳定版刷机包；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.8
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.3.0-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米5Plus、红米5A;</li>
+								<li>修正部分错误;</li>
+								<li>收录诸多MIUI11稳定版刷机包；</li>
+								<li>更新小米助手链接到最新版，由新小米社区相关官方开发发布，原帖：<a href="https://web.vip.miui.com/page/info/mio-pc/detail?postId=6100562" target="_blank">小米助手最新版本</a></li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.11.3
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.2.8-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米5S、小米5C、小米MIX、小米Note2;</li>
+								<li>以上机型的国际版留后续补充，现在由于原国际版MIUI论坛下线的原因，找老包变得不太容易了，需要用时光机去慢慢补充；</li>
+								<li>修正部分错误;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.30
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.2.6-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<!-- 、小米MIX、红米Pro、、 -->
+								<li>新增支持：小米Play、红米Y3;</li>
+								<li>修正部分错误;</li>
+								<li>调整部分代码,文件体积减少,一定程度减少加载时间;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.29
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.2.4-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：无;</li>
+								<li>删去了右侧机型列表,新增机型入口:<a href="devices/index.html">机型列表</a>;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.22
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.2.3-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米6、红米S2;</li>
+								<li>补充小米8版本:V9.5.6.0.OEACNFA, 感谢酷友 <a href="http://www.coolapk.com/u/2232409" style="text-decoration: none;color:rgb(60, 182, 60);">@ee恶ee</a>;</li>
+								<li>更新一部分机型的稳定版;</li>
+								<li>将小米助手3.0 Beta更换成了小米助手 4.0.529.193;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.19
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.2.1-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米Max3;</li>
+								<li>补充部分加入"防回刷"功能机型的提醒内容;</li>
+								<li>第一批12个机型的MIUI11已经收录完毕;</li>
+								<li>正式公布<a href="bin.html">开发版</a>目录,入口只在"站点日志"页面里展示;</li>
+								<li>关于开发版目录:</li>
+								<ol>
+									<li>页面资料均来自网络;</li>
+									<li style="color: crimson;font-weight: 900;">从这里刷机刷出了问题,别去找官方的麻烦,此种情况找官方只会害人害己;</li>
+									<li>请不要在有官方人员的地方宣传本页面;</li>
+								</ol>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.17
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.2.0-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米Note 5;</li>
+								<li>更新一部分机型的MIUI11稳定版;</li>
+								<li>修改了部分排版设计;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.15
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.1.9-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：Redmi 8、Redmi 8A;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.14
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.1.7-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米Note 5A 标准版;</li>
+								<li>新增<a href="thanks.html" style="text-decoration: none;color:red;font-weight: bolder;;">鸣谢页面</a>;</li>
+								<li>更新一部分机型的稳定版;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.13
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.1.6-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米Note 5A 高配版;</li>
+								<li>红米Note 5A 标准版正在整理,下一个红米Note5;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.10
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.1.5-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米6X;</li>
+								<li>修正一些小错误;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.8
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.1.4-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：红米Note4X(高通);</li>
+								<li>修正一些小错误;</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.6
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.1.3-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米8、小米8透明探索版；</li>
+								<li>下一个整理红米Note4X(高通)(mido)，之前就有老哥提过；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.5
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.1.1-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米8屏幕指纹版、小米8青春版、小米8 SE；</li>
+								<li>原本准备把小米8系列一并做完的，来不及了，小米8和小米8探索版明天做起来；</li>
+								<li>新增<a href="recruit.html" style="text-decoration: none;color:red;">招募页面</a>：为了有效收集MIUI11链接，综合考虑过后决定现建群，再研究技术细节，初步计划每个机型一两人； </li>
+								<li>具体细节，请在酷安私信我(<a href="http://www.coolapk.com/u/689716" style="text-decoration: none;color:rgb(60, 182, 60);">@海力力</a>)进行了解，请标注机型和权限类型(公测/内测)； </li>
+								<li>非常感谢大家的帮助！</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.3
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.0.8-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>新增支持：小米MIX2；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.10.1
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.0.7-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>祝大家国庆节快乐，祝我国生日快乐；</li>
+								<li>更新部分机型的稳定版；</li>
+								<li>去掉了除首页和站点日志以外页面的页眉模块；</li>
+								<li>修复机型页面里的统计平台的问题；</li>
+								<li>新增支持：红米6A；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.9.29
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.0.6-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>更新了部分机型的稳定版；</li>
+								<li>新增支持：小米9 SE、Redmi 7A、红米6 Pro；</li>
+								<li>请注意，红米6 Pro 引入了“防回刷”机制，谨记相关限制，以防损坏手机；</li>
+								<li><del>新添加了开发版页面；</del> </li>
+								<li><del>出于各种原因，该页面会收录MIUI11 开发版，一周一更，资源来自于网络，并非经过“官方”认证，有需要来拿就好；</del></li>
+								<li><del>以上页面如果没有收录某个机型，那么说明我没找到该机型的链接亦或者官方没有发布该机型的该版本；</del></li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.9.27
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.0.5-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>将站点icon换成了MIUI11的；</li>
+								<li>改了点样式；</li>
+								<li>新增支持：小米9 Pro 5G、Redmi 7；</li>
+								<li>原本想着MIUI论坛里的收集起来还是OK的，但是没想到部分合集帖已经被屏蔽掉了，只能等待后续通过Wayback Machine去找了；</li>
+								<li>不过论坛上能找到的，我都保存了一下，近期更新的都会是这些机型；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.9.22
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.0.4-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>机型名称后边加上了代号，日志算昨天的，忘了写了；</li>
+								<li>新增支持：小米9、小米MIX3；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.9.21
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.0.3-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>22:50 ，小米Note 3 算是搞定了，不过对比其余机型缺少的版本内容挺多的，看看往后有没有机会补充吧；</li>
+								<li>新增支持Redmi Note8、Redmi K20 Pro尊享版、小米平板4/Plus，小米Note3；</li>
+								<li>修复回到顶部在footer区域不显示的问题；</li>
+								<li>引入站长统计平台；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item-header mdui-text-color-red">
+							更新日期：2019.9.20
+						</div>
+						<div class="mdui-panel-item-body">
+							<p>站点版本：V0.0.2-SNAPSHOT</p>
+							<p>更新日志： </p>
+							<ul>
+								<li>先把几个新机型做了进去，毕竟整理起来简单一些，剩下的就是老机型了；</li>
+								<li>新增机型：小米CC9、小米CC9e、小米CC9美图定制版、Redmi Note 7、Redmi Note 7 Pro、Redmi Note 8 Pro；</li>
+								<li>修复之前小米助手3.0由于MIUI论坛原因无法下载的问题，这次换成了百度云；</li>
+								<li>把“站点日志”页面做出来了；</li>
+							</ul>
+							<p></p>
+						</div>
+						<div class="mdui-panel-item mdui-panel-item-open">
+							<div class="mdui-panel-item-header mdui-text-color-red">
+								更新日期：2019.9.19
+							</div>
+							<div class="mdui-panel-item-body">
+								<p>站点版本：V0.0.1-SNAPSHOT</p>
+								<p>更新日志： </p>
+								<ul>
+									<li>新增机型：小米6、小米MIX2S、Redmi K20、Redmi K20 Pro；</li>
+									<li>当前只制作上线部分机型的最新刷机包页面，其余的慢慢补充吧；</li>
+								</ul>
+								<p></p>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="mdui-color-grey-700 mdui-bottom-nav" style="height: 120px;">
+					<div class="mdui-container-fluid">
+						<div class="mdui-row mdui-footer-nav">
+							<div class="mdui-col-xs-3">
+								<h3><a href="../aboutme.html" target="_blank" style="font-size: 15px;">关于我</a></h3>
+							</div>
+							<div class="mdui-col-xs-4">
+								<h3><a href="http://www.miui.com/space-uid-311975809.html" target="_blank" style="font-size: 15px;">我的主页</a> </h3>
+							</div>
+							<div class="mdui-col-xs-5">
+								<h3><a href="https://www.mdui.org" target="_blank" style="font-size: 15px;">使用MDUI打造</a></h3>
+							</div>
+						</div>
+						<div class="mdui-divider footer-divider"></div>
+						<p></p>
+						<div class="mdui-text-center">
+							2019 - 2022
+						</div>
+						<div style=" position:absolute; right:20px;bottom: 5px;">
+
+						</div>
+					</div>
+				</footer>
+				<a href="#top"><button class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-deep-orange-accent"><i class="mdui-icon material-icons">arrow_upward</i></button></a>
+				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e0818275b9944a59d625e2df596aaca"}'></script>
+</body>
+
 </html>
