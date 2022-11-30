@@ -1,5 +1,6 @@
 body {
     font-family: "MISans";
+    filter: grayscale();
 }
 a {
     text-decoration: none;
