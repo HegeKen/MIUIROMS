@@ -1,0 +1,1166 @@
+{
+    "mi": {
+        "mi": {
+            "mione_plus": {
+                "codename": "mione_plus",
+                "CnName": "小米手机1/1S",
+                "EnName": "Mi 1/1S"
+            },
+            "aries": {
+                "codename": "aries",
+                "CnName": "小米 2/2S",
+                "EnName": "Mi 2/2S"
+            },
+            "pisces": {
+                "codename": "pisces",
+                "CnName": "小米 3 移动版",
+                "EnName": "Mi 3 TD"
+            },
+            "cancro": {
+                "codename": "cancro",
+                "CnName": "小米 3 联通电信版/小米 4",
+                "EnName": "Mi 3WCDMA/Mi 4"
+            },
+            "": {
+                "codename": "ferrari",
+                "CnName": "小米 4i",
+                "EnName": "Mi 4i"
+            },
+            "libra": {
+                "codename": "libra",
+                "CnName": "小米 4C",
+                "EnName": "Mi 4C"
+            },
+            "aqua": {
+                "codename": "aqua",
+                "CnName": "小米 4S",
+                "EnName": "Mi 4S"
+            },
+            "gemini": {
+                "codename": "gemini",
+                "CnName": "小米 5",
+                "EnName": "Mi 5"
+            },
+            "capricorn": {
+                "codename": "capricorn",
+                "CnName": "小米 5S",
+                "EnName": "Mi 5S"
+            },
+            "natrium": {
+                "codename": "natrium",
+                "CnName": "小米 5S Plus",
+                "EnName": "Mi 5S Plus"
+            },
+            "meri": {
+                "codename": "meri",
+                "CnName": "小米 5C",
+                "EnName": "Mi 5C"
+            },
+            "tiffany": {
+                "codename": "tiffany",
+                "CnName": "小米 5X",
+                "EnName": "Mi 5X"
+            },
+            "sagit": {
+                "codename": "sagit",
+                "CnName": "小米 6",
+                "EnName": "Mi 6"
+            },
+            "wayne": {
+                "codename": "wayne",
+                "CnName": "小米 6X",
+                "EnName": "Mi 6X"
+            },
+            "dipper": {
+                "codename": "dipper",
+                "CnName": "小米 8",
+                "EnName": "Mi 8"
+            },
+            "equuleus": {
+                "codename": "equuleus",
+                "CnName": "小米 8 屏幕指纹版",
+                "EnName": "Mi 8 Pro"
+            },
+            "ursa": {
+                "codename": "ursa",
+                "CnName": "小米 8 透明探索版",
+                "EnName": "Mi 8 Explorer"
+            },
+            "platina": {
+                "codename": "platina",
+                "CnName": "platina",
+                "EnName": "Mi 8 Lite"
+            },
+            "cepheus": {
+                "codename": "cepheus",
+                "CnName": "小米 9",
+                "EnName": "Mi 9"
+            },
+            "crux": {
+                "codename": "crux",
+                "CnName": "小米 9 Pro 5G",
+                "EnName": "Mi 9 Pro 5G"
+            },
+            "pyxis": {
+                "codename": "pyxis",
+                "CnName": "小米 9 Lite",
+                "EnName": "Mi 9 Lite"
+            },
+            "davinci": {
+                "codename": "davinci",
+                "CnName": "小米 9T",
+                "EnName": "Mi 9T"
+            },
+            "raphael": {
+                "codename": "raphael",
+                "CnName": "小米 9T Pro",
+                "EnName": "Mi 9T Pro"
+            },
+            "umi": {
+                "codename": "umi",
+                "CnName": "小米 10",
+                "EnName": "Mi 10"
+            },
+            "cmi": {
+                "codename": "cmi",
+                "CnName": "小米 10 Pro",
+                "EnName": "Mi 10 Pro"
+            },
+            "monet": {
+                "codename": "monet",
+                "CnName": "小米 10 Lite",
+                "EnName": "Mi 10 Lite"
+            },
+            "vangogh": {
+                "codename": "vangogh",
+                "CnName": "小米 10 青春版",
+                "EnName": "Mi 10 Lite Zoom"
+            },
+            "gauguin": {
+                "codename": "gauguin",
+                "CnName": "小米 10T Lite/小米 10i",
+                "EnName": "Mi 10T Lite/Mi 10i"
+            },
+            "apollo": {
+                "codename": "apollo",
+                "CnName": "小米 10T/Pro",
+                "EnName": "Mi 10T/Pro"
+            },
+            "thyme": {
+                "codename": "thyme",
+                "CnName": "小米 10S",
+                "EnName": "Mi 10S"
+            },
+            "cas": {
+                "codename": "cas",
+                "CnName": "小米 10 至尊纪念版",
+                "EnName": "Mi 10 Ultra"
+            },
+            "venus": {
+                "codename": "venus",
+                "CnName": "小米 11",
+                "EnName": "Mi 11"
+            },
+            "courbet": {
+                "codename": "courbet",
+                "CnName": "小米 11 Lite 4G",
+                "EnName": "Mi 11 Lite 4G"
+            },
+            "renoir": {
+                "codename": "renoir",
+                "CnName": "小米 11 青春版",
+                "EnName": "Mi 11 Lite 5G"
+            },
+            "lisa": {
+                "codename": "lisa",
+                "CnName": "小米 11 青春活力版",
+                "EnName": "Xiaomi 11 Lite 5G NE"
+            },
+            "star": {
+                "codename": "star",
+                "CnName": "小米 11 Pro/Ultra",
+                "EnName": "Mi 11 Pro/Ultra"
+            },
+            "agate": {
+                "codename": "agate",
+                "CnName": "小米 11T",
+                "EnName": "Xiaomi 11T"
+            },
+            "vili": {
+                "codename": "vili",
+                "CnName": "小米 11T Pro",
+                "EnName": "Xiaomi 11T Pro"
+            },
+            "alioth": {
+                "codename": "alioth",
+                "CnName": "小米 11X",
+                "EnName": "Mi 11X"
+            },
+            "haydn": {
+                "codename": "haydn",
+                "CnName": "小米 11X Pro/小米 11i",
+                "EnName": "Mi 11X Pro/Mi 11i"
+            },
+            "pissarro": {
+                "codename": "pissarro",
+                "CnName": "小米 11i 5G",
+                "EnName": "Xiaomi 11i / Hypercharge"
+            },
+            "cupid": {
+                "codename": "cupid",
+                "CnName": "小米 12",
+                "EnName": "Mi 12"
+            },
+            "zeus": {
+                "codename": "zeus",
+                "CnName": "小米 12 Pro",
+                "EnName": "Mi 12 Pro"
+            },
+            "daumier": {
+                "codename": "daumier",
+                "CnName": "小米 12 Pro 天玑版",
+                "EnName": "Xiaomi 12 Pro Dimensity"
+            },
+            "mayfly": {
+                "codename": "mayfly",
+                "CnName": "小米 12S",
+                "EnName": "Mi 12S"
+            },
+            "unicorn": {
+                "codename": "unicorn",
+                "CnName": "小米 12S Pro",
+                "EnName": "Mi 12S Pro"
+            },
+            "thor": {
+                "codename": "thor",
+                "CnName": "小米 12S Ultra",
+                "EnName": "Mi 12S Ultra"
+            },
+            "psyche": {
+                "codename": "psyche",
+                "CnName": "小米 12X",
+                "EnName": "Mi 12X"
+            },
+            "taoyao": {
+                "codename": "taoyao",
+                "CnName": "小米 12 Lite",
+                "EnName": "Xiaomi 12 Lite"
+            },
+            "plato": {
+                "codename": "plato",
+                "CnName": "小米 12T",
+                "EnName": "Xiaomi 12T"
+            },
+            "diting": {
+                "codename": "diting",
+                "CnName": "小米 12T Pro",
+                "EnName": "Xiaomi 12T Pro"
+            }
+        },
+        "mise": {
+            "sirius": {
+                "codename": "sirius",
+                "CnName": "小米 8 SE",
+                "EnName": "Mi 8SE"
+            },
+            "grus": {
+                "codename": "grus",
+                "CnName": "小米 9 SE",
+                "EnName": "Mi 9SE"
+            }
+        },
+        "micc": {
+            "": {
+                "codename": "pyxis",
+                "CnName": "小米 CC 9",
+                "EnName": "Mi 9 Lite"
+            },
+            "": {
+                "codename": "laurus",
+                "CnName": "小米 CC 9e",
+                "EnName": "Mi CC 9e"
+            },
+            "": {
+                "codename": "vela",
+                "CnName": "小米 CC 9 美图定制版",
+                "EnName": "Mi CC 9 Meitu Edition"
+            },
+            "": {
+                "codename": "tucana",
+                "CnName": "小米 CC9 Pro",
+                "EnName": "Mi CC 9 Pro"
+            }
+        },
+        "minote": {
+            "virgo": {
+                "codename": "virgo",
+                "CnName": "小米 Note1",
+                "EnName": "Mi Note 1"
+            },
+            "virgo_lte_ct": {
+                "codename": "virgo_lte_ct",
+                "CnName": "小米 Note 双网通/全网通",
+                "EnName": "Mi Note LTE CT"
+            },
+            "leo": {
+                "codename": "leo",
+                "CnName": "小米 Note 顶配版",
+                "EnName": "Mi Note Pro"
+            },
+            "scorpio": {
+                "codename": "scorpio",
+                "CnName": "小米 Note 2",
+                "EnName": "Mi Note 2"
+            },
+            "jason": {
+                "codename": "jason",
+                "CnName": "小米 Note 3",
+                "EnName": "Mi Note 3"
+            },
+            "toco": {
+                "codename": "toco",
+                "CnName": "小米 Note 10 Lite",
+                "EnName": "Mi Note 10 Lite"
+            },
+            "tucana": {
+                "codename": "tucana",
+                "CnName": "小米 Note 10/Pro",
+                "EnName": "Mi Note 10/Pro"
+            }
+        },
+        "mimax": {
+            "hydrogen": {
+                "codename": "hydrogen",
+                "CnName": "小米 MAX 标准版",
+                "EnName": "Mi Max"
+            },
+            "helium": {
+                "codename": "helium",
+                "CnName": "小米 MAX 高配版",
+                "EnName": "Mi Max Prime"
+            },
+            "oxygen": {
+                "codename": "oxygen",
+                "CnName": "小米 MAX 2",
+                "EnName": "Mi Max 2"
+            },
+            "nitrogen": {
+                "codename": "nitrogen",
+                "CnName": "小米 MAX 3",
+                "EnName": "Mi Max 3"
+            }
+        },
+        "mimix": {
+            "lithium": {
+                "codename": "lithium",
+                "CnName": "小米 MIX",
+                "EnName": "Mi MIX"
+            },
+            "chiron": {
+                "codename": "chiron",
+                "CnName": "小米 MIX 2",
+                "EnName": "Mi MIX 2"
+            },
+            "polaris": {
+                "codename": "polaris",
+                "CnName": "小米 MIX 2S",
+                "EnName": "Mi MIX 2S"
+            },
+            "perseus": {
+                "codename": "perseus",
+                "CnName": "小米 MIX 3",
+                "EnName": "Mi MIX 3"
+            },
+            "andromeda": {
+                "codename": "andromeda",
+                "CnName": "小米 MIX 3 5G",
+                "EnName": "Mi MIX 3 5G"
+            },
+            "cetus": {
+                "codename": "cetus",
+                "CnName": "小米 MIX FOLD",
+                "EnName": "Mi MIX FOLD"
+            },
+            "odin": {
+                "codename": "odin",
+                "CnName": "小米 MIX 4",
+                "EnName": "Mi MIX 4"
+            },
+            "zizhan": {
+                "codename": "zizhan",
+                "CnName": "小米 MIX FOLD 2",
+                "EnName": "Mi MIX FOLD 2"
+            }
+        },
+        "mipad": {
+            "mocha": {
+                "codename": "mocha",
+                "CnName": "小米平板 1",
+                "EnName": "MiPad 1"
+            },
+            "latte": {
+                "codename": "latte",
+                "CnName": "小米平板 2",
+                "EnName": "MiPad 2"
+            },
+            "cappu": {
+                "codename": "cappu",
+                "CnName": "小米平板 3",
+                "EnName": "MiPad 3"
+            },
+            "clover": {
+                "codename": "clover",
+                "CnName": "小米平板 4/Plus",
+                "EnName": "MiPad 4/Plus"
+            },
+            "nabu": {
+                "codename": "nabu",
+                "CnName": "小米平板 5",
+                "EnName": "Xiaomi Pad 5"
+            },
+            "elish": {
+                "codename": "elish",
+                "CnName": "小米平板 5 Pro",
+                "EnName": "Xiaomi Pad 5 Pro Wi-Fi"
+            },
+            "enuma": {
+                "codename": "enuma",
+                "CnName": "小米平板 5 Pro 5G",
+                "EnName": "Xiaomi Pad 5 Pro 5G"
+            },
+            "dagu": {
+                "codename": "dagu",
+                "CnName": "小米平板 5 Pro 12.4",
+                "EnName": "Xiaomi Pad 5 Pro 12.4"
+            }
+        },
+        "micivi": {
+            "mona": {
+                "codename": "mona",
+                "CnName": "小米 Civi 1",
+                "EnName": "Xiaomi Civi"
+            },
+            "zijin": {
+                "codename": "zijin",
+                "CnName": "小米 Civi 1S",
+                "EnName": "Xiaomi Civi 1S"
+            },
+            "ziyi": {
+                "codename": "ziyi",
+                "CnName": "小米 Civi 2",
+                "EnName": "Xiaomi Civi 2"
+            }
+        },
+        "mia": {
+            "tissot": {
+                "codename": "tissot",
+                "CnName": "小米 A1",
+                "EnName": "Mi A1"
+            },
+            "jasmine": {
+                "codename": "jasmine",
+                "CnName": "小米 A2",
+                "EnName": "Mi A2"
+            },
+            "daisy": {
+                "codename": "daisy",
+                "CnName": "小米 A2 Lite",
+                "EnName": "Mi A2 Lite"
+            },
+            "laurel": {
+                "codename": "laurel",
+                "CnName": "小米 A3",
+                "EnName": "Mi A3"
+            }
+        },
+        "miothers": {
+            "lotus": {
+                "codename": "lotus",
+                "CnName": "小米 Play",
+                "EnName": "Mi Play"
+            }
+        }
+    },
+    "redmi": {
+        "redmi": {
+            "wt93007": {
+                "codename": "wt93007",
+                "CnName": "红米 1/1W",
+                "EnName": "Redmi 1/1W"
+            },
+            "wt93807": {
+                "codename": "wt93807",
+                "CnName": "红米 1S 移动3G版",
+                "EnName": "Redmi 1S TD"
+            },
+            "wt96007": {
+                "codename": "wt96007",
+                "CnName": "红米 1S 移动4G版",
+                "EnName": "Redmi 1S LTE"
+            },
+            "wt86047": {
+                "codename": "wt86047",
+                "CnName": "红米 2 TD",
+                "EnName": "Redmi 2 TD"
+            },
+            "wt88047": {
+                "codename": "wt88047",
+                "CnName": "红米 2 WCDMA",
+                "EnName": "Redmi 2 WCDMA"
+            },
+            "wt86047_pro": {
+                "codename": "wt86047_pro",
+                "CnName": "红米 2 增强版",
+                "EnName": "Redmi 2 LTE"
+            },
+            "wt88047_pro": {
+                "codename": "wt88047_pro",
+                "CnName": "红米 2 WCDMA 增强版",
+                "EnName": "Redmi 2W Pro"
+            },
+            "lte26007": {
+                "codename": "lte26007",
+                "CnName": "红米 2A 标准版",
+                "EnName": "Redmi 2A"
+            },
+            "ido_xhdpi": {
+                "codename": "ido_xhdpi",
+                "CnName": "红米 3/Pro",
+                "EnName": "Redmi 3/3 Pro"
+            },
+            "land": {
+                "codename": "land",
+                "CnName": "红米 3S/3X",
+                "EnName": "Redmi 3S/3X"
+            },
+            "prada": {
+                "codename": "prada",
+                "CnName": "红米 4 标准版",
+                "EnName": "Redmi 4"
+            },
+            "markw": {
+                "codename": "markw",
+                "CnName": "红米 4 高配版",
+                "EnName": "Redmi 4 Prime"
+            },
+            "rolex": {
+                "codename": "rolex",
+                "CnName": "红米 4A",
+                "EnName": "Redmi 4A"
+            },
+            "santoni": {
+                "codename": "santoni",
+                "CnName": "红米 4X",
+                "EnName": "Redmi 4X"
+            },
+            "riva": {
+                "codename": "riva",
+                "CnName": "红米 5A",
+                "EnName": "Redmi 5A"
+            },
+            "rosy": {
+                "codename": "rosy",
+                "CnName": "红米 5",
+                "EnName": "Redmi 5"
+            },
+            "vince": {
+                "codename": "vince",
+                "CnName": "红米 5 Plus",
+                "EnName": "Redmi 5 Plus"
+            },
+            "cereus": {
+                "codename": "cereus",
+                "CnName": "红米 6",
+                "EnName": "Redmi 6"
+            },
+            "cactus": {
+                "codename": "cactus",
+                "CnName": "红米 6A",
+                "EnName": "Redmi 6A"
+            },
+            "sakura": {
+                "codename": "sakura",
+                "CnName": "红米 6 Pro",
+                "EnName": "Redmi 6 Pro"
+            },
+            "onclite": {
+                "codename": "onclite",
+                "CnName": "Redmi 7",
+                "EnName": ""
+            },
+            "pine": {
+                "codename": "pine",
+                "CnName": "Redmi 7A",
+                "EnName": "Redmi 7A"
+            },
+            "olive": {
+                "codename": "olive",
+                "CnName": "Redmi 8",
+                "EnName": "Redmi 8"
+            },
+            "olivelite": {
+                "codename": "olivelite",
+                "CnName": "Redmi 8A",
+                "EnName": "Redmi 8A"
+            },
+            "olivewood": {
+                "codename": "olivewood",
+                "CnName": "Redmi 8A Pro/Dual",
+                "EnName": "Redmi 8A Pro/Dual"
+            },
+            "lancelot": {
+                "codename": "lancelot",
+                "CnName": "Redmi 9/Prime",
+                "EnName": "Redmi 9/Prime"
+            },
+            "dandelion": {
+                "codename": "dandelion",
+                "CnName": "Redmi 9A/9AT/9i/9A Sport",
+                "EnName": "Redmi 9A/9AT/9i/9A Sport"
+            },
+            "lime": {
+                "codename": "lime",
+                "CnName": "Redmi 9T/Redmi 9 Power",
+                "EnName": "Redmi 9T/Redmi 9 Power"
+            },
+            "cattail": {
+                "codename": "cattail",
+                "CnName": "Redmi 9/9 Activ",
+                "EnName": "Redmi 9/9 Activ"
+            },
+            "angelica": {
+                "codename": "angelica",
+                "CnName": "Redmi 9C",
+                "EnName": "Redmi 9C"
+            },
+            "angelican": {
+                "codename": "angelican",
+                "CnName": "Redmi 9C NFC",
+                "EnName": "Redmi 9C NFC"
+            },
+            "dandelion10a": {
+                "codename": "dandelion",
+                "CnName": "Redmi 10A/10A Sport",
+                "EnName": "Redmi 10A/10A Sport"
+            },
+            "selene": {
+                "codename": "selene",
+                "CnName": "Redmi 10/Prime/Redmi 10 2022",
+                "EnName": "Redmi 10/Prime/Redmi 10 2022"
+            },
+            "selenes": {
+                "codename": "selenes",
+                "CnName": "Redmi 10 2022",
+                "EnName": "Redmi 10 2022"
+            },
+            "light": {
+                "codename": "light",
+                "CnName": "Redmi 10 5G",
+                "EnName": "Redmi 10 5G"
+            },
+            "fog": {
+                "codename": "fog",
+                "CnName": "Redmi 10C",
+                "EnName": "Redmi 10C"
+            },
+            "merlin": {
+                "codename": "merlin",
+                "CnName": "Redmi 10X 4G",
+                "EnName": "Redmi 10X 4G"
+            },
+            "atom": {
+                "codename": "atom",
+                "CnName": "Redmi 10X 5G",
+                "EnName": "Redmi 10X 5G"
+            },
+            "bomb": {
+                "codename": "bomb",
+                "CnName": "Redmi 10X Pro",
+                "EnName": "Redmi 10X Pro"
+            },
+            "rock": {
+                "codename": "rock",
+                "CnName": "Redmi 11 Prime 4G",
+                "EnName": "Redmi 11 Prime 4G"
+            },
+            "light5g": {
+                "codename": "light",
+                "CnName": "Redmi 11 Prime 5G",
+                "EnName": "Redmi 11 Prime 5G"
+            }
+        },
+        "rmnote": {
+            "lcsh92_wet_xm_td": {
+                "codename": "lcsh92_wet_xm_td",
+                "CnName": "红米 Note 1 TD",
+                "EnName": "Redmi Note 1 TD"
+            },
+            "lcsh92_wet_jb9": {
+                "codename": "lcsh92_wet_jb9",
+                "CnName": "红米 Note 3G",
+                "EnName": "Redmi Note 3G"
+            },
+            "hermes": {
+                "codename": "hermes",
+                "CnName": "红米 Note 2",
+                "EnName": "Redmi Note 2"
+            },
+            "hennessy": {
+                "codename": "hennessy",
+                "CnName": "红米 Note 3 双网通版",
+                "EnName": "Redmi Note 3 (MTK)"
+            },
+            "kenzo": {
+                "codename": "kenzo",
+                "CnName": "红米 Note 3 全网通版",
+                "EnName": "Redmi Note 3 Pro"
+            },
+            "kate": {
+                "codename": "kate",
+                "CnName": "Redmi Note 3 特别版",
+                "EnName": "Redmi Note 3 SE"
+            },
+            "nikel": {
+                "codename": "nikel",
+                "CnName": "红米 Note 4",
+                "EnName": "Redmi Note 4 MTK"
+            },
+            "mido": {
+                "codename": "mido",
+                "CnName": "红米 Note 4X 高通版",
+                "EnName": "Redmi Note 4(Qcom)"
+            },
+            "ugglite": {
+                "codename": "ugglite",
+                "CnName": "红米 Note 5A 标准版",
+                "EnName": "Redmi Note 5A (2GB)"
+            },
+            "ugg": {
+                "codename": "ugg",
+                "CnName": "红米 Note 5A 高配版",
+                "EnName": "Redmi Note 5A Prime"
+            },
+            "vince": {
+                "codename": "vince",
+                "CnName": "红米 Note 5(国际)",
+                "EnName": "Redmi Note 5"
+            },
+            "whyred": {
+                "codename": "whyred",
+                "CnName": "红米 Note 5",
+                "EnName": "Redmi Note 5/5Pro"
+            },
+            "tulip": {
+                "codename": "tulip",
+                "CnName": "Redmi Note 6 Pro",
+                "EnName": "Redmi Note 6 Pro"
+            },
+            "lavender": {
+                "codename": "lavender",
+                "CnName": "Redmi Note 7/7S",
+                "EnName": "Redmi Note 7/7S"
+            },
+            "violet": {
+                "codename": "violet",
+                "CnName": "Redmi Note 7 Pro",
+                "EnName": "Redmi Note 7 Pro"
+            },
+            "ginkgo": {
+                "codename": "ginkgo",
+                "CnName": "Redmi Note 8",
+                "EnName": "Redmi Note 8"
+            },
+            "begonia": {
+                "codename": "begonia",
+                "CnName": "Redmi Note 8 Pro",
+                "EnName": "Redmi Note 8 Pro"
+            },
+            "willow": {
+                "codename": "willow",
+                "CnName": "Redmi Note 8T",
+                "EnName": "Redmi Note 8T"
+            },
+            "biloba": {
+                "codename": "biloba",
+                "CnName": "Redmi Note 8 (2021)",
+                "EnName": "Redmi Note 8 (2021)"
+            },
+            "merlin": {
+                "codename": "merlin",
+                "CnName": "Redmi Note 9",
+                "EnName": "Redmi Note 9"
+            },
+            "lime": {
+                "codename": "lime",
+                "CnName": "Redmi Note 9 4G",
+                "EnName": "Redmi Note 9 4G"
+            },
+            "cannon": {
+                "codename": "cannon",
+                "CnName": "Redmi Note 9 5G",
+                "EnName": "Redmi Note 9 5G"
+            },
+            "joyeuse": {
+                "codename": "joyeuse",
+                "CnName": "Redmi Note 9 Pro",
+                "EnName": "Redmi Note 9 Pro"
+            },
+            "gauguin": {
+                "codename": "gauguin",
+                "CnName": "Redmi Note 9 Pro 5G",
+                "EnName": "Redmi Note 9 Pro 5G"
+            },
+            "excalibur": {
+                "codename": "excalibur",
+                "CnName": "Redmi Note 9 Pro Max",
+                "EnName": "Redmi Note 9 Pro Max"
+            },
+            "curtana": {
+                "codename": "curtana",
+                "CnName": "Redmi Note 9S/Redmi Note 9 Pro/Redmi Note 10 Lite",
+                "EnName": "Redmi Note 9S/Redmi Note 9 Pro/Redmi Note 10 Lite"
+            },
+            "mojito": {
+                "codename": "mojito",
+                "CnName": "Redmi Note 10",
+                "EnName": "Redmi Note 10"
+            },
+            "camellia": {
+                "codename": "camellia",
+                "CnName": "Redmi Note 10 5G/10T 5G",
+                "EnName": "Redmi Note 10 5G/10T 5G"
+            },
+            "sweet": {
+                "codename": "sweet",
+                "CnName": "Redmi Note 10 Pro/Pro Max",
+                "EnName": "Redmi Note 10 Pro/Pro Max"
+            },
+            "chopin": {
+                "codename": "chopin",
+                "CnName": "Redmi Note 10 Pro 5G",
+                "EnName": "Redmi Note 10 Pro 5G"
+            },
+            "lilac": {
+                "codename": "lilac",
+                "CnName": "Redmi Note 10T",
+                "EnName": "Redmi Note 10T"
+            },
+            "spes": {
+                "codename": "spes",
+                "CnName": "Redmi Note 11",
+                "EnName": "Redmi Note 11"
+            },
+            "spesn": {
+                "codename": "spesn",
+                "CnName": "Redmi Note 11 NFC",
+                "EnName": "Redmi Note 11 NFC"
+            },
+            "selenes": {
+                "codename": "selenes",
+                "CnName": "Redmi Note 11 4G",
+                "EnName": "Redmi Note 11 4G"
+            },
+            "evergo": {
+                "codename": "evergo",
+                "CnName": "Redmi Note 11 5G",
+                "EnName": "Redmi Note 11 5G"
+            },
+            "light": {
+                "codename": "light",
+                "CnName": "Redmi Note 11E/11R",
+                "EnName": "Redmi Note 11E/11R"
+            },
+            "vida": {
+                "codename": "vida",
+                "CnName": "Redmi Note 11 Pro 4G",
+                "EnName": "Redmi Note 11 Pro 4G"
+            },
+            "veux": {
+                "codename": "veux",
+                "CnName": "Redmi Note 11E Pro/Redmi Note 11 Pro 5G",
+                "EnName": "Redmi Note 11E Pro/Redmi Note 11 Pro 5G"
+            },
+            "viva": {
+                "codename": "viva",
+                "CnName": "Redmi Note 11E Pro",
+                "EnName": "Redmi Note 11E Pro"
+            },
+            "pissarro": {
+                "codename": "pissarro",
+                "CnName": "Redmi Note 11 Pro/Pro+/5G",
+                "EnName": "Redmi Note 11 Pro/Pro+/5G"
+            },
+            "xaga": {
+                "codename": "xaga",
+                "CnName": "Redmi Note 11T Pro/Pro+",
+                "EnName": "Redmi Note 11T Pro/Pro+"
+            },
+            "fleur": {
+                "codename": "fleur",
+                "CnName": "Redmi Note 11S 4G",
+                "EnName": "Redmi Note 11S 4G"
+            },
+            "opal": {
+                "codename": "opal",
+                "CnName": "Redmi Note 11S 5G",
+                "EnName": "Redmi Note 11S 5G"
+            },
+            "sunstone": {
+                "codename": "sunstone",
+                "CnName": "Redmi Note 12 5G",
+                "EnName": "Redmi Note 12 5G"
+            },
+            "ruby": {
+                "codename": "ruby",
+                "CnName": "Redmi Note 12 Pro/Pro+/探索版",
+                "EnName": "Redmi Note 12 Pro/Pro+/Discovery"
+            }
+        },
+        "rmk": {
+            "davinci": {
+                "codename": "davinci",
+                "CnName": "Redmi K20",
+                "EnName": "Redmi K20"
+            },
+            "raphael": {
+                "codename": "raphael",
+                "CnName": "Redmi K20 Pro",
+                "EnName": "Redmi K20 Pro"
+            },
+            "raphaels": {
+                "codename": "raphaels",
+                "CnName": "Redmi K20 Pro 尊享版",
+                "EnName": "Redmi K20 Pro Premium Edition"
+            },
+            "phoenix": {
+                "codename": "phoenix",
+                "CnName": "Redmi K30 4G",
+                "EnName": "Redmi K30 4G"
+            },
+            "picasso": {
+                "codename": "picasso",
+                "CnName": "Redmi K30 5G",
+                "EnName": "Redmi K30 5G"
+            },
+            "picasso_48m": {
+                "codename": "picasso_48m",
+                "CnName": "Redmi K30i 5G",
+                "EnName": "Redmi K30i 5G"
+            },
+            "lmi": {
+                "codename": "lmi",
+                "CnName": "Redmi K30 Pro",
+                "EnName": "Redmi K30 Pro"
+            },
+            "cezanne": {
+                "codename": "cezanne",
+                "CnName": "Redmi K30 至尊纪念版",
+                "EnName": "Redmi K30 Ultra"
+            },
+            "apollo": {
+                "codename": "apollo",
+                "CnName": "Redmi K30S 至尊纪念版",
+                "EnName": "Redmi K30S Ultra"
+            },
+            "alioth": {
+                "codename": "alioth",
+                "CnName": "Redmi K40",
+                "EnName": "Redmi K40"
+            },
+            "haydn": {
+                "codename": "haydn",
+                "CnName": "Redmi K40 Pro/Pro+",
+                "EnName": "Redmi K40 Pro/Pro+"
+            },
+            "ares": {
+                "codename": "ares",
+                "CnName": "Redmi K40 游戏增强版",
+                "EnName": "Redmi K40 Gaming"
+            },
+            "munch": {
+                "codename": "munch",
+                "CnName": "Redmi K40S",
+                "EnName": "Redmi K40S"
+            },
+            "rubens": {
+                "codename": "rubens",
+                "CnName": "Redmi K50",
+                "EnName": "Redmi K50"
+            },
+            "matisse": {
+                "codename": "matisse",
+                "CnName": "Redmi K50 Pro",
+                "EnName": "Redmi K50 Pro"
+            },
+            "ingres": {
+                "codename": "ingres",
+                "CnName": "Redmi K50 电竞版",
+                "EnName": "Redmi K50 Gaming"
+            },
+            "xaga": {
+                "codename": "xaga",
+                "CnName": "Redmi K50i",
+                "EnName": "Redmi K50i"
+            },
+            "diting": {
+                "codename": "diting",
+                "CnName": "Redmi K50 至尊版",
+                "EnName": "Redmi K50 Ultra"
+            }
+        },
+        "rmother": {
+            "ysl": {
+                "codename": "ysl",
+                "CnName": "红米 S2",
+                "EnName": "Redmi S2/Y2"
+            },
+            "onc": {
+                "codename": "onc",
+                "CnName": "红米 Y3",
+                "EnName": "Redmi Y3"
+            },
+            "tiare": {
+                "codename": "tiare",
+                "CnName": "红米 Go",
+                "EnName": "Redmi Go"
+            },
+            "omega": {
+                "codename": "omega",
+                "CnName": "红米 Pro",
+                "EnName": "Redmi Pro"
+            },
+            "ice": {
+                "codename": "ice",
+                "CnName": "Redmi A1/A1+",
+                "EnName": "Redmi A1/A1+"
+            }
+        },
+        "rmpad": {
+            "yunluo": {
+                "codename": "yunluo",
+                "CnName": "Redmi平板 1",
+                "EnName": "Redmi Pad"
+            }
+        }
+    },
+    "poco": {
+        "f": {
+            "beryllium": {
+                "codename": "beryllium",
+                "CnName": "POCO F1",
+                "EnName": "POCO F1"
+            },
+            "lmi": {
+                "codename": "lmi",
+                "CnName": "POCO F2 Pro",
+                "EnName": "POCO F2 Pro"
+            },
+            "alioth": {
+                "codename": "alioth",
+                "CnName": "POCO F3",
+                "EnName": "POCO F3"
+            },
+            "ares": {
+                "codename": "ares",
+                "CnName": "POCO F3 GT",
+                "EnName": "POCO F3 GT"
+            },
+            "munch": {
+                "codename": "munch",
+                "CnName": "POCO F4",
+                "EnName": "POCO F4"
+            },
+            "ingres": {
+                "codename": "ingres",
+                "CnName": "POCO F4 GT",
+                "EnName": "POCO F4 GT"
+            }
+        },
+        "c": {
+            "angelica": {
+                "codename": "angelica",
+                "CnName": "POCO C3/C31",
+                "EnName": "POCO C3/C31"
+            },
+            "frost": {
+                "codename": "frost",
+                "CnName": "POCO C40",
+                "EnName": "POCO C40"
+            },
+            "ice": {
+                "codename": "ice",
+                "CnName": "POCO C50",
+                "EnName": "POCO C50"
+            }
+        },
+        "m": {
+            "shiva": {
+                "codename": "shiva",
+                "CnName": "POCO M2",
+                "EnName": "POCO M2"
+            },
+            "citrus": {
+                "codename": "citrus",
+                "CnName": "POCO M3",
+                "EnName": "POCO M3"
+            },
+            "light": {
+                "codename": "light",
+                "CnName": "POCO M4 5G",
+                "EnName": "POCO M4 5G"
+            },
+            "fleur": {
+                "codename": "fleur",
+                "CnName": "POCO M4 Pro 4G",
+                "EnName": "POCO M4 Pro 4G"
+            },
+            "evergreen": {
+                "codename": "evergreen",
+                "CnName": "POCO M4 Pro 5G",
+                "EnName": "POCO M4 Pro 5G"
+            },
+            "rock": {
+                "codename": "rock",
+                "CnName": "POCO M5",
+                "EnName": "POCO M5"
+            },
+            "rosemary": {
+                "codename": "rosemary",
+                "CnName": "POCO M5S",
+                "EnName": "POCO M5S"
+            }
+        },
+        "x": {
+            "phoenix": {
+                "codename": "phoenix",
+                "CnName": "POCO X2",
+                "EnName": "POCO X2"
+            },
+            "surya": {
+                "codename": "surya",
+                "CnName": "POCO X3 NFC",
+                "EnName": "POCO X3 NFC"
+            },
+            "POCO X3 NFC": {
+                "codename": "POCO X3 NFC",
+                "CnName": "POCO X3 GT",
+                "EnName": "POCO X3 GT"
+            },
+            "vayu": {
+                "codename": "vayu",
+                "CnName": "POCO X3 Pro",
+                "EnName": "POCO X3 Pro"
+            },
+            "xaga": {
+                "codename": "xaga",
+                "CnName": "POCO X4 GT",
+                "EnName": "POCO X4 GT"
+            },
+            "veux": {
+                "codename": "veux",
+                "CnName": "POCO X4 Pro 5G",
+                "EnName": "POCO X4 Pro 5G"
+            }
+        }
+    }
+}
