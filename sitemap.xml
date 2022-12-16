@@ -4,7 +4,7 @@
 		<loc>https://roms.miuier.com</loc>
 		<priority>1.00</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/tools.html</loc>
@@ -27,13 +27,13 @@
 		<loc>https://roms.miuier.com/log.html</loc>
 		<priority>0.83</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices</loc>
 		<priority>0.83</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/bilibili</loc>
@@ -51,13 +51,18 @@
 		<loc>https://roms.miuier.com/aboutme.html</loc>
 		<priority>0.83</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/404.html</loc>
 		<priority>0.83</priority>
 		<changefreq>weekly</changefreq>
 		<lastmod>2022-12-02</lastmod>
+	</url>
+	<url>
+		<loc>https://roms.miuier.com/devices/fuxi.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/weekly/weekly.html</loc>
@@ -87,7 +92,7 @@
 		<loc>https://roms.miuier.com/devices/ziyi.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/zijin.html</loc>
@@ -99,7 +104,7 @@
 		<loc>https://roms.miuier.com/devices/zeus.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/yunluo.html</loc>
@@ -171,13 +176,13 @@
 		<loc>https://roms.miuier.com/devices/veux.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-03</lastmod>
+		<lastmod>2022-12-11</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/venus.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/vela.html</loc>
@@ -207,7 +212,7 @@
 		<loc>https://roms.miuier.com/devices/unicorn.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/umi.html</loc>
@@ -273,7 +278,7 @@
 		<loc>https://roms.miuier.com/devices/thor.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/taoyao.html</loc>
@@ -285,7 +290,7 @@
 		<loc>https://roms.miuier.com/devices/sweet.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/surya.html</loc>
@@ -303,7 +308,7 @@
 		<loc>https://roms.miuier.com/devices/star.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/spesn.html</loc>
@@ -315,7 +320,7 @@
 		<loc>https://roms.miuier.com/devices/spes.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/sirius.html</loc>
@@ -375,7 +380,7 @@
 		<loc>https://roms.miuier.com/devices/rubens.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/rosy.html</loc>
@@ -393,13 +398,13 @@
 		<loc>https://roms.miuier.com/devices/rosemary.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/rock.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/riva.html</loc>
@@ -411,7 +416,7 @@
 		<loc>https://roms.miuier.com/devices/renoir.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/raphaels.html</loc>
@@ -435,7 +440,7 @@
 		<loc>https://roms.miuier.com/devices/psyche.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/prada.html</loc>
@@ -453,7 +458,7 @@
 		<loc>https://roms.miuier.com/devices/plato.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/platina.html</loc>
@@ -507,7 +512,7 @@
 		<loc>https://roms.miuier.com/devices/opal.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/onclite.html</loc>
@@ -549,7 +554,7 @@
 		<loc>https://roms.miuier.com/devices/odin.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/nitrogen.html</loc>
@@ -573,7 +578,7 @@
 		<loc>https://roms.miuier.com/devices/nabu.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/munch.html</loc>
@@ -591,7 +596,7 @@
 		<loc>https://roms.miuier.com/devices/mona.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/mojito.html</loc>
@@ -627,13 +632,13 @@
 		<loc>https://roms.miuier.com/devices/mayfly.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/matisse.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/markw.html</loc>
@@ -663,7 +668,7 @@
 		<loc>https://roms.miuier.com/devices/lisa.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/lime.html</loc>
@@ -681,7 +686,7 @@
 		<loc>https://roms.miuier.com/devices/light.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/lavender.html</loc>
@@ -723,7 +728,7 @@
 		<loc>https://roms.miuier.com/devices/joyeuse.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/jason.html</loc>
@@ -741,7 +746,7 @@
 		<loc>https://roms.miuier.com/devices/ingres.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/ice.html</loc>
@@ -765,7 +770,7 @@
 		<loc>https://roms.miuier.com/devices/haydn.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/grus.html</loc>
@@ -795,19 +800,19 @@
 		<loc>https://roms.miuier.com/devices/gauguin.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/frost.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/fog.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/fleur.html</loc>
@@ -843,7 +848,7 @@
 		<loc>https://roms.miuier.com/devices/enuma.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/elish.html</loc>
@@ -855,7 +860,7 @@
 		<loc>https://roms.miuier.com/devices/diting.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/dipper.html</loc>
@@ -873,7 +878,7 @@
 		<loc>https://roms.miuier.com/devices/devices.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/davinci.html</loc>
@@ -885,7 +890,7 @@
 		<loc>https://roms.miuier.com/devices/daumier.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/dandelion_c3l2.html</loc>
@@ -909,7 +914,7 @@
 		<loc>https://roms.miuier.com/devices/dagu.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/curtana_rf.html</loc>
@@ -927,7 +932,7 @@
 		<loc>https://roms.miuier.com/devices/cupid.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/crux.html</loc>
@@ -1029,7 +1034,7 @@
 		<loc>https://roms.miuier.com/devices/camellia.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/cactus.html</loc>
@@ -1071,13 +1076,13 @@
 		<loc>https://roms.miuier.com/devices/ares.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/apollo.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-03</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/angelica_c31.html</loc>
@@ -1107,13 +1112,13 @@
 		<loc>https://roms.miuier.com/devices/alioth.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/agate.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/devices/latest.html</loc>
@@ -1124,6 +1129,11 @@
 		<loc>https://roms.miuier.com/devices/pissarroin.html</loc>
 		<priority>0.67</priority>
 		<lastmod>2022-12-07</lastmod>
+	</url>
+	<url>
+		<loc>https://roms.miuier.com/devices/nuwa.html</loc>
+		<priority>0.67</priority>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/weekly/logs/week-90-CN.html</loc>
@@ -2929,7 +2939,7 @@
 		<loc>https://roms.miuier.com/pages/templates/stable.html</loc>
 		<priority>0.50</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-10</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/pages/templates/monthly.html</loc>
@@ -2977,13 +2987,13 @@
 		<loc>https://roms.miuier.com/pages/templates/devices_new.html</loc>
 		<priority>0.50</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/pages/templates/devices_chinaonly.html</loc>
 		<priority>0.50</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-02</lastmod>
+		<lastmod>2022-12-16</lastmod>
 	</url>
 	<url>
 		<loc>https://roms.miuier.com/pages/templates/bin.html</loc>
