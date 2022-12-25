@@ -7,7 +7,6 @@ tucana => 小米CC9 Pro(tucana)
 
 umi => 小米10(umi) 
 miui_UMI_V13.0.8.0.SJBCNXM_ade3b2ea7f_12.0.zip
-miui_UMIINGlobal_V13.0.6.0.SJBINXM_475842a998_12.0.zip
 
 
 
@@ -22,9 +21,11 @@ miui_CMI_V13.0.6.0.SJACNXM_e6f6ed794a_12.0.zip
 
 
 
-
-
 vangogh => 小米10 青春版(vangogh) 
+
+
+
+
 cas => 小米10 至尊纪念版(cas)
 miui_CAS_V13.0.6.0.SJJCNXM_4039d0163b_12.0.zip
 
@@ -32,20 +33,33 @@ miui_CAS_V13.0.6.0.SJJCNXM_4039d0163b_12.0.zip
 
 
 monet => 小米10 Lite(monet) 
+
+
+
+
 venus => 小米11(venus) 
 
 
-pissarroin => 小米11i India
+
+
+
+
+
+pissarroin => 小米11i 5G India
 miui_PISSARROINFKGlobal_V13.0.2.0.SKTINFK_c7b4782794_12.0.zip
 
 
 courbet => 小米11 Lite 4G(courbet) 
-miui_COURBETIDGlobal_V13.0.5.0.SKQIDXM_aed85f80d4_12.0.zip
-miui_COURBETEEAGlobal_V13.0.7.0.SKQEUXM_53718d7da3_12.0.zip
+
+
 
 
 renoir => 小米11 青春版(renoir) 
 miui_RENOIR_V13.0.14.0.SKICNXM_d6b07bb491_12.0.zip
+miui_RENOIR_V14.0.2.0.TKICNXM_309a385371_13.0.zip
+miui_RENOIRGlobal_V13.0.9.0.SKIMIXM_b0613244de_12.0.zip
+
+
 
 
 lisa => 小米11 青春活力版(lisa) 
@@ -53,13 +67,12 @@ lisa => 小米11 青春活力版(lisa)
 
 
 star => 小米11 Pro/Ultra(star) 
-miui_STARIDGlobal_V13.0.5.0.SKAIDXM_9fbd1f6c02_12.0.zip
 
 
 
 
 agate => 小米11T(agate) 
-miui_AGATEIDGlobal_V13.0.4.0.SKWIDXM_aa80f26d89_12.0.zip
+
 
 
 vili => 小米11T Pro(vili) 
@@ -68,13 +81,16 @@ vili => 小米11T Pro(vili)
 
 
 cupid => 小米12(cupid) 
+miui_CUPID_V14.0.2.0.TLCCNXM_248bed9c63_13.0.zip
 miui_CUPIDEEAGlobal_V13.2.4.0.TLCEUXM_8ed9066d46_13.0.zip
 
 plato => 小米12T(plato) 
-miui_PLATOTRGlobal_V13.0.4.0.SLQTRXM_d4e778f762_12.0.zip
+
+
 
 
 taoyao => 小米12 Lite(taoyao) 
+miui_TAOYAOEEAGlobal_V13.2.2.0.TLIEUXM_ea214abf12_13.0.zip
 
 
 
@@ -82,38 +98,38 @@ psyche => 小米12X(psyche)
 
 
 zeus => 小米12 Pro(zeus) 
-miui_ZEUSEEAGlobal_V13.0.28.0.SLBEUXM_4a58293b57_12.0.zip
+miui_ZEUS_V14.0.4.0.TLBCNXM_98bd7af353_13.0.zip
+
+miui_ZEUSGlobal_V13.2.1.0.TLBMIXM_603442db0b_13.0.zip
 
 
 
-zeus_eea_global_images_V13.2.4.0.TLBEUXM_20221124.0000.00_13.0_eea_1d7552c6aa.tgz
 
 daumier => 小米12 Pro 天玑版(daumier) 
-miui_DAUMIER_V14.0.3.0.TLGCNXM_9b5595d1b1_13.0.zip
+
 
 
 mayfly => 小米12S(mayfly) 
-
+miui_MAYFLY_V14.0.3.0.TLTCNXM_f54e20687e_13.0.zip
 
 
 
 unicorn => 小米12S Pro(unicorn) 
-miui_UNICORN_V14.0.2.0.TLECNXM_dd574a95b0_13.0.zip
+
 
 
 
 thor => 小米12S Ultra(thor) 
-miui_THOR_V14.0.2.0.TLACNXM_f58e7eab21_13.0.zip
 
 
 
 fuxi => 小米13(fuxi)
-miui_FUXI_V14.0.9.0.TMCCNXM_18131fe0aa_13.0.zip
+
 
 
 
 nuwa => 小米13 Pro(nuwa)
-miui_NUWA_V14.0.7.0.TMBCNXM_bd620edff7_13.0.zip
+
 
 
 toco => 小米Note 10 Lite(toco) 
@@ -133,10 +149,8 @@ zizhan => 小米MIX FOLD 2(zizhan)
 
 
 nabu => 小米平板5(nabu) 
-miui_NABU_V13.1.4.0.SKXCNXM_7e577e1c25_12.0.zip
-miui_NABURUGlobal_V13.1.4.0.SKXRUXM_e6afacdb90_12.0.zip
 miui_NABUTRGlobal_V13.1.2.0.SKXTRXM_c47a812618_12.0.zip
-
+miui_NABURUGlobal_V13.1.4.0.SKXRUXM_e6afacdb90_12.0.zip
 
 
 enuma => 小米平板5 Pro 5G(enuma) 
@@ -158,11 +172,12 @@ mona => 小米 Civi(mona)
 
 
 zijin => 小米 Civi 1S(zijin) 
-miui_ZIJIN_V13.2.5.0.TLPCNXM_d013fc1f33_13.0.zip
-miui_ZIJIN_V13.2.6.0.TLPCNXM_0a64a3030a_13.0.zip
+miui_ZIJIN_V14.0.1.0.TLPCNXM_3f5e5f7398_13.0.zip
+
+
 
 ziyi => 小米 Civi 2(ziyi) 
-miui_ZIYI_V13.0.10.0.SLLCNXM_46ef626850_12.0.zip
+
 
 
 
@@ -178,9 +193,8 @@ olivewood => Redmi 8A Dual(olivewood)
 
 
 lancelot => Redmi 9(lancelot)
+
 miui_LANCELOTIDGlobal_V13.0.1.0.SJCIDXM_8beab516dd_12.0.zip
-miui_LANCELOTGlobal_V13.0.2.0.SJCMIXM_dd107c921b_12.0.zip
-miui_LANCELOTEEAGlobal_V13.0.1.0.SJCEUXM_64ecf18c80_12.0.zip
 
 
 
@@ -195,79 +209,101 @@ miui_DANDELIONGlobal_V12.5.7.0.RCDMIXM_64ab7911a4_11.0.zip
 
 
 
+
+
+
 Redmi 10A/10A Sport(dandelion_c3l2)
+miui_DANDELIONC3L2EEAGlobal_V12.5.7.0.RCZEUXM_493221ea6e_11.0.zip
+
+
 
 
 angelica => Redmi 9C(angelica)
+
+
+
 angelican => Redmi 9C NFC(angelican)
 selene => Redmi 10/Prime(selene)
 
 
+
+
 fog => Redmi 10C(fog)
-miui_FOGTRGlobal_V13.0.2.0.SGETRXM_d639670b03_12.0.zip
+
+
 
 
 merlin => Redmi 10X 4G(merlin)
+miui_MERLINEEAGlobal_V13.0.3.0.SJOEUXM_9efc219c03_12.0.zip
+miui_MERLINIDGlobal_V13.0.3.0.SJOIDXM_be1e3911f9_12.0.zip
+
+
+
 atom => Redmi 10X 5G(atom)
+
+
+
+
 bomb => Redmi 10X Pro(bomb)
 
+
+
 ginkgo => Redmi Note 8(ginkgo) 
-miui_GINKGOEEAGlobal_V12.5.12.0.RCOEUXM_f9fdc6c783_11.0.zip
 
 
 biloba => Redmi Note 8 2021(biloba) 
+
+
+
+
 willow => Redmi Note 8T(willow) 
 begonia => Redmi Note 8 Pro(begonia) 
 
 
 lime => Redmi Note 9 4G(lime) 
-miui_LIMEGlobal_V12.5.13.0.RJQMIXM_9d7c6edcb2_11.0.zip
 miui_LIMEGlobal_V13.0.1.0.SJQMIXM_be79b2c486_12.0.zip
 miui_LIMEGlobal_V13.0.2.0.SJQMIXM_06b44f7aa8_12.0.zip
 
 
+
+
 cannon => Redmi Note 9 5G(cannon) 
-miui_CANNONGEEAGlobal_V13.0.4.0.SJEEUXM_1ac7ea8634_12.0.zip
-miui_CANNONGGlobal_V13.0.4.0.SJEMIXM_9679e89f94_12.0.zip
 
 
 
 
 curtana => Redmi Note 9S(curtana) 
-miui_CURTANAINGlobal_V13.0.2.0.SJWINXM_0e31f1908f_12.0.zip
 miui_CURTANATRGlobal_V13.0.2.0.SJWTRXM_16ccd01d3b_12.0.zip
 miui_CURTANARUGlobal_V13.0.2.0.SJWRUXM_4ed40055bf_12.0.zip
 
 
+
+
 gauguin => Redmi Note 9 Pro(gauguin) 
-miui_GAUGUIN_V13.0.11.0.SJSCNXM_17413b5411_12.0.zip
+miui_GAUGUIN_V13.0.15.0.SJSCNXM_c730c548cd_12.0.zip
+
+
 
 
 joyeuse => Redmi Note 9 Pro 国际(joyeuse) 
-miui_JOYEUSERUGlobal_V13.0.1.0.SJZRUXM_0e11880fbb_12.0.zip
-miui_JOYEUSETRGlobal_V13.0.1.0.SJZTRXM_b6624a7791_12.0.zip
 
 
 
 excalibur => Redmi Note 9 Pro Max(excalibur) 
-miui_EXCALIBURINGlobal_V13.0.2.0.SJXINXM_5647f6f4a8_12.0.zip
-
 
 
 
 
 camellia => Redmi Note 10(camellia) 
-miui_CAMELLIA_V13.0.9.0.SKSCNXM_4043385982_12.0.zip
-miui_CAMELLIANTRGlobal_V13.0.3.0.SKSTRXM_6b33e1cb46_12.0.zip
-
 
 
 
 curtana => Redmi Note 10 Lite(curtana_rf) 
 
 
+
+
 chopin => Redmi Note 10 Pro(chopin) 
-miui_CHOPINGlobal_V13.0.7.0.SKPMIXM_33ac75ace7_12.0.zip
 miui_CHOPINIDGlobal_V13.0.4.0.SKPIDXM_9e64d2e2c4_12.0.zip
 miui_CHOPINTRGlobal_V13.0.4.0.SKPTRXM_438646750b_12.0.zip
 
@@ -275,11 +311,9 @@ miui_CHOPINTRGlobal_V13.0.4.0.SKPTRXM_438646750b_12.0.zip
 
 
 rosemary => Redmi Note 10S(rosemary) 
+miui_ROSEMARYGlobal_V13.0.12.0.SKLMIXM_f5bc6effa0_12.0.zip
+miui_ROSEMARYEEAGlobal_V13.0.7.0.SKLEUXM_a7b0439b65_12.0.zip
 miui_ROSEMARYIDGlobal_V13.0.7.0.SKLIDXM_d3bfe45a9c_12.0.zip
-miui_ROSEMARYINGlobal_V13.0.8.0.SKLINXM_41feb77549_12.0.zip
-miui_ROSEMARYRUGlobal_V13.0.7.0.SKLRUXM_fc3fbf3901_12.0.zip
-
-
 
 lilac => Redmi Note 10T(lilac) 
 
@@ -288,35 +322,31 @@ lilac => Redmi Note 10T(lilac)
 
 mojito => Redmi Note 10 国际(mojito) 
 miui_MOJITOGlobal_V13.0.11.0.SKGMIXM_7c6644824a_12.0.zip
-
+miui_MOJITOINGlobal_V13.0.4.0.SKGINXM_b30aeb221f_12.0.zip
+miui_MOJITOIDGlobal_V13.0.5.0.SKGIDXM_1e4745aece_12.0.zip
 
 sweet => Redmi Note 10 Pro/Pro Max 国际(sweet) 
+
+
+
 
 
 selenes => Redmi Note 11 4G(selenes) 
 miui_SELENEEEAGlobal_V12.5.26.0.RKUEUXM_2fb4607dda_11.0.zip
 
 evergo => Redmi Note 11 5G(evergo) 
-miui_EVERGO_V13.0.8.0.SGBCNXM_79f590f148_12.0.zip
+
 
 
 light => Redmi Note 11E(light) 
-miui_LIGHTTWGlobal_V13.0.4.0.SLSTWXM_d20dbc3433_12.0.zip
-
-miui_LIGHTEEAGlobal_V13.0.9.0.SLSEUXM_9f07048898_12.0.zip
-
 miui_LIGHTRUGlobal_V13.0.5.0.SLSRUXM_aa2a55704b_12.0.zip
-
-
-
-
+miui_LIGHTIDGlobal_V13.0.4.0.SLSIDXM_5cf04bbc7f_12.0.zip
 
 
 
 
 spes => Redmi Note 11 国际版(spes) 
-
-
+miui_SPESINGlobal_V13.0.3.0.SGCINXM_6e26baf148_12.0.zip
 
 
 spesn => Redmi Note 11 NFC 国际版(spesn) 
@@ -326,8 +356,8 @@ miui_SPESNEEAGlobal_V13.0.2.0.SGKEUXM_2631bbbf43_12.0.zip
 
 
 viva => Redmi Note 11 Pro 4G(viva) 
-miui_VIVATWGlobal_V13.0.2.0.SGDTWXM_43b7c35d3c_12.0.zip
-
+miui_VIVAEEAGlobal_V13.0.2.0.SGDEUXM_d8d86fbcab_12.0.zip
+miui_VIVATRGlobal_V13.0.2.0.SGDTRXM_e39aa92b9f_12.0.zip
 
 
 
@@ -338,13 +368,19 @@ veux => Redmi Note 11 Pro 5G(veux)
 
 
 
+
+
 pissarro => Redmi Note 11 Pro/Pro+(pissarro) 
 miui_PISSARRORUGlobal_V13.0.2.0.SKTRUXM_5291c5b7b0_12.0.zip
+miui_PISSARROGlobal_V13.0.7.0.SKTMIXM_c9c093d5a0_12.0.zip
+
 
 fleur => Redmi Note 11S 4G(fleur) 
+miui_FLEURGlobal_V13.0.7.0.SKEMIXM_2c4d856d6e_12.0.zip
+
+
 
 opal => Redmi Note 11S 5G(opal) 
-
 
 
 
@@ -352,23 +388,35 @@ xaga => Redmi Note 11T Pro/Pro+(xaga)
 
 
 
-
-miui_XAGA_V13.2.3.0.TLOCNXM_8d01537ae1_13.0.zip
 sunstone => Redmi Note 12(sunstone) 
 
 
 
 ruby => Redmi Note 12 Pro/Pro+/探索版(ruby) 
-miui_RUBY_V13.0.8.0.SMOCNXM_a1634f2ed0_12.0.zip
-
+miui_RUBY_V13.0.9.0.SMOCNXM_125c782319_12.0.zip
 
 
 
 
 
 phoenix => Redmi K30 4G版(phoenix) 
+
+
+
+
 picasso => Redmi K30 5G版(picasso) 
+
+
+
+picasso_48m => Redmi K30i 5G版(picasso_48m) 
+
+
+
+
 lmi => Redmi K30 Pro(lmi) 
+
+
+
 cezanne => Redmi K30 至尊纪念版(cezanne) 
 
 
@@ -376,18 +424,21 @@ cezanne => Redmi K30 至尊纪念版(cezanne)
 apollo => Redmi K30S 至尊纪念版(apollo) 
 miui_APOLLO_V13.0.7.0.SJDCNXM_2753b990c5_12.0.zip
 miui_APOLLOEEAGlobal_V13.0.11.0.SJDEUXM_111018d6fd_12.0.zip
+miui_APOLLOIDGlobal_V13.0.6.0.SJDIDXM_844921fcc2_12.0.zip
+
+
 
 
 
 alioth => Redmi K40(alioth) 
-miui_ALIOTHTRGlobal_V13.0.3.0.SKHTRXM_ed4f00b479_12.0.zip
+
 
 
 
 
 munch => Redmi K40S(munch) 
-miui_MUNCH_V13.2.5.0.TLMCNXM_22b8562c3e_13.0.zip
-miui_MUNCH_V13.2.8.0.TLMCNXM_e787a300eb_13.0.zip
+
+
 
 
 haydn => Redmi K40 Pro(haydn) 
@@ -396,11 +447,13 @@ haydn => Redmi K40 Pro(haydn)
 
 
 ares => Redmi K40 游戏增强版(ares) 
-miui_ARESINGlobal_V13.0.5.0.SKJINXM_6d348beef2_12.0.zip
 
 
 
 ingres => Redmi K50 电竞版(ingres) 
+
+
+
 
 
 
@@ -416,6 +469,8 @@ miui_MATISSE_V14.0.5.0.TLKCNXM_a1a2b6a363_13.0.zip
 
 
 diting => Redmi K50 至尊版(diting) 
+miui_DITING_V14.0.2.0.TLFCNXM_4e7fa733ef_13.0.zip
+miui_DITINGJPGlobal_V13.0.2.0.SLFJPXM_c566a4ce15_12.0.zip
 
 
 
@@ -426,10 +481,20 @@ miui_ICEEEAGlobal_V13.0.7.0.SGMEUXM_e088ae3a1e_12.0.zip
 
 
 yunluo => Redmi Pad(yunluo) 
-miui_YUNLUOINGlobal_V13.1.3.0.SLYINXM_fadb05d334_12.0.zip
+
+miui_YUNLUO_V13.1.6.0.SLYCNXM_ed8b8a9f90_12.0.zip
+miui_YUNLUOEEAGlobal_V13.1.3.0.SLYEUXM_c5dc79e0f8_12.0.zip
+
+
+
+
+
 
 angelica => POCO C3 (angelica) 
 angelica_c31 => POCO C31(angelica_c31) 
+
+
+
 frost => POCO C40(frost) 
 
 
@@ -440,33 +505,37 @@ shiva => POCO M2(shiva)
 
 
 
-
-
-
 gram => POCO M2 Pro(gram) 
-miui_GRAMINGlobal_V13.0.2.0.SJPINXM_2ac29489d5_12.0.zip
+
 
 
 citrus => POCO M3(citrus) 
-miui_CITRUSGlobal_V12.5.10.0.RJFMIXM_8b9fc663c3_11.0.zip
+
 
 
 fleur => POCO M4 Pro 4G(fleur) 
 miui_FLEURINGlobal_V13.0.3.0.SKEINXM_a6994af41a_12.0.zip
-miui_FLEURIDGlobal_V13.0.3.0.SKEIDXM_c4b248c350_12.0.zip
-
 
 
 evergreen => POCO M4 Pro 5G(evergreen) 
-miui_EVERGREENGlobal_V13.0.4.0.SGBMIXM_ca9fde191a_12.0.zip
+
+
+
 
 
 rock => POCO M5(rock) 
-miui_ROCKRUGlobal_V13.0.7.0.SLURUXM_b6c84f082b_12.0.zip
+
 miui_ROCKINGlobal_V13.0.9.0.SLUINXM_56808f4ece_12.0.zip
 
 
+
+
 rosemary => POCO M5S(rosemary_p) 
+
+
+
+
+
 surya => POCO X3 NFC(surya) 
 miui_SURYAEEAGlobal_V13.0.4.0.SJGEUXM_8e3e6f06c8_12.0.zip
 
