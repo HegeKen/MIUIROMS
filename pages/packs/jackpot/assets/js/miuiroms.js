@@ -13,7 +13,7 @@ function index(lang){
                 devices = data["cn"]["su"];
                 list = "";
                 var i = 0;
-                dp = "https://roms.miuier.com/cn/devices/"
+                dp = "https://old.miuier.com/cn/devices/"
                 for(i in devices){
                     $name = devices[i]["name"];
                     if(i == "star"){
@@ -28,7 +28,7 @@ function index(lang){
                 devices = data["en"]["su"];
                 list = "";
                 var i = 0;
-                dp = "https://roms.miuier.com/en/devices/"
+                dp = "https://old.miuier.com/en/devices/"
                 for(i in devices){
                     $name = devices[i]["name"];
                     if(i == "star"){

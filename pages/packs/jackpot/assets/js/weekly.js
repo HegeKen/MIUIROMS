@@ -14,7 +14,7 @@ function weeklyCN(lang){
                 console.log(latest);
                 week = data["weeks"];
                 list = "";
-                url = "https://roms.miuier.com/cn/weekly/"
+                url = "https://old.miuier.com/cn/weekly/"
                 console.log(week);
                 for(i=0;i<13;i++){
                     miuiver = week[i]["ver"];

@@ -1,4 +1,5 @@
 # robots.txt generated at http://tool.chinaz.com/robots/ 
+Sitemap: https://old.miuier.com/sitemap.xml
 User-agent: *
 Disallow: 
 Disallow: /bilibili

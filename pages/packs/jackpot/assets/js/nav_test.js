@@ -1,6 +1,6 @@
 document.writeln("        <div class=\'mdui-appbar\'>");
 document.writeln("            <div class=\'mdui-toolbar mdui-color-deep-orange-accent\'>");
-document.writeln("              <a href=\'https://roms.miuier.com/\' class=\'mdui-typo-title\'>MIUI官方ROM仓库</a>");
+document.writeln("              <a href=\'https://old.miuier.com/\' class=\'mdui-typo-title\'>MIUI官方ROM仓库</a>");
 document.writeln("            </div>");
 document.writeln("            <div class=\'mdui-tab mdui-color-deep-orange-accent\' mdui-tab>");
 document.writeln("              <a href=\'#index\' class=\'mdui-ripple mdui-ripple-white home\'>");
