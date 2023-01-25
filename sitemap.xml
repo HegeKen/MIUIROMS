@@ -39,7 +39,7 @@
 		<loc>https://old.miuier.com/bilibili</loc>
 		<priority>0.83</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2023-01-25</lastmod>
 	</url>
 	<url>
 		<loc>https://old.miuier.com/beta.html</loc>
@@ -51,13 +51,13 @@
 		<loc>https://old.miuier.com/aboutme.html</loc>
 		<priority>0.83</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-16</lastmod>
+		<lastmod>2023-01-25</lastmod>
 	</url>
 	<url>
 		<loc>https://old.miuier.com/404.html</loc>
 		<priority>0.83</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2023-01-01</lastmod>
+		<lastmod>2023-01-25</lastmod>
 	</url>
 	<url>
 		<loc>https://old.miuier.com/devices/fuxi.html</loc>
@@ -74,13 +74,13 @@
 		<loc>https://old.miuier.com/pages/miui12.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2023-01-25</lastmod>
 	</url>
 	<url>
 		<loc>https://old.miuier.com/pages/miui12.5.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2023-01-25</lastmod>
 	</url>
 	<url>
 		<loc>https://old.miuier.com/devices/zizhan.html</loc>
@@ -932,7 +932,7 @@
 		<loc>https://old.miuier.com/devices/cupid.html</loc>
 		<priority>0.67</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-12-16</lastmod>
+		<lastmod>2023-01-25</lastmod>
 	</url>
 	<url>
 		<loc>https://old.miuier.com/devices/crux.html</loc>
@@ -1343,7 +1343,7 @@
 		<loc>https://old.miuier.com/weekly/logs/week-517-CN.html</loc>
 		<priority>0.50</priority>
 		<changefreq>weekly</changefreq>
-		<lastmod>2022-11-25</lastmod>
+		<lastmod>2023-01-25</lastmod>
 	</url>
 	<url>
 		<loc>https://old.miuier.com/weekly/logs/week-514-CN.html</loc>
